@@ -21,16 +21,16 @@ const API_BASE = "http://localhost:3001";
 // ─── 1. FILL IN YOUR BOOK INFO ────────────────────────────────────────────────
 
 const BOOK = {
-  title: "Moonwalk",
-  author: "Michael Jackson",
+  title: "Atomic Habits",
+  author: "James Clear",
   description:
-    "Moonwalk is a 1988 autobiography by the American singer Michael Jackson.",
+    "Atomic Habits by James Clear, published on October 16, 2018, is a ~320-page guide focused on small, daily improvements (1% better every day) to create massive long-term results. The details a near-fatal high school baseball accident that taught Clear the power of tiny, consistent habits for recovery and success.",
   cover_url:
-    "https://upload.wikimedia.org/wikipedia/en/1/16/Moonwalk_cover.jpg",
-  category: "Biology",
+    "https://m.media-amazon.com/images/I/81kg51XRc1L._AC_UF1000,1000_QL80_.jpg",
+  category: "Self-Help",
   language: "en",
   page_count: 320,
-  published_year: 1988,
+  published_year: 2018,
 };
 
 // ─── 2. FILL IN YOUR CHAPTERS ─────────────────────────────────────────────────
@@ -40,3940 +40,4708 @@ const BOOK = {
 const CHAPTERS = [
   {
     chapter_number: 1,
-    title: "Just Kids With A Dream",
-    content: `I've always wanted to be able to tell stories, you know, stories that came
-from my soul. I'd like to sit by a fire and tell people stories - make them
-see pictures, make them cry and laugh, take them anywhere emotionally with
-something as deceptively simple as words. I'd like to tell tales to move
-their souls and transform them. I've always wanted to be able to do that.
-Imagine how the great writers must feel, knowing they have that power. I
-sometimes feel I could do it. It's something I'd like to develop. In a way,
-songwriting uses the same skills, creates the emotional highs and lows, but
-the story is a sketch. It's quicksilver. There are very few books written on
-the art of storytelling, how to grip listeners, how to get a group of people
-together and amuse them. No costumes, no makeup, no nothing, just you and
-your voice, and your powerful ability to take them anywhere, to transform
-their lives, if only for minutes.
-As I begin to tell my story, I want to repeat what I usually say to people
-when they ask me about my earliest days with the Jackson 5: I was so little
-when we began to work on our music that I really don't remember much about
-it. Most people have the luxury of careers that start when they're old
-enough to know exactly what they're doing and why, but, of course, that
-wasn't true of me. They remember everything that happened to them, but I was
-only five years old. When you're a show business child, you really don't
-have the maturity to understand a great deal of what is going on around you.
-People make a lot of decisions concerning your life when you're out of the
-room. So here's what I remember. I remember singing at the top of my voice
-and dancing with real joy and working too hard for a child. Of course, there
-are many details I don't remember at all. I do remember the Jackson 5 really
-taking off when I was only eight or nine.
-I was born in Gary, Indiana, on a late summer night in 1958, the seventh of
-my parents' nine children. My father, Joe Jackson, was born in Arkansas, and
-in 1949 he married my mother, Katherine Scruse, whose people came from
-Alabama. My sister Maureen was born the following year and had the tough job
-of being the oldest. Jackie, Tito, Jermaine, LaToya, and Marlon were all
-next in line. Randy and Janet came after me.
-A part of my earliest memories is my father's job working in the steel mill.
-It was tough, mind-numbing work and he played music for escape. At the same
-time, my mother was working in a department store. Because of my father, and
-because of my mother's own love of music, we heard it all the time at home.
-My father and his brother had a group called the Falcons who were the local
-R&B band. My father played the guitar, as did his brother. They would do
-some of the great early rock ¦n' roll and blues songs by Chuck Berry, Little
-Richard, Otis Redding, you name it. All those styles were amazing and each
-had an influence on Joe and on us, although we were too young to know it at
-the time. The Falcons practised in the living room of our house in Gary, so
-I was raised on R&B. Since we were nine kids and my father's brother had
-eight of his own, our combined numbers made for a huge family. Music was
-what we did for entertainment and those times helped keep us together and
-kind of encouraged my father to be a family-oriented man. The Jackson 5 were
-born out of this tradition - we later became the Jacksons - and because of
-this training and musical tradition, I moved out on my own and established a
-sound that is mine.
-I remember my childhood as mostly work, even though I loved to sing. I
-wasn't forced into this business by stage parents the way Judy Garland was.
-I did it because I enjoyed it and because it was as natural to me as drawing
-a breath and exhaling it. I did it because I was compelled to do it, not my
-parents or family, but by my own inner life in the world of music.
-There were times, let me make that clear, when I'd come home from school and
-I'd only have time to put my books down and get ready for the studio. Once
-there, I'd sing until late at night, until it was past my bedtime, really.
-There was a park across the street from the Motown studio, and I can
-remember looking at those kids playing games. I'd just stare at them in
-wonder - I couldn't imagine such freedom, such a carefree life - and wish
-more than anything that I had that kind of freedom, that I could walk away
-and be like them. So there were sad moments in my childhood. It's true for
-any child star. Elizabeth Taylor told me she felt the same way. When you're
-young and you're working, the world can seem awfully unfair. I wasn't forced
-to be little Michael the lead singer - I did it and I loved it - but it was
-hard work. If we were doing an album, for example, we'd go off to the studio
-after school and I might or might not get a snack. Sometimes there just
-wasn't time. I'd come home, exhausted, and it'd be eleven or twelve and past
-time to go to bed.
-So I very much identify with anyone who worked as a child. I know how they
-struggled, I know what they sacrificed. I also know what they learned. I've
-learned that it becomes more of a challenge as one gets older. I feel old
-for some reason. I really feel like an old soul, someone who's seen a lot
-and experienced a lot. Because of all the years I've clocked in, it's hard
-for me to accept that I am only twenty-nine. I've been in the business for
-twenty-four years. Sometimes I feel like I should be near the end of my
-life, turning eighty, with people patting me on the back. That's what comes
-from starting so young.
-When I first performed with my brothers, we were known as the Jacksons. We
-would later become the Jackson 5. Still later, after we left Motown, we
-would reclaim the Jacksons name again.
-Every one of my albums or the group's albums has been dedicated to our
-mother, Katherine Jackson, since we took over our own careers and began to
-produce our own music. My first memories are of her holding me and singing
-songs like "You Are My Sunshine" and "Cotton Fields." She sang to me and to
-my brothers and sisters often. Even though she had lived in Indiana for some
-time, my mother grew up in Alabama, and in that part of the country it was
-just as common for black people to be raised with country and western music
-on the radio as it was for them to hear spirituals in church. She likes
-Willie Nelson to this day. She has always had a beautiful voice and I
-suppose I got my singing ability from my mother and, of course, from God.
-Mom played the clarinet and the piano, which she taught my oldest sister,
-Maureen, whom we call Rebbie, to play, just as she'd teach my other older
-sister, LaToya. My mother knew, from an early age, that she would never
-perform the music she loved in front of others, not because she didn't have
-the talent and the ability, but because she was crippled by polio as a
-child. She got over the disease, but not without a permanent limp in her
-walk. She had to miss a great deal of school as a child, but she told us
-that she was lucky to recover at a time when many died from the disease. I
-remember how important it was to her that we got the sugar-cube vaccine. She
-even made us miss a youth club show one Saturday afternoon - that's how
-important it was in our family.
-My mother knew her polio was not a curse but a test that God gave her to
-triumph over, and she instilled in me a love of Him that I will always have.
-She taught me that my talent for singing and dancing was as much God's work
-as a beautiful sunset or a storm that left snow for children to play in.
-Despite all the time we spent rehearsing and travelling, Mom would find time
-to take me to the Kingdom Hall of the Jehovah's Witnesses, usually with
-Rebbie and LaToya.
-Years later, after we had left Gary, we performed on "The Ed Sullivan Show",
-the live Sunday night variety show where America first saw the Beatles,
-Elvis, and Sly and the Family Stone. After the show, Mr. Sullivan
-complimented and thanked each of us; but I was thinking about what he had
-said to me before the show. I had been wandering around backstage, like the
-kid in the Pepsi commercial, and ran into Mr. Sullivan. He seemed glad to
-see me and shook my hand, but before he let it go he had a special message
-for me. It was 1970, a year when some of the best people in rock were losing
-their lives to drugs and alcohol. An older, wiser generation in show
-business was unprepared to lose its very young. Some people had already said
-that I reminded them of Frankie Lymon, a great young singer of the 1950s who
-lost his life that way. Ed Sullivan may have been thinking of all this when
-he told me, "Never forget where your talent came from, that your talent is a
-gift from God."
-I was grateful for his kindness, but I could have told him that my mother
-had never let me forget. I never had polio, which is a frightening thing for
-a dancer to think about, but I knew God had tested me and my brothers and
-sisters in other ways - our large family, our tiny house, the small amount
-of money we had to make ends meet, even the jealous kids in the
-neighbourhood who threw rocks at our windows while we rehearsed, yelling
-that we'd never make it. When I think of my mother and our early years, I
-can tell you there are rewards that go far beyond money and public acclaim
-and awards.
-My mother was a great provider. If she found out that one of us had an
-interest in something, she would encourage it if there was any possible way.
-If I developed an interest in movie stars, for instance, she'd come home
-with an armful of books about famous stars. Even with nine children she
-treated each of us like an only child. There isn't one of us who's ever
-forgotten what a hard worker and great provider she was. It's an old story.
-Every child thinks their mother is the greatest mother in the world, but we
-Jacksons never lost that feeling. Because of Katherine's gentleness, warmth,
-and attention, I can't imagine what it must be like to grow up without a
-mother's love.
-One thing I know about children is that if they don't get the love they need
-from their parents, they'll get it from someone else and cling to that
-person, a grandparent, anyone. We never had to look for anyone else with my
-mother around. The lessons she taught us were invaluable. Kindness, love,
-and consideration for other people headed her list. Don't hurt people. Never
-beg. Never freeload. Those were sins at our house. She always wanted us to
-give , but she never wanted us to ask or beg. That's the way she is.
-I remember a good story about my mother that illustrates her nature. One
-day, back in Gary, when I was real little, this man knocked on everybody's
-door early in the morning. He was bleeding so badly you could see where he'd
-been around the neighbourhood. No one would let him in. Finally he got to
-our door and he started banging and knocking. Mother let him in at once.
-Now, most people would have been too afraid to do that, but that's my
-mother. I can remember waking up and finding blood on our floor. I wish we
-could all be more like Mum.
-The earliest memories I have of my father are of him coming home from the
-steel mill with a big bag of glazed doughnuts for all of us. My brothers and
-I could really eat back then and that bag would disappear with a snap of the
-fingers. He used to take us all to the merry-go-round in the park, but I was
-so young I don't remember that very well.
-My father has always been something of a mystery to me and he knows it. One
-of the few things I regret most is never being able to have a real closeness
-with him. He built a shell around himself over the years and, once he
-stopped talking about our family business, he found it hard to relate to us.
-We'd all be together and he'd just leave the room. Even today it's hard for
-him to touch on father and son stuff because he's too embarrassed. When I
-see that he is, I become embarrassed, too.
-My father did always protect us and that's no small feat. He always tried to
-make sure people didn't cheat us. He looked after our interests in the best
-ways. He might have made a few mistakes along the way, but he always thought
-he was doing what was right for his family. And, of course, most of what my
-father helped us accomplish was wonderful and unique, especially in regard
-to our relationships with companies and people in the business. I'd say we
-were among a fortunate few artists who walked away from a childhood in the
-business with anything substantial - money, real estate, other investments.
-My father set all these up for us. He looked out for both our interests and
-his. To this day I'm so thankful he didn't try to take all our money for
-himself the way so many parents of child stars have. Imagine stealing from
-your own children. My father never did anything like that. But I still don't
-know him, and that's sad for a son who hungers to understand his own father.
-He's still a mystery man to me and he may always be one.
-What I got from my father wasn't necessarily God-given, though the Bible
-says you reap what you sow. When we were coming along, Dad said that in a
-different way, but the message was just as clear: You could have all the
-talent in the world, but if you didn't prepare and plan, it wouldn't do you
-any good.
-Joe Jackson had always loved singing and music as much as my mother did, but
-he also knew there was a world beyond Jackson Street. I wasn't old enough to
-remember his band, the Falcons, but they came over to our house to rehearse
-on weekends. The music took them away from their jobs at the steel mill,
-where Dad drove a crane. The Falcons would play all over town, and in clubs
-and colleges around northern Indiana and Chicago. At the rehearsals at our
-house, Dad would bring his guitar out of the closet and plug it into the amp
-he kept in the basement. He'd always loved rhythm and blues and that guitar
-was his pride and joy. The closet where the guitar was kept was considered
-an almost sacred place. Needless to say, it was off-limits to us kids. Dad
-didn't go to Kingdom Hall with us, but both Mom and Dad knew that music was
-a way of keeping our family together in a neighbourhood where gangs
-recruited kids my brothers' ages. The three oldest boys would always have an
-excuse to around when the Falcons came over. Dad let them think they were
-being given a special treat by being allowed to listen, but he was actually
-eager to have them there.
-Tito watched everything that was going on with the greatest interest. He'd
-taken saxophone in school, but he could tell his hands were big enough to
-grab the chords and slip the riffs that my father played. It made sense that
-he'd catch on, because Tito looked so much like my father that we all
-expected him to share Dad's talents. The extent of the resemblance was scary
-as he got older. Maybe my father noticed Tito's zeal because he laid down
-rules for all my brothers: No one was to touch the guitar while he was out.
-Period.
-Therefore, Jackie, Tito, and Jermaine were careful to see that Mom was in
-the kitchen when they "borrowed" the guitar. They were also careful not to
-make any noise while removing it. They would then go back to our room and
-put on the radio or the little portable record player so they could play
-along. Tito would hoist the guitar onto his belly as he sat on the bed and
-prop it up. He took turns with Jackie and Jermaine, and they'd all try the
-scales they were learning in school as well as try to figure out how to get
-the "Green Onions" part they'd hear on the radio.
-By now I was old enough to sneak in and watch if I promised not to tell. One
-day Mom finally caught them, and we were all worried. She scolded the boys,
-but said she wouldn't tell Dad as long as we were careful. She knew that
-guitar was keeping them from running with a bad crowd and maybe getting beat
-up, so she wasn't about to take away anything that kept them within arm's
-reach.
-Of course, something had to give sooner or later, and one day a string
-broke. My brothers panicked. There wasn't time to get it repaired before Dad
-came home, and besides, none if us knew how to go about getting it fixed. My
-brothers never figured out what to do, so they put the guitar back in the
-closet and hoped fervently that my father would think it broke by itself. Of
-course, Dad didn't buy that, and he was furious. My sisters told me to stay
-out of it and keep a low profile. I heard Tito crying after Dad found out
-and I went to investigate, of course. Tito was on his bed crying when Dad
-came back and motioned for him to get up. Tito was scared, but my father
-just stood there, holding his favourite guitar. He gave Tito a hard,
-penetrating look and said, "Let me see what you can do."
-My brother pulled himself together and started to play a few runs he had
-taught himself. When my father saw how well Tito could play, he knew he'd
-obviously been practising and he realised that Tito and the rest of us
-didn't treat his favourite guitar as if it were a toy. It became clear to
-him that what had happened had been only an accident. At this point my
-mother stepped in and voiced her enthusiasm for our musical ability. She
-told him that we boys had talent and he should listen to us. She kept
-pushing for us, so one day he began to listen and he liked what he heard.
-Tito, Jackie, and Jermaine started rehearsing together in earnest. A couple
-of years later, when I was about five, Mom pointed out to my father that I
-was a good singer and could play the bongos. I became a member of the group.
-About then my father decided that what was happening in his family was
-serious. Gradually he began spending less time with the Falcons and more
-with us. We'd just woodshed together and he'd give us some tips and teach us
-techniques on the guitar. Marlon and I weren't old enough to play, but we'd
-watch when my father rehearsed the older boys and we were learning when we
-watched. The ban on using Dad's guitar still held when he wasn't around, but
-my brothers loved using it when they could. The house on Jackson Street was
-bursting with music. Dad and Mom had paid for music lessons for Rebbie and
-Jackie when they were little kids, so they had a good background. The rest
-of us had music class and band in the Gary schools, but no amount of
-practice was enough to harness all that energy.
-The Falcons were still earning money, however infrequent their gigs, and
-that extra money was important to us. It was enough to keep food on the
-table for a growing family but not enough to give us things that weren't
-necessary. Mom was working part-time at Sears, Dad was still working the
-mill job, and no one was going hungry, but I think, looking back, that
-things must have seemed one big dead end.
-One day Dad was late coming home and Mom began to get worried. By the time
-he arrived, she was ready to give him a piece of her mind, something we boys
-didn't mind witnessing once in a while just to see if he could take it like
-he dished it out, but when he poked his head through the door, he had a
-mischievous look on his face and he was hiding something behind his back. We
-were all shocked when he produced a gleaming red guitar, slightly smaller
-than the one in the closet. We were all hoping this meant we'd get the old
-one. But Dad said the new guitar was Tito's. We gathered around to admire
-it, while Dad told Tito he had to share it with anyone who would practice .
-We were not to take it to school to show it off. This was a serious present
-and that day was a momentous occasion for the Jackson family.
-Mom was happy for us, but she also knew her husband. She was more aware than
-we of the big ambitions and plans he had for us. He'd begun talking to her
-at night after we kids were asleep. He had dreams and those dreams didn't
-stop with one guitar. Pretty soon we were dealing with equipment, not just
-gifts. Jermaine got a bass and an amp. There were shakers for Jackie. Our
-bedroom and living room began to look like a music store. Sometimes I'd hear
-Mom and Dad fight when the subject of money was brought up, because all
-those instruments and accessories meant having to go without a little
-something we needed each week. Dad was persuasive, though, and he didn't
-miss a trick.
-We even had microphones in the house. They seemed like a real luxury at the
-time, especially to a woman who was trying to stretch a very small budget,
-but I've come to realise that having those microphones in our house wasn't
-just an attempt to keep up with the Joneses or anyone else in amateur night
-competitions. They were there to help us prepare. I saw people at talent
-shows, who probably sounded great at home, clam up the moment they got in
-front of a microphone. Others started screaming their songs like they wanted
-to prove they didn't need the mikes. They didn't have the advantage that we
-did - an advantage that only experience can give you. I think it probably
-made some people jealous because they could tell our expertise with the
-mikes gave us an edge. If that was true, we made so many sacrifices - in
-free time, schoolwork, and friends - that no one had the right to be
-jealous. We were becoming very good, but we were working like people twice
-our age.
-While I was watching my older brothers, including Marlon on the bongo drums,
-Dad got a couple of young guys named Johnny Jackson and Randy Rancifer to
-play trap drums and organ. Motown would later claim they were our cousins,
-but that was just an embellishment from the P.R. people, who wanted to make
-us seem like one big family. We had become a real band! I was like a sponge,
-watching everyone, and trying to learn everything I could. I was totally
-absorbed when my brothers were rehearsing or playing at charity events or
-shopping centres. I was most fascinated when watching Jermaine because he
-was the singer at the time and he was a big brother to me - Marlon was too
-close to me in age for that. It was Jermaine who would walk me to
-kindergarten and whose clothes would be handed down to me. When he did
-something, I tried to imitate him. When I was successful at it, my brothers
-and Dad would laugh, but when I began singing, they listened. I was singing
-in a baby voice then and just imitating sounds. I was so young I didn't know
-what many of the words meant, but the more I sang, the better I got.
-I always knew how to dance. I would watch Marlon's moves because Jermaine
-had the big bass to carry, but also because I could keep up with Marlon, who
-was only a year older then me. Soon I was doing most of the singing at home
-and preparing to join my brothers in public. Through our rehearsals, we were
-all becoming aware of our particular strengths and weaknesses as members of
-the group and the shift in responsibilities was happening naturally.
-Our family's house in Gary was tiny, only three rooms really, but at the
-time it seemed much larger to me. When you're that young, the whole world
-seems so huge that a little room can seem four times its size. When we went
-back to Gary years later, we were all surprised at how tiny that house was.
-I had remembered it as being large, but you could take five steps from the
-front door and you'd be out the back. It was really no bigger then a garage,
-but when we lived there it seemed fine to us kids. You see things from such
-a different perspective when you're young. Our school days in Gary are a
-blur for me. I vaguely remember being dropped off in front of my school on
-the first day of kindergarten, and I clearly remember hating it. I didn't
-want my mother to leave me, naturally, and I didn't want to be there.
-In time I adjusted, as all kids do, and I grew to love my teachers,
-especially the women. They were always very sweet to us and they just loved
-me. Those teachers were so wonderful; I'd be promoted from one grade to the
-next and they'd all cry and hug me and tell me how much they hated to see me
-leave their classes. I was so crazy about my teachers that I'd steal my
-mother's jewellery and give it to them as presents. They'd be very touched,
-but eventually my mother found out about it, and put an end to my generosity
-with her things. That urge that I had to give them something in return for
-all I was receiving was a measure of how much I loved them at that school.
-One day, in the first grade, I participated in a program that was put on
-before the whole school. Everyone of us in each class had to do something,
-so I went home and discussed it with my parents. We decided I should wear
-black pants and a white shirt and sing "Climb Ev'ry Mountain" from The Sound
-of Music . When I finished that song, the reaction in the auditorium
-overwhelmed me. The applause was thunderous and people were smiling; some of
-them were standing. My teachers were crying and I just couldn't believe it.
-I had made them all happy. It was such a great feeling. I felt a little
-confused too, because I didn't do anything special. I was just singing the
-way I sang at home every night. When you're performing, you don't realise
-what you sound like or how you're coming across. You just open your mouth
-and sing.
-Soon Dad was grooming us for talent contests. He was a great trainer, and he
-spent a lot of money and time working with us. Talent is something that God
-gives to a performer, but our father taught us how to cultivate it. I think
-we also had a certain instinct for show business. We loved to perform and we
-put everything we had into it. He's sit at home with us every day after
-school and rehearse us. We'd perform for him and he'd critique us. If you
-messed up, you got hit, sometimes with a belt, sometimes with a switch. My
-father was real strict with us - real strict. Marlon was the one who got in
-trouble all the time. On the other hand, I'd get beaten for things that
-happened mostly outside rehearsal. Dad would make me so mad and hurt that
-I'd try to get back at him and get beaten all the more. I'd take a shoe and
-throw it at him, or I'd just fight back, swinging my fists. That's why I got
-it more than all my brothers combined. I would fight back and my father
-would kill me, just tear me up. Mother told me I'd fight back even when I
-was very little, but I don't remember that. I do remember running under
-tables to get away from him, and making him angrier. We had a turbulent
-relationship.
-Most of the time, however, we just rehearsed. We always rehearsed.
-Sometimes, late at night, we'd have time to play games or with our toys.
-There might be a game of hide-and-go-seek or we'd jump rope, but that was
-about it. The majority of our time was spent working. I clearly remember
-running into the house with my brothers when my father came home, because
-we'd be in big trouble if we weren't ready to start rehearsals on time.
-Through all this, my mother was completely supportive. She had been the one
-who first recognised our talent and she continued to help us realise our
-potential. It's hard to imagine that we would have gotten where we did
-without her love and good humour. She worried about the stress we were under
-and the long hours of rehearsal, but we wanted to be the best we could be
-and we really loved music.
-Music was important in Gary. We had our own radio stations and nightclubs,
-and there was no shortage of people who wanted to be on them. After Dad ran
-our Saturday afternoon rehearsals, he'd go see a local show or even drive
-all the way to Chicago to see someone perform. He was always watching for
-things that could help us down the road. He'd come home and tell us what
-he'd seen and who was doing what. He kept up on all the latest stuff,
-whether it was a local theatre that ran contests we could enter or a
-Cavalcade of Stars show with great acts whose clothes or moves we might
-adapt. Sometimes I wouldn't see Dad until I got back from Kingdom Hall on
-Sundays, but as soon as I ran into the house he'd be telling me what he'd
-seen the night before. He'd assure me I could dance on one leg like James
-Brown if I'd only try this step. There I'd be, fresh out of church, and back
-in show business.
-We started collecting trophies with our act when I was six. Our lineup was
-set; the group featured me at second from the left, and Jackie on my right.
-Tito and his guitar took stage right, with Marlon next to him. Jackie was
-getting tall and he towered over Marlon and me. We kept that setup for
-contest after contest and it worked well. While other groups we'd meet would
-fight among themselves and quit, we were becoming more polished and
-experienced. The people in Gary who came regularly to see the talent shows
-got to know us, so we would try to top ourselves and surprise them. We
-didn't want them to begin to feel bored by our act. We knew change was
-always good, that it helped us grow, so we were never afraid of it.
-Winning an amateur night or talent show in a ten-minute, two-song set took
-as much energy as a ninety-minute concert. I'm convinced that because
-there's no room for mistakes, your concentration burns you up inside more on
-one or two songs than it does when you have the luxury of twelve or fifteen
-in a set. These talent shows were our professional education. Sometimes we'd
-drive hundreds of miles to do one song or two and hope the crowd wouldn't be
-against us because we weren't local talent. We were competing against people
-of all ages and skills, from drill teams to comedians to other singers and
-dancers like us. We had to grab that audience and keep it. Nothing was left
-to chance, so clothes, shoes, hair, everything had to be the way Dad planned
-it. We really looked amazingly professional. After all this planning, if we
-performed the songs the way we rehearsed them, the awards would take care of
-themselves. This was true even when we were in the Wallace High part of town
-where the neighbourhood had its own performers and cheering sections and we
-were challenging them right in their own backyards. Naturally, local
-performers always had their own very loyal fans, so whenever we went off our
-turf and onto someone else's, it was very hard. When the master of
-ceremonies held his hand over our heads for the "applause meter," we wanted
-to make sure that the crowd knew we had given them more than anyone else.
-As players, Jermaine, Tito, and the rest of us were under tremendous
-pressure. Our manger was the kind who reminded us that James Brown would
-fine his Famous Flames if they missed a cue or bent a note during a
-performance. As lead singer, I felt I - more than the others - couldn't
-afford an "off night." I can remember being onstage at night after being
-sick in bed all day. It was hard to concentrate at those times, yet I knew
-all the things my brothers and I had to do so well that I could have
-performed the routines in my sleep. At times like that, I had to remind
-myself not to look in the crowd for someone I knew, or at the emcee, both of
-which can distract a young performer. We did songs that people knew from the
-radio or songs that my father knew were already classics. If you messed up,
-you heard about it because the fans knew those songs and they knew how they
-were supposed to sound. If you were going to change an arrangement, it
-needed to sound better than the original.
-We won the citywide talent show when I was eight with our version of the
-Temptations' song "My Girl." The contest was held just a few blocks away at
-Roosevelt High. From Jermaine's opening bass notes and Tito's first guitar
-licks to all of us singing the chorus, we had people on their feet for the
-whole song. Jermaine and I traded verses while Marlon and Jackie spun like
-tops. It was a wonderful feeling for all of us to pass that trophy, our
-biggest yet, back and forth between us. Eventually it was propped on the
-front seat like a baby and we drove home with Dad telling us, "When you do
-it like you did tonight they can't not give it to you."
-We were now Gary city champions and Chicago was our next target because it
-was the area that offered the steadiest work and the best word of mouth for
-miles and miles. We began to plan our strategy in earnest. My father's group
-played the Chicago sound of Muddy Waters and Howlin' Wolf, but he was
-open-minded enough to see that the more upbeat, slicker sounds that appealed
-to us kids had a lot to offer. We were lucky because some people his age
-weren't that hip. In fact, we knew musicians who thought the sixties sound
-was beneath people their age, but not Dad. He recognised great singing when
-he heard it, even telling us that he saw the great doo-wop group from Gary,
-the Spaniels, when they were stars not that much older than we. When Smokey
-Robinson of the Miracles sang a song like "Tracks of My Tears" or "Ooo, Baby
-Baby," he'd be listening as hard as we were. The sixties didn't leave
-Chicago behind musically, Great singers like the Impressions with Curtis
-Mayfield, Jerry Butler, Major Lance, and Tyrone Davis were playing all over
-the city at the same places we were. At this point my father was managing us
-full-time, with only a part-time shift at the mill. Mom had some doubts
-about the soundness of this decision, not because she didn't think we were
-good but because she didn't know anyone else who was spending the majority
-of his time trying to break his children into the music business. She was
-even less thrilled when Dad told her he had booked us as a regular act at
-Mr. Lucky's, a Gary nightspot. We were being forced to spend our weekends in
-Chicago and other places trying to win an ever-increasing number of amateur
-shows, and these trips were expensive, so the job at Mr. Lucky's was a way
-to make it all possible. Mom was surprised at the response we were getting
-and she was very pleased with the awards and the attention, but she worried
-about us a lot. She worried about me because of my age. "This is quite a
-life for a nine-year-old," she would say, staring intently at my father.
-I don't know what my brothers and I expected, but the nightclub crowds
-weren't the same as the Roosevelt High crowds. We were playing between bad
-comedians, cocktail organists, and strippers. With my Witness upbringing,
-Mom was concerned that I was hanging out with the wrong people and getting
-introduced to things I'd be better off learning much later in life. She
-didn't have to worry; just one look at some of those strippers wasn't going
-to get me that interested in trouble - certainly not at nine years old! That
-was an awful way to live, though, and it made us all the more determined to
-move on up the circuit and as far away from that life as we could go.
-Being at Mr. Lucky's meant that for the first time in our lives we had a
-whole show to do - five sets a night, six nights a week - and if Dad could
-get us something out of town for the seventh night, he was going to do it.
-We were working hard, but the bar crowds weren't bad to us. They liked James
-Brown and Sam and Dave just as much as we did and, besides, we were
-something extra that came free with the drinking and the carrying on, so
-they were surprised and cheerful. We even had some fun with them on one
-number, the Joe Tex song "Skinny Legs and All." We'd start the song and
-somewhere in the middle I'd go out into the audience, crawl under the
-tables, and pull up the ladies' skirts to look under. People would throw
-money as I scurried by, and when I began to dance, I'd scoop up all the
-dollars and coins that had hit the floor earlier and push them into the
-pockets of my jacket.
-I wasn't really nervous when we began playing in because of all the
-experience I'd had with talent show audiences. I was always ready to go out
-and perform, you know, just do it - sing and dance and have some fun.
-We worked in more than one club that had strippers in those days. I used to
-stand in the wings of this one place in Chicago and watch a lady whose name
-was Mary Rose. I must have been nine or ten. This girl would take off her
-clothes and her panties and throw them to the audience. The men would pick
-them up and sniff them and yell. My brothers and I would be watching all
-this, taking it in, and my father wouldn't mind. We were exposed to a lot
-doing that kind of circuit. In one place they had cut a little hole in the
-musician's dressing room wall that also happened to act as a wall in the
-ladies' bathroom. You could peek through this hole, and I saw stuff I've
-never forgotten. Guys on that circuit were so wild, they did stuff like
-drilling little holes into the walls of the ladies' loo all the time. Of
-course, I'm sure that my brothers and I were fighting over who got to look
-through the hole. "Get outta the way, it's my turn!" Pushing each other away
-to make room for ourselves.
-Later, when we did the Apollo Theater in New York, I saw something that
-really blew me away because I didn't know things like that existed. I had
-seen quite a few strippers, but that night this one girl with gorgeous
-eyelashes and long hair came out and did her routine. She put on a great
-performance. All of a sudden, at the end, she took off her wig, pulled a
-pair of big oranges out of her bra, and revealed that she was a hard-faced
-guy under all that makeup. That blew me away. I was only a child and
-couldn't even conceive of anything like that. But I looked out at the
-theatre audience and they were going for it. applauding wildly and cheering.
-I'm just a little kid, standing in the wings, watching this crazy stuff.
- I was blown away.
-As I said, I received quite an education as a child. More than most. Perhaps
-this freed me to concentrate on other aspects of my life as an adult.
-One day, not long after we'd been doing successfully in Chicago clubs, Dad
-brought home a tape of some songs we'd never heard before. We were
-accustomed to doing popular stuff off the radio, so we were curious why he
-began playing these songs over and over again, just one guy singing none too
-well with some guitar chords in the background. Dad told us that the man on
-the tape wasn't really a performer but a songwriter who owned a recording
-studio in Gary. His name was Mr. Keith and he had given us a week to
-practice his songs to see if we could make a record out of them. Naturally,
-we were excited. We wanted to make a record, any record.
-We worked strictly on the sound, ignoring the dancing routines we'd normally
-work up for a new song. It wasn't as much fun to do a song that none of us
-knew, but we were already professional enough to hide our disappointment and
-give it all we could. When we were ready and felt we had done our best with
-the material, Dad got us on tape after a few false starts and more than a
-few pep talks, of course. After a day or two of trying to figure out whether
-Mr. Keith liked the tape we had made for him, Dad suddenly appeared with
-more of his songs for us to learn for our first recording session.
-Mr. Keith, like Dad, was a mill worker who loved music, only he was more
-into the recording and business end. His studio and label were called
-Steeltown. Looking back on all this, I realize Mr. Keith was just as excited
-as we were. His studio was downtown, and we went early one Saturday morning
-before "The Road Runner Show," my favourite show at the time. Mr. Keith met
-us at the door and opened the studio. He showed us a small glass booth with
-all kinds of equipment in it and explained what various tasks each
-performed. It didn't look like we'd have to lean over any more tape
-recorders, at least not in this studio. I put on some big metal headphones,
-which came halfway down my neck, and tried to make myself look ready for
-anything.
-As my brothers were figuring out where to plug in their instruments and
-stand, some backup singers and a horn section arrived. At first I assumed
-they were there to make a record after us. We were delighted and amazed when
-we found out they were there to record with us. We looked over at Dad, but
-he didn't change expression. He'd obviously known about it and approved.
-Even then people knew not to throw Dad surprises. We were told to listen to
-Mr. Keith, who would instruct us while we were in the booth. If we did as he
-said, the record would take care of itself.
-After a few hours, we finished Mr. Keith's first song. Some of the backup
-singers and horn players hadn't made records either and found it difficult,
-but they also didn't have a perfectionist for a manager, so they weren't
-used to doing things over and over the way we were. It was at times like
-these that we realized how hard Dad worked to make us consummate
-professionals. We came back the next few Saturdays, putting the songs we'd
-rehearsed during the week into the can and taking home a new tape of Mr.
-Keith's each time. One Saturday, Dad even brought his guitar in to perform
-with us. It was the one and only time he ever recorded with us. After the
-records were pressed, Mr. Keith gave us some copies so that we could sell
-them between sets and after shows. We knew that wasn't how the big groups
-did it, but everyone had to start someplace, and in those days, having a
-record with your group's name on it was quite something. We felt very
-fortunate.
-That first Steeltown single, "Big Boy," had a mean bass line. It was a nice
-song about a kid who wanted to fall in love with some girl. Of course, in
-order to get the full picture, you have to imagine a skinny nine-year-old
-singing this song. The words said I didn't want to hear fairy tales any
-more, but in truth I was far too young to grasp the real meanings of most of
-the words in these songs. I just sang what they gave me.
-When that record with its killer bass line began to get radio play in Gary,
-we became a big deal in out neighborhood. No one could believe we had our
-own record. We had a hard time believing it.
-After that first Steeltown record, we began to aim for all the big talent
-shows in Chicago. Usually the other acts would look me over carefully when
-they met me, because I was so little, particularly the ones who went on
-after us. One day Jackie was cracking up, like someone had told him the
-funniest joke in the world. This wasn't a good sign right before a show, and
-I could tell Dad was worried he was going to screw up onstage. Dad went over
-to say a word to him, but Jackie whispered something in his ear and soon Dad
-was holding his sides, laughing. I wanted to know the joke too. Dad said
-proudly that Jackie had overheard the headlining act talking among
-themselves. One guy said, "We'd better not let those Jackson 5 cut us
-tonight with that midget they've got."
-I was upset at first because my feelings were hurt. I thought they were
-being mean. I couldn't help it that I was the shortest, but soon all the
-other brothers were cracking up too. Dad explained that they weren't
-laughing at me. He told me that I should be proud, the group was talking
-trash because they thought I was a grown-up posing as a child like one of
-the Munchkins in The Wizard Of Oz. Dad said that if I had those slick guys
-talking like the neighborhood kids who gave us grief back in Gary, then we
-had Chicago on the run.
-We still had some running of our own to do. After we played some pretty good
-clubs in Chicago, Dad signed us up for the Royal Theatre amateur night
-competition in town. He had gone to see B. B. King at the Regal the night he
-made his famous live album. When Dad gave Tito that sharp red guitar years
-earlier, we had teased him by thinking of girls he could name his guitar
-after, like B. B. King's Lucille. We won that show for three straight weeks,
-with a new song every week to keep the regular members of the audience
-guessing. Some of the other performers complained that it was greedy for us
-to keep coming back, but they were after the same thing we were. There was a
-policy that if you won the amateur night three straight times, you'd be
-invited back to do a paid show for thousands of people, not dozens like the
-audiences we were playing to in bars. We got that opportunity and the show
-was headlined by Gladys Knight and the Pips, who were breaking in a new song
-no one knew called "I Heard It Through The Grapevine." It was a heady night.
-After Chicago, we had one more big amateur show we really felt we needed to
-win: the Apollo Theatre in New York City. A lot of Chicago people thought a
-win at the Apollo was just a good luck charm and nothing more, but Dad saw
-it as much more than that. He knew New York had a high caliber of talent
-just like Chicago and he knew there were more record people and professional
-musicians in New York than Chicago. If we could make it in New York, we
-could make it anywhere. That's what a win at the Apollo meant to us.
-Chicago had sent a kind of scouting report on us to New York and our
-reputation was such that the Apollo entered us in the "Superdog" finals,
-even though we hadn't been to any of the preliminary competitions. By this
-time, Gladys Knight had already talked to us about coming to Motown, as had
-Bobby Taylor, a member of the Vancouvers, with whom my father had become
-friendly. Dad had told them we'd be happy to audition for Motown, but that
-was in out future. We got to the Apollo at 125th Street early enough to get
-a guided tour. We walked through the theatre and stared at all of the
-pictures of the stars who'd played there, white as well as black. The
-manager concluded by showing us to the dressing room, but by then I had
-found pictures of all my favourites.
-While my brothers and I were paying dues on the so-called "chitlin'
-circuit," opening for other acts, I carefully watched all the stars because
-I wanted to learn as much as I could. I'd stare at their feet, the way they
-held their arms, the way they gripped a microphone, trying to decipher what
-they were doing and why they were doing it. After studying James Brown from
-the wings, I knew every step, every grunt, every spin and turn. I have to
-say he would give a performance that would exhaust you, just wear you out
-emotionally. His whole physical presence, the fire coming out of his pores,
-would be phenomenal. You'd feel every bead of sweat on his face and you'd
-know what he was going through. I've never seen anybody perform like him.
-Unbelievable, really. When I watched somebody I liked, I'd be there. James
-Brown, Jackie Wilson, Sam and Dave, the O'Jays - they all used to really
-work an audience. I might have learned more from watching Jackie Wilson than
-from anyone or anything else. All of this was a very important part of my
-education.
-We would stand offstage, behind the curtains, and watch everyone come off
-after performing and they'd be all sweaty. I'd just stand aside in awe and
-watch them walk by. And they would all wear these beautiful patent-leather
-shoes. My whole dream seemed to center on having a pair of patent-leather
-shoes. I remember being so heartbroken because they didn't make them in
-little boys' sizes. I'd go from store to store looking for patent-leather
-shoes and they'd say, "We don't make them that small." I was so sad because
-I wanted to have shoes that looked the way those stage shoes looked,
-polished and shining, turning red and orange when the lights hit them. Oh,
-how I wanted some patent-leather shoes like the ones Jackie Wilson wore.
-Most of the time I'd be alone backstage. My brothers would be upstairs
-eating and talking and I'd be down in the wings, crouching real low, holding
-on to the dusty, smelly curtain and watching the show. I mean, I really did
-watch every step, every move, every twist, every turn, every grind, every
-emotion, every light move. That was my education and my recreation. I was
-always there when I had free time. My father, my brothers, other musicians,
-they all knew where to find me. They would tease me about it, but I was so
-absorbed in what I was seeing, or in remembering what I had just seen, that
-I didn't care. I remember all those theatres: the Regal, the Uptown, the
-Apollo - too many to name. The talent that came out of those places is of
-mythical proportions. The greatest education in the world is watching the
-masters at work. You couldn't teach a person what I've learned just standing
-and watching. Some musicians - Springsteen and U2, for example - may feel
-they got their education from the streets. I'm a performed at heart. I got
-mine from the stage.
-Jackie Wilson was on the wall at the Apollo. The photographer captured him
-with one leg up, twisted, but not out of position from catching the mike
-stand he'd just whipped back and forth. He could have been singing a sad
-lyric like "Lonely Teardrops," and yet he had that audience so bug-eyed with
-his dancing that no one could feel sad or lonely.
-Sam and Dave's picture was down the corridor, next to an old big-band shot.
-Dad had become friendly with Sam Moore. I remember being happily amazed that
-he was nice to me when I met him for the first time. I had been singing his
-songs for so long that I thought he'd want to box my ears. And not far from
-them was "The King of Them All, Mr. Dynamite, Mr. Please Please Himself,"
-James Brown. Before he came along, a singer was a singer and a dancer was a
-dancer. A singer might have danced and a dancer might have sung, but unless
-you were Fred Astaire or Gene Kelly, you probably did one better than the
-other, especially in a live performance. But he changed all that. No
-spotlight could keep up with him when he skidded across the stage - you had
-to flood it! I wanted to be that good.
-We won the Apollo amateur night competition, and I felt like going back to
-those photos on the walls and thanking my "teachers." Dad was so happy he
-said he could have flown back to Gary that night. He was on top of the world
-and so were we. My brothers and I had gotten straight A's and we were hoping
-we might get to skip a "grade." I certainly sensed that we wouldn't be doing
-talent shows and strip joints much longer.
-In the summer of 1968 we were introduced to the music of a family group that
-was going to change our sound and our lives. They didn't all have the same
-last name, they were black and white, men and women, and they were called
-Sly and the Family Stone. They had some amazing hits over the years, such as
-"Dance to the Music," "Stand," "Hot Fun in the Summertime." My brothers
-would point at me when they heard the line about the midget standing tall
-and by now I'd laugh along. We heard these songs all over the dial, even on
-the rock stations. They were a tremendous influence on all of us Jacksons
-and we owe them a lot.
-After the Apollo, we kept playing with one eye on the map and one ear to the
-phone. Mom and Dad had a rule about no more than five minutes a call, but
-when we came back from the Apollo, even five minutes was too long. We had to
-keep the lines clear in case anyone from a record company wanted to get in
-touch with us. We lived in fear of having them get a busy signal. We wanted
-to hear from one record company in particular, and if they called, we wanted
-to answer.
-While we waited, we found out that someone who had seen us at the Apollo had
-recommended us to "The David Frost Show" in New York City. We were going to
-be on TV! That was the biggest thrill we'd ever had. I told everyone at
-school, and told the ones who didn't believe me twice. We were going to
-drive out there in a few days. I was counting the hours. I had imagined the
-whole trip, trying to figure out what the studio would be like and how it
-would be to look into a television camera.
-I came home with the travelling work my teacher had made up in advance. We
-had one more dress rehearsal and then we'd make a final song selection. I
-wondered which songs we'd be doing.
-That afternoon, Dad said the trip to New York was cancelled. We all stopped
-in our tracks and just stared at him.
-We were shocked. I was ready to cry. We had been about to get our big break.
-How could they do this to us? What was going on? Why had Mr. Frost changed
-his mind? I was reeling and I think everyone else was, too. "I cancelled
-it," my father announced calmly. Again we all stared at him, unable to
-speak. "Motown called." A chill ran down my spine.
-I remember the days leading up to that trip with near-perfect clarity. I can
-see myself waiting outside Randy's first-grade classroom. It was Marlon's
-turn to walk him home, but we switched for today.
-Randy's teacher wished me luck in Detroit, because Randy had told her we
-were going to Motown to audition. He was so excited that I had to remind
-myself that he didn't really know what Detroit was. All the family had been
-talking about was Motown, and Randy didn't even know what a city was. The
-teacher told me he was looking for Motown on the globe in the classroom. She
-said that in her opinion we should do "You Don't Know Like I Know" the way
-she saw us do it at the Regal in Chicago when a bunch of teachers drove over
-to see us. I helped Randy put his coat on and politely agreed to keep it in
-mind - knowing that we couldn't do a Sam and Dave song at a Motown audition
-because they were on Stax, a rival label. Dad told us the companies were
-serious about that kind of stuff, so he wanted us to know there'd be no
-messing around when we got there. He looked at me and said he'd like to see
-his ten-year-old singer make it to eleven.
-We left the Garrett Elementary School building for the short walk home, but
-we had to hurry. I remember getting anxious as a car swept by, then another.
-Randy took my hand, and we waved to the crossing guard. I knew La Toya would
-have to go out if her way tomorrow to take Randy to school because Marlon
-and I would be staying over in Detroit with the others.
-The last time we played at the Fox Theatre in Detroit, we left right after
-the show and got back to Gary at five o'clock in the morning. I slept in the
-car most of the way, so going to school that morning wasn't as bad as it
-might have been. But by the afternoon three o'clock rehearsal I was dragging
-around like someone with lead weights for feet.
-We could have left that night right after our set, since we were third on
-the bill, but that would have meant missing the headliner, Jackie Wilson.
-I'd seen him on other stages, but at the Fox he and his band were on a
-rising stage that moved up as he start his show. Tired as I was after school
-the next day, I remember trying some of those moves in rehearsal after
-practising in front of a long mirror in the bathroom at school while the
-other kids looked on. My father was pleased and we incorporated those steps
-into one of my routines.
-Just before Randy and I turned the corner onto Jackson Street, there was a
-big puddle. I looked for cars but there weren't any, so I let go of Randy's
-hand and jumped the puddle, catching on my toes so I could spin without
-getting the cuffs of my corduroys wet. I looked back at Randy, knowing that
-he wanted to do the things I did. He stepped back to get a running start,
-but I realised that it was a pretty big puddle, too big for him to cross
-without getting wet, so, being a big brother first and a dance teacher
-second, I caught him before he landed short and got wet.
-Across the street the neighbourhood kids were buying candy, and even some of
-the kids who were giving me a hard time at school asked when we were going
-to Motown. I told them and bought candy for them and Randy, too, with my
-allowance. I didn't want Randy to feel bad about my going away.
-As we approached the house I heard Marlon yell, "Someone shut that door!"
-The side of out VW minibus was wide open, and I shuddered, thinking about
-how cold it was going to be on the long ride up to Detroit. Marlon had beat
-us home and was already helping Jackie load the bus with our stuff. Jackie
-and Tito got home in plenty of time for once: They were supposed to have
-basketball practice, but the winter in Indiana had been nothing but slush
-and we were anxious to get a good start. Jackie was on the high school
-basketball team that year, and Dad liked to say that the next time we went
-to play in Indianapolis would be when Roosevelt went to the state
-championships. The Jackson 5 would play between the evening and morning
-games, and Jackie would sink the winning shot for the title. Dad liked to
-tease us, but you never knew what might happen with the Jacksons. He wanted
-us to be good at many things, not just music. I think maybe he got that
-drive from his father, who taught school. I know my teachers were never as
-hard on us as he was, and they were getting paid to be tough and demanding.
-Mom came to the door and gave us the thermos and the sandwiches she had
-packed. I remember her telling me not to rip the dress shirt she had packed
-for me after sewing it up the night before. Randy and I helped put some
-things in the bus and then went back into the kitchen, where Rebbie was
-keeping one eye on Dad's supper and the other on little Janet, who was in
-the high chair.
-Rebbie's life was never easy as the oldest. We knew that as soon as the
-Motown audition was over, we'd find out if we had to move or not. If we did,
-she was going to move South with her fiance. She always ran things when Mom
-was at night school finishing the high school diploma she was denied because
-of her illness. I couldn't believe it when Mom told us she was going to get
-her diploma. I remember worrying that she'd have to go to school with kids
-Jackie's or Tito's age and that they'd laugh at her. I remember how she
-laughed when I told her this and how she patiently explained that she'd be
-with other grown-ups. It was interesting having a mother who did homework
-like the rest of us.
-Loading up the bus was easier than usual. Normally Ronnie and Johnny would
-have come to back us up, but Motown's own musicians would be playing being
-us, so we were going alone. Jermaine was in our room finishing some of his
-assignments when I walked in. I knew he wanted to get them out of the way.
-He told me that we ought to take off for Motown by ourselves and leave Dad,
-since Jackie had taken driver's ed and was in possession of a set of keys.
-We both laughed, but deep down I couldn't imagine going without Dad. Even on
-the occasions when Mom led out after-school rehearsals because Dad hadn't
-come home from his shift on time, it was still like having him there because
-she acted as his eyes and ears. She always knew what had been good the night
-before and what had gotten sloppy today. Dad would pick it up from there at
-night. It seemed to me that they almost gave each other signals or something
-- Dad could always tell if we had been playing like we were supposed to by
-some invisible indication from Mom.
-There was no long good-bye at the door when we left for Motown. Mom was used
-to our being away for days, and during school vacations. LaToya pouted a
-little because she wanted to go. She had only seen us in Chicago, and we had
-never been able to stay long enough in places like Boston of Phoenix to
-bring her back anything. I think our lives must have seemed pretty glamorous
-to her because she had to stay home and go to school. Rebbie had her hands
-full trying to put Janet to sleep, but she called good-bye and waved. I gave
-Randy a last pat on the head and we were off.
-Dad and Jackie went over the map as we drove away, mostly out of habit,
-because we had been to Detroit before, of course. We passed Mr. Keith's
-recording studio downtown by City Hall as we made our way through town. We
-had done some demos at Mr. Keith's that Dad sent to Motown after the
-Steeltown record. The sun was going down when we hit the highway. Marlon
-announced that if we heard one of our records on WVON, it was going to bring
-us luck. We all nodded. Dad asked us if we remembered what WVON stood for as
-he nudged Jackie to keep quiet. I kept looking out the window, thinking
-about the possibilities that lay ahead, but Jermaine jumped in. "Voice of
-the Negro," he said. Soon we were calling roll all over the dial. "WGN -
-World's Greatest Newspaper." The Chicago Tribune owned it.) "WLS - World's
-Largest Store." (Sears) "WCFL . . ." We stopped, stumped. "Chicago
-Federation of Labor," Dad said, motioning for the thermos. We turned onto
-I-94, and the Gary station faded into a Kalamazoo station. We began flipping
-around, looking for Beatle music on CKLW from Windsor, Ontario, Canada.
-I had always been a Monopoly fan at home, and there was something about
-driving to Motown that was a little like that game. In Monopoly you go
-around the board buying things and making decisions; the "chitlin' circuit"
-of theatres where we played and won contests was kind of like a Monopoly
-board full of possibilities and pitfalls. After all the stops along the way,
-we finally landed at the Apollo Theatre in Harlem, which was definitely Park
-Place for young performers like us. Now we were on our way up Boardwalk,
-heading for Motown. Would we win the game or slide past Go with a long board
-separating us from our goal for another round?
-There was something changing in me, and I could feel it, even shivering in
-the minibus. For years we'd make the drive over to Chicago wondering if we
-were good enough to ever get out of Gary, and we were. Then we took the
-drive to New York, certain that we'd fall off the edge of the earth if we
-weren't good enough to make it there. Even those nights in Philadelphia and
-Washington didn't reassure me enough to keep me from wondering if there
-wasn't someone or some group we didn't know about in New York who could beat
-us. When we tore it down at the Apollo, we finally felt that nothing could
-stand in our way. We were going to Motown, and nothing there was going to
-surprise us either. We were going to surprise them, just like we always did.
-Dad pulled the typewritten directions out of the glove compartment and we
-pulled off the highway, passing the Woodward Avenue exit. There weren't many
-people on the streets because it was a school night for everybody else.
-Dad was a little nervous about whether our accommodations would be okay,
-which surprised me until I realised the Motown people had picked the hotel.
-We weren't used to having things done for us. We liked to be our own bosses.
-Dad had always been our booking agent, travel agent, and manager. When he
-wasn't taking care of the arrangements, Mom was. So it was no wonder that
-even Motown managed to make Dad feel suspicious that he should have made the
-reservations, that he should have handled everything.
-We stayed at the Gotham Hotel. The reservations had been made and everything
-was in order. There was a TV in our room, but all the stations had signed
-off, and with the audition at ten o'clock, we weren't going to get to stay
-up any later anyway. Dad put us right to bed, locked the door, and went out.
-Jermaine and I were too tired to even talk.
-We were all up on time the next morning; Dad saw to that. But, in truth, we
-were just as excited as he was and hopped out of bed when we called us. The
-audition was unusual for us because we hadn't played in many places where
-they expected us to be professional. We knew it was going to be difficult to
-judge whether we were doing well. We were used to audience response whether
-we were competing or just performing at a club, but Dad had told us the
-longer we stayed, the more they wanted to hear.
-We climbed into the VW, after cereal and milk at the coffee shop. I noticed
-they offered grits on the menu, so I knew there were a lot of Southern
-people who stayed there. We had never been to the South then and wanted to
-visit Mom's part of the country someday. We wanted to have a sense of our
-roots and those of other black people, especially after what had happened to
-Dr. King. I remember so well the day he died. Everyone was torn up. We
-didn't rehearse that night. I went to Kingdom Hall with Mom and some of the
-others. People were crying like they had lost a member of their own family.
-Even the men who were usually pretty unemotional were unable to control
-their grief. I was too young to grasp the full tragedy of the situation, but
-when I look back on that day now, it makes me want to cry - for Dr. King,
-for his family, and for all of us.
-Jermaine was the first to spot the studio, which was known as Hitsville,
-U.S.A. It looked kind of run-down, which was not what I'd expected. We
-wondered who we might see, who might be there making a record that day. Dad
-had coached us to let him do all the talking. Our job was to perform like
-we'd never performed before. And that was asking a lot, because we always
-put everything into each performance, but we knew what he meant.
-There were a lot of people waiting inside, but Dad said the password and a
-man in a shirt and tie came out to meet us. He knew each of our names, which
-astounded us. He asked us to leave our coats there and follow him. The other
-people just stared through us like we were ghosts. I wondered who they were
-and what their stories were. Had they travelled far? Had they been here day
-after day hoping to get in without an appointment?
-When we entered the studio, one of the Motown guys was adjusting a movie
-camera. There was an area set up with instruments and microphones. Dad
-disappeared into one of the sound booths to talk to someone. I tried to
-pretend that I was at the Fox Theatre, on the rising stage, and this was
-just business as usual. I decided, looking around, that if I ever built my
-own studio, I'd get a mike like the one they had at the Apollo, which rose
-out of the floor. I nearly fell on my face once running down those basement
-steps while trying to find out where it went when it slowly disappeared
-beneath the stage floor.
-The last song we sang was "Who's Lovin' You." When it ended, no one
-applauded or said a word. I couldn't stand not knowing, so I blurted, "How
-was that?" Jermaine shushed me. The older guys who were backing us up were
-laughing about something. I looked at them out of the corner of my eye.
-"Jackson Jive, huh?" one of them called out with a big grin on his face. I
-was confused, I think my brothers were too.
-The man who had led us back said, "Thanks for coming up." We looked at Dad's
-face for some indication, but he didn't seem pleased or disappointed. It was
-still daylight out when we left. We took I-94 back to Gary, subdued, knowing
-there was homework to do for class tomorrow, wondering if that was all there
-was to that.`,
+    title: "THE FUNDAMENTALS: Why Tiny Changes Make a Big Difference",
+    content: `1
+The Surprising Power of Atomic Habits
+THE FATE OFBritish Cycling changed one day in 2003. The organization, which was
+the governing body for professional cycling in Great Britain, had recently hired
+Dave Brailsford as its new performance director. At the time, professional
+cyclists in Great Britain had endured nearly one hundred years of mediocrity.
+Since 1908, British riders had won just a single gold medal at the Olympic
+Games, and they had fared even worse in cycling’s biggest race, the Tour de
+France. In 110 years, no British cyclist had ever won the event.
+In fact, the performance of British riders had been so underwhelming that one
+of the top bike manufacturers in Europe refused to sell bikes to the team because
+they were afraid that it would hurt sales if other professionals saw the Brits using
+their gear.
+Brailsford had been hired to put British Cycling on a new trajectory. What
+made him different from previous coaches was his relentless commitment to a
+strategy that he referred to as “the aggregation of marginal gains,” which was the
+philosophy of searching for a tiny margin of improvement in everything you do.
+Brailsford said, “The whole principle came from the idea that if you broke down
+everything you could think of that goes into riding a bike, and then improve it by
+1 percent, you will get a significant increase when you put them all together.”
+Brailsford and his coaches began by making small adjustments you might
+expect from a professional cycling team. They redesigned the bike seats to make
+them more comfortable and rubbed alcohol on the tires for a better grip. They
+asked riders to wear electrically heated overshorts to maintain ideal muscle
+temperature while riding and used biofeedback sensors to monitor how each
+athlete responded to a particular workout. The team tested various fabrics in a
+wind tunnel and had their outdoor riders switch to indoor racing suits, which
+proved to be lighter and more aerodynamic.
+But they didn’t stop there. Brailsford and his team continued to find 1 percent
+improvements in overlooked and unexpected areas. They tested different types
+of massage gels to see which one led to the fastest muscle recovery. They hired a
+surgeon to teach each rider the best way to wash their hands to reduce the
+chances of catching a cold. They determined the type of pillow and mattress that
+led to the best night’s sleep for each rider. They even painted the inside of the
+team truck white, which helped them spot little bits of dust that would normally
+slip by unnoticed but could degrade the performance of the finely tuned bikes.
+As these and hundreds of other small improvements accumulated, the results
+came faster than anyone could have imagined.
+Just five years after Brailsford took over, the British Cycling team dominated
+the road and track cycling events at the 2008 Olympic Games in Beijing, where
+they won an astounding 60 percent of the gold medals available. Four years
+later, when the Olympic Games came to London, the Brits raised the bar as they
+set nine Olympic records and seven world records.
+That same year, Bradley Wiggins became the first British cyclist to win the
+Tour de France. The next year, his teammate Chris Froome won the race, and he
+would go on to win again in 2015, 2016, and 2017, giving the British team five
+Tour de France victories in six years.
+During the ten-year span from 2007 to 2017, British cyclists won 178 world
+championships and sixty-six Olympic or Paralympic gold medals and captured
+five Tour de France victories in what is widely regarded as the most successful
+run in cycling history.*
+How does this happen? How does a team of previously ordinary athletes
+transform into world champions with tiny changes that, at first glance, would
+seem to make a modest difference at best? Why do small improvements
+accumulate into such remarkable results, and how can you replicate this
+approach in your own life?
+WHY SMALL HABITS MAKE A BIG DIFFERENCE
+It is so easy to overestimate the importance of one defining moment and
+underestimate the value of making small improvements on a daily basis. Too
+often, we convince ourselves that massive success requires massive action.
+Whether it is losing weight, building a business, writing a book, winning a
+championship, or achieving any other goal, we put pressure on ourselves to
+make some earth-shattering improvement that everyone will talk about.
+Meanwhile, improving by 1 percent isn’t particularly notable—sometimes it
+isn’t even noticeable—but it can be far more meaningful, especially in the long
+run. The difference a tiny improvement can make over time is astounding.
+Here’s how the math works out: if you can get 1 percent better each day for one
+year, you’ll end up thirty-seven times better by the time you’re done.
+Conversely, if you get 1 percent worse each day for one year, you’ll decline
+nearly down to zero. What starts as a small win or a minor setback accumulates
+into something much more.
+1% BETTER EVERY DAY
+1% worse every day for one year. 0.99
+365 = 00.03
+1% better every day for one year. 1.01
+365 = 37.78
+FIGURE 1: The effects of small habits compound over time. For example, if you can get just 1 percent better each day, you’ll end up with results that are nearly 37 times better after one
+year.
+Habits are the compound interest of selfimprovement. The same way that
+money multiplies through compound interest, the effects of your habits multiply
+as you repeat them. They seem to make little difference on any given day and yet
+the impact they deliver over the months and years can be enormous. It is only
+when looking back two, five, or perhaps ten years later that the value of good
+habits and the cost of bad ones becomes strikingly apparent.
+This can be a difficult concept to appreciate in daily life. We often dismiss
+small changes because they don’t seem to matter very much in the moment. If
+you save a little money now, you’re still not a millionaire. If you go to the gym
+three days in a row, you’re still out of shape. If you study Mandarin for an hour
+tonight, you still haven’t learned the language. We make a few changes, but the
+results never seem to come quickly and so we slide back into our previous
+routines.
+Unfortunately, the slow pace of transformation also makes it easy to let a bad
+habit slide. If you eat an unhealthy meal today, the scale doesn’t move much. If
+you work late tonight and ignore your family, they will forgive you. If you
+procrastinate and put your project off until tomorrow, there will usually be time
+to finish it later. A single decision is easy to dismiss.
+But when we repeat 1 percent errors, day after day, by replicating poor
+decisions, duplicating tiny mistakes, and rationalizing little excuses, our small
+choices compound into toxic results. It’s the accumulation of many missteps—a
+1 percent decline here and there—that eventually leads to a problem.
+The impact created by a change in your habits is similar to the effect of
+shifting the route of an airplane by just a few degrees. Imagine you are flying
+from Los Angeles to New York City. If a pilot leaving from LAX adjusts the
+heading just 3.5 degrees south, you will land in Washington, D.C., instead of
+New York. Such a small change is barely noticeable at takeoff—the nose of the
+airplane moves just a few feet—but when magnified across the entire United
+States, you end up hundreds of miles apart.*
+Similarly, a slight change in your daily habits can guide your life to a very
+different destination. Making a choice that is 1 percent better or 1 percent worse
+seems insignificant in the moment, but over the span of moments that make up a
+lifetime these choices determine the difference between who you are and who
+you could be. Success is the product of daily habits—not once-in-a-lifetime
+transformations.
+That said, it doesn’t matter how successful or unsuccessful you are right now.
+What matters is whether your habits are putting you on the path toward success.
+You should be far more concerned with your current trajectory than with your
+current results. If you’re a millionaire but you spend more than you earn each
+month, then you’re on a bad trajectory. If your spending habits don’t change, it’s
+not going to end well. Conversely, if you’re broke, but you save a little bit every
+month, then you’re on the path toward financial freedom—even if you’re
+moving slower than you’d like.
+Your outcomes are a lagging measure of your habits. Your net worth is a
+lagging measure of your financial habits. Your weight is a lagging measure of
+your eating habits. Your knowledge is a lagging measure of your learning habits.
+Your clutter is a lagging measure of your cleaning habits. You get what you
+repeat.
+If you want to predict where you’ll end up in life, all you have to do is follow
+the curve of tiny gains or tiny losses, and see how your daily choices will
+compound ten or twenty years down the line. Are you spending less than you
+earn each month? Are you making it into the gym each week? Are you reading
+books and learning something new each day? Tiny battles like these are the ones
+that will define your future self.
+Time magnifies the margin between success and failure. It will multiply
+whatever you feed it. Good habits make time your ally. Bad habits make time
+your enemy.
+Habits are a double-edged sword. Bad habits can cut you down just as easily
+as good habits can build you up, which is why understanding the details is
+crucial. You need to know how habits work and how to design them to your
+liking, so you can avoid the dangerous half of the blade.
+YOUR HABITS CAN COMPOUND FOR YOU OR AGAINST YOU
+Positive Compounding
+Productivity compounds. Accomplishing one extra task is a small feat on any given day, but it counts for a lot over an entire career. The effect of automating an old task or mastering a new
+skill can be even greater. The more tasks you can handle without thinking, the more your brain is free to focus on other areas.
+Knowledge compounds. Learning one new idea won’t make you a genius, but a commitment to lifelong learning can be transformative. Furthermore, each book you read not only teaches
+you something new but also opens up different ways of thinking about old ideas. As Warren Buffett says, “That’s how knowledge works. It builds up, like compound interest.”
+Relationships compound. People reflect your behavior back to you. The more you help others, the more others want to help you. Being a little bit nicer in each interaction can result in a
+network of broad and strong connections over time.
+Negative Compounding
+Stress compounds. The frustration of a traffic jam. The weight of parenting responsibilities. The worry of making ends meet. The strain of slightly high blood pressure. By themselves, these
+common causes of stress are manageable. But when they persist for years, little stresses compound into serious health issues.
+Negative thoughts compound. The more you think of yourself as worthless, stupid, or ugly, the more you condition yourself to interpret life that way. You get trapped in a thought loop. The
+same is true for how you think about others. Once you fall into the habit of seeing people as angry, unjust, or selfish, you see those kind of people everywhere.
+Outrage compounds. Riots, protests, and mass movements are rarely the result of a single event. Instead, a long series of microaggressions and daily aggravations slowly multiply until one
+event tips the scales and outrage spreads like wildfire.
+WHAT PROGRESS IS REALLY LIKE
+Imagine that you have an ice cube sitting on the table in front of you. The room
+is cold and you can see your breath. It is currently twenty-five degrees. Ever so
+slowly, the room begins to heat up.
+Twenty-six degrees.
+Twenty-seven.
+Twenty-eight.
+The ice cube is still sitting on the table in front of you.
+Twenty-nine degrees.
+Thirty.
+Thirty-one.
+Still, nothing has happened.
+Then, thirty-two degrees. The ice begins to melt. A one-degree shift,
+seemingly no different from the temperature increases before it, has unlocked a
+huge change.
+Breakthrough moments are often the result of many previous actions, which
+build up the potential required to unleash a major change. This pattern shows up
+everywhere. Cancer spends 80 percent of its life undetectable, then takes over
+the body in months. Bamboo can barely be seen for the first five years as it
+builds extensive root systems underground before exploding ninety feet into the
+air within six weeks.
+Similarly, habits often appear to make no difference until you cross a critical
+threshold and unlock a new level of performance. In the early and middle stages
+of any quest, there is often a Valley of Disappointment. You expect to make
+progress in a linear fashion and it’s frustrating how ineffective changes can seem
+during the first days, weeks, and even months. It doesn’t feel like you are going
+anywhere. It’s a hallmark of any compounding process: the most powerful
+outcomes are delayed.
+This is one of the core reasons why it is so hard to build habits that last.
+People make a few small changes, fail to see a tangible result, and decide to stop.
+You think, “I’ve been running every day for a month, so why can’t I see any
+change in my body?” Once this kind of thinking takes over, it’s easy to let good
+habits fall by the wayside. But in order to make a meaningful difference, habits
+need to persist long enough to break through this plateau—what I call the
+Plateau of Latent Potential.
+If you find yourself struggling to build a good habit or break a bad one, it is
+not because you have lost your ability to improve. It is often because you have
+not yet crossed the Plateau of Latent Potential. Complaining about not achieving
+success despite working hard is like complaining about an ice cube not melting
+when you heated it from twenty-five to thirty-one degrees. Your work was not
+wasted; it is just being stored. All the action happens at thirty-two degrees.
+When you finally break through the Plateau of Latent Potential, people will
+call it an overnight success. The outside world only sees the most dramatic event
+rather than all that preceded it. But you know that it’s the work you did long ago
+—when it seemed that you weren’t making any progress—that makes the jump
+today possible.
+It is the human equivalent of geological pressure. Two tectonic plates can
+grind against one another for millions of years, the tension slowly building all
+the while. Then, one day, they rub each other once again, in the same fashion
+they have for ages, but this time the tension is too great. An earthquake erupts.
+Change can take years—before it happens all at once.
+Mastery requires patience. The San Antonio Spurs, one of the most successful
+teams in NBA history, have a quote from social reformer Jacob Riis hanging in
+their locker room: “When nothing seems to help, I go and look at a stonecutter
+hammering away at his rock, perhaps a hundred times without as much as a
+crack showing in it. Yet at the hundred and first blow it will split in two, and I
+know it was not that last blow that did it—but all that had gone before.”
+THE PLATEAU OF LATENT POTENTIAL
+FIGURE 2: We often expect progress to be linear. At the very least, we hope it will come quickly. In reality, the results of our efforts are often delayed. It is not until months or years later
+that we realize the true value of the previous work we have done. This can result in a “valley of disappointment” where people feel discouraged after putting in weeks or months of hard work
+without experiencing any results. However, this work was not wasted. It was simply being stored. It is not until much later that the full value of previous efforts is revealed.
+All big things come from small beginnings. The seed of every habit is a
+single, tiny decision. But as that decision is repeated, a habit sprouts and grows
+stronger. Roots entrench themselves and branches grow. The task of breaking a
+bad habit is like uprooting a powerful oak within us. And the task of building a
+good habit is like cultivating a delicate flower one day at a time.
+But what determines whether we stick with a habit long enough to survive the
+Plateau of Latent Potential and break through to the other side? What is it that
+causes some people to slide into unwanted habits and enables others to enjoy the
+compounding effects of good ones?
+FORGET ABOUT GOALS, FOCUS ON SYSTEMS INSTEAD
+Prevailing wisdom claims that the best way to achieve what we want in life—
+getting into better shape, building a successful business, relaxing more and
+worrying less, spending more time with friends and family—is to set specific,
+actionable goals.
+For many years, this was how I approached my habits, too. Each one was a
+goal to be reached. I set goals for the grades I wanted to get in school, for the
+weights I wanted to lift in the gym, for the profits I wanted to earn in business. I
+succeeded at a few, but I failed at a lot of them. Eventually, I began to realize
+that my results had very little to do with the goals I set and nearly everything to
+do with the systems I followed.
+What’s the difference between systems and goals? It’s a distinction I first
+learned from Scott Adams, the cartoonist behind the Dilbert comic. Goals are
+about the results you want to achieve. Systems are about the processes that lead
+to those results.
+If you’re a coach, your goal might be to win a championship. Your
+system is the way you recruit players, manage your assistant coaches,
+and conduct practice.
+If you’re an entrepreneur, your goal might be to build a million-dollar
+business. Your system is how you test product ideas, hire employees,
+and run marketing campaigns.
+If you’re a musician, your goal might be to play a new piece. Your
+system is how often you practice, how you break down and tackle
+difficult measures, and your method for receiving feedback from your
+instructor.
+Now for the interesting question: If you completely ignored your goals and
+focused only on your system, would you still succeed? For example, if you were
+a basketball coach and you ignored your goal to win a championship and
+focused only on what your team does at practice each day, would you still get
+results?
+I think you would.
+The goal in any sport is to finish with the best score, but it would be ridiculous
+to spend the whole game staring at the scoreboard. The only way to actually win
+is to get better each day. In the words of three-time Super Bowl winner Bill
+Walsh, “The score takes care of itself.” The same is true for other areas of life. If
+you want better results, then forget about setting goals. Focus on your system
+instead.
+What do I mean by this? Are goals completely useless? Of course not. Goals
+are good for setting a direction, but systems are best for making progress. A
+handful of problems arise when you spend too much time thinking about your
+goals and not enough time designing your systems.
+Problem #1: Winners and losers have the same goals.
+Goal setting suffers from a serious case of survivorship bias. We concentrate on
+the people who end up winning—the survivors—and mistakenly assume that
+ambitious goals led to their success while overlooking all of the people who had
+the same objective but didn’t succeed.
+Every Olympian wants to win a gold medal. Every candidate wants to get the
+job. And if successful and unsuccessful people share the same goals, then the
+goal cannot be what differentiates the winners from the losers. It wasn’t the goal
+of winning the Tour de France that propelled the British cyclists to the top of the
+sport. Presumably, they had wanted to win the race every year before—just like
+every other professional team. The goal had always been there. It was only when
+they implemented a system of continuous small improvements that they achieved
+a different outcome.
+Problem #2: Achieving a goal is only a momentary change.
+Imagine you have a messy room and you set a goal to clean it. If you summon
+the energy to tidy up, then you will have a clean room—for now. But if you
+maintain the same sloppy, pack-rat habits that led to a messy room in the first
+place, soon you’ll be looking at a new pile of clutter and hoping for another burst
+of motivation. You’re left chasing the same outcome because you never changed
+the system behind it. You treated a symptom without addressing the cause.
+Achieving a goal only changes your life for the moment. That’s the
+counterintuitive thing about improvement. We think we need to change our
+results, but the results are not the problem. What we really need to change are
+the systems that cause those results. When you solve problems at the results
+level, you only solve them temporarily. In order to improve for good, you need
+to solve problems at the systems level. Fix the inputs and the outputs will fix
+themselves.
+Problem #3: Goals restrict your happiness.
+The implicit assumption behind any goal is this: “Once I reach my goal, then I’ll
+be happy.” The problem with a goals-first mentality is that you’re continually
+putting happiness off until the next milestone. I’ve slipped into this trap so many
+times I’ve lost count. For years, happiness was always something for my future
+self to enjoy. I promised myself that once I gained twenty pounds of muscle or
+after my business was featured in the New York Times, then I could finally relax.
+Furthermore, goals create an “either-or” conflict: either you achieve your goal
+and are successful or you fail and you are a disappointment. You mentally box
+yourself into a narrow version of happiness. This is misguided. It is unlikely that
+your actual path through life will match the exact journey you had in mind when
+you set out. It makes no sense to restrict your satisfaction to one scenario when
+there are many paths to success.
+A systems-first mentality provides the antidote. When you fall in love with the
+process rather than the product, you don’t have to wait to give yourself
+permission to be happy. You can be satisfied anytime your system is running.
+And a system can be successful in many different forms, not just the one you
+first envision.
+Problem #4: Goals are at odds with long-term progress.
+Finally, a goal-oriented mind-set can create a “yo-yo” effect. Many runners work
+hard for months, but as soon as they cross the finish line, they stop training. The
+race is no longer there to motivate them. When all of your hard work is focused
+on a particular goal, what is left to push you forward after you achieve it? This is
+why many people find themselves reverting to their old habits after
+accomplishing a goal.
+The purpose of setting goals is to win the game. The purpose of building
+systems is to continue playing the game. True long-term thinking is goal-less
+thinking. It’s not about any single accomplishment. It is about the cycle of
+endless refinement and continuous improvement. Ultimately, it is your
+commitment to the process that will determine your progress.
+A SYSTEM OF ATOMIC HABITS
+If you’re having trouble changing your habits, the problem isn’t you. The
+problem is your system. Bad habits repeat themselves again and again not
+because you don’t want to change, but because you have the wrong system for
+change.
+You do not rise to the level of your goals. You fall to the level of your
+systems.
+Focusing on the overall system, rather than a single goal, is one of the core
+themes of this book. It is also one of the deeper meanings behind the word
+atomic. By now, you’ve probably realized that an atomic habit refers to a tiny
+change, a marginal gain, a 1 percent improvement. But atomic habits are not just
+any old habits, however small. They are little habits that are part of a larger
+system. Just as atoms are the building blocks of molecules, atomic habits are the
+building blocks of remarkable results.
+Habits are like the atoms of our lives. Each one is a fundamental unit that
+contributes to your overall improvement. At first, these tiny routines seem
+insignificant, but soon they build on each other and fuel bigger wins that
+multiply to a degree that far outweighs the cost of their initial investment. They
+are both small and mighty. This is the meaning of the phrase atomic habits—a
+regular practice or routine that is not only small and easy to do, but also the
+source of incredible power; a component of the system of compound growth.
+Chapter Summary
+Habits are the compound interest of selfimprovement. Getting 1
+percent better every day counts for a lot in the long-run.
+Habits are a double-edged sword. They can work for you or against
+you, which is why understanding the details is essential.
+Small changes often appear to make no difference until you cross a
+critical threshold. The most powerful outcomes of any compounding
+process are delayed. You need to be patient.
+An atomic habit is a little habit that is part of a larger system. Just as
+atoms are the building blocks of molecules, atomic habits are the
+building blocks of remarkable results.
+If you want better results, then forget about setting goals. Focus on
+your system instead.
+You do not rise to the level of your goals. You fall to the level of your
+systems."`,
   },
   {
     chapter_number: 2,
-    title: "The Promised Land",
-    content: `We were jubilant when we learned we had passed the Motown audition. I
-remember Berry Gordy sitting us all down and saying that we were going to
-make history together. "I'm gonna make you the biggest thing in the world,"
-he said, "and you're gonna be written about in history books." He really
-said that to us. We were leaning forward, listening to him, and saying,
-"Okay! Okay!" I'll never forget that. We were all over at his house, and it
-was like a fairy tale come true listening to this powerful, talented man
-tell us we were going to be very big. "Your first record will be a number
-one, your second record will be a number one, and so will your third record.
-Three number one records in a row. You'll hit the charts just as Diana Ross
-and the Supremes did." This was almost unheard of in those days, but he was
-right; we turned around and did just that. Three in a row.
-So Diana didn't find us first, but I don't think we'll ever be able to repay
-Diana properly for all she did for us in those days. When we finally moved
-to Southern California, we actually lived with Diana and stayed with her for
-more than a year on a part-time basis. Some of us lived with Berry Gordy and
-some of us with Diana, and then we would switch. She was so wonderful,
-mothering us and making us feel right at home. She really helped take care
-of us for at least a year and a half while my parents closed up the Gary
-house and looked for a house we could all live in here in California. It was
-great for us because Berry and Diana lived on the same street in Beverly
-Hills. We could walk up to Berry's house and then go back to Diana's. Most
-of the time I'd spend the day at Diana's and the night at Berry's. This was
-an important period in my life because Diana loved art and encouraged me to
-appreciate it too. She took the time to educate me about it. We'd go out
-almost every day, just the two of us, and buy pencils and paint. When we
-weren't drawing or painting, we'd go to museums. She introduced me to the
-works of the great artists like Michelangelo and Degas and that was the
-start of my lifelong interest in art. She really taught me a great deal. It
-was so new to me and exciting. It was really different from what I was used
-to doing, which was living and breathing music, rehearsing day in and day
-out. You wouldn't think a big star like Diana would take the time to teach a
-kid to paint, to give him an education in art, but she did and I loved her
-for it. I still do. I'm crazy about her. She was my mother, my lover, and my
-sister all combined in one amazing person.
-Those were truly wild days for me and my brothers. When we flew to
-California from Chicago, it was like being in another country, another
-world. To come from our part of Indiana, which is so urban and often bleak,
-and to land in Southern California was like having the world transformed
-into a wonderful dream. I was uncontrollable back then. I was all over the
-place - Disneyland, Sunset Strip, the beach. My brothers loved it too, and
-we got into everything, like kids who had just visited a candy store for the
-first time. We were awestruck by California; trees had oranges and leaves on
-them in the middle of winter. There were palm trees and beautiful sunsets,
-and the weather was so warm. Every day was special. I would be doing
-something that was fun and wouldn't want it to end, but then I'd realise
-there was something else to do later that was going to be just as enjoyable
-and that I could look forward to just as much. Those were heady days.
-One of the best parts of being there was meeting all the big Motown stars
-who had emigrated to California along with Berry Gordy after he moved from
-Detroit. I remember when I first shook Smokey Robinson's hand. It was like
-shaking hands with a king. My eyes lit up with stars, I remember telling my
-mother that his hand felt as if it was layered with soft pillows. You don't
-think about the little impressions people walk away with when you're a star
-yourself, but the fans do. At least, I know I did. I mean, I walked around
-saying, "His hand is so soft ." When I think about it now, it sounds silly,
-but it made a big impression on me. I had shaken Smokey Robinson's hand.
-There are so many artists and musicians and writers I admire. When I was
-young, the people I watched were the real showmen - James Brown, Sammy
-Davis, Jr., Fred Astaire, Gene Kelly. A great showman touches everybody;
-that's the real test of greatness and these men have it. Like Michelangelo's
-work, it touches you, I don't care who you are. I am always excited when I
-get a chance to meet someone whose work has affected me in some way. Maybe
-I've read a book that has touched me deeply or made me think about things
-that I haven't focused on before. A certain song or style of singing can
-excite me or move me and become a favourite that I'll never tire of hearing.
-A picture or a painting can reveal a universe. In the same vein, an actor's
-performance or a collective performance can transform me.
-In those days Motown had never recorded a kids' group. In fact the only
-child singer they had ever produced was Stevie Wonder. So Motown was
-determined that if they were going to promote kids, they'd promote the kind
-of kids who were good at more than just singing and dancing. They wanted
-people to like us because of who we were, not just because of our records.
-They wanted us to set an example by sticking to our schoolwork and being
-friendly to our fans, reporters, and everyone who came in contact with us.
-This wasn't hard for us because our mother had raised us to be polite and
-considerate. It was second nature. Our only problem with schoolwork was that
-once we became well known, we couldn't go to school because people would
-come into our classrooms through the windows, looking for an autograph or a
-picture. I was trying to keep up with my classes and not to be the cause of
-disruptions, but it finally became impossible and we were given tutors to
-teach us at home.
-During this period a lady named Suzanne de Passe was having a great effect
-on our lives. She worked for Motown, and it was she who trained us
-religiously once we moved to L.A. She also became a manager for the Jackson
-5. We lived with her occasionally, ate with her, and even played with her.
-We were a rowdy, high-spirited bunch, and she was young herself and full of
-fun. She really contributed a lot toward the shaping of the Jackson 5, and
-I'll never be able to thank her enough for all she did.
-I remember Suzanne showing us these charcoal sketches of the five of us. In
-each sketch we had a different hairstyle. In another set of colour drawings
-we were all pictured in different clothes that could be switched around like
-Colorforms. After we all decided on the hairstyles, they took us to a barber
-so he could make us match up with our pictures. Then, after she showed us
-the clothes, we went down to a wardrobe department where they gave us
-outfits to try on. They'd see us in one set of clothes, decide the clothes
-weren't right, and we'd all go back to the Colorforms to "try on" some more.
-We had classes in manners and grammar. They gave us a list of questions, and
-they said they were the kinds of questions that we could expect people to
-ask us. We were always being asked about our interests and our hometown and
-how we liked singing together. Fans and reporters alike wanted to know how
-old we each were when we started performing. It was hard to have your life
-turn into public property, even if you appreciated that people were
-interested in you because of your music.
-The Motown people tested us on the answers to questions we hadn't heard from
-anyone yet. They tested us on grammar. And table manners. When we were
-ready, they brought us in for the last alterations on our sleeves and the
-trimming of our new Afros.
-After all that there was a new song to learn called "I Want You Back." The
-song had a story behind it that we found out about little by little. It was
-written by someone from Chicago named Freddie Perren. He had been Jerry
-Butler's pianist when we opened for Jerry in a Chicago nightclub. He had
-felt sorry for these little kids the club owner had hired, figuring the club
-couldn't afford to get anyone else. His opinion changed dramatically when he
-saw us perform.
-As it turned out, "I Want You Back" was orginally called "I Want To Be Free"
-and was written for Gladys Knight. Freddie had even thought that Berry might
-go over Gladys's head and give the song to the Supremes. Instead, he
-mentioned to Jerry that he'd just signed this group of kids from Gary,
-Indiana. Freddie put two and two together, realised it was us, and decided
-to trust fate.
-When we were learning the Steeltown songs back in Gary, Tito and Jermaine
-had to pay special attention because they were responsible for playing on
-those records. When they heard the demo for "I Want You Back," they listened
-to the guitar and bass parts, but Dad explained that Motown didn't expect
-them to play on our records; the rhythm track would be taken care of before
-we put our vocals down. But he reminded them that this would put more
-pressure on them to keep up their practice independently, because we'd have
-to duplicate those songs in front of our fans. In the meantime, all of us
-had lyrics and cues to learn.
-The guys looking after us in the singing department were Freddy Perrin and
-Bobby Taylor and Deke Richards, who, along with Hal Davis and another Motown
-guy named "Fonce" Mizell, were part of the team that wrote and produced our
-first singles. Together these guys were called "The Corporation." We went
-over to Richard's apartment to rehearse, and he was impressed that we had
-prepared so well. He didn't have to do much tinkering with the vocal
-arrangement he'd worked out, and he thought that while we were still hot, we
-should go right to the studio and cut our parts. The following afternoon we
-went to the studio. We were all so happy with what we got that we took our
-rough mix over to Berry Gordy. It was still midafternoon when we arrived at
-his studio. We figured that once Berry heard it, we'd be home in time for
-supper.
-But it was one in the morning when I finally slumped in the back seat of
-Richard's car, bobbing and steadying my head all the way home to fight off
-sleep. Gordy hadn't liked the song we did. We went over every part again,
-and when we did, Gordy figured out what changes he had to make in the
-arrangement. He was trying new things with us, like a school chorus master
-who has everyone singing their part as if they're singing alone, even if you
-can't hear him or her distinctly for the crowd. After he was through
-rehearsing us as a group, and he had reworked the music, he took me aside,
-one on one, to explain my part. He told me exactly what he wanted and how he
-wanted me to help him get it. Then he explained everything to Freddie
-Perren, who was going to record it. Berry was brilliant in this area. Right
-after the single was released, we went in to cut an album. We were
-particularly impressed with the "I Want You Back" session then because that
-one song took more time (and tape) than all the other songs on the record
-combined. That's the way Motown did things in those days because Berry
-insisted on perfection and attention to detail. I'll never forget his
-persistence. This was his genius. Then and later, I observed every moment of
-the sessions where Berry was present and never forgot what I learned. To
-this day I use the same principles. Berry was my teacher and a great one. He
-could identify the little elements that would make a song great rather than
-just good. It was like magic, as if Berry was sprinkling pixie dust over
-everything.
-For me and my brothers, recording for Motown was an exciting experience. Our
-team of writers shaped our music by being with us as we recorded it over and
-over, molding and sculpting a song until it was just perfect. We would cut a
-track over and over for weeks until we got it just as they wanted it. And I
-could see while they were doing it that it was getting better and better.
-They would change words, arrangements, rhythms, everything. Berry gave them
-the freedom to work this way because of his own perfectionist nature. I
-guess if they hadn't been doing it, he would have. Berry had such a knack.
-He'd just walk into the room where we were working and tell me what to do
-and he'd be right. It was amazing.
-When "I Want You Back" was released in November 1969, it sold two million
-copies in six weeks and went to number one. Our next single, "ABC," came out
-in March 1970 and sold two million records in three weeks. I still like the
-part where I say, "Siddown, girl! I think I loove you! No, get up, girl,
-show me what you can do! " When our third single, "The Love You Save," went
-to number one in June of 1970, Berry's promise came true.
-When our next single, "I'll Be There," was also a big hit in the fall of
-that year, we realised we might even surpass Berry's expectations and be
-able to pay him back for all the effort he had made for us.
-My brothers and I - our whole family - were very proud. We had created a new
-sound for a new decade. It was the first time in recording history that a
-bunch of kids had made so many hit records. The Jackson 5 had never had much
-competition from kids our own age. In the amateur days there was a kids'
-group called the Five Stairsteps that we used to see. They were good, but
-they didn't seem to have the strong family unit that we did, and sadly they
-broke up. After "ABC" hit the charts in such a big way, we started seeing
-other groups that record companies were grooming to ride the bandwagon we
-had built. I enjoyed all these groups: the Partridge Family, the Osmonds,
-the DeFranco Family. The Osmonds were already around, but they were doing a
-much different style of music, like barbershop harmony and crooning. As soon
-as we hit, they and the other groups got into soul real fast. We didn't
-mind. Competition, as we know, was healthy. Our own relatives thought "One
-Bad Apple" was us. I remember being so little that they had a special apple
-crate for me to stand on with my name on it so I could reach the microphone.
-Microphones didn't go down far enough for kids my age. So many of my
-childhood years went by that way, with me standing on that apple box singing
-my heart out while other kids were outside playing.
-As I said before, in those early days "The Corporation" at Motown produced
-and shaped all our music. I remember lots of times when I felt the song
-should be sung one way and the producers felt it should be sung another way.
-But for a long time I was very obedient and wouldn't say anything about it.
-Finally it reached a point where I got fed up with being told exactly how to
-sing. This was in 1972 when I was fourteen years old, around the time of the
-song "Lookin' Through the Windows." They wanted me to sing a certain way,
-and I knew they were wrong. No matter what age you are, if you have it and
-you know it, then people should listen to you. I was furious with our
-producers and very upset. So I called Berry Gordy and complained. I said
-that they had always told me how to sing, and I had agreed all this time,
-but now they were getting too . . . mechanical.
-So he came into the studio and told them to let me do what I wanted to do. I
-think he told them to let me be more free or something. And after that, I
-started adding a lot of vocal twists that they really ended up loving. I'd
-do a lot of ad-libbing, like twisting words or adding some edge to them.
-When Berry was in the studio with us, he would always add something that was
-right. He'd go from studio to studio, checking on different aspects of
-people's work, often adding elements that made the records better. Walt
-Disney used to do the same thing: he'd go check on his various artists and
-say, "Well, this character should be more outgoing." I always knew when
-Berry was enjoying something I was doing in the studio, because he has this
-habit of rolling his tongue in his cheek when he's pleased by something. If
-things were really going well, he'd punch the air like the ex-professional
-boxer he is.
-My three favourite songs from those days are "Never Can Say Goodbye," "I'll
-Be There," and "ABC." I'll never forget the first time I heard "ABC." I
-thought it was so good. I remember feeling this eagerness to sing that song,
-to get in the studio and really make it work for us.
-We were still rehearsing daily and working hard - some things didn't change
-- but we were grateful to be where we were. There were so many people
-pulling for us, and we were so determined ourselves that it seemed anything
-could happen.
-Once "I Want You Back" came out, everyone at Motown prepared us for success.
-Diana loved it and presented us at a big-name Hollywood discotheque, where
-she had us playing in a comfortable party atmosphere like at Berry's.
-Following directly on the heels of Diana's event came an invitation to play
-at the "Miss Black America" telecast. Being on the show would enable us to
-give people a preview of our record and our show. After we got the
-invitation, my brothers and I remembered our disappointment at not getting
-to go to New York to do our first TV show because Motown had called. Now we
-were going to do our first TV show and we were with Motown. Life was very
-good. Diana, of course, put the cherry on top. She was going to host "The
-Hollywood Palace," and big Saturday night show; it would be her last
-appearance with the Supremes and the first major exposure for us. This meant
-a lot to Motown, because by then they had decided that our new album would
-be called "Diana Ross Presents the Jackson 5." Never before had a superstar
-like Diana passed the torch to a bunch of kids. Motown, Diana, and five kids
-from Gary, Indiana, were all pretty excited. By then "I Want You Back" had
-come out, and Berry was proven right again; all the stations that played Sly
-and the Beatles were playing us, too.
-As I mentioned earlier, we didn't work as hard on the album as we did on the
-single, but we had fun trying out all sorts of songs - from "Who's Lovin'
-You," the old Miracles' song we were doing in the talent show days, to
-"Zip-A-Dee-Doo-Dah."
-We did songs on that album that appealed to a wide audience - kids,
-teenagers, and grownups - and we all felt that was a reason for its big
-success. We knew that "The Hollywood Palace" had a live audience, a
-sophisticated Hollywood crowd, and we were concerned; but we had them from
-the first note. There was an orchestra in the pit, so that was the first
-time I heard all of "I Want You Back" performed live because I wasn't there
-when they recorded the strings for the album. Doing that show made us feel
-like kings, the way winning the citywide show in Gary had.
-Selecting the right songs for us to do was going to be a real challenge now
-that we weren't depending on other people's hits to win crowd. The
-Corporation guys and Hal Davis were put to work writing songs especially for
-us, as well as producing them. Berry didn't want to have to bail us all out
-again. So even after our first singles hit number one on the charts, we were
-busy with the follow-ups.
-"I Want You Back" could have been sung by a grownup, but "ABC" and "The Love
-You Save" were written for our young voices, with parts for Jermaine as well
-as me - another bow to the Sly sound, which rotated singers around the
-stage. The Corporation had also written those songs with dance routines in
-mind: the steps our fans did at parties as well as those we did on stage.
-The verses were tongue-twisting, and that's why they were split up between
-Jermaine and me.
-Neither of those records could have happened without "I Want You Back." We
-were adding and subtracting ideas in the arrangements from that one mother
-lode of a song, but the public seemed to want everything we were doing. We
-later made two more records in the vein, "Mama's Pearl" and "Sugar Daddy,"
-which reminded me of my own schoolyard days: "While I'm giving you the
-candy, he's getting all your love!" We added one new wrinkle when Jermaine
-and I sang harmony together, which always got an enthusiastic response when
-we did it from the same mike on stage.
-The pros have told us that no group had a better start than we did. Ever.
-"I'll Be There" was our real breakthrough song; it was the one that said,
-"We're here to stay." It was number one for five weeks, which is very
-unusual. That's a long time for a song and the song was one of my favourites
-of all the songs we've ever done. How I loved the words: "You and I must
-make a pact, we must bring salvation back . . ." Willie Hutch and Berry
-Gordy didn't seem like people who'd write like that. They were always
-kidding around with us when we weren't in the studio. But that song grabbed
-me from the moment I heard the demo. I didn't even know what a harpsichord
-was until that record's opening notes were played for us. The song was
-produced thanks to the genius of Hal Davis, assisted by Suzy Ikeda, my other
-half who stood next to me song after song, making sure I put the right
-emotion and feeling and heart into the composition. It was a serious song,
-but we threw in a fun part when I sang "Just look over your shoulder,
-honey!" Without the honey, that's right out of the Four Tops' great song
-"Reach Out, I'll Be There." So we were feeling more and more like a part of
-Motown's history as well as its future.
-Originally the plan was for me to sing all the bouncy stuff and Jermaine to
-do the ballads. But though Jermaine's voice at seventeen was more mature,
-ballads were more my love, if not really my style - yet. That was our fourth
-straight number one as a group, and a lot of people liked Jermaine's song "I
-Found That Girl," the B-side of "The Love You Save," just as much as the
-hits.
-We worked those songs into one big medley, with plenty of room for dancing,
-and we went back to that medley when we performed on all kinds of TV shows.
-For instance, we played on "The Ed Sullivan Show" three different times.
-Motown always told us what to say in interviews back then, but Mr. Sullivan
-was one of the people who drew us out and made us feel comfortable. Looking
-back, I wouldn't say Motown was putting us in any kind of straitjacket or
-turning us into robots, even though I wouldn't have done it that way myself;
-and if I had children, I wouldn't tell them what to say. The Motown people
-were doing something with us that hadn't been done before, and who was to
-say what was the right way to handle that sort of stuff?
-Reporters would ask us all kinds of questions, and the Motown people would
-be standing by to help us out or monitor the questions if need be. We
-wouldn't have dreamed of trying anything that would embarrass them. I guess
-they were worried about the possibility of our sounding militant the way
-people were often doing in those days. Maybe they were worried after they
-gave us those Afros that they had created little Frankensteins. Once a
-reporter asked a Black Power question and the Motown person told him we
-didn't think about that stuff because we were a "commercial product." It
-sounded weird, but we winked and gave the power salute when we left, which
-seemed to thrill the guy.
-We even had a reunion with don Cornelius on his "Soul Train" show. He had
-been a local disc jockey during our Chicago days, so we all knew one another
-from that time. We enjoyed watching his show and picked up ideas from those
-dancers who were from our part of the country.
-The crazy days of the big Jackson 5 tours began right after the successes we
-had with our records. It started with a big arena tour in the fall of 1970;
-we played huge halls like Madison Square Garden and the Los Angeles Forum.
-When "Never Can Say Goodbye" was a big hit in 1971, we played forty-five
-cities that summer, followed by fifty more cities later that year.
-I recall most of that time as a period of extreme closeness with my
-brothers. We have always been a very loyal and affectionate group. We
-clowned around, goofed off a lot together, and played outrageous pranks on
-each other and the people who worked with us. We never got too rowdy - no
-TV's sailed out of our hotel windows, but a lot of water was spilled on
-various heads. We were mostly trying to conquer the boredom we felt from
-being so long on the road. When you're bored on tour, you tend to do
-anything to cheer yourself up. Here we were, cramped up in these hotel
-rooms, unable to go anywhere because of the mobs of screaming girls outside,
-and we wanted to have some fun. I wish we could have captured some of the
-the stuff we did on film, especially some of the wild pranks. We'd all wait
-until our security manager, Bill Bray, was asleep. Then we'd stage insane
-fast-walk races in the hallways, pillow fights, tag-team wrestling matches,
-shaving cream wars, you name it. We were nuts. We'd drop balloons and paper
-bags full of water off hotel balconies and watch them explode. Then we'd die
-laughing. We threw stuff at each other and spent hours on the phone making
-fake calls and ordering immense room service meals that were delivered to
-the rooms of strangers. Anyone who walked into one of our bedrooms had a
-ninety percent chance of being drenched by a bucket of water propped over
-the doors.
-When we'd arrive in a new city, we'd try to do all the sightseeing we could.
-We travelled with a wonderful tutor, Rose Fine, who taught us a great deal
-and made sure we did our lessons. It was Rose who instilled in me a love of
-books and literature that sustains me today. I read everything I could get
-my hands on. New cities meant new places to shop. We loved to shop,
-especially in bookstores and department stores, but as our fame spread our
-fans transformed casual shopping trips into hand-to-hand combat. Being
-mobbed by near hysterical girls was one of the most terrifying experiences
-for me in those days. I mean, it was rough . We'd decide to run into some
-department store to see what they had, and the fans would find out we were
-there and would demolish the place, just tear it up. Counters would get
-knocked over, glass would break, the cash registers would be toppled. All we
-had wanted to do was look at some clothes! When those mob scenes broke out,
-all the craziness and adulation and notoriety became more than we could
-handle. If you haven't witnessed a scene like that, you can't imagine what
-it's like. Those girls were serious . They still are. They don't realise
-they might hurt you because they're acting out of love. They mean well, but
-I can testify that it hurts be mobbed. You feel as if you're going to
-suffocate or be dismembered. There are a thousand hands grabbing at you. One
-girl is twisting your wrist this way while another girl is pulling your
-watch off. They grab your hair and pull it hard, and it hurts like fire. You
-fall against things and the scrapes are horrible. I still wear the scars,
-and I can remember in which city I got each of them. Early on, I learned how
-to run through crowds of thrashing girls outside of theatres, hotels, and
-airports. It's important to remember to shield your eyes with your hands
-because girls can forget they have nails during such emotional
-confrontations. I know the fans mean well and I love them for their
-enthusiasm and support, but crowd scenes are scary.
-The wildest mob scene I ever witnessed happened the first time we went to
-England. We were in the air over the Atlantic when the pilot announced that
-he had just been told there were ten thousand kids waiting for us at
-Heathrow Airport. We couldn't believe it. We were excited, but if we could
-have turned around and flown home, we might have. We knew this was going to
-be something, but since there wasn't enough fuel to go back, we flew on.
-When we landed, we could see that the fans had literally taken over the
-whole airport. It was wild to be mobbed like that. My brothers and I felt
-fortunate to make it out of the airport alive that day.
-I wouldn't trade my memories of those days with my brothers for anything. I
-often wish I could relive those days. We were like the seven dwarfs: each of
-us was different, each had his own personality. Jackie was the athlete and
-the worrier. Tito was the strong, compassionate father figure. He was
-totally into cars and loved putting them together and tearing them apart.
-Jermaine was the one I was closest to when we were growing up. He was funny
-and easygoing, and was constantly fooling around. It was Jermaine who put
-all those buckets of cold water on the doors of our hotel rooms. Marlon was
-and is one of the most determined people I've ever met. He, too, was a real
-joker and prankster. He used to be the one who'd always get in trouble in
-the early days because he'd be out of step or miss a note, but that was far
-from true later.
-The diversity of my brothers' personalities and the closeness we felt were
-what kept me going during those gruelling days of constant touring.
-Everybody helped everybody. Jackie and Tito would keep us from going too far
-with our pranks. They'd seem to have us under control, and then Jermaine and
-Marlon would shout, "Let's go crazy!!"
-I really miss all that. In the early days we were together all the time.
-We'd go to amusement parks or ride horses or watch movies. We did everything
-together. As soon as someone said, "I'm going swimming," we'd all yell, "Me
-too!"
-The separation from my brothers started much later, when they began to get
-married. An understandable change occurred as each of them became closest to
-his wife and they became a family unit unto themselves. A part of me wanted
-us to stay as we were - brothers who were also best friends - but change is
-inevitable and always good in one sense or another. We still love each
-other's company. We still have a great time when we're together. But the
-various paths our lives have taken won't allow us the freedom to enjoy one
-another's company as much as we did.
-In those days, touring with the Jackson 5, I always shared a room with
-Jermaine. He and I were close, both onstage and off, and shared a lot of the
-same interests. Since Jermaine was also the brother most intrigued by the
-girls who wanted to get at him, he and I would get into mischief on the
-road.
-I think our father decided early on that he had to keep a more watchful eye
-on us than on our other brothers. He would usually take the room next to
-ours, which meant he could come in to check on us anytime through the
-connecting doors. I really despised this arrangement, not only because he
-could monitor our misbehaviour, but also because he used to do the meanest
-things to us. Jermaine and I would be sleeping, exhausted after a show, and
-my father would bring a bunch of girls into the room; we'd wake up and
-they'd be standing there, looking at us, giggling.
-Because show business and my career were my life, the biggest personal
-struggle I had to face during those teenage years did not involve the
-recording studios or my stage performance. In those days, the biggest
-struggle was right there in my mirror. To a great degree, my identity as a
-person was tied to my identity as a person was tied to my identity as a
-celebrity.
-My appearance began to really change when I was about fourteen. I grew quite
-a bit in height. People who didn't know me would come into a room expecting
-to be introduced to cute little Michael Jackson and they'd walk right past
-me. I would say, "I'm Michael," and they would look doubtful. Michael was a
-cute little kid: I was a gangly adolescent heading toward five feet ten
-inches. I was not the person they expected or even wanted to see.
-Adolescence is hard enough, but imagine having your own natural insecurities
-about the changes your body is undergoing heightened by the negative
-reactions of others. They seemed so surprised that I could change, that my
-body was undergoing the same natural change everyone's does.
-It was tough. Everyone had called me cute for a long time, but along with
-all the other changes, my skin broke out in a terrible case of acne. I
-looked in the mirror one morning and it was like, "OH NO!" I seemed to have
-a pimple for every oil gland. And the more I was bothered by it, the worse
-it got. I didn't realise it then, but my diet of greasy processed food
-didn't help either.
-I became subconsciously scarred by this experience with my skin. I got very
-shy and became embarrassed to meet people because my complexion was so bad.
-It really seemed that the more I looked in the mirror, the worse the pimples
-got. My appearance began to depress me. So I know that a case of acne can
-have a devastating effect on a person. The effect on me was so bad that it
-messed up my whole personality. I couldn't look at people when I talked to
-them. I'd look down, or away. I felt I didn't have anything to be proud of
-and I didn't even want to go out. I didn't do anything.
-My brother Marlon would be covered with pimples and he wouldn't care but I
-didn't want to see anybody and I didn't want anyone to see my skin in that
-shape. It makes you wonder about what makes us the way we are, that two
-brothers could be so different.
-I still had our hits records to be proud of, and once I hit the stage, I
-didn't think about anything else. All that worry was gone.
-But once I came offstage, there was that mirror to face again.
-Eventually, things changed. I started feeling differently about my
-condition. I've learned to change how I think and learned to feel better
-about myself. Most importantly, I changed my diet. That was the key.
-In the fall of 1971 I cut my first solo record, "Got to Be There." It was
-wonderful working on that record and it became one of my favourites. It was
-Berry Gordy's idea that I should do a solo recording, and so I became one of
-the first people in a Motown group to really step out. Berry also said he
-thought I should record my own album. Years later, when I did, I realised he
-was right.
-There was a small conflict during that era that was typical of the struggles
-I went through as a young singer. When you're young and have ideas, people
-often think you're just being childish and silly. We were on tour in 1972,
-the year "Got To Be There" became a big hit. One night I said to our record
-manager, "Before I sing that song, let me go offstage and grab that little
-hat I wore for the picture on the album cover. If the audience sees me
-wearing that hat, they'll go crazy."
-He thought it was the most ridiculous idea he had ever heard. I was not
-allowed to do it because I was young, and they all thought it was a dumb
-idea. Not long after that incident, Donny Osmond began wearing a very
-similar hat all over the country and people loved it. I felt good about my
-instincts; I had thought it would work. I had seen Marvin Gaye wear a hat
-when he sang "Let's Get It On," and people went bananas. They knew what was
-coming when Marvin put that hat on. It added excitement and communicated
-something to the audience that allowed them to become more involved with the
-show.
-I was already a devoted fan of film and animation by the time "The Jackson
-Five" Saturday morning cartoon show started appearing over network
-television in 1971. Diana Ross had enhanced my appreciation of animation
-when she taught me to draw, but being a cartoon character pushed me over the
-brink into a full-time love of the movies and the kind of animated motion
-pictures pioneered by Walt Disney. I have such admiration for Mr. Disney and
-what he accomplished with the help of so many talented artists. When I think
-about the joy he and his company have brought to millions of children - and
-adults - the world over, I am in awe.
-I loved being a cartoon. It was so much fun to get up on Saturday mornings
-to watch cartoons and look forward to seeing ourselves on the screen. It was
-like a fantasy come true for all of us.
-My first real involvement with films came when I sang the title song for the
-movie Ben in 1972.
-Ben meant a lot to me. Nothing had ever excited me as much as going to the
-studio to put my voice on film. I had a great time. Later, when the movie
-came out, I'd go to the theatre and wait until the end when the credits
-would flash on, and it would say, "'Ben' sung by Michael Jackson." I was
-really impressed by that. I loved the song and loved the story. Actually,
-the story was a lot like E.T. It was about a boy who befriended a rat.
-People didn't understand the boy's love for this little creature. He was
-dying of some disease and his only true friend was Ben, the leader of the
-rats in the city where they lived. A lot of people thought the movie was a
-bit odd, but I was not one of them. The song went to number one and is still
-a favourite of mine. I have always loved animals and I enjoy reading about
-them and seeing movies in which they're featured.`,
+    title: "How Your Habits Shape Your Identity (and Vice Versa)",
+    content: `WHY IS IT so easy to repeat bad habits and so hard to form good ones? Few things
+can have a more powerful impact on your life than improving your daily habits.
+And yet it is likely that this time next year you’ll be doing the same thing rather
+than something better.
+It often feels difficult to keep good habits going for more than a few days,
+even with sincere effort and the occasional burst of motivation. Habits like
+exercise, meditation, journaling, and cooking are reasonable for a day or two and
+then become a hassle.
+However, once your habits are established, they seem to stick around forever
+—especially the unwanted ones. Despite our best intentions, unhealthy habits
+like eating junk food, watching too much television, procrastinating, and
+smoking can feel impossible to break.
+Changing our habits is challenging for two reasons: (1) we try to change the
+wrong thing and (2) we try to change our habits in the wrong way. In this
+chapter, I’ll address the first point. In the chapters that follow, I’ll answer the
+second.
+Our first mistake is that we try to change the wrong thing. To understand what
+I mean, consider that there are three levels at which change can occur. You can
+imagine them like the layers of an onion.
+THREE LAYERS OF BEHAVIOR CHANGE
+FIGURE 3: There are three layers of behavior change: a change in your outcomes, a change in your processes, or a change in your identity.
+The first layer is changing your outcomes. This level is concerned with
+changing your results: losing weight, publishing a book, winning a
+championship. Most of the goals you set are associated with this level of change.
+The second layer is changing your process. This level is concerned with
+changing your habits and systems: implementing a new routine at the gym,
+decluttering your desk for better workflow, developing a meditation practice.
+Most of the habits you build are associated with this level.
+The third and deepest layer is changing your identity. This level is
+concerned with changing your beliefs: your worldview, your self-image, your
+judgments about yourself and others. Most of the beliefs, assumptions, and
+biases you hold are associated with this level.
+Outcomes are about what you get. Processes are about what you do. Identity is
+about what you believe. When it comes to building habits that last—when it
+comes to building a system of 1 percent improvements—the problem is not that
+one level is “better” or “worse” than another. All levels of change are useful in
+their own way. The problem is the direction of change.
+Many people begin the process of changing their habits by focusing on what
+they want to achieve. This leads us to outcome-based habits. The alternative is to
+build identity-based habits. With this approach, we start by focusing on who we
+wish to become.
+OUTCOME-BASED HABITS
+IDENTITY-BASED HABITS
+FIGURE 4: With outcome-based habits, the focus is on what you want to achieve. With identity-based habits, the focus is on who you wish to become.
+Imagine two people resisting a cigarette. When offered a smoke, the first
+person says, “No thanks. I’m trying to quit.” It sounds like a reasonable
+response, but this person still believes they are a smoker who is trying to be
+something else. They are hoping their behavior will change while carrying
+around the same beliefs.
+The second person declines by saying, “No thanks. I’m not a smoker.” It’s a
+small difference, but this statement signals a shift in identity. Smoking was part
+of their former life, not their current one. They no longer identify as someone
+who smokes.
+Most people don’t even consider identity change when they set out to
+improve. They just think, “I want to be skinny (outcome) and if I stick to this
+diet, then I’ll be skinny (process).” They set goals and determine the actions they
+should take to achieve those goals without considering the beliefs that drive their
+actions. They never shift the way they look at themselves, and they don’t realize
+that their old identity can sabotage their new plans for change.
+Behind every system of actions are a system of beliefs. The system of a
+democracy is founded on beliefs like freedom, majority rule, and social equality.
+The system of a dictatorship has a very different set of beliefs like absolute
+authority and strict obedience. You can imagine many ways to try to get more
+people to vote in a democracy, but such behavior change would never get off the
+ground in a dictatorship. That’s not the identity of the system. Voting is a
+behavior that is impossible under a certain set of beliefs.
+A similar pattern exists whether we are discussing individuals, organizations,
+or societies. There are a set of beliefs and assumptions that shape the system, an
+identity behind the habits.
+Behavior that is incongruent with the self will not last. You may want more
+money, but if your identity is someone who consumes rather than creates, then
+you’ll continue to be pulled toward spending rather than earning. You may want
+better health, but if you continue to prioritize comfort over accomplishment,
+you’ll be drawn to relaxing rather than training. It’s hard to change your habits if
+you never change the underlying beliefs that led to your past behavior. You have
+a new goal and a new plan, but you haven’t changed who you are.
+The story of Brian Clark, an entrepreneur from Boulder, Colorado, provides a
+good example. “For as long as I can remember, I’ve chewed my fingernails,”
+Clark told me. “It started as a nervous habit when I was young, and then
+morphed into an undesirable grooming ritual. One day, I resolved to stop
+chewing my nails until they grew out a bit. Through mindful willpower alone, I
+managed to do it.”
+Then, Clark did something surprising.
+“I asked my wife to schedule my first-ever manicure,” he said. “My thought
+was that if I started paying to maintain my nails, I wouldn’t chew them. And it
+worked, but not for the monetary reason. What happened was the manicure made
+my fingers look really nice for the first time. The manicurist even said that—
+other than the chewing—I had really healthy, attractive nails. Suddenly, I was
+proud of my fingernails. And even though that’s something I had never aspired
+to, it made all the difference. I’ve never chewed my nails since; not even a single
+close call. And it’s because I now take pride in properly caring for them.”
+The ultimate form of intrinsic motivation is when a habit becomes part of your
+identity. It’s one thing to say I’m the type of person who wants this. It’s
+something very different to say I’m the type of person who is this.
+The more pride you have in a particular aspect of your identity, the more
+motivated you will be to maintain the habits associated with it. If you’re proud
+of how your hair looks, you’ll develop all sorts of habits to care for and maintain
+it. If you’re proud of the size of your biceps, you’ll make sure you never skip an
+upper-body workout. If you’re proud of the scarves you knit, you’ll be more
+likely to spend hours knitting each week. Once your pride gets involved, you’ll
+fight tooth and nail to maintain your habits.
+True behavior change is identity change. You might start a habit because of
+motivation, but the only reason you’ll stick with one is that it becomes part of
+your identity. Anyone can convince themselves to visit the gym or eat healthy
+once or twice, but if you don’t shift the belief behind the behavior, then it is hard
+to stick with long-term changes. Improvements are only temporary until they
+become part of who you are.
+The goal is not to read a book, the goal is to become a reader.
+The goal is not to run a marathon, the goal is to become a runner.
+The goal is not to learn an instrument, the goal is to become a
+musician.
+Your behaviors are usually a reflection of your identity. What you do is an
+indication of the type of person you believe that you are—either consciously or
+nonconsciously.* Research has shown that once a person believes in a particular
+aspect of their identity, they are more likely to act in alignment with that belief.
+For example, people who identified as “being a voter” were more likely to vote
+than those who simply claimed “voting” was an action they wanted to perform.
+Similarly, the person who incorporates exercise into their identity doesn’t have
+to convince themselves to train. Doing the right thing is easy. After all, when
+your behavior and your identity are fully aligned, you are no longer pursuing
+behavior change. You are simply acting like the type of person you already
+believe yourself to be.
+Like all aspects of habit formation, this, too, is a double-edged sword. When
+working for you, identity change can be a powerful force for selfimprovement.
+When working against you, though, identity change can be a curse. Once you
+have adopted an identity, it can be easy to let your allegiance to it impact your
+ability to change. Many people walk through life in a cognitive slumber, blindly
+following the norms attached to their identity.
+“I’m terrible with directions.”
+“I’m not a morning person.”
+“I’m bad at remembering people’s names.”
+“I’m always late.”
+“I’m not good with technology.”
+“I’m horrible at math.”
+. . . and a thousand other variations.
+When you have repeated a story to yourself for years, it is easy to slide into
+these mental grooves and accept them as a fact. In time, you begin to resist
+certain actions because “that’s not who I am.” There is internal pressure to
+maintain your self-image and behave in a way that is consistent with your
+beliefs. You find whatever way you can to avoid contradicting yourself.
+The more deeply a thought or action is tied to your identity, the more difficult
+it is to change it. It can feel comfortable to believe what your culture believes
+(group identity) or to do what upholds your self-image (personal identity), even
+if it’s wrong. The biggest barrier to positive change at any level—individual,
+team, society—is identity conflict. Good habits can make rational sense, but if
+they conflict with your identity, you will fail to put them into action.
+On any given day, you may struggle with your habits because you’re too busy
+or too tired or too overwhelmed or hundreds of other reasons. Over the long run,
+however, the real reason you fail to stick with habits is that your self-image gets
+in the way. This is why you can’t get too attached to one version of your
+identity. Progress requires unlearning. Becoming the best version of yourself
+requires you to continuously edit your beliefs, and to upgrade and expand your
+identity.
+This brings us to an important question: If your beliefs and worldview play
+such an important role in your behavior, where do they come from in the first
+place? How, exactly, is your identity formed? And how can you emphasize new
+aspects of your identity that serve you and gradually erase the pieces that hinder
+you?
+THE TWO-STEP PROCESS TO CHANGING YOUR IDENTITY
+Your identity emerges out of your habits. You are not born with preset beliefs.
+Every belief, including those about yourself, is learned and conditioned through
+experience.*
+More precisely, your habits are how you embody your identity. When you
+make your bed each day, you embody the identity of an organized person. When
+you write each day, you embody the identity of a creative person. When you
+train each day, you embody the identity of an athletic person.
+The more you repeat a behavior, the more you reinforce the identity
+associated with that behavior. In fact, the word identity was originally derived
+from the Latin words essentitas, which means being, and identidem, which
+means repeatedly. Your identity is literally your “repeated beingness.”
+Whatever your identity is right now, you only believe it because you have
+proof of it. If you go to church every Sunday for twenty years, you have
+evidence that you are religious. If you study biology for one hour every night,
+you have evidence that you are studious. If you go to the gym even when it’s
+snowing, you have evidence that you are committed to fitness. The more
+evidence you have for a belief, the more strongly you will believe it.
+For most of my early life, I didn’t consider myself a writer. If you were to ask
+any of my high school teachers or college professors, they would tell you I was
+an average writer at best: certainly not a standout. When I began my writing
+career, I published a new article every Monday and Thursday for the first few
+years. As the evidence grew, so did my identity as a writer. I didn’t start out as a
+writer. I became one through my habits.
+Of course, your habits are not the only actions that influence your identity, but
+by virtue of their frequency they are usually the most important ones. Each
+experience in life modifies your self-image, but it’s unlikely you would consider
+yourself a soccer player because you kicked a ball once or an artist because you
+scribbled a picture. As you repeat these actions, however, the evidence
+accumulates and your self-image begins to change. The effect of one-off
+experiences tends to fade away while the effect of habits gets reinforced with
+time, which means your habits contribute most of the evidence that shapes your
+identity. In this way, the process of building habits is actually the process of
+becoming yourself.
+This is a gradual evolution. We do not change by snapping our fingers and
+deciding to be someone entirely new. We change bit by bit, day by day, habit by
+habit. We are continually undergoing microevolutions of the self.
+Each habit is like a suggestion: “Hey, maybe this is who I am.” If you finish a
+book, then perhaps you are the type of person who likes reading. If you go to the
+gym, then perhaps you are the type of person who likes exercise. If you practice
+playing the guitar, perhaps you are the type of person who likes music.
+Every action you take is a vote for the type of person you wish to become. No
+single instance will transform your beliefs, but as the votes build up, so does the
+evidence of your new identity. This is one reason why meaningful change does
+not require radical change. Small habits can make a meaningful difference by
+providing evidence of a new identity. And if a change is meaningful, it actually
+is big. That’s the paradox of making small improvements.
+Putting this all together, you can see that habits are the path to changing your
+identity. The most practical way to change who you are is to change what you
+do.
+Each time you write a page, you are a writer.
+Each time you practice the violin, you are a musician.
+Each time you start a workout, you are an athlete.
+Each time you encourage your employees, you are a leader.
+Each habit not only gets results but also teaches you something far more
+important: to trust yourself. You start to believe you can actually accomplish
+these things. When the votes mount up and the evidence begins to change, the
+story you tell yourself begins to change as well.
+Of course, it works the opposite way, too. Every time you choose to perform a
+bad habit, it’s a vote for that identity. The good news is that you don’t need to be
+perfect. In any election, there are going to be votes for both sides. You don’t
+need a unanimous vote to win an election; you just need a majority. It doesn’t
+matter if you cast a few votes for a bad behavior or an unproductive habit. Your
+goal is simply to win the majority of the time.
+New identities require new evidence. If you keep casting the same votes
+you’ve always cast, you’re going to get the same results you’ve always had. If
+nothing changes, nothing is going to change.
+It is a simple two-step process:
+1. Decide the type of person you want to be.
+2. Prove it to yourself with small wins.
+First, decide who you want to be. This holds at any level—as an individual, as
+a team, as a community, as a nation. What do you want to stand for? What are
+your principles and values? Who do you wish to become?
+These are big questions, and many people aren’t sure where to begin—but
+they do know what kind of results they want: to get six-pack abs or to feel less
+anxious or to double their salary. That’s fine. Start there and work backward
+from the results you want to the type of person who could get those results. Ask
+yourself, “Who is the type of person that could get the outcome I want?” Who is
+the type of person that could lose forty pounds? Who is the type of person that
+could learn a new language? Who is the type of person that could run a
+successful start-up?
+For example, “Who is the type of person who could write a book?” It’s
+probably someone who is consistent and reliable. Now your focus shifts from
+writing a book (outcome-based) to being the type of person who is consistent
+and reliable (identity-based).
+This process can lead to beliefs like:
+“I’m the kind of teacher who stands up for her students.”
+“I’m the kind of doctor who gives each patient the time and empathy
+they need.”
+“I’m the kind of manager who advocates for her employees.”
+Once you have a handle on the type of person you want to be, you can begin
+taking small steps to reinforce your desired identity. I have a friend who lost
+over 100 pounds by asking herself, “What would a healthy person do?” All day
+long, she would use this question as a guide. Would a healthy person walk or
+take a cab? Would a healthy person order a burrito or a salad? She figured if she
+acted like a healthy person long enough, eventually she would become that
+person. She was right.
+The concept of identity-based habits is our first introduction to another key
+theme in this book: feedback loops. Your habits shape your identity, and your
+identity shapes your habits. It’s a two-way street. The formation of all habits is a
+feedback loop (a concept we will explore in depth in the next chapter), but it’s
+important to let your values, principles, and identity drive the loop rather than
+your results. The focus should always be on becoming that type of person, not
+getting a particular outcome.
+THE REAL REASON HABITS MATTER
+Identity change is the North Star of habit change. The remainder of this book
+will provide you with step-by-step instructions on how to build better habits in
+yourself, your family, your team, your company, and anywhere else you wish.
+But the true question is: “Are you becoming the type of person you want to
+become?” The first step is not what or how, but who. You need to know who you
+want to be. Otherwise, your quest for change is like a boat without a rudder. And
+that’s why we are starting here.
+You have the power to change your beliefs about yourself. Your identity is not
+set in stone. You have a choice in every moment. You can choose the identity
+you want to reinforce today with the habits you choose today. And this brings us
+to the deeper purpose of this book and the real reason habits matter.
+Building better habits isn’t about littering your day with life hacks. It’s not
+about flossing one tooth each night or taking a cold shower each morning or
+wearing the same outfit each day. It’s not about achieving external measures of
+success like earning more money, losing weight, or reducing stress. Habits can
+help you achieve all of these things, but fundamentally they are not about having
+something. They are about becoming someone.
+Ultimately, your habits matter because they help you become the type of
+person you wish to be. They are the channel through which you develop your
+deepest beliefs about yourself. Quite literally, you become your habits.
+Chapter Summary
+There are three levels of change: outcome change, process change, and
+identity change.
+The most effective way to change your habits is to focus not on what
+you want to achieve, but on who you wish to become.
+Your identity emerges out of your habits. Every action is a vote for the
+type of person you wish to become.
+Becoming the best version of yourself requires you to continuously
+edit your beliefs, and to upgrade and expand your identity.
+The real reason habits matter is not because they can get you better
+results (although they can do that), but because they can change your
+beliefs about yourself.`,
   },
   {
     chapter_number: 3,
-    title: "Dancing Machine",
-    content: `The media write weird stuff about me all the time. The distortion of the
-truth bothers me. I usually don't read a lot of what is printed, although I
-often hear about it.
-I don't understand why they feel the need to make up things about me. I
-suppose if there's nothing scandalous to report, it's necessary to make
-things interesting. I take some small pride in thinking that I've come out
-pretty well, all things considered. A lot of children in the entertainment
-business ended up doing drugs and destroying themselves: Frankie Lymon,
-Bobbie Driscoll, any of a number of child stars. And I can understand their
-turning to drugs, considering the enormous stresses put upon them at a young
-age. It's a difficult life. Very few manage to maintain any semblance of a
-normal childhood.
-I myself have never tried drugs - no marijuana, no cocaine, nothing. I mean,
-I haven't even tried these things.
-Forget it.
-This isn't to say we were never tempted. We were musicians doing business
-during an era when drug use was common. I don't mean to be judgmental - it's
-not even a moral issue for me - but I've seen drugs destroy too many lives
-to think they're anything to fool with. I'm certainly no angel, and I may
-have my own bad habits, but drugs aren't among them.
-By the time Ben came out, we knew that we were going to go around the world.
-American soul music had become as popular in other countries as blue jeans
-and hamburgers. We were invited to become part of that big world, and in
-1972 we began our first overseas tour with a visit to England. Though we'd
-never been there before or appeared on British television, people knew all
-the words to our songs. They even had wide scarves with our pictures on them
-and "Jackson 5" written in big broad letters. The theatres were smaller than
-the ones we were used to playing in the United States, but the enthusiasm
-from the crowds was very gratifying as we'd finish each song. They didn't
-scream during the songs the way crowds did back home, so people over there
-could actually tell how good Tito was getting on the guitar, because they
-could hear him.
-We took Randy along because we wanted to give him the experience and allow
-him to see what was going on. He wasn't officially part of our act, but
-stayed in the background with bongos. He had his own Jackson 5 outfit, so
-when we introduced him, people cheered. The next time we came back, Randy
-would be a part of the group. I had been the bongo player before Randy, and
-Marlon had played them before me, so it had become almost a tradition to
-break the new guy in on those crazy little drums.
-We had three years of hits behind us when we toured Europe that first time,
-so there was enough to please both the kids who followed our music and the
-Queen of England, whom we met at a Royal Command Performance. That was
-very
-exciting for us. I had seen photographs of other groups, like the Beatles,
-meeting the Queen after command performances, but I never dreamed we'd get
-the chance to play for her.
-England was our jumping-off point, and it was different from any place we'd
-been before, but the farther we travelled, the more exotic the world looked.
-We saw the great museums of Paris and the beautiful mountains of
-Switzerland. Europe was an education in the roots of Western culture and, in
-a way, a preparation for visiting Eastern countries that were more
-spiritual. I was very impressed that the people there didn't value material
-things as much as they did animals and nature. For instance, China and Japan
-were places that helped me grow because these countries made me understand
-there was more to life than the things you could hold in your hand or see
-with you eyes. And in all of these countries, the people had heard of us and
-liked our music.
-Australia and New Zealand, our next stops, were English-speaking, but we met
-people who were still living in tribes in the outback. They greeted us as
-brothers even though they didn't speak our language. If I'd ever needed
-proof that all men could be brothers, I certainly had it during that tour.
-And then there was Africa. We had read up on Africa because our tutor, Miss
-Fine, had prepared special lessons on the customs and history of each
-country we visited. We didn't get to see the prettier parts of Africa, but
-the ocean and the shore and the people were unbelievably beautiful near the
-coast where we were. We went to a game reserve one day and observed animals
-roaming wild. The music was eye-opening too. The rhythms were phenomenal.
-When we first came off the plane, it was dawn and there was a long line of
-Africans dancing in their native costumes, with drums and shakers. They were
-dancing all around, welcoming us. They were really into it. Boy, it was
-something. What a perfect way to welcome us to Africa. I'll never forget
-that.
-And the craftspeople in the marketplace were incredible. People were making
-things as we watched and selling other things. I remember one man who made
-beautiful wood carvings. He'd ask you what you wanted and you'd say, "A
-man's face," and he'd take a piece from a tree trunk, slice it, and create
-this remarkable face. You could watch him do it right before your eyes. I'd
-just sit there and watch people step up to ask him to make something for
-them and he'd do this whole thing over and over.
-It was a visit to Senegal that made us realise how fortunate we were and how
-our African heritage had helped to make us what we were. We visited an old,
-abandoned slave camp at Gore Island and we were so moved. The African people
-had given us gifts of courage and endurance that we couldn't hope to repay.
-I guess if Motown could have had us age the way they wanted us to, they
-would have wanted Jackie to stay the age he was when we became a headline
-act and have each of us catch up with him - although I think they'd have
-wanted to keep me a year or so younger, so I could still be a child star.
-That may sound nonsensical, but it really wasn't much more farfetched than
-the way they were continuing to mold us, keeping is from being a real group
-with its own internal direction and ideas. We were growing up and we were
-expanding creatively. We had so many ideas we wanted to try out, but they
-were convinced that we shouldn't fool with a successful formula. At least
-they didn't drop us as soon as my voice changed, as some said they might.
-It got to the point that it seemed there were more guys in the booth than
-there were on the studio floor at any given time. They all seemed to be
-bumping into one another, giving advice and monitoring our music.
-Our loyal fans stuck with us on records like "I Am Love" and "Skywriter."
-These songs were musically ambitious pop recordings, with sophisticated
-string arrangements, but they weren't right for us. Sure, we couldn't do
-"ABC" all our lives - that was the last thing we wanted - but even the older
-fans thought "ABC" had more going for it, and that was hard for us to live
-with. During the mid-seventies we were in danger of becoming an oldies act,
-and I wasn't even eighteen yet.
-When Jermaine married Hazel Gordy, our boss's daughter, people were winking
-at us, saying that we'd always be looked after. Indeed, when "Get It
-Together" came out in 1973, it got the same treatment from Berry that "I
-Want You Back" had gotten. It was our biggest hit in two years, though you
-could have said it was more like a bone transplant than the spanking little
-baby that our first hit was. Nevertheless, "Get It Together" had good, tough
-low harmony, a sharper wah-wah guitar, and strings that buzzed like
-fireflies. Radio stations liked it, but not as much as the new dance clubs
-called discos did. Motown picked up on this and brought back Hal Davis from
-The Corporation days to really put the juice into "Dancing Machine." The
-Jackson 5 were no longer just the backup group for the 101 Strings or
-whatever.
-Motown had come a long way from the early days when you could find good
-studio musicians supplementing their session pay with bowling alley gigs. A
-new sophistication turned up in the music on "Dancing Machine." That song
-had the best horn part we'd worked with yet and a "bubble machine" in the
-break, made out of synthesizer noise, that kept the song from going
-completely out of style. Disco music had its detractors, but to us it seemed
-our rite of passage into the adult world.
-I loved "Dancing Machine," loved the groove and the feel of that song. When
-it came out in 1974, I was determined to find a dance move that would
-enhance the song and make it more exciting to perform - and, I hoped, more
-exciting to watch.
-So when we sang "Dancing Machine" on "Soul Train," I did a street-style
-dance move called the Robot. That performance was a lesson to me in the
-power of television. Overnight, "Dancing Machine" rose to the top of the
-charts, and within a few days it seemed that every kid in the United States
-was doing the Robot. I had never seen anything like it.
-Motown and the Jackson 5 could agree on one thing: As our act grew, our
-audience should too. We had two recruits coming up: Randy had already toured
-with us, and Janet was showing talent with her singing and dancing lessons.
-We couldn't put Randy and Janet into our old lineup any more than we could
-put square pegs into round holes. I wouldn't insult their considerable
-talent by saying that show business was so in their blood that they just
-took their places automatically, as if we'd reserved a spot for them. They
-worked hard and earned their places in the group. They didn't join us
-because they ate meals with us and shared our old toys.
-If you just went by blood, I'd have as much crane operator in me as singer.
-You can't measure these things. Dad worked us hard and kept certain goals in
-sight while spinning dreams at night.
-Just as disco might have seemed like a very unlikely place for a kids' group
-to become a grown-up act, Las Vegas, with its showcase theatres, wasn't
-exactly the family atmosphere that Motown had originally groomed us for, but
-we decided to play there just the same. There wasn't much to do in Las Vegas
-if you didn't gamble, but we thought of the theatres in the city as just big
-clubs with the club hours and clientele of our Gary and South Side Chicago
-days - except for the tourists. Tourist crowds were a good thing for us,
-since they knew our old hits and would watch our skits and listen to new
-songs without getting restless. It was great to see the delight on their
-faces when little Janet came out in her Mae West costume for a number or
-two.
-We had performed skits before, in a 1971 TV special called Goin' Back To
-Indiana , which celebrated our Gary homecoming the first time we all decided
-to return. Our records had become hits all over the world since we'd seen
-our hometown last.
-It was even more fun to do skits with nine of us, instead of just five, plus
-whatever guests happened to appear with us. Our expanded lineup was a dream
-come true for Dad. Looking back, I know the Las Vegas shows were an
-experience I'll never recapture. We didn't have the high-pressure concert
-crowd wanting all our hit songs and nothing more. We were temporarily freed
-from the pressures of having to keep up with what everyone else was doing.
-We had a ballad or two in every show to break in my "new voice." At fifteen,
-I was having to think about things like that.
-There were people from CBS Television at our Las Vegas shows and they
-approached us about doing a variety show for the upcoming summer. We were
-very interested and pleased that we were being recognised as more than just
-a "Motown group." Over time, this distinction would not be lost on us.
-Because we had creative control over our Las Vegas revue, it was harder for
-us to return to our lack of freedom in recording and writing music once we
-got back to Los Angeles. We'd always intended to grow and develop in the
-musical field. That was our bread and butter, and we felt we were being held
-back. Sometimes I felt we were being treated as if we still lived in Berry
-Gordy's house - and with Jermaine now a son-in-law, our frustration was only
-heightened.
-By the time we began putting our own act together, there were signs that
-other Motown institutions were changing. Marvin Gaye took charge of his own
-music and produced his masterpiece album, What's Goin' On . Stevie Wonder
-was learning more about electronic keyboards than the experienced studio
-hired guns - they were coming to him for advice. One of our last great
-memories from our Motown days is of Stevie leading us in chanting to back up
-his tough, controversial song "You Haven't Done Nothin'." Though Stevie and
-Marvin were still in the Motown camp, they had fought for - and won - the
-right to make their own records, and even to publish their own songs. Motown
-hadn't even budged with us. To them we were still kids, even if they weren't
-dressing us and "protecting" us any longer.
-Our problems with Motown began around 1974, when we told them in no
-uncertain terms that we wanted to write and produce our own songs.
-Basically, we didn't like the way our music sounded at the time. We had a
-strong competitive urge and we felt we were in danger of being eclipsed by
-other groups who were creating a more contemporary sound.
-Motown said, "No, you can't write your own songs; you've got to have
-songwriters and producers." They not only refused to grant our requests,
-they told us it was taboo to even mention that we wanted to do our own
-music. I really got discouraged and began to seriously dislike all the
-material Motown was feeding us. Eventually I became so disappointed and
-upset that I wanted to leave Motown behind.
-When I feel that something is not right, I have to speak up. I know most
-people don't think of me as tough or strong-willed, but that's just because
-they don't know me. Eventually my brothers and I reached a point with Motown
-where we were miserable but no one was saying anything. My brothers didn't
-say anything. My father didn't say anything. So it was up to me to arrange a
-meeting with Berry Gordy and talk to him. I was the one who had to say that
-we - the Jackson 5 - were going to leave Motown. I went over to see him,
-face to face, and it was one of the most difficult things I've ever done. If
-I had been the only one of us who was unhappy, I might have kept my mouth
-shut, but there had been so much talk at home about how unhappy we all were
-that I went in and talked to him and told him how we felt. I told him I was
-unhappy.
-Remember, I love Berry Gordy. I think he's a genius, a brilliant man who's
-one of the giants of the music business. I have nothing but respect for him,
-but that day I was a lion. I complained that we weren't allowed any freedom
-to write songs and produce. He told me that he still thought we needed
-producers to make hit records.
-But I knew better, Berry was talking out of anger. That was a difficult
-meeting, but we're friends again, and he's still like a father to me - very
-proud of me and happy about my success. No matter what, I will always love
-Berry because he taught me some of the most valuable things I've learned in
-my life. He's the man who told the Jackson 5 they would become a part of
-history, and that is exactly what happened. Motown has done so much for so
-many people over the years. I feel we're fortunate to have been one of the
-groups Berry personally introduced to the public and I owe enormous thanks
-to this man. My life would have been very different without him. We all felt
-that Motown started us, supporting our professional careers. We all felt our
-roots were there, and we all wished we could stay. We were grateful for
-everything they had done for us, but change is inevitable. I'm a person of
-the present, and I have to ask, How are things going now? What's happening
-now? What's going to happen in the future that could affect what has
-happened in the past?
-It's important for artists always to maintain control of their lives and
-work. There's been a big problem in the past with artists being taken
-advantage of. I've learned that a person can prevent that from happening by
-standing up for what he or she believes is right, without concern for the
-consequences. We could have stayed with Motown; but if we had, we'd probably
-be an oldies act.
-I knew it was time for change, so we followed our instincts, and we won when
-we decided to try for a fresh start with another label. Epic
-We were relieved that we had finally made our feelings clear and cut the
-ties that were binding us, but we were also really devastated when Jermaine
-decided to stay with Motown. He was Berry's son-in-law and his situation was
-more complicated than ours. He thought it was more important for him to stay
-than to leave, and Jermaine always did as his conscience told him, so he
-left the group.
-I clearly remember the first show we did without him, because it was so
-painful for me. Since my earliest days on the stage - and even in our
-rehearsals in our Gary living room - Jermaine stood at my left with his
-bass. I depended on being next to Jermaine. And when I did that first show
-without him there, with no one next to me, I felt totally naked onstage for
-the first time in my life. So we worked harder to compensate for the loss of
-one of our shining stars, Jermaine. I remember that show well because we got
-three standing ovations. We worked hard .
-When Jermaine left the group, Marlon had a chance to take his place and he
-really shone onstage. My brother Randy officially took my place as bongo
-player and the baby of the band.
-Around the time that Jermaine left, things were further complicated for us
-because of the fact that we were doing a stupid summer replacement TV
-series. It was a dumb move to agree to do that show and I hated every minute
-of it.
-I had loved the old "Jackson Five" cartoon show. I used to wake up early on
-Saturday mornings and say, "I'm a cartoon!" But I hated doing this
-television show because I felt it would hurt our recording career rather
-than help it. I think a TV series is the worst thing an artist who has a
-recording career can do. I kept saying, "But this is gonna hurt our record
-sales." And others said, "No, it's gonna help them."
-They were totally wrong. We had to dress in ridiculous outfits and perform
-stupid comedy routines to canned laughter. It was all so fake. We didn't
-have time to learn or master anything about television. We had to create
-three dance numbers a day, trying to meet a deadline. The Nielsen ratings
-controlled our lives from week to week. I'd never do it again. It's a
-dead-end road. What happens is partly psychological. You are in people's
-homes every week and they begin to feel they know you too well. You're doing
-all this silly comedy to canned laughter and your music begins to recede
-into the background. When you try to get serious again and pick up your
-career where you left off, you can't because you're overexposed. People are
-thinking of you as the guys who do the silly, crazy routines. One week
-you're Santa Claus, the next week you're Prince Charming, another week
-you're a rabbit. It's crazy, because you lose your identity in the business;
-the rocker image you had is gone. I'm not a comedian. I'm not a show host.
-I'm a musician. That's why I've turned down offers to host the Grammy Awards
-and the American Music Awards. Is it really entertaining for me to get up
-there and crack a few weak jokes and force people to laugh because I'm
-Michael Jackson, when I know in my heart that I'm not funny?
-After our TV show I can remember doing theatres-in-the-round where the stage
-didn't revolve because if they had turned it, we would have been singing to
-some empty seats. I learned something from that experience and I was the one
-who refused to renew our contract with the network for another season. I
-just told my father and brothers that I thought it was a big mistake, and
-they understood my point of view. I had actually had a lot of misgivings
-about the show before we started taping it, but I ended up agreeing to give
-it a try because everyone thought it would be a great experience and very
-good for us.
-The problem with TV is that everything must be crammed into a little space
-of time. You don't have time to perfect anything. Schedules - tight
-schedules - rule your life. If you're not happy with something, you just
-forget it and move on to the next routine. I'm a perfectionist by nature. I
-like things to be the best they can be. I want people to hear or watch
-something I've done and feel that I've given it everything I've got. I feel
-I owe an audience that courtesy. On the show our sets were sloppy, the
-lighting was poor, and our choreography was rushed . Somehow, the show was a
-big hit. There was a popular show on opposite us and we beat them out in the
-Nielsens. CBS really wanted to keep us, but I knew that show was a mistake.
-As it turned out, it did hurt our record sales and it took us a while to
-recover from the damage. When you know something's wrong for you, you have
-to make difficult decisions and trust your instincts.
-I rarely did TV after that; the Motown 25 special is the only show that
-comes to mind. Berry asked me to be on that show and I kept trying to say
-no, but he finally talked me into it. I told him I wanted to do "Billie
-Jean" even though it would be the only non-Motown song on the show, and he
-readily agreed. "Billie Jean" was number one at the time. I choreographed
-our routines, so I was pretty wrapped up in those numbers, but I had a good
-notion of what I wanted to do with "Billie Jean." I had a sense that the
-routine had worked itself out in my mind while I was busy with other things.
-I asked someone to rent or buy me a black fedora - a spy hat - and the day
-of the show I began putting the routine together. I'll never forget that
-night, because when I opened my eyes at the end, people were on their feet
-applauding. I was overwhelmed by the reaction. It felt so good.
-Our only "break" during the Motown-to-Epic switch was the TV show. While
-that was all going on, we heard that Epic had Kenny Gamble and Leon Huff
-working on demos for us. We were told we'd be recording in Philadelphia
-after our shows were all done.
-If there was anyone who stood to gain the most from switching labels, it was
-Randy, who was now part of the Five. But now that he finally was one of us,
-we were no longer known as the Jackson 5. Motown said that the group's name
-was the company's registered trademark, and that we couldn't use it when we
-left. That was hardball, of course, so we called ourselves the Jacksons from
-that time on.
-Dad had met with the Philly guys while negotiations were going on with Epic.
-We'd always had great respect for the records that Gamble and Huff had
-overseen, records like "Backstabbers" by the O'Jays, "If You Don't Know Me
-By Now," by Harold Melvin and the Blue Notes(featuring Teddy Pendergrass),
-and "When Will I See You Again," by the Three Degrees, along with many other
-hits. They told Dad they'd been watching us, and they said they wouldn't
-mess with our singing. Dad mentioned that we were hoping to have a song or
-two of our own included in the new album, and they promised to give them a
-fair hearing.
-We'd gotten to talk with Kenny and Leon and their team of people, which
-included Leon McFadden and John Whitehead. They showed what they could do
-for themselves when they made "Ain't No Stoppin' Us Now" in 1979. Dexter
-Wanzel was also a part of this team. Kenny Gamble and Leon Huff are such
-pros. I actually got a chance to watch them create as they presented songs
-to us and that helped my songwriting a lot. Just watching Huff play the
-piano while Gamble sang taught me more about the anatomy of a song than
-anything else. Kenny Gamble is a master melody man. He made me pay closer
-attention to the melody because of watching him create. And I would watch,
-too. I'd sit there like a hawk, observing every decision, listening to every
-note. They'd come to us in our hotel and play a whole album's worth of music
-for us. That's the way we'd be introduced to the songs they had chosen for
-our album - aside from the two songs we were writing ourselves. It was an
-amazing thing to be present for.
-We had cut some demos of our songs at home during our breaks from shooting,
-but we decided to wait on those - we felt there was no sense putting a gun
-to anyone's head. We knew that Philly had a lot to offer us, so we'd save
-our surprise for them later.
-Our two songs, "Blues Away" and "Style of Life," were two hard secrets to
-keep at the time because we were so proud of them. "Style of Life" was a jam
-that Tito directed, and it was in keeping with the nightclub groove that
-"Dancing Machine" got us into, but we kept it a little leaner and meaner
-than Motown would have cut it.
-"Blues Away" was one of my first songs, and though I don't sing it any more,
-I'm not embarrassed to hear it. I couldn't have gone on in this business if
-I had ended up hating my own records after all that work. It's a light song
-about overcoming a deep depression - I was going for the Jackie Wilson
-"Lonely Teardrops" way of laughing on the outside to stop the churning
-inside.
-When we saw the cover art for The Jacksons album, the first we cut for Epic,
-we were surprised to see that we all looked alike. Even Tito looked skinny!
-I had my "crown" Afro then, so I didn't stick out so much, I guess. Still,
-once we performed our new songs like "Enjoy Yourself" and "Show You the Way
-to Go," people knew I was still second from the left, right out front. Randy
-took Tito's old spot on my far right, and Tito moved into the old place
-Jermaine had. It took a long time for me to feel comfortable with that, as
-I've mentioned, though it was through no fault of Tito's.
-Those two singles were fun records - "Enjoy Yourself" was great for dancing.
-It had rhythm guitar and horns that I really liked. It was also a number one
-record. For my taste, I leaned a little more toward "Show You the Way to Go"
-because it showed what good regard the Epic people had for our singing. We
-were all over that record and it was the best one we did. I loved the high
-hat and strings fluttering alongside us like birds' wings. I'm surprised
-that song in particular wasn't a bigger hit.
-Though we couldn't spell it out, we kind of hinted about our situation in a
-song called "Living Together," which Kenny and Leon chose with us in mind.
-"If we're going to stick together, we've got to be a family. Have yourself a
-real good time, but don't you know it's getting late." The strings pointed
-and thrust like they did in "Backstabbers," but that was a Jacksons'
-message, even if it wasn't in the Jacksons' style - yet.
-Gamble and Huff had written enough songs for another album, but we knew from
-experience that while they were doing what they did best, we were losing
-some of our identity. We were honoured to be a part of the Philly family,
-but that wasn't enough for us. We were determined to do all of the things we
-had wanted to do for so many years. That's why we had to go back into our
-Encino studio and work together again as a family.
-Going Places , our second album for Epic, was different from our first.
-There were more songs with messages and not as many dance songs. We knew
-that the message to promote peace and let music take over was a good one,
-but again it was more like the old O'Jays' "Love Train" and not really our
-style.
-Still, maybe it wasn't a bad thing that there was no big pop hit on Going
-Places because it made "Different Kind of Lady" an obvious choice for club
-play. It was positioned in the middle of side one, so there were two Gamble
-and Huff songs sandwiching it, and our song stood out like a ball of fire.
-That was a real band cooking, with the Philly horns giving it one
-exclamation point after another, just as we'd hoped. That's the feel we were
-trying for when we were making demos with our old friend Bobby Taylor before
-going to Epic. Kenny and Leon put the finishing touches on it, the icing,
-but on this one we'd baked the cake ourselves.
-After Going Places was in the stores, Dad asked me to accompany him to a
-meeting with Ron Alexenburg. Ron signed us for CBS, and he really believed
-in us. We wanted to convince him that we were ready now to take charge of
-our own music. We felt that CBS had evidence of what we could do on our own,
-so we stated our case, explaining that we'd originally wanted Bobby Taylor
-to work with us. Bobby had stuck with us through all those years, and we had
-thought he'd be a fine producer for us. Epic wanted Gamble and Huff because
-they had the track record, but maybe they were the wrong jockeys or we were
-the wrong horses for them, because we were letting them down in the sales
-department through no fault of our own. We had a strong work ethic that
-backed up everything we did.
-Mr. Alexenburg was certainly used to dealing with performers, although I'm
-sure that among his business friends he could be just as cutting about
-musicians as we musicians could be when we were swapping our own stories
-among ourselves. But Dad and I were on the same wavelength when it came to
-the business side of music. People who make music and people who sell
-records are not natural enemies. I care as much about what I do as a
-classical musician, and I want what I do to reach the widest possible
-audience. The record people care about their artists, and they want to reach
-the widest market. As we sat in the CBS boardroom eating a nicely catered
-lunch, we told Mr. Alexenburg that Epic had done its best, and it wasn't
-good enough. We felt we could do better, that our reputation was worth
-putting on the line.
-When we left that skyscraper known as Black Rock, Dad and I didn't say much
-to each other. The ride back to the hotel was a silent one, with each of us
-thinking our own thoughts. There wasn't much to add to what we had already
-said. Our whole lives had been leading to that single, important
-confrontation, however civilised and aboveboard it was. Maybe Ron Alexenburg
-has had reason to smile over the years when he remembers that day.
-When that meeting took place at CBS headquarters in New York, I was only
-nineteen years old. I was carrying a heavy burden for nineteen. My family
-was relying on me more and more as far as business and creative decisions
-were concerned, and I was so worried about trying to do the right thing for
-them; but I also had an opportunity to do something I'd wanted to do all my
-life - act in a film. Ironically the old Motown connection was paying a late
-dividend.
-Motown had bought the rights to film the Broadway show known as The Wiz even
-as we were leaving the company. The Wiz was an updated, black-orientated
-version of the great movie The Wizard of Oz , which I had always loved. I
-remember that when I was a kid The Wizard of Oz was shown on television once
-a year and always on a Sunday night. Kids today can't imagine what a big
-event that was for all of us because they've grown up with videocassettes
-and the expanded viewing that cable provides.
-I had seen the Broadway show too, which was certainly no letdown. I swear I
-saw it six or seven times. I later became very friendly with the star of the
-show, Stephanie Mills, the Broadway Dorothy. I told her then, and I've
-always believed since, that it was a tragedy that her performance in the
-play could not have been preserved on film. I cried time after time. As much
-as I like the Broadway stage, I don't think I'd want to play on it myself.
-When you give a performance, whether on record or on film, you want to be
-able to judge what you've done, to measure yourself and try to improve. You
-can't do that in an untaped or unrecorded performance. It makes me sad to
-think of all the great actors who have played roles we would give anything
-to see, but they're lost to us because they couldn't be, or simply weren't,
-recorded.
-If I had been tempted to go onstage, it would probably have been to work
-with Stephanie, although her performances were so moving that I might have
-cried right there in front of the audience. Motown bought The Wiz for one
-reason, and as far as I was concerned, it was the best reason possible:
-Diana Ross.
-Diana was close to Berry Gordy and had her loyalties to him and to Motown,
-but she did not forget us just because our records now had a different label
-on them. We had been in touch throughout the changes, and she had even met
-up with us in Las Vegas, where she gave us tips during our run there. Diana
-was going to play Dorothy, and since it was the only part that was
-definitely cast, she encouraged me to audition. She also assured me that
-Motown would not keep me from getting a part just to spite me or my family.
-She would make sure of that if she had to, but she didn't think she'd have
-to.
-She didn't. It was Berry Gordy who said he hoped I'd audition for The Wiz .
-I was very fortunate he felt that way, because I was bitten by the acting
-bug during that experience. I said to myself, this is what I'm interested in
-doing when I have a chance - this is it. When you make a film, you're
-capturing something elusive and you're stopping time. The people, their
-performances, the story become a thing that can be shared by people all over
-the world for generations and generations. Imagine never having seen
-Captains Courageous or To Kill a Mockingbird ! Making movies is exciting
-work. It's such a team effort and it's also a lot of fun. Someday soon I
-plan to devote a lot of my time to making films.
-I auditioned for the part of the Scarecrow because I thought his character
-best fit my style. I was too bouncy for the Tin Man and too light for the
-Lion, so I had a definite goal, and I tried to put a lot of thought into my
-reading and dancing for the part. When I got the call back from the
-director, Sidney Lumet, I felt so proud but also a little scared. The
-process of making a film was new to me, and I was going to have to let go of
-my responsibilities to my family and my music for months. I had visited New
-York, where we were shooting, to get the feel for Harlem that The Wiz ¦s
-story called for, but I had never lived there. I was surprised by how
-quickly I got used to the lifestyle. I enjoyed meeting a whole group of
-people I'd always heard about on the other coast but had never laid eyes on.
-Making The Wiz was an education for me on so many levels. As a recording
-artist I already felt like an old pro, but the film world was completely new
-to me. I watched as closely as I could and learned a lot.
-During this period in my life, I was searching, both consciously and
-unconsciously. I was feeling some stress and anxiety about what I wanted to
-do with my life now that I was an adult. I was analysing my options and
-preparing to make decisions that could have a lot of repercussions. Being on
-the set of The Wiz was like being in a big school. My complexion was still a
-mess during the filming of the movie, so I found myself really enjoying the
-makeup. It was an amazing makeup job. Mine took five hours to do, six days a
-week; we didn't shoot on Sundays. We finally got it down to four hours flat
-after doing it long enough. The other people who were being made up were
-amazed that I didn't mind sitting there having this done for such long
-periods of time. They hated it, but I enjoyed having the stuff put on my
-face. When I was transformed into the Scarecrow, it was the most wonderful
-thing in the world. I got to be somebody else and escape through my
-character. Kids would come visit the set, and I'd have such fun playing with
-them and responding to them as the Scarecrow.
-I'd always pictured myself doing something very elegant in the movies, but
-it was my experience with the makeup and costume and prop people in New York
-that made me realise another aspect of how wonderful film-making could be. I
-had always loved the Charlie Chaplin movies, and no one ever saw him doing
-anything overtly elegant in the silent movie days. I wanted something of the
-quality of his characters in my Scarecrow. I loved everything about the
-costume, from the coil legs to the tomato nose to the fright wig. I even
-kept the orange and white sweater that came with it and used it in a picture
-session years later.
-The film had marvellous, very complicated dance numbers, and learning them
-was no problem. But that in itself became an unexpected problem with my
-costars.
-Ever since I was a very little boy, I've been able to watch somebody do a
-dance step and then immediately know how to do it. Another person might have
-to be taken through the movement step by step and told to count and put this
-leg here and the hip to the right. When your hip goes to the left, put your
-neck over there . . . that sort of thing. But if I see it, I can do it.
-When we were doing The Wiz , I was being instructed in the choreography
-along with my characters - the Tin Man, the Lion, and Diana Ross - and they
-were getting mad at me. I couldn't figure out what was wrong until Diana
-took me aside and told me that I was embarrassing her. I just stared at her.
-Embarrassing Diana Ross? Me? She said she knew I wasn't aware of it, but I
-was learning the dances much too quickly. It was embarrassing for her and
-the others, who just couldn't learn steps as soon as they saw the
-choreographer do them. She said he'd show us something and I'd just go out
-there and do it. When he asked the others to do it, it took them longer to
-learn. We laughed about it, but I tried to make the ease with which I
-learned my steps less obvious.
-I also learned that there could be a slightly vicious side to the business
-of making a movie. Often when I was in front of the camera, trying to do a
-serious scene, one of the other characters would start making faces at me,
-trying to crack me up. I had always been drilled in serious professionalism
-and preparedness and therefore I thought it was a pretty mean thing to do.
-This actor would know that I had important lines to say that day, yet he
-would make these really crazy faces to distract me. I felt it was more than
-inconsiderate and unfair.
-Much later Marlon Brando would tell me that people used to do that to him
-all the time.
-The problems on the set were really few and far between and it was great
-working with Diana so closely. She's such a beautiful, talented woman. Doing
-this movie together was very special for me. I love her very much. I have
-always loved her very much.
-The whole Wiz period was a time of stress and anxiety, even though I was
-enjoying myself. I remember July 4 of that year very well, because I was on
-the beach at my brother Jermaine's house, about half a block away along the
-waterfront. I was messing around in the surf, and all of a sudden I couldn't
-breathe. No air. Nothing. I asked myself what's wrong? I tried not to panic,
-but I ran back to the house to find Jermaine, who took me to the hospital.
-It was wild. A blood vessel had burst in my lung. It has never reoccurred,
-although I used to feel little pinches and jerks in there that were probably
-my imagination. I later learned that this condition was related to pleurisy.
-It was suggested by my doctor that I try to take things a little slower, but
-my schedule would not permit it. Hard work continued to be the name of the
-game.
-As much as I liked the old Wizard of Oz , this new script, which differed
-from the Broadway production in scope rather than spirit, asked more
-questions than the original movie and answered them too. The atmosphere of
-the old movie was that of a magic kingdom sort of fairy tale. Our movie, on
-the other hand, had sets based on realities that kids could identify with,
-like schoolyards, subway stations, and the real neighbourhood that our
-Dorothy came from. I still enjoy seeing The Wiz and reliving the experience.
-I am especially fond of the scene where Diana asks, "What am I afraid of?
-Don't know what I'm made of . . ." because I've felt that way many times,
-even during the good moments of my life. She sings about overcoming fear and
-walking straight and tall. She knows and the audience knows that no threat
-of danger can hold her back.
-My character had plenty to say and to learn. I was propped up on my pole
-with a bunch of crows laughing at me, while I sang "You Can't Win." The song
-was about humiliation and helplessness - something that so many people have
-felt at one time or another - and the feeling that there are people out
-there who don't actively hold you back as much as they work quietly on your
-insecurities so that you hold yourself back. The script was clever and
-showed me pulling bits of information and quotations out of my straw while
-not really knowing how to use them. My straw contained all the answers, but
-I didn't know the questions.
-The great difference between the two Wizard movies was that all the answers
-are given to Dorothy by the Good Witch and by her friends in Oz in the
-original, while in our version Dorothy comes to her own conclusions. Her
-loyalty to her three friends and her courage in fighting Elvina in that
-amazing sweatshop scene make Dorothy a memorable character. Diana's singing
-and dancing and acting have stayed with me ever since. She was a perfect
-Dorothy. After the evil witch had been defeated, the sheer joy of our
-dancing took over. To dance with Diana in that movie was like an abridged
-version of my own story - my knock-kneed walk and "bigfoot" spin were me in
-my early days; our tabletop dance in the sweatshop scene was where we were
-right then. Everything was onward and upward. When I told my brothers and
-father I had gotten this part, they thought it might be too much for me, but
-the opposite was true. The Wiz gave me new inspiration and strength. The
-question became what to do with those things. How could I best harness them?
-As I was asking myself what I wanted to do next, another man and I were
-travelling parallel paths that would converge on the set of The Wiz . We
-were in Brooklyn rehearsing one day, and we were reading our parts out loud
-to one another. I had thought that learning lines would be the most
-difficult thing I'd ever do, but I was pleasantly surprised. Everyone had
-been kind, assuring me that it was easier that I thought. And it was.
-We were doing the crows' scene that day. The other guys wouldn't even have
-their heads visible in this scene because they'd be in crow costumes. They
-seemed to know their parts backward and forward. I'd studied mine too, but I
-hadn't said them aloud more than once or twice.
-The directions called for me to pull a piece of paper from my straw and read
-it. It was a quote. The author's name, Socrates, was printed at the end. I
-had read Socrates, but I had never pronounced his name, so I said,
-"Soh-crates," because that's the way I had always assumed it was pronounced.
-There was a moment's silence before I heard someone whisper,
-"Soh-ruh-teeze." I looked over at this man I vaguely recognised. He was not
-one of the actors, but he seemed to belong there. I remember thinking he
-looked very self-confident and had a friendly face.
-I smiled, a little embarrassed at having mispronounced the name, and thanked
-him for his help. His face was naggingly familiar, and I was suddenly sure
-that I had met him before. He confirmed my suspicions by extending his hand.
-"Quincy Jones. I'm doing the score."`,
+    title: "How to Build Better Habits in 4 Simple Steps",
+    content: `IN 1898, A psychologist named Edward Thorndike conducted an experiment that
+would lay the foundation for our understanding of how habits form and the rules
+that guide our behavior. Thorndike was interested in studying the behavior of
+animals, and he started by working with cats.
+He would place each cat inside a device known as a puzzle box. The box was
+designed so that the cat could escape through a door “by some simple act, such
+as pulling at a loop of cord, pressing a lever, or stepping on a platform.” For
+example, one box contained a lever that, when pressed, would open a door on
+the side of the box. Once the door had been opened, the cat could dart out and
+run over to a bowl of food.
+Most cats wanted to escape as soon as they were placed inside the box. They
+would poke their nose into the corners, stick their paws through openings, and
+claw at loose objects. After a few minutes of exploration, the cats would happen
+to press the magical lever, the door would open, and they would escape.
+Thorndike tracked the behavior of each cat across many trials. In the
+beginning, the animals moved around the box at random. But as soon as the
+lever had been pressed and the door opened, the process of learning began.
+Gradually, each cat learned to associate the action of pressing the lever with the
+reward of escaping the box and getting to the food.
+After twenty to thirty trials, this behavior became so automatic and habitual
+that the cat could escape within a few seconds. For example, Thorndike noted,
+“Cat 12 took the following times to perform the act. 160 seconds, 30 seconds, 90
+seconds, 60, 15, 28, 20, 30, 22, 11, 15, 20, 12, 10, 14, 10, 8, 8, 5, 10, 8, 6, 6, 7.”
+During the first three trials, the cat escaped in an average of 1.5 minutes.
+During the last three trials, it escaped in an average of 6.3 seconds. With
+practice, each cat made fewer errors and their actions became quicker and more
+automatic. Rather than repeat the same mistakes, the cat began to cut straight to
+the solution.
+From his studies, Thorndike described the learning process by stating,
+“behaviors followed by satisfying consequences tend to be repeated and those
+that produce unpleasant consequences are less likely to be repeated.” His work
+provides the perfect starting point for discussing how habits form in our own
+lives. It also provides answers to some fundamental questions like: What are
+habits? And why does the brain bother building them at all?
+WHY YOUR BRAIN BUILDS HABITS
+A habit is a behavior that has been repeated enough times to become automatic.
+The process of habit formation begins with trial and error. Whenever you
+encounter a new situation in life, your brain has to make a decision. How do I
+respond to this? The first time you come across a problem, you’re not sure how
+to solve it. Like Thorndike’s cat, you’re just trying things out to see what works.
+Neurological activity in the brain is high during this period. You are carefully
+analyzing the situation and making conscious decisions about how to act. You’re
+taking in tons of new information and trying to make sense of it all. The brain is
+busy learning the most effective course of action.
+Occasionally, like a cat pressing on a lever, you stumble across a solution.
+You’re feeling anxious, and you discover that going for a run calms you down.
+You’re mentally exhausted from a long day of work, and you learn that playing
+video games relaxes you. You’re exploring, exploring, exploring, and then—
+BAM—a reward.
+After you stumble upon an unexpected reward, you alter your strategy for next
+time. Your brain immediately begins to catalog the events that preceded the
+reward. Wait a minute—that felt good. What did I do right before that?
+This is the feedback loop behind all human behavior: try, fail, learn, try
+differently. With practice, the useless movements fade away and the useful
+actions get reinforced. That’s a habit forming.
+Whenever you face a problem repeatedly, your brain begins to automate the
+process of solving it. Your habits are just a series of automatic solutions that
+solve the problems and stresses you face regularly. As behavioral scientist Jason
+Hreha writes, “Habits are, simply, reliable solutions to recurring problems in our
+environment.”
+As habits are created, the level of activity in the brain decreases. You learn to
+lock in on the cues that predict success and tune out everything else. When a
+similar situation arises in the future, you know exactly what to look for. There is
+no longer a need to analyze every angle of a situation. Your brain skips the
+process of trial and error and creates a mental rule: if this, then that. These
+cognitive scripts can be followed automatically whenever the situation is
+appropriate. Now, whenever you feel stressed, you get the itch to run. As soon as
+you walk in the door from work, you grab the video game controller. A choice
+that once required effort is now automatic. A habit has been created.
+Habits are mental shortcuts learned from experience. In a sense, a habit is just
+a memory of the steps you previously followed to solve a problem in the past.
+Whenever the conditions are right, you can draw on this memory and
+automatically apply the same solution. The primary reason the brain remembers
+the past is to better predict what will work in the future.
+Habit formation is incredibly useful because the conscious mind is the
+bottleneck of the brain. It can only pay attention to one problem at a time. As a
+result, your brain is always working to preserve your conscious attention for
+whatever task is most essential. Whenever possible, the conscious mind likes to
+pawn off tasks to the nonconscious mind to do automatically. This is precisely
+what happens when a habit is formed. Habits reduce cognitive load and free up
+mental capacity, so you can allocate your attention to other tasks.
+Despite their efficiency, some people still wonder about the benefits of habits.
+The argument goes like this: “Will habits make my life dull? I don’t want to
+pigeonhole myself into a lifestyle I don’t enjoy. Doesn’t so much routine take
+away the vibrancy and spontaneity of life?” Hardly. Such questions set up a false
+dichotomy. They make you think that you have to choose between building
+habits and attaining freedom. In reality, the two complement each other.
+Habits do not restrict freedom. They create it. In fact, the people who don’t
+have their habits handled are often the ones with the least amount of freedom.
+Without good financial habits, you will always be struggling for the next dollar.
+Without good health habits, you will always seem to be short on energy. Without
+good learning habits, you will always feel like you’re behind the curve. If you’re
+always being forced to make decisions about simple tasks—when should I work
+out, where do I go to write, when do I pay the bills—then you have less time for
+freedom. It’s only by making the fundamentals of life easier that you can create
+the mental space needed for free thinking and creativity.
+Conversely, when you have your habits dialed in and the basics of life are
+handled and done, your mind is free to focus on new challenges and master the
+next set of problems. Building habits in the present allows you to do more of
+what you want in the future.
+THE SCIENCE OF HOW HABITS WORK
+The process of building a habit can be divided into four simple steps: cue,
+craving, response, and reward.* Breaking it down into these fundamental parts
+can help us understand what a habit is, how it works, and how to improve it.
+FIGURE 5: All habits proceed through four stages in the same order: cue, craving, response, and reward.
+This four-step pattern is the backbone of every habit, and your brain runs
+through these steps in the same order each time.
+First, there is the cue. The cue triggers your brain to initiate a behavior. It is a
+bit of information that predicts a reward. Our prehistoric ancestors were paying
+attention to cues that signaled the location of primary rewards like food, water,
+and sex. Today, we spend most of our time learning cues that predict secondary
+rewards like money and fame, power and status, praise and approval, love and
+friendship, or a sense of personal satisfaction. (Of course, these pursuits also
+indirectly improve our odds of survival and reproduction, which is the deeper
+motive behind everything we do.)
+Your mind is continuously analyzing your internal and external environment
+for hints of where rewards are located. Because the cue is the first indication that
+we’re close to a reward, it naturally leads to a craving.
+Cravings are the second step, and they are the motivational force behind every
+habit. Without some level of motivation or desire—without craving a change—
+we have no reason to act. What you crave is not the habit itself but the change in
+state it delivers. You do not crave smoking a cigarette, you crave the feeling of
+relief it provides. You are not motivated by brushing your teeth but rather by the
+feeling of a clean mouth. You do not want to turn on the television, you want to
+be entertained. Every craving is linked to a desire to change your internal state.
+This is an important point that we will discuss in detail later.
+Cravings differ from person to person. In theory, any piece of information
+could trigger a craving, but in practice, people are not motivated by the same
+cues. For a gambler, the sound of slot machines can be a potent trigger that
+sparks an intense wave of desire. For someone who rarely gambles, the jingles
+and chimes of the casino are just background noise. Cues are meaningless until
+they are interpreted. The thoughts, feelings, and emotions of the observer are
+what transform a cue into a craving.
+The third step is the response. The response is the actual habit you perform,
+which can take the form of a thought or an action. Whether a response occurs
+depends on how motivated you are and how much friction is associated with the
+behavior. If a particular action requires more physical or mental effort than you
+are willing to expend, then you won’t do it. Your response also depends on your
+ability. It sounds simple, but a habit can occur only if you are capable of doing
+it. If you want to dunk a basketball but can’t jump high enough to reach the
+hoop, well, you’re out of luck.
+Finally, the response delivers a reward. Rewards are the end goal of every
+habit. The cue is about noticing the reward. The craving is about wanting the
+reward. The response is about obtaining the reward. We chase rewards because
+they serve two purposes: (1) they satisfy us and (2) they teach us.
+The first purpose of rewards is to satisfy your craving. Yes, rewards provide
+benefits on their own. Food and water deliver the energy you need to survive.
+Getting a promotion brings more money and respect. Getting in shape improves
+your health and your dating prospects. But the more immediate benefit is that
+rewards satisfy your craving to eat or to gain status or to win approval. At least
+for a moment, rewards deliver contentment and relief from craving.
+Second, rewards teach us which actions are worth remembering in the future.
+Your brain is a reward detector. As you go about your life, your sensory nervous
+system is continuously monitoring which actions satisfy your desires and deliver
+pleasure. Feelings of pleasure and disappointment are part of the feedback
+mechanism that helps your brain distinguish useful actions from useless ones.
+Rewards close the feedback loop and complete the habit cycle.
+If a behavior is insufficient in any of the four stages, it will not become a
+habit. Eliminate the cue and your habit will never start. Reduce the craving and
+you won’t experience enough motivation to act. Make the behavior difficult and
+you won’t be able to do it. And if the reward fails to satisfy your desire, then
+you’ll have no reason to do it again in the future. Without the first three steps, a
+behavior will not occur. Without all four, a behavior will not be repeated.
+THE HABIT LOOP
+FIGURE 6: The four stages of habit are best described as a feedback loop. They form an endless cycle that is running every moment you are alive. This “habit loop” is continually scanning
+the environment, predicting what will happen next, trying out different responses, and learning from the results.*
+In summary, the cue triggers a craving, which motivates a response, which
+provides a reward, which satisfies the craving and, ultimately, becomes
+associated with the cue. Together, these four steps form a neurological feedback
+loop—cue, craving, response, reward; cue, craving, response, reward—that
+ultimately allows you to create automatic habits. This cycle is known as the habit
+loop.
+This four-step process is not something that happens occasionally, but rather it
+is an endless feedback loop that is running and active during every moment you
+are alive—even now. The brain is continually scanning the environment,
+predicting what will happen next, trying out different responses, and learning
+from the results. The entire process is completed in a split second, and we use it
+again and again without realizing everything that has been packed into the
+previous moment.
+We can split these four steps into two phases: the problem phase and the
+solution phase. The problem phase includes the cue and the craving, and it is
+when you realize that something needs to change. The solution phase includes
+the response and the reward, and it is when you take action and achieve the
+change you desire.
+Problem phase
+1. Cue
+2. Craving
+Solution phase
+3. Response
+4. Reward
+All behavior is driven by the desire to solve a problem. Sometimes the
+problem is that you notice something good and you want to obtain it. Sometimes
+the problem is that you are experiencing pain and you want to relieve it. Either
+way, the purpose of every habit is to solve the problems you face.
+In the table on the following page, you can see a few examples of what this
+looks like in real life.
+Imagine walking into a dark room and flipping on the light switch. You have
+performed this simple habit so many times that it occurs without thinking. You
+proceed through all four stages in the fraction of a second. The urge to act strikes
+you without thinking.
+Problem phase
+1. Cue: Your phone buzzes with a new text message.
+2. Craving: You want to learn the contents of the message.
+Solution phase
+3. Response: You grab your phone and read the text.
+4. Reward: You satisfy your craving to read the message. Grabbing your phone becomes associated with your phone buzzing.
+Problem phase
+1. Cue: You are answering emails.
+2. Craving: You begin to feel stressed and overwhelmed by work. You want to feel in control.
+Solution phase
+3. Response: You bite your nails.
+4. Reward: You satisfy your craving to reduce stress. Biting your nails becomes associated with answering email.
+Problem phase
+1. Cue: You wake up.
+2. Craving: You want to feel alert.
+Solution phase
+3. Response: You drink a cup of coffee.
+4. Reward: You satisfy your craving to feel alert. Drinking coffee becomes associated with waking up.
+Problem phase
+1. Cue: You smell a doughnut shop as you walk down the street near your office.
+2. Craving: You begin to crave a doughnut.
+Solution phase
+3. Response: You buy a doughnut and eat it.
+4. Reward: You satisfy your craving to eat a doughnut. Buying a doughnut becomes associated with walking down the street near your office.
+Problem phase
+1. Cue: You hit a stumbling block on a project at work.
+2. Craving: You feel stuck and want to relieve your frustration.
+Solution phase
+3. Response: You pull out your phone and check social media.
+4. Reward: You satisfy your craving to feel relieved. Checking social media becomes associated with feeling stalled at work.
+Problem phase
+1. Cue: You walk into a dark room.
+2. Craving: You want to be able to see.
+Solution phase
+3. Response: You flip the light switch.
+4. Reward: You satisfy your craving to see. Turning on the light switch becomes associated with being in a dark room.
+By the time we become adults, we rarely notice the habits that are running our
+lives. Most of us never give a second thought to the fact that we tie the same
+shoe first each morning, or unplug the toaster after each use, or always change
+into comfortable clothes after getting home from work. After decades of mental
+programming, we automatically slip into these patterns of thinking and acting.
+THE FOUR LAWS OF BEHAVIOR CHANGE
+In the following chapters, we will see time and again how the four stages of cue,
+craving, response, and reward influence nearly everything we do each day. But
+before we do that, we need to transform these four steps into a practical
+framework that we can use to design good habits and eliminate bad ones.
+I refer to this framework as the Four Laws of Behavior Change, and it
+provides a simple set of rules for creating good habits and breaking bad ones.
+You can think of each law as a lever that influences human behavior. When the
+levers are in the right positions, creating good habits is effortless. When they are
+in the wrong positions, it is nearly impossible.
+How to Create a Good Habit
+The 1st law (Cue): Make it obvious.
+The 2nd law (Craving): Make it attractive.
+The 3rd law (Response): Make it easy.
+The 4th law (Reward): Make it satisfying.
+We can invert these laws to learn how to break a bad habit.
+How to Break a Bad Habit
+Inversion of the 1st law (Cue): Make it invisible.
+Inversion of the 2nd law (Craving): Make it unattractive.
+Inversion of the 3rd law (Response): Make it difficult.
+Inversion of the 4th law (Reward): Make it unsatisfying.
+It would be irresponsible for me to claim that these four laws are an
+exhaustive framework for changing any human behavior, but I think they’re
+close. As you will soon see, the Four Laws of Behavior Change apply to nearly
+every field, from sports to politics, art to medicine, comedy to management.
+These laws can be used no matter what challenge you are facing. There is no
+need for completely different strategies for each habit.
+Whenever you want to change your behavior, you can simply ask yourself:
+1. How can I make it obvious?
+2. How can I make it attractive?
+3. How can I make it easy?
+4. How can I make it satisfying?
+If you have ever wondered, “Why don’t I do what I say I’m going to do? Why
+don’t I lose the weight or stop smoking or save for retirement or start that side
+business? Why do I say something is important but never seem to make time for
+it?” The answers to those questions can be found somewhere in these four laws.
+The key to creating good habits and breaking bad ones is to understand these
+fundamental laws and how to alter them to your specifications. Every goal is
+doomed to fail if it goes against the grain of human nature.
+Your habits are shaped by the systems in your life. In the chapters that follow,
+we will discuss these laws one by one and show how you can use them to create
+a system in which good habits emerge naturally and bad habits wither away.
+Chapter Summary
+A habit is a behavior that has been repeated enough times to become
+automatic.
+The ultimate purpose of habits is to solve the problems of life with as
+little energy and effort as possible.
+Any habit can be broken down into a feedback loop that involves four
+steps: cue, craving, response, and reward.
+The Four Laws of Behavior Change are a simple set of rules we can
+use to build better habits. They are (1) make it obvious, (2) make it
+attractive, (3) make it easy, and (4) make it satisfying.`,
   },
   {
     chapter_number: 4,
-    title: "Me And Q",
-    content: `I had actually first met Quincy Jones in Los Angeles when I was about twelve
-years old. Quincy later told me that at the time Sammy Davis, Jr., had said
-to him, "This kid is gonna be the next biggest thing since sliced bread."
-Something like that, anyway, and Quincy said, "Oh yeah?" I was little at the
-time, but I vaguely remembered Sammy Davis introducing me to Q.
-Our friendship really began to blossom on the set of The Wiz , and it
-developed into a father-and-son relationship. After The Wiz I called him and
-said, "Look, I'm going to do an album - do you think you could recommend
-some producers?"
-I wasn't hinting. My question was a naive but honest one. We talked about
-music for a while, and, after coming up with some names and some
-half-hearted hemming and hawing, he said, "Why don't you let me do it?"
-I really hadn't thought of it. It sounded to him as if I was hinting, but I
-wasn't. I just didn't think he would be that interested in my music. So I
-stammered something like, "Oh sure, great idea. I never thought about that."
-Quincy still kids me about it.
-Anyway, we immediately began to plan the album that became Off the Wall .
-My brothers and I decided to form our own production company, and we began
-thinking about names to call it.
-You don't find many articles about peacocks in the newspaper, but around
-this time I found the only one that mattered. I had always thought peacocks
-were beautiful and had admired one that Berry Gordy had at one of his homes.
-So when I read the article, which had an accompanying picture of a peacock,
-and revealed a great deal about the bird's characteristics, I was excited. I
-thought I might have found the image we were looking for. It was an in-depth
-piece, a little dry in places, but interesting. The writer said that the
-peacock's full plumage would explode only when it was in love, and then all
-the colours would shine - all the colours of the rainbow on one body.
-I was immediately taken with that beautiful image and the meaning behind it.
-That bird's plumage conveyed the message I was looking for to explain the
-Jacksons and our intense devotion to one another, as well as our
-multifaceted interests. My brothers liked the idea, so we called our new
-company Peacock Productions, to sidestep the trap of relying too heavily on
-the Jackson name. Our first world tour had focused our interest in uniting
-people of all races through music. Some people we knew wondered what we
-meant when we talked about uniting all the races through music -after all,
-we were black musicians. Our answer was "music is colour-blind." We saw that
-every night, especially in Europe and the other parts of the world we had
-visited. The people we met there loved our music. It didn't matter to them
-what colour our skin was or which country we called home.
-We wanted to form our own production company because we wanted to grow and
-establish ourselves as a new presence in the music world, not just as
-singers and dancers, but as writers, composers, arrangers, producers, and
-even publishers. We were interested in so many things, and we needed an
-umbrella company to keep track of our projects. CBS had agreed to let us
-produce our own album - the last two albums had sold well, but "Different
-Kind of Lady" showed a potential that they agreed was worth letting us
-develop. They did have one condition for us: they assigned an A&R man, Bobby
-Colomby, who used to be with Blood, Sweat, and Tears, to check in with us
-from time to time to see how we were doing and to see if we needed any help.
-We knew that the five of us needed some outside musicians to get the best
-possible sound, and we were weak in two areas: the keyboard and arranging
-sides of things. We had been faithfully adding all the new technology to our
-Encino studio without really having a mastery of it. Greg Phillinganes was
-young for a studio pro, but that was a plus as far as we were concerned
-because we wanted someone who would be more open to newer ways of doing
-things than the seasoned veterans we had encountered over the years.
-He came to Encino to do preproduction work, and we all took turns surprising
-each other. Our mutual preconceptions just dissolved. It was a great thing
-to watch. As we sketched out our new songs for him, we told him that we
-liked the vocal tracks that Philly International always put a premium on,
-but when the mix came out, we always seemed to be fighting someone else's
-wall of sound, all those strings and cymbals. We wanted to sound cleaner and
-more funky, with a flintier bass and sharper horn parts. With his beautiful
-rhythm arrangements, Greg put into musical form what we were sketching for
-him and then some. We felt he was reading our minds.
-A Bobby Colomby recruit who came to work with us then was Paulinho de Costa,
-whom we worried about because it seemed to us that Randy was being told he
-couldn't handle all the percussion by himself. But Paulinho brought with him
-the Brazilian samba tradition of adapting and improvising on primitive and
-often homemade instruments. When de Costa's sound joined forces with Randy's
-more conventional approach, we seemed to have the whole world covered.
-Artistically speaking we were caught between a rock and a hard place. We had
-worked with the smartest, hippest people in the world at Motown and Philly
-International, and we would have been fools to discount the things we'd
-absorbed from them, yet we couldn't be imitators. Fortunately we got a
-running start with a song that Bobby Colomby brought us called "Blame It on
-the Boogie." It was an up-tempo, finger-poppin'-time song that was a good
-vehicle for the band approach we wanted to cultivate. I had fun slurring the
-chorus: "Blame It on the Boogie" could be sung in one breath without putting
-my lips together. We had a little fun with the credits on the inner sleeve
-of the record; "Blame It on the Boogie" was written by three guys from
-England, including one named Michael Jackson. It was a startling
-coincidence. As it turned out, writing disco songs was a natural for me
-because I was used to having dance breaks incorporated into all the major
-songs I was asked to sing.
-There was a lot of uncertainty and excitement about our future. We were
-going through a lot of creative and personal changes - our music, the family
-of dynamics, our desires and goals. All of this made me think more seriously
-about how I was spending my life, especially in relation to other people my
-age. I had always shouldered a lot of responsibility, but it suddenly seemed
-that everyone wanted a piece of me. There wasn't that much to go around, and
-I needed to be responsible to myself. I had to take stock of my life and
-figure out what people wanted from me and to whom I was going to give
-wholly. It was a hard thing for me to do, but I had to learn to be wary of
-some of the people around me. God was at the top of my list of priorities,
-and my mother and father and brothers and sisters followed. I was reminded
-of that old song by Clarence Carter called "Patches," where the oldest son
-is asked to take care of the farm after his father dies and his mother tells
-him she's depending on him. Well, we weren't sharecroppers and I wasn't the
-oldest, but those were slim shoulders on which to place such burdens. For
-some reason I always found it very difficult to say no to my family and the
-other people I loved. I would be asked to do something or take care of
-something and I would agree, even if I worried that it might be more than I
-could handle.
-I felt under a great deal of stress and I was often emotional. Stress can be
-a terrible thing; you can't keep your emotions bottled up for long. There
-were a lot of people at this time who wondered just how committed I was to
-music after learning of my newfound interest in movies after being in one.
-It was hinted that my decision to audition had come at a bad time for the
-new band setup. It seemed, to outsiders, to come just as we were about to
-get started. But of course it worked out just fine.
-"That's What You Get for Being Polite" was my way of letting on that I knew
-I wasn't living in an ivory tower and that I had insecurities and doubts
-just as all older teenagers do. I was worried that the world and all it had
-to offer could be passing me by even as I tried to get on top of my field.
-There was a Gamble and Huff song called "Dreamer" on the first Epic album
-which had this theme, and as I was learning it, I felt they could have
-written it with me in mind. I have always been a dreamer. I set goals for
-myself. I look at things and try to imagine what is possible and then hope
-to surpass those boundaries.
-In 1979 I turned twenty-one years old and began to take full control of my
-career. My father's personal management contract with me ran out around this
-time, and although it was a hard decision, the contract was not renewed.
-Trying to fire your dad is not easy.
-But I just didn't like the way certain things were being handled. Mixing
-family and business can be a delicate situation. It can be great or it can
-be awful; it depends on the relationships. Even at the best of times it's a
-hard thing to do.
-Did it change the relationship between me and my father? I don't know if it
-did in his heart, but it certainly didn't in mine. It was a move I knew I
-had to make because at the time I was beginning to feel that I was working
-for him rather than that he was working for me . And on the creative side we
-are of two completely different minds. He would come up with ideas that I
-would totally disagree with because they weren't right for me. All I wanted
-was control over my life. And I took it. I had to do it. Everyone comes to
-that point, sooner or later, and I had been in the business for a long time.
-I was pretty experienced for twenty-one - a fifteen-year veteran. We were
-eager to take the Destiny band and concept on the road, but I got hoarse
-from too many shows, too much singing. When we had to cancel some
-performances, no one held it against me, but I felt as if I was holding my
-brothers back after the great job they had done while we worked together to
-get us all back on track. We made some makeshift adjustments in order to
-ease the strain on my throat. Marlon took over for me in some passages that
-required holding long notes. "Shake You Body (Down to the Ground)," our set
-piece on the album, turned out to be a lifesaver for us onstage because we
-already had a good jam in the studio to build on. It was frustrating to have
-finally realised our dream of having our own music as the showpiece, rather
-than the novelty song, and not being able to give it our very best shot. It
-wasn't long, however, before our time would come.
-In looking back, I realise I was more patient than perhaps my brothers
-wanted me to be. As we were remixing Destiny , it occurred to me that we had
-"left out" some things that I hadn't talked to my brothers about because I
-wasn't sure they'd be as interested in them as I was. Epic had arranged in
-the contract that they would handle any solo album I might decide to do.
-Perhaps they were hedging their bets; if the Jacksons couldn't make their
-new sound work, they could try to turn me into something they could mould
-for the rest of my life. That might seem like a suspicious way of thinking,
-but I knew from experience that money people always want to know what is
-going on and what can happen and how to recoup their investment. It seemed
-logical for them to think that way. In the light of what's happened since, I
-wonder about those thoughts I had, but they were real at the time.
-Destiny was our biggest success as an album, and we knew we had really
-reached the point where people bought your record because they knew you were
-good and knew you'd give them your very best on every song and every album.
-I wanted my first solo album to be the best it could be.
-I didn't want Off the Wall to sound like outtakes from Destiny . That's why
-I wanted to hire an outside producer who wouldn't come to this project with
-any preconceived notions about how it should sound. I also needed someone
-with a good ear to help me choose material because I didn't have enough time
-to write two sides of songs I'd be proud of. I knew the public expected more
-than two good singles on an album, especially in the discos with their
-extended cuts, and I wanted the fans to feel satisfied.
-These are all reasons why Quincy proved to be the best producer I could have
-asked for. Quincy Jones's friends called him "Q" for short because of a love
-he has for barbecue. Later, after we'd finished Off the Wall , he invited me
-to a concert of his orchestral music at the Hollywood Bowl, but I was so shy
-at the time that I stood in the wings to watch the show as I had as a child.
-He said he expected more from me than that, and we've been trying to live up
-to each other's standards ever since.
-That day I called to ask his advice about a producer, he started talking
-about people in the business - who I could work with and who I'd have
-trouble with. He knew track records, who was booked, who'd be too lax, who'd
-put the "pedal to the metal." He knew Los Angeles better than Mayor Bradley,
-and that's how he kept up with what was going on. As a jazz arranger,
-orchestrator, and film composer, someone people thought was on the outside
-looking in as far as pop music was concerned, he was an invaluable guide. I
-was so glad that my outside source was a good friend who also happened to be
-the perfect choice for a producer. He had a world of talent to choose from
-among his contacts, and he was a good listener, as well as a brilliant man.
-The Off the Wall album was originally going to be called Girlfriend . Paul
-and Linda McCartney wrote a song of that title with me in mind before they
-ever met me.
-Paul McCartney always tells people this story about me calling him and
-saying we should write some hit songs together.
-But that's not exactly how we first met.
-I saw Paul for the first time at a party on the Queen Mary , which is docked
-in Long Beach. His daughter Heather got my number from someone and gave me a
-call to invite me to this big party. She liked our music and we got to
-talking. Much later, when his Wings over America tour was completed, Paul
-and his family were in Los Angeles. They invited me to a party at the Harold
-Lloyd estate. Paul McCartney and I first met at that party. We shook hands
-amid a huge crowd of people, and he said, "You know, I've written a song for
-you." I was very surprised and thanked him. And he started singing
-"Girlfriend" to me at this party.
-So we exchanged phone numbers and promised to get together soon, but
-different projects and life just got in the way for both of us and we didn't
-talk again for a couple of years. He ended up putting the song on his own
-album London Town .
-The strangest thing happened when we were making Off the Wall ; Quincy
-walked up to me one day and said, "Michael, I've got a song that's perfect
-for you." He played "Girlfriend" for me, not realising, of course, that Paul
-had written it for me originally. When I told him, he was astonished and
-pleased. We recorded it soon after and put it on the album. It was an
-incredible coincidence.
-Quincy and I talked about Off the Wall and carefully planned the kind of
-sound we wanted. When he asked me what I most wanted to have happen in the
-studio, I told him, we've got to make it sound different from the Jacksons.
-Hard words to spit out, considering how hard we'd worked to become the
-Jacksons, but Quincy knew what I meant, and together we created an album
-that reflected our goal. "Rock with You," the big hit single, was the sort
-of thing I was aiming for. It was perfect for me to sing, and move to. Rod
-Temperton, whom Quincy had known because of his work with the group
-Heatwave
-on "Boogie Nights," had written the song with a more relentless, get-down
-arrangement in mind, but Quincy softened the attack and slipped in a
-synthesiser that sounded like a conch shell's insides on a beach. Q and I
-were both very fond of Rod's work, and we eventually asked him to work on
-stylising three of his songs for me, including the title cut. Rod was a
-kindred spirit in many ways. Like me, he felt more at home singing and
-writing about the night life than actually going out and living it. It
-always surprises me when people assume that something an artist has created
-is based on a true experience or reflects his or her own lifestyle. Often
-nothing could be farther from the truth. I know I draw on my own experiences
-at times, but I also hear and read things that trigger an idea for a song.
-An artist's imagination is his greatest tool. It can create a mood or
-feeling that people want to have, as well as transport you to a different
-place altogether.
-In the studio Quincy allowed the arrangers and musicians quite a bit of
-freedom to express themselves, perhaps with the exception of the orchestral
-arrangements, which are his forte. I brought Greg Phillinganes, a member of
-the Destiny team, over to "run the floor" on numbers that he and I had
-worked on together in Encino, while the studio people were being lined up
-for the date. In addition to Greg, Paulinho da Costa was back on percussion
-and Randy made a cameo appearance on "Don't Stop Till You Get Enough."
-Quincy is amazing and doesn't just pick yes-men to do his bidding. I have
-been around professionals all my life, and I can tell who is trying to keep
-up, who can create, and who is capable of crossing swords once in a while in
-a constructive way without losing sight of the shared goal. We had Louis
-"Thunder Thumbs" Johnson, who had worked with Quincy on the Brothers Johnson
-albums. We also had an all-star team of Wah Wah Watson, Marlo Henderson,
-David Williams, and Larry Carlton from the Crusaders playing guitar on the
-album. George Duke, Phil Upchurch, and Richard Heath were picked from the
-cream of the jazz/funk crop, and yet they never let on that maybe this music
-was a little different from what they were used to. Quincy and I had a good
-working relationship, so we shared responsibilities and consulted with one
-another constantly.
-The Brothers Johnson notwithstanding, Quincy hadn't done much dance music
-before Off the Wall , so on "Don't Stop Till You Get Enough," "Working Day
-and Night," and "Get on the Floor" Greg and I worked together to build a
-thicker wall of sound in Quincy's studio. "Get on the Floor," though it
-wasn't a single, was particularly satisfying because Louis Johnson gave me a
-smooth-enough bottom to ride in the verses and let me come back stronger and
-stronger with each chorus. Bruce Swedien, Quincy's engineer, put the final
-touches on that mix, and I still get pleasure out of hearing it.
-"Working Day and Night" was Paulinho's showcase, with my background vocals
-hurrying to keep up with his grab bag of toys. Greg set up a prepared
-electric piano with the timbre of a perfect acoustic tone, to knock out any
-lingering echo. The lyrical theme was similar to "The Things I Do For You"
-from Destiny , but since this was a refinement of something I'd said
-earlier, I wanted to keep it simple and let the music put the song over the
-top.
-"Don't Stop Till You Get Enough" had a spoken intro over bass, partly to
-build up tension and surprise people with the swirling strings and
-percussion. It was also unusual because of my vocal arrangement. On that cut
-I sing in overdubs as a kind of group. I wrote myself a high part, one that
-my solo voice couldn't carry on it's own, to fit in with the music I was
-hearing in my head, so I let the arrangement take over from the singing. Q's
-fade at the end was amazing, with guitars chopping like kalimbas, the
-African thumb pianos. That song means a lot to me because it was the first
-song I wrote as a whole. "Don't Stop Till You Get Enough" was my first big
-chance, and it went straight to number one. It was the song that won me my
-first Grammy. Quincy had the confidence in me to encourage me to go into the
-studio by myself, which put icing on the cake.
-The ballads were what made Off the Wall a Michael Jackson album. I'd done
-ballads with the brothers, but they had never been to enthusiastic about
-them and did them more as a concession to me than anything else. Off the
-Wall had, in addition to "Girlfriend," a slippery, engaging melody called "I
-Can't Help It" which was memorable and great fun to sing but a little
-quirkier than a gentle song like, say, "Rock with You."
-Two of the biggest hits were "Off the Wall" and "Rock with You." You know,
-so much up-tempo dance music is threatening, but I liked the coaxing, the
-gentleness, taking a shy girl and letting her shed her fears rather than
-forcing them out of her. On Off the Wall I went back to a high-pitched
-voice, but "Rock with You" called for a more natural sound. I felt that if
-you were having a party, those two songs would get people in the door, and
-the harder boogie songs would send everyone home in a good mood. And then
-there was "She's Out of My Life." Maybe that was too personal for a party.
-It was for me. Sometimes it's hard for me to look my dates in the eye even
-if I know them well. My dating and relationships with girls have not had the
-happy ending I've been looking for. Something always seems to get in the
-way. The things I share with millions of people aren't the sort of things
-you share with one. Many girls want to know what makes me tick - why I live
-the way I live or do the things I do - trying to get inside my head. They
-want to rescue me from loneliness, but they do it in such a way that they
-give me the impression they want to share my loneliness, which I wouldn't
-wish on anybody, because I believe I'm one of the loneliest people in the
-world.
-"She's Out of My Life" is about knowing that the barriers that have
-separated me from others are temptingly low and seemingly easy to jump over
-and yet they remain standing while what I really desire disappears from my
-sight. Tom Bahler composed a beautiful bridge, which seemed right out of an
-old Broadway musical. In reality, such problems are not so easily resolved
-and the song presents this fact, that the problem is not overcome. We
-couldn't put this cut at the beginning or the end of the record, because it
-would have been such a downer. That's why when Stevie's song comes on
-afterward, so gently and tentatively, as if it was opening a door that had
-been bolted shut, I still go, "Whew." By the time Rod's "Burn This Disco
-Out" closes the record, the trance is broken.
-But I got too wrapped up in "She's Out of My Life." In this case, the
-story's true - I cried at the end of a take, because the words suddenly had
-such a strong effect on me. I had been letting so much build up inside me. I
-was twenty-one years old, and I was so rich in some experiences while being
-poor in moments of true joy. Sometimes I imagine that my life experience is
-like an image in one of those trick mirrors in the circus, fat in one part
-and thin to the point of disappearing in another. I was worried that would
-show up on "She's Out of My Life," but if it touched people's heartstrings,
-knowing that would make me feel less lonely.
-When I got emotional after that take, the only people with me were Q and
-Bruce Swedien. I remember burying my face in my hands and hearing only the
-hum of the machinery as my sobs echoed in the room. Later I apologised, but
-they said there was no need.
-Making Off the Wall was one of the most difficult periods of my life,
-despite the eventual success it enjoyed. I had very few close friends at the
-time and felt very isolated. I was so lonely that I used to walk through my
-neighbourhood hoping I'd run into somebody I could talk to and perhaps
-become friends with. I wanted to meet people who didn't know who I was. I
-wanted to run into somebody who would be my friend because they liked me and
-needed a friend too, not because I was who I am. I wanted to meet anybody in
-the neighbourhood - the neighbourhood kids, anybody.
-Success definitely brings on loneliness. It's true. People think you're
-lucky, that you have everything. They think you can go anywhere and do
-anything, but that's not the point. One hungers for the basic stuff.
-I've learned to cope better with these things now and I don't get nearly as
-depressed as I used to. I didn't really have any girlfriends when I was in
-school. There were girls I thought were cute, but I found it so difficult to
-approach them. I was too embarrassed - I don't know why - it was just crazy.
-There was one girl who was a good friend to me. I liked her, but I was too
-embarrassed to tell her.
-My first real date was with Tatum O'Neal. We met at a club on Sunset Strip
-called On the Rox. We exchanged phone numbers and called each other often. I
-talked to her for hours: from the road, from the studio, from home. On our
-first date we went to a party at Hugh Hefner's Playboy Mansion and had a
-great time. She had held my hand for the first time that night at On the
-Rox. When we met, I was sitting at this table and all of a sudden I felt
-this soft hand reach over and grab mine. It was Tatum. This probably
-wouldn't mean a lot to other people, but it was serious stuff to me. She
-touched me . That's how I felt about it. In the past, girls had always
-touched me on tour; grabbing at me and screaming, behind a wall of security
-guards. But this was different, this was one-on-one, and that's always the
-best.
-Our developed into a real close relationship. I fell in love with her (and
-she with me) and we were very close for a long time. Eventually the
-relationship transcended into a good friendship. We still talk now and then,
-and I guess you'd have to say she was my first love - after Diana. When I
-heard Diana Ross was getting married, I was happy for her because I knew it
-would make her very joyous. Still, it was hard for me, because I had to walk
-around pretending to be overwhelmed that Diana was getting married to this
-man I'd never met. I wanted her to be happy, but I have to admit that I was
-a bit hurt and a little jealous because I've always loved Diana and always
-will.
-Another love was Brooke Shields. We were romantically serious for a while.
-There have been a lot of wonderful women in my life, women whose names
-wouldn't mean anything to the readers of this book, and it would be unfair
-to discuss them because they are not celebrities and are unaccustomed to
-having their names in print. I value my privacy and therefore I respect
-theirs as well.
-Liza Minelli is a person whose friendship I'll always cherish. She's like my
-show business sister. We get together and talk about the business; it comes
-out of our pores. We both eat, sleep, and drink various moves and songs and
-dance. We have the best time together. I love her.
-Right after we finished Off the Wall , I plunged into making the Triumph
-album with my brothers. We wanted to combine the best of both albums for our
-tour. "Can You Feel It?" was the first cut on the album, and it had the
-closest thing to a rock feel that the Jacksons had ever done. It wasn't
-really dance music either. We had it in mind for the video that opened our
-tour, kind of like our own Also Sprach Zarathrustra , the 2001 theme. Jackie
-and I had thought of combining the band sound with a gospel/children's choir
-feel. That was a nod a Gamble and Huff, in a way, because the song was a
-celebration of love taking over, cleansing the sins of the world. Randy's
-singing is so good, even if his range is not all he'd like it to be. His
-breathing and phrasing kept me pumped up on my toes when we sang it. There
-was a bright foghorn-type keyboard that I worked on for hours, going over it
-and over it again, until I got it the way I wanted it. We had six minutes,
-and I don't think it was one second too long.
-"Lovely One" was an extension of "Shake Your Body Down to the Ground," with
-that lighter Off the Wall sound injected. I tried out a newer, more ethereal
-voice on Jackie's "Your Ways," with the keyboards adding a faraway quality.
-Paulinho brought out all the artillery: triangles, skulls, gongs. This
-song's about a strange girl who is the way she is and there's nothing I can
-do about it, other than enjoy it when I can.
-"Everybody" is more playful than the Off the Wall dance tunes, with Mike
-McKinney propelling it like a plane turning and bearing down. The background
-vocals suggest "Get on the Floor's" influence, but Quincy's sound is deeper,
-like you're in the eye of the storm - our sound was more like going up the
-glass elevator to the top floor while looking down, rising effortlessly.
-"Time Waits for No One" was written by Jackie and Randy with my voice and
-style in mind. They knew they were trying to keep up with the Off the Wall
-songwriters and they did a very good job. "Give It Up" gave everyone a
-chance to sing. Marlon in particular. We strayed from the band sound on
-those tracks, perhaps sinking back into that Philly trap of letting the
-arrangement overwhelm us. "Walk Right Now" and "Wondering Who" were closer
-to the Destiny sound, but for the most part they were suffering from too
-many cooks and not enough broth.
-There was one exception: "Heartbreak Hotel." I swear that was a phrase that
-came out of my head and I wasn't thinking of any other song when I wrote it.
-The record company printed it on the cover as "This Place Hotel," because of
-the Elvis Presley connection. As important as he was to music, black as well
-as white, he just wasn't an influence on me. I guess he was too early for
-me. Maybe it was timing more than anything else. By the time our song had
-come out, people thought that if I kept living in seclusion the way I was, I
-might die the way he did. The parallels aren't there as far as I'm concerned
-and I was never much for scare tactics. Still, the way Elvis destroyed
-himself interests me, because I don't ever want to walk those grounds
-myself.
-LaToya was asked to contribute the scream that opens the song - not the most
-auspicious start to a recording career, I'll admit, but she was just getting
-her feet wet in the studio. She has made some good records since and is
-quite accomplished. The scream was the kind that normally shatters a bad
-dream, but our intention was to have the dream only begin, to make the
-listener wonder whether it was a dream or reality. That was the effect I
-think we got. The three female backup singers were amused when they were
-doing the scary backup effects that I wanted, until they actually heard them
-in the mix.
-"Heartbreak Hotel" was the most ambitious song I had composed. I think I
-worked on a number of levels: You could dance to it, sing along with it, get
-scared by it, and just listen. I had to tack on a slow piano and cello coda
-that ended on a positive note to reassure the listener; there's no point in
-trying to scare someone if there isn't something to bring the person back
-safe and sound from where you've taken them. "Heartbreak Hotel" had revenge
-in it and I am fascinated by the concept of revenge. It's something I can't
-understand. The idea of making someone "pay" for something they've done to
-you or that you imagine they've done to you is totally alien to me. The
-setup showed my own fears and for the first time being helped quell them.
-There were so many sharks in this business looking for blood in the water.
-If this song, and later "Billie Jean," seemed to cast women in an
-unfavourable light, it was not meant to be taken as a personal statement.
-Needless to say, I love the interaction between the sexes; it is a natural
-part of life and I love women. I just think that when sex is used as a form
-of blackmail or power, it's a repugnant use of one of God's gifts.
-Triumph gave us that final burst of energy we needed to put together a
-perfect show, with no marginal material. We began rehearsing with our
-touring band, which included bass player Mike McKinney. David Williams would
-travel with us too, but he was now a permanent member of the band.
-The upcoming tour was going to be a big undertaking. We had special effects
-arranged for us by the great magician Doug Henning. I wanted to disappear
-completely in a puff of smoke right after "Don't Stop." He had to coordinate
-the special effects with the Showco people who controlled the whole setup. I
-was happy to talk with him while we walked through the routine. It seemed
-almost unfair for him to give me his secrets, and apart from the money I
-wasn't offering him anything he could make use of in return. I felt a little
-embarrassed about that, yet I really wanted our show to be great and I knew
-Henning's contribution would be spectacular. We were competing with bands
-like Earth, Wind, and Fire and the Commodores for the position of top band
-in the country, and we knew there were people who felt that the Jackson
-brothers had been around for ten years and were finished.
-I had worked hard on the concept for the set for the upcoming tour. It had
-the feel of Close Encounters behind it. I was trying to make the statement
-that there was life and meaning beyond space and time and the peacock had
-burst forth ever brighter and ever prouder. I wanted our film to reflect
-this idea, too.
-My pride in the rhythms, the technical advances, and the success of Off the
-Wall was offset by the jolt I got when the Grammy nominations were announced
-for 1979. Although Off the Wall had been one of the most popular records of
-the year, it received only one nomination: Best R&B Vocal Performance. I
-remember where I was when I got the news. I felt ignored by my peers and it
-hurt. People told me later that it surprised the industry too.
-I was disappointed and then I got excited thinking about the album to come.
-I said to myself, "Wait until next time" - they won't be able to ignore the
-next album. I watched the ceremony on television and it was nice to win my
-category, but I was still upset by what I perceived as the rejection of my
-peers. I just kept thinking, "Next time, next time." In many ways an artist
-is his work. It's difficult to separate the two. I think I can be brutally
-objective about my work as I create it, and if something doesn't work, I can
-feel it, but when I turn in a finished album - or song - you can be sure
-that I've given it every ounce of energy and God-given talent that I have.
-Off the Wall was well received by my fans and I think that's why the Grammy
-nominations hurt. That experience lit a fire in my soul. All I could think
-of was the next album and what I would do with it. I wanted it to be truly
-great.`,
+    title: "The Man Who Didn’t Look Right",
+    content: `THE PSYCHOLOGIST GARY Klein once told me a story about a woman who attended a
+family gathering. She had spent years working as a paramedic and, upon arriving
+at the event, took one look at her father-in-law and got very concerned.
+“I don’t like the way you look,” she said.
+Her father-in-law, who was feeling perfectly fine, jokingly replied, “Well, I
+don’t like your looks, either.”
+“No,” she insisted. “You need to go to the hospital now.”
+A few hours later, the man was undergoing lifesaving surgery after an
+examination had revealed that he had a blockage to a major artery and was at
+immediate risk of a heart attack. Without his daughter-in-law’s intuition, he
+could have died.
+What did the paramedic see? How did she predict his impending heart attack?
+When major arteries are obstructed, the body focuses on sending blood to
+critical organs and away from peripheral locations near the surface of the skin.
+The result is a change in the pattern of distribution of blood in the face. After
+many years of working with people with heart failure, the woman had
+unknowingly developed the ability to recognize this pattern on sight. She
+couldn’t explain what it was that she noticed in her father-in-law’s face, but she
+knew something was wrong.
+Similar stories exist in other fields. For example, military analysts can identify
+which blip on a radar screen is an enemy missile and which one is a plane from
+their own fleet even though they are traveling at the same speed, flying at the
+same altitude, and look identical on radar in nearly every respect. During the
+Gulf War, Lieutenant Commander Michael Riley saved an entire battleship
+when he ordered a missile shot down—despite the fact that it looked exactly like
+the battleship’s own planes on radar. He made the right call, but even his
+superior officers couldn’t explain how he did it.
+Museum curators have been known to discern the difference between an
+authentic piece of art and an expertly produced counterfeit even though they
+can’t tell you precisely which details tipped them off. Experienced radiologists
+can look at a brain scan and predict the area where a stroke will develop before
+any obvious signs are visible to the untrained eye. I’ve even heard of
+hairdressers noticing whether a client is pregnant based only on the feel of her
+hair.
+The human brain is a prediction machine. It is continuously taking in your
+surroundings and analyzing the information it comes across. Whenever you
+experience something repeatedly—like a paramedic seeing the face of a heart
+attack patient or a military analyst seeing a missile on a radar screen—your brain
+begins noticing what is important, sorting through the details and highlighting
+the relevant cues, and cataloging that information for future use.
+With enough practice, you can pick up on the cues that predict certain
+outcomes without consciously thinking about it. Automatically, your brain
+encodes the lessons learned through experience. We can’t always explain what it
+is we are learning, but learning is happening all along the way, and your ability
+to notice the relevant cues in a given situation is the foundation for every habit
+you have.
+We underestimate how much our brains and bodies can do without thinking.
+You do not tell your hair to grow, your heart to pump, your lungs to breathe, or
+your stomach to digest. And yet your body handles all this and more on
+autopilot. You are much more than your conscious self.
+Consider hunger. How do you know when you’re hungry? You don’t
+necessarily have to see a cookie on the counter to realize that it is time to eat.
+Appetite and hunger are governed nonconsciously. Your body has a variety of
+feedback loops that gradually alert you when it is time to eat again and that track
+what is going on around you and within you. Cravings can arise thanks to
+hormones and chemicals circulating through your body. Suddenly, you’re
+hungry even though you’re not quite sure what tipped you off.
+This is one of the most surprising insights about our habits: you don’t need to
+be aware of the cue for a habit to begin. You can notice an opportunity and take
+action without dedicating conscious attention to it. This is what makes habits
+useful.
+It’s also what makes them dangerous. As habits form, your actions come
+under the direction of your automatic and nonconscious mind. You fall into old
+patterns before you realize what’s happening. Unless someone points it out, you
+may not notice that you cover your mouth with your hand whenever you laugh,
+that you apologize before asking a question, or that you have a habit of finishing
+other people’s sentences. And the more you repeat these patterns, the less likely
+you become to question what you’re doing and why you’re doing it.
+I once heard of a retail clerk who was instructed to cut up empty gift cards
+after customers had used up the balance on the card. One day, the clerk cashed
+out a few customers in a row who purchased with gift cards. When the next
+person walked up, the clerk swiped the customer’s actual credit card, picked up
+the scissors, and then cut it in half—entirely on autopilot—before looking up at
+the stunned customer and realizing what had just happened.
+Another woman I came across in my research was a former preschool teacher
+who had switched to a corporate job. Even though she was now working with
+adults, her old habits would kick in and she kept asking coworkers if they had
+washed their hands after going to the bathroom. I also found the story of a man
+who had spent years working as a lifeguard and would occasionally yell “Walk!”
+whenever he saw a child running.
+Over time, the cues that spark our habits become so common that they are
+essentially invisible: the treats on the kitchen counter, the remote control next to
+the couch, the phone in our pocket. Our responses to these cues are so deeply
+encoded that it may feel like the urge to act comes from nowhere. For this
+reason, we must begin the process of behavior change with awareness.
+Before we can effectively build new habits, we need to get a handle on our
+current ones. This can be more challenging than it sounds because once a habit is
+firmly rooted in your life, it is mostly nonconscious and automatic. If a habit
+remains mindless, you can’t expect to improve it. As the psychologist Carl Jung
+said, “Until you make the unconscious conscious, it will direct your life and you
+will call it fate.”
+THE HABITS SCORECARD
+The Japanese railway system is regarded as one of the best in the world. If you
+ever find yourself riding a train in Tokyo, you’ll notice that the conductors have
+a peculiar habit.
+As each operator runs the train, they proceed through a ritual of pointing at
+different objects and calling out commands. When the train approaches a signal,
+the operator will point at it and say, “Signal is green.” As the train pulls into and
+out of each station, the operator will point at the speedometer and call out the
+exact speed. When it’s time to leave, the operator will point at the timetable and
+state the time. Out on the platform, other employees are performing similar
+actions. Before each train departs, staff members will point along the edge of the
+platform and declare, “All clear!” Every detail is identified, pointed at, and
+named aloud.*
+This process, known as Pointing-and-Calling, is a safety system designed to
+reduce mistakes. It seems silly, but it works incredibly well. Pointing-andCalling reduces errors by up to 85 percent and cuts accidents by 30 percent. The
+MTA subway system in New York City adopted a modified version that is
+“point-only,” and “within two years of implementation, incidents of incorrectly
+berthed subways fell 57 percent.”
+Pointing-and-Calling is so effective because it raises the level of awareness
+from a nonconscious habit to a more conscious level. Because the train operators
+must use their eyes, hands, mouth, and ears, they are more likely to notice
+problems before something goes wrong.
+My wife does something similar. Whenever we are preparing to walk out the
+door for a trip, she verbally calls out the most essential items in her packing list.
+“I’ve got my keys. I’ve got my wallet. I’ve got my glasses. I’ve got my
+husband.”
+The more automatic a behavior becomes, the less likely we are to consciously
+think about it. And when we’ve done something a thousand times before, we
+begin to overlook things. We assume that the next time will be just like the last.
+We’re so used to doing what we’ve always done that we don’t stop to question
+whether it’s the right thing to do at all. Many of our failures in performance are
+largely attributable to a lack of self-awareness.
+One of our greatest challenges in changing habits is maintaining awareness of
+what we are actually doing. This helps explain why the consequences of bad
+habits can sneak up on us. We need a “point-and-call” system for our personal
+lives. That’s the origin of the Habits Scorecard, which is a simple exercise you
+can use to become more aware of your behavior. To create your own, make a list
+of your daily habits.
+Here’s a sample of where your list might start:
+Wake up
+Turn off alarm
+Check my phone
+Go to the bathroom
+Weigh myself
+Take a shower
+Brush my teeth
+Floss my teeth
+Put on deodorant
+Hang up towel to dry
+Get dressed
+Make a cup of tea
+. . . and so on.
+Once you have a full list, look at each behavior, and ask yourself, “Is this a
+good habit, a bad habit, or a neutral habit?” If it is a good habit, write “+” next to
+it. If it is a bad habit, write “–”. If it is a neutral habit, write “=”.
+For example, the list above might look like this:
+Wake up =
+Turn off alarm =
+Check my phone –
+Go to the bathroom =
+Weigh myself +
+Take a shower +
+Brush my teeth +
+Floss my teeth +
+Put on deodorant +
+Hang up towel to dry =
+Get dressed =
+Make a cup of tea +
+The marks you give to a particular habit will depend on your situation and
+your goals. For someone who is trying to lose weight, eating a bagel with peanut
+butter every morning might be a bad habit. For someone who is trying to bulk up
+and add muscle, the same behavior might be a good habit. It all depends on what
+you’re working toward.*
+Scoring your habits can be a bit more complex for another reason as well. The
+labels “good habit” and “bad habit” are slightly inaccurate. There are no good
+habits or bad habits. There are only effective habits. That is, effective at solving
+problems. All habits serve you in some way—even the bad ones—which is why
+you repeat them. For this exercise, categorize your habits by how they will
+benefit you in the long run. Generally speaking, good habits will have net
+positive outcomes. Bad habits have net negative outcomes. Smoking a cigarette
+may reduce stress right now (that’s how it’s serving you), but it’s not a healthy
+long-term behavior.
+If you’re still having trouble determining how to rate a particular habit, here is
+a question I like to use: “Does this behavior help me become the type of person I
+wish to be? Does this habit cast a vote for or against my desired identity?”
+Habits that reinforce your desired identity are usually good. Habits that conflict
+with your desired identity are usually bad.
+As you create your Habits Scorecard, there is no need to change anything at
+first. The goal is to simply notice what is actually going on. Observe your
+thoughts and actions without judgment or internal criticism. Don’t blame
+yourself for your faults. Don’t praise yourself for your successes.
+If you eat a chocolate bar every morning, acknowledge it, almost as if you
+were watching someone else. Oh, how interesting that they would do such a
+thing. If you binge-eat, simply notice that you are eating more calories than you
+should. If you waste time online, notice that you are spending your life in a way
+that you do not want to.
+The first step to changing bad habits is to be on the lookout for them. If you
+feel like you need extra help, then you can try Pointing-and-Calling in your own
+life. Say out loud the action that you are thinking of taking and what the outcome
+will be. If you want to cut back on your junk food habit but notice yourself
+grabbing another cookie, say out loud, “I’m about to eat this cookie, but I don’t
+need it. Eating it will cause me to gain weight and hurt my health.”
+Hearing your bad habits spoken aloud makes the consequences seem more
+real. It adds weight to the action rather than letting yourself mindlessly slip into
+an old routine. This approach is useful even if you’re simply trying to remember
+a task on your to-do list. Just saying out loud, “Tomorrow, I need to go to the
+post office after lunch,” increases the odds that you’ll actually do it. You’re
+getting yourself to acknowledge the need for action—and that can make all the
+difference.
+The process of behavior change always starts with awareness. Strategies like
+Pointing-and-Calling and the Habits Scorecard are focused on getting you to
+recognize your habits and acknowledge the cues that trigger them, which makes
+it possible to respond in a way that benefits you.
+Chapter Summary
+With enough practice, your brain will pick up on the cues that predict
+certain outcomes without consciously thinking about it.
+Once our habits become automatic, we stop paying attention to what
+we are doing.
+The process of behavior change always starts with awareness. You
+need to be aware of your habits before you can change them.
+Pointing-and-Calling raises your level of awareness from a
+nonconscious habit to a more conscious level by verbalizing your
+actions.
+The Habits Scorecard is a simple exercise you can use to become more
+aware of your behavior."`,
   },
   {
     chapter_number: 5,
-    title: "The Moonwalk",
-    content: `Off the Wall was released in August 1979, the same month I turned twenty-one
-and took control of my own affairs, and it was definitely one of the major
-landmarks of my life. It meant a great deal to me, because its eventual
-success proved beyond a shadow of a doubt that a former "child star" could
-mature into a recording artist with contemporary appeal. Off the Wall also
-went a step beyond the dance grooves we had cooked up. When we started the
-project, Quincy and I talked about how important it was to capture passion
-and strong feelings in a recorded performance. I still think that's what we
-achieved on the ballad "She's Out of My Life," and to a lesser extent on
-"Rock with You."
-Looking back, I can view the whole tapestry and see how Off the Wall
-prepared me for the work we would do on the album that became Thriller.
-Quincy, Rod Temperton, and many of the musicians who played on Off the Wall
-would help me realise a dream that I had had for a long time. Off the Wall
-had sold almost six million copies in this country, but I wanted to make an
-album that would be even bigger. Ever since I was a little boy, I had
-dreamed of creating the biggest-selling record of all time. I remember going
-swimming as a child and making a wish before I jumped into the pool.
-Remember, I grew up knowing the industry, understanding goals, and being
-told what was and was not possible. I wanted to do something special. I'd
-stretch my arms out, as if I were sending my thoughts right up into space.
-I'd make my wish, then I'd dive into the water. I'd say to myself, "This is
-my dream. This is my wish," every time before I'd dive into the water.
-I believe in wishes and in a person's ability to make a wish come true. I
-really do. Whenever I saw a sunset, I would quietly make my secret wish
-right before the sun tucked under the western horizon and disappeared. It
-would seem as if the sun had taken my wish with it. I'd make it right before
-that last speck of light vanished. And a wish is more than a wish, it's a
-goal. It's something your conscious and subconscious can help make reality.
-I remember being in the studio once with Quincy and Rod Temperton while we
-were working on Thriller . I was playing a pinball machine and one of them
-asked me, "If this album doesn't do as well as Off the Wall , will you be
-disappointed?"
-I remember feeling upset - hurt that the question was even raised. I told
-them Thriller had to do better than Off the Wall . I admitted that I wanted
-this album to be the biggest-selling album of all time.
-They started laughing. It was a seemingly unrealistic thing to want.
-There were times during the Thriller project when I would get emotional or
-upset because I couldn't get the people working with me to see what I was.
-That still happens to me sometimes. Often people just don't see what I see.
-They have too much doubt. You can't do your best when you're doubting
-yourself. If you don't believe in yourself, who will? Just doing as well as
-you did last time is not good enough. I think of it as the "Try to get what
-you can" mentality. It doesn't require you to stretch, to grow. I don't
-believe in that.
-I believe we are powerful, but we don't use our minds to full capacity. Your
-mind is powerful enough to help you attain whatever you want. I knew what we
-could do with that record. We had a great team there, a lot of talent and
-good ideas, and I knew we could do anything. The success of Thriller
-transformed many of my dreams into reality. It did become the
-biggest-selling album of all time, and that fact appeared on the cover of
-The Guinness Book of World Records.
-Making the Thriller album was very hard work, but it's true that you only
-get out of something what you put into it. I'm a perfectionist: I'll work
-until I drop. And I worked so hard on that album. It helped that Quincy
-showed great confidence in what we were doing during those sessions. I guess
-I had proved myself to him during our work on Off the Wall . He listened to
-what I had to say and helped me accomplish what I had hoped to on that
-album, but he showed even more faith in me during the making of Thriller .
-He realised I had the confidence and experience I needed to make that record
-and at times he wasn't in the studio with us for that reason. I'm really
-very self-confident when it comes to my work. When I take on a project, I
-believe in it 100 percent. I really put my soul into it. I'd die for it.
-That's how I am.
-Quincy is brilliant at balancing out an album, creating the right mix of
-up-tempo numbers and slow ones. We started out working with Rod Temperton on
-songs for the Thriller album, which was originally called Starlight . I was
-writing songs myself while Quincy was listening to other people's songs,
-hoping to find just the right ones for the album. He's good at knowing what
-I'll like and what will work for me. We both share the same philosophy about
-making albums; we don't believe in B-sides or album songs. Every song should
-be able to stand on its own as a single, and we always push for this.
-I had finished some songs of my own, but I didn't give them to Quincy until
-I saw what had come in from other writers. The first song I had was
-"Startin' Something," which I had written when we were doing Off the Wall
-but had never given to Quincy for that album. Sometimes I have a song I've
-written that I really like and I just can't bring myself to present it.
-While we were making Thriller , I even held on to "Beat It" for a long time
-before I played it for Quincy. He kept telling me that we needed a great
-rock song for the album. He'd say, "Come on, where is it? I know you got
-it." I like my songs but initially I'm shy about playing them for people,
-because I'm afraid they won't like them and that's a painful experience.
-He finally convinced me to let him hear what I had. I brought out "Beat It"
-and played it for him and he went crazy. I felt on top of the world.
-When we were about to start work on Thriller , I called Paul McCartney in
-London and this time I did say, "Let's get together and write some hits."
-Our collaboration produced "Say Say Say" and "The Girl Is Mine."
-Quincy and I eventually chose "The Girl Is Mine" as the obvious first single
-from Thriller . We really didn't have much choice. When you have two strong
-names like that together on a song, it has to come out first or it gets
-played to death and overexposed. We had to get it out of the way.
-When I approached Paul, I wanted to repay the favour he had done me in
-contributing "Girlfriend" to Off the Wall . I wrote "The Girl Is Mine,"
-which I knew would be right for his voice and mine working together, and we
-also did work on "Say Say Say," which we would finish up later with George
-Martin, the great Beatles producer.
-"Say Say Say" was coauthored by Paul, a man who could play all the
-instruments in the studio and score every part, and a kid, me, who couldn't.
-Yet we worked together as equals and enjoyed ourselves. Paul never had to
-carry me in that studio. The collaboration was also a real step forward for
-me in terms of confidence, because there was no Quincy Jones watching over
-me to correct my mistakes. Paul and I shared the same idea of how a pop song
-should work and it was a real treat to work with him. I feel that ever since
-John Lennon's death he has had to live up to expectations people had no
-right to hang on him; Paul McCartney has given so much to this industry and
-to his fans.
-Eventually, I would buy the ATV music publishing catalogue, which included
-many of the great Lennon-McCartney songs. But most people don't know that it
-was Paul who introduced me to the idea of getting involved in music
-publishing. I was staying with Paul and Linda at their house in the country
-when Paul told me about his own involvement in music publishing. He handed
-me a little book with MPL printed on the cover. He smiled as I opened it,
-because he knew I was going to find the contents exciting. It contained a
-list of all the songs Paul owns and he'd been buying the rights to songs for
-a long time. I had never given the idea of buying songs any thought before.
-When the ATV music publishing catalogue, which contains many
-Lennon-McCartney songs, went on sale, I decided to put in a bid.
-I consider myself a musician who is incidentally a businessman, and Paul and
-I had both learned the hard way about business and the importance of
-publishing and royalties and the dignity of songwriting. Songwriting should
-be treated as the lifeblood of popular music. The creative process doesn't
-involve time clocks or quota systems, it involves inspiration and the
-willingness to follow through. When I was sued my someone I had never heard
-of for "The Girl Is Mine," I was quite willing to stand on my reputation. I
-stated that many of my ideas come in dreams, which some people thought was a
-convenient cop-out, but it's true. Our industry is so lawyer-heavy that
-getting sued for something you didn't do seems to be as much a part of the
-initiation process as winning amateur night used to be.
-"Not My Lover" was a title we almost used for "Billie Jean" because Q had
-some objections to calling the song "Billie Jean," my original title. He
-felt people might immediately think of Billie Jean King, the tennis player.
-A lot of people have asked me about that song, and the answer is very
-simple. It's just a case of a girl who says that I'm the father of her child
-and I'm pleading my innocence because "the kid is not my son."
-There was never a real "Billie Jean." (Except for the ones who came after
-the song.) The girl in the song is a composite of people we've been plagued
-by over the years. This kind of thing has happened to some of my brothers
-and I used to be really amazed by it. I couldn't understand how these girls
-could say they were carrying someone's child when it wasn't true. I can't
-imagine lying about something like that. Even today there are girls who come
-to the gate at our house and say the strangest things, like, "Oh, I'm
-Michael's wife," or "I'm just dropping off the keys to our apartment." I
-remember one girl who used to drive us completely crazy. I really think that
-she believed in her mind that she belonged with me. There was another girl
-who claimed I had gone to bed with her, and she made threats. There've been
-a couple of serious scuffles at the gate on Hayvenhurst, and they can get
-dangerous. People yell into the intercom that Jesus sent them to speak with
-me and Gold told them to come - unusual and unsettling things.
-A musician knows hit material. It has to feel right. Everything has to feel
-in place. It fulfills you and it makes you feel good. You know it when you
-hear it. That's how I felt about "Billie Jean." I knew it was going to be
-big while I was writing it. I was really absorbed in that song. One day
-during a break in a recording session I was riding down the Ventura Freeway
-with Nelson Hayes, who was working with me at the time. "Billie Jean" was
-going around in my head and that's all I was thinking about. We were getting
-off the freeway when a kid on a motorcycle pulls up to us and says, "Your
-car's on fire." Suddenly we noticed the smoke and pulled over and the whole
-bottom of the Rolls-Royce was on fire. That kid probably saved our lives. If
-the car had exploded, we could have been killed. But I was so absorbed by
-this tune floating in my head that I didn't even focus on the awful
-possibilities until later. Even while we were getting help and finding an
-alternate way to get where we were going, I was silently composing
-additional material, that's how involved I was with "Billie Jean."
-Before I wrote "Beat It," I had been thinking I wanted to write the type of
-rock song that I would go out and buy, but also something totally different
-from the rock music I was hearing on Top 40 radio at the time.
-"Beat It" was written with school kids in mind. I've always loved creating
-pieces that will appeal to kids. It's fun to write for them and know what
-they like because they're a very demanding audience. You can't fool them.
-They are still the audience that's most important to me, because I really
-care about them. If they like it, it's a hit, no matter what the charts say.
-The lyrics of "Beat It" express something I would do if I were in trouble.
-Its message - that we should abhor violence - is something I believe deeply.
-It tells kids to be smart and avoid trouble. I don't mean to say you should
-turn the other cheek while someone kicks in your teeth, but, unless your
-back is against the wall and you have absolutely no choice, just get away
-before violence breaks out. If you fight and get killed, you've gained
-nothing and lost everything. You're the loser, and so are the people who
-love you. That's what "Beat It" is supposed to get across. To me true
-bravery is settling differences without a fight and having the wisdom to
-make that solution possible.
-When Q called Eddie Van Halen, he thought it was a crank call. Because of
-the bad connection, Eddie was convinced that the voice on the other end was
-a fake. After being told to get lost, Q simply dialed the number again.
-Eddie agreed to play the session for us and gave us an incredible guitar
-solo on "Beat It."
-The newest members of our team were the band Toto, who had the hit records
-"Rosanna" and "Africa." They had been well known as individual session
-musicians before they came together as a group. Because of their experience,
-they knew both sides of studio work, when to be independent, and when to be
-cooperative and follow the producer's lead. Steve Porcaro had worked on Off
-the Wall during a break as keyboardist for Toto. This time he brought his
-band mates with him. Musicologists know that the band's leader David Paich
-is the son of Marty Paich, who worked on Ray Charles' great records like "I
-Can't Stop Loving You."
-I love "Pretty Young Thing," which was written by Quincy and James Ingram.
-"Don't Stop Till You Get Enough" had whetted my appetite for the spoken
-intro, partly because I didn't think my speaking voice was something my
-singing needed to hide. I have always had a soft speaking voice. I haven't
-cultivated it or chemically altered it: that's me - take it or leave it.
-Imagine what it must be like to be criticised for something about yourself
-that is natural and God given. Imagine the hurt of having untruths spread by
-the press, of having people wonder if you're telling the truth - defending
-yourself because someone decided it would make good copy and would force you
-to deny what they said, thus creating another story. I've tried not to
-answer such ridiculous charges in the past because that dignifies them and
-the people who make them. Remember, the press is a business: Newspapers and
-magazines are in business to make money - sometimes at the expense of
-accuracy, fairness, and even the truth.
-Anyway, in the intro to "Pretty Young Thing," I sounded a bit more confident
-than I had on the last album. I liked the "code" in the lyrics, and
-"tenderoni" and "sugar fly" were fun rock'n'roll-type words that you
-couldn't find in the dictionary. I got Janet and LaToya into the studio for
-this one, and they produced the "real" backup vocals. James Ingram and I
-programmed an electronic device called a Vocoder, which gave out that E.T.
-voice.
-"Human Nature" was the song the Toto guys brought to Q, and he and I both
-agreed that the song had the prettiest melody we'd heard in a long time,
-even more than "Africa." It's music with wings. People asked me about the
-lyrics: "Why does he do me that way . . . I like loving this way . . ."
-People often think the lyrics you're singing have some special personal
-significance for you, which often isn't true. It is important to reach
-people, to move them. Sometimes one can do this with the mosaic of the music
-melody arrangement and lyrics, sometimes it is the intellectual content of
-the lyrics. I was asked a lot of questions about "Muscles," the song I wrote
-and produced for Diana Ross. That song fulfilled a lifelong dream of
-returning some of the many favours she's done for me. I have always loved
-Diana and looked up to her. Muscles, by the way, is the name of my snake.
-"The Lady in My Life" was one of the most difficult tracks to cut. We were
-used to doing a lot of takes in order to get a vocal as nearly perfect as
-possible, but Quincy wasn't satisfied with my work on that song, even after
-literally dozens of takes. Finally he took me aside late one session and
-told me he wanted me to beg. That's what he said. He wanted me to go back to
-the studio and literally beg for it. So I went back in and had them turn off
-the studio lights and close the curtain between the studio and the control
-room so I wouldn't feel self-conscious. Q started the tape and I begged. The
-result is what you hear in the grooves.
-Eventually we came under tremendous pressure from our record company to
-finish Thriller . When a record company rushes you, they really rush you,
-and they were rushing us hard on Thriller . They said it had to be ready on
-a certain date, do or die.
-So we went through a period where we were breaking our backs to get the
-album done by their deadline. There were a lot of compromises made on the
-mixes of various tracks, and on whether certain tracks were even going to be
-on the record. We cut so many corners that we almost lost the whole album.
-When we finally listened to the tracks we were going to hand in, Thriller
-sounded so crappy to me that tears came to my eyes. We had been under
-enormous pressure because while we were trying to finish Thriller we also
-had been working on The E.T. Storybook , and there had been deadline
-pressure on that as well. All these people were fighting back and forth with
-each other, and we came to realise that the sad truth was that the mixes of
-Thriller didn't work.
-We sat there in the studio, Westlake Studio in Hollywood, and listened to
-the whole album. I felt devastated. All this pent-up emotion came out. I got
-angry and left the room. I told my people, "That's it, we're not releasing
-it. Call CBS and tell them they are not getting this album. We are not
-releasing it."
-Because I knew it was wrong. If we hadn't stopped the process and examined
-what we were doing, the record would have been terrible. It never would have
-been reviewed the way it was because, as we learned, you can ruin a great
-album in the mix. It's like taking a great movie and ruining it in the
-ending. You simply have to take your time.
-Some things can't be rushed.
-There was a bit of yelling and screaming from the record people, but in the
-end they were smart and understood. They knew too; it was just that I was
-the first to say it. Finally I realised I had to do the whole thing - mix
-the entire album - all over again.
-We took a couple of days off, drew a deep breath, and stepped back. Then we
-came to it fresh, cleaned our ears out, and began to mix two songs a week.
-When it was done - boom - it hit us hard. CBS could hear the difference too.
-Thriller was a tough project.
-It felt so good when we finished. I was so excited I couldn't wait for it to
-come out. When we finished, there wasn't any kind of celebration that I can
-recall. We didn't go out to a disco or anything. We just rested. I prefer
-just being with people I really like anyway. That's my way of celebrating.
-The three videos that came out of Thriller - "Billie Jean," "Beat It," and
-"Thriller" - were all part of my original concept for the album. I was
-determined to present this music as visually as possible. At the time I
-would look at what people were doing with video, and I couldn't understand
-why so much of it seemed so primitive and weak. I saw kids watching and
-accepting boring videos because they had no alternatives. My goal is to do
-the best I can in every area, so why work hard on an album and then produce
-a terrible video? I wanted something that would glue you to the set,
-something you'd want to watch over and over. The idea from the beginning was
-to give people quality. So I wanted to be a pioneer in this relatively new
-medium and make the best short music movies we could make. I don't even like
-to call them videos. On the set I explained that we were doing a film , and
-that was how I approached it. I wanted the most talented people in the
-business - the best cinematographer, the best director, the best lighting
-people we could get. We weren't shooting on videotape; it was 35-mm film. We
-were serious.
-For the first video, "Billie Jean," I interviewed several directors, looking
-for someone who seemed really unique. Most of them didn't present me with
-anything that was truly innovative. At the same time I was trying to think
-bigger, the record company was giving me a problem on the budget. So I ended
-up paying for "Beat It" and "Thriller" because I didn't want to argue with
-anybody about money. I own both of those films myself as a result.
-"Billie Jean" was done with CBS's money - about $250,000. At the time that
-was a lot of money for a video, but it really pleased me that they believed
-in me that much. Steve Baron, who directed "Billie Jean," had very
-imaginative ideas, although he didn't agree at first that there should be
-dancing in it. I felt that people wanted to see dancing. It was great to
-dance for the video. That freeze-frame where I go on my toes was
-spontaneous; so were many of the other moves.
-"Billie Jean's" video made a big impression on the MTV audience and was a
-huge hit.
-"Beat It" was directed by Bob Giraldi, who had done a lot of commercials. I
-remember being in England when it was decided that "Beat It" would be the
-next single released from Thriller , and we had to choose a director for the
-video.
-I felt "Beat It" should be interpreted literally, the way it was written,
-one gang against another on tough urban streets. It had to be rough . That's
-what "Beat It" was about.
-When I got back to L.A., I saw Bob Giraldi's demo reel and knew that he was
-the director I wanted for "Beat It." I loved the way he told a story in his
-work, so I talked with him about "Beat It." We went over things, my ideas
-and his ideas, and that's how it was created. We played with the storyboard
-and moulded and sculpted it.
-I had street gangs on my mind when I wrote "Beat It," so we rounded up some
-of the toughest gangs in Los Angeles and put them to work on the video. It
-turned out to be a good idea, and a great experience for me. We had some
-rough kids on that set, tough kids, and they hadn't been to wardrobe. Those
-guys in the pool room in the first scene were serious; they were not actors.
-That stuff was real.
-Now I hadn't been around really tough people all that much, and these guys
-were more than a little intimidating at first. But we had security around
-and were ready for anything that might happen. Of course we soon realised we
-didn't need any of this, that the gang members were mostly humble, sweet,
-and kind in their dealings with us. We fed them during breaks, and they all
-cleaned up and put their trays away. I came to realise that the whole thing
-about being bad and tough is that it's done for recognition. All along these
-guys had wanted to be seen and respected, and now we were going to put them
-on TV. They loved it. "Hey, look at me, I'm somebody!" And I think that's
-really why many of the gangs act the way they do. They're rebels, but rebels
-who want attention and respect. Like all of us, they just want to be seen.
-And I gave them that chance. For a few days at least they were stars.
-They were so wonderful to me - polite, quiet, supportive. After the dance
-numbers they'd compliment my work, and I could tell they really meant it.
-They wanted a lot of autographs and frequently stood around my trailer.
-Whatever they wanted, I gave them: photographs, autographs, tickets for the
-Victory tour, anything. They were a nice bunch of guys.
-The truth of that experience came out on the screen. The "Beat It" video was
-menacing, and you could feel those people's emotions. You felt the
-experience of the streets and the reality of their lives. You look at "Beat
-It" and know those kids are tough. They were being themselves, and it came
-across. It was nothing like actors acting; it was as far from that as
-possible. They were being themselves; that feeling you got was their spirit.
-I've always wondered if they got the same message from the song that I did.
-When Thriller first came out, the record company assumed it would sell a
-couple of million copies. In general record companies never believe a new
-album will do considerably better than the last one you did. The figure you
-either got lucky last time or the number you last sold is the size of your
-audience. They usually just ship a couple of million out to the stores to
-cover the sales in case you get lucky again.
-That's how it usually works, but I wanted to alter their attitude with
-Thriller .
-One of the people who helped me with Thriller was Frank Dileo. Frank was
-vice president for promotion at Epic when I met him. Along with Ron Weisner
-and Fred DeMann, Frank was responsible for turning my dream for Thriller
-into a reality. Frank heard parts of Thriller for the first time at Westlake
-Studio in Hollywood, where much of the album was recorded. He was there with
-Freddie DeMann, one of my managers, and Quincy and I played them "Beat It"
-and a little bit of "Thriller," which we were still working on. They were
-very impressed, and we started to talk seriously about how to "break" this
-album wide open.
-Frank really worked hard and proved to be my right hand during the years
-ahead. His brilliant understanding of the recording industry proved
-invaluable. For instance, we released "Beat It" as a single while "Billie
-Jean" was still at number one. CBS screamed, "You're crazy. This will kill
-¦Billie Jean'" But Frank told them not to worry, that both songs would be
-number one and both would be in the Top 10 at the same time. They were.
-By the spring of 1983 it was clear that the album was going to go crazy.
-Over the top. Every time they released another single, sales of the album
-would go even higher.
-Then the "Beat It" video took off.
-On May 16, 1983, I performed "Billie Jean" on a network telecast in honour
-of Motown's twenty-fifth anniversary. Almost fifty million people saw that
-show. After that, many things changed.
-The Motown 25 show had actually been taped a month earlier, in April. The
-whole title was Motown 25: Yesterday, Today, and Forever , and I'm forced to
-admit I had to be talked into doing it. I'm glad I did because the show
-eventually produced some of the happiest and proudest moments of my life.
-As I mentioned earlier, I said no to the idea at first. I had been asked to
-appear as a member of the Jacksons and then do a dance number on my own. But
-none of us were Motown artists any longer. There were lengthy debates
-between me and my managers, Weisner and DeMann. I thought about how much
-Berry Gordy had done for me and the group, but I told my managers and Motown
-that I didn't want to go on TV. My whole attitude toward TV is fairly
-negative. Eventually Berry came to see me to discuss it. I was editing "Beat
-It" at the Motown studio, and someone must have told him I was in the
-building. He came down to the studio and talked to me about it at length. I
-said, "Okay, but if I do it, I want to do ¦Billie Jean.'" It would have been
-the only non-Motown song in the whole show. He told me that's what he wanted
-me to do anyway. So we agreed to do a Jacksons' medley, which would include
-Jermaine. We were all thrilled.
-So I gathered my brothers and rehearsed them for this show. I really worked
-them, and it felt nice, a bit like the old days of the Jackson 5. I
-choreographed them and rehearsed them for days at our house in Encino,
-videotaping every rehearsal so we could watch it later. Jermaine and Marlon
-also made their contributions. Next we went to Motown in Pasadena for
-rehearsals. We did our act and, even though we reserved our energy and never
-went all out at rehearsal, all the people there were clapping and coming
-around and watching us. Then I did my "Billie Jean" rehearsal. I just walked
-through it because as yet I had nothing planned. I hadn't had time because I
-was so busy rehearsing the group.
-The next day I called my management office and said, "Please order me a
-spy's hat, like a cool fedora - something that a secret agent would wear." I
-wanted something sinister and special, a real slouchy kind of hat. I still
-didn't have a very good idea of what I was going to do with "Billie Jean."
-During the Thriller sessions, I had found a black jacket, and I said, "You
-know, someday I'm going to wear this to perform. It was so perfect and so
-show business that I wore it on Motown 25 .
-But the night before the taping, I still had no idea what I was going to do
-with my solo number. So I went down to the kitchen of our house and played
-"Billie Jean." Loud. I was in there by myself, the night before the show,
-and I pretty much stood there and let the song tell me what to do. I kind of
-let the dance create itself. I really let it talk to me; I heard the beat
-come in, and I took this spy's hat and started to pose and step, letting the
-"Billie Jean" rhythm create the movements. I felt almost compelled to let it
-create itself. I couldn't help it. And that - being able to "step back" and
-let the dance come through - was a lot of fun.
-I had also been practising certain steps and movements, although most of the
-performance was actually spontaneous. I had been practising the Moonwalk for
-some time, and it dawned on me in our kitchen that I would finally do the
-Moonwalk in public on Motown 25.
-Now the Moonwalk was already out on the street by this time, but I enhanced
-it a little when I did it. It was born as a break-dance step, a "popping"
-type of thing that blacks kids had created dancing on the street corners in
-the ghetto. Black people are truly innovative dancers; they create many of
-the new dances, pure and simple. So I said, "This is my chance to do it,"
-and I did it. These three kids taught it to me. They gave me the basics -
-and I had been doing it a lot in private. I had practised it together with
-certain other steps. All I was really sure of was that on the bridge to
-"Billie Jean" I was going to walk backward and forward at the same time,
-like walking on the moon.
-One the day of the taping, Motown was running behind schedule. Late. So I
-went off and rehearsed by myself. By then I had my spy hat. My brothers
-wanted to know what the hat was for, but I told them they'd have to wait and
-see. But I did ask Nelson Hayes for a favour. "Nelson - after I do the set
-with my brothers and the lights go down, sneak the hat out to me in the
-dark. I'll be in the corner, next to the wings, talking to the audience, but
-you sneak that hat back there and put it in my hand in the dark."
-So after my brothers and I finished performing, I walked over to the side of
-the stage and said, "You're beautiful! I'd like to say those were the good
-old days; those were magic moments with all my brothers, including Jermaine.
-But what I really like" - and Nelson is sneaking the hat into my hand - "are
-the newer songs." I turned around and grabbed the hat and went into "Billie
-Jean," into that heavy rhythm; I could tell that people in the audience were
-really enjoying my performance. My brothers told me they were crowding the
-wings watching me with their mouths open, and my parents and sisters were
-out there in the audience. But I just remember opening my eyes at the end of
-the thing and seeing this sea of people standing up, applauding. And I felt
-so many conflicting emotions. I knew I had done my best and felt good, so
-good. But at the same time I felt disappointed in myself. I had planned to
-do one really long spin and to stop on my toes, suspended for a moment, but
-I didn't stay on my toes as long as I wanted. I did the spin and I landed on
-one toe. I wanted to just stay there, just freeze there, but it didn't work
-quite as I'd planned.
-When I got backstage, the people back there were congratulating me. I was
-still disappointed about the spin. I had been concentrating so hard and I'm
-such a perfectionist. At the same time I knew this was one of the happiest
-moments of my life. I knew that for the first time my brothers had really
-gotten a chance to watch me and see what I was doing, how I was evolving.
-After the performance, each of them hugged and kissed me backstage. They had
-never done that before, and I felt happy for all of us. It was so wonderful
-when they kissed me like that. I loved it! I mean, we hug all the time. My
-whole family embraces a lot, except for my father. He's the only one who
-doesn't. Whenever the rest of us see each other, we embrace, but when they
-all kissed me that night, I felt as if I had been blessed by them.
-The performance was still gnawing at me, and I wasn't satisfied until a
-little boy came up to me backstage. He was about ten years old and was
-wearing a tuxedo. He looked up at me with stars in his eyes, frozen where he
-stood, and said, "Man, who ever taught you to dance like that?" I kind of
-laughed and said, "Practice, I guess." And this boy was looking at me,
-awestruck. I walked away, and for the first time that evening I felt really
-good about what I had accomplished that night. I said to myself, I must have
-done really well because children are honest. When that kid said what he
-did, I really felt that I had done a good job. I was so moved by the whole
-experience that I went right home and wrote down everything which had
-happened that night. My entry ended with my encounter with the child.
-The day after the Motown 25 show, Fred Astaire called me on the telephone.
-He said - these are his exact words - "You're a hell of a mover. Man, you
-really put them on their asses last night." That's what Fred Astaire said to
-me. I thanked him. Then he said, "You're an angry dancer. I'm the same way.
-I used to do the same thing with my cane."
-I had met him once or twice in the past, but this was the first time he had
-ever called me. He went on to say, "I watched the special last night; I
-taped it and I watched it again this morning. You're a hell of a mover."
-It was the greatest compliment I had ever received in my life, and the only
-one I had ever wanted to believe. For Fred Astaire to tell me that meant
-more to me than anything. Later my performance was nominated for an Emmy
-Award in a musical category, but I lost to Leontyne Price. It didn't matter.
-Fred Astaire had told me things I would never forget - that was my reward.
-Later he invited me to his house, and there were more compliments from him
-until I really blushed. He went over my "Billie Jean" performance, step by
-step. The great choreographer Hermes Pan, who had choreographed Fred's
-dances in the movies, came over, and I showed them how to Moonwalk and
-demonstrated some other steps that really interested them.
-Not long after that Gene Kelly came by my house to visit and also said he
-liked my dancing. It was a fantastic experience, that show, because I felt I
-had been inducted into an informal fraternity of dancers, and I felt so
-honoured because these were the people I most admired in the world.
-Right after Motown 25 my family read a lot of stuff in the press about my
-being "the new Sinatra" and as "exciting as Elvis" - that kind of thing. It
-was very nice to hear, but I knew the press could be so fickle. One week
-they love you, and the next week they act like you're rubbish. Later I gave
-the glittery black jacket I wore on Motown 25 to Sammy Davis as a present.
-He said he was going to do a takeoff of me on stage, and I said, "Here, you
-want to wear this when you do it?" He was so happy. I love Sammy. He's such
-a fine man and a real showman. One of the best. I had been wearing a single
-glove for years before Thriller . I felt that one glove was cool. Wearing
-two gloves seemed so ordinary, but a single glove was different and was
-definitely a look. But I've long believed that thinking too much about your
-look is one of the biggest mistakes you can make, because an artist should
-let his style evolve naturally, spontaneously. You can't think about these
-things; you have to feel your way into them.
-I actually had been wearing the glove for a long time, but it hadn't gotten
-a lot of attention until all of a sudden it hit with Thriller in 1983. I was
-wearing it on some of the old tours back in the 1970s, and I wore one glove
-during the Off the Wall tour and on the cover of the live album that came
-out afterward.
-It's so show business that one glove. I love wearing it. Once, by
-coincidence, I wore a black glove to the American Music Awards ceremony,
-which happened to fall on Martin Luther King, Jr.'s birthday. Funny how
-things happen sometimes.
-I admit that I love starting trends, but I never thought wearing white socks
-was going to catch on. Not too long ago it was considered extremely square
-to wear white socks. It was cool in the 1950s, but in the ¦60s and ¦70s you
-wouldn't be caught dead in white socks. It was too square to even consider -
-for most people.
-But I never stopped wearing them. Ever. My brothers would call me a dip, but
-I didn't care. My brother Jermaine would get upset and call my mother,
-"Mother, Michael's wearing his white socks again. Can't you do something?
-Talk to him." He would complain bitterly. They'd all tell me I was a
-goofball. But I still wore my white socks, and now it's cool again. Those
-white socks must have caught on just to spite Jermaine. I get tickled when I
-think about it. After Thriller came out, it even became okay to wear your
-pants high around your ankles again.
-My attitude is if fashion says it's forbidden, I'm going to do it.
-When I'm at home, I don't like to dress up. I wear anything that's handy. I
-used to spend days in my pyjamas. I like flannel shirts, old sweaters and
-slacks, simple clothes.
-When I go out, I dress up in sharper, brighter, more tailored clothes, but
-around the house and in the studio anything goes. I don't wear much
-jewellery - usually none - because it gets in my way. Occasionally people
-give me gifts of jewellery and I treasure them for the sentiment, but
-usually I just put them away somewhere. Some of it has been stolen. Jackie
-Gleason gave me a beautiful ring. He took it off his finger and gave it to
-me. It was stolen and I miss it, but it doesn't really bother me because the
-gesture meant more than anything else, and that can't be taken from me. The
-ring was just a material thing.
-What really makes me happy, what I love is performing and creating. I really
-don't care about all the material trappings. I love to put my soul into
-something and have people accept it and like it. That's a wonderful feeling.
-I appreciate art for that reason. I'm a great admirer of Michelangelo and of
-how he poured his soul into his work. He knew in his heart that one day he
-would die, but that the work he did would live on. You can tell he painted
-the ceiling of the Sistine Chapel with all his soul. At one point he even
-destroyed it and did it over because he wanted it to be perfect. He said,
-"If the wine is sour, pour it out."
-I can look at a painting and lose myself. It pulls you in, all the pathos
-and drama. It communicates with you. You can sense what the artist was
-feeling. I feel the same way about photography. A poignant or strong
-photograph can speak volumes.
-As I said earlier, there were many changes in my life in the aftermath of
-Motown 25 . We were told that forty-seven million people watched that show,
-and apparently many of them went out and bought Thriller . By the fall of
-1983 the album had sold eight million copies, eclipsing, by far, CBS's
-expectations for the successor to Off the Wall . At that point Frank Dileo
-said he'd like to see us produce another video or short film.
-It was clear to us that the next single and video should be "Thriller," a
-long track that had plenty of material for a brilliant director to play
-with. As soon as the decision was made, I knew who I wanted to have direct
-it. The year before I had seen a horror film called An American Werewolf in
-London , and I knew that the man who made it, John Landis, would be perfect
-for "Thriller," since our concept for the video featured the same kind of
-transformations that happened to his character.
-So we contacted John Landis and asked him to direct. He agreed and submitted
-his budget, and we went to work. The technical details of this film were so
-awesome that I soon got a call from John Branca, my attorney and one of my
-closest and most valued advisers. John had been working with me ever since
-the Off the Wall days; in fact he even helped me out by donning many hats
-and functioning in several capacities when I had no manager after Thriller
-was released. He's one of those extremely talented, capable men who can do
-anything. Anyway, John was in a panic because it had become obvious to him
-that the original budget for the "Thriller" video was going to double. I was
-paying for this project myself, so the money for the budget overruns was
-coming out of my pocket.
-But at this point John came up with a great idea. He suggested we make a
-separate video, financed by somebody else, about the making of the
-"Thriller" video. It seemed odd that no one had ever done this before. We
-felt sure it would be an interesting documentary, and at the same time it
-would help pay for our doubled project. It didn't take John long to put this
-deal together. He got MTV and the Showtime cable network to put up the cash,
-and Vestron released the video after "Thriller" aired.
-The success of The Making of Thriller was a bit of a shock to all of us. In
-its cassette form it sold about a million copies by itself. Even now, it
-holds the record as the best-selling music video of all time.
-The "Thriller" film was ready in late 1983. We released it in February and
-it made its debut on MTV. Epic released "Thriller" as a single and sales of
-the album went crazy. According to statistics, the "Thriller" film and the
-release of the single resulted in fourteen million additional album and tape
-sales within a six-month period. At one point in 1984, we were selling a
-million records a week.
-I'm still stunned by this response. By the time we finally closed down the
-Thriller campaign a year later, the album was at the thirty-two million
-mark. Today sales are at forty million. A dream come true.
-During this period I changed my management as well. My contract with Weisner
-and DeMann had expired in early 1983. My father was no longer representing
-me and I was looking at various people. One day I was at the Beverly Hills
-Hotel, visiting Frank Dileo, and I asked him if he had any interest in
-leaving Epic and managing my career.
-Frank asked me to think about it some more and if I was certain to call him
-back on Friday.
-Needless to say, I called him back.
-The success of Thriller really hit me in 1984, when the album received a
-gratifying number of nominations for the American Music Awards and the
-Grammy Awards. I remember feeling an overwhelming rush of jubilation. I was
-whooping with joy and dancing around the house, screaming. When the album
-was certified as the best-selling album of all time, I couldn't believe it.
-Quincy Jones was yelling, "Bust open the champagne!" We were all in a state.
-Man! What a feeling! To work so hard on something, to give so much and to
-succeed! Everyone involved with Thriller was floating on air. It was
-wonderful.
-I imagined that I felt like a long-distance runner must feel when breaking
-the tape at the finish line. I would think of an athlete, running as hard
-and as fast as he can. Finally he gets close to the finish line and his
-chest hits that ribbon and the crowd is soaring with him. And I'm not even
-into sports!
-But I identify with that person because I know how hard he's trained and I
-know how much that moment means to him. Perhaps a whole life has been
-devoted to this endeavour, this one moment. And then he wins. That's the
-realisation of a dream. That's powerful stuff. I can share that feeling
-because I know.
-One of the side effects of the Thriller period was to make me weary of
-constantly being in the public eye. Because of this, I resolved to lead a
-quieter, more private life. I was still quite shy about my appearance. You
-must remember that I had been a child star and when you grow up under that
-kind of scrutiny people don't want you to change, to get older and look
-different. When I first became well known, I had a lot of baby fat and a
-very round, chubby face. That roundness stayed with me until several years
-ago when I changed my diet and stopped eating beef, chicken, pork, and fish,
-as well as certain fattening foods. I just wanted to look better, live
-better, and be healthier. Gradually, as I lost weight, my face took on its
-present shape and the press started accusing me of surgically altering my
-appearance, beyond the nose job I freely admitted I had, like many
-performers and film stars. They would take an old picture from adolescence
-of high school, and compare it to a current photograph. In the old picture
-my face would be round and pudgy. I'd have an Afro, and the picture would be
-badly lit. The new picture would show a much older, more mature face. I've
-got a different hairstyle and a different nose. Also, the photographer's
-lighting is excellent in the recent photographs. It's really not fair to
-make such comparisons. They have said I had bone surgery done on my face. It
-seems strange to me that people would jump to that conclusion and I thought
-it was very unfair.
-Judy Garland and Jean Harlow and many others have had their noses done. My
-problem is that as a child star people got used to seeing me look one way.
-I'd like to set the record straight right now. I have never had my cheeks
-altered or my eyes altered. I have not had my lips thinned, nor have I had
-dermabrasion or a skin peel. All of these charges are ridiculous. If they
-were true, I would say so, but they aren't. I have had my nose altered twice
-and I recently added a cleft to my chin, but that is it. Period. I don't
-care what anyone else says - it's my face and I know.
-I'm a vegetarian now and I'm so much thinner. I've been on a strict diet for
-years . I feel better than I ever have, healthier and more energetic. I
-don't understand why the press is so interested in speculating about my
-appearance anyway. What does my face have to do with my music or my dancing?
-The other day a man asked me if I was happy. And I answered, "I don't think
-I'm ever totally happy." I'm one of the hardest people to satisfy, but at
-the same time, I'm aware of how much I have to be thankful for and I am
-truly appreciative that I have my health and the love of my family and
-friends.
-I'm also easily embarrassed. The night I won eight American Music Awards, I
-accepted them wearing my shades on the network broadcast. Katharine Hepburn
-called me up and congratulated me, but she gave me a hard time because of
-the sunglasses. "Your fans want to see your eyes," she scolded me. "You're
-cheating them." The following month, February 1984, at the Grammy show,
-Thriller had walked off with seven Grammy Awards and looked like it was
-going to win as eighth. All evening I had been going up to the podium and
-collecting awards with my sunglasses on. Finally, when Thriller won for Best
-Album, I went up to accept it, took off my glasses, and stared into the
-camera. "Katherine Hepburn," I said, "this is for you." I knew she was
-watching and she was.
-You have to have some fun.`,
+    title: "The Best Way to Start a New Habit",
+    content: `IN 2001, RESEARCHERS in Great Britain began working with 248 people to build better
+exercise habits over the course of two weeks. The subjects were divided into
+three groups.
+The first group was the control group. They were simply asked to track how
+often they exercised.
+The second group was the “motivation” group. They were asked not only to
+track their workouts but also to read some material on the benefits of exercise.
+The researchers also explained to the group how exercise could reduce the risk
+of coronary heart disease and improve heart health.
+Finally, there was the third group. These subjects received the same
+presentation as the second group, which ensured that they had equal levels of
+motivation. However, they were also asked to formulate a plan for when and
+where they would exercise over the following week. Specifically, each member
+of the third group completed the following sentence: “During the next week, I
+will partake in at least 20 minutes of vigorous exercise on [DAY] at [TIME] in
+[PLACE].”
+In the first and second groups, 35 to 38 percent of people exercised at least
+once per week. (Interestingly, the motivational presentation given to the second
+group seemed to have no meaningful impact on behavior.) But 91 percent of the
+third group exercised at least once per week—more than double the normal rate.
+The sentence they filled out is what researchers refer to as an implementation
+intention, which is a plan you make beforehand about when and where to act.
+That is, how you intend to implement a particular habit.
+The cues that can trigger a habit come in a wide range of forms—the feel of
+your phone buzzing in your pocket, the smell of chocolate chip cookies, the
+sound of ambulance sirens—but the two most common cues are time and
+location. Implementation intentions leverage both of these cues.
+Broadly speaking, the format for creating an implementation intention is:
+“When situation X arises, I will perform response Y.”
+Hundreds of studies have shown that implementation intentions are effective
+for sticking to our goals, whether it’s writing down the exact time and date of
+when you will get a flu shot or recording the time of your colonoscopy
+appointment. They increase the odds that people will stick with habits like
+recycling, studying, going to sleep early, and stopping smoking.
+Researchers have even found that voter turnout increases when people are
+forced to create implementation intentions by answering questions like: “What
+route are you taking to the polling station? At what time are you planning to go?
+What bus will get you there?” Other successful government programs have
+prompted citizens to make a clear plan to send taxes in on time or provided
+directions on when and where to pay late traffic bills.
+The punch line is clear: people who make a specific plan for when and where
+they will perform a new habit are more likely to follow through. Too many
+people try to change their habits without these basic details figured out. We tell
+ourselves, “I’m going to eat healthier” or “I’m going to write more,” but we
+never say when and where these habits are going to happen. We leave it up to
+chance and hope that we will “just remember to do it” or feel motivated at the
+right time. An implementation intention sweeps away foggy notions like “I want
+to work out more” or “I want to be more productive” or “I should vote” and
+transforms them into a concrete plan of action.
+Many people think they lack motivation when what they really lack is clarity.
+It is not always obvious when and where to take action. Some people spend their
+entire lives waiting for the time to be right to make an improvement.
+Once an implementation intention has been set, you don’t have to wait for
+inspiration to strike. Do I write a chapter today or not? Do I meditate this
+morning or at lunch? When the moment of action occurs, there is no need to
+make a decision. Simply follow your predetermined plan.
+The simple way to apply this strategy to your habits is to fill out this
+sentence:
+I will [BEHAVIOR] at [TIME] in [LOCATION].
+Meditation. I will meditate for one minute at 7 a.m. in my kitchen.
+Studying. I will study Spanish for twenty minutes at 6 p.m. in my
+bedroom.
+Exercise. I will exercise for one hour at 5 p.m. in my local gym.
+Marriage. I will make my partner a cup of tea at 8 a.m. in the kitchen.
+If you aren’t sure when to start your habit, try the first day of the week,
+month, or year. People are more likely to take action at those times because hope
+is usually higher. If we have hope, we have a reason to take action. A fresh start
+feels motivating.
+There is another benefit to implementation intentions. Being specific about
+what you want and how you will achieve it helps you say no to things that derail
+progress, distract your attention, and pull you off course. We often say yes to
+little requests because we are not clear enough about what we need to be doing
+instead. When your dreams are vague, it’s easy to rationalize little exceptions all
+day long and never get around to the specific things you need to do to succeed.
+Give your habits a time and a space to live in the world. The goal is to make
+the time and location so obvious that, with enough repetition, you get an urge to
+do the right thing at the right time, even if you can’t say why. As the writer
+Jason Zweig noted, “Obviously you’re never going to just work out without
+conscious thought. But like a dog salivating at a bell, maybe you start to get
+antsy around the time of day you normally work out.”
+There are many ways to use implementation intentions in your life and work.
+My favorite approach is one I learned from Stanford professor BJ Fogg and it is
+a strategy I refer to as habit stacking.
+HABIT STACKING: A SIMPLE PLAN TO OVERHAUL YOUR HABITS
+The French philosopher Denis Diderot lived nearly his entire life in poverty, but
+that all changed one day in 1765.
+Diderot’s daughter was about to be married and he could not afford to pay for
+the wedding. Despite his lack of wealth, Diderot was well known for his role as
+the co-founder and writer of Encyclopédie, one of the most comprehensive
+encyclopedias of the time. When Catherine the Great, the Empress of Russia,
+heard of Diderot’s financial troubles, her heart went out to him. She was a book
+lover and greatly enjoyed his encyclopedia. She offered to buy Diderot’s
+personal library for £1,000—more than $150,000 today.* Suddenly, Diderot had
+money to spare. With his new wealth, he not only paid for the wedding but also
+acquired a scarlet robe for himself.
+Diderot’s scarlet robe was beautiful. So beautiful, in fact, that he immediately
+noticed how out of place it seemed when surrounded by his more common
+possessions. He wrote that there was “no more coordination, no more unity, no
+more beauty” between his elegant robe and the rest of his stuff.
+Diderot soon felt the urge to upgrade his possessions. He replaced his rug with
+one from Damascus. He decorated his home with expensive sculptures. He
+bought a mirror to place above the mantel, and a better kitchen table. He tossed
+aside his old straw chair for a leather one. Like falling dominoes, one purchase
+led to the next.
+Diderot’s behavior is not uncommon. In fact, the tendency for one purchase to
+lead to another one has a name: the Diderot Effect. The Diderot Effect states that
+obtaining a new possession often creates a spiral of consumption that leads to
+additional purchases.
+You can spot this pattern everywhere. You buy a dress and have to get new
+shoes and earrings to match. You buy a couch and suddenly question the layout
+of your entire living room. You buy a toy for your child and soon find yourself
+purchasing all of the accessories that go with it. It’s a chain reaction of
+purchases.
+Many human behaviors follow this cycle. You often decide what to do next
+based on what you have just finished doing. Going to the bathroom leads to
+washing and drying your hands, which reminds you that you need to put the
+dirty towels in the laundry, so you add laundry detergent to the shopping list, and
+so on. No behavior happens in isolation. Each action becomes a cue that triggers
+the next behavior.
+Why is this important?
+When it comes to building new habits, you can use the connectedness of
+behavior to your advantage. One of the best ways to build a new habit is to
+identify a current habit you already do each day and then stack your new
+behavior on top. This is called habit stacking.
+Habit stacking is a special form of an implementation intention. Rather than
+pairing your new habit with a particular time and location, you pair it with a
+current habit. This method, which was created by BJ Fogg as part of his Tiny
+Habits program, can be used to design an obvious cue for nearly any habit.*
+The habit stacking formula is:
+“After [CURRENT HABIT], I will [NEW HABIT].”
+For example:
+Meditation. After I pour my cup of coffee each morning, I will
+meditate for one minute.
+Exercise. After I take off my work shoes, I will immediately change
+into my workout clothes.
+Gratitude. After I sit down to dinner, I will say one thing I’m grateful
+for that happened today.
+Marriage. After I get into bed at night, I will give my partner a kiss.
+Safety. After I put on my running shoes, I will text a friend or family
+member where I am running and how long it will take.
+The key is to tie your desired behavior into something you already do each
+day. Once you have mastered this basic structure, you can begin to create larger
+stacks by chaining small habits together. This allows you to take advantage of
+the natural momentum that comes from one behavior leading into the next—a
+positive version of the Diderot Effect.
+HABIT STACKING
+FIGURE 7: Habit stacking increases the likelihood that you’ll stick with a habit by stacking your new behavior on top of an old one. This process can be repeated to chain numerous habits
+together, each one acting as the cue for the next.
+Your morning routine habit stack might look like this:
+1. After I pour my morning cup of coffee, I will meditate for sixty
+seconds.
+2. After I meditate for sixty seconds, I will write my to-do list for the
+day.
+3. After I write my to-do list for the day, I will immediately begin my
+first task.
+Or, consider this habit stack in the evening:
+1. After I finish eating dinner, I will put my plate directly into the
+dishwasher.
+2. After I put my dishes away, I will immediately wipe down the counter.
+3. After I wipe down the counter, I will set out my coffee mug for
+tomorrow morning.
+You can also insert new behaviors into the middle of your current routines.
+For example, you may already have a morning routine that looks like this: Wake
+up > Make my bed > Take a shower. Let’s say you want to develop the habit of
+reading more each night. You can expand your habit stack and try something
+like: Wake up > Make my bed > Place a book on my pillow > Take a shower.
+Now, when you climb into bed each night, a book will be sitting there waiting
+for you to enjoy.
+Overall, habit stacking allows you to create a set of simple rules that guide
+your future behavior. It’s like you always have a game plan for which action
+should come next. Once you get comfortable with this approach, you can
+develop general habit stacks to guide you whenever the situation is appropriate:
+Exercise. When I see a set of stairs, I will take them instead of using
+the elevator.
+Social skills. When I walk into a party, I will introduce myself to
+someone I don’t know yet.
+Finances. When I want to buy something over $100, I will wait
+twenty-four hours before purchasing.
+Healthy eating. When I serve myself a meal, I will always put veggies
+on my plate first.
+Minimalism. When I buy a new item, I will give something away.
+(“One in, one out.”)
+Mood. When the phone rings, I will take one deep breath and smile
+before answering.
+Forgetfulness. When I leave a public place, I will check the table and
+chairs to make sure I don’t leave anything behind.
+No matter how you use this strategy, the secret to creating a successful habit
+stack is selecting the right cue to kick things off. Unlike an implementation
+intention, which specifically states the time and location for a given behavior,
+habit stacking implicitly has the time and location built into it. When and where
+you choose to insert a habit into your daily routine can make a big difference. If
+you’re trying to add meditation into your morning routine but mornings are
+chaotic and your kids keep running into the room, then that may be the wrong
+place and time. Consider when you are most likely to be successful. Don’t ask
+yourself to do a habit when you’re likely to be occupied with something else.
+Your cue should also have the same frequency as your desired habit. If you
+want to do a habit every day, but you stack it on top of a habit that only happens
+on Mondays, that’s not a good choice.
+One way to find the right trigger for your habit stack is by brainstorming a list
+of your current habits. You can use your Habits Scorecard from the last chapter
+as a starting point. Alternatively, you can create a list with two columns. In the
+first column, write down the habits you do each day without fail.*
+For example:
+Get out of bed.
+Take a shower.
+Brush your teeth.
+Get dressed.
+Brew a cup of coffee.
+Eat breakfast.
+Take the kids to school.
+Start the work day.
+Eat lunch.
+End the work day.
+Change out of work clothes.
+Sit down for dinner.
+Turn off the lights.
+Get into bed.
+Your list can be much longer, but you get the idea. In the second column,
+write down all of the things that happen to you each day without fail. For
+example:
+The sun rises.
+You get a text message.
+The song you are listening to ends.
+The sun sets.
+Armed with these two lists, you can begin searching for the best place to layer
+your new habit into your lifestyle.
+Habit stacking works best when the cue is highly specific and immediately
+actionable. Many people select cues that are too vague. I made this mistake
+myself. When I wanted to start a push-up habit, my habit stack was “When I take
+a break for lunch, I will do ten push-ups.” At first glance, this sounded
+reasonable. But soon, I realized the trigger was unclear. Would I do my push-ups
+before I ate lunch? After I ate lunch? Where would I do them? After a few
+inconsistent days, I changed my habit stack to: “When I close my laptop for
+lunch, I will do ten push-ups next to my desk.” Ambiguity gone.
+Habits like “read more” or “eat better” are worthy causes, but these goals do
+not provide instruction on how and when to act. Be specific and clear: After I
+close the door. After I brush my teeth. After I sit down at the table. The
+specificity is important. The more tightly bound your new habit is to a specific
+cue, the better the odds are that you will notice when the time comes to act.
+The 1st Law of Behavior Change is to make it obvious. Strategies like
+implementation intentions and habit stacking are among the most practical ways
+to create obvious cues for your habits and design a clear plan for when and
+where to take action.
+Chapter Summary
+The 1st Law of Behavior Change is make it obvious.
+The two most common cues are time and location.
+Creating an implementation intention is a strategy you can use to pair a
+new habit with a specific time and location.
+The implementation intention formula is: I will [BEHAVIOR] at
+[TIME] in [LOCATION].
+Habit stacking is a strategy you can use to pair a new habit with a
+current habit.
+The habit stacking formula is: After [CURRENT HABIT], I will
+[NEW HABIT].`,
   },
   {
     chapter_number: 6,
-    title: "All You Need Is Love",
-    content: `I had planned to spend most of 1984 working on some movie ideas I had, but
-those plans got sidetracked. First, in January, I was burned on the set of a
-Pepsi commercial I was shooting with my brothers.
-The reason for the fire was stupidity, pure and simple. We were shooting at
-night and I was supposed to come down a staircase with magnesium flash bombs
-going off on either side of me and just behind me. It seemed so simple. I
-was to walk down the stairs and these bombs would blow up behind me. We did
-several takes that were wonderfully timed. The lightning effects from the
-bombs were great. Only later did I find out that these bombs were only two
-feet away from either side of my head, which was a total disregard of the
-safety regulations. I was supposed to stand in the middle of a magnesium
-explosion, two feet on either side.
-Then Bob Giraldi, the director, came to me and said, "Michael, you're going
-down too early. We want to see you up there, up on the stairs. When the
-lights come on, we want to reveal that you're there, so wait ."
-So I waited, the bombs went off on either side of my head, and the sparks
-set my hair on fire. I was dancing down this ramp and turning around,
-spinning, not knowing I was on fire. Suddenly I felt my hands reflexively
-going to my head in an attempt to smother the flames. I fell down and just
-tried to shake the flames out. Jermaine turned around and saw me on the
-ground, just after the explosions had gone off, and he thought I had been
-shot by someone in the crowd - because we were shooting in front of a big
-audience. That's what it looked like to him.
-Miko Brando, who works for me, was the first person to reach me. After that,
-it was chaos. It was crazy. No film could properly capture the drama of what
-went on that night. The crowd was screaming. Someone shouted, "Get some
-ice!" There were frantic running sounds. People were yelling, "Oh no!" The
-emergency truck came up and before they put in I saw the Pepsi executives
-huddled together in a corner, looking terrified. I remember the medical
-people putting me on a cot and the guys from Pepsi were so scared they
-couldn't even bring themselves to check on me.
-Meanwhile, I was kind of detached, despite the terrible pain. I was watching
-all the drama unfold. Later they told me I was in shock, but I remember
-enjoying the ride to the hospital because I never thought I'd ride in an
-ambulance with the sirens wailing. It was one of those things I had always
-wanted to do when I was growing up. When we got there, they told me there
-were news crews outside, so I asked for my glove. There's a famous shot of
-me waving from the stretcher with my glove on.
-Later one on the doctors told me that it was a miracle I was alive. One of
-the firemen had mentioned that in most cases your clothes catch on fire, in
-which case your whole face can be disfigured or you can die. That's it. I
-had third-degree burns on the back of my head that almost went through to my
-skull, so I had a lot of problems with it, but I was very lucky.
-What we now know is that the incident created a lot of publicity for the
-commercial. They sold more Pepsi than ever before. And they came back to me
-later and offered me the biggest commercial endorsement fee in history. It
-was so unprecedented that it went into The Guinness Book of World Records.
-Pepsi and I worked together on another commercial, called "The Kid," and I
-gave them problems by limiting the shots of me because I felt the shots they
-were asking for didn't work well. Later, when the commercial was a success,
-they told me I had been right.
-I still remember how scared those Pepsi executives looked the night of the
-fire. They thought that my getting burned would leave a bad taste in the
-mouth of every every kid in America who drank Pepsi. They knew I could have
-sued them and I could have, but I was real nice about it. Real nice. They
-gave me $1,500,000 which I immediately donated to the Michael Jackson Burn
-Center. I wanted to do something because I was so moved by the other burn
-patients I met while I was in the hospital.
-Then there was the Victory tour. I did fifty-five shows with my brothers
-over the course of five months.
-I didn't want to go on the Victory tour and I fought against it. I felt the
-wisest thing for me would be not to do the tour, but my brothers wanted to
-do it and I did it for them. So I told myself that since I was committed to
-doing this, I might as well put my soul into it.
-When it came down to the actual tour, I was outvoted on a number of issues,
-but you don't think when you're onstage, you just deliver. My goal for the
-Victory tour was to give each performance everything I could. I hoped people
-might come to see me who didn't even like me. I hoped they might hear about
-the show and want to see what's going on. I wanted incredible word-of-mouth
-response to the show so a wide range of people would come and see us. Word
-of mouth is the best publicity. Nothing beats it. If someone I trust comes
-to me and tells me something is great, I'm sold.
-I felt very powerful in those days of Victory. I felt on top of the world. I
-felt determined. That tour was like: "We're a mountain. We've come to share
-our music with you. We have something we want to tell you." At the beginning
-of the show, we rose out of the stage and came down these stairs. The
-opening was dramatic and bright and captured the whole feeling of the show.
-When the lights came on and they saw us, the roof would come off the place.
-It was a nice feeling, playing with my brothers again. It gave us a chance
-to relive our days as the Jackson 5 and the Jacksons. We were all together
-again. Jermaine had come back and we were riding a wave of popularity. It
-was the biggest tour any group had ever done, in huge outdoor stadiums. But
-I was disappointed with the tour from the beginning. I had wanted to move
-the world like it had never been moved. I wanted to present something that
-would make people say, "Wow! That's wonderful!" The response we got was
-wonderful and the fans were great, but I became unhappy with our show. I
-didn't have the time or the opportunity to perfect it the way I wanted to. I
-was disappointed in the staging of "Billie Jean." I wanted it to be so much
-more than it was. I didn't like the lighting and I never got my steps quite
-the way I wanted them. It killed me to have to accept these things and
-settle for doing it the way I did.
-There've been times right before a show when certain things were bothering
-me - business or personal problems. I would think, "I don't know how to go
-through with this. I don't know how I'm going to get through the show. I
-can't perform like this."
-But once I get to the side of the stage, something happens. The rhythm
-starts and the lights hit me and the problems disappear. This has happened
-so many times. The thrill of performing just takes me over. It's like God
-saying, "Yes, you can. Yes, you can. Just wait. Wait till you hear this.
-Wait till you see this." And the backbeat gets in my backbone and it
-vibrates and it just takes me. Sometimes I almost lose control and the
-musicians say, "What is he doing?" and they start following me. You change
-the whole schedule of a piece. You stop and you just take over from scratch
-and do a whole other thing. The song takes you in another direction.
-There was a part of the show on the Victory tour where I was doing this
-scatting theme and the audience was repeating what I said. I'd say, "Da, de,
-da, de" and they'd say, "Da, de, da, de." There've been times when I've done
-that and they would start stomping. And when the whole audience is doing
-that, it sounds like an earthquake. Oh! It's a great feeling to be able to
-do that with all those people - whole stadiums - and they're all doing the
-same thing you're doing. It's the greatest feeling in the world. You look
-out in the audience and see toddlers and teens and grandparents and people
-in their twenties and thirties. Everybody is swaying, their hands are up,
-and they're all singing. You ask that the house lights come on and you see
-their faces and you say, "Hold hands" and they hold hands and you say,
-"Stand up" or "Clap" and they do. They're enjoying themselves and they'll
-whatever you tell them. They love it and it's so beautiful - all the races
-of people are together doing this. At times like that I say, "Look around
-you. Look at yourselves. Look. Look around you. Look at what you have done."
-Oh, it's so beautiful. Very powerful. Those are great moments.
-The Victory tour was my first chance to be exposed to the Michael Jackson
-fans since Thriller had come out two years earlier. There were some strange
-reactions. I'd bump into people in hallways and they'd go, "Naw, that can't
-be him. He wouldn't be here." I was baffled and I'd ask myself, "Why
-wouldn't I? I'm on earth somewhere . I've got to be somewhere at any given
-time. Why not here?" Some fans imagine you to be almost an illusion, this
-thing that doesn't exist. When they see you, they feel it's a miracle or
-something. I've had fans ask me if I use the bathroom. I mean, it gets
-embarrassing. They just lose touch with the fact that you're like them
-because they get so excited. But I can understand it because I'd feel the
-same way if, for instance, I could have met Walt Disney or Charlie Chaplin.
-Kansas City opened the tour. It was Victory's first night. We were walking
-by the hotel pool in the evening and Frank Dileo lost his balance and fell
-in. People saw this and started to get excited. Some of us were kind of
-embarrassed, but I was laughing. He wasn't hurt and he looked so surprised.
-We jumped over a low wall and found ourselves on the street without any
-security. People didn't seem to be able to believe that we were just walking
-around on the street like that. They gave us a wide berth.
-Later when we returned to the hotel, Bill Bray, who has headed my security
-team since I was a child, just shook his head and laughed as we recounted
-our adventures.
-Bill is very careful and immensely professional in his job, but he doesn't
-worry about things after the fact. He travels with me everywhere and
-occasionally he's my only companion on short trips. I can't imagine life
-without Bill; he's warm and funny and absolutely in love with life. He's a
-great man.
-When the tour was in Washington, D.C., I was out on our hotel balcony with
-Frank, who has a great sense of humour and enjoys playing pranks himself. We
-were teasing one another and I started pulling $100 bills from his pockets
-and throwing them to people who were walking down below. This almost caused
-a riot. He was trying to stop me, but we were both laughing. It reminded me
-of the pranks my brothers and I used to pull on tour. Frank sent our
-security people downstairs to try and find any undiscovered money in the
-bushes.
-In Jacksonville, the local police almost killed us in a traffic accident
-during the four-block drive from the hotel to the stadium. Later, in another
-part of Florida, when the old tour boredom set in that I described earlier,
-I played a little trick on Frank. I asked him to come up to my suite and
-when he came in I offered him some watermelon, which was lying on a table
-across the room. Frank went over to pick up a piece and tripped over my boa
-constrictor, Muscles, who was on the road with me. Muscles is harmless, but
-Frank hates snakes and proceeded to scream and yell. I started chasing him
-around the room with the boa. Frank got the upper hand, however. He
-panicked, ran from the room, and grabbed the security guard's gun. He was
-going to shoot Muscles, but the guard calmed him down. Later he said all he
-could think of was: "I've got to get that snake." I've found that a lot of
-tough men are afraid of snakes.
-We were locked in hotels all over America, just like in the old days. Me and
-Jermaine or me and Randy would get up to our old tricks, taking buckets of
-water and pouring them off hotel balconies onto people eating in the atriums
-far below. We were up so high the water was just mist by the time it reached
-them. It was just like the old days, bored in the hotels, locked away from
-fans for our own protection, unable to go anywhere without massive security.
-But there were a lot of days that were fun too. We had a lot of time off on
-that tour and we got to take five little vacations to Disney World. Once,
-when we were staying in the hotel there, an amazing thing happened. I'll
-never forget it. I was on a balcony where we could see a big area. There
-were all these people. It was so crowded that people were bumping into each
-other. Someone in that crowd recognised me and started screaming my name.
-Thousands of people began chanting, "Michael! Michael!" and it was echoing
-all over the park. The chanting continued until finally it was so loud that
-if I hadn't acknowledged it, it would have been rude. As soon as I did,
-everybody started screaming. I said, "Oh, this is so beautiful. I've got it
-so good." All the work I'd put in on Thriller , my crying and believing in
-my dreams and working on those songs and falling asleep near the microphone
-stand because I was so tired, all of it was repaid by this display of
-affection.
-I've seen times where I'd walk into a theatre to see a play and everybody
-would just start applauding. Just because they're glad that I happen to be
-there. At moments like that, I feel so honoured and so happy. It makes all
-the work seem worthwhile.
-The Victory tour was originally going to be called "The Final Curtain"
-because we all realised it was going to be the last tour we did together.
-But we decided not to put the emphasis on that.
-I enjoyed the tour. I knew it would be a long road; in the end, it was
-probably too long. The best part of it for me was seeing the children in the
-audience. Every night there would be a number of them who had gotten all
-dressed up. They were so excited. I was truly inspired by the kids on that
-tour, kids of all ethnic groups and ages. It's been my dream since I was a
-child to somehow unite people of the world through love and music. I still
-get goose bumps when I hear the Beatles sing "All You Need Is Love." I've
-always wished that song could be an anthem for the world.
-I loved the shows we did in Miami and all the time we spent there. Colorado
-was great too. We got to spend some time relaxing up at the Caribou Ranch.
-And New York was really something, as it always is. Emmanuel Lewis came to
-the show, as did Yoko, Sean Lennon, Brooke, a lot of good friends. Thinking
-back, the offstage moments stand out for me as much as the concerts
-themselves. I found I could lose myself in some of those shows. I remember
-swinging my jackets around and slinging them into the audience. The wardrobe
-people would get annoyed at me and I'd say honestly, "I'm sorry but I can't
-help it. I can't control myself. Something takes over and I know I shouldn't
-do it, but you just can't control it. There's a spirit of joy and communion
-that gets inside you and you want to just let it all out."
-We were on the Victory tour when we learned that my sister Janet had gotten
-married. Everybody was afraid to tell me because I am so close to Janet. I
-was shocked. I feel very protective of her. Quincy Jones's little daughter
-was the one to break the news to me.
-I've always enjoyed a wonderfully close relationship with all three of my
-beautiful sisters. LaToya is really a wonderful person. She's very easy to
-be around, but she can be funny, too. You go in her room and you can't sit
-on the couch, you can't sit on the bed, you can't walk on the carpet. This
-is the truth. She will run you out of her room. She wants everything to be
-perfect in there. I say, "You have to walk on the carpet sometimes," but she
-doesn't want prints on it. If you cough at the table, she covers her plate.
-If you sneeze, forget it. That's how she is. Mother says she used to be that
-way herself.
-Janet, on the other hand, was always a tomboy. She has been my best friend
-in the family for the longest time. That's why it killed me to see her go
-off and get married. We did everything together. We shared the same
-interests, the same sense of humour. When we were younger, we'd get up on
-"free" mornings and write out a whole schedule for the day. Usually it would
-read something like this: GET UP, FEED THE ANIMALS, HAVE BREAKFAST,
-WATCH
-SOME CARTOONS, GO TO THE MOVIES, GO TO A RESTAURANT, GO TO
-ANOTHER
-MOVIE, GO
-HOME AND GO SWIMMING. That was our idea of a great day. In the evening,
-we'd
-look back at the list and think about all the fun we'd had.
-It was great being with Janet because we didn't have to worry that one of us
-wouldn't like something. We liked the same things. We'd sometimes read to
-each other. She was like my twin.
-LaToya are I are very different, on the other hand. She won't even feed the
-animals; the smell alone drives her away. And forget going to the movies.
-She doesn't understand what I see in Star Wars or Close Encounters or Jaws .
-Our tastes in films are miles apart.
-When Janet was around and I wasn't working on something, we'd be
-inseparable. But I knew we'd eventually develop separate interests and
-attachments. It was inevitable.
-Her marriage didn't last long, unfortunately, but now she's happy again. I
-do think that marriage can be a wonderful thing if it's right for the two
-people involved. I believe in love - very much so - how can you not believe
-after you've experienced it? I believe in relationships. One day I know I'll
-find the right woman and get married myself. I often look forward to having
-children; in fact, it would be nice to have a big family, since I come from
-such a large one myself. In my fantasy about having a large family, I
-imagine myself with thirteen children.
-Right now, my work still takes up most of my time and most of my emotional
-life. I work all the time. I love creating and coming up with new projects.
-As for the future, Que sera, sera . Time will tell. It would be hard for me
-to be that dependent on somebody else, but I can imagine it if I try.
-There's so much I want to do and so much work to be done.
-I can't help but pick up on some of the criticism levelled at me at times.
-Journalists seem willing to say anything to sell a paper. They say I've had
-my eyes widened, that I want to look more white. More white? What kind of
-statement is that? I didn't invent plastic surgery. It's been around for a
-long time. A lot of very fine, very nice people have had plastic surgery. No
-one writes about their surgery and levies such criticism at them. It's not
-fair. Most of what they print is a fabrication. It's enough to make you want
-to ask, "What happened to truth? Did it go out of style?"
-In the end, the most important thing is to be true to yourself and those you
-love and work hard. I mean, work like there's no tomorrow. Train. Strive. I
-mean, really train and cultivate your talent to the highest degree. Be the
-best at what you do. Get to know more about your field than anybody alive.
-Use the tools of your trade, if it's books or a floor to dance on or a body
-of water to swim in. Whatever it is, it's yours. That's what I've always
-tried to remember. I thought about it a lot on the Victory tour.
-In the end, I felt I touched a lot of people on the Victory tour. Not
-exactly in the way I wanted to, but I felt that would happen later, when I
-was off on my own, performing and making movies. I donated all my
-performance money to charity, including funds for the burn centre that
-helped me after the fire on the Pepsi set. We donated more than four million
-dollars that year. For me, that was what the Victory tour was all about -
-giving back.
-After my experience with the Victory tour, I started making my career
-decisions with more care than ever. I had learned a lesson on an earlier
-tour, which I remembered vividly during the difficulties with Victory.
-We did a tour years ago with this guy who ripped us off, but he taught me
-something. He said, "Listen, all these people work for you . You don't work
-for them . You are paying them." He kept telling me that. Finally I began to
-understand what he meant. It was an entirely new concept for me because at
-Motown everything was done for us. Other people made our decisions. I've
-been mentally scarred by that experience. "You've got to wear this. You've
-got to do these songs. You are going here. You are going to do this
-interview and that TV show." That's how it went. We couldn't say anything.
-When he told me I was in control, I finally woke up. I realised he was
-right.
-Despite everything, I owe that guy a debt of gratitude.
-Captain Eo came about because the Disney Studios wanted me to come up with a
-new ride for the parks. They said they didn't care what I did, as long as it
-was something creative. I had this big meeting with them, and during the
-course of the afternoon I told them that Walt Disney was a hero of mine and
-that I was very interested in Disney's history and philosophy. I wanted to
-do something with that Mr. Disney himself would have approved. I had read a
-number of books about Walt Disney and his creative empire, and it was very
-important to me to do things as he would have. In the end, they asked me to
-do a movie and I agreed. I told them I would like to work with George Lucas
-and Steven Spielberg. It turned out Steven was busy, so George brought
-Francis Ford Coppola and that was the Captain Eo team.
-I flew up to San Francisco a couple of times to visit George at his place,
-Skywalker Ranch, and gradually we came up with a scenario for a short film
-that would incorporate every recent advance in 3-D technology. Caption Eo
-would look and feel like the audience was in a spaceship, along for the
-ride.
-Captain Eo is about transformation and the way music can help to change the
-world. George came up with the name Captain Eo. (Eo is Greek for "dawn.")
-The story is about a young guy who goes on a mission to this miserable
-planet run by an evil queen. He is entrusted with the responsibility of
-bringing the inhabitants light and beauty. It's a great celebration of good
-over evil.
-Working on Captain Eo reinforced all the positive feelings I've had about
-working in film and made me realise more than ever that movies are where my
-future path probably lies. I love the movies and have since I was real
-little. For two hours you can be transported to another place. Films can
-take you anywhere. That's what I like. I can sit down and say, "Okay,
-nothing else exists right now. Take me to a place that's wonderful and make
-me forget about my pressures and my worries and day-to-day schedule."
-I also love to be in front of a 35 mm camera. I used to hear my brothers
-say, "I'll be glad when this shoot is over," and I couldn't understand why
-they weren't enjoying it. I would be watching, trying to learn, seeing what
-the director was trying to get, what the light man was doing. I wanted to
-know where the light was coming from and why the director was doing a scene
-so many times. I enjoyed hearing about the changes being made in the script.
-It's all part of what I consider my ongoing education in films. Pioneering
-new ideas is so exciting to me and the movie industry seems to be suffering
-right now from a dearth of ideas; so many people are doing the same things.
-The big studios remind me of the way Motown was acting when we were having
-disagreements with them: They want easy answers, they want their people to
-do formula stuff - sure bets - only the public gets bored, of course. So
-many of them are doing the same old corny stuff. George Lucas and Steven
-Spielberg are exceptions.
-I'm going to try to make some changes. I'm going to try to change things
-around someday. Marlon Brando has become a very close and trusted friend of
-mine. I can't tell you how much he's taught me. We sit and talk for hours.
-He has told me a great deal about the movies. He is such a wonderful actor
-and he has worked with so many giants in the industry - from other actors to
-cameramen. He has a respect for the artistic value of filmmaking that leaves
-me in awe. He's like a father to me.
-So these days movies are my number one dream, but I have a lot of other
-dreams too.
-In early 1985 we cut "We Are the World" at an all-night all-star recording
-session that was held after the ceremony for the American Music Awards. I
-wrote the song with Lionel Richie after seeing the appalling news footage of
-starving people in Ethiopia and the Sudan.
-Around that time, I used to ask my sister Janet to follow me into a room
-with interesting acoustics, like a closet of the bathroom, and I'd sing to
-her, just a note, a rhythm of a note. It wouldn't be a lyric or anything;
-I'd just hum from the bottom of my throat. I'd say, "Janet, what do you see?
-What do you see when you hear this sound?" And this time she said, "Dying
-children in Africa."
-"You're right. That's what I was dictating from my soul."
-And she said, "You're talking about Africa. You're talking about dying
-children." That's where "We Are the World" came from. We'd go in a dark room
-and I'd sing notes to her. To my mind, that's what singers should be able to
-do. We should be able to perform and be effective, even if it's in a dark
-room. We've lost a lot because of TV. You should be able to move people
-without all that advanced technology, without pictures, using only sound.
-I've been performing for as long as I can remember. I know a lot of secrets,
-a lot of things like that.
-I think that "We Are the World" is a very spiritual song, but spiritual in a
-special sense. I was proud to be a part of that song and to be one of the
-musicians there that night. We were united by our desire to make a
-difference. It made the world a better place for us and it made a difference
-to the starving people we wanted to help.
-We collected some Grammy Awards and began to hear easy-listening versions of
-"We Are the World" in elevators along with "Billie Jean." Since first
-writing it, I had thought that song should be sung by children. When I
-finally heard children singing it on producer George Duke's version, I
-almost cried. It's the best version I've heard.
-After "We Are the World," I again decided to retreat from public view. For
-two and a half years I devoted most of my time to recording the follow-up to
-Thriller , the album that came to be titled Bad .
-Why did it take so long to make Bad? The answer is that Quincy and I decided
-that this album should be as close to perfect as humanly possible. A
-perfectionist has to take his time; he shapes and he moulds and he sculpts
-that thing until it's perfect. He can't let it go before he's satisfied; he
-can't.
-If it's not right, you throw it away and do it over. You work that thing
-till it's just right. When it's as perfect as you can make it, you put it
-out there. Really, you've got to get it to where it's just right; that's the
-secret. That's the difference between a number thirty record and a number
-one record that stays number one for weeks. It's got to be good. If it is,
-it stays up there and the whole world wonders when it's going to come down.
-I have a hard time explaining how Quincy Jones and I work together on making
-an album. What I do is, I write the songs and do the music and then Quincy
-brings out the best in me. That's the only way I can explain it. Quincy will
-listen and make changes. He'll say, "Michael, you should put a change in
-there," and I'll write a change. And he'll guide me on and help me create
-and help me invent and work on new sounds, new kinds of music.
-And we fight. During the Bad sessions we disagreed on some things. If we
-struggle at all, it's about new stuff, the latest technology. I'll say,
-"Quincy, you know, music changes all the time." I want the latest drum
-sounds that people are doing. I want to go beyond the latest thing. And then
-we go ahead and make the best record that we can.
-We don't ever try to pander to the fans. We just try to play on the quality
-of the song. People will not buy junk. They'll only buy what they like. If
-you take all the trouble to get in your car, go to the record store, and put
-your money on the counter, you've got to really like what you're going to
-buy. You don't say, "I'll put a country song on here for the country market,
-a rock song for that market," and so on. I feel close to all different
-styles of music. I love some rock songs and some country songs and some pop
-and all the old rock ´n' roll records.
-We did go after a rock type of song with "Beat It." We got Eddie Van Halen
-to play guitar because we knew he'd do the best job. Albums should be for
-all races, all tastes in music.
-In the end, many songs kind of create themselves. You just say, "This is it.
-This is how it's going to be." Of course, not every song is going to have a
-great dance tempo. It's like "Rock with You" isn't a great dance tempo. It
-was meant for the old dance the Rock. But it's not a "Don't Stop" or
-"Working Day and Night" rhythm or a "Startin' Something" type of thing -
-something you can play with on the dance floor and get sweaty, working out
-to.
-We worked on Bad for a long time. Years. In the end, it was worth it because
-we were satisfied with what we had achieved, but it was difficult too. There
-was a lot of tension because we felt we were competing with ourselves. It's
-very hard to create something when you feel like you're in competition with
-yourself because no matter how you look at it, people are always going to
-compare Bad to Thriller . You can always say, "Aw, forget Thriller ," but no
-one ever will.
-I think I have a slight advantage in all of this because I always do my best
-work under pressure.
-"Bad" is a song about the street. It's about this kid from a bad
-neighbourhood who gets to go away to a private school. He comes back to the
-old neighbourhood when he's on a break from school and the kids from the
-neighbourhood start giving him trouble. He sings, "I'm bad, you're bad,
-who's bad, who's the best?" He's saying when you're strong and good, then
-you're bad.
-"Man in the Mirror" is a great message. I love that song. If John Lennon was
-alive, he could really relate to that song because it says that if you want
-to make the world a better place, you have to work on yourself and change
-first. It's the same thing Kennedy was talking about when he said, "Ask not
-what your country can do for you; ask what you can do for your country." If
-you want to make the world a better place, take a look at yourself and make
-a change. Start with the man in the mirror. Start with yourself. Don't be
-looking at all the other things. Start with you.
-That's the truth. That's what Martin Luther King meant and Gandhi too.
-That's what I believe.
-Several people have asked me if I had anybody in mind when I wrote "Can't
-Stop Loving You." And I say that I didn't, really. I was thinking of
-somebody while I was singing it, but not while I was writing it.
-I wrote all the songs on Bad except for two, "Man in the Mirror," which
-Siedah Garrett wrote with George Ballard, and "Just Good Friends," which is
-by these two writers who wrote "What's Love Got to Do with It" for Tina
-Turner. We needed a duet for me and Stevie Wonder to sing and they had this
-song; I don't even think they intended for it to be a duet. They wrote it
-for me, but I knew it would be perfect for me and Stevie to sing together.
-"Another Part of Me" was one of the earliest songs written for Bad and made
-its public debut at the end of Captain Eo when the captain says good-bye.
-"Speed Demon" is a machine song. "The Way You Make Me Feel" and "Smooth
-Criminal" are simply the grooves I was in at the time. That's how I would
-put it.
-"Leave Me Alone" is a track that appears only on the compact disc of Bad . I
-worked hard on the song, stacking vocals on top of each other like layers of
-clouds. I'm sending a simple message here: "Leave me alone." The song is
-about a relationship between a guy and a girl. But what I'm really saying to
-people who are bothering me is: "Leave me alone ."
-The pressure of success does funny things to people. A lot of people become
-successful very quickly and it's an instant occurrence in their lives. Some
-of these people, whose success might be a one-shot thing, don't know how to
-handle what happens to them.
-I look at fame from a different perspective, since I've been in this
-business for so long now. I've learned that the way to survive as your own
-person is to shun personal publicity and keep a low profile as much as
-possible. I guess it's good in some ways and bad in others.
-The hardest part is having no privacy. I remember when we were filming
-"Thriller," Jackie Onassis and Shaye Areheart came to California to discuss
-this book. There were photographers in the trees, everywhere. It was not
-possible for us to do anything without it being noticed and reported.
-The price of fame can be a heavy one. Is the price you pay worth it?
-Consider that you really have no privacy. You can't really do anything
-unless special arrangements are made. The media prints whatever you say.
-They report whatever you do. They know what you buy, which movies you see,
-you name it. If I go to a public library, they print the titles of the books
-I check out. In Florida once, they printed my whole schedule in the paper;
-everything I did from ten in the morning until six at night. "After he did
-this, he did that, and after he did that, he went there, then he went door
-to door, and then he . . ."
-I remember thinking to myself, "What if I were trying to do something that I
-didn't happen to want reported in the paper?" All of this is the price of
-fame.
-I think my image gets distorted in the public's mind. They don't get a clear
-or full picture of what I'm like, despite the press coverage I mentioned
-early. Mistruths are printed as fact, in some cases, and frequently only
-half of a story will be told. The part that doesn't get printed is often the
-part that would make the printed part less sensational by shedding light on
-the facts. As a result, I think some people don't think I'm a person who
-determines what's happening with his career. Nothing could be further from
-the truth.
-I've been accused of being obsessed with my privacy and it's true that I am.
-People stare at you when you're famous. They're observing you and that's
-understandable, but it's not always easy. If you were to ask me why I wear
-sunglasses in public as often as I do, I'd tell you it's because I simply
-don't like to have to constantly look everyone in the eye. It's a way of
-concealing just a bit of myself. After I had my wisdom teeth pulled, the
-dentist gave me a surgical mask to wear home to keep out germs. I loved that
-mask. It was great - much better than sunglasses - and I had fun wearing it
-around for a while. There's so little privacy in my life that concealing a
-little bit of me is a way to give myself a break from all that. It may be
-considered strange, I know, but I like my privacy.
-I can't answer whether or not I like being famous, but I do love achieving
-goals. I love not only reaching a mark I've set for myself but exceeding it.
-Doing more than I thought I could, that's a great feeling. There's nothing
-like it. I think it's so important to set goals for yourself. It gives you
-an idea of where you want to go and how you want to get there. If you don't
-aim for something, you'll never know whether you could have hit the mark.
-I've always joked that I didn't ask to sing and dance, but it's true. When I
-open my mouth, music comes out. I'm honoured that I have this ability. I
-thank God for it every day. I try to cultivate what He gave me. I feel I'm
-compelled to do what I do.
-There are so many things all around us to be thankful for. Wasn't it Robert
-Frost who wrote about the world a person can see in a leaf? I think that's
-true. That's what I love about being with kids. They notice everything. They
-aren't jaded. They get excited by things we've forgotten to get excited
-about any more. They are so natural too, so unself-conscious. I love being
-around them. There always seems to be a bunch of kids over at the house and
-they're always welcome. They energise me - just being around them. They look
-at everything with such fresh eyes, such open minds. That's part of what
-makes kids so creative. They don't worry about the rules. The picture
-doesn't have to be in the centre of the piece of paper. The sky doesn't have
-to be blue. They are accepting people too. The only demand they make is to
-be treated fairly - and to be loved. I think that's what we all want.
-I would like to think that I'm an inspiration for the children I meet. I
-want kids to like my music. Their approval means more to me than anyone
-else's. It's always the kids who know which song is going to be a hit. You
-see kids who can't even talk yet, but they've got a little rhythm going.
-It's funny. But they're a tough audience. In fact, they're the toughest
-audience. There have been so many parents who have come to me and told me
-that their baby knows "Beat It" or loves "Thriller." George Lucas told me
-his daughter's first words were "Michael Jackson." I felt on top of the
-world when he told me that.
-I spend a lot of free time - in California and when I'm travelling -
-visiting children's hospitals. It makes me so happy to be able to brighten
-those kids' day by just showing up and talking with them, listening to what
-they have to say and making them feel better. It's so sad for children to
-have to get sick. More than anyone else, kids don't deserve that. They often
-can't even understand what's wrong with them. It makes my heart twist. When
-I'm with them, I just want to hug them and make it all better for them.
-Sometimes sick children will visit me at home or in my hotel rooms on the
-road. A parent will get in touch with me and ask if their child can visit
-with me for a few minutes. Sometimes when I'm with them I feel like I
-understand better what my mother must have gone through with her polio. Life
-is too precious and too short not to reach out and touch the people we can.
-You know, when I was going through that bad period with my skin and my
-adolescent growth spurts, it was kids who never let me down. They were the
-only ones who accepted the fact that I was no longer little Michael and that
-I was really the same person inside, even if you didn't recognise me. I've
-never forgotten that. Kids are great. If I were living for no other reason
-than to help and please kids, that would be enough for me. They're amazing
-people. Amazing. I am a person who is very much in control of his life. I
-have a team of exceptional people working for me and they do an excellent
-job of presenting me with the facts that keep me up-to-date on everything
-that's going on at MJJ Productions so that I can know the options and make
-the decisions. As far as my creativity is concerned, that's my domain and I
-enjoy that aspect of my life as much or more than any other.
-I think I have a goody-goody image in the press and I hate that, but it's
-hard to fight because I don't normally talk about myself. I am a shy person.
-It's true. I don't like giving interviews or appearing on talk shows. When
-Doubleday approached me about doing this book, I was interested in being
-able to talk about how I feel in a book that would be mine - my words and my
-voice. I hope it will clear up some misconceptions.
-Everybody has many facets to them and I'm no different. When I'm in public,
-I often feel shy and reserved. Obviously, I feel differently away from the
-glare of cameras and staring people. My friends, my close associates, know
-there's another Michael that I find it difficult to present in the
-outlandish "public" situations I often find myself in.
-It's different when I'm onstage, however. When I perform, I lose myself. I'm
-in total control of that stage. I don't think about anything. I know what I
-want to do from the moment I step out there and I love every minute of it.
-I'm actually relaxed onstage. Totally relaxed. It's nice. I feel relaxed in
-the studio too. I know whether something feels right. If it doesn't, I know
-how to fix it. Everything has to be in place and if it is you feel good, you
-feel fulfilled. People used to underestimate my ability as a songwriter.
-They didn't think of me as a songwriter, so when I started coming up with
-songs, they'd look at me like: "Who really wrote that?" I don't know what
-they must have thought - that I had someone back in the garage who was
-writing them for me? But time cleared up those misconceptions. You always
-have to prove yourself to people and so many of them don't want to believe.
-I've heard tales of Walt Disney going from studio to studio when he first
-started out, trying to sell his work unsuccessfully and being turned down.
-When he was finally given a chance, everyone thought he was the greatest
-thing that ever happened.
-Sometimes when you're treated unfairly it makes you stronger and more
-determined. Slavery was a terrible thing, but when black people in America
-finally got out from under that crushing system, they were stronger . They
-knew what it was to have your spirit crippled by people who are controlling
-your life. They were never going to let that happen again. I admire that
-kind of strength. People who have it take a stand and put their blood and
-soul into what they believe.
-People often ask me what I'm like. I hope this book will answer some of
-those questions, but these things might help too. My favourite music is an
-eclectic mix. For example, I love classical music. I'm crazy about Debussy.
-Prelude to the Afternoon of a Faun and Clair de Lune . And Prokofiev. I
-could listen to Peter and the Wolf over and over and over again. Copland is
-one of my all-time favourite composers. You can recognise his distinctive
-brass sounds right away. Billy the Kid is fabulous. I listen to a lot of
-Tchaikovsky. The Nutcracker Suite is a favourite. I have a large collection
-of show tunes also - Irving Berlin, Johnny Mercer, Lerner and Loewe, Harold
-Arlen, Rodgers and Hammerstein, and the great Holland-Dozier-Holland. I
-really admire those guys. I like Mexican food very much. I'm a vegetarian,
-so fortunately fresh fruits and vegetables are a favourite of mine.
-I love toys and gadgets. I like to see the latest things manufacturers have
-come out with. If there's something really wonderful, I'll buy one.
-I'm crazy about monkeys, especially chimps. My chimp Bubbles is a constant
-delight. I really enjoy taking him with me on trips or excursions. He's a
-wonderful distraction and a great pet.
-I love Elizabeth Taylor. I'm inspired by her bravery. She has been through
-so much and she is a survivor. That lady has been through a lot and she's
-walked out of it on two feet. I identify with her very strongly because of
-our experiences as child stars. When we first started talking on the phone,
-she told me she felt as if she had known me for years. I felt the same way.
-Katharine Hepburn is a dear friend too. I was afraid to meet her at first.
-We talked for a while when I first arrived for a stay on the set of On
-Golden Pond , where I was Jane Fonda's guest. She invited me to have dinner
-with her the next night. I felt very fortunate. Since then, we have visited
-one another and remained close. Remember, it was Katharine Hepburn who got
-me to remove my sunglasses at the Grammy Awards. She's a big influence on
-me. She's another strong person and a private person.
-I believe performers should try to be strong as an example to their
-audiences. It's staggering what a person can do if they only try. If you're
-under pressure, play off that pressure and use it to advantage and make
-whatever you're doing better. Performers owe it to people to be strong and
-fair.
-Often in the past performers have been tragic figures. A lot of the truly
-great people have suffered or died because of pressure and drugs, especially
-liquor. It's so sad. You feel cheated as a fan that you didn't get to watch
-them evolve as they grew older. One can't help wondering what performances
-Marilyn Monroe would have put in or what Jimi Hendrix might have done in the
-1980s.
-A lot of celebrities say they don't want their children to go into show
-business. I can understand their feelings, but I don't agree with them. If I
-had a son or daughter, I'd say, "By all means, be my guest. Step right in
-there. If you want to do it, do it."
-To me, nothing is more important than making people happy, giving them a
-release from their problems and worries, helping to lighten their load. I
-want them to walk away from a performance I've done, saying, "That was
-great. I want to go back again. I had a great time." To me, that's what it's
-all about. That's wonderful. That's why I don't understand when some
-celebrities say they don't want their kids in the business.
-I think they say that because they've been hurt themselves. I can understand
-that. I've been there too.
--Michael JacksonEncino, California
-1988
-What one wishes is to be touched by truth and to be able to interpret that
-truth so that one may use what one is feeling and experiencing, be it
-despair or joy, in a way that will add meaning to one's life and will
-hopefully touch others as well.
-This is art in its highest form. Those moments of enlightenment are what I
-continue to live for.
- -Michael Jackson-`,
+    title: "Motivation Is Overrated; Environment Often Matters More",
+    content: `ANNE THORNDIKE, A primary care physician at Massachusetts General Hospital in
+Boston, had a crazy idea. She believed she could improve the eating habits of
+thousands of hospital staff and visitors without changing their willpower or
+motivation in the slightest way. In fact, she didn’t plan on talking to them at all.
+Thorndike and her colleagues designed a six-month study to alter the “choice
+architecture” of the hospital cafeteria. They started by changing how drinks were
+arranged in the room. Originally, the refrigerators located next to the cash
+registers in the cafeteria were filled with only soda. The researchers added water
+as an option to each one. Additionally, they placed baskets of bottled water next
+to the food stations throughout the room. Soda was still in the primary
+refrigerators, but water was now available at all drink locations.
+Over the next three months, the number of soda sales at the hospital dropped
+by 11.4 percent. Meanwhile, sales of bottled water increased by 25.8 percent.
+They made similar adjustments—and saw similar results—with the food in the
+cafeteria. Nobody had said a word to anyone eating there.
+BEFORE AFTER
+FIGURE 8: Here is a representation of what the cafeteria looked like before the environment design changes were made (left) and after (right). The shaded boxes indicate areas where bottled
+water was available in each instance. Because the amount of water in the environment was increased, behavior shifted naturally and without additional motivation.
+People often choose products not because of what they are, but because of
+where they are. If I walk into the kitchen and see a plate of cookies on the
+counter, I’ll pick up half a dozen and start eating, even if I hadn’t been thinking
+about them beforehand and didn’t necessarily feel hungry. If the communal table
+at the office is always filled with doughnuts and bagels, it’s going to be hard not
+to grab one every now and then. Your habits change depending on the room you
+are in and the cues in front of you.
+Environment is the invisible hand that shapes human behavior. Despite our
+unique personalities, certain behaviors tend to arise again and again under
+certain environmental conditions. In church, people tend to talk in whispers. On
+a dark street, people act wary and guarded. In this way, the most common form
+of change is not internal, but external: we are changed by the world around us.
+Every habit is context dependent.
+In 1936, psychologist Kurt Lewin wrote a simple equation that makes a
+powerful statement: Behavior is a function of the Person in their Environment,
+or B = f (P,E).
+It didn’t take long for Lewin’s Equation to be tested in business. In 1952, the
+economist Hawkins Stern described a phenomenon he called Suggestion Impulse
+Buying, which “is triggered when a shopper sees a product for the first time and
+visualizes a need for it.” In other words, customers will occasionally buy
+products not because they want them but because of how they are presented to
+them.
+For example, items at eye level tend to be purchased more than those down
+near the floor. For this reason, you’ll find expensive brand names featured in
+easy-to-reach locations on store shelves because they drive the most profit, while
+cheaper alternatives are tucked away in harder-to-reach spots. The same goes for
+end caps, which are the units at the end of aisles. End caps are moneymaking
+machines for retailers because they are obvious locations that encounter a lot of
+foot traffic. For example, 45 percent of Coca-Cola sales come specifically from
+end-of-the-aisle racks.
+The more obviously available a product or service is, the more likely you are
+to try it. People drink Bud Light because it is in every bar and visit Starbucks
+because it is on every corner. We like to think that we are in control. If we
+choose water over soda, we assume it is because we wanted to do so. The truth,
+however, is that many of the actions we take each day are shaped not by
+purposeful drive and choice but by the most obvious option.
+Every living being has its own methods for sensing and understanding the
+world. Eagles have remarkable long-distance vision. Snakes can smell by
+“tasting the air” with their highly sensitive tongues. Sharks can detect small
+amounts of electricity and vibrations in the water caused by nearby fish. Even
+bacteria have chemoreceptors—tiny sensory cells that allow them to detect toxic
+chemicals in their environment.
+In humans, perception is directed by the sensory nervous system. We perceive
+the world through sight, sound, smell, touch, and taste. But we also have other
+ways of sensing stimuli. Some are conscious, but many are nonconscious. For
+instance, you can “notice” when the temperature drops before a storm, or when
+the pain in your gut rises during a stomachache, or when you fall off balance
+while walking on rocky ground. Receptors in your body pick up on a wide range
+of internal stimuli, such as the amount of salt in your blood or the need to drink
+when thirsty.
+The most powerful of all human sensory abilities, however, is vision. The
+human body has about eleven million sensory receptors. Approximately ten
+million of those are dedicated to sight. Some experts estimate that half of the
+brain’s resources are used on vision. Given that we are more dependent on vision
+than on any other sense, it should come as no surprise that visual cues are the
+greatest catalyst of our behavior. For this reason, a small change in what you see
+can lead to a big shift in what you do. As a result, you can imagine how
+important it is to live and work in environments that are filled with productive
+cues and devoid of unproductive ones.
+Thankfully, there is good news in this respect. You don’t have to be the victim
+of your environment. You can also be the architect of it.
+HOW TO DESIGN YOUR ENVIRONMENT FOR SUCCESS
+During the energy crisis and oil embargo of the 1970s, Dutch researchers began
+to pay close attention to the country’s energy usage. In one suburb near
+Amsterdam, they found that some homeowners used 30 percent less energy than
+their neighbors—despite the homes being of similar size and getting electricity
+for the same price.
+It turned out the houses in this neighborhood were nearly identical except for
+one feature: the location of the electrical meter. Some had one in the basement.
+Others had the electrical meter upstairs in the main hallway. As you may guess,
+the homes with the meters located in the main hallway used less electricity.
+When their energy use was obvious and easy to track, people changed their
+behavior.
+Every habit is initiated by a cue, and we are more likely to notice cues that
+stand out. Unfortunately, the environments where we live and work often make
+it easy not to do certain actions because there is no obvious cue to trigger the
+behavior. It’s easy not to practice the guitar when it’s tucked away in the closet.
+It’s easy not to read a book when the bookshelf is in the corner of the guest
+room. It’s easy not to take your vitamins when they are out of sight in the pantry.
+When the cues that spark a habit are subtle or hidden, they are easy to ignore.
+By comparison, creating obvious visual cues can draw your attention toward a
+desired habit. In the early 1990s, the cleaning staff at Schiphol Airport in
+Amsterdam installed a small sticker that looked like a fly near the center of each
+urinal. Apparently, when men stepped up to the urinals, they aimed for what they
+thought was a bug. The stickers improved their aim and significantly reduced
+“spillage” around the urinals. Further analysis determined that the stickers cut
+bathroom cleaning costs by 8 percent per year.
+I’ve experienced the power of obvious cues in my own life. I used to buy
+apples from the store, put them in the crisper in the bottom of the refrigerator,
+and forget all about them. By the time I remembered, the apples would have
+gone bad. I never saw them, so I never ate them.
+Eventually, I took my own advice and redesigned my environment. I bought a
+large display bowl and placed it in the middle of the kitchen counter. The next
+time I bought apples, that was where they went—out in the open where I could
+see them. Almost like magic, I began eating a few apples each day simply
+because they were obvious rather than out of sight.
+Here are a few ways you can redesign your environment and make the cues
+for your preferred habits more obvious:
+If you want to remember to take your medication each night, put your
+pill bottle directly next to the faucet on the bathroom counter.
+If you want to practice guitar more frequently, place your guitar stand
+in the middle of the living room.
+If you want to remember to send more thank-you notes, keep a stack of
+stationery on your desk.
+If you want to drink more water, fill up a few water bottles each
+morning and place them in common locations around the house.
+If you want to make a habit a big part of your life, make the cue a big part of
+your environment. The most persistent behaviors usually have multiple cues.
+Consider how many different ways a smoker could be prompted to pull out a
+cigarette: driving in the car, seeing a friend smoke, feeling stressed at work, and
+so on.
+The same strategy can be employed for good habits. By sprinkling triggers
+throughout your surroundings, you increase the odds that you’ll think about your
+habit throughout the day. Make sure the best choice is the most obvious one.
+Making a better decision is easy and natural when the cues for good habits are
+right in front of you.
+Environment design is powerful not only because it influences how we engage
+with the world but also because we rarely do it. Most people live in a world
+others have created for them. But you can alter the spaces where you live and
+work to increase your exposure to positive cues and reduce your exposure to
+negative ones. Environment design allows you to take back control and become
+the architect of your life. Be the designer of your world and not merely the
+consumer of it.
+THE CONTEXT IS THE CUE
+The cues that trigger a habit can start out very specific, but over time your habits
+become associated not with a single trigger but with the entire context
+surrounding the behavior.
+For example, many people drink more in social situations than they would
+ever drink alone. The trigger is rarely a single cue, but rather the whole situation:
+watching your friends order drinks, hearing the music at the bar, seeing the beers
+on tap.
+We mentally assign our habits to the locations in which they occur: the home,
+the office, the gym. Each location develops a connection to certain habits and
+routines. You establish a particular relationship with the objects on your desk,
+the items on your kitchen counter, the things in your bedroom.
+Our behavior is not defined by the objects in the environment but by our
+relationship to them. In fact, this is a useful way to think about the influence of
+the environment on your behavior. Stop thinking about your environment as
+filled with objects. Start thinking about it as filled with relationships. Think in
+terms of how you interact with the spaces around you. For one person, her couch
+is the place where she reads for an hour each night. For someone else, the couch
+is where he watches television and eats a bowl of ice cream after work. Different
+people can have different memories—and thus different habits—associated with
+the same place.
+The good news? You can train yourself to link a particular habit with a
+particular context.
+In one study, scientists instructed insomniacs to get into bed only when they
+were tired. If they couldn’t fall asleep, they were told to sit in a different room
+until they became sleepy. Over time, subjects began to associate the context of
+their bed with the action of sleeping, and it became easier to quickly fall asleep
+when they climbed in bed. Their brains learned that sleeping—not browsing on
+their phones, not watching television, not staring at the clock—was the only
+action that happened in that room.
+The power of context also reveals an important strategy: habits can be easier
+to change in a new environment. It helps to escape the subtle triggers and cues
+that nudge you toward your current habits. Go to a new place—a different coffee
+shop, a bench in the park, a corner of your room you seldom use—and create a
+new routine there.
+It is easier to associate a new habit with a new context than to build a new
+habit in the face of competing cues. It can be difficult to go to bed early if you
+watch television in your bedroom each night. It can be hard to study in the living
+room without getting distracted if that’s where you always play video games.
+But when you step outside your normal environment, you leave your behavioral
+biases behind. You aren’t battling old environmental cues, which allows new
+habits to form without interruption.
+Want to think more creatively? Move to a bigger room, a rooftop patio, or a
+building with expansive architecture. Take a break from the space where you do
+your daily work, which is also linked to your current thought patterns.
+Trying to eat healthier? It is likely that you shop on autopilot at your regular
+supermarket. Try a new grocery store. You may find it easier to avoid unhealthy
+food when your brain doesn’t automatically know where it is located in the store.
+When you can’t manage to get to an entirely new environment, redefine or
+rearrange your current one. Create a separate space for work, study, exercise,
+entertainment, and cooking. The mantra I find useful is “One space, one use.”
+When I started my career as an entrepreneur, I would often work from my
+couch or at the kitchen table. In the evenings, I found it very difficult to stop
+working. There was no clear division between the end of work time and the
+beginning of personal time. Was the kitchen table my office or the space where I
+ate meals? Was the couch where I relaxed or where I sent emails? Everything
+happened in the same place.
+A few years later, I could finally afford to move to a home with a separate
+room for my office. Suddenly, work was something that happened “in here” and
+personal life was something that happened “out there.” It was easier for me to
+turn off the professional side of my brain when there was a clear dividing line
+between work life and home life. Each room had one primary use. The kitchen
+was for cooking. The office was for working.
+Whenever possible, avoid mixing the context of one habit with another. When
+you start mixing contexts, you’ll start mixing habits—and the easier ones will
+usually win out. This is one reason why the versatility of modern technology is
+both a strength and a weakness. You can use your phone for all sorts of tasks,
+which makes it a powerful device. But when you can use your phone to do
+nearly anything, it becomes hard to associate it with one task. You want to be
+productive, but you’re also conditioned to browse social media, check email, and
+play video games whenever you open your phone. It’s a mishmash of cues.
+You may be thinking, “You don’t understand. I live in New York City. My
+apartment is the size of a smartphone. I need each room to play multiple roles.”
+Fair enough. If your space is limited, divide your room into activity zones: a
+chair for reading, a desk for writing, a table for eating. You can do the same with
+your digital spaces. I know a writer who uses his computer only for writing, his
+tablet only for reading, and his phone only for social media and texting. Every
+habit should have a home.
+If you can manage to stick with this strategy, each context will become
+associated with a particular habit and mode of thought. Habits thrive under
+predictable circumstances like these. Focus comes automatically when you are
+sitting at your work desk. Relaxation is easier when you are in a space designed
+for that purpose. Sleep comes quickly when it is the only thing that happens in
+your bedroom. If you want behaviors that are stable and predictable, you need an
+environment that is stable and predictable.
+A stable environment where everything has a place and a purpose is an
+environment where habits can easily form.
+Chapter Summary
+Small changes in context can lead to large changes in behavior over
+time.
+Every habit is initiated by a cue. We are more likely to notice cues that
+stand out.
+Make the cues of good habits obvious in your environment.
+Gradually, your habits become associated not with a single trigger but
+with the entire context surrounding the behavior. The context becomes
+the cue.
+It is easier to build new habits in a new environment because you are
+not fighting against old cues.`,
+  },
+  {
+    chapter_number: 7,
+    title: "The Secret to Self-Control",
+    content: `IN 1971, as the Vietnam War was heading into its sixteenth year, congressmen
+Robert Steele from Connecticut and Morgan Murphy from Illinois made a
+discovery that stunned the American public. While visiting the troops, they had
+learned that over 15 percent of U.S. soldiers stationed there were heroin addicts.
+Follow-up research revealed that 35 percent of service members in Vietnam had
+tried heroin and as many as 20 percent were addicted—the problem was even
+worse than they had initially thought.
+The discovery led to a flurry of activity in Washington, including the creation
+of the Special Action Office of Drug Abuse Prevention under President Nixon to
+promote prevention and rehabilitation and to track addicted service members
+when they returned home.
+Lee Robins was one of the researchers in charge. In a finding that completely
+upended the accepted beliefs about addiction, Robins found that when soldiers
+who had been heroin users returned home, only 5 percent of them became
+readdicted within a year, and just 12 percent relapsed within three years. In other
+words, approximately nine out of ten soldiers who used heroin in Vietnam
+eliminated their addiction nearly overnight.
+This finding contradicted the prevailing view at the time, which considered
+heroin addiction to be a permanent and irreversible condition. Instead, Robins
+revealed that addictions could spontaneously dissolve if there was a radical
+change in the environment. In Vietnam, soldiers spent all day surrounded by
+cues triggering heroin use: it was easy to access, they were engulfed by the
+constant stress of war, they built friendships with fellow soldiers who were also
+heroin users, and they were thousands of miles from home. Once a soldier
+returned to the United States, though, he found himself in an environment devoid
+of those triggers. When the context changed, so did the habit.
+Compare this situation to that of a typical drug user. Someone becomes
+addicted at home or with friends, goes to a clinic to get clean—which is devoid
+of all the environmental stimuli that prompt their habit—then returns to their old
+neighborhood with all of their previous cues that caused them to get addicted in
+the first place. It’s no wonder that usually you see numbers that are the exact
+opposite of those in the Vietnam study. Typically, 90 percent of heroin users
+become readdicted once they return home from rehab.
+The Vietnam studies ran counter to many of our cultural beliefs about bad
+habits because it challenged the conventional association of unhealthy behavior
+as a moral weakness. If you’re overweight, a smoker, or an addict, you’ve been
+told your entire life that it is because you lack self-control—maybe even that
+you’re a bad person. The idea that a little bit of discipline would solve all our
+problems is deeply embedded in our culture.
+Recent research, however, shows something different. When scientists
+analyze people who appear to have tremendous self-control, it turns out those
+individuals aren’t all that different from those who are struggling. Instead,
+“disciplined” people are better at structuring their lives in a way that does not
+require heroic willpower and self-control. In other words, they spend less time in
+tempting situations.
+The people with the best self-control are typically the ones who need to use it
+the least. It’s easier to practice self-restraint when you don’t have to use it very
+often. So, yes, perseverance, grit, and willpower are essential to success, but the
+way to improve these qualities is not by wishing you were a more disciplined
+person, but by creating a more disciplined environment.
+This counterintuitive idea makes even more sense once you understand what
+happens when a habit is formed in the brain. A habit that has been encoded in
+the mind is ready to be used whenever the relevant situation arises. When Patty
+Olwell, a therapist from Austin, Texas, started smoking, she would often light up
+while riding horses with a friend. Eventually, she quit smoking and avoided it
+for years. She had also stopped riding. Decades later, she hopped on a horse
+again and found herself craving a cigarette for the first time in forever. The cues
+were still internalized; she just hadn’t been exposed to them in a long time.
+Once a habit has been encoded, the urge to act follows whenever the
+environmental cues reappear. This is one reason behavior change techniques can
+backfire. Shaming obese people with weight-loss presentations can make them
+feel stressed, and as a result many people return to their favorite coping strategy:
+overeating. Showing pictures of blackened lungs to smokers leads to higher
+levels of anxiety, which drives many people to reach for a cigarette. If you’re not
+careful about cues, you can cause the very behavior you want to stop.
+Bad habits are autocatalytic: the process feeds itself. They foster the feelings
+they try to numb. You feel bad, so you eat junk food. Because you eat junk food,
+you feel bad. Watching television makes you feel sluggish, so you watch more
+television because you don’t have the energy to do anything else. Worrying
+about your health makes you feel anxious, which causes you to smoke to ease
+your anxiety, which makes your health even worse and soon you’re feeling more
+anxious. It’s a downward spiral, a runaway train of bad habits.
+Researchers refer to this phenomenon as “cue-induced wanting”: an external
+trigger causes a compulsive craving to repeat a bad habit. Once you notice
+something, you begin to want it. This process is happening all the time—often
+without us realizing it. Scientists have found that showing addicts a picture of
+cocaine for just thirty-three milliseconds stimulates the reward pathway in the
+brain and sparks desire. This speed is too fast for the brain to consciously
+register—the addicts couldn’t even tell you what they had seen—but they craved
+the drug all the same.
+Here’s the punch line: You can break a habit, but you’re unlikely to forget it.
+Once the mental grooves of habit have been carved into your brain, they are
+nearly impossible to remove entirely—even if they go unused for quite a while.
+And that means that simply resisting temptation is an ineffective strategy. It is
+hard to maintain a Zen attitude in a life filled with interruptions. It takes too
+much energy. In the short-run, you can choose to overpower temptation. In the
+long-run, we become a product of the environment that we live in. To put it
+bluntly, I have never seen someone consistently stick to positive habits in a
+negative environment.
+A more reliable approach is to cut bad habits off at the source. One of the
+most practical ways to eliminate a bad habit is to reduce exposure to the cue that
+causes it.
+If you can’t seem to get any work done, leave your phone in another
+room for a few hours.
+If you’re continually feeling like you’re not enough, stop following
+social media accounts that trigger jealousy and envy.
+If you’re wasting too much time watching television, move the TV out
+of the bedroom.
+If you’re spending too much money on electronics, quit reading
+reviews of the latest tech gear.
+If you’re playing too many video games, unplug the console and put it
+in a closet after each use.
+This practice is an inversion of the 1st Law of Behavior Change. Rather than
+make it obvious, you can make it invisible. I’m often surprised by how effective
+simple changes like these can be. Remove a single cue and the entire habit often
+fades away.
+Self-control is a short-term strategy, not a long-term one. You may be able to
+resist temptation once or twice, but it’s unlikely you can muster the willpower to
+override your desires every time. Instead of summoning a new dose of willpower
+whenever you want to do the right thing, your energy would be better spent
+optimizing your environment. This is the secret to self-control. Make the cues of
+your good habits obvious and the cues of your bad habits invisible.
+Chapter Summary
+The inversion of the 1st Law of Behavior Change is make it invisible.
+Once a habit is formed, it is unlikely to be forgotten.
+People with high self-control tend to spend less time in tempting
+situations. It’s easier to avoid temptation than resist it.
+One of the most practical ways to eliminate a bad habit is to reduce
+exposure to the cue that causes it.
+Self-control is a short-term strategy, not a long-term one.`,
+  },
+  {
+    chapter_number: 8,
+    title: "How to Make a Habit Irresistible",
+    content: `IN THE 1940S, a Dutch scientist named Niko Tinbergen performed a series of
+experiments that transformed our understanding of what motivates us. Tinbergen
+—who eventually won a Nobel Prize for his work—was investigating herring
+gulls, the gray and white birds often seen flying along the seashores of North
+America.
+Adult herring gulls have a small red dot on their beak, and Tinbergen noticed
+that newly hatched chicks would peck this spot whenever they wanted food. To
+begin one experiment, he created a collection of fake cardboard beaks, just a
+head without a body. When the parents had flown away, he went over to the nest
+and offered these dummy beaks to the chicks. The beaks were obvious fakes,
+and he assumed the baby birds would reject them altogether.
+However, when the tiny gulls saw the red spot on the cardboard beak, they
+pecked away just as if it were attached to their own mother. They had a clear
+preference for those red spots—as if they had been genetically programmed at
+birth. Soon Tinbergen discovered that the bigger the red spot, the faster the
+chicks pecked. Eventually, he created a beak with three large red dots on it.
+When he placed it over the nest, the baby birds went crazy with delight. They
+pecked at the little red patches as if it was the greatest beak they had ever seen.
+Tinbergen and his colleagues discovered similar behavior in other animals.
+For example, the greylag goose is a ground-nesting bird. Occasionally, as the
+mother moves around on the nest, one of the eggs will roll out and settle on the
+grass nearby. Whenever this happens, the goose will waddle over to the egg and
+use its beak and neck to pull it back into the nest.
+Tinbergen discovered that the goose will pull any nearby round object, such as
+a billiard ball or a lightbulb, back into the nest. The bigger the object, the greater
+their response. One goose even made a tremendous effort to roll a volleyball
+back and sit on top. Like the baby gulls automatically pecking at red dots, the
+greylag goose was following an instinctive rule: When I see a round object
+nearby, I must roll it back into the nest. The bigger the round object, the harder I
+should try to get it.
+It’s like the brain of each animal is preloaded with certain rules for behavior,
+and when it comes across an exaggerated version of that rule, it lights up like a
+Christmas tree. Scientists refer to these exaggerated cues as supernormal stimuli.
+A supernormal stimulus is a heightened version of reality—like a beak with
+three red dots or an egg the size of a volleyball—and it elicits a stronger
+response than usual.
+Humans are also prone to fall for exaggerated versions of reality. Junk food,
+for example, drives our reward systems into a frenzy. After spending hundreds
+of thousands of years hunting and foraging for food in the wild, the human brain
+has evolved to place a high value on salt, sugar, and fat. Such foods are often
+calorie-dense and they were quite rare when our ancient ancestors were roaming
+the savannah. When you don’t know where your next meal is coming from,
+eating as much as possible is an excellent strategy for survival.
+Today, however, we live in a calorie-rich environment. Food is abundant, but
+your brain continues to crave it like it is scarce. Placing a high value on salt,
+sugar, and fat is no longer advantageous to our health, but the craving persists
+because the brain’s reward centers have not changed for approximately fifty
+thousand years. The modern food industry relies on stretching our Paleolithic
+instincts beyond their evolutionary purpose.
+A primary goal of food science is to create products that are more attractive to
+consumers. Nearly every food in a bag, box, or jar has been enhanced in some
+way, if only with additional flavoring. Companies spend millions of dollars to
+discover the most satisfying level of crunch in a potato chip or the perfect
+amount of fizz in a soda. Entire departments are dedicated to optimizing how a
+product feels in your mouth—a quality known as orosensation. French fries, for
+example, are a potent combination—golden brown and crunchy on the outside,
+light and smooth on the inside.
+Other processed foods enhance dynamic contrast, which refers to items with a
+combination of sensations, like crunchy and creamy. Imagine the gooeyness of
+melted cheese on top of a crispy pizza crust, or the crunch of an Oreo cookie
+combined with its smooth center. With natural, unprocessed foods, you tend to
+experience the same sensations over and over—how’s that seventeenth bite of
+kale taste? After a few minutes, your brain loses interest and you begin to feel
+full. But foods that are high in dynamic contrast keep the experience novel and
+interesting, encouraging you to eat more.
+Ultimately, such strategies enable food scientists to find the “bliss point” for
+each product—the precise combination of salt, sugar, and fat that excites your
+brain and keeps you coming back for more. The result, of course, is that you
+overeat because hyperpalatable foods are more attractive to the human brain. As
+Stephan Guyenet, a neuroscientist who specializes in eating behavior and
+obesity, says, “We’ve gotten too good at pushing our own buttons.”
+The modern food industry, and the overeating habits it has spawned, is just
+one example of the 2nd Law of Behavior Change: Make it attractive. The more
+attractive an opportunity is, the more likely it is to become habit-forming.
+Look around. Society is filled with highly engineered versions of reality that
+are more attractive than the world our ancestors evolved in. Stores feature
+mannequins with exaggerated hips and breasts to sell clothes. Social media
+delivers more “likes” and praise in a few minutes than we could ever get in the
+office or at home. Online porn splices together stimulating scenes at a rate that
+would be impossible to replicate in real life. Advertisements are created with a
+combination of ideal lighting, professional makeup, and Photoshopped edits—
+even the model doesn’t look like the person in the final image. These are the
+supernormal stimuli of our modern world. They exaggerate features that are
+naturally attractive to us, and our instincts go wild as a result, driving us into
+excessive shopping habits, social media habits, porn habits, eating habits, and
+many others.
+If history serves as a guide, the opportunities of the future will be more
+attractive than those of today. The trend is for rewards to become more
+concentrated and stimuli to become more enticing. Junk food is a more
+concentrated form of calories than natural foods. Hard liquor is a more
+concentrated form of alcohol than beer. Video games are a more concentrated
+form of play than board games. Compared to nature, these pleasure-packed
+experiences are hard to resist. We have the brains of our ancestors but
+temptations they never had to face.
+If you want to increase the odds that a behavior will occur, then you need to
+make it attractive. Throughout our discussion of the 2nd Law, our goal is to learn
+how to make our habits irresistible. While it is not possible to transform every
+habit into a supernormal stimulus, we can make any habit more enticing. To do
+this, we must start by understanding what a craving is and how it works.
+We begin by examining a biological signature that all habits share—the
+dopamine spike.
+THE DOPAMINE-DRIVEN FEEDBACK LOOP
+Scientists can track the precise moment a craving occurs by measuring a
+neurotransmitter called dopamine.* The importance of dopamine became
+apparent in 1954 when the neuroscientists James Olds and Peter Milner ran an
+experiment that revealed the neurological processes behind craving and desire.
+By implanting electrodes in the brains of rats, the researchers blocked the release
+of dopamine. To the surprise of the scientists, the rats lost all will to live. They
+wouldn’t eat. They wouldn’t have sex. They didn’t crave anything. Within a few
+days, the animals died of thirst.
+In follow-up studies, other scientists also inhibited the dopamine-releasing
+parts of the brain, but this time, they squirted little droplets of sugar into the
+mouths of the dopamine-depleted rats. Their little rat faces lit up with
+pleasurable grins from the tasty substance. Even though dopamine was blocked,
+they liked the sugar just as much as before; they just didn’t want it anymore. The
+ability to experience pleasure remained, but without dopamine, desire died. And
+without desire, action stopped.
+When other researchers reversed this process and flooded the reward system
+of the brain with dopamine, animals performed habits at breakneck speed. In one
+study, mice received a powerful hit of dopamine each time they poked their nose
+in a box. Within minutes, the mice developed a craving so strong they began
+poking their nose into the box eight hundred times per hour. (Humans are not so
+different: the average slot machine player will spin the wheel six hundred times
+per hour.)
+Habits are a dopamine-driven feedback loop. Every behavior that is highly
+habit-forming—taking drugs, eating junk food, playing video games, browsing
+social media—is associated with higher levels of dopamine. The same can be
+said for our most basic habitual behaviors like eating food, drinking water,
+having sex, and interacting socially.
+For years, scientists assumed dopamine was all about pleasure, but now we
+know it plays a central role in many neurological processes, including
+motivation, learning and memory, punishment and aversion, and voluntary
+movement.
+When it comes to habits, the key takeaway is this: dopamine is released not
+only when you experience pleasure, but also when you anticipate it. Gambling
+addicts have a dopamine spike right before they place a bet, not after they win.
+Cocaine addicts get a surge of dopamine when they see the powder, not after
+they take it. Whenever you predict that an opportunity will be rewarding, your
+levels of dopamine spike in anticipation. And whenever dopamine rises, so does
+your motivation to act.
+It is the anticipation of a reward—not the fulfillment of it—that gets us to take
+action.
+Interestingly, the reward system that is activated in the brain when you receive
+a reward is the same system that is activated when you anticipate a reward. This
+is one reason the anticipation of an experience can often feel better than the
+attainment of it. As a child, thinking about Christmas morning can be better than
+opening the gifts. As an adult, daydreaming about an upcoming vacation can be
+more enjoyable than actually being on vacation. Scientists refer to this as the
+difference between “wanting” and “liking.”
+THE DOPAMINE SPIKE
+FIGURE 9: Before a habit is learned (A), dopamine is released when the reward is experienced for the first time. The next time around (B), dopamine rises before taking action, immediately
+after a cue is recognized. This spike leads to a feeling of desire and a craving to take action whenever the cue is spotted. Once a habit is learned, dopamine will not rise when a reward is
+experienced because you already expect the reward. However, if you see a cue and expect a reward, but do not get one, then dopamine will drop in disappointment (C). The sensitivity of the
+dopamine response can clearly be seen when a reward is provided late (D). First, the cue is identified and dopamine rises as a craving builds. Next, a response is taken but the reward does not
+come as quickly as expected and dopamine begins to drop. Finally, when the reward comes a little later than you had hoped, dopamine spikes again. It is as if the brain is saying, “See! I
+knew I was right. Don’t forget to repeat this action next time.”
+Your brain has far more neural circuitry allocated for wanting rewards than
+for liking them. The wanting centers in the brain are large: the brain stem, the
+nucleus accumbens, the ventral tegmental area, the dorsal striatum, the
+amygdala, and portions of the prefrontal cortex. By comparison, the liking
+centers of the brain are much smaller. They are often referred to as “hedonic hot
+spots” and are distributed like tiny islands throughout the brain. For instance,
+researchers have found that 100 percent of the nucleus accumbens is activated
+during wanting. Meanwhile, only 10 percent of the structure is activated during
+liking.
+The fact that the brain allocates so much precious space to the regions
+responsible for craving and desire provides further evidence of the crucial role
+these processes play. Desire is the engine that drives behavior. Every action is
+taken because of the anticipation that precedes it. It is the craving that leads to
+the response.
+These insights reveal the importance of the 2nd Law of Behavior Change. We
+need to make our habits attractive because it is the expectation of a rewarding
+experience that motivates us to act in the first place. This is where a strategy
+known as temptation bundling comes into play.
+HOW TO USE TEMPTATION BUNDLING TO MAKE YOUR HABITS
+MORE ATTRACTIVE
+Ronan Byrne, an electrical engineering student in Dublin, Ireland, enjoyed
+watching Netflix, but he also knew that he should exercise more often than he
+did. Putting his engineering skills to use, Byrne hacked his stationary bike and
+connected it to his laptop and television. Then he wrote a computer program that
+would allow Netflix to run only if he was cycling at a certain speed. If he slowed
+down for too long, whatever show he was watching would pause until he started
+pedaling again. He was, in the words of one fan, “eliminating obesity one Netflix
+binge at a time.”
+He was also employing temptation bundling to make his exercise habit more
+attractive. Temptation bundling works by linking an action you want to do with
+an action you need to do. In Byrne’s case, he bundled watching Netflix (the
+thing he wanted to do) with riding his stationary bike (the thing he needed to do).
+Businesses are masters at temptation bundling. For instance, when the
+American Broadcasting Company, more commonly known as ABC, launched its
+Thursday-night television lineup for the 2014–2015 season, they promoted
+temptation bundling on a massive scale.
+Every Thursday, the company would air three shows created by screenwriter
+Shonda Rhimes—Grey’s Anatomy, Scandal, and How to Get Away with Murder.
+They branded it as “TGIT on ABC” (TGIT stands for Thank God It’s Thursday).
+In addition to promoting the shows, ABC encouraged viewers to make popcorn,
+drink red wine, and enjoy the evening.
+Andrew Kubitz, head of scheduling for ABC, described the idea behind the
+campaign: “We see Thursday night as a viewership opportunity, with either
+couples or women by themselves who want to sit down and escape and have fun
+and drink their red wine and have some popcorn.” The brilliance of this strategy
+is that ABC was associating the thing they needed viewers to do (watch their
+shows) with activities their viewers already wanted to do (relax, drink wine, and
+eat popcorn).
+Over time, people began to connect watching ABC with feeling relaxed and
+entertained. If you drink red wine and eat popcorn at 8 p.m. every Thursday,
+then eventually “8 p.m. on Thursday” means relaxation and entertainment. The
+reward gets associated with the cue, and the habit of turning on the television
+becomes more attractive.
+You’re more likely to find a behavior attractive if you get to do one of your
+favorite things at the same time. Perhaps you want to hear about the latest
+celebrity gossip, but you need to get in shape. Using temptation bundling, you
+could only read the tabloids and watch reality shows at the gym. Maybe you
+want to get a pedicure, but you need to clean out your email inbox. Solution:
+only get a pedicure while processing overdue work emails.
+Temptation bundling is one way to apply a psychology theory known as
+Premack’s Principle. Named after the work of professor David Premack, the
+principle states that “more probable behaviors will reinforce less probable
+behaviors.” In other words, even if you don’t really want to process overdue
+work emails, you’ll become conditioned to do it if it means you get to do
+something you really want to do along the way.
+You can even combine temptation bundling with the habit stacking strategy
+we discussed in Chapter 5 to create a set of rules to guide your behavior.
+The habit stacking + temptation bundling formula is:
+1. After [CURRENT HABIT], I will [HABIT I NEED].
+2. After [HABIT I NEED], I will [HABIT I WANT].
+If you want to read the news, but you need to express more gratitude:
+1. After I get my morning coffee, I will say one thing I’m grateful for
+that happened yesterday (need).
+2. After I say one thing I’m grateful for, I will read the news (want).
+If you want to watch sports, but you need to make sales calls:
+1. After I get back from my lunch break, I will call three potential clients
+(need).
+2. After I call three potential clients, I will check ESPN (want).
+If you want to check Facebook, but you need to exercise more:
+1. After I pull out my phone, I will do ten burpees (need).
+2. After I do ten burpees, I will check Facebook (want).
+The hope is that eventually you’ll look forward to calling three clients or
+doing ten burpees because it means you get to read the latest sports news or
+check Facebook. Doing the thing you need to do means you get to do the thing
+you want to do.
+We began this chapter by discussing supernormal stimuli, which are
+heightened versions of reality that increase our desire to take action. Temptation
+bundling is one way to create a heightened version of any habit by connecting it
+with something you already want. Engineering a truly irresistible habit is a hard
+task, but this simple strategy can be employed to make nearly any habit more
+attractive than it would be otherwise.
+Chapter Summary
+The 2nd Law of Behavior Change is make it attractive.
+The more attractive an opportunity is, the more likely it is to become
+habit-forming.
+Habits are a dopamine-driven feedback loop. When dopamine rises, so
+does our motivation to act.
+It is the anticipation of a reward—not the fulfillment of it—that gets us
+to take action. The greater the anticipation, the greater the dopamine
+spike.
+Temptation bundling is one way to make your habits more attractive.
+The strategy is to pair an action you want to do with an action you
+need to do`,
+  },
+  {
+    chapter_number: 9,
+    title: "The Role of Family and Friends in Shaping Your Habits",
+    content: `IN 1965, a Hungarian man named Laszlo Polgar wrote a series of strange letters to a
+woman named Klara.
+Laszlo was a firm believer in hard work. In fact, it was all he believed in: he
+completely rejected the idea of innate talent. He claimed that with deliberate
+practice and the development of good habits, a child could become a genius in
+any field. His mantra was “A genius is not born, but is educated and trained.”
+Laszlo believed in this idea so strongly that he wanted to test it with his own
+children—and he was writing to Klara because he “needed a wife willing to
+jump on board.” Klara was a teacher and, although she may not have been as
+adamant as Laszlo, she also believed that with proper instruction, anyone could
+advance their skills.
+Laszlo decided chess would be a suitable field for the experiment, and he laid
+out a plan to raise his children to become chess prodigies. The kids would be
+home-schooled, a rarity in Hungary at the time. The house would be filled with
+chess books and pictures of famous chess players. The children would play
+against each other constantly and compete in the best tournaments they could
+find. The family would keep a meticulous file system of the tournament history
+of every competitor the children faced. Their lives would be dedicated to chess.
+Laszlo successfully courted Klara, and within a few years, the Polgars were
+parents to three young girls: Susan, Sofia, and Judit.
+Susan, the oldest, began playing chess when she was four years old. Within
+six months, she was defeating adults.
+Sofia, the middle child, did even better. By fourteen, she was a world
+champion, and a few years later, she became a grandmaster.
+Judit, the youngest, was the best of all. By age five, she could beat her father.
+At twelve, she was the youngest player ever listed among the top one hundred
+chess players in the world. At fifteen years and four months old, she became the
+youngest grandmaster of all time—younger than Bobby Fischer, the previous
+record holder. For twenty-seven years, she was the number-one-ranked female
+chess player in the world.
+The childhood of the Polgar sisters was atypical, to say the least. And yet, if
+you ask them about it, they claim their lifestyle was attractive, even enjoyable. In
+interviews, the sisters talk about their childhood as entertaining rather than
+grueling. They loved playing chess. They couldn’t get enough of it. Once, Laszlo
+reportedly found Sofia playing chess in the bathroom in the middle of the night.
+Encouraging her to go back to sleep, he said, “Sofia, leave the pieces alone!” To
+which she replied, “Daddy, they won’t leave me alone!”
+The Polgar sisters grew up in a culture that prioritized chess above all else—
+praised them for it, rewarded them for it. In their world, an obsession with chess
+was normal. And as we are about to see, whatever habits are normal in your
+culture are among the most attractive behaviors you’ll find.
+THE SEDUCTIVE PULL OF SOCIAL NORMS
+Humans are herd animals. We want to fit in, to bond with others, and to earn the
+respect and approval of our peers. Such inclinations are essential to our survival.
+For most of our evolutionary history, our ancestors lived in tribes. Becoming
+separated from the tribe—or worse, being cast out—was a death sentence. “The
+lone wolf dies, but the pack survives.”*
+Meanwhile, those who collaborated and bonded with others enjoyed increased
+safety, mating opportunities, and access to resources. As Charles Darwin noted,
+“In the long history of humankind, those who learned to collaborate and
+improvise most effectively have prevailed.” As a result, one of the deepest
+human desires is to belong. And this ancient preference exerts a powerful
+influence on our modern behavior.
+We don’t choose our earliest habits, we imitate them. We follow the script
+handed down by our friends and family, our church or school, our local
+community and society at large. Each of these cultures and groups comes with
+its own set of expectations and standards—when and whether to get married,
+how many children to have, which holidays to celebrate, how much money to
+spend on your child’s birthday party. In many ways, these social norms are the
+invisible rules that guide your behavior each day. You’re always keeping them
+in mind, even if they are at the not top of your mind. Often, you follow the habits
+of your culture without thinking, without questioning, and sometimes without
+remembering. As the French philosopher Michel de Montaigne wrote, “The
+customs and practices of life in society sweep us along.”
+Most of the time, going along with the group does not feel like a burden.
+Everyone wants to belong. If you grow up in a family that rewards you for your
+chess skills, playing chess will seem like a very attractive thing to do. If you
+work in a job where everyone wears expensive suits, then you’ll be inclined to
+splurge on one as well. If all of your friends are sharing an inside joke or using a
+new phrase, you’ll want to do it, too, so they know that you “get it.” Behaviors
+are attractive when they help us fit in.
+We imitate the habits of three groups in particular:
+1. The close.
+2. The many.
+3. The powerful.
+Each group offers an opportunity to leverage the 2nd Law of Behavior Change
+and make our habits more attractive.
+1. Imitating the Close
+Proximity has a powerful effect on our behavior. This is true of the physical
+environment, as we discussed in Chapter 6, but it is also true of the social
+environment.
+We pick up habits from the people around us. We copy the way our parents
+handle arguments, the way our peers flirt with one another, the way our
+coworkers get results. When your friends smoke pot, you give it a try, too. When
+your wife has a habit of double-checking that the door is locked before going to
+bed, you pick it up as well.
+I find that I often imitate the behavior of those around me without realizing it.
+In conversation, I’ll automatically assume the body posture of the other person.
+In college, I began to talk like my roommates. When traveling to other countries,
+I unconsciously imitate the local accent despite reminding myself to stop.
+As a general rule, the closer we are to someone, the more likely we are to
+imitate some of their habits. One groundbreaking study tracked twelve thousand
+people for thirty-two years and found that “a person’s chances of becoming
+obese increased by 57 percent if he or she had a friend who became obese.” It
+works the other way, too. Another study found that if one person in a
+relationship lost weight, the other partner would also slim down about one third
+of the time. Our friends and family provide a sort of invisible peer pressure that
+pulls us in their direction.
+Of course, peer pressure is bad only if you’re surrounded by bad influences.
+When astronaut Mike Massimino was a graduate student at MIT, he took a small
+robotics class. Of the ten people in the class, four became astronauts. If your
+goal was to make it into space, then that room was about the best culture you
+could ask for. Similarly, one study found that the higher your best friend’s IQ at
+age eleven or twelve, the higher your IQ would be at age fifteen, even after
+controlling for natural levels of intelligence. We soak up the qualities and
+practices of those around us.
+One of the most effective things you can do to build better habits is to join a
+culture where your desired behavior is the normal behavior. New habits seem
+achievable when you see others doing them every day. If you are surrounded by
+fit people, you’re more likely to consider working out to be a common habit. If
+you’re surrounded by jazz lovers, you’re more likely to believe it’s reasonable to
+play jazz every day. Your culture sets your expectation for what is “normal.”
+Surround yourself with people who have the habits you want to have yourself.
+You’ll rise together.
+To make your habits even more attractive, you can take this strategy one step
+further.
+Join a culture where (1) your desired behavior is the normal behavior and (2)
+you already have something in common with the group. Steve Kamb, an
+entrepreneur in New York City, runs a company called Nerd Fitness, which
+“helps nerds, misfits, and mutants lose weight, get strong, and get healthy.” His
+clients include video game lovers, movie fanatics, and average Joes who want to
+get in shape. Many people feel out of place the first time they go to the gym or
+try to change their diet, but if you are already similar to the other members of the
+group in some way—say, your mutual love of Star Wars—change becomes
+more appealing because it feels like something people like you already do.
+Nothing sustains motivation better than belonging to the tribe. It transforms a
+personal quest into a shared one. Previously, you were on your own. Your
+identity was singular. You are a reader. You are a musician. You are an athlete.
+When you join a book club or a band or a cycling group, your identity becomes
+linked to those around you. Growth and change is no longer an individual
+pursuit. We are readers. We are musicians. We are cyclists. The shared identity
+begins to reinforce your personal identity. This is why remaining part of a group
+after achieving a goal is crucial to maintaining your habits. It’s friendship and
+community that embed a new identity and help behaviors last over the long run.
+2. Imitating the Many
+In the 1950s, psychologist Solomon Asch conducted a series of experiments that
+are now taught to legions of undergrads each year. To begin each experiment,
+the subject entered the room with a group of strangers. Unbeknownst to them,
+the other participants were actors planted by the researcher and instructed to
+deliver scripted answers to certain questions.
+The group would be shown one card with a line on it and then a second card
+with a series of lines. Each person was asked to select the line on the second card
+that was similar in length to the line on the first card. It was a very simple task.
+Here is an example of two cards used in the experiment:
+CONFORMING TO SOCIAL NORMS
+FIGURE 10: This is a representation of two cards used by Solomon Asch in his famous social conformity experiments. The length of the line on the first card (left) is obviously the same as
+line C, but when a group of actors claimed it was a different length the research subjects would often change their minds and go with the crowd rather than believe their own eyes.
+The experiment always began the same. First, there would be some easy trials
+where everyone agreed on the correct line. After a few rounds, the participants
+were shown a test that was just as obvious as the previous ones, except the actors
+in the room would select an intentionally incorrect answer. For example, they
+would respond “A” to the comparison shown in Figure 10. Everyone would
+agree that the lines were the same even though they were clearly different.
+The subject, who was unaware of the ruse, would immediately become
+bewildered. Their eyes would open wide. They would laugh nervously to
+themselves. They would double-check the reactions of other participants. Their
+agitation would grow as one person after another delivered the same incorrect
+response. Soon, the subject began to doubt their own eyes. Eventually, they
+delivered the answer they knew in their heart to be incorrect.
+Asch ran this experiment many times and in many different ways. What he
+discovered was that as the number of actors increased, so did the conformity of
+the subject. If it was just the subject and one actor, then there was no effect on
+the person’s choice. They just assumed they were in the room with a dummy.
+When two actors were in the room with the subject, there was still little impact.
+But as the number of people increased to three actors and four and all the way to
+eight, the subject became more likely to second-guess themselves. By the end of
+the experiment, nearly 75 percent of the subjects had agreed with the group
+answer even though it was obviously incorrect.
+Whenever we are unsure how to act, we look to the group to guide our
+behavior. We are constantly scanning our environment and wondering, “What is
+everyone else doing?” We check reviews on Amazon or Yelp or TripAdvisor
+because we want to imitate the “best” buying, eating, and travel habits. It’s
+usually a smart strategy. There is evidence in numbers.
+But there can be a downside.
+The normal behavior of the tribe often overpowers the desired behavior of the
+individual. For example, one study found that when a chimpanzee learns an
+effective way to crack nuts open as a member of one group and then switches to
+a new group that uses a less effective strategy, it will avoid using the superior
+nut cracking method just to blend in with the rest of the chimps.
+Humans are similar. There is tremendous internal pressure to comply with the
+norms of the group. The reward of being accepted is often greater than the
+reward of winning an argument, looking smart, or finding truth. Most days, we’d
+rather be wrong with the crowd than be right by ourselves.
+The human mind knows how to get along with others. It wants to get along
+with others. This is our natural mode. You can override it—you can choose to
+ignore the group or to stop caring what other people think—but it takes work.
+Running against the grain of your culture requires extra effort.
+When changing your habits means challenging the tribe, change is
+unattractive. When changing your habits means fitting in with the tribe, change
+is very attractive.
+3. Imitating the Powerful
+Humans everywhere pursue power, prestige, and status. We want pins and
+medallions on our jackets. We want President or Partner in our titles. We want to
+be acknowledged, recognized, and praised. This tendency can seem vain, but
+overall, it’s a smart move. Historically, a person with greater power and status
+has access to more resources, worries less about survival, and proves to be a
+more attractive mate.
+We are drawn to behaviors that earn us respect, approval, admiration, and
+status. We want to be the one in the gym who can do muscle-ups or the musician
+who can play the hardest chord progressions or the parent with the most
+accomplished children because these things separate us from the crowd. Once
+we fit in, we start looking for ways to stand out.
+This is one reason we care so much about the habits of highly effective
+people. We try to copy the behavior of successful people because we desire
+success ourselves. Many of our daily habits are imitations of people we admire.
+You replicate the marketing strategies of the most successful firms in your
+industry. You make a recipe from your favorite baker. You borrow the
+storytelling strategies of your favorite writer. You mimic the communication
+style of your boss. We imitate people we envy.
+High-status people enjoy the approval, respect, and praise of others. And that
+means if a behavior can get us approval, respect, and praise, we find it attractive.
+We are also motivated to avoid behaviors that would lower our status. We
+trim our hedges and mow our lawn because we don’t want to be the slob of the
+neighborhood. When our mother comes to visit, we clean up the house because
+we don’t want to be judged. We are continually wondering “What will others
+think of me?” and altering our behavior based on the answer.
+The Polgar sisters—the chess prodigies mentioned at the beginning of this
+chapter—are evidence of the powerful and lasting impact social influences can
+have on our behavior. The sisters practiced chess for many hours each day and
+continued this remarkable effort for decades. But these habits and behaviors
+maintained their attractiveness, in part, because they were valued by their
+culture. From the praise of their parents to the achievement of different status
+markers like becoming a grandmaster, they had many reasons to continue their
+effort.
+Chapter Summary
+The culture we live in determines which behaviors are attractive to us.
+We tend to adopt habits that are praised and approved of by our culture
+because we have a strong desire to fit in and belong to the tribe.
+We tend to imitate the habits of three social groups: the close (family
+and friends), the many (the tribe), and the powerful (those with status
+and prestige).
+One of the most effective things you can do to build better habits is to
+join a culture where (1) your desired behavior is the normal behavior
+and (2) you already have something in common with the group.
+The normal behavior of the tribe often overpowers the desired
+behavior of the individual. Most days, we’d rather be wrong with the
+crowd than be right by ourselves.
+If a behavior can get us approval, respect, and praise, we find it
+attractive.`,
+  },
+  {
+    chapter_number: 10,
+    title: "How to Find and Fix the Causes of Your Bad Habits",
+    content: `IN LATE 2012, I was sitting in an old apartment just a few blocks from Istanbul’s most
+famous street, Istiklal Caddesi. I was in the middle of a four-day trip to Turkey
+and my guide, Mike, was relaxing in a worn-out armchair a few feet away.
+Mike wasn’t really a guide. He was just a guy from Maine who had been
+living in Turkey for five years, but he offered to show me around while I was
+visiting the country and I took him up on it. On this particular night, I had been
+invited to dinner with him and a handful of his Turkish friends.
+There were seven of us, and I was the only one who hadn’t, at some point,
+smoked at least one pack of cigarettes per day. I asked one of the Turks how he
+got started. “Friends,” he said. “It always starts with your friends. One friend
+smokes, then you try it.”
+What was truly fascinating was that half of the people in the room had
+managed to quit smoking. Mike had been smoke-free for a few years at that
+point, and he swore up and down that he broke the habit because of a book
+called Allen Carr’s Easy Way to Stop Smoking.
+“It frees you from the mental burden of smoking,” he said. “It tells you: ‘Stop
+lying to yourself. You know you don’t actually want to smoke. You know you
+don’t really enjoy this.’ It helps you feel like you’re not the victim anymore. You
+start to realize that you don’t need to smoke.”
+I had never tried a cigarette, but I took a look at the book afterward out of
+curiosity. The author employs an interesting strategy to help smokers eliminate
+their cravings. He systematically reframes each cue associated with smoking and
+gives it a new meaning.
+He says things like:
+You think you are quitting something, but you’re not quitting anything
+because cigarettes do nothing for you.
+You think smoking is something you need to do to be social, but it’s
+not. You can be social without smoking at all.
+You think smoking is about relieving stress, but it’s not. Smoking does
+not relieve your nerves, it destroys them.
+Over and over, he repeats these phrases and others like them. “Get it clearly
+into your mind,” he says. “You are losing nothing and you are making
+marvelous positive gains not only in health, energy and money but also in
+confidence, self-respect, freedom and, most important of all, in the length and
+quality of your future life.”
+By the time you get to the end of the book, smoking seems like the most
+ridiculous thing in the world to do. And if you no longer expect smoking to bring
+you any benefits, you have no reason to smoke. It is an inversion of the 2nd Law
+of Behavior Change: make it unattractive.
+Now, I know this idea might sound overly simplistic. Just change your mind and
+you can quit smoking. But stick with me for a minute.
+WHERE CRAVINGS COME FROM
+Every behavior has a surface level craving and a deeper, underlying motive. I
+often have a craving that goes something like this: “I want to eat tacos.” If you
+were to ask me why I want to eat tacos, I wouldn’t say, “Because I need food to
+survive.” But the truth is, somewhere deep down, I am motivated to eat tacos
+because I have to eat to survive. The underlying motive is to obtain food and
+water even if my specific craving is for a taco.
+Some of our underlying motives include:*
+Conserve energy
+Obtain food and water
+Find love and reproduce
+Connect and bond with others
+Win social acceptance and approval
+Reduce uncertainty
+Achieve status and prestige
+A craving is just a specific manifestation of a deeper underlying motive. Your
+brain did not evolve with a desire to smoke cigarettes or to check Instagram or to
+play video games. At a deep level, you simply want to reduce uncertainty and
+relieve anxiety, to win social acceptance and approval, or to achieve status.
+Look at nearly any product that is habit-forming and you’ll see that it does not
+create a new motivation, but rather latches onto the underlying motives of
+human nature.
+Find love and reproduce = using Tinder
+Connect and bond with others = browsing Facebook
+Win social acceptance and approval = posting on Instagram
+Reduce uncertainty = searching on Google
+Achieve status and prestige = playing video games
+Your habits are modern-day solutions to ancient desires. New versions of old
+vices. The underlying motives behind human behavior remain the same. The
+specific habits we perform differ based on the period of history.
+Here’s the powerful part: there are many different ways to address the same
+underlying motive. One person might learn to reduce stress by smoking a
+cigarette. Another person learns to ease their anxiety by going for a run. Your
+current habits are not necessarily the best way to solve the problems you face;
+they are just the methods you learned to use. Once you associate a solution with
+the problem you need to solve, you keep coming back to it.
+Habits are all about associations. These associations determine whether we
+predict a habit to be worth repeating or not. As we covered in our discussion of
+the 1st Law, your brain is continually absorbing information and noticing cues in
+the environment. Every time you perceive a cue, your brain runs a simulation
+and makes a prediction about what to do in the next moment.
+Cue: You notice that the stove is hot.
+Prediction: If I touch it I’ll get burned, so I should avoid touching it.
+Cue: You see that the traffic light turned green.
+Prediction: If I step on the gas, I’ll make it safely through the intersection and
+get closer to my destination, so I should step on the gas.
+You see a cue, categorize it based on past experience, and determine the
+appropriate response.
+This all happens in an instant, but it plays a crucial role in your habits because
+every action is preceded by a prediction. Life feels reactive, but it is actually
+predictive. All day long, you are making your best guess of how to act given
+what you’ve just seen and what has worked for you in the past. You are
+endlessly predicting what will happen in the next moment.
+Our behavior is heavily dependent on these predictions. Put another way, our
+behavior is heavily dependent on how we interpret the events that happen to us,
+not necessarily the objective reality of the events themselves. Two people can
+look at the same cigarette, and one feels the urge to smoke while the other is
+repulsed by the smell. The same cue can spark a good habit or a bad habit
+depending on your prediction. The cause of your habits is actually the prediction
+that precedes them.
+These predictions lead to feelings, which is how we typically describe a
+craving—a feeling, a desire, an urge. Feelings and emotions transform the cues
+we perceive and the predictions we make into a signal that we can apply. They
+help explain what we are currently sensing. For instance, whether or not you
+realize it, you are noticing how warm or cold you feel right now. If the
+temperature drops by one degree, you probably won’t do anything. If the
+temperature drops ten degrees, however, you’ll feel cold and put on another
+layer of clothing. Feeling cold was the signal that prompted you to act. You have
+been sensing the cues the entire time, but it is only when you predict that you
+would be better off in a different state that you take action.
+A craving is the sense that something is missing. It is the desire to change
+your internal state. When the temperature falls, there is a gap between what your
+body is currently sensing and what it wants to be sensing. This gap between your
+current state and your desired state provides a reason to act.
+Desire is the difference between where you are now and where you want to be
+in the future. Even the tiniest action is tinged with the motivation to feel
+differently than you do in the moment. When you binge-eat or light up or browse
+social media, what you really want is not a potato chip or a cigarette or a bunch
+of likes. What you really want is to feel different.
+Our feelings and emotions tell us whether to hold steady in our current state or
+to make a change. They help us decide the best course of action. Neurologists
+have discovered that when emotions and feelings are impaired, we actually lose
+the ability to make decisions. We have no signal of what to pursue and what to
+avoid. As the neuroscientist Antonio Damasio explains, “It is emotion that
+allows you to mark things as good, bad, or indifferent.”
+To summarize, the specific cravings you feel and habits you perform are
+really an attempt to address your fundamental underlying motives. Whenever a
+habit successfully addresses a motive, you develop a craving to do it again. In
+time, you learn to predict that checking social media will help you feel loved or
+that watching YouTube will allow you to forget your fears. Habits are attractive
+when we associate them with positive feelings, and we can use this insight to our
+advantage rather than to our detriment.
+HOW TO REPROGRAM YOUR BRAIN TO ENJOY HARD HABITS
+You can make hard habits more attractive if you can learn to associate them with
+a positive experience. Sometimes, all you need is a slight mind-set shift. For
+instance, we often talk about everything we have to do in a given day. You have
+to wake up early for work. You have to make another sales call for your
+business. You have to cook dinner for your family.
+Now, imagine changing just one word: You don’t “have” to. You “get” to.
+You get to wake up early for work. You get to make another sales call for
+your business. You get to cook dinner for your family. By simply changing one
+word, you shift the way you view each event. You transition from seeing these
+behaviors as burdens and turn them into opportunities.
+The key point is that both versions of reality are true. You have to do those
+things, and you also get to do them. We can find evidence for whatever mind-set
+we choose.
+I once heard a story about a man who uses a wheelchair. When asked if it was
+difficult being confined, he responded, “I’m not confined to my wheelchair—I
+am liberated by it. If it wasn’t for my wheelchair, I would be bed-bound and
+never able to leave my house.” This shift in perspective completely transformed
+how he lived each day.
+Reframing your habits to highlight their benefits rather than their drawbacks is
+a fast and lightweight way to reprogram your mind and make a habit seem more
+attractive.
+Exercise. Many people associate exercise with being a challenging task that
+drains energy and wears you down. You can just as easily view it as a way to
+develop skills and build you up. Instead of telling yourself “I need to go run in
+the morning,” say “It’s time to build endurance and get fast.”
+Finance. Saving money is often associated with sacrifice. However, you can
+associate it with freedom rather than limitation if you realize one simple truth:
+living below your current means increases your future means. The money you
+save this month increases your purchasing power next month.
+Meditation. Anyone who has tried meditation for more than three seconds
+knows how frustrating it can be when the next distraction inevitably pops into
+your mind. You can transform frustration into delight when you realize that each
+interruption gives you a chance to practice returning to your breath. Distraction
+is a good thing because you need distractions to practice meditation.
+Pregame jitters. Many people feel anxious before delivering a big
+presentation or competing in an important event. They experience quicker
+breathing, a faster heart rate, heightened arousal. If we interpret these feelings
+negatively, then we feel threatened and tense up. If we interpret these feelings
+positively, then we can respond with fluidity and grace. You can reframe “I am
+nervous” to “I am excited and I’m getting an adrenaline rush to help me
+concentrate.”
+These little mind-set shifts aren’t magic, but they can help change the feelings
+you associate with a particular habit or situation.
+If you want to take it a step further, you can create a motivation ritual. You
+simply practice associating your habits with something you enjoy, then you can
+use that cue whenever you need a bit of motivation. For instance, if you always
+play the same song before having sex, then you’ll begin to link the music with
+the act. Whenever you want to get in the mood, just press play.
+Ed Latimore, a boxer and writer from Pittsburgh, benefited from a similar
+strategy without knowing it. “Odd realization,” he wrote. “My focus and
+concentration goes up just by putting my headphones [on] while writing. I don’t
+even have to play any music.” Without realizing it, he was conditioning himself.
+In the beginning, he put his headphones on, played some music he enjoyed, and
+did focused work. After doing it five, ten, twenty times, putting his headphones
+on became a cue that he automatically associated with increased focus. The
+craving followed naturally.
+Athletes use similar strategies to get themselves in the mind-set to perform.
+During my baseball career, I developed a specific ritual of stretching and
+throwing before each game. The whole sequence took about ten minutes, and I
+did it the same way every single time. While it physically warmed me up to play,
+more importantly, it put me in the right mental state. I began to associate my
+pregame ritual with feeling competitive and focused. Even if I wasn’t motivated
+beforehand, by the time I was done with my ritual, I was in “game mode.”
+You can adapt this strategy for nearly any purpose. Say you want to feel
+happier in general. Find something that makes you truly happy—like petting
+your dog or taking a bubble bath—and then create a short routine that you
+perform every time before you do the thing you love. Maybe you take three deep
+breaths and smile.
+Three deep breaths. Smile. Pet the dog. Repeat.
+Eventually, you’ll begin to associate this breathe-and-smile routine with being
+in a good mood. It becomes a cue that means feeling happy. Once established,
+you can break it out anytime you need to change your emotional state. Stressed
+at work? Take three deep breaths and smile. Sad about life? Three deep breaths
+and smile. Once a habit has been built, the cue can prompt a craving, even if it
+has little to do with the original situation.
+The key to finding and fixing the causes of your bad habits is to reframe the
+associations you have about them. It’s not easy, but if you can reprogram your
+predictions, you can transform a hard habit into an attractive one.
+Chapter Summary
+The inversion of the 2nd Law of Behavior Change is make it
+unattractive.
+Every behavior has a surface level craving and a deeper underlying
+motive.
+Your habits are modern-day solutions to ancient desires.
+The cause of your habits is actually the prediction that precedes them.
+The prediction leads to a feeling.
+Highlight the benefits of avoiding a bad habit to make it seem
+unattractive.
+Habits are attractive when we associate them with positive feelings
+and unattractive when we associate them with negative feelings.
+Create a motivation ritual by doing something you enjoy immediately
+before a difficult habit.
+HOW TO CREATE A GOOD HABIT`,
+  },
+  {
+    chapter_number: 11,
+    title: "Walk Slowly, but Never Backward",
+    content: `ON THE FIRST day of class, Jerry Uelsmann, a professor at the University of Florida,
+divided his film photography students into two groups.
+Everyone on the left side of the classroom, he explained, would be in the
+“quantity” group. They would be graded solely on the amount of work they
+produced. On the final day of class, he would tally the number of photos
+submitted by each student. One hundred photos would rate an A, ninety photos a
+B, eighty photos a C, and so on.
+Meanwhile, everyone on the right side of the room would be in the “quality”
+group. They would be graded only on the excellence of their work. They would
+only need to produce one photo during the semester, but to get an A, it had to be
+a nearly perfect image.
+At the end of the term, he was surprised to find that all the best photos were
+produced by the quantity group. During the semester, these students were busy
+taking photos, experimenting with composition and lighting, testing out various
+methods in the darkroom, and learning from their mistakes. In the process of
+creating hundreds of photos, they honed their skills. Meanwhile, the quality
+group sat around speculating about perfection. In the end, they had little to show
+for their efforts other than unverified theories and one mediocre photo.*
+It is easy to get bogged down trying to find the optimal plan for change: the
+fastest way to lose weight, the best program to build muscle, the perfect idea for
+a side hustle. We are so focused on figuring out the best approach that we never
+get around to taking action. As Voltaire once wrote, “The best is the enemy of
+the good.”
+I refer to this as the difference between being in motion and taking action. The
+two ideas sound similar, but they’re not the same. When you’re in motion,
+you’re planning and strategizing and learning. Those are all good things, but
+they don’t produce a result.
+Action, on the other hand, is the type of behavior that will deliver an outcome.
+If I outline twenty ideas for articles I want to write, that’s motion. If I actually sit
+down and write an article, that’s action. If I search for a better diet plan and read
+a few books on the topic, that’s motion. If I actually eat a healthy meal, that’s
+action.
+Sometimes motion is useful, but it will never produce an outcome by itself. It
+doesn’t matter how many times you go talk to the personal trainer, that motion
+will never get you in shape. Only the action of working out will get the result
+you’re looking to achieve.
+If motion doesn’t lead to results, why do we do it? Sometimes we do it
+because we actually need to plan or learn more. But more often than not, we do
+it because motion allows us to feel like we’re making progress without running
+the risk of failure. Most of us are experts at avoiding criticism. It doesn’t feel
+good to fail or to be judged publicly, so we tend to avoid situations where that
+might happen. And that’s the biggest reason why you slip into motion rather than
+taking action: you want to delay failure.
+It’s easy to be in motion and convince yourself that you’re still making
+progress. You think, “I’ve got conversations going with four potential clients
+right now. This is good. We’re moving in the right direction.” Or, “I
+brainstormed some ideas for that book I want to write. This is coming together.”
+Motion makes you feel like you’re getting things done. But really, you’re just
+preparing to get something done. When preparation becomes a form of
+procrastination, you need to change something. You don’t want to merely be
+planning. You want to be practicing.
+If you want to master a habit, the key is to start with repetition, not perfection.
+You don’t need to map out every feature of a new habit. You just need to
+practice it. This is the first takeaway of the 3rd Law: you just need to get your
+reps in.
+HOW LONG DOES IT ACTUALLY TAKE TO FORM A NEW HABIT?
+Habit formation is the process by which a behavior becomes progressively more
+automatic through repetition. The more you repeat an activity, the more the
+structure of your brain changes to become efficient at that activity.
+Neuroscientists call this long-term potentiation, which refers to the strengthening
+of connections between neurons in the brain based on recent patterns of activity.
+With each repetition, cell-to-cell signaling improves and the neural connections
+tighten. First described by neuropsychologist Donald Hebb in 1949, this
+phenomenon is commonly known as Hebb’s Law: “Neurons that fire together
+wire together.”
+Repeating a habit leads to clear physical changes in the brain. In musicians,
+the cerebellum—critical for physical movements like plucking a guitar string or
+pulling a violin bow—is larger than it is in nonmusicians. Mathematicians,
+meanwhile, have increased gray matter in the inferior parietal lobule, which
+plays a key role in computation and calculation. Its size is directly correlated
+with the amount of time spent in the field; the older and more experienced the
+mathematician, the greater the increase in gray matter.
+When scientists analyzed the brains of taxi drivers in London, they found that
+the hippocampus—a region of the brain involved in spatial memory—was
+significantly larger in their subjects than in non–taxi drivers. Even more
+fascinating, the hippocampus decreased in size when a driver retired. Like the
+muscles of the body responding to regular weight training, particular regions of
+the brain adapt as they are used and atrophy as they are abandoned.
+Of course, the importance of repetition in establishing habits was recognized
+long before neuroscientists began poking around. In 1860, the English
+philosopher George H. Lewes noted, “In learning to speak a new language, to
+play on a musical instrument, or to perform unaccustomed movements, great
+difficulty is felt, because the channels through which each sensation has to pass
+have not become established; but no sooner has frequent repetition cut a
+pathway, than this difficulty vanishes; the actions become so automatic that they
+can be performed while the mind is otherwise engaged.” Both common sense
+and scientific evidence agree: repetition is a form of change.
+Each time you repeat an action, you are activating a particular neural circuit
+associated with that habit. This means that simply putting in your reps is one of
+the most critical steps you can take to encoding a new habit. It is why the
+students who took tons of photos improved their skills while those who merely
+theorized about perfect photos did not. One group engaged in active practice, the
+other in passive learning. One in action, the other in motion.
+All habits follow a similar trajectory from effortful practice to automatic
+behavior, a process known as automaticity. Automaticity is the ability to perform
+a behavior without thinking about each step, which occurs when the
+nonconscious mind takes over.
+It looks something like this:
+THE HABIT LINE
+FIGURE 11: In the beginning (point A), a habit requires a good deal of effort and concentration to perform. After a few repetitions (point B), it gets easier, but still requires some conscious
+attention. With enough practice (point C), the habit becomes more automatic than conscious. Beyond this threshold—the habit line—the behavior can be done more or less without thinking.
+A new habit has been formed.
+On the following page, you’ll see what it looks like when researchers track the
+level of automaticity for an actual habit like walking for ten minutes each day.
+The shape of these charts, which scientists call learning curves, reveals an
+important truth about behavior change: habits form based on frequency, not
+time.
+WALKING 10 MINUTES PER DAY
+FIGURE 12: This graph shows someone who built the habit of walking for ten minutes after breakfast each day. Notice that as the repetitions increase, so does automaticity, until the
+behavior is as easy and automatic as it can be.
+One of the most common questions I hear is, “How long does it take to build a
+new habit?” But what people really should be asking is, “How many does it take
+to form a new habit?” That is, how many repetitions are required to make a habit
+automatic?
+There is nothing magical about time passing with regard to habit formation. It
+doesn’t matter if it’s been twenty-one days or thirty days or three hundred days.
+What matters is the rate at which you perform the behavior. You could do
+something twice in thirty days, or two hundred times. It’s the frequency that
+makes the difference. Your current habits have been internalized over the course
+of hundreds, if not thousands, of repetitions. New habits require the same level
+of frequency. You need to string together enough successful attempts until the
+behavior is firmly embedded in your mind and you cross the Habit Line.
+In practice, it doesn’t really matter how long it takes for a habit to become
+automatic. What matters is that you take the actions you need to take to make
+progress. Whether an action is fully automatic is of less importance.
+To build a habit, you need to practice it. And the most effective way to make
+practice happen is to adhere to the 3rd Law of Behavior Change: make it easy.
+The chapters that follow will show you how to do exactly that.
+Chapter Summary
+The 3rd Law of Behavior Change is make it easy.
+The most effective form of learning is practice, not planning.
+Focus on taking action, not being in motion.
+Habit formation is the process by which a behavior becomes
+progressively more automatic through repetition.
+The amount of time you have been performing a habit is not as
+important as the number of times you have performed it.`,
+  },
+  {
+    chapter_number: 12,
+    title: "The Law of Least Effort",
+    content: `IN HIS AWARD-WINNING BOOK, Guns, Germs, and Steel, anthropologist and biologist Jared
+Diamond points out a simple fact: different continents have different shapes. At
+first glance, this statement seems rather obvious and unimportant, but it turns out
+to have a profound impact on human behavior.
+The primary axis of the Americas runs from north to south. That is, the
+landmass of North and South America tends to be tall and thin rather than wide
+and fat. The same is generally true for Africa. Meanwhile, the landmass that
+makes up Europe, Asia, and the Middle East is the opposite. This massive stretch
+of land tends to be more east-west in shape. According to Diamond, this
+difference in shape played a significant role in the spread of agriculture over the
+centuries.
+When agriculture began to spread around the globe, farmers had an easier
+time expanding along east-west routes than along north-south ones. This is
+because locations along the same latitude generally share similar climates,
+amounts of sunlight and rainfall, and changes in season. These factors allowed
+farmers in Europe and Asia to domesticate a few crops and grow them along the
+entire stretch of land from France to China.
+THE SHAPE OF HUMAN BEHAVIOR
+FIGURE 13: The primary axis of Europe and Asia is east-west. The primary axis of the Americas and Africa is north-south. This leads to a wider range of climates up-and-down the
+Americas than across Europe and Asia. As a result, agriculture spread nearly twice as fast across Europe and Asia than it did elsewhere. The behavior of farmers—even across hundreds or
+thousands of years—was constrained by the amount of friction in the environment.
+By comparison, the climate varies greatly when traveling from north to south.
+Just imagine how different the weather is in Florida compared to Canada. You
+can be the most talented farmer in the world, but it won’t help you grow Florida
+oranges in the Canadian winter. Snow is a poor substitute for soil. In order to
+spread crops along north-south routes, farmers would need to find and
+domesticate new plants whenever the climate changed.
+As a result, agriculture spread two to three times faster across Asia and
+Europe than it did up and down the Americas. Over the span of centuries, this
+small difference had a very big impact. Increased food production allowed for
+more rapid population growth. With more people, these cultures were able to
+build stronger armies and were better equipped to develop new technologies.
+The changes started out small—a crop that spread slightly farther, a population
+that grew slightly faster—but compounded into substantial differences over time.
+The spread of agriculture provides an example of the 3rd Law of Behavior
+Change on a global scale. Conventional wisdom holds that motivation is the key
+to habit change. Maybe if you really wanted it, you’d actually do it. But the truth
+is, our real motivation is to be lazy and to do what is convenient. And despite
+what the latest productivity best seller will tell you, this is a smart strategy, not a
+dumb one.
+Energy is precious, and the brain is wired to conserve it whenever possible. It
+is human nature to follow the Law of Least Effort, which states that when
+deciding between two similar options, people will naturally gravitate toward the
+option that requires the least amount of work.* For example, expanding your
+farm to the east where you can grow the same crops rather than heading north
+where the climate is different. Out of all the possible actions we could take, the
+one that is realized is the one that delivers the most value for the least effort. We
+are motivated to do what is easy.
+Every action requires a certain amount of energy. The more energy required,
+the less likely it is to occur. If your goal is to do a hundred push-ups per day,
+that’s a lot of energy! In the beginning, when you’re motivated and excited, you
+can muster the strength to get started. But after a few days, such a massive effort
+feels exhausting. Meanwhile, sticking to the habit of doing one push-up per day
+requires almost no energy to get started. And the less energy a habit requires, the
+more likely it is to occur.
+Look at any behavior that fills up much of your life and you’ll see that it can
+be performed with very low levels of motivation. Habits like scrolling on our
+phones, checking email, and watching television steal so much of our time
+because they can be performed almost without effort. They are remarkably
+convenient.
+In a sense, every habit is just an obstacle to getting what you really want.
+Dieting is an obstacle to getting fit. Meditation is an obstacle to feeling calm.
+Journaling is an obstacle to thinking clearly. You don’t actually want the habit
+itself. What you really want is the outcome the habit delivers. The greater the
+obstacle—that is, the more difficult the habit—the more friction there is between
+you and your desired end state. This is why it is crucial to make your habits so
+easy that you’ll do them even when you don’t feel like it. If you can make your
+good habits more convenient, you’ll be more likely to follow through on them.
+But what about all the moments when we seem to do the opposite? If we’re all
+so lazy, then how do you explain people accomplishing hard things like raising a
+child or starting a business or climbing Mount Everest?
+Certainly, you are capable of doing very hard things. The problem is that
+some days you feel like doing the hard work and some days you feel like giving
+in. On the tough days, it’s crucial to have as many things working in your favor
+as possible so that you can overcome the challenges life naturally throws your
+way. The less friction you face, the easier it is for your stronger self to emerge.
+The idea behind make it easy is not to only do easy things. The idea is to make it
+as easy as possible in the moment to do things that payoff in the long run.
+HOW TO ACHIEVE MORE WITH LESS EFFORT
+Imagine you are holding a garden hose that is bent in the middle. Some water
+can flow through, but not very much. If you want to increase the rate at which
+water passes through the hose, you have two options. The first option is to crank
+up the valve and force more water out. The second option is to simply remove
+the bend in the hose and let water flow through naturally.
+Trying to pump up your motivation to stick with a hard habit is like trying to
+force water through a bent hose. You can do it, but it requires a lot of effort and
+increases the tension in your life. Meanwhile, making your habits simple and
+easy is like removing the bend in the hose. Rather than trying to overcome the
+friction in your life, you reduce it.
+One of the most effective ways to reduce the friction associated with your
+habits is to practice environment design. In Chapter 6, we discussed environment
+design as a method for making cues more obvious, but you can also optimize
+your environment to make actions easier. For example, when deciding where to
+practice a new habit, it is best to choose a place that is already along the path of
+your daily routine. Habits are easier to build when they fit into the flow of your
+life. You are more likely to go to the gym if it is on your way to work because
+stopping doesn’t add much friction to your lifestyle. By comparison, if the gym
+is off the path of your normal commute—even by just a few blocks—now you’re
+going “out of your way” to get there.
+Perhaps even more effective is reducing the friction within your home or
+office. Too often, we try to start habits in high-friction environments. We try to
+follow a strict diet while we are out to dinner with friends. We try to write a
+book in a chaotic household. We try to concentrate while using a smartphone
+filled with distractions. It doesn’t have to be this way. We can remove the points
+of friction that hold us back. This is precisely what electronics manufacturers in
+Japan began to do in the 1970s.
+In an article published in the New Yorker titled “Better All the Time,” James
+Suroweicki writes:
+“Japanese firms emphasized what came to be known as ‘lean production,’
+relentlessly looking to remove waste of all kinds from the production process,
+down to redesigning workspaces, so workers didn’t have to waste time twisting
+and turning to reach their tools. The result was that Japanese factories were more
+efficient and Japanese products were more reliable than American ones. In 1974,
+service calls for American-made color televisions were five times as common as
+for Japanese televisions. By 1979, it took American workers three times as long
+to assemble their sets.”
+I like to refer to this strategy as addition by subtraction.* The Japanese
+companies looked for every point of friction in the manufacturing process and
+eliminated it. As they subtracted wasted effort, they added customers and
+revenue. Similarly, when we remove the points of friction that sap our time and
+energy, we can achieve more with less effort. (This is one reason tidying up can
+feel so good: we are simultaneously moving forward and lightening the
+cognitive load our environment places on us.)
+If you look at the most habit-forming products, you’ll notice that one of the
+things these goods and services do best is remove little bits of friction from your
+life. Meal delivery services reduce the friction of shopping for groceries. Dating
+apps reduce the friction of making social introductions. Ride-sharing services
+reduce the friction of getting across town. Text messaging reduces the friction of
+sending a letter in the mail.
+Like a Japanese television manufacturer redesigning their workspace to
+reduce wasted motion, successful companies design their products to automate,
+eliminate, or simplify as many steps as possible. They reduce the number of
+fields on each form. They pare down the number of clicks required to create an
+account. They deliver their products with easy-to-understand directions or ask
+their customers to make fewer choices.
+When the first voice-activated speakers were released—products like Google
+Home, Amazon Echo, and Apple HomePod—I asked a friend what he liked
+about the product he had purchased. He said it was just easier to say “Play some
+country music” than to pull out his phone, open the music app, and pick a
+playlist. Of course, just a few years earlier, having unlimited access to music in
+your pocket was a remarkably frictionless behavior compared to driving to the
+store and buying a CD. Business is a never-ending quest to deliver the same
+result in an easier fashion.
+Similar strategies have been used effectively by governments. When the
+British government wanted to increase tax collection rates, they switched from
+sending citizens to a web page where the tax form could be downloaded to
+linking directly to the form. Reducing that one step in the process increased the
+response rate from 19.2 percent to 23.4 percent. For a country like the United
+Kingdom, those percentage points represent millions in tax revenue.
+The central idea is to create an environment where doing the right thing is as
+easy as possible. Much of the battle of building better habits comes down to
+finding ways to reduce the friction associated with our good habits and increase
+the friction associated with our bad ones.
+PRIME THE ENVIRONMENT FOR FUTURE USE
+Oswald Nuckols is an IT developer from Natchez, Mississippi. He is also
+someone who understands the power of priming his environment.
+Nuckols dialed in his cleaning habits by following a strategy he refers to as
+“resetting the room.” For instance, when he finishes watching television, he
+places the remote back on the TV stand, arranges the pillows on the couch, and
+folds the blanket. When he leaves his car, he throws any trash away. Whenever
+he takes a shower, he wipes down the toilet while the shower is warming up. (As
+he notes, the “perfect time to clean the toilet is right before you wash yourself in
+the shower anyway.”) The purpose of resetting each room is not simply to clean
+up after the last action, but to prepare for the next action.
+“When I walk into a room everything is in its right place,” Nuckols wrote.
+“Because I do this every day in every room, stuff always stays in good shape. . . .
+People think I work hard but I’m actually really lazy. I’m just proactively lazy. It
+gives you so much time back.”
+Whenever you organize a space for its intended purpose, you are priming it to
+make the next action easy. For instance, my wife keeps a box of greeting cards
+that are presorted by occasion—birthday, sympathy, wedding, graduation, and
+more. Whenever necessary, she grabs an appropriate card and sends it off. She is
+incredibly good at remembering to send cards because she has reduced the
+friction of doing so. For years, I was the opposite. Someone would have a baby
+and I would think, “I should send a card.” But then weeks would pass and by the
+time I remembered to pick one up at the store, it was too late. The habit wasn’t
+easy.
+There are many ways to prime your environment so it’s ready for immediate
+use. If you want to cook a healthy breakfast, place the skillet on the stove, set the
+cooking spray on the counter, and lay out any plates and utensils you’ll need the
+night before. When you wake up, making breakfast will be easy.
+Want to draw more? Put your pencils, pens, notebooks, and drawing
+tools on top of your desk, within easy reach.
+Want to exercise? Set out your workout clothes, shoes, gym bag, and
+water bottle ahead of time.
+Want to improve your diet? Chop up a ton of fruits and vegetables on
+weekends and pack them in containers, so you have easy access to
+healthy, ready-to-eat options during the week.
+These are simple ways to make the good habit the path of least resistance.
+You can also invert this principle and prime the environment to make bad
+behaviors difficult. If you find yourself watching too much television, for
+example, then unplug it after each use. Only plug it back in if you can say out
+loud the name of the show you want to watch. This setup creates just enough
+friction to prevent mindless viewing.
+If that doesn’t do it, you can take it a step further. Unplug the television and
+take the batteries out of the remote after each use, so it takes an extra ten seconds
+to turn it back on. And if you’re really hard-core, move the television out of the
+living room and into a closet after each use. You can be sure you’ll only take it
+out when you really want to watch something. The greater the friction, the less
+likely the habit.
+Whenever possible, I leave my phone in a different room until lunch. When
+it’s right next to me, I’ll check it all morning for no reason at all. But when it is
+in another room, I rarely think about it. And the friction is high enough that I
+won’t go get it without a reason. As a result, I get three to four hours each
+morning when I can work without interruption.
+If sticking your phone in another room doesn’t seem like enough, tell a friend
+or family member to hide it from you for a few hours. Ask a coworker to keep it
+at their desk in the morning and give it back to you at lunch.
+It is remarkable how little friction is required to prevent unwanted behavior.
+When I hide beer in the back of the fridge where I can’t see it, I drink less. When
+I delete social media apps from my phone, it can be weeks before I download
+them again and log in. These tricks are unlikely to curb a true addiction, but for
+many of us, a little bit of friction can be the difference between sticking with a
+good habit or sliding into a bad one. Imagine the cumulative impact of making
+dozens of these changes and living in an environment designed to make the good
+behaviors easier and the bad behaviors harder.
+Whether we are approaching behavior change as an individual, a parent, a
+coach, or a leader, we should ask ourselves the same question: “How can we
+design a world where it’s easy to do what’s right?” Redesign your life so the
+actions that matter most are also the actions that are easiest to do.
+Chapter Summary
+Human behavior follows the Law of Least Effort. We will naturally
+gravitate toward the option that requires the least amount of work.
+Create an environment where doing the right thing is as easy as
+possible.
+Reduce the friction associated with good behaviors. When friction is
+low, habits are easy.
+Increase the friction associated with bad behaviors. When friction is
+high, habits are difficult.
+Prime your environment to make future actions easier.`,
+  },
+  {
+    chapter_number: 13,
+    title: "How to Stop Procrastinating by Using the TwoMinute Rule",
+    content: `TWYLA THARP IS widely regarded as one of the greatest dancers and choreographers
+of the modern era. In 1992, she was awarded a MacArthur Fellowship, often
+referred to as the Genius Grant, and she has spent the bulk of her career touring
+the globe to perform her original works. She also credits much of her success to
+simple daily habits.
+“I begin each day of my life with a ritual,” she writes. “I wake up at 5:30
+A.M., put on my workout clothes, my leg warmers, my sweat shirt, and my hat. I
+walk outside my Manhattan home, hail a taxi, and tell the driver to take me to
+the Pumping Iron gym at 91st Street and First Avenue, where I work out for two
+hours.
+“The ritual is not the stretching and weight training I put my body through
+each morning at the gym; the ritual is the cab. The moment I tell the driver
+where to go I have completed the ritual.
+“It’s a simple act, but doing it the same way each morning habitualizes it—
+makes it repeatable, easy to do. It reduces the chance that I would skip it or do it
+differently. It is one more item in my arsenal of routines, and one less thing to
+think about.”
+Hailing a cab each morning may be a tiny action, but it is a splendid example
+of the 3rd Law of Behavior Change.
+Researchers estimate that 40 to 50 percent of our actions on any given day are
+done out of habit. This is already a substantial percentage, but the true influence
+of your habits is even greater than these numbers suggest. Habits are automatic
+choices that influence the conscious decisions that follow. Yes, a habit can be
+completed in just a few seconds, but it can also shape the actions that you take
+for minutes or hours afterward.
+Habits are like the entrance ramp to a highway. They lead you down a path
+and, before you know it, you’re speeding toward the next behavior. It seems to
+be easier to continue what you are already doing than to start doing something
+different. You sit through a bad movie for two hours. You keep snacking even
+when you’re already full. You check your phone for “just a second” and soon
+you have spent twenty minutes staring at the screen. In this way, the habits you
+follow without thinking often determine the choices you make when you are
+thinking.
+Each evening, there is a tiny moment—usually around 5:15 p.m.—that shapes
+the rest of my night. My wife walks in the door from work and either we change
+into our workout clothes and head to the gym or we crash onto the couch, order
+Indian food, and watch The Office.* Similar to Twyla Tharp hailing the cab, the
+ritual is changing into my workout clothes. If I change clothes, I know the
+workout will happen. Everything that follows—driving to the gym, deciding
+which exercises to do, stepping under the bar—is easy once I’ve taken the first
+step.
+Every day, there are a handful of moments that deliver an outsized impact. I
+refer to these little choices as decisive moments. The moment you decide
+between ordering takeout or cooking dinner. The moment you choose between
+driving your car or riding your bike. The moment you decide between starting
+your homework or grabbing the video game controller. These choices are a fork
+in the road.
+DECISIVE MOMENTS
+FIGURE 14: The difference between a good day and a bad day is often a few productive and healthy choices made at decisive moments. Each one is like a fork in the road, and these choices
+stack up throughout the day and can ultimately lead to very different outcomes.
+Decisive moments set the options available to your future self. For instance,
+walking into a restaurant is a decisive moment because it determines what you’ll
+be eating for lunch. Technically, you are in control of what you order, but in a
+larger sense, you can only order an item if it is on the menu. If you walk into a
+steakhouse, you can get a sirloin or a rib eye, but not sushi. Your options are
+constrained by what’s available. They are shaped by the first choice.
+We are limited by where our habits lead us. This is why mastering the
+decisive moments throughout your day is so important. Each day is made up of
+many moments, but it is really a few habitual choices that determine the path
+you take. These little choices stack up, each one setting the trajectory for how
+you spend the next chunk of time.
+Habits are the entry point, not the end point. They are the cab, not the gym.
+THE TWO-MINUTE RULE
+Even when you know you should start small, it’s easy to start too big. When you
+dream about making a change, excitement inevitably takes over and you end up
+trying to do too much too soon. The most effective way I know to counteract this
+tendency is to use the Two-Minute Rule, which states, “When you start a new
+habit, it should take less than two minutes to do.”
+You’ll find that nearly any habit can be scaled down into a two-minute
+version:
+“Read before bed each night” becomes “Read one page.”
+“Do thirty minutes of yoga” becomes “Take out my yoga mat.”
+“Study for class” becomes “Open my notes.”
+“Fold the laundry” becomes “Fold one pair of socks.”
+“Run three miles” becomes “Tie my running shoes.”
+The idea is to make your habits as easy as possible to start. Anyone can
+meditate for one minute, read one page, or put one item of clothing away. And,
+as we have just discussed, this is a powerful strategy because once you’ve started
+doing the right thing, it is much easier to continue doing it. A new habit should
+not feel like a challenge. The actions that follow can be challenging, but the first
+two minutes should be easy. What you want is a “gateway habit” that naturally
+leads you down a more productive path.
+You can usually figure out the gateway habits that will lead to your desired
+outcome by mapping out your goals on a scale from “very easy” to “very hard.”
+For instance, running a marathon is very hard. Running a 5K is hard. Walking
+ten thousand steps is moderately difficult. Walking ten minutes is easy. And
+putting on your running shoes is very easy. Your goal might be to run a
+marathon, but your gateway habit is to put on your running shoes. That’s how
+you follow the Two-Minute Rule.
+Very easy Easy Moderate Hard Very hard
+Put on your running shoes Walk ten minutes Walk ten thousand steps Run a 5K Run a marathon
+Write one sentence Write one paragraph Write one thousand words Write a five-thousand-word article Write a book
+Open your notes Study for ten minutes Study for three hours Get straight A’s Earn a PhD
+People often think it’s weird to get hyped about reading one page or
+meditating for one minute or making one sales call. But the point is not to do one
+thing. The point is to master the habit of showing up. The truth is, a habit must
+be established before it can be improved. If you can’t learn the basic skill of
+showing up, then you have little hope of mastering the finer details. Instead of
+trying to engineer a perfect habit from the start, do the easy thing on a more
+consistent basis. You have to standardize before you can optimize.
+As you master the art of showing up, the first two minutes simply become a
+ritual at the beginning of a larger routine. This is not merely a hack to make
+habits easier but actually the ideal way to master a difficult skill. The more you
+ritualize the beginning of a process, the more likely it becomes that you can slip
+into the state of deep focus that is required to do great things. By doing the same
+warm-up before every workout, you make it easier to get into a state of peak
+performance. By following the same creative ritual, you make it easier to get
+into the hard work of creating. By developing a consistent power-down habit,
+you make it easier to get to bed at a reasonable time each night. You may not be
+able to automate the whole process, but you can make the first action mindless.
+Make it easy to start and the rest will follow.
+The Two-Minute Rule can seem like a trick to some people. You know that
+the real goal is to do more than just two minutes, so it may feel like you’re
+trying to fool yourself. Nobody is actually aspiring to read one page or do one
+push-up or open their notes. And if you know it’s a mental trick, why would you
+fall for it?
+If the Two-Minute Rule feels forced, try this: do it for two minutes and then
+stop. Go for a run, but you must stop after two minutes. Start meditating, but you
+must stop after two minutes. Study Arabic, but you must stop after two minutes.
+It’s not a strategy for starting, it’s the whole thing. Your habit can only last one
+hundred and twenty seconds.
+One of my readers used this strategy to lose over one hundred pounds. In the
+beginning, he went to the gym each day, but he told himself he wasn’t allowed
+to stay for more than five minutes. He would go to the gym, exercise for five
+minutes, and leave as soon as his time was up. After a few weeks, he looked
+around and thought, “Well, I’m always coming here anyway. I might as well
+start staying a little longer.” A few years later, the weight was gone.
+Journaling provides another example. Nearly everyone can benefit from
+getting their thoughts out of their head and onto paper, but most people give up
+after a few days or avoid it entirely because journaling feels like a chore.* The
+secret is to always stay below the point where it feels like work. Greg
+McKeown, a leadership consultant from the United Kingdom, built a daily
+journaling habit by specifically writing less than he felt like. He always stopped
+journaling before it seemed like a hassle. Ernest Hemingway believed in similar
+advice for any kind of writing. “The best way is to always stop when you are
+going good,” he said.
+Strategies like this work for another reason, too: they reinforce the identity
+you want to build. If you show up at the gym five days in a row—even if it’s just
+for two minutes—you are casting votes for your new identity. You’re not
+worried about getting in shape. You’re focused on becoming the type of person
+who doesn’t miss workouts. You’re taking the smallest action that confirms the
+type of person you want to be.
+We rarely think about change this way because everyone is consumed by the
+end goal. But one push-up is better than not exercising. One minute of guitar
+practice is better than none at all. One minute of reading is better than never
+picking up a book. It’s better to do less than you hoped than to do nothing at all.
+At some point, once you’ve established the habit and you’re showing up each
+day, you can combine the Two-Minute Rule with a technique we call habit
+shaping to scale your habit back up toward your ultimate goal. Start by
+mastering the first two minutes of the smallest version of the behavior. Then,
+advance to an intermediate step and repeat the process—focusing on just the first
+two minutes and mastering that stage before moving on to the next level.
+Eventually, you’ll end up with the habit you had originally hoped to build while
+still keeping your focus where it should be: on the first two minutes of the
+behavior.
+EXAMPLES OF HABIT SHAPING
+Becoming an Early Riser
+Phase 1: Be home by 10 p.m. every night.
+Phase 2: Have all devices (TV, phone, etc.) turned off by 10 p.m. every night.
+Phase 3: Be in bed by 10 p.m. every night (reading a book, talking with your partner).
+Phase 4: Lights off by 10 p.m. every night.
+Phase 5: Wake up at 6 a.m. every day.
+Becoming Vegan
+Phase 1: Start eating vegetables at each meal.
+Phase 2: Stop eating animals with four legs (cow, pig, lamb, etc.).
+Phase 3: Stop eating animals with two legs (chicken, turkey, etc.).
+Phase 4: Stop eating animals with no legs (fish, clams, scallops, etc.).
+Phase 5: Stop eating all animal products (eggs, milk, cheese).
+Starting to Exercise
+Phase 1: Change into workout clothes.
+Phase 2: Step out the door (try taking a walk).
+Phase 3: Drive to the gym, exercise for five minutes, and leave.
+Phase 4: Exercise for fifteen minutes at least once per week.
+Phase 5: Exercise three times per week.
+Nearly any larger life goal can be transformed into a two-minute behavior. I
+want to live a healthy and long life > I need to stay in shape > I need to exercise
+> I need to change into my workout clothes. I want to have a happy marriage > I
+need to be a good partner > I should do something each day to make my
+partner’s life easier > I should meal plan for next week.
+Whenever you are struggling to stick with a habit, you can employ the TwoMinute Rule. It’s a simple way to make your habits easy.
+Chapter Summary
+Habits can be completed in a few seconds but continue to impact your
+behavior for minutes or hours afterward.
+Many habits occur at decisive moments—choices that are like a fork in
+the road—and either send you in the direction of a productive day or
+an unproductive one.
+The Two-Minute Rule states, “When you start a new habit, it should
+take less than two minutes to do.”
+The more you ritualize the beginning of a process, the more likely it
+becomes that you can slip into the state of deep focus that is required
+to do great things.
+Standardize before you optimize. You can’t improve a habit that
+doesn’t exist.`,
+  },
+  {
+    chapter_number: 14,
+    title: "How to Make Good Habits Inevitable and Bad Habits Impossible",
+    content: `IN THE SUMMER OF 1830, Victor Hugo was facing an impossible deadline. Twelve months
+earlier, the French author had promised his publisher a new book. But instead of
+writing, he spent that year pursuing other projects, entertaining guests, and
+delaying his work. Frustrated, Hugo’s publisher responded by setting a deadline
+less than six months away. The book had to be finished by February 1831.
+Hugo concocted a strange plan to beat his procrastination. He collected all of
+his clothes and asked an assistant to lock them away in a large chest. He was left
+with nothing to wear except a large shawl. Lacking any suitable clothing to go
+outdoors, he remained in his study and wrote furiously during the fall and winter
+of 1830. The Hunchback of Notre Dame was published two weeks early on
+January 14, 1831.*
+Sometimes success is less about making good habits easy and more about
+making bad habits hard. This is an inversion of the 3rd Law of Behavior Change:
+make it difficult. If you find yourself continually struggling to follow through on
+your plans, then you can take a page from Victor Hugo and make your bad
+habits more difficult by creating what psychologists call a commitment device.
+A commitment device is a choice you make in the present that controls your
+actions in the future. It is a way to lock in future behavior, bind you to good
+habits, and restrict you from bad ones. When Victor Hugo shut his clothes away
+so he could focus on writing, he was creating a commitment device.*
+There are many ways to create a commitment device. You can reduce
+overeating by purchasing food in individual packages rather than in bulk size.
+You can voluntarily ask to be added to the banned list at casinos and online
+poker sites to prevent future gambling sprees. I’ve even heard of athletes who
+have to “make weight” for a competition choosing to leave their wallets at home
+during the week before weigh-in so they won’t be tempted to buy fast food.
+As another example, my friend and fellow habits expert Nir Eyal purchased an
+outlet timer, which is an adapter that he plugged in between his internet router
+and the power outlet. At 10 p.m. each night, the outlet timer cuts off the power to
+the router. When the internet goes off, everyone knows it is time to go to bed.
+Commitment devices are useful because they enable you to take advantage of
+good intentions before you can fall victim to temptation. Whenever I’m looking
+to cut calories, for example, I will ask the waiter to split my meal and box half of
+it to go before the meal is served. If I waited until the meal came out and told
+myself “I’ll just eat half,” it would never work.
+The key is to change the task such that it requires more work to get out of the
+good habit than to get started on it. If you’re feeling motivated to get in shape,
+schedule a yoga session and pay ahead of time. If you’re excited about the
+business you want to start, email an entrepreneur you respect and set up a
+consulting call. When the time comes to act, the only way to bail is to cancel the
+meeting, which requires effort and may cost money.
+Commitment devices increase the odds that you’ll do the right thing in the
+future by making bad habits difficult in the present. However, we can do even
+better. We can make good habits inevitable and bad habits impossible.
+HOW TO AUTOMATE A HABIT AND NEVER THINK ABOUT IT
+AGAIN
+John Henry Patterson was born in Dayton, Ohio, in 1844. He spent his childhood
+doing chores on the family farm and working shifts at his father’s sawmill. After
+attending college at Dartmouth, Patterson returned to Ohio and opened a small
+supply store for coal miners.
+It seemed like a good opportunity. The store faced little competition and
+enjoyed a steady stream of customers, but still struggled to make money. That
+was when Patterson discovered his employees were stealing from him.
+In the mid-1800s, employee theft was a common problem. Receipts were kept
+in an open drawer and could easily be altered or discarded. There were no video
+cameras to review behavior and no software to track transactions. Unless you
+were willing to hover over your employees every minute of the day, or to
+manage all transactions yourself, it was difficult to prevent theft.
+As Patterson mulled over his predicament, he came across an advertisement
+for a new invention called Ritty’s Incorruptible Cashier. Designed by fellow
+Dayton resident James Ritty, it was the first cash register. The machine
+automatically locked the cash and receipts inside after each transaction.
+Patterson bought two for fifty dollars each.
+Employee theft at his store vanished overnight. In the next six months,
+Patterson’s business went from losing money to making $5,000 in profit—the
+equivalent of more than $100,000 today.
+Patterson was so impressed with the machine that he changed businesses. He
+bought the rights to Ritty’s invention and opened the National Cash Register
+Company. Ten years later, National Cash Register had over one thousand
+employees and was on its way to becoming one of the most successful
+businesses of its time.
+The best way to break a bad habit is to make it impractical to do. Increase the
+friction until you don’t even have the option to act. The brilliance of the cash
+register was that it automated ethical behavior by making stealing practically
+impossible. Rather than trying to change the employees, it made the preferred
+behavior automatic.
+Some actions—like installing a cash register—pay off again and again. These
+onetime choices require a little bit of effort up front but create increasing value
+over time. I’m fascinated by the idea that a single choice can deliver returns
+again and again, and I surveyed my readers on their favorite onetime actions that
+lead to better long-term habits. The table on the following page shares some of
+the most popular answers.
+I’d wager that if the average person were to simply do half of the onetime
+actions on this list—even if they didn’t give another thought to their habits—
+most would find themselves living a better life a year from now. These onetime
+actions are a straightforward way to employ the 3rd Law of Behavior Change.
+They make it easier to sleep well, eat healthy, be productive, save money, and
+generally live better.
+ONETIME ACTIONS THAT LOCK IN GOOD HABITS
+Nutrition
+Buy a water filter to clean your drinking water.
+Use smaller plates to reduce caloric intake.
+Sleep
+Buy a good mattress.
+Get blackout curtains.
+Remove your television from your bedroom.
+Productivity
+Unsubscribe from emails.
+Turn off notifications and mute group chats.
+Set your phone to silent.
+Use email filters to clear up your inbox.
+Delete games and social media apps on your phone.
+Happiness
+Get a dog.
+Move to a friendly, social neighborhood.
+General Health
+Get vaccinated.
+Buy good shoes to avoid back pain.
+Buy a supportive chair or standing desk.
+Finance
+Enroll in an automatic savings plan.
+Set up automatic bill pay.
+Cut cable service.
+Ask service providers to lower your bills.
+Of course, there are many ways to automate good habits and eliminate bad
+ones. Typically, they involve putting technology to work for you. Technology
+can transform actions that were once hard, annoying, and complicated into
+behaviors that are easy, painless, and simple. It is the most reliable and effective
+way to guarantee the right behavior.
+This is particularly useful for behaviors that happen too infrequently to
+become habitual. Things you have to do monthly or yearly—like rebalancing
+your investment portfolio—are never repeated frequently enough to become a
+habit, so they benefit in particular from technology “remembering” to do them
+for you.
+Other examples include:
+Medicine: Prescriptions can be automatically refilled.
+Personal finance: Employees can save for retirement with an automatic
+wage deduction.
+Cooking: Meal-delivery services can do your grocery shopping.
+Productivity: Social media browsing can be cut off with a website
+blocker.
+When you automate as much of your life as possible, you can spend your
+effort on the tasks machines cannot do yet. Each habit that we hand over to the
+authority of technology frees up time and energy to pour into the next stage of
+growth. As mathematician and philosopher Alfred North Whitehead wrote,
+“Civilization advances by extending the number of operations we can perform
+without thinking about them.”
+Of course, the power of technology can work against us as well. Bingewatching becomes a habit because you have to put more effort in to stop looking
+at the screen than to continue doing so. Instead of pressing a button to advance to
+the next episode, Netflix or YouTube will autoplay it for you. All you have to do
+is keep your eyes open.
+Technology creates a level of convenience that enables you to act on your
+smallest whims and desires. At the mere suggestion of hunger, you can have
+food delivered to your door. At the slightest hint of boredom, you can get lost in
+the vast expanse of social media. When the effort required to act on your desires
+becomes effectively zero, you can find yourself slipping into whatever impulse
+arises at the moment. The downside of automation is that we can find ourselves
+jumping from easy task to easy task without making time for more difficult, but
+ultimately more rewarding, work.
+I often find myself gravitating toward social media during any downtime. If I
+feel bored for just a fraction of a second, I reach for my phone. It’s easy to write
+off these minor distractions as “just taking a break,” but over time they can
+accumulate into a serious issue. The constant tug of “just one more minute” can
+prevent me from doing anything of consequence. (I’m not the only one. The
+average person spends over two hours per day on social media. What could you
+do with an extra six hundred hours per year?)
+During the year I was writing this book, I experimented with a new time
+management strategy. Every Monday, my assistant would reset the passwords on
+all my social media accounts, which logged me out on each device. All week I
+worked without distraction. On Friday, she would send me the new passwords. I
+had the entire weekend to enjoy what social media had to offer until Monday
+morning when she would do it again. (If you don’t have an assistant, team up
+with a friend or family member and reset each other’s passwords each week.)
+One of the biggest surprises was how quickly I adapted. Within the first week
+of locking myself out of social media, I realized that I didn’t need to check it
+nearly as often as I had been, and I certainly didn’t need it each day. It had
+simply been so easy that it had become the default. Once my bad habit became
+impossible, I discovered that I did actually have the motivation to work on more
+meaningful tasks. After I removed the mental candy from my environment, it
+became much easier to eat the healthy stuff.
+When working in your favor, automation can make your good habits
+inevitable and your bad habits impossible. It is the ultimate way to lock in future
+behavior rather than relying on willpower in the moment. By utilizing
+commitment devices, strategic onetime decisions, and technology, you can
+create an environment of inevitability—a space where good habits are not just an
+outcome you hope for but an outcome that is virtually guaranteed.
+Chapter Summary
+The inversion of the 3rd Law of Behavior Change is make it difficult.
+A commitment device is a choice you make in the present that locks in
+better behavior in the future.
+The ultimate way to lock in future behavior is to automate your habits.
+Onetime choices—like buying a better mattress or enrolling in an
+automatic savings plan—are single actions that automate your future
+habits and deliver increasing returns over time.
+Using technology to automate your habits is the most reliable and
+effective way to guarantee the right behavior.`,
+  },
+  {
+    chapter_number: 15,
+    title: "The Cardinal Rule of Behavior Change",
+    content: `IN THE LATE 1990S, a public health worker named Stephen Luby left his hometown of
+Omaha, Nebraska, and bought a one-way ticket to Karachi, Pakistan.
+Karachi was one of the most populous cities in the world. By 1998, over nine
+million people called it home. It was the economic center of Pakistan and a
+transportation hub, with some of the most active airports and seaports in the
+region. In the commercial parts of town, you could find all of the standard urban
+amenities and bustling downtown streets. But Karachi was also one of the least
+livable cities in the world.
+Over 60 percent of Karachi’s residents lived in squatter settlements and slums.
+These densely packed neighborhoods were filled with makeshift houses cobbled
+together from old boards, cinder blocks, and other discarded materials. There
+was no waste removal system, no electricity grid, no clean water supply. When
+dry, the streets were a combination of dust and trash. When wet, they became a
+muddy pit of sewage. Mosquito colonies thrived in pools of stagnant water, and
+children played among the garbage.
+The unsanitary conditions lead to widespread illness and disease.
+Contaminated water sources caused epidemics of diarrhea, vomiting, and
+abdominal pain. Nearly one third of the children living there were malnourished.
+With so many people crammed into such a small space, viruses and bacterial
+infections spread rapidly. It was this public health crisis that had brought
+Stephen Luby to Pakistan.
+Luby and his team realized that in an environment with poor sanitation, the
+simple habit of washing your hands could make a real difference in the health of
+the residents. But they soon discovered that many people were already aware
+that handwashing was important.
+And yet, despite this knowledge, many residents were washing their hands in
+a haphazard fashion. Some people would just run their hands under the water
+quickly. Others would only wash one hand. Many would simply forget to wash
+their hands before preparing food. Everyone said handwashing was important,
+but few people made a habit out of it. The problem wasn’t knowledge. The
+problem was consistency.
+That was when Luby and his team partnered with Procter & Gamble to supply
+the neighborhood with Safeguard soap. Compared to your standard bar of soap,
+using Safeguard was a more enjoyable experience.
+“In Pakistan, Safeguard was a premium soap,” Luby told me. “The study
+participants commonly mentioned how much they liked it.” The soap foamed
+easily, and people were able to lather their hands with suds. It smelled great.
+Instantly, handwashing became slightly more pleasurable.
+“I see the goal of handwashing promotion not as behavior change but as habit
+adoption,” Luby said. “It is a lot easier for people to adopt a product that
+provides a strong positive sensory signal, for example the mint taste of
+toothpaste, than it is to adopt a habit that does not provide pleasurable sensory
+feedback, like flossing one’s teeth. The marketing team at Procter & Gamble
+talked about trying to create a positive handwashing experience.”
+Within months, the researchers saw a rapid shift in the health of children in
+the neighborhood. The rate of diarrhea fell by 52 percent; pneumonia by 48
+percent; and impetigo, a bacterial skin infection, by 35 percent.
+The long-term effects were even better. “We went back to some of the
+households in Karachi six years after,” Luby told me. “Over 95 percent of
+households who had been given the soap for free and encouraged to wash their
+hands had a handwashing station with soap and water available when our study
+team visited. . . . We had not given any soap to the intervention group for over
+five years, but during the trial they had become so habituated to wash their
+hands, that they had maintained the practice.” It was a powerful example of the
+fourth and final Law of Behavior Change: make it satisfying.
+We are more likely to repeat a behavior when the experience is satisfying.
+This is entirely logical. Feelings of pleasure—even minor ones like washing
+your hands with soap that smells nice and lathers well—are signals that tell the
+brain: “This feels good. Do this again, next time.” Pleasure teaches your brain
+that a behavior is worth remembering and repeating.
+Take the story of chewing gum. Chewing gum had been sold commercially
+throughout the 1800s, but it wasn’t until Wrigley launched in 1891 that it
+became a worldwide habit. Early versions were made from relatively bland
+resins—chewy, but not tasty. Wrigley revolutionized the industry by adding
+flavors like Spearmint and Juicy Fruit, which made the product flavorful and fun
+to use. Then they went a step further and began pushing chewing gum as a
+pathway to a clean mouth. Advertisements told readers to “Refresh Your Taste.”
+Tasty flavors and the feeling of a fresh mouth provided little bits of immediate
+reinforcement and made the product satisfying to use. Consumption skyrocketed,
+and Wrigley became the largest chewing gum company in the world.
+Toothpaste had a similar trajectory. Manufacturers enjoyed great success
+when they added flavors like spearmint, peppermint, and cinnamon to their
+products. These flavors don’t improve the effectiveness of toothpaste. They
+simply create a “clean mouth” feel and make the experience of brushing your
+teeth more pleasurable. My wife actually stopped using Sensodyne because she
+didn’t like the aftertaste. She switched to a brand with a stronger mint flavor,
+which proved to be more satisfying.
+Conversely, if an experience is not satisfying, we have little reason to repeat
+it. In my research, I came across the story of a woman who had a narcissistic
+relative who drove her nuts. In an attempt to spend less time with this
+egomaniac, she acted as dull and as boring as possible whenever he was around.
+Within a few encounters, he started avoiding her because he found her so
+uninteresting.
+Stories like these are evidence of the Cardinal Rule of Behavior Change: What
+is rewarded is repeated. What is punished is avoided. You learn what to do in
+the future based on what you were rewarded for doing (or punished for doing) in
+the past. Positive emotions cultivate habits. Negative emotions destroy them.
+The first three laws of behavior change—make it obvious, make it attractive,
+and make it easy—increase the odds that a behavior will be performed this time.
+The fourth law of behavior change—make it satisfying—increases the odds that
+a behavior will be repeated next time. It completes the habit loop.
+But there is a trick. We are not looking for just any type of satisfaction. We
+are looking for immediate satisfaction.
+THE MISMATCH BETWEEN IMMEDIATE AND DELAYED
+REWARDS
+Imagine you’re an animal roaming the plains of Africa—a giraffe or an elephant
+or a lion. On any given day, most of your decisions have an immediate impact.
+You are always thinking about what to eat or where to sleep or how to avoid a
+predator. You are constantly focused on the present or the very near future. You
+live in what scientists call an immediate-return environment because your
+actions instantly deliver clear and immediate outcomes.
+Now switch back to your human self. In modern society, many of the choices
+you make today will not benefit you immediately. If you do a good job at work,
+you’ll get a paycheck in a few weeks. If you exercise today, perhaps you won’t
+be overweight next year. If you save money now, maybe you’ll have enough for
+retirement decades from now. You live in what scientists call a delayed-return
+environment because you can work for years before your actions deliver the
+intended payoff.
+The human brain did not evolve for life in a delayed-return environment. The
+earliest remains of modern humans, known as Homo sapiens sapiens, are
+approximately two hundred thousand years old. These were the first humans to
+have a brain relatively similar to ours. In particular, the neocortex—the newest
+part of the brain and the region responsible for higher functions like language—
+was roughly the same size two hundred thousand years ago as today. You are
+walking around with the same hardware as your Paleolithic ancestors.
+It is only recently—during the last five hundred years or so—that society has
+shifted to a predominantly delayed-return environment.* Compared to the age of
+the brain, modern society is brand-new. In the last one hundred years, we have
+seen the rise of the car, the airplane, the television, the personal computer, the
+internet, the smartphone, and Beyoncé. The world has changed much in recent
+years, but human nature has changed little.
+Similar to other animals on the African savannah, our ancestors spent their
+days responding to grave threats, securing the next meal, and taking shelter from
+a storm. It made sense to place a high value on instant gratification. The distant
+future was less of a concern. And after thousands of generations in an
+immediate-return environment, our brains evolved to prefer quick payoffs to
+long-term ones.
+Behavioral economists refer to this tendency as time inconsistency. That is,
+the way your brain evaluates rewards is inconsistent across time.* You value the
+present more than the future. Usually, this tendency serves us well. A reward
+that is certain right now is typically worth more than one that is merely possible
+in the future. But occasionally, our bias toward instant gratification causes
+problems.
+Why would someone smoke if they know it increases the risk of lung cancer?
+Why would someone overeat when they know it increases their risk of obesity?
+Why would someone have unsafe sex if they know it can result in sexually
+transmitted disease? Once you understand how the brain prioritizes rewards, the
+answers become clear: the consequences of bad habits are delayed while the
+rewards are immediate. Smoking might kill you in ten years, but it reduces stress
+and eases your nicotine cravings now. Overeating is harmful in the long run but
+appetizing in the moment. Sex—safe or not—provides pleasure right away.
+Disease and infection won’t show up for days or weeks, even years.
+Every habit produces multiple outcomes across time. Unfortunately, these
+outcomes are often misaligned. With our bad habits, the immediate outcome
+usually feels good, but the ultimate outcome feels bad. With good habits, it is the
+reverse: the immediate outcome is unenjoyable, but the ultimate outcome feels
+good. The French economist Frédéric Bastiat explained the problem clearly
+when he wrote, “It almost always happens that when the immediate consequence
+is favorable, the later consequences are disastrous, and vice versa. . . . Often, the
+sweeter the first fruit of a habit, the more bitter are its later fruits.”
+Put another way, the costs of your good habits are in the present. The costs of
+your bad habits are in the future.
+The brain’s tendency to prioritize the present moment means you can’t rely on
+good intentions. When you make a plan—to lose weight, write a book, or learn a
+language—you are actually making plans for your future self. And when you
+envision what you want your life to be like, it is easy to see the value in taking
+actions with long-term benefits. We all want better lives for our future selves.
+However, when the moment of decision arrives, instant gratification usually
+wins. You are no longer making a choice for Future You, who dreams of being
+fitter or wealthier or happier. You are choosing for Present You, who wants to be
+full, pampered, and entertained. As a general rule, the more immediate pleasure
+you get from an action, the more strongly you should question whether it aligns
+with your long-term goals.*
+With a fuller understanding of what causes our brain to repeat some behaviors
+and avoid others, let’s update the Cardinal Rule of Behavior Change: What is
+immediately rewarded is repeated. What is immediately punished is avoided.
+Our preference for instant gratification reveals an important truth about
+success: because of how we are wired, most people will spend all day chasing
+quick hits of satisfaction. The road less traveled is the road of delayed
+gratification. If you’re willing to wait for the rewards, you’ll face less
+competition and often get a bigger payoff. As the saying goes, the last mile is
+always the least crowded.
+This is precisely what research has shown. People who are better at delaying
+gratification have higher SAT scores, lower levels of substance abuse, lower
+likelihood of obesity, better responses to stress, and superior social skills. We’ve
+all seen this play out in our own lives. If you delay watching television and get
+your homework done, you’ll generally learn more and get better grades. If you
+don’t buy desserts and chips at the store, you’ll often eat healthier food when
+you get home. At some point, success in nearly every field requires you to ignore
+an immediate reward in favor of a delayed reward.
+Here’s the problem: most people know that delaying gratification is the wise
+approach. They want the benefits of good habits: to be healthy, productive, at
+peace. But these outcomes are seldom top-of-mind at the decisive moment.
+Thankfully, it’s possible to train yourself to delay gratification—but you need to
+work with the grain of human nature, not against it. The best way to do this is to
+add a little bit of immediate pleasure to the habits that pay off in the long-run
+and a little bit of immediate pain to ones that don’t.
+HOW TO TURN INSTANT GRATIFICATION TO YOUR ADVANTAGE
+The vital thing in getting a habit to stick is to feel successful—even if it’s in a
+small way. The feeling of success is a signal that your habit paid off and that the
+work was worth the effort.
+In a perfect world, the reward for a good habit is the habit itself. In the real
+world, good habits tend to feel worthwhile only after they have provided you
+with something. Early on, it’s all sacrifice. You’ve gone to the gym a few times,
+but you’re not stronger or fitter or faster—at least, not in any noticeable sense.
+It’s only months later, once you shed a few pounds or your arms gain some
+definition, that it becomes easier to exercise for its own sake. In the beginning,
+you need a reason to stay on track. This is why immediate rewards are essential.
+They keep you excited while the delayed rewards accumulate in the background.
+What we’re really talking about here—when we’re discussing immediate
+rewards—is the ending of a behavior. The ending of any experience is vital
+because we tend to remember it more than other phases. You want the ending of
+your habit to be satisfying. The best approach is to use reinforcement, which
+refers to the process of using an immediate reward to increase the rate of a
+behavior. Habit stacking, which we covered in Chapter 5, ties your habit to an
+immediate cue, which makes it obvious when to start. Reinforcement ties your
+habit to an immediate reward, which makes it satisfying when you finish.
+Immediate reinforcement can be especially helpful when dealing with habits
+of avoidance, which are behaviors you want to stop doing. It can be challenging
+to stick with habits like “no frivolous purchases” or “no alcohol this month”
+because nothing happens when you skip happy hour drinks or don’t buy that pair
+of shoes. It can be hard to feel satisfied when there is no action in the first place.
+All you’re doing is resisting temptation, and there isn’t much satisfying about
+that.
+One solution is to turn the situation on its head. You want to make avoidance
+visible. Open a savings account and label it for something you want—maybe
+“Leather Jacket.” Whenever you pass on a purchase, put the same amount of
+money in the account. Skip your morning latte? Transfer $5. Pass on another
+month of Netflix? Move $10 over. It’s like creating a loyalty program for
+yourself. The immediate reward of seeing yourself save money toward the
+leather jacket feels a lot better than being deprived. You are making it satisfying
+to do nothing.
+One of my readers and his wife used a similar setup. They wanted to stop
+eating out so much and start cooking together more. They labeled their savings
+account “Trip to Europe.” Whenever they skipped going out to eat, they
+transferred $50 into the account. At the end of the year, they put the money
+toward the vacation.
+It is worth noting that it is important to select short-term rewards that
+reinforce your identity rather than ones that conflict with it. Buying a new jacket
+is fine if you’re trying to lose weight or read more books, but it doesn’t work if
+you’re trying to budget and save money. Instead, taking a bubble bath or going
+on a leisurely walk are good examples of rewarding yourself with free time,
+which aligns with your ultimate goal of more freedom and financial
+independence. Similarly, if your reward for exercising is eating a bowl of ice
+cream, then you’re casting votes for conflicting identities, and it ends up being a
+wash. Instead, maybe your reward is a massage, which is both a luxury and a
+vote toward taking care of your body. Now the short-term reward is aligned with
+your long-term vision of being a healthy person.
+Eventually, as intrinsic rewards like a better mood, more energy, and reduced
+stress kick in, you’ll become less concerned with chasing the secondary reward.
+The identity itself becomes the reinforcer. You do it because it’s who you are
+and it feels good to be you. The more a habit becomes part of your life, the less
+you need outside encouragement to follow through. Incentives can start a habit.
+Identity sustains a habit.
+That said, it takes time for the evidence to accumulate and a new identity to
+emerge. Immediate reinforcement helps maintain motivation in the short term
+while you’re waiting for the long-term rewards to arrive.
+In summary, a habit needs to be enjoyable for it to last. Simple bits of
+reinforcement—like soap that smells great or toothpaste that has a refreshing
+mint flavor or seeing $50 hit your savings account—can offer the immediate
+pleasure you need to enjoy a habit. And change is easy when it is enjoyable.
+Chapter Summary
+The 4th Law of Behavior Change is make it satisfying.
+We are more likely to repeat a behavior when the experience is
+satisfying.
+The human brain evolved to prioritize immediate rewards over delayed
+rewards.
+The Cardinal Rule of Behavior Change: What is immediately rewarded
+is repeated. What is immediately punished is avoided.
+To get a habit to stick you need to feel immediately successful—even
+if it’s in a small way.
+The first three laws of behavior change—make it obvious, make it
+attractive, and make it easy—increase the odds that a behavior will be
+performed this time. The fourth law of behavior change—make it
+satisfying—increases the odds that a behavior will be repeated next
+time.`,
+  },
+  {
+    chapter_number: 16,
+    title: "How to Stick with Good Habits Every Day",
+    content: `IN 1993, a bank in Abbotsford, Canada, hired a twenty-three-year-old stockbroker
+named Trent Dyrsmid. Abbotsford was a relatively small suburb, tucked away in
+the shadow of nearby Vancouver, where most of the big business deals were
+being made. Given the location, and the fact that Dyrsmid was a rookie, nobody
+expected too much of him. But he made brisk progress thanks to a simple daily
+habit.
+Dyrsmid began each morning with two jars on his desk. One was filled with
+120 paper clips. The other was empty. As soon as he settled in each day, he
+would make a sales call. Immediately after, he would move one paper clip from
+the full jar to the empty jar and the process would begin again. “Every morning I
+would start with 120 paper clips in one jar and I would keep dialing the phone
+until I had moved them all to the second jar,” he told me.
+Within eighteen months, Dyrsmid was bringing in $5 million to the firm. By
+age twenty-four, he was making $75,000 per year—the equivalent of $125,000
+today. Not long after, he landed a six-figure job with another company.
+I like to refer to this technique as the Paper Clip Strategy and, over the years,
+I’ve heard from readers who have employed it in a variety of ways. One woman
+shifted a hairpin from one container to another whenever she wrote a page of her
+book. Another man moved a marble from one bin to the next after each set of
+push-ups.
+Making progress is satisfying, and visual measures—like moving paper clips
+or hairpins or marbles—provide clear evidence of your progress. As a result,
+they reinforce your behavior and add a little bit of immediate satisfaction to any
+activity. Visual measurement comes in many forms: food journals, workout logs,
+loyalty punch cards, the progress bar on a software download, even the page
+numbers in a book. But perhaps the best way to measure your progress is with a
+habit tracker.
+HOW TO KEEP YOUR HABITS ON TRACK
+A habit tracker is a simple way to measure whether you did a habit. The most
+basic format is to get a calendar and cross off each day you stick with your
+routine. For example, if you meditate on Monday, Wednesday, and Friday, each
+of those dates gets an X. As time rolls by, the calendar becomes a record of your
+habit streak.
+Countless people have tracked their habits, but perhaps the most famous was
+Benjamin Franklin. Beginning at age twenty, Franklin carried a small booklet
+everywhere he went and used it to track thirteen personal virtues. This list
+included goals like “Lose no time. Be always employed in something useful”
+and “Avoid trifling conversation.” At the end of each day, Franklin would open
+his booklet and record his progress.
+Jerry Seinfeld reportedly uses a habit tracker to stick with his streak of writing
+jokes. In the documentary Comedian, he explains that his goal is simply to
+“never break the chain” of writing jokes every day. In other words, he is not
+focused on how good or bad a particular joke is or how inspired he feels. He is
+simply focused on showing up and adding to his streak.
+“Don’t break the chain” is a powerful mantra. Don’t break the chain of sales
+calls and you’ll build a successful book of business. Don’t break the chain of
+workouts and you’ll get fit faster than you’d expect. Don’t break the chain of
+creating every day and you will end up with an impressive portfolio. Habit
+tracking is powerful because it leverages multiple Laws of Behavior Change. It
+simultaneously makes a behavior obvious, attractive, and satisfying.
+Let’s break down each one.
+Benefit #1: Habit tracking is obvious.
+Recording your last action creates a trigger that can initiate your next one. Habit
+tracking naturally builds a series of visual cues like the streak of X’s on your
+calendar or the list of meals in your food log. When you look at the calendar and
+see your streak, you’ll be reminded to act again. Research has shown that people
+who track their progress on goals like losing weight, quitting smoking, and
+lowering blood pressure are all more likely to improve than those who don’t.
+One study of more than sixteen hundred people found that those who kept a
+daily food log lost twice as much weight as those who did not. The mere act of
+tracking a behavior can spark the urge to change it.
+Habit tracking also keeps you honest. Most of us have a distorted view of our
+own behavior. We think we act better than we do. Measurement offers one way
+to overcome our blindness to our own behavior and notice what’s really going
+on each day. One glance at the paper clips in the container and you immediately
+know how much work you have (or haven’t) been putting in. When the evidence
+is right in front of you, you’re less likely to lie to yourself.
+Benefit #2: Habit tracking is attractive.
+The most effective form of motivation is progress. When we get a signal that we
+are moving forward, we become more motivated to continue down that path. In
+this way, habit tracking can have an addictive effect on motivation. Each small
+win feeds your desire.
+This can be particularly powerful on a bad day. When you’re feeling down,
+it’s easy to forget about all the progress you have already made. Habit tracking
+provides visual proof of your hard work—a subtle reminder of how far you’ve
+come. Plus, the empty square you see each morning can motivate you to get
+started because you don’t want to lose your progress by breaking the streak.
+Benefit #3: Habit tracking is satisfying.
+This is the most crucial benefit of all. Tracking can become its own form of
+reward. It is satisfying to cross an item off your to-do list, to complete an entry
+in your workout log, or to mark an X on the calendar. It feels good to watch your
+results grow—the size of your investment portfolio, the length of your book
+manuscript—and if it feels good, then you’re more likely to endure.
+Habit tracking also helps keep your eye on the ball: you’re focused on the
+process rather than the result. You’re not fixated on getting six-pack abs, you’re
+just trying to keep the streak alive and become the type of person who doesn’t
+miss workouts.
+In summary, habit tracking (1) creates a visual cue that can remind you to act,
+(2) is inherently motivating because you see the progress you are making and
+don’t want to lose it, and (3) feels satisfying whenever you record another
+successful instance of your habit. Furthermore, habit tracking provides visual
+proof that you are casting votes for the type of person you wish to become,
+which is a delightful form of immediate and intrinsic gratification.*
+You may be wondering, if habit tracking is so useful, why have I waited so
+long to talk about it?
+Despite all the benefits, I’ve left this discussion until now for a simple reason:
+many people resist the idea of tracking and measuring. It can feel like a burden
+because it forces you into two habits: the habit you’re trying to build and the
+habit of tracking it. Counting calories sounds like a hassle when you’re already
+struggling to follow a diet. Writing down every sales call seems tedious when
+you’ve got work to do. It feels easier to say, “I’ll just eat less.” Or, “I’ll try
+harder.” Or, “I’ll remember to do it.” People inevitably tell me things like, “I
+have a decision journal, but I wish I used it more.” Or, “I recorded my workouts
+for a week, but then quit.” I’ve been there myself. I once made a food log to
+track my calories. I managed to do it for one meal and then gave up.
+Tracking isn’t for everyone, and there is no need to measure your entire life.
+But nearly anyone can benefit from it in some form—even if it’s only temporary.
+What can we do to make tracking easier?
+First, whenever possible, measurement should be automated. You’ll probably
+be surprised by how much you’re already tracking without knowing it. Your
+credit card statement tracks how often you go out to eat. Your Fitbit registers
+how many steps you take and how long you sleep. Your calendar records how
+many new places you travel to each year. Once you know where to get the data,
+add a note to your calendar to review it each week or each month, which is more
+practical than tracking it every day.
+Second, manual tracking should be limited to your most important habits. It is
+better to consistently track one habit than to sporadically track ten.
+Finally, record each measurement immediately after the habit occurs. The
+completion of the behavior is the cue to write it down. This approach allows you
+to combine the habitstacking method mentioned in Chapter 5 with habit tracking.
+The habit stacking + habit tracking formula is:
+After [CURRENT HABIT], I will [TRACK MY HABIT].
+After I hang up the phone from a sales call, I will move one paper clip
+over.
+After I finish each set at the gym, I will record it in my workout
+journal.
+After I put my plate in the dishwasher, I will write down what I ate.
+These tactics can make tracking your habits easier. Even if you aren’t the type
+of person who enjoys recording your behavior, I think you’ll find a few weeks of
+measurements to be insightful. It’s always interesting to see how you’ve actually
+been spending your time.
+That said, every habit streak ends at some point. And, more important than
+any single measurement, is having a good plan for when your habits slide off
+track.
+HOW TO RECOVER QUICKLY WHEN YOUR HABITS BREAK DOWN
+No matter how consistent you are with your habits, it is inevitable that life will
+interrupt you at some point. Perfection is not possible. Before long, an
+emergency will pop up—you get sick or you have to travel for work or your
+family needs a little more of your time.
+Whenever this happens to me, I try to remind myself of a simple rule: never
+miss twice.
+If I miss one day, I try to get back into it as quickly as possible. Missing one
+workout happens, but I’m not going to miss two in a row. Maybe I’ll eat an
+entire pizza, but I’ll follow it up with a healthy meal. I can’t be perfect, but I can
+avoid a second lapse. As soon as one streak ends, I get started on the next one.
+The first mistake is never the one that ruins you. It is the spiral of repeated
+mistakes that follows. Missing once is an accident. Missing twice is the start of a
+new habit.
+This is a distinguishing feature between winners and losers. Anyone can have
+a bad performance, a bad workout, or a bad day at work. But when successful
+people fail, they rebound quickly. The breaking of a habit doesn’t matter if the
+reclaiming of it is fast.
+I think this principle is so important that I’ll stick to it even if I can’t do a
+habit as well or as completely as I would like. Too often, we fall into an all-ornothing cycle with our habits. The problem is not slipping up; the problem is
+thinking that if you can’t do something perfectly, then you shouldn’t do it at all.
+You don’t realize how valuable it is to just show up on your bad (or busy)
+days. Lost days hurt you more than successful days help you. If you start with
+$100, then a 50 percent gain will take you to $150. But you only need a 33
+percent loss to take you back to $100. In other words, avoiding a 33 percent loss
+is just as valuable as achieving a 50 percent gain. As Charlie Munger says, “The
+first rule of compounding: Never interrupt it unnecessarily.”
+This is why the “bad” workouts are often the most important ones. Sluggish
+days and bad workouts maintain the compound gains you accrued from previous
+good days. Simply doing something—ten squats, five sprints, a push-up,
+anything really—is huge. Don’t put up a zero. Don’t let losses eat into your
+compounding.
+Furthermore, it’s not always about what happens during the workout. It’s
+about being the type of person who doesn’t miss workouts. It’s easy to train
+when you feel good, but it’s crucial to show up when you don’t feel like it—
+even if you do less than you hope. Going to the gym for five minutes may not
+improve your performance, but it reaffirms your identity.
+The all-or-nothing cycle of behavior change is just one pitfall that can derail
+your habits. Another potential danger—especially if you are using a habit tracker
+—is measuring the wrong thing.
+KNOWING WHEN (AND WHEN NOT) TO TRACK A HABIT
+Say you’re running a restaurant and you want to know if your chef is doing a
+good job. One way to measure success is to track how many customers pay for a
+meal each day. If more customers come in, the food must be good. If fewer
+customers come in, something must be wrong.
+However, this one measurement—daily revenue—only gives a limited picture
+of what’s really going on. Just because someone pays for a meal doesn’t mean
+they enjoy the meal. Even dissatisfied customers are unlikely to dine and dash.
+In fact, if you’re only measuring revenue, the food might be getting worse but
+you’re making up for it with marketing or discounts or some other method.
+Instead, it may be more effective to track how many customers finish their meal
+or perhaps the percentage of customers who leave a generous tip.
+The dark side of tracking a particular behavior is that we become driven by
+the number rather than the purpose behind it. If your success is measured by
+quarterly earnings, you will optimize sales, revenue, and accounting for
+quarterly earnings. If your success is measured by a lower number on the scale,
+you will optimize for a lower number on the scale, even if that means embracing
+crash diets, juice cleanses, and fat-loss pills. The human mind wants to “win”
+whatever game is being played.
+This pitfall is evident in many areas of life. We focus on working long hours
+instead of getting meaningful work done. We care more about getting ten
+thousand steps than we do about being healthy. We teach for standardized tests
+instead of emphasizing learning, curiosity, and critical thinking. In short, we
+optimize for what we measure. When we choose the wrong measurement, we get
+the wrong behavior.
+This is sometimes referred to as Goodhart’s Law. Named after the economist
+Charles Goodhart, the principle states, “When a measure becomes a target, it
+ceases to be a good measure.” Measurement is only useful when it guides you
+and adds context to a larger picture, not when it consumes you. Each number is
+simply one piece of feedback in the overall system.
+In our data-driven world, we tend to overvalue numbers and undervalue
+anything ephemeral, soft, and difficult to quantify. We mistakenly think the
+factors we can measure are the only factors that exist. But just because you can
+measure something doesn’t mean it’s the most important thing. And just because
+you can’t measure something doesn’t mean it’s not important at all.
+All of this to say, it’s crucial to keep habit tracking in its proper place. It can
+feel satisfying to record a habit and track your progress, but the measurement is
+not the only thing that matters. Furthermore, there are many ways to measure
+progress, and sometimes it helps to shift your focus to something entirely
+different.
+This is why nonscale victories can be effective for weight loss. The number
+on the scale may be stubborn, so if you focus solely on that number, your
+motivation will sag. But you may notice that your skin looks better or you wake
+up earlier or your sex drive got a boost. All of these are valid ways to track your
+improvement. If you’re not feeling motivated by the number on the scale,
+perhaps it’s time to focus on a different measurement—one that gives you more
+signals of progress.
+No matter how you measure your improvement, habit tracking offers a simple
+way to make your habits more satisfying. Each measurement provides a little bit
+of evidence that you’re moving in the right direction and a brief moment of
+immediate pleasure for a job well done.
+Chapter Summary
+One of the most satisfying feelings is the feeling of making progress.
+A habit tracker is a simple way to measure whether you did a habit—
+like marking an X on a calendar.
+Habit trackers and other visual forms of measurement can make your
+habits satisfying by providing clear evidence of your progress.
+Don’t break the chain. Try to keep your habit streak alive.
+Never miss twice. If you miss one day, try to get back on track as
+quickly as possible.
+Just because you can measure something doesn’t mean it’s the most
+important thing.`,
+  },
+  {
+    chapter_number: 17,
+    title: "How an Accountability Partner Can Change Everything",
+    content: `AFTER SERVING AS a pilot in World War II, Roger Fisher attended Harvard Law School
+and spent thirty-four years specializing in negotiation and conflict management.
+He founded the Harvard Negotiation Project and worked with numerous
+countries and world leaders on peace resolutions, hostage crises, and diplomatic
+compromises. But it was in the 1970s and 1980s, as the threat of nuclear war
+escalated, that Fisher developed perhaps his most interesting idea.
+At the time, Fisher was focused on designing strategies that could prevent
+nuclear war, and he had noticed a troubling fact. Any sitting president would
+have access to launch codes that could kill millions of people but would never
+actually see anyone die because he would always be thousands of miles away.
+“My suggestion was quite simple,” he wrote in 1981. “Put that [nuclear] code
+number in a little capsule, and then implant that capsule right next to the heart of
+a volunteer. The volunteer would carry with him a big, heavy butcher knife as he
+accompanied the President. If ever the President wanted to fire nuclear weapons,
+the only way he could do so would be for him first, with his own hands, to kill
+one human being. The President says, ‘George, I’m sorry but tens of millions
+must die.’ He has to look at someone and realize what death is—what an
+innocent death is. Blood on the White House carpet. It’s reality brought home.
+“When I suggested this to friends in the Pentagon they said, ‘My God, that’s
+terrible. Having to kill someone would distort the President’s judgment. He
+might never push the button.’”
+Throughout our discussion of the 4th Law of Behavior Change we have
+covered the importance of making good habits immediately satisfying. Fisher’s
+proposal is an inversion of the 4th Law: Make it immediately unsatisfying.
+Just as we are more likely to repeat an experience when the ending is
+satisfying, we are also more likely to avoid an experience when the ending is
+painful. Pain is an effective teacher. If a failure is painful, it gets fixed. If a
+failure is relatively painless, it gets ignored. The more immediate and more
+costly a mistake is, the faster you will learn from it. The threat of a bad review
+forces a plumber to be good at his job. The possibility of a customer never
+returning makes restaurants create good food. The cost of cutting the wrong
+blood vessel makes a surgeon master human anatomy and cut carefully. When
+the consequences are severe, people learn quickly.
+The more immediate the pain, the less likely the behavior. If you want to
+prevent bad habits and eliminate unhealthy behaviors, then adding an instant cost
+to the action is a great way to reduce their odds.
+We repeat bad habits because they serve us in some way, and that makes them
+hard to abandon. The best way I know to overcome this predicament is to
+increase the speed of the punishment associated with the behavior. There can’t
+be a gap between the action and the consequences.
+As soon as actions incur an immediate consequence, behavior begins to
+change. Customers pay their bills on time when they are charged a late fee.
+Students show up to class when their grade is linked to attendance. We’ll jump
+through a lot of hoops to avoid a little bit of immediate pain.
+There is, of course, a limit to this. If you’re going to rely on punishment to
+change behavior, then the strength of the punishment must match the relative
+strength of the behavior it is trying to correct. To be productive, the cost of
+procrastination must be greater than the cost of action. To be healthy, the cost of
+laziness must be greater than the cost of exercise. Getting fined for smoking in a
+restaurant or failing to recycle adds consequence to an action. Behavior only
+shifts if the punishment is painful enough and reliably enforced.
+In general, the more local, tangible, concrete, and immediate the consequence,
+the more likely it is to influence individual behavior. The more global,
+intangible, vague, and delayed the consequence, the less likely it is to influence
+individual behavior.
+Thankfully, there is a straightforward way to add an immediate cost to any
+bad habit: create a habit contract.
+THE HABIT CONTRACT
+The first seat belt law was passed in New York on December 1, 1984. At the
+time, just 14 percent of people in the United States regularly wore a seat belt—
+but that was all about to change.
+Within five years, over half of the nation had seat belt laws. Today, wearing a
+seat belt is enforceable by law in forty-nine of the fifty states. And it’s not just
+the legislation, the number of people wearing seat belts has changed dramatically
+as well. In 2016, over 88 percent of Americans buckled up each time they got in
+a car. In just over thirty years, there was a complete reversal in the habits of
+millions of people.
+Laws and regulations are an example of how government can change our
+habits by creating a social contract. As a society, we collectively agree to abide
+by certain rules and then enforce them as a group. Whenever a new piece of
+legislation impacts behavior—seat belt laws, banning smoking inside
+restaurants, mandatory recycling—it is an example of a social contract shaping
+our habits. The group agrees to act in a certain way, and if you don’t follow
+along, you’ll be punished.
+Just as governments use laws to hold citizens accountable, you can create a
+habit contract to hold yourself accountable. A habit contract is a verbal or
+written agreement in which you state your commitment to a particular habit and
+the punishment that will occur if you don’t follow through. Then you find one or
+two people to act as your accountability partners and sign off on the contract
+with you.
+Bryan Harris, an entrepreneur from Nashville, Tennessee, was the first person
+I saw put this strategy into action. Shortly after the birth of his son, Harris
+realized he wanted to shed a few pounds. He wrote up a habit contract between
+himself, his wife, and his personal trainer. The first version read, “Bryan’s #1
+objective for Q1 of 2017 is to start eating correctly again so he feels better, looks
+better, and is able to hit his long-term goal of 200 pounds at 10% body fat.”
+Below that statement, Harris laid out a road map for achieving his ideal
+outcome:
+Phase #1: Get back to a strict “slow-carb” diet in Q1.
+Phase #2: Start a strict macronutrient tracking program in Q2.
+Phase #3: Refine and maintain the details of his diet and workout
+program in Q3.
+Finally, he wrote out each of the daily habits that would get him to his goal.
+For example, “Write down all food that he consumes each day and weigh
+himself each day.”
+And then he listed the punishment if he failed: “If Bryan doesn’t do these two
+items then the following consequence will be enforced: He will have to dress up
+each workday and each Sunday morning for the rest of the quarter. Dress up is
+defined as not wearing jeans, t-shirts, hoodies, or shorts. He will also give Joey
+(his trainer) $200 to use as he sees fit if he misses one day of logging food.”
+At the bottom of the page, Harris, his wife, and his trainer all signed the
+contract.
+My initial reaction was that a contract like this seemed overly formal and
+unnecessary, especially the signatures. But Harris convinced me that signing the
+contract was an indication of seriousness. “Anytime I skip this part,” he said, “I
+start slacking almost immediately.”
+Three months later, after hitting his targets for Q1, Harris upgraded his goals.
+The consequences escalated, too. If he missed his carbohydrate and protein
+targets, he had to pay his trainer $100. And if he failed to weigh himself, he had
+to give his wife $500 to use as she saw fit. Perhaps most painfully, if he forgot to
+run sprints, he had to dress up for work every day and wear an Alabama hat the
+rest of the quarter—the bitter rival of his beloved Auburn team.
+The strategy worked. With his wife and trainer acting as accountability
+partners and with the habit contract clarifying exactly what to do each day,
+Harris lost the weight.*
+To make bad habits unsatisfying, your best option is to make them painful in
+the moment. Creating a habit contract is a straightforward way to do exactly that.
+Even if you don’t want to create a full-blown habit contract, simply having an
+accountability partner is useful. The comedian Margaret Cho writes a joke or
+song every day. She does the “song a day” challenge with a friend, which helps
+them both stay accountable. Knowing that someone is watching can be a
+powerful motivator. You are less likely to procrastinate or give up because there
+is an immediate cost. If you don’t follow through, perhaps they’ll see you as
+untrustworthy or lazy. Suddenly, you are not only failing to uphold your
+promises to yourself, but also failing to uphold your promises to others.
+You can even automate this process. Thomas Frank, an entrepreneur in
+Boulder, Colorado, wakes up at 5:55 each morning. And if he doesn’t, he has a
+tweet automatically scheduled that says, “It’s 6:10 and I’m not up because I’m
+lazy! Reply to this for $5 via PayPal (limit 5), assuming my alarm didn’t
+malfunction.”
+We are always trying to present our best selves to the world. We comb our
+hair and brush our teeth and dress ourselves carefully because we know these
+habits are likely to get a positive reaction. We want to get good grades and
+graduate from top schools to impress potential employers and mates and our
+friends and family. We care about the opinions of those around us because it
+helps if others like us. This is precisely why getting an accountability partner or
+signing a habit contract can work so well.
+Chapter Summary
+The inversion of the 4th Law of Behavior Change is make it
+unsatisfying.
+We are less likely to repeat a bad habit if it is painful or unsatisfying.
+An accountability partner can create an immediate cost to inaction. We
+care deeply about what others think of us, and we do not want others
+to have a lesser opinion of us.
+A habit contract can be used to add a social cost to any behavior. It
+makes the costs of violating your promises public and painful.
+Knowing that someone else is watching you can be a powerful
+motivator.
+HOW TO CREATE A GOO`,
+  },
+  {
+    chapter_number: 18,
+    title: "The Truth About Talent (When Genes Matter and When They Don’t)",
+    content: `MANY PEOPLE ARE familiar with Michael Phelps, who is widely considered to be one of
+the greatest athletes in history. Phelps has won more Olympic medals not only
+than any swimmer but also more than any Olympian in any sport.
+Fewer people know the name Hicham El Guerrouj, but he was a fantastic
+athlete in his own right. El Guerrouj is a Moroccan runner who holds two
+Olympic gold medals and is one of the greatest middle-distance runners of all
+time. For many years, he held the world record in the mile, 1,500-meter, and
+2,000-meter races. At the Olympic Games in Athens, Greece, in 2004, he won
+gold in the 1,500-meter and 5,000-meter races.
+These two athletes are wildly different in many ways. (For starters, one
+competed on land and the other in water.) But most notably, they differ
+significantly in height. El Guerrouj is five feet, nine inches tall. Phelps is six
+feet, four inches tall. Despite this seven-inch difference in height, the two men
+are identical in one respect: Michael Phelps and Hicham El Guerrouj wear the
+same length inseam on their pants.
+How is this possible? Phelps has relatively short legs for his height and a very
+long torso, the perfect build for swimming. El Guerrouj has incredibly long legs
+and a short upper body, an ideal frame for distance running.
+Now, imagine if these world-class athletes were to switch sports. Given his
+remarkable athleticism, could Michael Phelps become an Olympic-caliber
+distance runner with enough training? It’s unlikely. At peak fitness, Phelps
+weighed 194 pounds, which is 40 percent heavier than El Guerrouj, who
+competed at an ultralight 138 pounds. Taller runners are heavier runners, and
+every extra pound is a curse when it comes to distance running. Against elite
+competition, Phelps would be doomed from the start.
+Similarly, El Guerrouj might be one of the best runners in history, but it’s
+doubtful he would ever qualify for the Olympics as a swimmer. Since 1976, the
+average height of Olympic gold medalists in the men’s 1,500-meter run is five
+feet, ten inches. In comparison, the average height of Olympic gold medalists in
+the men’s 100-meter freestyle swim is six feet, four inches. Swimmers tend to be
+tall and have long backs and arms, which are ideal for pulling through the water.
+El Guerrouj would be at a severe disadvantage before he ever touched the pool.
+The secret to maximizing your odds of success is to choose the right field of
+competition. This is just as true with habit change as it is with sports and
+business. Habits are easier to perform, and more satisfying to stick with, when
+they align with your natural inclinations and abilities. Like Michael Phelps in the
+pool or Hicham El Guerrouj on the track, you want to play a game where the
+odds are in your favor.
+Embracing this strategy requires the acceptance of the simple truth that people
+are born with different abilities. Some people don’t like to discuss this fact. On
+the surface, your genes seem to be fixed, and it’s no fun to talk about things you
+cannot control. Plus, phrases like biological determinism makes it sound like
+certain individuals are destined for success and others doomed to failure. But
+this is a shortsighted view of the influence of genes on behavior.
+The strength of genetics is also their weakness. Genes cannot be easily
+changed, which means they provide a powerful advantage in favorable
+circumstances and a serious disadvantage in unfavorable circumstances. If you
+want to dunk a basketball, being seven feet tall is very useful. If you want to
+perform a gymnastics routine, being seven feet tall is a great hindrance. Our
+environment determines the suitability of our genes and the utility of our natural
+talents. When our environment changes, so do the qualities that determine
+success.
+This is true not just for physical characteristics but for mental ones as well.
+I’m smart if you ask me about habits and human behavior; not so much when it
+comes to knitting, rocket propulsion, or guitar chords. Competence is highly
+dependent on context.
+The people at the top of any competitive field are not only well trained, they
+are also well suited to the task. And this is why, if you want to be truly great,
+selecting the right place to focus is crucial.
+In short: genes do not determine your destiny. They determine your areas of
+opportunity. As physician Gabor Mate notes, “Genes can predispose, but they
+don’t predetermine.” The areas where you are genetically predisposed to success
+are the areas where habits are more likely to be satisfying. The key is to direct
+your effort toward areas that both excite you and match your natural skills, to
+align your ambition with your ability.
+The obvious question is, “How do I figure out where the odds are in my
+favor? How do I identify the opportunities and habits that are right for me?” The
+first place we will look for an answer is by understanding your personality.
+HOW YOUR PERSONALITY INFLUENCES YOUR HABITS
+Your genes are operating beneath the surface of every habit. Indeed, beneath the
+surface of every behavior. Genes have been shown to influence everything from
+the number of hours you spend watching television to your likelihood to marry
+or divorce to your tendency to get addicted to drugs, alcohol, or nicotine. There’s
+a strong genetic component to how obedient or rebellious you are when facing
+authority, how vulnerable or resistant you are to stressful events, how proactive
+or reactive you tend to be, and even how captivated or bored you feel during
+sensory experiences like attending a concert. As Robert Plomin, a behavioral
+geneticist at King’s College in London, told me, “It is now at the point where we
+have stopped testing to see if traits have a genetic component because we
+literally can’t find a single one that isn’t influenced by our genes.”
+Bundled together, your unique cluster of genetic traits predispose you to a
+particular personality. Your personality is the set of characteristics that is
+consistent from situation to situation. The most proven scientific analysis of
+personality traits is known as the “Big Five,” which breaks them down into five
+spectrums of behavior.
+1. Openness to experience: from curious and inventive on one end to
+cautious and consistent on the other.
+2. Conscientiousness: organized and efficient to easygoing and
+spontaneous.
+3. Extroversion: outgoing and energetic to solitary and reserved (you
+likely know them as extroverts vs. introverts).
+4. Agreeableness: friendly and compassionate to challenging and
+detached.
+5. Neuroticism: anxious and sensitive to confident, calm, and stable.
+All five characteristics have biological underpinnings. Extroversion, for
+instance, can be tracked from birth. If scientists play a loud noise in the nursing
+ward, some babies turn toward it while others turn away. When the researchers
+tracked these children through life, they found that the babies who turned toward
+the noise were more likely to grow up to be extroverts. Those who turned away
+were more likely to become introverts.
+People who are high in agreeableness are kind, considerate, and warm. They
+also tend to have higher natural oxytocin levels, a hormone that plays an
+important role in social bonding, increases feelings of trust, and can act as a
+natural antidepressant. You can easily imagine how someone with more
+oxytocin might be inclined to build habits like writing thank-you notes or
+organizing social events.
+As a third example, consider neuroticism, which is a personality trait all
+people possess to various degrees. People who are high in neuroticism tend to be
+anxious and worry more than others. This trait has been linked to
+hypersensitivity of the amygdala, the portion of the brain responsible for
+noticing threats. In other words, people who are more sensitive to negative cues
+in their environment are more likely to score high in neuroticism.
+Our habits are not solely determined by our personalities, but there is no doubt
+that our genes nudge us in a certain direction. Our deeply rooted preferences
+make certain behaviors easier for some people than for others. You don’t have to
+apologize for these differences or feel guilty about them, but you do have to
+work with them. A person who scores lower on conscientiousness, for example,
+will be less likely to be orderly by nature and may need to rely more heavily on
+environment design to stick with good habits. (As a reminder for the less
+conscientious readers among us, environment design is a strategy we discussed
+in Chapters 6 and 12.)
+The takeaway is that you should build habits that work for your personality.*
+People can get ripped working out like a bodybuilder, but if you prefer rock
+climbing or cycling or rowing, then shape your exercise habit around your
+interests. If your friend follows a low-carb diet but you find that low-fat works
+for you, then more power to you. If you want to read more, don’t be embarrassed
+if you prefer steamy romance novels over nonfiction. Read whatever fascinates
+you.* You don’t have to build the habits everyone tells you to build. Choose the
+habit that best suits you, not the one that is most popular.
+There is a version of every habit that can bring you joy and satisfaction. Find
+it. Habits need to be enjoyable if they are going to stick. This is the core idea
+behind the 4th Law.
+Tailoring your habits to your personality is a good start, but this is not the end
+of the story. Let’s turn our attention to finding and designing situations where
+you’re at a natural advantage.
+HOW TO FIND A GAME WHERE THE ODDS ARE IN YOUR FAVOR
+Learning to play a game where the odds are in your favor is critical for
+maintaining motivation and feeling successful. In theory, you can enjoy almost
+anything. In practice, you are more likely to enjoy the things that come easily to
+you. People who are talented in a particular area tend to be more competent at
+that task and are then praised for doing a good job. They stay energized because
+they are making progress where others have failed, and because they get
+rewarded with better pay and bigger opportunities, which not only makes them
+happier but also propels them to produce even higher-quality work. It’s a
+virtuous cycle.
+Pick the right habit and progress is easy. Pick the wrong habit and life is a
+struggle.
+How do you pick the right habit? The first step is something we covered in the
+3rd Law: make it easy. In many cases, when people pick the wrong habit, it
+simply means they picked a habit that was too difficult. When a habit is easy,
+you are more likely to be successful. When you are successful, you are more
+likely to feel satisfied. However, there is another level to consider. In the longrun, if you continue to advance and improve, any area can become challenging.
+At some point, you need to make sure you’re playing the right game for your
+skillset. How do you figure that out?
+The most common approach is trial and error. Of course, there’s a problem
+with this strategy: life is short. You don’t have time to try every career, date
+every eligible bachelor, or play every musical instrument. Thankfully, there is an
+effective way to manage this conundrum, and it is known as the explore/exploit
+trade-off.
+In the beginning of a new activity, there should be a period of exploration. In
+relationships, it’s called dating. In college, it’s called the liberal arts. In business,
+it’s called split testing. The goal is to try out many possibilities, research a broad
+range of ideas, and cast a wide net.
+After this initial period of exploration, shift your focus to the best solution
+you’ve found—but keep experimenting occasionally. The proper balance
+depends on whether you’re winning or losing. If you are currently winning, you
+exploit, exploit, exploit. If you are currently losing, you continue to explore,
+explore, explore.
+In the long-run it is probably most effective to work on the strategy that seems
+to deliver the best results about 80 to 90 percent of the time and keep exploring
+with the remaining 10 to 20 percent. Google famously asks employees to spend
+80 percent of the workweek on their official job and 20 percent on projects of
+their choice, which has led to the creation of blockbuster products like AdWords
+and Gmail.
+The optimal approach also depends on how much time you have. If you have
+a lot of time—like someone at the beginning of their career—it makes more
+sense to explore because once you find the right thing, you still have a good
+amount of time to exploit it. If you’re pressed for time—say, as you come up on
+the deadline for a project—you should implement the best solution you’ve found
+so far and get some results.
+As you explore different options, there are a series of questions you can ask
+yourself to continually narrow in on the habits and areas that will be most
+satisfying to you:
+What feels like fun to me, but work to others? The mark of whether you
+are made for a task is not whether you love it but whether you can handle
+the pain of the task easier than most people. When are you enjoying
+yourself while other people are complaining? The work that hurts you less
+than it hurts others is the work you were made to do.
+What makes me lose track of time? Flow is the mental state you enter
+when you are so focused on the task at hand that the rest of the world fades
+away. This blend of happiness and peak performance is what athletes and
+performers experience when they are “in the zone.” It is nearly impossible
+to experience a flow state and not find the task satisfying at least to some
+degree.
+Where do I get greater returns than the average person? We are
+continually comparing ourselves to those around us, and a behavior is more
+likely to be satisfying when the comparison is in our favor. When I started
+writing at jamesclear.com, my email list grew very quickly. I wasn’t quite
+sure what I was doing well, but I knew that results seemed to be coming
+faster for me than for some of my colleagues, which motivated me to keep
+writing.
+What comes naturally to me? For just a moment, ignore what you have
+been taught. Ignore what society has told you. Ignore what others expect of
+you. Look inside yourself and ask, “What feels natural to me? When have I
+felt alive? When have I felt like the real me?” No internal judgments or
+people-pleasing. No second-guessing or self-criticism. Just feelings of
+engagement and enjoyment. Whenever you feel authentic and genuine, you
+are headed in the right direction.
+To be honest, some of this process is just luck. Michael Phelps and Hicham El
+Guerrouj were lucky to be born with a rare set of abilities that are highly valued
+by society and to be placed in the ideal environment for those abilities. We all
+have limited time on this planet, and the truly great among us are the ones who
+not only work hard but also have the good fortune to be exposed to opportunities
+that favor us.
+But what if you don’t want to leave it up to luck?
+If you can’t find a game where the odds are stacked in your favor, create one.
+Scott Adams, the cartoonist behind Dilbert, says, “Everyone has at least a few
+areas in which they could be in the top 25% with some effort. In my case, I can
+draw better than most people, but I’m hardly an artist. And I’m not any funnier
+than the average standup comedian who never makes it big, but I’m funnier than
+most people. The magic is that few people can draw well and write jokes. It’s the
+combination of the two that makes what I do so rare. And when you add in my
+business background, suddenly I had a topic that few cartoonists could hope to
+understand without living it.”
+When you can’t win by being better, you can win by being different. By
+combining your skills, you reduce the level of competition, which makes it
+easier to stand out. You can shortcut the need for a genetic advantage (or for
+years of practice) by rewriting the rules. A good player works hard to win the
+game everyone else is playing. A great player creates a new game that favors
+their strengths and avoids their weaknesses.
+In college, I designed my own major, biomechanics, which was a combination
+of physics, chemistry, biology, and anatomy. I wasn’t smart enough to stand out
+among the top physics or biology majors, so I created my own game. And
+because it suited me—I was only taking the courses I was interested in—
+studying felt like less of a chore. It was also easier to avoid the trap of
+comparing myself to everyone else. After all, nobody else was taking the same
+combination of classes, so who could say if they were better or worse?
+Specialization is a powerful way to overcome the “accident” of bad genetics.
+The more you master a specific skill, the harder it becomes for others to compete
+with you. Many bodybuilders are stronger than the average arm wrestler, but
+even a massive bodybuilder may lose at arm wrestling because the arm wrestling
+champ has very specific strength. Even if you’re not the most naturally gifted,
+you can often win by being the best in a very narrow category.
+Boiling water will soften a potato but harden an egg. You can’t control
+whether you’re a potato or an egg, but you can decide to play a game where it’s
+better to be hard or soft. If you can find a more favorable environment, you can
+transform the situation from one where the odds are against you to one where
+they are in your favor.
+HOW TO GET THE MOST OUT OF YOUR GENES
+Our genes do not eliminate the need for hard work. They clarify it. They tell us
+what to work hard on. Once we realize our strengths, we know where to spend
+our time and energy. We know which types of opportunities to look for and
+which types of challenges to avoid. The better we understand our nature, the
+better our strategy can be.
+Biological differences matter. Even so, it’s more productive to focus on
+whether you are fulfilling your own potential than comparing yourself to
+someone else. The fact that you have a natural limit to any specific ability has
+nothing to do with whether you are reaching the ceiling of your capabilities.
+People get so caught up in the fact that they have limits that they rarely exert the
+effort required to get close to them.
+Furthermore, genes can’t make you successful if you’re not doing the work.
+Yes, it’s possible that the ripped trainer at the gym has better genes, but if you
+haven’t put in the same reps, it’s impossible to say if you have been dealt a
+better or worse genetic hand. Until you work as hard as those you admire, don’t
+explain away their success as luck.
+In summary, one of the best ways to ensure your habits remain satisfying over
+the long-run is to pick behaviors that align with your personality and skills.
+Work hard on the things that come easy.
+Chapter Summary
+The secret to maximizing your odds of success is to choose the right
+field of competition.
+Pick the right habit and progress is easy. Pick the wrong habit and life
+is a struggle.
+Genes cannot be easily changed, which means they provide a powerful
+advantage in favorable circumstances and a serious disadvantage in
+unfavorable circumstances.
+Habits are easier when they align with your natural abilities. Choose
+the habits that best suit you.
+Play a game that favors your strengths. If you can’t find a game that
+favors you, create one.
+Genes do not eliminate the need for hard work. They clarify it. They
+tell us what to work hard on.
+19
+The Goldilocks Rule: How to Stay Motivated in
+Life and Work
+IN 1955, Disneyland had just opened in Anaheim, California, when a ten-year-old
+boy walked in and asked for a job. Labor laws were loose back then and the boy
+managed to land a position selling guidebooks for $0.50 apiece.
+Within a year, he had transitioned to Disney’s magic shop, where he learned
+tricks from the older employees. He experimented with jokes and tried out
+simple routines on visitors. Soon he discovered that what he loved was not
+performing magic but performing in general. He set his sights on becoming a
+comedian.
+Beginning in his teenage years, he started performing in `,
+  },
+  {
+    chapter_number: 19,
+    title: "The Goldilocks Rule: How to Stay Motivated in Life and Work",
+    content: `IN 1955, Disneyland had just opened in Anaheim, California, when a ten-year-old
+boy walked in and asked for a job. Labor laws were loose back then and the boy
+managed to land a position selling guidebooks for $0.50 apiece.
+Within a year, he had transitioned to Disney’s magic shop, where he learned
+tricks from the older employees. He experimented with jokes and tried out
+simple routines on visitors. Soon he discovered that what he loved was not
+performing magic but performing in general. He set his sights on becoming a
+comedian.
+Beginning in his teenage years, he started performing in little clubs around
+Los Angeles. The crowds were small and his act was short. He was rarely on
+stage for more than five minutes. Most of the people in the crowd were too busy
+drinking or talking with friends to pay attention. One night, he literally delivered
+his standup routine to an empty club.
+It wasn’t glamorous work, but there was no doubt he was getting better. His
+first routines would only last one or two minutes. By high school, his material
+had expanded to include a five-minute act and, a few years later, a ten-minute
+show. At nineteen, he was performing weekly for twenty minutes at a time. He
+had to read three poems during the show just to make the routine long enough,
+but his skills continued to progress.
+He spent another decade experimenting, adjusting, and practicing. He took a
+job as a television writer and, gradually, he was able to land his own appearances
+on talk shows. By the mid-1970s, he had worked his way into being a regular
+guest on The Tonight Show and Saturday Night Live.
+Finally, after nearly fifteen years of work, the young man rose to fame. He
+toured sixty cities in sixty-three days. Then seventy-two cities in eighty days.
+Then eighty-five cities in ninety days. He had 18,695 people attend one show in
+Ohio. Another 45,000 tickets were sold for his three-day show in New York. He
+catapulted to the top of his genre and became one of the most successful
+comedians of his time.
+His name is Steve Martin.
+Martin’s story offers a fascinating perspective on what it takes to stick with
+habits for the long run. Comedy is not for the timid. It is hard to imagine a
+situation that would strike fear into the hearts of more people than performing
+alone on stage and failing to get a single laugh. And yet Steve Martin faced this
+fear every week for eighteen years. In his words, “10 years spent learning, 4
+years spent refining, and 4 years as a wild success.”
+Why is it that some people, like Martin, stick with their habits—whether
+practicing jokes or drawing cartoons or playing guitar—while most of us
+struggle to stay motivated? How do we design habits that pull us in rather than
+ones that fade away? Scientists have been studying this question for many years.
+While there is still much to learn, one of the most consistent findings is that the
+way to maintain motivation and achieve peak levels of desire is to work on tasks
+of “just manageable difficulty.”
+The human brain loves a challenge, but only if it is within an optimal zone of
+difficulty. If you love tennis and try to play a serious match against a four-yearold, you will quickly become bored. It’s too easy. You’ll win every point. In
+contrast, if you play a professional tennis player like Roger Federer or Serena
+Williams, you will quickly lose motivation because the match is too difficult.
+Now consider playing tennis against someone who is your equal. As the game
+progresses, you win a few points and you lose a few. You have a good chance of
+winning, but only if you really try. Your focus narrows, distractions fade away,
+and you find yourself fully invested in the task at hand. This is a challenge of
+just manageable difficulty and it is a prime example of the Goldilocks Rule.
+The Goldilocks Rule states that humans experience peak motivation when
+working on tasks that are right on the edge of their current abilities. Not too
+hard. Not too easy. Just right.
+THE GOLDILOCKS RULE
+FIGURE 15: Maximum motivation occurs when facing a challenge of just manageable difficulty. In psychology research this is known as the Yerkes–Dodson law, which describes the
+optimal level of arousal as the midpoint between boredom and anxiety.
+Martin’s comedy career is an excellent example of the Goldilocks Rule in
+practice. Each year, he expanded his comedy routine—but only by a minute or
+two. He was always adding new material, but he also kept a few jokes that were
+guaranteed to get laughs. There were just enough victories to keep him
+motivated and just enough mistakes to keep him working hard.
+When you’re starting a new habit, it’s important to keep the behavior as easy
+as possible so you can stick with it even when conditions aren’t perfect. This is
+an idea we covered in detail while discussing the 3rd Law of Behavior Change.
+Once a habit has been established, however, it’s important to continue to
+advance in small ways. These little improvements and new challenges keep you
+engaged. And if you hit the Goldilocks Zone just right, you can achieve a flow
+state.*
+A flow state is the experience of being “in the zone” and fully immersed in an
+activity. Scientists have tried to quantify this feeling. They found that to achieve
+a state of flow, a task must be roughly 4 percent beyond your current ability. In
+real life it’s typically not feasible to quantify the difficulty of an action in this
+way, but the core idea of the Goldilocks Rule remains: working on challenges of
+just manageable difficulty—something on the perimeter of your ability—seems
+crucial for maintaining motivation.
+Improvement requires a delicate balance. You need to regularly search for
+challenges that push you to your edge while continuing to make enough progress
+to stay motivated. Behaviors need to remain novel in order for them to stay
+attractive and satisfying. Without variety, we get bored. And boredom is perhaps
+the greatest villain on the quest for selfimprovement.
+HOW TO STAY FOCUSED WHEN YOU GET BORED WORKING ON
+YOUR GOALS
+After my baseball career ended, I was looking for a new sport. I joined a
+weightlifting team and one day an elite coach visited our gym. He had worked
+with thousands of athletes during his long career, including a few Olympians. I
+introduced myself and we began talking about the process of improvement.
+“What’s the difference between the best athletes and everyone else?” I asked.
+“What do the really successful people do that most don’t?”
+He mentioned the factors you might expect: genetics, luck, talent. But then he
+said something I wasn’t expecting: “At some point it comes down to who can
+handle the boredom of training every day, doing the same lifts over and over and
+over.”
+His answer surprised me because it’s a different way of thinking about work
+ethic. People talk about getting “amped up” to work on their goals. Whether it’s
+business or sports or art, you hear people say things like, “It all comes down to
+passion.” Or, “You have to really want it.” As a result, many of us get depressed
+when we lose focus or motivation because we think that successful people have
+some bottomless reserve of passion. But this coach was saying that really
+successful people feel the same lack of motivation as everyone else. The
+difference is that they still find a way to show up despite the feelings of
+boredom.
+Mastery requires practice. But the more you practice something, the more
+boring and routine it becomes. Once the beginner gains have been made and we
+learn what to expect, our interest starts to fade. Sometimes it happens even faster
+than that. All you have to do is hit the gym a few days in a row or publish a
+couple of blog posts on time and letting one day slip doesn’t feel like much.
+Things are going well. It’s easy to rationalize taking a day off because you’re in
+a good place.
+The greatest threat to success is not failure but boredom. We get bored with
+habits because they stop delighting us. The outcome becomes expected. And as
+our habits become ordinary, we start derailing our progress to seek novelty.
+Perhaps this is why we get caught up in a never-ending cycle, jumping from one
+workout to the next, one diet to the next, one business idea to the next. As soon
+as we experience the slightest dip in motivation, we begin seeking a new strategy
+—even if the old one was still working. As Machiavelli noted, “Men desire
+novelty to such an extent that those who are doing well wish for a change as
+much as those who are doing badly.”
+Perhaps this is why many of the most habit-forming products are those that
+provide continuous forms of novelty. Video games provide visual novelty. Porn
+provides sexual novelty. Junk foods provide culinary novelty. Each of these
+experiences offer continual elements of surprise.
+In psychology, this is known as a variable reward.* Slot machines are the
+most common real-world example. A gambler hits the jackpot every now and
+then but not at any predictable interval. The pace of rewards varies. This
+variance leads to the greatest spike of dopamine, enhances memory recall, and
+accelerates habit formation.
+Variable rewards won’t create a craving—that is, you can’t take a reward
+people are uninterested in, give it to them at a variable interval, and hope it will
+change their mind—but they are a powerful way to amplify the cravings we
+already experience because they reduce boredom.
+The sweet spot of desire occurs at a 50/50 split between success and failure.
+Half of the time you get what you want. Half of the time you don’t. You need
+just enough “winning” to experience satisfaction and just enough “wanting” to
+experience desire. This is one of the benefits of following the Goldilocks Rule. If
+you’re already interested in a habit, working on challenges of just manageable
+difficulty is a good way to keep things interesting.
+Of course, not all habits have a variable reward component, and you wouldn’t
+want them to. If Google only delivered a useful search result some of the time, I
+would switch to a competitor pretty quickly. If Uber only picked up half of my
+trips, I doubt I’d be using that service much longer. And if I flossed my teeth
+each night and only sometimes ended up with a clean mouth, I think I’d skip it.
+Variable rewards or not, no habit will stay interesting forever. At some point,
+everyone faces the same challenge on the journey of selfimprovement: you have
+to fall in love with boredom.
+We all have goals that we would like to achieve and dreams that we would
+like to fulfill, but it doesn’t matter what you are trying to become better at, if you
+only do the work when it’s convenient or exciting, then you’ll never be
+consistent enough to achieve remarkable results.
+I can guarantee that if you manage to start a habit and keep sticking to it, there
+will be days when you feel like quitting. When you start a business, there will be
+days when you don’t feel like showing up. When you’re at the gym, there will be
+sets that you don’t feel like finishing. When it’s time to write, there will be days
+that you don’t feel like typing. But stepping up when it’s annoying or painful or
+draining to do so, that’s what makes the difference between a professional and
+an amateur.
+Professionals stick to the schedule; amateurs let life get in the way.
+Professionals know what is important to them and work toward it with purpose;
+amateurs get pulled off course by the urgencies of life.
+David Cain, an author and meditation teacher, encourages his students to
+avoid being “fair-weather meditators.” Similarly, you don’t want to be a fairweather athlete or a fair-weather writer or a fair-weather anything. When a habit
+is truly important to you, you have to be willing to stick to it in any mood.
+Professionals take action even when the mood isn’t right. They might not enjoy
+it, but they find a way to put the reps in.
+There have been a lot of sets that I haven’t felt like finishing, but I’ve never
+regretted doing the workout. There have been a lot of articles I haven’t felt like
+writing, but I’ve never regretted publishing on schedule. There have been a lot of
+days I’ve felt like relaxing, but I’ve never regretted showing up and working on
+something that was important to me.
+The only way to become excellent is to be endlessly fascinated by doing the
+same thing over and over. You have to fall in love with boredom.
+Chapter Summary
+The Goldilocks Rule states that humans experience peak motivation
+when working on tasks that are right on the edge of their current
+abilities.
+The greatest threat to success is not failure but boredom.
+As habits become routine, they become less interesting and less
+satisfying. We get bored.
+Anyone can work hard when they feel motivated. It’s the ability to
+keep going when work isn’t exciting that makes the difference.
+Professionals stick to the schedule; amateurs let life get in the way.`,
+  },
+  {
+    chapter_number: 20,
+    title: "The Downside of Creating Good Habits",
+    content: `HABITS CREATE THE FOUNDATION FOR MASTERY. In chess, it is only after the basic movements of the
+pieces have become automatic that a player can focus on the next level of the
+game. Each chunk of information that is memorized opens up the mental space
+for more effortful thinking. This is true for any endeavor. When you know the
+simple movements so well that you can perform them without thinking, you are
+free to pay attention to more advanced details. In this way, habits are the
+backbone of any pursuit of excellence.
+However, the benefits of habits come at a cost. At first, each repetition
+develops fluency, speed, and skill. But then, as a habit becomes automatic, you
+become less sensitive to feedback. You fall into mindless repetition. It becomes
+easier to let mistakes slide. When you can do it “good enough” on autopilot, you
+stop thinking about how to do it better.
+The upside of habits is that we can do things without thinking. The downside
+of habits is that you get used to doing things a certain way and stop paying
+attention to little errors. You assume you’re getting better because you’re
+gaining experience. In reality, you are merely reinforcing your current habits—
+not improving them. In fact, some research has shown that once a skill has been
+mastered there is usually a slight decline in performance over time.
+Usually, this minor dip in performance is no cause for worry. You don’t need
+a system to continuously improve how well you brush your teeth or tie your
+shoes or make your morning cup of tea. With habits like these, good enough is
+usually good enough. The less energy you spend on trivial choices, the more you
+can spend it on what really matters.
+However, when you want to maximize your potential and achieve elite levels
+of performance, you need a more nuanced approach. You can’t repeat the same
+things blindly and expect to become exceptional. Habits are necessary, but not
+sufficient for mastery. What you need is a combination of automatic habits and
+deliberate practice.
+Habits + Deliberate Practice = Mastery
+To become great, certain skills do need to become automatic. Basketball
+players need to be able to dribble without thinking before they can move on to
+mastering layups with their nondominant hand. Surgeons need to repeat the first
+incision so many times that they could do it with their eyes closed, so that they
+can focus on the hundreds of variables that arise during surgery. But after one
+habit has been mastered, you have to return to the effortful part of the work and
+begin building the next habit.
+Mastery is the process of narrowing your focus to a tiny element of success,
+repeating it until you have internalized the skill, and then using this new habit as
+the foundation to advance to the next frontier of your development. Old tasks
+become easier the second time around, but it doesn’t get easier overall because
+now you’re pouring your energy into the next challenge. Each habit unlocks the
+next level of performance. It’s an endless cycle.
+MASTERING ONE HABIT
+MASTERING A FIELD
+FIGURE 16: The process of mastery requires that you progressively layer improvements on top of one another, each habit building upon the last until a new level of performance has been
+reached and a higher range of skills has been internalized.
+Although habits are powerful, what you need is a way to remain conscious of
+your performance over time, so you can continue to refine and improve. It is
+precisely at the moment when you begin to feel like you have mastered a skill—
+right when things are starting to feel automatic and you are becoming
+comfortable—that you must avoid slipping into the trap of complacency.
+The solution? Establish a system for reflection and review.
+HOW TO REVIEW YOUR HABITS AND MAKE ADJUSTMENTS
+In 1986, the Los Angeles Lakers had one of the most talented basketball teams
+ever assembled, but they are rarely remembered that way. The team started the
+1985–1986 NBA season with an astounding 29–5 record. “The pundits were
+saying that we might be the best team in the history of basketball,” head coach
+Pat Riley said after the season. Surprisingly, the Lakers stumbled in the 1986
+playoffs and suffered a season-ending defeat in the Western Conference Finals.
+The “best team in the history of basketball” didn’t even play for the NBA
+championship.
+After that blow, Riley was tired of hearing about how much talent his players
+had and about how much promise his team held. He didn’t want to see flashes of
+brilliance followed by a gradual fade in performance. He wanted the Lakers to
+play up to their potential, night after night. In the summer of 1986, he created a
+plan to do exactly that, a system that he called the Career Best Effort program or
+CBE.
+“When players first join the Lakers,” Riley explained, “we track their
+basketball statistics all the way back to high school. I call this Taking Their
+Number. We look for an accurate gauge of what a player can do, then build him
+into our plan for the team, based on the notion that he will maintain and then
+improve upon his averages.”
+After determining a player’s baseline level of performance, Riley added a key
+step. He asked each player to “improve their output by at least 1 percent over the
+course of the season. If they succeeded, it would be a CBE, or Career Best
+Effort.” Similar to the British Cycling team that we discussed in Chapter 1, the
+Lakers sought peak performance by getting slightly better each day.
+Riley was careful to point out that CBE was not merely about points or
+statistics but about giving your “best effort spiritually and mentally and
+physically.” Players got credit for “allowing an opponent to run into you when
+you know that a foul will be called against him, diving for loose balls, going
+after rebounds whether you are likely to get them or not, helping a teammate
+when the player he’s guarding has surged past him, and other ‘unsung hero’
+deeds.”
+As an example, let’s say that Magic Johnson—the Lakers star player at the
+time—had 11 points, 8 rebounds, 12 assists, 2 steals, and 5 turnovers in a game.
+Magic also got credit for an “unsung hero” deed by diving after a loose ball (+1).
+Finally, he played a total of 33 minutes in this imaginary game.
+The positive numbers (11 + 8 + 12 + 2 + 1) add up to 34. Then, we subtract
+the 5 turnovers (34–5) to get 29. Finally, we divide 29 by 33 minutes played.
+29/33 = 0.879
+Magic’s CBE number here would be 879. This number was calculated for all
+of a player’s games, and it was the average CBE that a player was asked to
+improve by 1 percent over the season. Riley compared each player’s current
+CBE to not only their past performances but also those of other players in the
+league. As Riley put it, “We rank team members alongside league opponents
+who play the same position and have similar role definitions.”
+Sportswriter Jackie MacMullan noted, “Riley trumpeted the top performers in
+the league in bold lettering on the blackboard each week and measured them
+against the corresponding players on his own roster. Solid, reliable players
+generally rated a score in the 600s, while elite players scored at least 800. Magic
+Johnson, who submitted 138 triple-doubles in his career, often scored over
+1,000.”
+The Lakers also emphasized year-over-year progress by making historical
+comparisons of CBE data. Riley said, “We stacked the month of November
+1986, next to November 1985, and showed the players whether they were doing
+better or worse than at the same point last season. Then we showed them how
+their performance figures for December 1986, stacked up against November’s.”
+The Lakers rolled out CBE in October 1986. Eight months later, they were
+NBA champions. The following year, Pat Riley led his team to another title as
+the Lakers became the first team in twenty years to win back-to-back NBA
+championships. Afterward, he said, “Sustaining an effort is the most important
+thing for any enterprise. The way to be successful is to learn how to do things
+right, then do them the same way every time.”
+The CBE program is a prime example of the power of reflection and review.
+The Lakers were already talented. CBE helped them get the most out of what
+they had, and made sure their habits improved rather than declined.
+Reflection and review enables the long-term improvement of all habits
+because it makes you aware of your mistakes and helps you consider possible
+paths for improvement. Without reflection, we can make excuses, create
+rationalizations, and lie to ourselves. We have no process for determining
+whether we are performing better or worse compared to yesterday.
+Top performers in all fields engage in various types of reflection and review,
+and the process doesn’t have to be complex. Kenyan runner Eliud Kipchoge is
+one of the greatest marathoners of all time and an Olympic gold medalist. He
+still takes notes after every practice in which he reviews his training for the day
+and searches for areas that can be improved. Similarly, gold medal swimmer
+Katie Ledecky records her wellness on a scale of 1 to 10 and includes notes on
+her nutrition and how well she slept. She also records the times posted by other
+swimmers. At the end of each week, her coach goes over her notes and adds his
+thoughts.
+It’s not just athletes, either. When comedian Chris Rock is preparing fresh
+material, he will first appear at small nightclubs dozens of times and test
+hundreds of jokes. He brings a notepad on stage and records which bits go over
+well and where he needs to make adjustments. The few killer lines that survive
+will form the backbone of his new show.
+I know of executives and investors who keep a “decision journal” in which
+they record the major decisions they make each week, why they made them, and
+what they expect the outcome to be. They review their choices at the end of each
+month or year to see where they were correct and where they went wrong.*
+Improvement is not just about learning habits, it’s also about fine-tuning them.
+Reflection and review ensures that you spend your time on the right things and
+make course corrections whenever necessary—like Pat Riley adjusting the effort
+of his players on a nightly basis. You don’t want to keep practicing a habit if it
+becomes ineffective.
+Personally, I employ two primary modes of reflection and review. Each
+December, I perform an Annual Review, in which I reflect on the previous year. I
+tally my habits for the year by counting up how many articles I published, how
+many workouts I put in, how many new places I visited, and more.* Then, I
+reflect on my progress (or lack thereof) by answering three questions:
+1. What went well this year?
+2. What didn’t go so well this year?
+3. What did I learn?
+Six months later, when summer rolls around, I conduct an Integrity Report.
+Like everyone, I make a lot of mistakes. My Integrity Report helps me realize
+where I went wrong and motivates me to get back on course. I use it as a time to
+revisit my core values and consider whether I have been living in accordance
+with them. This is when I reflect on my identity and how I can work toward
+being the type of person I wish to become.*
+My yearly Integrity Report answers three questions:
+1. What are the core values that drive my life and work?
+2. How am I living and working with integrity right now?
+3. How can I set a higher standard in the future?
+These two reports don’t take very long—just a few hours per year—but they
+are crucial periods of refinement. They prevent the gradual slide that happens
+when I don’t pay close attention. They provide an annual reminder to revisit my
+desired identity and consider how my habits are helping me become the type of
+person I wish to be. They indicate when I should upgrade my habits and take on
+new challenges and when I should dial my efforts back and focus on the
+fundamentals.
+Reflection can also bring a sense of perspective. Daily habits are powerful
+because of how they compound, but worrying too much about every daily choice
+is like looking at yourself in the mirror from an inch away. You can see every
+imperfection and lose sight of the bigger picture. There is too much feedback.
+Conversely, never reviewing your habits is like never looking in the mirror. You
+aren’t aware of easily fixable flaws—a spot on your shirt, a bit of food in your
+teeth. There is too little feedback. Periodic reflection and review is like viewing
+yourself in the mirror from a conversational distance. You can see the important
+changes you should make without losing sight of the bigger picture. You want to
+view the entire mountain range, not obsess over each peak and valley.
+Finally, reflection and review offers an ideal time to revisit one of the most
+important aspects of behavior change: identity.
+HOW TO BREAK THE BELIEFS THAT HOLD YOU BACK
+In the beginning, repeating a habit is essential to build up evidence of your
+desired identity. As you latch on to that new identity, however, those same
+beliefs can hold you back from the next level of growth. When working against
+you, your identity creates a kind of “pride” that encourages you to deny your
+weak spots and prevents you from truly growing. This is one of the greatest
+downsides of building habits.
+The more sacred an idea is to us—that is, the more deeply it is tied to our
+identity—the more strongly we will defend it against criticism. You see this in
+every industry. The schoolteacher who ignores innovative teaching methods and
+sticks with her tried-and-true lesson plans. The veteran manager who is
+committed to doing things “his way.” The surgeon who dismisses the ideas of
+her younger colleagues. The band who produces a mind-blowing first album and
+then gets stuck in a rut. The tighter we cling to an identity, the harder it becomes
+to grow beyond it.
+One solution is to avoid making any single aspect of your identity an
+overwhelming portion of who you are. In the words of investor Paul Graham,
+“keep your identity small.” The more you let a single belief define you, the less
+capable you are of adapting when life challenges you. If you tie everything up in
+being the point guard or the partner at the firm or whatever else, then the loss of
+that facet of your life will wreck you. If you’re a vegan and then develop a
+health condition that forces you to change your diet, you’ll have an identity crisis
+on your hands. When you cling too tightly to one identity, you become brittle.
+Lose that one thing and you lose yourself.
+For most of my young life, being an athlete was a major part of my identity.
+After my baseball career ended, I struggled to find myself. When you spend your
+whole life defining yourself in one way and that disappears, who are you now?
+Military veterans and former entrepreneurs report similar feelings. If your
+identity is wrapped up in a belief like “I’m a great soldier,” what happens when
+your period of service ends? For many business owners, their identity is
+something along the lines of “I’m the CEO” or “I’m the founder.” If you have
+spent every waking moment working on your business, how will you feel after
+you sell the company?
+The key to mitigating these losses of identity is to redefine yourself such that
+you get to keep important aspects of your identity even if your particular role
+changes.
+“I’m an athlete” becomes “I’m the type of person who is mentally
+tough and loves a physical challenge.”
+“I’m a great soldier” transforms into “I’m the type of person who is
+disciplined, reliable, and great on a team.”
+“I’m the CEO” translates to “I’m the type of person who builds and
+creates things.”
+When chosen effectively, an identity can be flexible rather than brittle. Like
+water flowing around an obstacle, your identity works with the changing
+circumstances rather than against them.
+The following quote from the Tao Te Ching encapsulates the ideas perfectly:
+Men are born soft and supple;
+dead, they are stiff and hard.
+Plants are born tender and pliant;
+dead, they are brittle and dry.
+Thus whoever is stiff and inflexible
+is a disciple of death.
+Whoever is soft and yielding
+is a disciple of life.
+The hard and stiff will be broken.
+The soft and supple will prevail.
+—LAO TZU
+Habits deliver numerous benefits, but the downside is that they can lock us
+into our previous patterns of thinking and acting—even when the world is
+shifting around us. Everything is impermanent. Life is constantly changing, so
+you need to periodically check in to see if your old habits and beliefs are still
+serving you.
+A lack of self-awareness is poison. Reflection and review is the antidote.
+Chapter Summary
+The upside of habits is that we can do things without thinking. The
+downside is that we stop paying attention to little errors.
+Habits + Deliberate Practice = Mastery
+Reflection and review is a process that allows you to remain conscious
+of your performance over time.
+The tighter we cling to an identity, the harder it becomes to grow
+beyond it.`,
   },
 ];
 

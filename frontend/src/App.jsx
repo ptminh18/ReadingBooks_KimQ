@@ -1,7 +1,8 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable react-hooks/set-state-in-effect */
 import { useState, useEffect, useRef } from "react";
 import {
   BookOpen,
-  MessageCircle,
   FileText,
   ChevronLeft,
   ChevronRight,
@@ -19,7 +20,6 @@ import {
   Pause,
   RotateCcw,
   RotateCw,
-  Square,
 } from "lucide-react";
 
 const API_BASE = import.meta.env.VITE_API_BASE_URL || "http://localhost:3001";
@@ -183,7 +183,7 @@ function AudioBar({ tts }) {
 
   return (
     <div
-      className={`fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 px-6 py-4 transition-transform duration-500 shadow-[0_-10px_25px_-5px_rgba(0,0,0,0.05)] z-40 ${visible ? "translate-y-0" : "translate-y-full"}`}
+      className={`fixed bottom-0 left-1/2 right-auto w-[80vw] bg-white border-t border-gray-200 px-6 py-4 transition-transform duration-500 shadow-[0_-10px_25px_-5px_rgba(0,0,0,0.05)] z-40 ${visible ? "translate-y-0 -translate-x-1/2" : "translate-y-full -translate-x-1/2"}`}
     >
       <div className="max-w-5xl mx-auto flex items-center gap-6">
         {/* Info */}
@@ -297,7 +297,7 @@ function BookCover({ book, onClick }) {
         )}
       </div>
       <div className="space-y-0.5 px-0.5">
-        <p className="font-semibold text-gray-900 text-sm leading-tight line-clamp-2 group-hover:text-indigo-700 transition-colors">
+        <p className="font-semibold text-[#000000] text-sm leading-tight line-clamp-2 group-hover:text-indigo-700 transition-colors">
           {book.title}
         </p>
         <p className="text-xs text-gray-500 truncate">{book.author}</p>
@@ -562,7 +562,7 @@ function HomePage({ onSelectBook }) {
     <div className="h-full overflow-y-auto">
       <div className="max-w-6xl mx-auto px-8 py-10">
         <div className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-900">Thư viện sách</h2>
+          <h2 className="text-2xl font-bold text-black">Thư viện sách</h2>
           <p className="text-gray-500 text-sm mt-1">{books.length} cuốn sách</p>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6">
@@ -658,7 +658,7 @@ const App = () => {
   const lang = book?.language?.startsWith("vi") ? "vi" : "en";
 
   return (
-    <div className="flex flex-col h-screen bg-[#F8F9FA] text-[#2D3436] font-sans overflow-hidden">
+    <div className="flex flex-col h-screen bg-white text-[#2D3436] font-sans overflow-hidden">
       {/* Header */}
       <header className="h-16 bg-white border-b border-gray-200 flex items-center justify-between px-6 shrink-0 z-30">
         <button
@@ -732,7 +732,7 @@ const App = () => {
 
               <div className="flex-1 space-y-5">
                 <div>
-                  <h1 className="text-3xl font-bold tracking-tight text-gray-900">
+                  <h1 className="text-3xl font-bold tracking-tight text-[#000000]">
                     {book.title}
                   </h1>
                   <p className="text-lg text-gray-500 italic mt-1">
@@ -812,7 +812,7 @@ const App = () => {
         {/* Reading */}
         {currentBookId && book && activeTab === "reading" && (
           <div className="flex h-full">
-            <aside className="w-60 bg-white border-r border-gray-200 overflow-y-auto shrink-0 flex flex-col">
+            <aside className="w-60 bg-white overflow-y-auto shrink-0 flex flex-col">
               <div className="p-4 font-bold text-gray-400 uppercase text-xs tracking-widest border-b border-gray-100">
                 Danh sách chương
               </div>
@@ -823,7 +823,7 @@ const App = () => {
                     setCurrentChapterIndex(idx);
                     setIsSummarizing(false);
                   }}
-                  className={`text-left p-4 transition-all border-l-4 ${currentChapterIndex === idx ? "bg-indigo-50 border-indigo-600 text-indigo-700" : "border-transparent text-gray-600 hover:bg-gray-50"}`}
+                  className={`text-left p-4 transition-all border-l-4 ${currentChapterIndex === idx ? "bg-indigo-50 border-indigo-600 text-indigo-700" : "border-transparent text-[#000000] hover:bg-gray-50"}`}
                 >
                   <span className="block text-[10px] opacity-50 mb-0.5">
                     Chương {chap.chapter_number}
@@ -848,7 +848,7 @@ const App = () => {
                       <p className="text-xs text-indigo-400 font-medium mb-1 uppercase tracking-wider">
                         Chương {currentChapterData.chapter_number}
                       </p>
-                      <h2 className="text-2xl font-bold text-gray-900">
+                      <h2 className="text-2xl font-bold text-[#000000]">
                         {currentChapterData.title}
                       </h2>
                     </div>
