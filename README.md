@@ -1,13 +1,9 @@
-<<<<<<< HEAD
-# KimQReading
-Books Readings Web Application
-=======
 <div align="center">
 
-# 📚 KimQReading
+# KimQReading
 
 **An AI-powered book reading web application**  
-*Ứng dụng đọc sách thông minh tích hợp AI*
+_Ứng dụng đọc sách thông minh tích hợp AI_
 
 [![React](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react)](https://react.dev)
 [![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=flat-square&logo=vite)](https://vitejs.dev)
@@ -16,46 +12,48 @@ Books Readings Web Application
 [![Supabase](https://img.shields.io/badge/Supabase-PostgreSQL-3ECF8E?style=flat-square&logo=supabase)](https://supabase.com)
 [![Groq](https://img.shields.io/badge/Groq-Llama3.3-F55036?style=flat-square)](https://groq.com)
 
-[🚀 Live Demo](#) · [📖 Features](#-features--tính-năng) · [🛠 Setup](#-setup--cài-đặt) · [🏗 Architecture](#-architecture--kiến-trúc)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-readingbooks--kimq--frontend.onrender.com-6366f1?style=flat-square)](https://readingbooks-kimq-frontend.onrender.com)
+
+## ⚠️ Backend runs on Render free tier — may take ~30s to wake up on first visit. Please wait a moment if books don't load immediately. ⚠️
 
 </div>
 
 ---
 
-## 🇬🇧 English
+## English
 
 ### What is KimQReading?
 
-KimQReading is a full-stack web application that reimagines how people read books online. Built as a product builder challenge, it demonstrates how AI can enhance every step of the reading experience — from discovering a book to understanding its deepest ideas.
+KimQReading is a full-stack web application that reimagines how people read books online. Built as a product builder challenge, it demonstrates how AI can enhance every step of the reading experience — from discovering a book to deeply understanding its ideas.
 
-The app was designed and built from scratch in a few days, integrating multiple AI services, a real database, and a clean UI to create something that feels like a real product.
+Designed and built from scratch in a few days, it integrates multiple AI services, a real database, voice synthesis, and a clean reading UI to create something that feels like a real product.
 
-### 💡 The Problem It Solves
+### The Problem It Solves
 
 > People buy books but rarely finish them. They lack context, summaries, and someone to explain the hard parts.
 
 KimQReading solves this with:
-- AI-generated chapter & book summaries so readers know what they're getting into
-- A voice reading feature so you can listen while doing other things
+
+- AI-generated summaries for every chapter and the whole book
+- A voice reading feature so you can listen while doing other things (voice reading works pretty well on both Vietnamese and English)
 - An AI chatbot that answers questions about the book like a knowledgeable friend
 
 ---
 
-### ✨ Features / Tính năng
+### Features
 
-| Feature | Description |
-|---|---|
-| 📚 **Book Library** | Browse all books with cover images, author, and category |
-| 📖 **Chapter Reading** | Clean reading experience with full chapter content |
-| 🤖 **AI Chapter Summary** | Each chapter auto-summarized by Groq (Llama 3.3) |
-| 📝 **AI Book Summary** | Full book summary generated from all chapter summaries |
-| 🔊 **Voice Reading (TTS)** | Listen to any summary or chapter via Edge TTS (Vietnamese & English) |
-| 💬 **AI Chat Assistant** | Ask anything about the book, author, or ideas — powered by Groq |
-| 🔍 **Google Books Search** | Search and pull real book metadata from Google Books API |
+| Feature                    | Description                                                          |
+| -------------------------- | -------------------------------------------------------------------- |
+| 📚 **Book Library**        | Browse all books with cover images, author, and category             |
+| 📖 **Chapter Reading**     | Clean reading experience with full chapter content                   |
+| 🤖 **AI Chapter Summary**  | Each chapter auto-summarized by Groq (Llama 3.3 70B)                 |
+| 📝 **AI Book Summary**     | Full book summary synthesized from all chapter summaries             |
+| 🔊 **Voice Reading (TTS)** | Listen to any chapter or summary via Edge TTS (Vietnamese & English) |
+| 💬 **AI Chat Assistant**   | Ask anything about the book, author, or ideas — context-aware        |
 
 ---
 
-### 🏗 Architecture / Kiến trúc
+### Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -67,243 +65,263 @@ KimQReading solves this with:
 │  │  Page    │  │ Overview │  │   View   │  │  Panel    │  │
 │  └──────────┘  └──────────┘  └──────────┘  └───────────┘  │
 └─────────────────────────┬───────────────────────────────────┘
-                          │ HTTP / REST API
+                          │ REST API
 ┌─────────────────────────▼───────────────────────────────────┐
 │                        BACKEND                              │
 │                    Express.js API                           │
 │                                                             │
 │  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌───────────┐  │
-│  │ /library │  │ /chapters│  │  /chat   │  │   /tts    │  │
-│  │ /books   │  │ /admin   │  │          │  │           │  │
+│  │/library  │  │/chapters │  │  /chat   │  │   /tts    │  │
+│  │          │  │          │  │          │  │           │  │
 │  └────┬─────┘  └────┬─────┘  └────┬─────┘  └─────┬─────┘  │
 └───────┼─────────────┼─────────────┼───────────────┼─────────┘
         │             │             │               │
-   ┌────▼────┐   ┌────▼────┐  ┌────▼────┐   ┌─────▼──────┐
-   │Supabase │   │Supabase │  │  Groq   │   │  Edge TTS  │
-   │(books)  │   │(chapters│  │Llama3.3 │   │  (Python)  │
-   └─────────┘   └─────────┘  └─────────┘   └────────────┘
-        │
-   ┌────▼──────────┐
-   │ Google Books  │
-   │     API       │
-   └───────────────┘
+   ┌────▼─────────────▼────┐  ┌─────▼────┐   ┌─────▼──────┐
+   │       Supabase        │  │  Groq    │   │  Edge TTS  │
+   │  books + chapters +   │  │ Llama3.3 │   │  Python    │
+   │     chat_messages     │  │          │   │  vi & en   │
+   └───────────────────────┘  └──────────┘   └────────────┘
 ```
 
-### 🔄 How Each Feature Works
+### How Each Feature Works
 
-**1. Book Library**
-- Frontend calls `GET /api/library`
-- Backend queries Supabase `books` table
-- Returns cover, title, author, category
+**Book Library**
+Frontend calls `GET /api/library` → backend queries Supabase `books` table → returns cover, title, author, category for the grid.
 
-**2. AI Chapter Summary**
-- When a chapter is added via `POST /api/admin/books/:id/chapters`
-- Backend sends chapter content to Groq (Llama 3.3 70B)
-- Summary saved to Supabase `chapters.summary` column
-- Displayed when user clicks "Tóm tắt chương"
+**Chapter Reading**
+Sidebar loads from `GET /api/chapters/:bookId` (titles only). Full content loads on demand via `GET /api/chapters/:bookId/:num` to keep initial load fast.
 
-**3. AI Book Summary**
-- `POST /api/admin/books/:id/summarize`
-- Backend fetches all chapter summaries from Supabase
-- Sends them all to Groq with a synthesis prompt
-- Result saved to `books.book_summary`
+**AI Chapter Summary**
+When a chapter is added via `POST /api/admin/books/:id/chapters`, the backend automatically sends content to Groq (Llama 3.3 70B) and saves the summary to Supabase. Shown when user clicks "Tóm tắt chương".
 
-**4. Voice Reading (TTS)**
-- User clicks "Nghe" on any summary or chapter
-- Frontend POSTs text to `POST /api/tts`
-- Backend runs `edge-tts` (Python CLI) to generate `.mp3`
-- MP3 is cached by SHA256 hash to avoid re-generation
-- Audio streamed back to frontend and played via HTML Audio API
+**AI Book Summary**
+`POST /api/admin/books/:id/summarize` fetches all chapter summaries from Supabase, sends them to Groq with a synthesis prompt, and saves the result to `books.book_summary`. Shown in the "Tóm tắt sách" modal.
 
-**5. AI Chat**
-- User types a question in the chat panel
-- Frontend sends `{ message, bookId, chapterId, history[] }`
-- Backend builds a system prompt with book context + chapter excerpt
-- Groq returns a contextual answer
-- Conversation history maintained in frontend state
-- All messages saved to Supabase `chat_messages` table
+**Voice Reading (TTS)**
+User clicks "Nghe" → frontend POSTs text to `POST /api/tts` → backend writes text to a temp file (handles Vietnamese Unicode correctly) → runs `edge-tts` CLI → streams MP3 back → frontend plays via HTML Audio API. Results are SHA256-cached so the same text is never re-generated.
+
+**AI Chat**
+User types a question → frontend sends `{ message, bookId, chapterId, history[] }` → backend builds a system prompt with book info + current chapter excerpt → Groq returns a contextual answer → saved to `chat_messages` table. Responds in the same language the user writes in.
 
 ---
 
-### 🛠 Setup / Cài đặt
+### Setup
 
 #### Prerequisites
-- Node.js 18+
-- Python 3.10+
-- A Supabase account (free)
-- A Groq API key (free at [console.groq.com](https://console.groq.com))
 
-#### 1. Clone the repo
+- Node.js 18+
+- Python 3.10+ with `edge-tts` installed
+- Supabase account (free)
+- Groq API key (free at [console.groq.com](https://console.groq.com))
+
+#### 1. Clone
+
 ```bash
-git clone https://github.com/ptminh18/kimqreading.git
-cd kimqreading
+git clone https://github.com/ptminh18/ReadingBooks_KimQ.git
+cd ReadingBooks_KimQ
 ```
 
-#### 2. Backend setup
+#### 2. Backend
+
 ```bash
 cd backend
 npm install
-pip3 install edge-tts   # or: pipx install edge-tts
-cp .env.example .env
+pipx install edge-tts   # or: pip install edge-tts
+cp .env.example .env    # fill in your keys
+npm run dev             # runs on http://localhost:3001
 ```
 
-Fill in `.env`:
+`backend/.env`:
+
 ```env
 PORT=3001
 CLIENT_ORIGIN=http://localhost:5173
 SUPABASE_URL=https://your-project.supabase.co
 SUPABASE_SERVICE_KEY=your-service-role-key
-GROQ_API_KEY=gsk_your_groq_key
-EDGE_TTS_PATH=/usr/local/bin/edge-tts   # run: which edge-tts
+GROQ_API_KEY=gsk_your_key
+EDGE_TTS_PATH=/usr/local/bin/edge-tts  # run: which edge-tts
 ```
 
-```bash
-npm run dev
-```
+#### 3. Frontend
 
-#### 3. Frontend setup
 ```bash
 cd frontend
 npm install
 cp .env.example .env
+npm run dev             # runs on http://localhost:5173
 ```
 
-Fill in `.env`:
+`frontend/.env`:
+
 ```env
 VITE_API_BASE_URL=http://localhost:3001
 ```
 
-```bash
-npm run dev
-```
+#### 4. Database
 
-#### 4. Database setup
-Run the SQL in `backend/schema.sql` in your Supabase SQL Editor.
+Run `backend/schema.sql` in your Supabase SQL Editor.
 
 #### 5. Add your first book
+
 ```bash
 cd backend
-node seed.js   # edit BOOK and CHAPTERS variables first
+# Edit BOOK and CHAPTERS in seed.js first
+node seed.js
 ```
 
 Open [http://localhost:5173](http://localhost:5173) 🎉
 
 ---
 
-### 🚀 Deployment
+### Adding Books
 
-#### Frontend → Vercel (free, recommended)
-1. Push code to GitHub
-2. Go to [vercel.com](https://vercel.com) → Import project → select `frontend` folder
-3. Add environment variable: `VITE_API_BASE_URL=https://your-backend.railway.app`
-4. Deploy → get a live URL instantly
+Books are added manually via the seed script or API:
 
-#### Backend → Railway (free tier)
-1. Go to [railway.app](https://railway.app) → New Project → Deploy from GitHub
-2. Select the `backend` folder
-3. Add all environment variables from `.env`
-4. For Edge TTS: add a `nixpacks.toml` in backend root:
-```toml
-[phases.setup]
-nixPkgs = ["python311", "python311Packages.pip"]
+```bash
+# 1. Add book metadata
+POST /api/admin/books
+{
+  "title": "Book Title",
+  "author": "Author Name",
+  "description": "...",
+  "cover_url": "https://...",
+  "category": "Self-help",
+  "language": "vi",
+  "page_count": 300,
+  "published_year": 2020
+}
 
-[phases.install]
-cmds = ["pip install edge-tts", "npm install"]
+# 2. Add chapters (Groq auto-summarizes each one)
+POST /api/admin/books/:bookId/chapters
+{
+  "chapter_number": 1,
+  "title": "Chapter Title",
+  "content": "Full chapter text..."
+}
+
+# 3. Generate whole-book summary
+POST /api/admin/books/:bookId/summarize
 ```
-5. Deploy → copy the URL → paste into Vercel's `VITE_API_BASE_URL`
+
+Or use the seed script for bulk adding:
+
+```bash
+node seed.js   # edit BOOK and CHAPTERS variables first
+```
 
 ---
 
-### 🗂 Project Structure
+### Deployment
+
+#### Frontend → Render Static Site
+
+1. New → Static Site → connect GitHub repo
+2. Root Directory: `frontend`
+3. Build Command: `npm install && npm run build`
+4. Publish Directory: `dist`
+5. Add env var: `VITE_API_BASE_URL=https://your-backend.onrender.com`
+
+#### Backend → Render Web Service
+
+1. New → Web Service → connect GitHub repo
+2. Root Directory: `backend`
+3. Build Command: `chmod +x build.sh && ./build.sh`
+4. Start Command: `node server.js`
+5. Add all env vars from `.env`
+
+`backend/build.sh` installs `edge-tts` on the server automatically.
+
+---
+
+### Project Structure
 
 ```
-kimqreading/
+ReadingBooks_KimQ/
 ├── backend/
-│   ├── src/
-│   │   └── routes/
-│   │       ├── book.js        # Google Books API proxy
-│   │       ├── library.js     # Supabase books CRUD
-│   │       ├── chapters.js    # Supabase chapters CRUD
-│   │       ├── admin.js       # Add books/chapters + AI summarize
-│   │       ├── chat.js        # AI chat with Groq
-│   │       └── tts.js         # Edge TTS voice generation
-│   ├── server.js
-│   ├── seed.js                # Script to bulk-add a book
-│   ├── schema.sql             # Supabase table definitions
+│   ├── src/routes/
+│   │   ├── library.js     # books CRUD from Supabase
+│   │   ├── chapters.js    # chapters CRUD from Supabase
+│   │   ├── admin.js       # add books/chapters + AI summarize
+│   │   ├── chat.js        # AI chat with Groq
+│   │   └── tts.js         # voice generation with Edge TTS
+│   ├── server.js          # Express entry point
+│   ├── seed.js            # bulk-add a book with chapters
+│   ├── schema.sql         # Supabase table definitions
+│   ├── build.sh           # Render build script
 │   └── .env.example
 └── frontend/
     └── src/
-        └── App.jsx            # Single-page React app
+        └── App.jsx        # full React SPA (single file)
 ```
 
 ---
 
-### 👤 Author
+### Author
 
-**The Minh (ptminh18)**  
-Built as a product builder challenge — demonstrating the ability to take an idea from zero to a working product using AI-assisted development.
+**The Minh — [@ptminh18](https://github.com/ptminh18)**
 
-- GitHub: [@ptminh18](https://github.com/ptminh18)
-
----
+Built as a product builder challenge — demonstrating the ability to take an idea from zero to a working product using AI-assisted development in a few days.
 
 ---
 
-## 🇻🇳 Tiếng Việt
+---
+
+## Tiếng Việt
 
 ### KimQReading là gì?
 
-KimQReading là ứng dụng web full-stack giúp người dùng đọc sách trực tuyến với sự hỗ trợ của AI. Được xây dựng như một bài kiểm tra tư duy "Product Builder", dự án này thể hiện khả năng tích hợp nhiều dịch vụ AI vào một sản phẩm hoàn chỉnh trong vài ngày.
+KimQReading là ứng dụng web full-stack giúp người dùng đọc sách trực tuyến với sự hỗ trợ của AI. Được xây dựng như một bài kiểm tra tư duy "Product Builder", dự án thể hiện khả năng tích hợp nhiều dịch vụ AI vào một sản phẩm hoàn chỉnh trong vài ngày.
 
-### 💡 Vấn đề được giải quyết
+### Vấn đề được giải quyết
 
 > Nhiều người mua sách nhưng không bao giờ đọc hết. Họ thiếu bối cảnh, tóm tắt và người giải thích những phần khó.
 
-KimQReading giải quyết điều này bằng:
+KimQReading giải quyết bằng:
+
 - AI tự động tóm tắt từng chương và toàn bộ cuốn sách
-- Tính năng đọc to giúp nghe sách khi làm việc khác
-- Chatbot AI trả lời mọi câu hỏi về sách như một người bạn hiểu biết
+- Tính năng đọc to giúp nghe sách khi làm việc khác (hiện đã hoạt động tốt với cả Tiếng Việt lẫn Tiếng Anh)
+- Chatbot AI trả lời mọi câu hỏi về sách, tác giả và ý tưởng
 
-### ✨ Tính năng chính
+### Tính năng chính
 
-| Tính năng | Mô tả |
-|---|---|
-| 📚 **Thư viện sách** | Duyệt sách với ảnh bìa, tác giả, thể loại |
-| 📖 **Đọc theo chương** | Giao diện đọc sạch sẽ với nội dung đầy đủ |
-| 🤖 **Tóm tắt chương (AI)** | Mỗi chương được Groq tóm tắt tự động |
-| 📝 **Tóm tắt sách (AI)** | Tổng hợp từ tất cả tóm tắt chương |
-| 🔊 **Đọc to (TTS)** | Nghe bất kỳ tóm tắt hoặc chương nào bằng giọng Việt/Anh |
-| 💬 **Chat AI** | Hỏi về sách, tác giả, ý tưởng — powered by Groq |
-| 🔍 **Tìm kiếm Google Books** | Lấy thông tin sách thực từ Google Books API |
+| Tính năng                  | Mô tả                                                       |
+| -------------------------- | ----------------------------------------------------------- |
+| 📚 **Thư viện sách**       | Duyệt sách với ảnh bìa, tác giả, thể loại                   |
+| 📖 **Đọc theo chương**     | Giao diện đọc sạch với nội dung đầy đủ                      |
+| 🤖 **Tóm tắt chương (AI)** | Mỗi chương được Groq tóm tắt tự động                        |
+| 📝 **Tóm tắt sách (AI)**   | Tổng hợp từ tất cả tóm tắt chương                           |
+| 🔊 **Đọc to (TTS)**        | Nghe bất kỳ chương hoặc tóm tắt nào bằng giọng Việt/Anh     |
+| 💬 **Chat AI**             | Hỏi về sách, tác giả, ý tưởng — có ngữ cảnh chương đang đọc |
 
-### 🛠 Cài đặt nhanh
+### Cài đặt nhanh
 
 ```bash
-# 1. Clone repo
-git clone https://github.com/ptminh18/kimqreading.git
+# Clone
+git clone https://github.com/ptminh18/ReadingBooks_KimQ.git
 
-# 2. Backend
+# Backend
 cd backend && npm install
-pip3 install edge-tts
-cp .env.example .env  # điền các API keys
+pipx install edge-tts
+cp .env.example .env   # điền API keys
+npm run dev
 
-# 3. Frontend  
+# Frontend (terminal mới)
 cd frontend && npm install
-cp .env.example .env  # điền VITE_API_BASE_URL
-
-# 4. Chạy
-cd backend && npm run dev   # terminal 1
-cd frontend && npm run dev  # terminal 2
+cp .env.example .env   # điền VITE_API_BASE_URL
+npm run dev
 ```
 
-### 👤 Tác giả
+### Thêm sách
 
-**Phạm Thế Minh (ptminh18)**  
-Được xây dựng như một bài kiểm tra tư duy Product Builder — thể hiện khả năng đưa ý tưởng từ con số không đến sản phẩm hoàn chỉnh với sự hỗ trợ của AI.
+Sách được thêm thủ công qua seed script hoặc API admin — không cần upload file, chỉ cần paste nội dung chương vào. AI tự động tóm tắt từng chương và tạo tóm tắt toàn sách.
+
+### Tác giả
+
+**Phạm Thế Minh — [@ptminh18](https://github.com/ptminh18)**  
+Xây dựng như bài kiểm tra tư duy Product Builder — đưa ý tưởng từ con số không đến sản phẩm hoàn chỉnh với sự hỗ trợ của AI trong vài ngày.
 
 ---
 
 <div align="center">
-  <sub>Built with ❤️ by The Minh · <a href="https://github.com/ptminh18">@ptminh18</a></sub>
+  <sub>Built by The Minh · <a href="https://github.com/ptminh18">@ptminh18</a></sub>
 </div>
->>>>>>> 3efc0ce (KimQReading is about 90% completed, adding more books is on process)
