@@ -1,6 +1,5 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react-hooks/set-state-in-effect */
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import {
   BookOpen,
   FileText,
@@ -22,7 +21,11 @@ import {
   RotateCw,
 } from "lucide-react";
 
+// ─── Constants ────────────────────────────────────────────────────────────────
 const API_BASE = import.meta.env.VITE_API_BASE_URL || "http://localhost:3001";
+const TTS_MAX_CHARS = 5000;
+const CHAT_HISTORY_LIMIT = 10;
+const PLAYBACK_SPEEDS = [0.75, 1, 1.25, 1.5];
 
 // ─── API ──────────────────────────────────────────────────────────────────────
 const api = {
@@ -38,17 +41,19 @@ const api = {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(body),
     }).then((r) => r.json()),
-  // Returns a URL to stream audio from
-  ttsUrl: (text, language = "vi", gender = "female") => {
-    const params = new URLSearchParams({ language, gender });
-    return `${API_BASE}/api/tts?${params}`; // used with POST body
-  },
+  tts: (text, language, gender) =>
+    fetch(`${API_BASE}/api/tts`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ text, language, gender }),
+    }),
 };
 
-// ─── useTTS hook ──────────────────────────────────────────────────────────────
+// ─── useTTS ───────────────────────────────────────────────────────────────────
 function useTTS() {
   const audioRef = useRef(null);
-  const [status, setStatus] = useState("idle"); // idle | loading | playing | paused | error
+  const stoppedRef = useRef(false); // prevents canplay from firing after stop
+  const [status, setStatus] = useState("idle");
   const [progress, setProgress] = useState(0);
   const [duration, setDuration] = useState(0);
   const [speed, setSpeed] = useState(1);
@@ -58,61 +63,76 @@ function useTTS() {
     const audio = new Audio();
     audioRef.current = audio;
 
-    audio.addEventListener("timeupdate", () => setProgress(audio.currentTime));
-    audio.addEventListener("durationchange", () => setDuration(audio.duration));
-    audio.addEventListener("ended", () => setStatus("idle"));
-    audio.addEventListener("error", () => setStatus("error"));
-    audio.addEventListener("canplay", () => {
+    const onTimeUpdate = () => setProgress(audio.currentTime);
+    const onDuration = () => setDuration(audio.duration);
+    const onEnded = () => {
+      setStatus("idle");
+      setProgress(0);
+    };
+    const onError = () => setStatus("error");
+    const onCanPlay = () => {
+      if (stoppedRef.current) return; // guard against restart after stop
       audio.playbackRate = speed;
-      audio.play();
+      audio.play().catch(() => setStatus("error"));
       setStatus("playing");
-    });
+    };
+
+    audio.addEventListener("timeupdate", onTimeUpdate);
+    audio.addEventListener("durationchange", onDuration);
+    audio.addEventListener("ended", onEnded);
+    audio.addEventListener("error", onError);
+    audio.addEventListener("canplay", onCanPlay);
 
     return () => {
+      audio.removeEventListener("timeupdate", onTimeUpdate);
+      audio.removeEventListener("durationchange", onDuration);
+      audio.removeEventListener("ended", onEnded);
+      audio.removeEventListener("error", onError);
+      audio.removeEventListener("canplay", onCanPlay);
       audio.pause();
       audio.src = "";
     };
-  }, []);
+  }, []); // eslint-disable-line
 
-  // Update speed on change
   useEffect(() => {
     if (audioRef.current) audioRef.current.playbackRate = speed;
   }, [speed]);
 
-  const speak = async (text, language = "vi", gender = "female") => {
-    if (!text?.trim()) return;
-    const audio = audioRef.current;
-    audio.pause();
-    setStatus("loading");
-    setCurrentText(text.slice(0, 60) + (text.length > 60 ? "..." : ""));
-    setProgress(0);
-    setDuration(0);
+  const speak = useCallback(
+    async (text, language = "vi", gender = "female") => {
+      if (!text?.trim()) return;
+      const audio = audioRef.current;
+      stoppedRef.current = false;
+      audio.pause();
+      audio.src = "";
+      setStatus("loading");
+      setCurrentText(text.slice(0, 60) + (text.length > 60 ? "..." : ""));
+      setProgress(0);
+      setDuration(0);
 
-    try {
-      // POST text to TTS endpoint → get back audio blob URL
-      const res = await fetch(`${API_BASE}/api/tts`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ text, language, gender }),
-      });
-
-      if (!res.ok) {
-        const err = await res.json();
-        throw new Error(err.error);
+      try {
+        const res = await api.tts(
+          text.slice(0, TTS_MAX_CHARS),
+          language,
+          gender,
+        );
+        if (!res.ok) {
+          const err = await res.json();
+          throw new Error(err.error);
+        }
+        const blob = await res.blob();
+        if (stoppedRef.current) return; // user stopped while loading
+        audio.src = URL.createObjectURL(blob);
+        audio.load();
+      } catch (err) {
+        console.error("[TTS]", err);
+        setStatus("error");
       }
+    },
+    [],
+  );
 
-      const blob = await res.blob();
-      const url = URL.createObjectURL(blob);
-      audio.src = url;
-      audio.load();
-      // canplay event will fire → plays automatically
-    } catch (err) {
-      console.error("[TTS]", err);
-      setStatus("error");
-    }
-  };
-
-  const togglePlay = () => {
+  const togglePlay = useCallback(() => {
     const audio = audioRef.current;
     if (!audio.src) return;
     if (status === "playing") {
@@ -122,28 +142,35 @@ function useTTS() {
       audio.play();
       setStatus("playing");
     }
-  };
+  }, [status]);
 
-  const seek = (delta) => {
+  const seek = useCallback((delta) => {
     const audio = audioRef.current;
     audio.currentTime = Math.max(
       0,
       Math.min(audio.currentTime + delta, audio.duration || 0),
     );
-  };
+  }, []);
 
-  const stop = () => {
+  // Full stop — clears src + calls load() to abort any pending browser fetch
+  const stop = useCallback(() => {
+    stoppedRef.current = true;
     const audio = audioRef.current;
     audio.pause();
-    audio.currentTime = 0;
+    audio.src = "";
+    audio.load();
     setStatus("idle");
     setProgress(0);
-  };
+    setDuration(0);
+    setCurrentText("");
+  }, []);
 
-  const cycleSpeed = () => {
-    const speeds = [0.75, 1, 1.25, 1.5];
-    setSpeed(speeds[(speeds.indexOf(speed) + 1) % speeds.length]);
-  };
+  const cycleSpeed = useCallback(() => {
+    setSpeed((s) => {
+      const idx = PLAYBACK_SPEEDS.indexOf(s);
+      return PLAYBACK_SPEEDS[(idx + 1) % PLAYBACK_SPEEDS.length];
+    });
+  }, []);
 
   const formatTime = (s) =>
     isNaN(s)
@@ -179,12 +206,12 @@ function AudioBar({ tts }) {
     cycleSpeed,
     currentText,
   } = tts;
-  const visible = status !== "idle";
+  if (status === "idle") return null;
+
+  const pct = duration ? `${(progress / duration) * 100}%` : "0%";
 
   return (
-    <div
-      className={`fixed bottom-0 left-1/2 right-auto w-[80vw] bg-white border-t border-gray-200 px-6 py-4 transition-transform duration-500 shadow-[0_-10px_25px_-5px_rgba(0,0,0,0.05)] z-40 ${visible ? "translate-y-0 -translate-x-1/2" : "translate-y-full -translate-x-1/2"}`}
-    >
+    <div className="fixed bottom-0 left-1/2 -translate-x-1/2 w-[80vw] bg-white border border-gray-200 rounded-t-2xl px-6 py-4 shadow-xl z-40">
       <div className="max-w-5xl mx-auto flex items-center gap-6">
         {/* Info */}
         <div className="hidden lg:flex items-center gap-3 w-64 shrink-0">
@@ -210,8 +237,8 @@ function AudioBar({ tts }) {
           <div className="flex items-center justify-center gap-5">
             <button
               onClick={() => seek(-10)}
-              className="text-gray-400 hover:text-indigo-600 transition-colors"
               disabled={status === "loading"}
+              className="text-gray-400 hover:text-indigo-600 transition-colors disabled:opacity-40"
             >
               <RotateCcw size={20} />
             </button>
@@ -230,27 +257,21 @@ function AudioBar({ tts }) {
             </button>
             <button
               onClick={() => seek(10)}
-              className="text-gray-400 hover:text-indigo-600 transition-colors"
               disabled={status === "loading"}
+              className="text-gray-400 hover:text-indigo-600 transition-colors disabled:opacity-40"
             >
               <RotateCw size={20} />
             </button>
           </div>
-
-          {/* Progress bar */}
           <div className="flex items-center gap-3">
             <span className="text-[10px] font-mono font-bold text-gray-400 w-8">
               {formatTime(progress)}
             </span>
-            <div className="flex-1 h-1.5 bg-gray-100 rounded-full relative group cursor-pointer">
+            <div className="flex-1 h-1.5 bg-gray-100 rounded-full">
               <div
-                className="absolute top-0 left-0 h-full bg-indigo-600 rounded-full transition-all"
-                style={{
-                  width: duration ? `${(progress / duration) * 100}%` : "0%",
-                }}
-              >
-                <div className="absolute right-0 top-1/2 -translate-y-1/2 w-3.5 h-3.5 bg-indigo-600 border-2 border-white rounded-full shadow-md scale-0 group-hover:scale-100 transition-transform" />
-              </div>
+                className="h-full bg-indigo-600 rounded-full transition-all"
+                style={{ width: pct }}
+              />
             </div>
             <span className="text-[10px] font-mono font-bold text-gray-400 w-8">
               {formatTime(duration)}
@@ -297,7 +318,7 @@ function BookCover({ book, onClick }) {
         )}
       </div>
       <div className="space-y-0.5 px-0.5">
-        <p className="font-semibold text-[#000000] text-sm leading-tight line-clamp-2 group-hover:text-indigo-700 transition-colors">
+        <p className="font-semibold text-black text-sm leading-tight line-clamp-2 group-hover:text-indigo-700 transition-colors">
           {book.title}
         </p>
         <p className="text-xs text-gray-500 truncate">{book.author}</p>
@@ -362,15 +383,15 @@ function BookSummaryModal({ book, onClose, onListen }) {
 }
 
 // ─── AIChatPanel ──────────────────────────────────────────────────────────────
+const INITIAL_MESSAGE = (book) => ({
+  role: "assistant",
+  content: book
+    ? `Chào bạn! Tôi đã đọc "${book.title}" của ${book.author}. Bạn muốn hỏi gì về cuốn sách này?`
+    : "Chào bạn! Hãy hỏi tôi bất cứ điều gì về cuốn sách bạn đang đọc!",
+});
+
 function AIChatPanel({ book, currentChapter, onClose }) {
-  const [messages, setMessages] = useState([
-    {
-      role: "assistant",
-      content: book
-        ? `Chào bạn! Tôi đã đọc "${book.title}" của ${book.author}. Bạn muốn hỏi gì về cuốn sách này?`
-        : "Chào bạn! Hãy hỏi tôi bất cứ điều gì về cuốn sách bạn đang đọc!",
-    },
-  ]);
+  const [messages, setMessages] = useState([INITIAL_MESSAGE(book)]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const bottomRef = useRef(null);
@@ -393,7 +414,7 @@ function AIChatPanel({ book, currentChapter, onClose }) {
         bookId: book?.id || null,
         chapterId: currentChapter?.id || null,
         history: messages
-          .slice(1)
+          .slice(-CHAT_HISTORY_LIMIT)
           .map((m) => ({ role: m.role, content: m.content })),
       });
       if (data.error) throw new Error(data.error);
@@ -579,8 +600,8 @@ function HomePage({ onSelectBook }) {
   );
 }
 
-// ─── Main App ─────────────────────────────────────────────────────────────────
-const App = () => {
+// ─── App ──────────────────────────────────────────────────────────────────────
+export default function App() {
   const tts = useTTS();
 
   const [currentBookId, setCurrentBookId] = useState(null);
@@ -595,7 +616,9 @@ const App = () => {
   const [showBookSummary, setShowBookSummary] = useState(false);
   const [isChatOpen, setIsChatOpen] = useState(false);
 
-  // Load book
+  const lang = book?.language?.startsWith("vi") ? "vi" : "en";
+
+  // Load book + chapters when bookId changes
   useEffect(() => {
     if (!currentBookId) return;
     setBookLoading(true);
@@ -616,15 +639,16 @@ const App = () => {
       .finally(() => setBookLoading(false));
   }, [currentBookId]);
 
-  // Load chapter
+  // Load individual chapter content on demand
   useEffect(() => {
-    if (!currentBookId || chapters.length === 0) return;
+    if (!currentBookId || !chapters.length) return;
     const chap = chapters[currentChapterIndex];
     if (!chap) return;
     if (chap.content) {
       setCurrentChapterData(chap);
       return;
     }
+
     setChapterLoading(true);
     api
       .chapter(currentBookId, chap.chapter_number)
@@ -638,27 +662,24 @@ const App = () => {
       })
       .catch(console.error)
       .finally(() => setChapterLoading(false));
-  }, [currentChapterIndex, currentBookId, chapters.length]);
+  }, [currentChapterIndex, currentBookId, chapters.length]); // eslint-disable-line
 
-  const goHome = () => {
+  const goHome = useCallback(() => {
+    tts.stop(); // stop + clear src before navigation
     setCurrentBookId(null);
     setBook(null);
     setChapters([]);
-    tts.stop();
     setIsChatOpen(false);
-  };
+  }, [tts]);
 
-  const navigateChapter = (dir) => {
+  const navigateChapter = useCallback((dir) => {
     setCurrentChapterIndex((p) => p + dir);
     setIsSummarizing(false);
     setCurrentChapterData(null);
-  };
-
-  // Detect language for TTS
-  const lang = book?.language?.startsWith("vi") ? "vi" : "en";
+  }, []);
 
   return (
-    <div className="flex flex-col h-screen bg-white text-[#2D3436] font-sans overflow-hidden">
+    <div className="flex flex-col h-screen bg-white text-gray-900 font-sans overflow-hidden">
       {/* Header */}
       <header className="h-16 bg-white border-b border-gray-200 flex items-center justify-between px-6 shrink-0 z-30">
         <button
@@ -669,22 +690,16 @@ const App = () => {
           <span>KimQReading</span>
         </button>
         <nav className="flex gap-8">
-          {currentBookId && book && (
-            <>
+          {book &&
+            ["overview", "reading"].map((tab) => (
               <button
-                onClick={() => setActiveTab("overview")}
-                className={`py-5 px-1 border-b-2 transition-all ${activeTab === "overview" ? "border-indigo-600 text-indigo-600" : "border-transparent text-gray-500 hover:text-gray-700"}`}
+                key={tab}
+                onClick={() => setActiveTab(tab)}
+                className={`py-5 px-1 border-b-2 transition-all ${activeTab === tab ? "border-indigo-600 text-indigo-600" : "border-transparent text-gray-500 hover:text-gray-700"}`}
               >
-                Tổng quan sách
+                {tab === "overview" ? "Tổng quan sách" : "Đọc sách"}
               </button>
-              <button
-                onClick={() => setActiveTab("reading")}
-                className={`py-5 px-1 border-b-2 transition-all ${activeTab === "reading" ? "border-indigo-600 text-indigo-600" : "border-transparent text-gray-500 hover:text-gray-700"}`}
-              >
-                Đọc sách
-              </button>
-            </>
-          )}
+            ))}
         </nav>
         <div className="w-32 flex justify-end">
           {currentBookId && (
@@ -711,9 +726,10 @@ const App = () => {
         )}
 
         {/* Overview */}
-        {currentBookId && book && activeTab === "overview" && (
+        {book && activeTab === "overview" && (
           <div className="max-w-4xl mx-auto py-12 px-6 h-full overflow-y-auto pb-10">
             <div className="flex flex-col md:flex-row gap-10">
+              {/* Cover */}
               <div className="w-full md:w-56 shrink-0">
                 <div className="aspect-[2/3] bg-gradient-to-br from-indigo-100 to-purple-100 rounded-xl shadow-lg overflow-hidden border border-gray-100">
                   {book.cover_url ? (
@@ -730,9 +746,10 @@ const App = () => {
                 </div>
               </div>
 
+              {/* Info */}
               <div className="flex-1 space-y-5">
                 <div>
-                  <h1 className="text-3xl font-bold tracking-tight text-[#000000]">
+                  <h1 className="text-3xl font-bold tracking-tight text-black">
                     {book.title}
                   </h1>
                   <p className="text-lg text-gray-500 italic mt-1">
@@ -740,6 +757,7 @@ const App = () => {
                   </p>
                 </div>
 
+                {/* Badges */}
                 <div className="flex flex-wrap gap-2">
                   {book.published_year && (
                     <span className="flex items-center gap-1 text-xs px-3 py-1 bg-gray-100 text-gray-600 rounded-full">
@@ -769,12 +787,11 @@ const App = () => {
                   )}
                 </div>
 
+                {/* Description */}
                 <div className="p-5 bg-white rounded-xl border border-gray-100 shadow-sm">
-                  <div className="flex items-center justify-between mb-3">
-                    <h3 className="font-bold flex items-center gap-2 text-indigo-600 uppercase text-xs tracking-wider">
-                      <Info size={14} /> Giới thiệu
-                    </h3>
-                  </div>
+                  <h3 className="font-bold flex items-center gap-2 text-indigo-600 uppercase text-xs tracking-wider mb-3">
+                    <Info size={14} /> Giới thiệu
+                  </h3>
                   <p className="text-gray-600 leading-relaxed text-sm">
                     {book.description || (
                       <span className="italic text-gray-400">
@@ -784,6 +801,7 @@ const App = () => {
                   </p>
                 </div>
 
+                {/* Actions */}
                 <div className="flex gap-3 flex-wrap">
                   <button
                     onClick={() => setShowBookSummary(true)}
@@ -810,9 +828,10 @@ const App = () => {
         )}
 
         {/* Reading */}
-        {currentBookId && book && activeTab === "reading" && (
+        {book && activeTab === "reading" && (
           <div className="flex h-full">
-            <aside className="w-60 bg-white overflow-y-auto shrink-0 flex flex-col">
+            {/* Sidebar */}
+            <aside className="w-60 bg-white overflow-y-auto shrink-0 flex flex-col border-r border-gray-100">
               <div className="p-4 font-bold text-gray-400 uppercase text-xs tracking-widest border-b border-gray-100">
                 Danh sách chương
               </div>
@@ -823,7 +842,7 @@ const App = () => {
                     setCurrentChapterIndex(idx);
                     setIsSummarizing(false);
                   }}
-                  className={`text-left p-4 transition-all border-l-4 ${currentChapterIndex === idx ? "bg-indigo-50 border-indigo-600 text-indigo-700" : "border-transparent text-[#000000] hover:bg-gray-50"}`}
+                  className={`text-left p-4 transition-all border-l-4 ${currentChapterIndex === idx ? "bg-indigo-50 border-indigo-600 text-indigo-700" : "border-transparent text-black hover:bg-gray-50"}`}
                 >
                   <span className="block text-[10px] opacity-50 mb-0.5">
                     Chương {chap.chapter_number}
@@ -835,6 +854,7 @@ const App = () => {
               ))}
             </aside>
 
+            {/* Content */}
             <section className="flex-1 overflow-y-auto bg-white pb-32">
               {chapterLoading ? (
                 <div className="flex items-center justify-center h-full gap-3 text-gray-400">
@@ -843,40 +863,41 @@ const App = () => {
                 </div>
               ) : currentChapterData ? (
                 <div className="max-w-3xl mx-auto py-14 px-10">
+                  {/* Chapter header */}
                   <div className="flex items-start justify-between mb-10 pb-6 border-b border-gray-100 gap-4">
                     <div>
                       <p className="text-xs text-indigo-400 font-medium mb-1 uppercase tracking-wider">
                         Chương {currentChapterData.chapter_number}
                       </p>
-                      <h2 className="text-2xl font-bold text-[#000000]">
+                      <h2 className="text-2xl font-bold text-black">
                         {currentChapterData.title}
                       </h2>
                     </div>
                     <div className="flex gap-2 shrink-0">
                       <button
-                        onClick={() => setIsSummarizing(!isSummarizing)}
+                        onClick={() => setIsSummarizing((s) => !s)}
                         className={`flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm font-medium transition-all ${isSummarizing ? "bg-indigo-600 text-white" : "bg-gray-100 text-gray-600 hover:bg-gray-200"}`}
                       >
                         <FileText size={15} />
                         {isSummarizing ? "Nội dung" : "Tóm tắt"}
                       </button>
-                      {/* TTS button — reads summary or content */}
                       <button
-                        onClick={() => {
-                          const textToRead = isSummarizing
-                            ? currentChapterData.summary
-                            : currentChapterData.content;
-                          tts.speak(textToRead, lang);
-                        }}
+                        onClick={() =>
+                          tts.speak(
+                            isSummarizing
+                              ? currentChapterData.summary
+                              : currentChapterData.content,
+                            lang,
+                          )
+                        }
                         className="flex items-center gap-1.5 px-3 py-2 bg-indigo-50 text-indigo-600 rounded-lg hover:bg-indigo-100 transition-colors text-sm font-medium"
-                        title="Nghe đọc"
                       >
-                        <Volume2 size={15} />
-                        Nghe
+                        <Volume2 size={15} /> Nghe
                       </button>
                     </div>
                   </div>
 
+                  {/* Chapter body */}
                   {isSummarizing ? (
                     <div className="bg-amber-50 p-8 rounded-2xl border border-amber-100 shadow-sm">
                       <h4 className="text-amber-800 font-bold mb-4 flex items-center gap-2">
@@ -892,6 +913,7 @@ const App = () => {
                     </div>
                   )}
 
+                  {/* Navigation */}
                   <div className="mt-20 pt-8 border-t border-gray-100 flex justify-between">
                     <button
                       disabled={currentChapterIndex === 0}
@@ -914,7 +936,6 @@ const App = () => {
           </div>
         )}
 
-        {/* Audio Bar */}
         <AudioBar tts={tts} />
       </main>
 
@@ -948,6 +969,4 @@ const App = () => {
       </div>
     </div>
   );
-};
-
-export default App;
+}

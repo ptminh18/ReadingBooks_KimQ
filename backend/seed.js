@@ -21,16 +21,16 @@ const API_BASE = "http://localhost:3001";
 // ─── 1. FILL IN YOUR BOOK INFO ────────────────────────────────────────────────
 
 const BOOK = {
-  title: "Atomic Habits",
-  author: "James Clear",
+  title: "Ikigai",
+  author: "Héctor García and Francesc Miralles",
   description:
-    "Atomic Habits by James Clear, published on October 16, 2018, is a ~320-page guide focused on small, daily improvements (1% better every day) to create massive long-term results. The details a near-fatal high school baseball accident that taught Clear the power of tiny, consistent habits for recovery and success.",
+    "Ikigai (pronounced ee-key-guy) is a Japanese concept that translates roughly to 'a reason for being'. It represents the intersection of passion, mission, vocation, and profession—giving you a sense of purpose and the joy of always being busy.",
   cover_url:
-    "https://m.media-amazon.com/images/I/81kg51XRc1L._AC_UF1000,1000_QL80_.jpg",
-  category: "Self-Help",
+    "https://m.media-amazon.com/images/I/81l3rZK4lnL._AC_UF1000,1000_QL80_.jpg",
+  category: "Non-fiction Self-help",
   language: "en",
-  page_count: 320,
-  published_year: 2018,
+  page_count: 208,
+  published_year: 2016,
 };
 
 // ─── 2. FILL IN YOUR CHAPTERS ─────────────────────────────────────────────────
@@ -40,4708 +40,2687 @@ const BOOK = {
 const CHAPTERS = [
   {
     chapter_number: 1,
-    title: "THE FUNDAMENTALS: Why Tiny Changes Make a Big Difference",
-    content: `1
-The Surprising Power of Atomic Habits
-THE FATE OFBritish Cycling changed one day in 2003. The organization, which was
-the governing body for professional cycling in Great Britain, had recently hired
-Dave Brailsford as its new performance director. At the time, professional
-cyclists in Great Britain had endured nearly one hundred years of mediocrity.
-Since 1908, British riders had won just a single gold medal at the Olympic
-Games, and they had fared even worse in cycling’s biggest race, the Tour de
-France. In 110 years, no British cyclist had ever won the event.
-In fact, the performance of British riders had been so underwhelming that one
-of the top bike manufacturers in Europe refused to sell bikes to the team because
-they were afraid that it would hurt sales if other professionals saw the Brits using
-their gear.
-Brailsford had been hired to put British Cycling on a new trajectory. What
-made him different from previous coaches was his relentless commitment to a
-strategy that he referred to as “the aggregation of marginal gains,” which was the
-philosophy of searching for a tiny margin of improvement in everything you do.
-Brailsford said, “The whole principle came from the idea that if you broke down
-everything you could think of that goes into riding a bike, and then improve it by
-1 percent, you will get a significant increase when you put them all together.”
-Brailsford and his coaches began by making small adjustments you might
-expect from a professional cycling team. They redesigned the bike seats to make
-them more comfortable and rubbed alcohol on the tires for a better grip. They
-asked riders to wear electrically heated overshorts to maintain ideal muscle
-temperature while riding and used biofeedback sensors to monitor how each
-athlete responded to a particular workout. The team tested various fabrics in a
-wind tunnel and had their outdoor riders switch to indoor racing suits, which
-proved to be lighter and more aerodynamic.
-But they didn’t stop there. Brailsford and his team continued to find 1 percent
-improvements in overlooked and unexpected areas. They tested different types
-of massage gels to see which one led to the fastest muscle recovery. They hired a
-surgeon to teach each rider the best way to wash their hands to reduce the
-chances of catching a cold. They determined the type of pillow and mattress that
-led to the best night’s sleep for each rider. They even painted the inside of the
-team truck white, which helped them spot little bits of dust that would normally
-slip by unnoticed but could degrade the performance of the finely tuned bikes.
-As these and hundreds of other small improvements accumulated, the results
-came faster than anyone could have imagined.
-Just five years after Brailsford took over, the British Cycling team dominated
-the road and track cycling events at the 2008 Olympic Games in Beijing, where
-they won an astounding 60 percent of the gold medals available. Four years
-later, when the Olympic Games came to London, the Brits raised the bar as they
-set nine Olympic records and seven world records.
-That same year, Bradley Wiggins became the first British cyclist to win the
-Tour de France. The next year, his teammate Chris Froome won the race, and he
-would go on to win again in 2015, 2016, and 2017, giving the British team five
-Tour de France victories in six years.
-During the ten-year span from 2007 to 2017, British cyclists won 178 world
-championships and sixty-six Olympic or Paralympic gold medals and captured
-five Tour de France victories in what is widely regarded as the most successful
-run in cycling history.*
-How does this happen? How does a team of previously ordinary athletes
-transform into world champions with tiny changes that, at first glance, would
-seem to make a modest difference at best? Why do small improvements
-accumulate into such remarkable results, and how can you replicate this
-approach in your own life?
-WHY SMALL HABITS MAKE A BIG DIFFERENCE
-It is so easy to overestimate the importance of one defining moment and
-underestimate the value of making small improvements on a daily basis. Too
-often, we convince ourselves that massive success requires massive action.
-Whether it is losing weight, building a business, writing a book, winning a
-championship, or achieving any other goal, we put pressure on ourselves to
-make some earth-shattering improvement that everyone will talk about.
-Meanwhile, improving by 1 percent isn’t particularly notable—sometimes it
-isn’t even noticeable—but it can be far more meaningful, especially in the long
-run. The difference a tiny improvement can make over time is astounding.
-Here’s how the math works out: if you can get 1 percent better each day for one
-year, you’ll end up thirty-seven times better by the time you’re done.
-Conversely, if you get 1 percent worse each day for one year, you’ll decline
-nearly down to zero. What starts as a small win or a minor setback accumulates
-into something much more.
-1% BETTER EVERY DAY
-1% worse every day for one year. 0.99
-365 = 00.03
-1% better every day for one year. 1.01
-365 = 37.78
-FIGURE 1: The effects of small habits compound over time. For example, if you can get just 1 percent better each day, you’ll end up with results that are nearly 37 times better after one
-year.
-Habits are the compound interest of selfimprovement. The same way that
-money multiplies through compound interest, the effects of your habits multiply
-as you repeat them. They seem to make little difference on any given day and yet
-the impact they deliver over the months and years can be enormous. It is only
-when looking back two, five, or perhaps ten years later that the value of good
-habits and the cost of bad ones becomes strikingly apparent.
-This can be a difficult concept to appreciate in daily life. We often dismiss
-small changes because they don’t seem to matter very much in the moment. If
-you save a little money now, you’re still not a millionaire. If you go to the gym
-three days in a row, you’re still out of shape. If you study Mandarin for an hour
-tonight, you still haven’t learned the language. We make a few changes, but the
-results never seem to come quickly and so we slide back into our previous
-routines.
-Unfortunately, the slow pace of transformation also makes it easy to let a bad
-habit slide. If you eat an unhealthy meal today, the scale doesn’t move much. If
-you work late tonight and ignore your family, they will forgive you. If you
-procrastinate and put your project off until tomorrow, there will usually be time
-to finish it later. A single decision is easy to dismiss.
-But when we repeat 1 percent errors, day after day, by replicating poor
-decisions, duplicating tiny mistakes, and rationalizing little excuses, our small
-choices compound into toxic results. It’s the accumulation of many missteps—a
-1 percent decline here and there—that eventually leads to a problem.
-The impact created by a change in your habits is similar to the effect of
-shifting the route of an airplane by just a few degrees. Imagine you are flying
-from Los Angeles to New York City. If a pilot leaving from LAX adjusts the
-heading just 3.5 degrees south, you will land in Washington, D.C., instead of
-New York. Such a small change is barely noticeable at takeoff—the nose of the
-airplane moves just a few feet—but when magnified across the entire United
-States, you end up hundreds of miles apart.*
-Similarly, a slight change in your daily habits can guide your life to a very
-different destination. Making a choice that is 1 percent better or 1 percent worse
-seems insignificant in the moment, but over the span of moments that make up a
-lifetime these choices determine the difference between who you are and who
-you could be. Success is the product of daily habits—not once-in-a-lifetime
-transformations.
-That said, it doesn’t matter how successful or unsuccessful you are right now.
-What matters is whether your habits are putting you on the path toward success.
-You should be far more concerned with your current trajectory than with your
-current results. If you’re a millionaire but you spend more than you earn each
-month, then you’re on a bad trajectory. If your spending habits don’t change, it’s
-not going to end well. Conversely, if you’re broke, but you save a little bit every
-month, then you’re on the path toward financial freedom—even if you’re
-moving slower than you’d like.
-Your outcomes are a lagging measure of your habits. Your net worth is a
-lagging measure of your financial habits. Your weight is a lagging measure of
-your eating habits. Your knowledge is a lagging measure of your learning habits.
-Your clutter is a lagging measure of your cleaning habits. You get what you
-repeat.
-If you want to predict where you’ll end up in life, all you have to do is follow
-the curve of tiny gains or tiny losses, and see how your daily choices will
-compound ten or twenty years down the line. Are you spending less than you
-earn each month? Are you making it into the gym each week? Are you reading
-books and learning something new each day? Tiny battles like these are the ones
-that will define your future self.
-Time magnifies the margin between success and failure. It will multiply
-whatever you feed it. Good habits make time your ally. Bad habits make time
-your enemy.
-Habits are a double-edged sword. Bad habits can cut you down just as easily
-as good habits can build you up, which is why understanding the details is
-crucial. You need to know how habits work and how to design them to your
-liking, so you can avoid the dangerous half of the blade.
-YOUR HABITS CAN COMPOUND FOR YOU OR AGAINST YOU
-Positive Compounding
-Productivity compounds. Accomplishing one extra task is a small feat on any given day, but it counts for a lot over an entire career. The effect of automating an old task or mastering a new
-skill can be even greater. The more tasks you can handle without thinking, the more your brain is free to focus on other areas.
-Knowledge compounds. Learning one new idea won’t make you a genius, but a commitment to lifelong learning can be transformative. Furthermore, each book you read not only teaches
-you something new but also opens up different ways of thinking about old ideas. As Warren Buffett says, “That’s how knowledge works. It builds up, like compound interest.”
-Relationships compound. People reflect your behavior back to you. The more you help others, the more others want to help you. Being a little bit nicer in each interaction can result in a
-network of broad and strong connections over time.
-Negative Compounding
-Stress compounds. The frustration of a traffic jam. The weight of parenting responsibilities. The worry of making ends meet. The strain of slightly high blood pressure. By themselves, these
-common causes of stress are manageable. But when they persist for years, little stresses compound into serious health issues.
-Negative thoughts compound. The more you think of yourself as worthless, stupid, or ugly, the more you condition yourself to interpret life that way. You get trapped in a thought loop. The
-same is true for how you think about others. Once you fall into the habit of seeing people as angry, unjust, or selfish, you see those kind of people everywhere.
-Outrage compounds. Riots, protests, and mass movements are rarely the result of a single event. Instead, a long series of microaggressions and daily aggravations slowly multiply until one
-event tips the scales and outrage spreads like wildfire.
-WHAT PROGRESS IS REALLY LIKE
-Imagine that you have an ice cube sitting on the table in front of you. The room
-is cold and you can see your breath. It is currently twenty-five degrees. Ever so
-slowly, the room begins to heat up.
-Twenty-six degrees.
-Twenty-seven.
-Twenty-eight.
-The ice cube is still sitting on the table in front of you.
-Twenty-nine degrees.
-Thirty.
-Thirty-one.
-Still, nothing has happened.
-Then, thirty-two degrees. The ice begins to melt. A one-degree shift,
-seemingly no different from the temperature increases before it, has unlocked a
-huge change.
-Breakthrough moments are often the result of many previous actions, which
-build up the potential required to unleash a major change. This pattern shows up
-everywhere. Cancer spends 80 percent of its life undetectable, then takes over
-the body in months. Bamboo can barely be seen for the first five years as it
-builds extensive root systems underground before exploding ninety feet into the
-air within six weeks.
-Similarly, habits often appear to make no difference until you cross a critical
-threshold and unlock a new level of performance. In the early and middle stages
-of any quest, there is often a Valley of Disappointment. You expect to make
-progress in a linear fashion and it’s frustrating how ineffective changes can seem
-during the first days, weeks, and even months. It doesn’t feel like you are going
-anywhere. It’s a hallmark of any compounding process: the most powerful
-outcomes are delayed.
-This is one of the core reasons why it is so hard to build habits that last.
-People make a few small changes, fail to see a tangible result, and decide to stop.
-You think, “I’ve been running every day for a month, so why can’t I see any
-change in my body?” Once this kind of thinking takes over, it’s easy to let good
-habits fall by the wayside. But in order to make a meaningful difference, habits
-need to persist long enough to break through this plateau—what I call the
-Plateau of Latent Potential.
-If you find yourself struggling to build a good habit or break a bad one, it is
-not because you have lost your ability to improve. It is often because you have
-not yet crossed the Plateau of Latent Potential. Complaining about not achieving
-success despite working hard is like complaining about an ice cube not melting
-when you heated it from twenty-five to thirty-one degrees. Your work was not
-wasted; it is just being stored. All the action happens at thirty-two degrees.
-When you finally break through the Plateau of Latent Potential, people will
-call it an overnight success. The outside world only sees the most dramatic event
-rather than all that preceded it. But you know that it’s the work you did long ago
-—when it seemed that you weren’t making any progress—that makes the jump
-today possible.
-It is the human equivalent of geological pressure. Two tectonic plates can
-grind against one another for millions of years, the tension slowly building all
-the while. Then, one day, they rub each other once again, in the same fashion
-they have for ages, but this time the tension is too great. An earthquake erupts.
-Change can take years—before it happens all at once.
-Mastery requires patience. The San Antonio Spurs, one of the most successful
-teams in NBA history, have a quote from social reformer Jacob Riis hanging in
-their locker room: “When nothing seems to help, I go and look at a stonecutter
-hammering away at his rock, perhaps a hundred times without as much as a
-crack showing in it. Yet at the hundred and first blow it will split in two, and I
-know it was not that last blow that did it—but all that had gone before.”
-THE PLATEAU OF LATENT POTENTIAL
-FIGURE 2: We often expect progress to be linear. At the very least, we hope it will come quickly. In reality, the results of our efforts are often delayed. It is not until months or years later
-that we realize the true value of the previous work we have done. This can result in a “valley of disappointment” where people feel discouraged after putting in weeks or months of hard work
-without experiencing any results. However, this work was not wasted. It was simply being stored. It is not until much later that the full value of previous efforts is revealed.
-All big things come from small beginnings. The seed of every habit is a
-single, tiny decision. But as that decision is repeated, a habit sprouts and grows
-stronger. Roots entrench themselves and branches grow. The task of breaking a
-bad habit is like uprooting a powerful oak within us. And the task of building a
-good habit is like cultivating a delicate flower one day at a time.
-But what determines whether we stick with a habit long enough to survive the
-Plateau of Latent Potential and break through to the other side? What is it that
-causes some people to slide into unwanted habits and enables others to enjoy the
-compounding effects of good ones?
-FORGET ABOUT GOALS, FOCUS ON SYSTEMS INSTEAD
-Prevailing wisdom claims that the best way to achieve what we want in life—
-getting into better shape, building a successful business, relaxing more and
-worrying less, spending more time with friends and family—is to set specific,
-actionable goals.
-For many years, this was how I approached my habits, too. Each one was a
-goal to be reached. I set goals for the grades I wanted to get in school, for the
-weights I wanted to lift in the gym, for the profits I wanted to earn in business. I
-succeeded at a few, but I failed at a lot of them. Eventually, I began to realize
-that my results had very little to do with the goals I set and nearly everything to
-do with the systems I followed.
-What’s the difference between systems and goals? It’s a distinction I first
-learned from Scott Adams, the cartoonist behind the Dilbert comic. Goals are
-about the results you want to achieve. Systems are about the processes that lead
-to those results.
-If you’re a coach, your goal might be to win a championship. Your
-system is the way you recruit players, manage your assistant coaches,
-and conduct practice.
-If you’re an entrepreneur, your goal might be to build a million-dollar
-business. Your system is how you test product ideas, hire employees,
-and run marketing campaigns.
-If you’re a musician, your goal might be to play a new piece. Your
-system is how often you practice, how you break down and tackle
-difficult measures, and your method for receiving feedback from your
-instructor.
-Now for the interesting question: If you completely ignored your goals and
-focused only on your system, would you still succeed? For example, if you were
-a basketball coach and you ignored your goal to win a championship and
-focused only on what your team does at practice each day, would you still get
-results?
-I think you would.
-The goal in any sport is to finish with the best score, but it would be ridiculous
-to spend the whole game staring at the scoreboard. The only way to actually win
-is to get better each day. In the words of three-time Super Bowl winner Bill
-Walsh, “The score takes care of itself.” The same is true for other areas of life. If
-you want better results, then forget about setting goals. Focus on your system
-instead.
-What do I mean by this? Are goals completely useless? Of course not. Goals
-are good for setting a direction, but systems are best for making progress. A
-handful of problems arise when you spend too much time thinking about your
-goals and not enough time designing your systems.
-Problem #1: Winners and losers have the same goals.
-Goal setting suffers from a serious case of survivorship bias. We concentrate on
-the people who end up winning—the survivors—and mistakenly assume that
-ambitious goals led to their success while overlooking all of the people who had
-the same objective but didn’t succeed.
-Every Olympian wants to win a gold medal. Every candidate wants to get the
-job. And if successful and unsuccessful people share the same goals, then the
-goal cannot be what differentiates the winners from the losers. It wasn’t the goal
-of winning the Tour de France that propelled the British cyclists to the top of the
-sport. Presumably, they had wanted to win the race every year before—just like
-every other professional team. The goal had always been there. It was only when
-they implemented a system of continuous small improvements that they achieved
-a different outcome.
-Problem #2: Achieving a goal is only a momentary change.
-Imagine you have a messy room and you set a goal to clean it. If you summon
-the energy to tidy up, then you will have a clean room—for now. But if you
-maintain the same sloppy, pack-rat habits that led to a messy room in the first
-place, soon you’ll be looking at a new pile of clutter and hoping for another burst
-of motivation. You’re left chasing the same outcome because you never changed
-the system behind it. You treated a symptom without addressing the cause.
-Achieving a goal only changes your life for the moment. That’s the
-counterintuitive thing about improvement. We think we need to change our
-results, but the results are not the problem. What we really need to change are
-the systems that cause those results. When you solve problems at the results
-level, you only solve them temporarily. In order to improve for good, you need
-to solve problems at the systems level. Fix the inputs and the outputs will fix
-themselves.
-Problem #3: Goals restrict your happiness.
-The implicit assumption behind any goal is this: “Once I reach my goal, then I’ll
-be happy.” The problem with a goals-first mentality is that you’re continually
-putting happiness off until the next milestone. I’ve slipped into this trap so many
-times I’ve lost count. For years, happiness was always something for my future
-self to enjoy. I promised myself that once I gained twenty pounds of muscle or
-after my business was featured in the New York Times, then I could finally relax.
-Furthermore, goals create an “either-or” conflict: either you achieve your goal
-and are successful or you fail and you are a disappointment. You mentally box
-yourself into a narrow version of happiness. This is misguided. It is unlikely that
-your actual path through life will match the exact journey you had in mind when
-you set out. It makes no sense to restrict your satisfaction to one scenario when
-there are many paths to success.
-A systems-first mentality provides the antidote. When you fall in love with the
-process rather than the product, you don’t have to wait to give yourself
-permission to be happy. You can be satisfied anytime your system is running.
-And a system can be successful in many different forms, not just the one you
-first envision.
-Problem #4: Goals are at odds with long-term progress.
-Finally, a goal-oriented mind-set can create a “yo-yo” effect. Many runners work
-hard for months, but as soon as they cross the finish line, they stop training. The
-race is no longer there to motivate them. When all of your hard work is focused
-on a particular goal, what is left to push you forward after you achieve it? This is
-why many people find themselves reverting to their old habits after
-accomplishing a goal.
-The purpose of setting goals is to win the game. The purpose of building
-systems is to continue playing the game. True long-term thinking is goal-less
-thinking. It’s not about any single accomplishment. It is about the cycle of
-endless refinement and continuous improvement. Ultimately, it is your
-commitment to the process that will determine your progress.
-A SYSTEM OF ATOMIC HABITS
-If you’re having trouble changing your habits, the problem isn’t you. The
-problem is your system. Bad habits repeat themselves again and again not
-because you don’t want to change, but because you have the wrong system for
-change.
-You do not rise to the level of your goals. You fall to the level of your
-systems.
-Focusing on the overall system, rather than a single goal, is one of the core
-themes of this book. It is also one of the deeper meanings behind the word
-atomic. By now, you’ve probably realized that an atomic habit refers to a tiny
-change, a marginal gain, a 1 percent improvement. But atomic habits are not just
-any old habits, however small. They are little habits that are part of a larger
-system. Just as atoms are the building blocks of molecules, atomic habits are the
-building blocks of remarkable results.
-Habits are like the atoms of our lives. Each one is a fundamental unit that
-contributes to your overall improvement. At first, these tiny routines seem
-insignificant, but soon they build on each other and fuel bigger wins that
-multiply to a degree that far outweighs the cost of their initial investment. They
-are both small and mighty. This is the meaning of the phrase atomic habits—a
-regular practice or routine that is not only small and easy to do, but also the
-source of incredible power; a component of the system of compound growth.
-Chapter Summary
-Habits are the compound interest of selfimprovement. Getting 1
-percent better every day counts for a lot in the long-run.
-Habits are a double-edged sword. They can work for you or against
-you, which is why understanding the details is essential.
-Small changes often appear to make no difference until you cross a
-critical threshold. The most powerful outcomes of any compounding
-process are delayed. You need to be patient.
-An atomic habit is a little habit that is part of a larger system. Just as
-atoms are the building blocks of molecules, atomic habits are the
-building blocks of remarkable results.
-If you want better results, then forget about setting goals. Focus on
-your system instead.
-You do not rise to the level of your goals. You fall to the level of your
-systems."`,
+    title: "IKIGAI: The art of staying young while growing old",
+    content: `What is your reason for being?
+According to the Japanese, everyone has an ikigai—what a French philosopher
+might call a raison d’être. Some people have found their ikigai, while others are
+still looking, though they carry it within them.
+Our ikigai is hidden deep inside each of us, and finding it requires a patient
+search. According to those born on Okinawa, the island with the most
+centenarians in the world, our ikigai is the reason we get up in the morning.
+Whatever you do, don’t retire!
+Having a clearly defined ikigai brings satisfaction, happiness, and meaning to our
+lives. The purpose of this book is to help you find yours, and to share insights
+from Japanese philosophy on the lasting health of body, mind, and spirit.
+One surprising thing you notice, living in Japan, is how active people remain
+after they retire. In fact, many Japanese people never really retire—they keep
+doing what they love for as long as their health allows.
+There is, in fact, no word in Japanese that means retire in the sense of “leaving
+the workforce for good” as in English. According to Dan Buettner, a National
+Geographic reporter who knows the country well, having a purpose in life is so
+important in Japanese culture that our idea of retirement simply doesn’t exist
+there.
+The island of (almost) eternal youth
+Certain longevity studies suggest that a strong sense of community and a clearly
+defined ikigai are just as important as the famously healthful Japanese diet—
+perhaps even more so. Recent medical studies of centenarians from Okinawa and
+other so-called Blue Zones—the geographic regions where people live longest—
+provide a number of interesting facts about these extraordinary human beings:
+Not only do they live much longer than the rest of the world’s population,
+they also suffer from fewer chronic illnesses such as cancer and heart
+disease; inflammatory disorders are also less common.
+Many of these centenarians enjoy enviable levels of vitality and health that
+would be unthinkable for people of advanced age elsewhere.
+Their blood tests reveal fewer free radicals (which are responsible for
+cellular aging), as a result of drinking tea and eating until their stomachs are
+only 80 percent full.
+Women experience more moderate symptoms during menopause, and both
+men and women maintain higher levels of sexual hormones until much later
+in life.
+The rate of dementia is well below the global average.
+The Characters Behind Ikigai
+In Japanese, ikigai is written as 生き甲斐, combining 生き, which means
+“life,” with 甲斐, which means “to be worthwhile.” 甲斐 can be broken
+down into the characters 甲, which means “armor,” “number one,” and “to
+be the first” (to head into battle, taking initiative as a leader), and 斐,
+which means “beautiful” or “elegant.”
+Though we will consider each of these findings over the course of the book,
+research clearly indicates that the Okinawans’ focus on ikigai gives a sense of
+purpose to each and every day and plays an important role in their health and
+longevity.
+The five Blue Zones
+Okinawa holds first place among the world’s Blue Zones. In Okinawa, women in
+particular live longer and have fewer diseases than anywhere else in the world.
+The five regions identified and analyzed by Dan Buettner in his book The Blue
+Zones are:
+1. Okinawa, Japan (especially the northern part of the island). The locals eat a
+diet rich in vegetables and tofu typically served on small plates. In addition to
+their philosophy of ikigai, the moai, or close-knit group of friends (see page
+15), plays an important role in their longevity.
+2. Sardinia, Italy (specifically the provinces of Nuoro and Ogliastra). Locals on
+this island consume plenty of vegetables and one or two glasses of wine per
+day. As in Okinawa, the cohesive nature of this community is another factor
+directly related to longevity.
+3. Loma Linda, California. Researchers studied a group of Seventh-day
+Adventists who are among the longest-living people in the United States.
+4. The Nicoya Peninsula, Costa Rica. Locals remain remarkably active after
+ninety; many of the region’s older residents have no problem getting up at
+five thirty in the morning to work in the fields.
+5. Ikaria, Greece. One of every three inhabitants of this island near the coast of
+Turkey is over ninety years old (compared to less than 1 percent of the
+population of the United States), a fact that has earned it the nickname the
+Island of Long Life. The local secret seems to be a lifestyle that dates back to
+500 BC.
+In the following chapters, we will examine several factors that seem to be the
+keys to longevity and are found across the Blue Zones, paying special attention to
+Okinawa and its so-called Village of Longevity. First, however, it is worth
+pointing out that three of these regions are islands, where resources can be scarce
+and communities have to help one another.
+For many, helping others might be an ikigai strong enough to keep them alive.
+According to scientists who have studied the five Blue Zones, the keys to
+longevity are diet, exercise, finding a purpose in life (an ikigai), and forming
+strong social ties—that is, having a broad circle of friends and good family
+relations.
+Members of these communities manage their time well in order to reduce
+stress, consume little meat or processed foods, and drink alcohol in moderation.
+1
+They don’t do strenuous exercise, but they do move every day, taking walks
+and working in their vegetable gardens. People in the Blue Zones would rather
+walk than drive. Gardening, which involves daily low-intensity movement, is a
+practice almost all of them have in common.
+The 80 percent secret
+One of the most common sayings in Japan is “Hara hachi bu,” which is repeated
+before or after eating and means something like “Fill your belly to 80 percent.”
+Ancient wisdom advises against eating until we are full. This is why Okinawans
+stop eating when they feel their stomachs reach 80 percent of their capacity,
+rather than overeating and wearing down their bodies with long digestive
+processes that accelerate cellular oxidation.
+Of course, there is no way to know objectively if your stomach is at 80
+percent capacity. The lesson to learn from this saying is that we should stop eating
+when we are starting to feel full. The extra side dish, the snack we eat when we
+know in our hearts we don’t really need it, the apple pie after lunch—all these will
+give us pleasure in the short term, but not having them will make us happier in
+the long term.
+The way food is served is also important. By presenting their meals on many
+small plates, the Japanese tend to eat less. A typical meal in a restaurant in Japan
+is served in five plates on a tray, four of them very small and the main dish
+slightly bigger. Having five plates in front of you makes it seem like you are
+going to eat a lot, but what happens most of the time is that you end up feeling
+slightly hungry. This is one of the reasons why Westerners in Japan typically lose
+weight and stay trim.
+Recent studies by nutritionists reveal that Okinawans consume a daily average
+of 1,800 to 1,900 calories, compared to 2,200 to 3,300 in the United States, and
+have a body mass index between 18 and 22, compared to 26 or 27 in the United
+States.
+The Okinawan diet is rich in tofu, sweet potatoes, fish (three times per week),
+and vegetables (roughly 11 ounces per day). In the chapter dedicated to nutrition
+we will see which healthy, antioxidant-rich foods are included in this 80 percent.
+Moai: Connected for life
+It is customary in Okinawa to form close bonds within local communities. A moai
+is an informal group of people with common interests who look out for one
+another. For many, serving the community becomes part of their ikigai.
+The moai has its origins in hard times, when farmers would get together to
+share best practices and help one another cope with meager harvests.
+Members of a moai make a set monthly contribution to the group. This
+payment allows them to participate in meetings, dinners, games of go and shogi
+(Japanese chess), or whatever hobby they have in common.
+The funds collected by the group are used for activities, but if there is money
+left over, one member (decided on a rotating basis) receives a set amount from
+the surplus. In this way, being part of a moai helps maintain emotional and
+financial stability. If a member of a moai is in financial trouble, he or she can get
+an advance from the group’s savings. While the details of each moai’s accounting
+practices vary according to the group and its economic means, the feeling of
+belonging and support gives the individual a sense of security and helps increase
+life expectancy.
+• • •
+FOLLOWING THIS BRIEF introduction to the topics covered in this book, we look at
+a few causes of premature aging in modern life, and then explore different
+factors related to ikigai.`,
   },
   {
     chapter_number: 2,
-    title: "How Your Habits Shape Your Identity (and Vice Versa)",
-    content: `WHY IS IT so easy to repeat bad habits and so hard to form good ones? Few things
-can have a more powerful impact on your life than improving your daily habits.
-And yet it is likely that this time next year you’ll be doing the same thing rather
-than something better.
-It often feels difficult to keep good habits going for more than a few days,
-even with sincere effort and the occasional burst of motivation. Habits like
-exercise, meditation, journaling, and cooking are reasonable for a day or two and
-then become a hassle.
-However, once your habits are established, they seem to stick around forever
-—especially the unwanted ones. Despite our best intentions, unhealthy habits
-like eating junk food, watching too much television, procrastinating, and
-smoking can feel impossible to break.
-Changing our habits is challenging for two reasons: (1) we try to change the
-wrong thing and (2) we try to change our habits in the wrong way. In this
-chapter, I’ll address the first point. In the chapters that follow, I’ll answer the
-second.
-Our first mistake is that we try to change the wrong thing. To understand what
-I mean, consider that there are three levels at which change can occur. You can
-imagine them like the layers of an onion.
-THREE LAYERS OF BEHAVIOR CHANGE
-FIGURE 3: There are three layers of behavior change: a change in your outcomes, a change in your processes, or a change in your identity.
-The first layer is changing your outcomes. This level is concerned with
-changing your results: losing weight, publishing a book, winning a
-championship. Most of the goals you set are associated with this level of change.
-The second layer is changing your process. This level is concerned with
-changing your habits and systems: implementing a new routine at the gym,
-decluttering your desk for better workflow, developing a meditation practice.
-Most of the habits you build are associated with this level.
-The third and deepest layer is changing your identity. This level is
-concerned with changing your beliefs: your worldview, your self-image, your
-judgments about yourself and others. Most of the beliefs, assumptions, and
-biases you hold are associated with this level.
-Outcomes are about what you get. Processes are about what you do. Identity is
-about what you believe. When it comes to building habits that last—when it
-comes to building a system of 1 percent improvements—the problem is not that
-one level is “better” or “worse” than another. All levels of change are useful in
-their own way. The problem is the direction of change.
-Many people begin the process of changing their habits by focusing on what
-they want to achieve. This leads us to outcome-based habits. The alternative is to
-build identity-based habits. With this approach, we start by focusing on who we
-wish to become.
-OUTCOME-BASED HABITS
-IDENTITY-BASED HABITS
-FIGURE 4: With outcome-based habits, the focus is on what you want to achieve. With identity-based habits, the focus is on who you wish to become.
-Imagine two people resisting a cigarette. When offered a smoke, the first
-person says, “No thanks. I’m trying to quit.” It sounds like a reasonable
-response, but this person still believes they are a smoker who is trying to be
-something else. They are hoping their behavior will change while carrying
-around the same beliefs.
-The second person declines by saying, “No thanks. I’m not a smoker.” It’s a
-small difference, but this statement signals a shift in identity. Smoking was part
-of their former life, not their current one. They no longer identify as someone
-who smokes.
-Most people don’t even consider identity change when they set out to
-improve. They just think, “I want to be skinny (outcome) and if I stick to this
-diet, then I’ll be skinny (process).” They set goals and determine the actions they
-should take to achieve those goals without considering the beliefs that drive their
-actions. They never shift the way they look at themselves, and they don’t realize
-that their old identity can sabotage their new plans for change.
-Behind every system of actions are a system of beliefs. The system of a
-democracy is founded on beliefs like freedom, majority rule, and social equality.
-The system of a dictatorship has a very different set of beliefs like absolute
-authority and strict obedience. You can imagine many ways to try to get more
-people to vote in a democracy, but such behavior change would never get off the
-ground in a dictatorship. That’s not the identity of the system. Voting is a
-behavior that is impossible under a certain set of beliefs.
-A similar pattern exists whether we are discussing individuals, organizations,
-or societies. There are a set of beliefs and assumptions that shape the system, an
-identity behind the habits.
-Behavior that is incongruent with the self will not last. You may want more
-money, but if your identity is someone who consumes rather than creates, then
-you’ll continue to be pulled toward spending rather than earning. You may want
-better health, but if you continue to prioritize comfort over accomplishment,
-you’ll be drawn to relaxing rather than training. It’s hard to change your habits if
-you never change the underlying beliefs that led to your past behavior. You have
-a new goal and a new plan, but you haven’t changed who you are.
-The story of Brian Clark, an entrepreneur from Boulder, Colorado, provides a
-good example. “For as long as I can remember, I’ve chewed my fingernails,”
-Clark told me. “It started as a nervous habit when I was young, and then
-morphed into an undesirable grooming ritual. One day, I resolved to stop
-chewing my nails until they grew out a bit. Through mindful willpower alone, I
-managed to do it.”
-Then, Clark did something surprising.
-“I asked my wife to schedule my first-ever manicure,” he said. “My thought
-was that if I started paying to maintain my nails, I wouldn’t chew them. And it
-worked, but not for the monetary reason. What happened was the manicure made
-my fingers look really nice for the first time. The manicurist even said that—
-other than the chewing—I had really healthy, attractive nails. Suddenly, I was
-proud of my fingernails. And even though that’s something I had never aspired
-to, it made all the difference. I’ve never chewed my nails since; not even a single
-close call. And it’s because I now take pride in properly caring for them.”
-The ultimate form of intrinsic motivation is when a habit becomes part of your
-identity. It’s one thing to say I’m the type of person who wants this. It’s
-something very different to say I’m the type of person who is this.
-The more pride you have in a particular aspect of your identity, the more
-motivated you will be to maintain the habits associated with it. If you’re proud
-of how your hair looks, you’ll develop all sorts of habits to care for and maintain
-it. If you’re proud of the size of your biceps, you’ll make sure you never skip an
-upper-body workout. If you’re proud of the scarves you knit, you’ll be more
-likely to spend hours knitting each week. Once your pride gets involved, you’ll
-fight tooth and nail to maintain your habits.
-True behavior change is identity change. You might start a habit because of
-motivation, but the only reason you’ll stick with one is that it becomes part of
-your identity. Anyone can convince themselves to visit the gym or eat healthy
-once or twice, but if you don’t shift the belief behind the behavior, then it is hard
-to stick with long-term changes. Improvements are only temporary until they
-become part of who you are.
-The goal is not to read a book, the goal is to become a reader.
-The goal is not to run a marathon, the goal is to become a runner.
-The goal is not to learn an instrument, the goal is to become a
-musician.
-Your behaviors are usually a reflection of your identity. What you do is an
-indication of the type of person you believe that you are—either consciously or
-nonconsciously.* Research has shown that once a person believes in a particular
-aspect of their identity, they are more likely to act in alignment with that belief.
-For example, people who identified as “being a voter” were more likely to vote
-than those who simply claimed “voting” was an action they wanted to perform.
-Similarly, the person who incorporates exercise into their identity doesn’t have
-to convince themselves to train. Doing the right thing is easy. After all, when
-your behavior and your identity are fully aligned, you are no longer pursuing
-behavior change. You are simply acting like the type of person you already
-believe yourself to be.
-Like all aspects of habit formation, this, too, is a double-edged sword. When
-working for you, identity change can be a powerful force for selfimprovement.
-When working against you, though, identity change can be a curse. Once you
-have adopted an identity, it can be easy to let your allegiance to it impact your
-ability to change. Many people walk through life in a cognitive slumber, blindly
-following the norms attached to their identity.
-“I’m terrible with directions.”
-“I’m not a morning person.”
-“I’m bad at remembering people’s names.”
-“I’m always late.”
-“I’m not good with technology.”
-“I’m horrible at math.”
-. . . and a thousand other variations.
-When you have repeated a story to yourself for years, it is easy to slide into
-these mental grooves and accept them as a fact. In time, you begin to resist
-certain actions because “that’s not who I am.” There is internal pressure to
-maintain your self-image and behave in a way that is consistent with your
-beliefs. You find whatever way you can to avoid contradicting yourself.
-The more deeply a thought or action is tied to your identity, the more difficult
-it is to change it. It can feel comfortable to believe what your culture believes
-(group identity) or to do what upholds your self-image (personal identity), even
-if it’s wrong. The biggest barrier to positive change at any level—individual,
-team, society—is identity conflict. Good habits can make rational sense, but if
-they conflict with your identity, you will fail to put them into action.
-On any given day, you may struggle with your habits because you’re too busy
-or too tired or too overwhelmed or hundreds of other reasons. Over the long run,
-however, the real reason you fail to stick with habits is that your self-image gets
-in the way. This is why you can’t get too attached to one version of your
-identity. Progress requires unlearning. Becoming the best version of yourself
-requires you to continuously edit your beliefs, and to upgrade and expand your
-identity.
-This brings us to an important question: If your beliefs and worldview play
-such an important role in your behavior, where do they come from in the first
-place? How, exactly, is your identity formed? And how can you emphasize new
-aspects of your identity that serve you and gradually erase the pieces that hinder
-you?
-THE TWO-STEP PROCESS TO CHANGING YOUR IDENTITY
-Your identity emerges out of your habits. You are not born with preset beliefs.
-Every belief, including those about yourself, is learned and conditioned through
-experience.*
-More precisely, your habits are how you embody your identity. When you
-make your bed each day, you embody the identity of an organized person. When
-you write each day, you embody the identity of a creative person. When you
-train each day, you embody the identity of an athletic person.
-The more you repeat a behavior, the more you reinforce the identity
-associated with that behavior. In fact, the word identity was originally derived
-from the Latin words essentitas, which means being, and identidem, which
-means repeatedly. Your identity is literally your “repeated beingness.”
-Whatever your identity is right now, you only believe it because you have
-proof of it. If you go to church every Sunday for twenty years, you have
-evidence that you are religious. If you study biology for one hour every night,
-you have evidence that you are studious. If you go to the gym even when it’s
-snowing, you have evidence that you are committed to fitness. The more
-evidence you have for a belief, the more strongly you will believe it.
-For most of my early life, I didn’t consider myself a writer. If you were to ask
-any of my high school teachers or college professors, they would tell you I was
-an average writer at best: certainly not a standout. When I began my writing
-career, I published a new article every Monday and Thursday for the first few
-years. As the evidence grew, so did my identity as a writer. I didn’t start out as a
-writer. I became one through my habits.
-Of course, your habits are not the only actions that influence your identity, but
-by virtue of their frequency they are usually the most important ones. Each
-experience in life modifies your self-image, but it’s unlikely you would consider
-yourself a soccer player because you kicked a ball once or an artist because you
-scribbled a picture. As you repeat these actions, however, the evidence
-accumulates and your self-image begins to change. The effect of one-off
-experiences tends to fade away while the effect of habits gets reinforced with
-time, which means your habits contribute most of the evidence that shapes your
-identity. In this way, the process of building habits is actually the process of
-becoming yourself.
-This is a gradual evolution. We do not change by snapping our fingers and
-deciding to be someone entirely new. We change bit by bit, day by day, habit by
-habit. We are continually undergoing microevolutions of the self.
-Each habit is like a suggestion: “Hey, maybe this is who I am.” If you finish a
-book, then perhaps you are the type of person who likes reading. If you go to the
-gym, then perhaps you are the type of person who likes exercise. If you practice
-playing the guitar, perhaps you are the type of person who likes music.
-Every action you take is a vote for the type of person you wish to become. No
-single instance will transform your beliefs, but as the votes build up, so does the
-evidence of your new identity. This is one reason why meaningful change does
-not require radical change. Small habits can make a meaningful difference by
-providing evidence of a new identity. And if a change is meaningful, it actually
-is big. That’s the paradox of making small improvements.
-Putting this all together, you can see that habits are the path to changing your
-identity. The most practical way to change who you are is to change what you
-do.
-Each time you write a page, you are a writer.
-Each time you practice the violin, you are a musician.
-Each time you start a workout, you are an athlete.
-Each time you encourage your employees, you are a leader.
-Each habit not only gets results but also teaches you something far more
-important: to trust yourself. You start to believe you can actually accomplish
-these things. When the votes mount up and the evidence begins to change, the
-story you tell yourself begins to change as well.
-Of course, it works the opposite way, too. Every time you choose to perform a
-bad habit, it’s a vote for that identity. The good news is that you don’t need to be
-perfect. In any election, there are going to be votes for both sides. You don’t
-need a unanimous vote to win an election; you just need a majority. It doesn’t
-matter if you cast a few votes for a bad behavior or an unproductive habit. Your
-goal is simply to win the majority of the time.
-New identities require new evidence. If you keep casting the same votes
-you’ve always cast, you’re going to get the same results you’ve always had. If
-nothing changes, nothing is going to change.
-It is a simple two-step process:
-1. Decide the type of person you want to be.
-2. Prove it to yourself with small wins.
-First, decide who you want to be. This holds at any level—as an individual, as
-a team, as a community, as a nation. What do you want to stand for? What are
-your principles and values? Who do you wish to become?
-These are big questions, and many people aren’t sure where to begin—but
-they do know what kind of results they want: to get six-pack abs or to feel less
-anxious or to double their salary. That’s fine. Start there and work backward
-from the results you want to the type of person who could get those results. Ask
-yourself, “Who is the type of person that could get the outcome I want?” Who is
-the type of person that could lose forty pounds? Who is the type of person that
-could learn a new language? Who is the type of person that could run a
-successful start-up?
-For example, “Who is the type of person who could write a book?” It’s
-probably someone who is consistent and reliable. Now your focus shifts from
-writing a book (outcome-based) to being the type of person who is consistent
-and reliable (identity-based).
-This process can lead to beliefs like:
-“I’m the kind of teacher who stands up for her students.”
-“I’m the kind of doctor who gives each patient the time and empathy
-they need.”
-“I’m the kind of manager who advocates for her employees.”
-Once you have a handle on the type of person you want to be, you can begin
-taking small steps to reinforce your desired identity. I have a friend who lost
-over 100 pounds by asking herself, “What would a healthy person do?” All day
-long, she would use this question as a guide. Would a healthy person walk or
-take a cab? Would a healthy person order a burrito or a salad? She figured if she
-acted like a healthy person long enough, eventually she would become that
-person. She was right.
-The concept of identity-based habits is our first introduction to another key
-theme in this book: feedback loops. Your habits shape your identity, and your
-identity shapes your habits. It’s a two-way street. The formation of all habits is a
-feedback loop (a concept we will explore in depth in the next chapter), but it’s
-important to let your values, principles, and identity drive the loop rather than
-your results. The focus should always be on becoming that type of person, not
-getting a particular outcome.
-THE REAL REASON HABITS MATTER
-Identity change is the North Star of habit change. The remainder of this book
-will provide you with step-by-step instructions on how to build better habits in
-yourself, your family, your team, your company, and anywhere else you wish.
-But the true question is: “Are you becoming the type of person you want to
-become?” The first step is not what or how, but who. You need to know who you
-want to be. Otherwise, your quest for change is like a boat without a rudder. And
-that’s why we are starting here.
-You have the power to change your beliefs about yourself. Your identity is not
-set in stone. You have a choice in every moment. You can choose the identity
-you want to reinforce today with the habits you choose today. And this brings us
-to the deeper purpose of this book and the real reason habits matter.
-Building better habits isn’t about littering your day with life hacks. It’s not
-about flossing one tooth each night or taking a cold shower each morning or
-wearing the same outfit each day. It’s not about achieving external measures of
-success like earning more money, losing weight, or reducing stress. Habits can
-help you achieve all of these things, but fundamentally they are not about having
-something. They are about becoming someone.
-Ultimately, your habits matter because they help you become the type of
-person you wish to be. They are the channel through which you develop your
-deepest beliefs about yourself. Quite literally, you become your habits.
-Chapter Summary
-There are three levels of change: outcome change, process change, and
-identity change.
-The most effective way to change your habits is to focus not on what
-you want to achieve, but on who you wish to become.
-Your identity emerges out of your habits. Every action is a vote for the
-type of person you wish to become.
-Becoming the best version of yourself requires you to continuously
-edit your beliefs, and to upgrade and expand your identity.
-The real reason habits matter is not because they can get you better
-results (although they can do that), but because they can change your
-beliefs about yourself.`,
+    title:
+      "ANTIAGING SECRETS: Little things that add up to a long and happy life",
+    content: `Aging’s escape velocity
+For more than a century, we’ve managed to add an average of 0.3 years to our life
+expectancy every year. But what would happen if we had the technology to add a
+year of life expectancy every year? In theory, we would achieve biological
+immortality, having reached aging’s “escape velocity.”
+Aging’s Escape Velocity and the Rabbit
+Imagine a sign far off in the future with a number on it that
+represents the age of your death. Every year that you live,
+you advance closer to the sign. When you reach the sign, you die.
+Now imagine a rabbit holding the sign and walking to the future. Every
+year that you live, the rabbit is half a year as far away. After a while, you
+will reach the rabbit and die.
+But what if the rabbit could walk at a pace of one year for every year
+of your life? You would never be able to catch the rabbit, and therefore
+you would never die.
+The speed at which the rabbit walks to the future is our technology.
+The more we advance technology and knowledge of our bodies, the faster
+we can make the rabbit walk.
+Aging’s escape velocity is the moment at which the rabbit walks at a
+pace of one year per year or faster, and we become immortal.
+Researchers with an eye to the future, such as Ray Kurzweil and Aubrey de
+Grey, claim that we’ll reach this escape velocity in a matter of decades. Other
+scientists are less optimistic, predicting that we’ll reach a limit, a maximum age
+we won’t be able to surpass, no matter how much technology we have. For
+example, some biologists assert that our cells stop regenerating after about 120
+years.
+Active mind, youthful body
+There is much wisdom in the classic saying “mens sana in corpore sano” (“a
+There is much wisdom in the classic saying “mens sana in corpore sano” (“a
+sound mind in a sound body”): It reminds us that both mind and body are
+important, and that the health of one is connected to that of the other. It has been
+shown that maintaining an active, adaptable mind is one of the key factors in
+staying young.
+Having a youthful mind also drives you toward a healthy lifestyle that will
+slow the aging process.
+Just as a lack of physical exercise has negative effects on our bodies and
+mood, a lack of mental exercise is bad for us because it causes our neurons and
+neural connections to deteriorate—and, as a result, reduces our ability to react to
+our surroundings.
+This is why it’s so important to give your brain a workout.
+One pioneer in advocating for mental exercise is the Israeli neuroscientist
+Shlomo Breznitz, who argues that the brain needs a lot of stimulation in order to
+stay in shape. As he stated in an interview with Eduard Punset for the Spanish
+television program Redes:
+There is a tension between what is good for someone and what they want to do. This is because people,
+especially older people, like to do things as they’ve always done them. The problem is that when the
+brain develops ingrained habits, it doesn’t need to think anymore. Things get done quickly and
+efficiently on automatic pilot, often in a very advantageous way. This creates a tendency to stick to
+routines, and the only way of breaking these is to confront the brain with new information.
+1
+Presented with new information, the brain creates new connections and is
+revitalized. This is why it is so important to expose yourself to change, even if
+stepping outside your comfort zone means feeling a bit of anxiety.
+The effects of mental training have been scientifically demonstrated.
+According to Collins Hemingway and Shlomo Breznitz in their book Maximum
+Brainpower: Challenging the Brain for Health and Wisdom, mental training is
+beneficial on many levels: “You begin exercising your brain by doing a certain
+task for the first time,” he writes. “And at first it seems very difficult, but as you
+learn how to do it, the training is already working. The second time, you realize
+that it’s easier, not harder, to do, because you’re getting better at it. This has a
+fantastic effect on a person’s mood. In and of itself, it is a transformation that
+affects not only the results obtained, but also his or her self-image.”
+This description of a “mental workout” might sound a bit formal, but simply
+interacting with others—playing a game, for example—offers new stimuli and
+helps prevent the depression that can come with solitude.
+Our neurons start to age while we are still in our twenties. This process is
+Our neurons start to age while we are still in our twenties. This process is
+slowed, however, by intellectual activity, curiosity, and a desire to learn. Dealing
+with new situations, learning something new every day, playing games, and
+interacting with other people seem to be essential antiaging strategies for the
+mind. Furthermore, a more positive outlook in this regard will yield greater
+mental benefits.
+Stress: Accused of killing longevity
+Many people seem older than they are. Research into the causes of premature
+aging has shown that stress has a lot to do with it, because the body wears down
+much faster during periods of crisis. The American Institute of Stress
+investigated this degenerative process and concluded that most health problems
+are caused by stress.
+Researchers at the Heidelberg University Hospital conducted a study in which
+they subjected a young doctor to a job interview, which they made even more
+stressful by forcing him to solve complex math problems for thirty minutes.
+Afterward, they took a blood sample. What they discovered was that his
+antibodies had reacted to stress the same way they react to pathogens, activating
+the proteins that trigger an immune response. The problem is that this response
+not only neutralizes harmful agents, it also damages healthy cells, leading them to
+age prematurely.
+The University of California conducted a similar study, taking data and
+samples from thirty-nine women who had high levels of stress due to the illness
+of one of their children and comparing them to samples from women with
+healthy children and low levels of stress. They found that stress promotes cellular
+aging by weakening cell structures known as telomeres, which affect cellular
+regeneration and how our cells age. As the study revealed, the greater the stress,
+the greater the degenerative effect on cells.
+How does stress work?
+These days, people live at a frantic pace and in a nearly constant state of
+competition. At this fever pitch, stress is a natural response to the information
+being received by the body as potentially dangerous or problematic.
+Theoretically, this is a useful reaction, as it helps us survive in hostile
+surroundings. Over the course of our evolution, we have used this response to
+surroundings. Over the course of our evolution, we have used this response to
+deal with difficult situations and to flee from predators.
+The alarm that goes off in our head makes our neurons activate the pituitary
+gland, which produces hormones that release corticotropin, which in turn
+circulates through the body via the sympathetic nervous system. The adrenal
+gland is then triggered to release adrenaline and cortisol. Adrenaline raises our
+respiratory rate and pulse and prepares our muscles for action, getting the body
+ready to react to perceived danger, while cortisol increases the release of
+dopamine and blood glucose, which is what gets us “charged up” and allows us to
+face challenges.
+Cave Dwellers Modern Humans
+Were relaxed most of the time. Work most of the time and are alert to any and all threats.
+Felt stress only in very specific
+situations.
+Are online or waiting for notifications from their cell phones twenty-four hours a
+day.
+The threats were real: A predator could
+end their lives at any moment.
+The brain associates the ping of a cell phone or an e-mail notification with the
+threat of a predator.
+High doses of cortisol and adrenaline at
+moments of danger kept the body
+healthy.
+Low doses of cortisol flow constantly through the body, with implications for a
+range of health problems, including adrenal fatigue and chronic fatigue
+syndrome.
+These processes are, in moderation, beneficial—they help us overcome
+challenges in our daily lives. Nonetheless, the stress to which human beings are
+subjected today is clearly harmful.
+Stress has a degenerative effect over time. A sustained state of emergency
+affects the neurons associated with memory, as well as inhibiting the release of
+certain hormones, the absence of which can cause depression. Its secondary
+effects include irritability, insomnia, anxiety, and high blood pressure.
+As such, though challenges are good for keeping mind and body active, we
+should adjust our high-stress lifestyles in order to avoid the premature aging of
+our bodies.
+Be mindful about reducing stress
+Whether or not the threats we perceive are real, stress is an easily identifiable
+condition that not only causes anxiety but is also highly psychosomatic, affecting
+everything from our digestive system to our skin.
+This is why prevention is so important in avoiding the toll that stress takes on
+us—and why many experts recommend practicing mindfulness.
+The central premise of this stress-reduction method is focusing on the self:
+noticing our responses, even if they are conditioned by habit, in order to be fully
+conscious of them. In this way, we connect with the here and now and limit
+thoughts that tend to spiral out of control.
+“We have to learn to turn off the autopilot that’s steering us in an endless loop.
+We all know people who snack while talking on the phone or watching the news.
+You ask them if the omelet they just ate had onion in it, and they can’t tell you,”
+says Roberto Alcibar, who abandoned his fast-paced life to become a certified
+instructor of mindfulness after an illness threw him into a period of acute stress.
+One way to reach a state of mindfulness is through meditation, which helps
+filter the information that reaches us from the outside world. It can also be
+achieved through breathing exercises, yoga, and body scans.
+Achieving mindfulness involves a gradual process of training, but with a bit of
+practice we can learn to focus our mind completely, which reduces stress and
+helps us live longer.
+A little stress is good for you
+While sustained, intense stress is a known enemy of longevity and both mental
+and physical health, low levels of stress have been shown to be beneficial.
+After observing a group of test subjects for more than twenty years, Dr.
+Howard S. Friedman, a psychology professor at the University of California,
+Riverside, discovered that people who maintained a low level of stress, who faced
+challenges and put their heart and soul into their work in order to succeed, lived
+longer than those who chose a more relaxed lifestyle and retired earlier. From
+this, he concluded that a small dose of stress is a positive thing, as those who live
+with low levels of stress tend to develop healthier habits, smoke less, and drink
+less alcohol.
+2
+Given this, it is not surprising that many of the supercentenarians—people
+who live to be 110 or more—whom we’ll meet in this book talk about having
+lived intense lives and working well into old age.
+A lot of sitting will age you
+In the Western world in particular, the rise in sedentary behavior has led to
+numerous diseases such as hypertension and obesity, which in turn affect
+longevity.
+Spending too much time seated at work or at home not only reduces muscular
+and respiratory fitness but also increases appetite and curbs the desire to
+participate in activities. Being sedentary can lead to hypertension, imbalanced
+eating, cardiovascular disease, osteoporosis, and even certain kinds of cancer.
+Recent studies have shown a connection between a lack of physical activity and
+the progressive distortion of telomeres in the immune system, which ages those
+cells and, in turn, the organism as a whole.
+This is a problem at all life stages, not only among adults. Sedentary children
+suffer from high rates of obesity and all its associated health issues and risks,
+which is why it’s so important to develop a healthy and active lifestyle at an early
+age.
+It’s easy to be less sedentary; it just takes a bit of effort and a few changes to
+your routine. We can access a more active lifestyle that makes us feel better
+inside and out—we just have to add a few ingredients to our everyday habits:
+Walk to work, or just go on a walk for at least twenty minutes each day.
+Use your feet instead of an elevator or escalator. This is good for your
+posture, your muscles, and your respiratory system, among other things.
+Participate in social or leisure activities so that you don’t spend too much time
+in front of the television.
+Replace your junk food with fruit and you’ll have less of an urge to snack,
+and more nutrients in your system.
+Get the right amount of sleep. Seven to nine hours is good, but any more than
+that makes us lethargic.
+Play with children or pets, or join a sports team. This not only strengthens the
+body but also stimulates the mind and boosts self-esteem.
+Be conscious of your daily routine in order to detect harmful habits and
+replace them with more positive ones.
+By making these small changes, we can begin to renew our bodies and minds
+and increase our life expectancy.
+A model’s best-kept secret
+A model’s best-kept secret
+Though we age both externally and internally, both physically and mentally, one
+of the things that tell us the most about people’s age is their skin, which takes on
+different textures and colors according to processes going on beneath the surface.
+Most of those who make their living as models claim to sleep between nine and
+ten hours the night before a fashion show. This gives their skin a taut, wrinklefree appearance and a healthy, radiant glow.
+Science has shown that sleep is a key antiaging tool, because when we sleep
+we generate melatonin, a hormone that occurs naturally in our bodies. The pineal
+gland produces it from the neurotransmitter serotonin according to our diurnal
+and nocturnal rhythms, and it plays a role in our sleep and waking cycles.
+A powerful antioxidant, melatonin helps us live longer, and also offers the
+following benefits:
+It strengthens the immune system.
+It contains an element that protects against cancer.
+It promotes the natural production of insulin.
+It slows the onset of Alzheimer’s disease.
+It helps prevent osteoporosis and fight heart disease.
+For all these reasons, melatonin is a great ally in preserving youth. It should be
+noted, however, that melatonin production decreases after age thirty. We can
+compensate for this by:
+Eating a balanced diet and getting more calcium.
+Soaking up a moderate amount of sun each day.
+Getting enough sleep.
+Avoiding stress, alcohol, tobacco, and caffeine, all of which make it harder
+to get a good night’s rest, depriving us of the melatonin we need.
+Experts are trying to determine whether artificially stimulating production of
+melatonin might help slow the aging process . . . which would confirm the theory
+that we already carry the secret to longevity within us.
+Antiaging attitudes
+The mind has tremendous power over the body and how quickly it ages. Most
+doctors agree that the secret to keeping the body young is keeping the mind active
+—a key element of ikigai—and in not caving in when we face difficulties
+throughout our lives.
+One study, conducted at Yeshiva University, found that the people who live
+the longest have two dispositional traits in common: a positive attitude and a high
+degree of emotional awareness. In other words, those who face challenges with a
+positive outlook and are able to manage their emotions are already well on their
+way toward longevity.
+A stoic attitude—serenity in the face of a setback—can also help keep you
+young, as it lowers anxiety and stress levels and stabilizes behavior. This can be
+seen in the greater life expectancies of certain cultures with unhurried, deliberate
+lifestyles.
+Many centenarians and supercentenarians have similar profiles: They have had
+full lives that were difficult at times, but they knew how to approach these
+challenges with a positive attitude and not be overwhelmed by the obstacles they
+faced.
+Alexander Imich, who in 2014 became the world’s oldest living man at age
+111, knew he had good genes but understood that other factors contributed, too:
+“The life you live is equally or more important for longevity,” he said in an
+interview with Reuters after being added to Guinness World Records in 2014.
+An ode to longevity
+During our stay in Ogimi, the village that holds the Guinness record for longevity,
+a woman who was about to turn 100 years old sang the following song for us in a
+mixture of Japanese and the local dialect:
+To keep healthy and have a long life,
+eat just a little of everything with relish,
+go to bed early, get up early, and then go out for a walk.
+We live each day with serenity and we enjoy the journey.
+To keep healthy and have a long life,
+we get on well with all of our friends.
+Spring, summer, fall, winter,
+we happily enjoy all the seasons.
+The secret is to not get distracted by how old the fingers are;
+The secret is to not get distracted by how old the fingers are;
+from the fingers to the head and back once again.
+If you keep moving with your fingers working, 100 years
+will come to you.*
+We can now use our fingers to turn the page to the next chapter, where we will
+look at the close relationship between longevity and discovering our life’s
+mission.`,
   },
   {
     chapter_number: 3,
-    title: "How to Build Better Habits in 4 Simple Steps",
-    content: `IN 1898, A psychologist named Edward Thorndike conducted an experiment that
-would lay the foundation for our understanding of how habits form and the rules
-that guide our behavior. Thorndike was interested in studying the behavior of
-animals, and he started by working with cats.
-He would place each cat inside a device known as a puzzle box. The box was
-designed so that the cat could escape through a door “by some simple act, such
-as pulling at a loop of cord, pressing a lever, or stepping on a platform.” For
-example, one box contained a lever that, when pressed, would open a door on
-the side of the box. Once the door had been opened, the cat could dart out and
-run over to a bowl of food.
-Most cats wanted to escape as soon as they were placed inside the box. They
-would poke their nose into the corners, stick their paws through openings, and
-claw at loose objects. After a few minutes of exploration, the cats would happen
-to press the magical lever, the door would open, and they would escape.
-Thorndike tracked the behavior of each cat across many trials. In the
-beginning, the animals moved around the box at random. But as soon as the
-lever had been pressed and the door opened, the process of learning began.
-Gradually, each cat learned to associate the action of pressing the lever with the
-reward of escaping the box and getting to the food.
-After twenty to thirty trials, this behavior became so automatic and habitual
-that the cat could escape within a few seconds. For example, Thorndike noted,
-“Cat 12 took the following times to perform the act. 160 seconds, 30 seconds, 90
-seconds, 60, 15, 28, 20, 30, 22, 11, 15, 20, 12, 10, 14, 10, 8, 8, 5, 10, 8, 6, 6, 7.”
-During the first three trials, the cat escaped in an average of 1.5 minutes.
-During the last three trials, it escaped in an average of 6.3 seconds. With
-practice, each cat made fewer errors and their actions became quicker and more
-automatic. Rather than repeat the same mistakes, the cat began to cut straight to
-the solution.
-From his studies, Thorndike described the learning process by stating,
-“behaviors followed by satisfying consequences tend to be repeated and those
-that produce unpleasant consequences are less likely to be repeated.” His work
-provides the perfect starting point for discussing how habits form in our own
-lives. It also provides answers to some fundamental questions like: What are
-habits? And why does the brain bother building them at all?
-WHY YOUR BRAIN BUILDS HABITS
-A habit is a behavior that has been repeated enough times to become automatic.
-The process of habit formation begins with trial and error. Whenever you
-encounter a new situation in life, your brain has to make a decision. How do I
-respond to this? The first time you come across a problem, you’re not sure how
-to solve it. Like Thorndike’s cat, you’re just trying things out to see what works.
-Neurological activity in the brain is high during this period. You are carefully
-analyzing the situation and making conscious decisions about how to act. You’re
-taking in tons of new information and trying to make sense of it all. The brain is
-busy learning the most effective course of action.
-Occasionally, like a cat pressing on a lever, you stumble across a solution.
-You’re feeling anxious, and you discover that going for a run calms you down.
-You’re mentally exhausted from a long day of work, and you learn that playing
-video games relaxes you. You’re exploring, exploring, exploring, and then—
-BAM—a reward.
-After you stumble upon an unexpected reward, you alter your strategy for next
-time. Your brain immediately begins to catalog the events that preceded the
-reward. Wait a minute—that felt good. What did I do right before that?
-This is the feedback loop behind all human behavior: try, fail, learn, try
-differently. With practice, the useless movements fade away and the useful
-actions get reinforced. That’s a habit forming.
-Whenever you face a problem repeatedly, your brain begins to automate the
-process of solving it. Your habits are just a series of automatic solutions that
-solve the problems and stresses you face regularly. As behavioral scientist Jason
-Hreha writes, “Habits are, simply, reliable solutions to recurring problems in our
-environment.”
-As habits are created, the level of activity in the brain decreases. You learn to
-lock in on the cues that predict success and tune out everything else. When a
-similar situation arises in the future, you know exactly what to look for. There is
-no longer a need to analyze every angle of a situation. Your brain skips the
-process of trial and error and creates a mental rule: if this, then that. These
-cognitive scripts can be followed automatically whenever the situation is
-appropriate. Now, whenever you feel stressed, you get the itch to run. As soon as
-you walk in the door from work, you grab the video game controller. A choice
-that once required effort is now automatic. A habit has been created.
-Habits are mental shortcuts learned from experience. In a sense, a habit is just
-a memory of the steps you previously followed to solve a problem in the past.
-Whenever the conditions are right, you can draw on this memory and
-automatically apply the same solution. The primary reason the brain remembers
-the past is to better predict what will work in the future.
-Habit formation is incredibly useful because the conscious mind is the
-bottleneck of the brain. It can only pay attention to one problem at a time. As a
-result, your brain is always working to preserve your conscious attention for
-whatever task is most essential. Whenever possible, the conscious mind likes to
-pawn off tasks to the nonconscious mind to do automatically. This is precisely
-what happens when a habit is formed. Habits reduce cognitive load and free up
-mental capacity, so you can allocate your attention to other tasks.
-Despite their efficiency, some people still wonder about the benefits of habits.
-The argument goes like this: “Will habits make my life dull? I don’t want to
-pigeonhole myself into a lifestyle I don’t enjoy. Doesn’t so much routine take
-away the vibrancy and spontaneity of life?” Hardly. Such questions set up a false
-dichotomy. They make you think that you have to choose between building
-habits and attaining freedom. In reality, the two complement each other.
-Habits do not restrict freedom. They create it. In fact, the people who don’t
-have their habits handled are often the ones with the least amount of freedom.
-Without good financial habits, you will always be struggling for the next dollar.
-Without good health habits, you will always seem to be short on energy. Without
-good learning habits, you will always feel like you’re behind the curve. If you’re
-always being forced to make decisions about simple tasks—when should I work
-out, where do I go to write, when do I pay the bills—then you have less time for
-freedom. It’s only by making the fundamentals of life easier that you can create
-the mental space needed for free thinking and creativity.
-Conversely, when you have your habits dialed in and the basics of life are
-handled and done, your mind is free to focus on new challenges and master the
-next set of problems. Building habits in the present allows you to do more of
-what you want in the future.
-THE SCIENCE OF HOW HABITS WORK
-The process of building a habit can be divided into four simple steps: cue,
-craving, response, and reward.* Breaking it down into these fundamental parts
-can help us understand what a habit is, how it works, and how to improve it.
-FIGURE 5: All habits proceed through four stages in the same order: cue, craving, response, and reward.
-This four-step pattern is the backbone of every habit, and your brain runs
-through these steps in the same order each time.
-First, there is the cue. The cue triggers your brain to initiate a behavior. It is a
-bit of information that predicts a reward. Our prehistoric ancestors were paying
-attention to cues that signaled the location of primary rewards like food, water,
-and sex. Today, we spend most of our time learning cues that predict secondary
-rewards like money and fame, power and status, praise and approval, love and
-friendship, or a sense of personal satisfaction. (Of course, these pursuits also
-indirectly improve our odds of survival and reproduction, which is the deeper
-motive behind everything we do.)
-Your mind is continuously analyzing your internal and external environment
-for hints of where rewards are located. Because the cue is the first indication that
-we’re close to a reward, it naturally leads to a craving.
-Cravings are the second step, and they are the motivational force behind every
-habit. Without some level of motivation or desire—without craving a change—
-we have no reason to act. What you crave is not the habit itself but the change in
-state it delivers. You do not crave smoking a cigarette, you crave the feeling of
-relief it provides. You are not motivated by brushing your teeth but rather by the
-feeling of a clean mouth. You do not want to turn on the television, you want to
-be entertained. Every craving is linked to a desire to change your internal state.
-This is an important point that we will discuss in detail later.
-Cravings differ from person to person. In theory, any piece of information
-could trigger a craving, but in practice, people are not motivated by the same
-cues. For a gambler, the sound of slot machines can be a potent trigger that
-sparks an intense wave of desire. For someone who rarely gambles, the jingles
-and chimes of the casino are just background noise. Cues are meaningless until
-they are interpreted. The thoughts, feelings, and emotions of the observer are
-what transform a cue into a craving.
-The third step is the response. The response is the actual habit you perform,
-which can take the form of a thought or an action. Whether a response occurs
-depends on how motivated you are and how much friction is associated with the
-behavior. If a particular action requires more physical or mental effort than you
-are willing to expend, then you won’t do it. Your response also depends on your
-ability. It sounds simple, but a habit can occur only if you are capable of doing
-it. If you want to dunk a basketball but can’t jump high enough to reach the
-hoop, well, you’re out of luck.
-Finally, the response delivers a reward. Rewards are the end goal of every
-habit. The cue is about noticing the reward. The craving is about wanting the
-reward. The response is about obtaining the reward. We chase rewards because
-they serve two purposes: (1) they satisfy us and (2) they teach us.
-The first purpose of rewards is to satisfy your craving. Yes, rewards provide
-benefits on their own. Food and water deliver the energy you need to survive.
-Getting a promotion brings more money and respect. Getting in shape improves
-your health and your dating prospects. But the more immediate benefit is that
-rewards satisfy your craving to eat or to gain status or to win approval. At least
-for a moment, rewards deliver contentment and relief from craving.
-Second, rewards teach us which actions are worth remembering in the future.
-Your brain is a reward detector. As you go about your life, your sensory nervous
-system is continuously monitoring which actions satisfy your desires and deliver
-pleasure. Feelings of pleasure and disappointment are part of the feedback
-mechanism that helps your brain distinguish useful actions from useless ones.
-Rewards close the feedback loop and complete the habit cycle.
-If a behavior is insufficient in any of the four stages, it will not become a
-habit. Eliminate the cue and your habit will never start. Reduce the craving and
-you won’t experience enough motivation to act. Make the behavior difficult and
-you won’t be able to do it. And if the reward fails to satisfy your desire, then
-you’ll have no reason to do it again in the future. Without the first three steps, a
-behavior will not occur. Without all four, a behavior will not be repeated.
-THE HABIT LOOP
-FIGURE 6: The four stages of habit are best described as a feedback loop. They form an endless cycle that is running every moment you are alive. This “habit loop” is continually scanning
-the environment, predicting what will happen next, trying out different responses, and learning from the results.*
-In summary, the cue triggers a craving, which motivates a response, which
-provides a reward, which satisfies the craving and, ultimately, becomes
-associated with the cue. Together, these four steps form a neurological feedback
-loop—cue, craving, response, reward; cue, craving, response, reward—that
-ultimately allows you to create automatic habits. This cycle is known as the habit
-loop.
-This four-step process is not something that happens occasionally, but rather it
-is an endless feedback loop that is running and active during every moment you
-are alive—even now. The brain is continually scanning the environment,
-predicting what will happen next, trying out different responses, and learning
-from the results. The entire process is completed in a split second, and we use it
-again and again without realizing everything that has been packed into the
-previous moment.
-We can split these four steps into two phases: the problem phase and the
-solution phase. The problem phase includes the cue and the craving, and it is
-when you realize that something needs to change. The solution phase includes
-the response and the reward, and it is when you take action and achieve the
-change you desire.
-Problem phase
-1. Cue
-2. Craving
-Solution phase
-3. Response
-4. Reward
-All behavior is driven by the desire to solve a problem. Sometimes the
-problem is that you notice something good and you want to obtain it. Sometimes
-the problem is that you are experiencing pain and you want to relieve it. Either
-way, the purpose of every habit is to solve the problems you face.
-In the table on the following page, you can see a few examples of what this
-looks like in real life.
-Imagine walking into a dark room and flipping on the light switch. You have
-performed this simple habit so many times that it occurs without thinking. You
-proceed through all four stages in the fraction of a second. The urge to act strikes
-you without thinking.
-Problem phase
-1. Cue: Your phone buzzes with a new text message.
-2. Craving: You want to learn the contents of the message.
-Solution phase
-3. Response: You grab your phone and read the text.
-4. Reward: You satisfy your craving to read the message. Grabbing your phone becomes associated with your phone buzzing.
-Problem phase
-1. Cue: You are answering emails.
-2. Craving: You begin to feel stressed and overwhelmed by work. You want to feel in control.
-Solution phase
-3. Response: You bite your nails.
-4. Reward: You satisfy your craving to reduce stress. Biting your nails becomes associated with answering email.
-Problem phase
-1. Cue: You wake up.
-2. Craving: You want to feel alert.
-Solution phase
-3. Response: You drink a cup of coffee.
-4. Reward: You satisfy your craving to feel alert. Drinking coffee becomes associated with waking up.
-Problem phase
-1. Cue: You smell a doughnut shop as you walk down the street near your office.
-2. Craving: You begin to crave a doughnut.
-Solution phase
-3. Response: You buy a doughnut and eat it.
-4. Reward: You satisfy your craving to eat a doughnut. Buying a doughnut becomes associated with walking down the street near your office.
-Problem phase
-1. Cue: You hit a stumbling block on a project at work.
-2. Craving: You feel stuck and want to relieve your frustration.
-Solution phase
-3. Response: You pull out your phone and check social media.
-4. Reward: You satisfy your craving to feel relieved. Checking social media becomes associated with feeling stalled at work.
-Problem phase
-1. Cue: You walk into a dark room.
-2. Craving: You want to be able to see.
-Solution phase
-3. Response: You flip the light switch.
-4. Reward: You satisfy your craving to see. Turning on the light switch becomes associated with being in a dark room.
-By the time we become adults, we rarely notice the habits that are running our
-lives. Most of us never give a second thought to the fact that we tie the same
-shoe first each morning, or unplug the toaster after each use, or always change
-into comfortable clothes after getting home from work. After decades of mental
-programming, we automatically slip into these patterns of thinking and acting.
-THE FOUR LAWS OF BEHAVIOR CHANGE
-In the following chapters, we will see time and again how the four stages of cue,
-craving, response, and reward influence nearly everything we do each day. But
-before we do that, we need to transform these four steps into a practical
-framework that we can use to design good habits and eliminate bad ones.
-I refer to this framework as the Four Laws of Behavior Change, and it
-provides a simple set of rules for creating good habits and breaking bad ones.
-You can think of each law as a lever that influences human behavior. When the
-levers are in the right positions, creating good habits is effortless. When they are
-in the wrong positions, it is nearly impossible.
-How to Create a Good Habit
-The 1st law (Cue): Make it obvious.
-The 2nd law (Craving): Make it attractive.
-The 3rd law (Response): Make it easy.
-The 4th law (Reward): Make it satisfying.
-We can invert these laws to learn how to break a bad habit.
-How to Break a Bad Habit
-Inversion of the 1st law (Cue): Make it invisible.
-Inversion of the 2nd law (Craving): Make it unattractive.
-Inversion of the 3rd law (Response): Make it difficult.
-Inversion of the 4th law (Reward): Make it unsatisfying.
-It would be irresponsible for me to claim that these four laws are an
-exhaustive framework for changing any human behavior, but I think they’re
-close. As you will soon see, the Four Laws of Behavior Change apply to nearly
-every field, from sports to politics, art to medicine, comedy to management.
-These laws can be used no matter what challenge you are facing. There is no
-need for completely different strategies for each habit.
-Whenever you want to change your behavior, you can simply ask yourself:
-1. How can I make it obvious?
-2. How can I make it attractive?
-3. How can I make it easy?
-4. How can I make it satisfying?
-If you have ever wondered, “Why don’t I do what I say I’m going to do? Why
-don’t I lose the weight or stop smoking or save for retirement or start that side
-business? Why do I say something is important but never seem to make time for
-it?” The answers to those questions can be found somewhere in these four laws.
-The key to creating good habits and breaking bad ones is to understand these
-fundamental laws and how to alter them to your specifications. Every goal is
-doomed to fail if it goes against the grain of human nature.
-Your habits are shaped by the systems in your life. In the chapters that follow,
-we will discuss these laws one by one and show how you can use them to create
-a system in which good habits emerge naturally and bad habits wither away.
-Chapter Summary
-A habit is a behavior that has been repeated enough times to become
-automatic.
-The ultimate purpose of habits is to solve the problems of life with as
-little energy and effort as possible.
-Any habit can be broken down into a feedback loop that involves four
-steps: cue, craving, response, and reward.
-The Four Laws of Behavior Change are a simple set of rules we can
-use to build better habits. They are (1) make it obvious, (2) make it
-attractive, (3) make it easy, and (4) make it satisfying.`,
+    title:
+      "FROM LOGOTHERAPY TO IKIGAI: How to live longer and better by finding your purpose",
+    content: `What is logotherapy?
+A colleague once asked Viktor Frankl to define his school of psychology in a
+single phrase, to which Frankl replied, “Well, in logotherapy the patient sits up
+straight and has to listen to things that are, on occasion, hard to hear.” The
+colleague had just described psychoanalysis to him in the following terms: “In
+psychoanalysis, the patient lies down on a couch and tells you things that are, on
+occasion, hard to say.”
+Frankl explains that one of the first questions he would ask his patients was
+“Why do you not commit suicide?” Usually the patient found good reasons not to,
+and was able to carry on. What, then, does logotherapy do?
+1
+The answer is pretty clear: It helps you find reasons to live.
+Logotherapy pushes patients to consciously discover their life’s purpose in
+order to confront their neuroses. Their quest to fulfill their destiny then motivates
+them to press forward, breaking the mental chains of the past and overcoming
+whatever obstacles they encounter along the way.
+Something to Live For
+A study conducted by Frankl in his Vienna clinic found that among both
+patients and personnel, around 80 percent believed that human beings
+needed a reason for living, and around 60 percent felt they had someone
+or something in their lives worth dying for.
+2
+The search for meaning
+The search for purpose became a personal, driving force that allowed Frankl to
+achieve his goals. The process of logotherapy can be summarized in these five
+steps:
+1. A person feels empty, frustrated, or anxious.
+2. The therapist shows him that what he is feeling is the desire to have a
+meaningful life.
+3. The patient discovers his life’s purpose (at that particular point in time).
+4. Of his own free will, the patient decides to accept or reject that destiny.
+5. This newfound passion for life helps him overcome obstacles and sorrows.
+Frankl himself would live and die for his principles and ideals. His
+experiences as a prisoner at Auschwitz showed him that “Everything can be taken
+from a man but one thing: the last of the human freedoms—to choose one’s
+attitude in any given set of circumstances, to choose one’s own way.”
+3
+It was
+something he had to go through alone, without any help, and it inspired him for
+the rest of his life.
+Ten Differences Between Psychoanalysis and Logotherapy
+Psychoanalysis Logotherapy
+The patient reclines on a couch, like a patient.
+The patient sits facing the therapist, who guides him or her without
+passing judgment.
+Is retrospective: It looks to the past. Looks toward the future.
+Is introspective: It analyzes neuroses. Does not delve into the patient’s neuroses.
+The drive is toward pleasure. The drive is toward purpose and meaning.
+Centers on psychology. Includes a spiritual dimension.
+Works on psychogenic neuroses. Also works on noogenic, or existential, neuroses.
+Analyzes the unconscious origin of conflicts
+(instinctual dimension).
+Deals with conflicts when and where they arise (spiritual
+dimension).
+Limits itself to the patient’s instincts. Also deals with spiritual realities.
+Is fundamentally incompatible with faith. Is compatible with faith.
+Seeks to reconcile conflicts and satisfy impulses and
+instincts.
+Seeks to help the patient find meaning in his life and satisfy his
+moral principles.
+Fight for yourself
+Existential frustration arises when our life is without purpose, or when that
+purpose is skewed. In Frankl’s view, however, there is no need to see this
+frustration as an anomaly or a symptom of neurosis; instead, it can be a positive
+thing—a catalyst for change.
+thing—a catalyst for change.
+Logotherapy does not see this frustration as mental illness, the way other forms
+of therapy do, but rather as spiritual anguish—a natural and beneficial
+phenomenon that drives those who suffer from it to seek a cure, whether on their
+own or with the help of others, and in so doing to find greater satisfaction in life.
+It helps them change their own destiny.
+Logotherapy enters the picture if the person needs help doing this, if he needs
+guidance in discovering his life’s purpose and later in overcoming conflicts so he
+can keep moving toward his objective. In Man’s Search for Meaning, Frankl cites
+one of Nietzsche’s famous aphorisms: “He who has a why to live for can bear
+with almost any how.”
+Based on his own experience, Frankl believed that our health depends on that
+natural tension that comes from comparing what we’ve accomplished so far with
+what we’d like to achieve in the future. What we need, then, is not a peaceful
+existence, but a challenge we can strive to meet by applying all the skills at our
+disposal.
+Existential crisis, on the other hand, is typical of modern societies in which
+people do what they are told to do, or what others do, rather than what they want
+to do. They often try to fill the gap between what is expected of them and what
+they want for themselves with economic power or physical pleasure, or by
+numbing their senses. It can even lead to suicide.
+Sunday neurosis, for example, is what happens when, without the obligations
+and commitments of the workweek, the individual realizes how empty he is
+inside. He has to find a solution. Above all, he has to find his purpose, his reason
+for getting out of bed—his ikigai.
+“I Feel Empty Inside”
+In a study conducted at the Vienna Polyclinic Hospital, Frankl’s team
+found that 55 percent of the patients they interviewed were experiencing
+some degree of existential crisis.
+4
+According to logotherapy, discovering one’s purpose in life helps an individual
+fill that existential void. Frankl, a man who faced his problems and turned his
+objectives into actions, could look back on his life in peace as he grew old. He
+did not have to envy those still enjoying their youth, because he had amassed a
+broad set of experiences that showed he had lived for something.
+Better living through logotherapy: A few key ideas
+We don’t create the meaning of our life, as Sartre claimed—we discover it.
+We each have a unique reason for being, which can be adjusted or
+transformed many times over the years.
+Just as worry often brings about precisely the thing that was feared,
+excessive attention to a desire (or “hyper-intention”) can keep that desire
+from being fulfilled.
+Humor can help break negative cycles and reduce anxiety.
+We all have the capacity to do noble or terrible things. The side of the
+equation we end up on depends on our decisions, not on the condition in
+which we find ourselves.
+In the pages that follow, we will look at four cases from Frankl’s own practice
+in order to better understand the search for meaning and purpose.
+Case study: Viktor Frankl
+In German concentration camps, as in those that would later be built in Japan and
+Korea, psychiatrists confirmed that the prisoners with the greatest chance of
+survival were those who had things they wanted to accomplish outside the camp,
+those who felt a strong need to get out of there alive. This was true of Frankl,
+who, after being released and successfully developing the school of logotherapy,
+realized he had been the first patient of his own practice.
+Frankl had a goal to achieve, and it made him persevere. He arrived at
+Auschwitz carrying a manuscript that contained all the theories and research he
+had compiled over the course of his career, ready for publication. When it was
+confiscated, he felt compelled to write it all over again, and that need drove him
+and gave his life meaning amid the constant horror and doubt of the
+concentration camp—so much so that over the years, and especially when he fell
+ill with typhus, he would jot down fragments and key words from the lost work
+on any scrap of paper he found.
+Case study: The American diplomat
+An important North American diplomat went to Frankl to pick up where he left
+off with a course of treatment he had started five years earlier in the United
+States. When Frankl asked him why he’d started therapy in the first place, the
+diplomat answered that he hated his job and his country’s international policies,
+which he had to follow and enforce. His American psychoanalyst, whom he’d
+been seeing for years, insisted he make peace with his father so that his
+government and his job, both representations of the paternal figure, would seem
+less disagreeable. Frankl, however, showed him in just a few sessions that his
+frustration was due to the fact that he wanted to pursue a different career, and the
+diplomat concluded his treatment with that idea in mind.
+Five years later, the former diplomat informed Frankl that he had been
+working during that time in a different profession, and that he was happy.
+In Frankl’s view, the man not only didn’t need all those years of
+psychoanalysis, he also couldn’t even really be considered a “patient” in need of
+therapy. He was simply someone in search of a new life’s purpose; as soon as he
+found it, his life took on deeper meaning.
+Case study: The suicidal mother
+The mother of a boy who had died at age eleven was admitted to Frankl’s clinic
+after she tried to kill herself and her other son. It was this other son, paralyzed
+since birth, who kept her from carrying out her plan: He did believe his life had a
+purpose, and if his mother killed them both, it would keep him from achieving
+his goals.
+The woman shared her story in a group session. To help her, Frankl asked
+another woman to imagine a hypothetical situation in which she lay on her
+deathbed, old and wealthy but childless. The woman insisted that, in that case, she
+would have felt her life had been a failure.
+When the suicidal mother was asked to perform the same exercise, imagining
+herself on her deathbed, she looked back and realized that she had done
+everything in her power for her children—for both of them. She had given her
+paralyzed son a good life, and he had turned into a kind, reasonably happy person.
+To this she added, crying, “As for myself, I can look back peacefully on my life;
+for I can say my life was full of meaning, and I have tried hard to live it fully; I
+have done my best—I have done my best for my son. My life was no failure!”
+have done my best—I have done my best for my son. My life was no failure!”
+In this way, by imagining herself on her deathbed and looking back, the
+suicidal mother found the meaning that, though she was not aware of it, her life
+already had.
+Case study: The grief-stricken doctor
+An elderly doctor, unable to overcome the deep depression into which he’d fallen
+after the death of his wife two years earlier, went to Frankl for help.
+Instead of giving him advice or analyzing his condition, Frankl asked him
+what would have happened if he had been the one who died first. The doctor,
+horrified, answered that it would have been terrible for his poor wife, that she
+would have suffered tremendously. To which Frankl responded, “You see,
+doctor? You have spared her all that suffering, but the price you have to pay for
+this is to survive, and mourn her.”
+The doctor didn’t say another word. He left Frankl’s office in peace, after
+taking the therapist’s hand in his own. He was able to tolerate the pain in place of
+his beloved wife. His life had been given a purpose.
+Morita therapy
+In the same decade that logotherapy came into being—a few years earlier, in fact
+—Shoma Morita created his own purpose-centered therapy, in Japan. It proved to
+be effective in the treatment of neurosis, obsessive-compulsive disorder, and
+posttraumatic stress.
+In addition to being a psychotherapist, Shoma Morita was a Zen Buddhist, and
+his therapy left a lasting spiritual mark on Japan.
+Many Western forms of therapy focus on controlling or modifying the
+patient’s emotions. In the West, we tend to believe that what we think influences
+how we feel, which in turn influences how we act. In contrast, Morita therapy
+focuses on teaching patients to accept their emotions without trying to control them,
+since their feelings will change as a result of their actions.
+In addition to accepting the patient’s emotions, Morita therapy seeks to
+“create” new emotions on the basis of actions. According to Morita, these
+emotions are learned through experience and repetition.
+Morita therapy is not meant to eliminate symptoms; instead it teaches us to
+accept our desires, anxieties, fears, and worries, and let them go. As Morita
+writes in his book Morita Therapy and the True Nature of Anxiety-Based
+Disorders, “In feelings, it is best to be wealthy and generous.”
+Morita explained the idea of letting go of negative feelings with the following
+fable: A donkey that is tied to a post by a rope will keep walking around the post
+in an attempt to free itself, only to become more immobilized and attached to the
+post. The same thing applies to people with obsessive thinking who become more
+trapped in their own suffering when they try to escape from their fears and
+discomfort.
+5
+The basic principles of Morita therapy
+1. Accept your feelings. If we have obsessive thoughts, we should not try to
+control them or get rid of them. If we do, they become more intense. Regarding
+human emotions, the Zen master would say, “If we try to get rid of one wave with
+another, we end up with an infinite sea.” We don’t create our feelings; they
+simply come to us, and we have to accept them. The trick is welcoming them.
+Morita likened emotions to the weather: We can’t predict or control them; we can
+only observe them. To this point, he often quoted the Vietnamese monk Thich
+Nhat Hanh, who would say, “Hello, solitude. How are you today? Come, sit with
+me, and I will care for you.”
+6
+2. Do what you should be doing. We shouldn’t focus on eliminating symptoms,
+because recovery will come on its own. We should focus instead on the present
+moment, and if we are suffering, on accepting that suffering. Above all, we
+should avoid intellectualizing the situation. The therapist’s mission is to develop
+the patient’s character so he or she can face any situation, and character is
+grounded in the things we do. Morita therapy does not offer its patients
+explanations, but rather allows them to learn from their actions and activities. It
+doesn’t tell you how to meditate, or how to keep a diary the way Western
+therapies do. It is up to the patient to make discoveries through experience.
+3. Discover your life’s purpose. We can’t control our emotions, but we can take
+charge of our actions every day. This is why we should have a clear sense of our
+purpose, and always keep Morita’s mantra in mind: “What do we need to be doing
+right now? What action should we be taking?” The key to achieving this is having
+dared to look inside yourself to find your ikigai.
+The four phases of Morita therapy
+Morita’s original treatment, which lasts fifteen to twenty-one days, consists of the
+following stages:
+1. Isolation and rest (five to seven days). During the first week of treatment,
+the patient rests in a room without any external stimuli. No television, books,
+family, friends, or speaking. All the patient has is his thoughts. He lies down for
+most of the day and is visited regularly by the therapist, who tries to avoid
+interacting with him as much as possible. The therapist simply advises the patient
+to continue observing the rise and fall of his emotions as he lies there. When the
+patient gets bored and wants to start doing things again, he is ready to move on to
+the next stage of therapy.
+2. Light occupational therapy (five to seven days). In this stage, the patient
+performs repetitive tasks in silence. One of these is keeping a diary about his
+thoughts and feelings. The patient goes outside after a week of being shut in,
+takes walks in nature, and does breathing exercises. He also starts doing simple
+activities, such as gardening, drawing, or painting. During this stage, the patient is
+still not allowed to talk to anyone, except the therapist.
+3. Occupational therapy (five to seven days). In this stage, the patient performs
+tasks that require physical movement. Dr. Morita liked to take his patients to the
+mountains to chop wood. In addition to physical tasks, the patient is also
+immersed in other activities, such as writing, painting, or making ceramics. The
+patient can speak with others at this stage, but only about the tasks at hand.
+4. The return to social life and the “real” world. The patient leaves the hospital
+and is reintroduced to social life, but maintains the practices of meditation and
+occupational therapy developed during treatment. The idea is to reenter society as
+a new person, with a sense of purpose, and without being controlled by social or
+emotional pressures.
+Naikan meditation
+Morita was a great Zen master of Naikan introspective meditation. Much of his
+therapy draws on his knowledge and mastery of this school, which centers on
+three questions the individual must ask him-or herself:
+1. What have I received from person X?
+2. What have I given to person X?
+3. What problems have I caused person X?
+Through these reflections, we stop identifying others as the cause of our
+problems and deepen our own sense of responsibility. As Morita said, “If you are
+angry and want to fight, think about it for three days before coming to blows.
+After three days, the intense desire to fight will pass on its own.”
+7
+And now, ikigai
+Logotherapy and Morita therapy are both grounded in a personal, unique
+experience that you can access without therapists or spiritual retreats: the mission
+of finding your ikigai, your existential fuel. Once you find it, it is only a matter of
+having the courage and making the effort to stay on the right path.
+In the following chapters, we’ll take a look at the basic tools you’ll need to get
+moving along that path: finding flow in the tasks you’ve chosen to do, eating in a
+balanced and mindful way, doing low-intensity exercise, and learning not to give
+in when difficulties arise. In order to do this, you have to accept that the world—
+like the people who live in it—is imperfect, but that it is still full of opportunities
+for growth and achievement.
+Are you ready to throw yourself into your passion as if it were the most
+important thing in the world?`,
   },
   {
     chapter_number: 4,
-    title: "The Man Who Didn’t Look Right",
-    content: `THE PSYCHOLOGIST GARY Klein once told me a story about a woman who attended a
-family gathering. She had spent years working as a paramedic and, upon arriving
-at the event, took one look at her father-in-law and got very concerned.
-“I don’t like the way you look,” she said.
-Her father-in-law, who was feeling perfectly fine, jokingly replied, “Well, I
-don’t like your looks, either.”
-“No,” she insisted. “You need to go to the hospital now.”
-A few hours later, the man was undergoing lifesaving surgery after an
-examination had revealed that he had a blockage to a major artery and was at
-immediate risk of a heart attack. Without his daughter-in-law’s intuition, he
-could have died.
-What did the paramedic see? How did she predict his impending heart attack?
-When major arteries are obstructed, the body focuses on sending blood to
-critical organs and away from peripheral locations near the surface of the skin.
-The result is a change in the pattern of distribution of blood in the face. After
-many years of working with people with heart failure, the woman had
-unknowingly developed the ability to recognize this pattern on sight. She
-couldn’t explain what it was that she noticed in her father-in-law’s face, but she
-knew something was wrong.
-Similar stories exist in other fields. For example, military analysts can identify
-which blip on a radar screen is an enemy missile and which one is a plane from
-their own fleet even though they are traveling at the same speed, flying at the
-same altitude, and look identical on radar in nearly every respect. During the
-Gulf War, Lieutenant Commander Michael Riley saved an entire battleship
-when he ordered a missile shot down—despite the fact that it looked exactly like
-the battleship’s own planes on radar. He made the right call, but even his
-superior officers couldn’t explain how he did it.
-Museum curators have been known to discern the difference between an
-authentic piece of art and an expertly produced counterfeit even though they
-can’t tell you precisely which details tipped them off. Experienced radiologists
-can look at a brain scan and predict the area where a stroke will develop before
-any obvious signs are visible to the untrained eye. I’ve even heard of
-hairdressers noticing whether a client is pregnant based only on the feel of her
-hair.
-The human brain is a prediction machine. It is continuously taking in your
-surroundings and analyzing the information it comes across. Whenever you
-experience something repeatedly—like a paramedic seeing the face of a heart
-attack patient or a military analyst seeing a missile on a radar screen—your brain
-begins noticing what is important, sorting through the details and highlighting
-the relevant cues, and cataloging that information for future use.
-With enough practice, you can pick up on the cues that predict certain
-outcomes without consciously thinking about it. Automatically, your brain
-encodes the lessons learned through experience. We can’t always explain what it
-is we are learning, but learning is happening all along the way, and your ability
-to notice the relevant cues in a given situation is the foundation for every habit
-you have.
-We underestimate how much our brains and bodies can do without thinking.
-You do not tell your hair to grow, your heart to pump, your lungs to breathe, or
-your stomach to digest. And yet your body handles all this and more on
-autopilot. You are much more than your conscious self.
-Consider hunger. How do you know when you’re hungry? You don’t
-necessarily have to see a cookie on the counter to realize that it is time to eat.
-Appetite and hunger are governed nonconsciously. Your body has a variety of
-feedback loops that gradually alert you when it is time to eat again and that track
-what is going on around you and within you. Cravings can arise thanks to
-hormones and chemicals circulating through your body. Suddenly, you’re
-hungry even though you’re not quite sure what tipped you off.
-This is one of the most surprising insights about our habits: you don’t need to
-be aware of the cue for a habit to begin. You can notice an opportunity and take
-action without dedicating conscious attention to it. This is what makes habits
-useful.
-It’s also what makes them dangerous. As habits form, your actions come
-under the direction of your automatic and nonconscious mind. You fall into old
-patterns before you realize what’s happening. Unless someone points it out, you
-may not notice that you cover your mouth with your hand whenever you laugh,
-that you apologize before asking a question, or that you have a habit of finishing
-other people’s sentences. And the more you repeat these patterns, the less likely
-you become to question what you’re doing and why you’re doing it.
-I once heard of a retail clerk who was instructed to cut up empty gift cards
-after customers had used up the balance on the card. One day, the clerk cashed
-out a few customers in a row who purchased with gift cards. When the next
-person walked up, the clerk swiped the customer’s actual credit card, picked up
-the scissors, and then cut it in half—entirely on autopilot—before looking up at
-the stunned customer and realizing what had just happened.
-Another woman I came across in my research was a former preschool teacher
-who had switched to a corporate job. Even though she was now working with
-adults, her old habits would kick in and she kept asking coworkers if they had
-washed their hands after going to the bathroom. I also found the story of a man
-who had spent years working as a lifeguard and would occasionally yell “Walk!”
-whenever he saw a child running.
-Over time, the cues that spark our habits become so common that they are
-essentially invisible: the treats on the kitchen counter, the remote control next to
-the couch, the phone in our pocket. Our responses to these cues are so deeply
-encoded that it may feel like the urge to act comes from nowhere. For this
-reason, we must begin the process of behavior change with awareness.
-Before we can effectively build new habits, we need to get a handle on our
-current ones. This can be more challenging than it sounds because once a habit is
-firmly rooted in your life, it is mostly nonconscious and automatic. If a habit
-remains mindless, you can’t expect to improve it. As the psychologist Carl Jung
-said, “Until you make the unconscious conscious, it will direct your life and you
-will call it fate.”
-THE HABITS SCORECARD
-The Japanese railway system is regarded as one of the best in the world. If you
-ever find yourself riding a train in Tokyo, you’ll notice that the conductors have
-a peculiar habit.
-As each operator runs the train, they proceed through a ritual of pointing at
-different objects and calling out commands. When the train approaches a signal,
-the operator will point at it and say, “Signal is green.” As the train pulls into and
-out of each station, the operator will point at the speedometer and call out the
-exact speed. When it’s time to leave, the operator will point at the timetable and
-state the time. Out on the platform, other employees are performing similar
-actions. Before each train departs, staff members will point along the edge of the
-platform and declare, “All clear!” Every detail is identified, pointed at, and
-named aloud.*
-This process, known as Pointing-and-Calling, is a safety system designed to
-reduce mistakes. It seems silly, but it works incredibly well. Pointing-andCalling reduces errors by up to 85 percent and cuts accidents by 30 percent. The
-MTA subway system in New York City adopted a modified version that is
-“point-only,” and “within two years of implementation, incidents of incorrectly
-berthed subways fell 57 percent.”
-Pointing-and-Calling is so effective because it raises the level of awareness
-from a nonconscious habit to a more conscious level. Because the train operators
-must use their eyes, hands, mouth, and ears, they are more likely to notice
-problems before something goes wrong.
-My wife does something similar. Whenever we are preparing to walk out the
-door for a trip, she verbally calls out the most essential items in her packing list.
-“I’ve got my keys. I’ve got my wallet. I’ve got my glasses. I’ve got my
-husband.”
-The more automatic a behavior becomes, the less likely we are to consciously
-think about it. And when we’ve done something a thousand times before, we
-begin to overlook things. We assume that the next time will be just like the last.
-We’re so used to doing what we’ve always done that we don’t stop to question
-whether it’s the right thing to do at all. Many of our failures in performance are
-largely attributable to a lack of self-awareness.
-One of our greatest challenges in changing habits is maintaining awareness of
-what we are actually doing. This helps explain why the consequences of bad
-habits can sneak up on us. We need a “point-and-call” system for our personal
-lives. That’s the origin of the Habits Scorecard, which is a simple exercise you
-can use to become more aware of your behavior. To create your own, make a list
-of your daily habits.
-Here’s a sample of where your list might start:
-Wake up
-Turn off alarm
-Check my phone
-Go to the bathroom
-Weigh myself
-Take a shower
-Brush my teeth
-Floss my teeth
-Put on deodorant
-Hang up towel to dry
-Get dressed
-Make a cup of tea
-. . . and so on.
-Once you have a full list, look at each behavior, and ask yourself, “Is this a
-good habit, a bad habit, or a neutral habit?” If it is a good habit, write “+” next to
-it. If it is a bad habit, write “–”. If it is a neutral habit, write “=”.
-For example, the list above might look like this:
-Wake up =
-Turn off alarm =
-Check my phone –
-Go to the bathroom =
-Weigh myself +
-Take a shower +
-Brush my teeth +
-Floss my teeth +
-Put on deodorant +
-Hang up towel to dry =
-Get dressed =
-Make a cup of tea +
-The marks you give to a particular habit will depend on your situation and
-your goals. For someone who is trying to lose weight, eating a bagel with peanut
-butter every morning might be a bad habit. For someone who is trying to bulk up
-and add muscle, the same behavior might be a good habit. It all depends on what
-you’re working toward.*
-Scoring your habits can be a bit more complex for another reason as well. The
-labels “good habit” and “bad habit” are slightly inaccurate. There are no good
-habits or bad habits. There are only effective habits. That is, effective at solving
-problems. All habits serve you in some way—even the bad ones—which is why
-you repeat them. For this exercise, categorize your habits by how they will
-benefit you in the long run. Generally speaking, good habits will have net
-positive outcomes. Bad habits have net negative outcomes. Smoking a cigarette
-may reduce stress right now (that’s how it’s serving you), but it’s not a healthy
-long-term behavior.
-If you’re still having trouble determining how to rate a particular habit, here is
-a question I like to use: “Does this behavior help me become the type of person I
-wish to be? Does this habit cast a vote for or against my desired identity?”
-Habits that reinforce your desired identity are usually good. Habits that conflict
-with your desired identity are usually bad.
-As you create your Habits Scorecard, there is no need to change anything at
-first. The goal is to simply notice what is actually going on. Observe your
-thoughts and actions without judgment or internal criticism. Don’t blame
-yourself for your faults. Don’t praise yourself for your successes.
-If you eat a chocolate bar every morning, acknowledge it, almost as if you
-were watching someone else. Oh, how interesting that they would do such a
-thing. If you binge-eat, simply notice that you are eating more calories than you
-should. If you waste time online, notice that you are spending your life in a way
-that you do not want to.
-The first step to changing bad habits is to be on the lookout for them. If you
-feel like you need extra help, then you can try Pointing-and-Calling in your own
-life. Say out loud the action that you are thinking of taking and what the outcome
-will be. If you want to cut back on your junk food habit but notice yourself
-grabbing another cookie, say out loud, “I’m about to eat this cookie, but I don’t
-need it. Eating it will cause me to gain weight and hurt my health.”
-Hearing your bad habits spoken aloud makes the consequences seem more
-real. It adds weight to the action rather than letting yourself mindlessly slip into
-an old routine. This approach is useful even if you’re simply trying to remember
-a task on your to-do list. Just saying out loud, “Tomorrow, I need to go to the
-post office after lunch,” increases the odds that you’ll actually do it. You’re
-getting yourself to acknowledge the need for action—and that can make all the
-difference.
-The process of behavior change always starts with awareness. Strategies like
-Pointing-and-Calling and the Habits Scorecard are focused on getting you to
-recognize your habits and acknowledge the cues that trigger them, which makes
-it possible to respond in a way that benefits you.
-Chapter Summary
-With enough practice, your brain will pick up on the cues that predict
-certain outcomes without consciously thinking about it.
-Once our habits become automatic, we stop paying attention to what
-we are doing.
-The process of behavior change always starts with awareness. You
-need to be aware of your habits before you can change them.
-Pointing-and-Calling raises your level of awareness from a
-nonconscious habit to a more conscious level by verbalizing your
-actions.
-The Habits Scorecard is a simple exercise you can use to become more
-aware of your behavior."`,
+    title:
+      "FIND FLOW IN EVERYTHING YOU DO: How to turn work and free time into spaces for growth",
+    content: `Going with the flow
+Imagine you are skiing down one of your favorite slopes. Powdery snow flies up
+on both sides of you like white sand. Conditions are perfect.
+You are entirely focused on skiing as well as you can. You know exactly how
+to move at each moment. There is no future, no past. There is only the present.
+You feel the snow, your skis, your body, and your consciousness united as a
+single entity. You are completely immersed in the experience, not thinking about or
+distracted by anything else. Your ego dissolves, and you become part of what you
+are doing.
+This is the kind of experience Bruce Lee described with his famous “Be water,
+my friend.”
+We’ve all felt our sense of time vanish when we lose ourselves in an activity
+we enjoy. We start cooking and before we know it, several hours have passed.
+We spend an afternoon with a book and forget about the world going by until we
+notice the sunset and realize we haven’t eaten dinner. We go surfing and don’t
+realize how many hours we have spent in the water until the next day, when our
+muscles ache.
+The opposite can also happen. When we have to complete a task we don’t want
+to do, every minute feels like a lifetime and we can’t stop looking at our watch.
+As the quip attributed to Einstein goes, “Put your hand on a hot stove for a
+minute and it seems like an hour. Sit with a pretty girl for an hour, and it seems
+like a minute. That is relativity.”
+The funny thing is that someone else might really enjoy the same task, but we
+want to finish as quickly as possible.
+What makes us enjoy doing something so much that we forget about whatever
+worries we might have while we do it? When are we happiest? These questions
+can help us discover our ikigai.
+The power of flow
+These questions are also at the heart of psychologist Mihaly Csikszentmihalyi’s
+research into the experience of being completely immersed in what we are doing.
+Csikszentmihalyi called this state “flow,” and described it as the pleasure, delight,
+creativity, and process when we are completely immersed in life.
+There is no magic recipe for finding happiness, for living according to your
+ikigai, but one key ingredient is the ability to reach this state of flow and, through
+this state, to have an “optimal experience.”
+In order to achieve this optimal experience, we have to focus on increasing the
+time we spend on activities that bring us to this state of flow, rather than allowing
+ourselves to get caught up in activities that offer immediate pleasure—like eating
+too much, abusing drugs or alcohol, or stuffing ourselves with chocolate in front
+of the TV.
+As Csikszentmihalyi asserts in his book Flow: The Psychology of Optimal
+Experience, flow is “the state in which people are so involved in an activity that
+nothing else seems to matter; the experience itself is so enjoyable that people will
+do it even at great cost, for the sheer sake of doing it.”
+It is not only creative professionals who require the high doses of
+concentration that promote flow. Most athletes, chess players, and engineers also
+spend much of their time on activities that bring them to this state.
+According to Csikszentmihalyi’s research, a chess player feels the same way
+upon entering a state of flow as a mathematician working on a formula or a
+surgeon performing an operation. A professor of psychology, Csikszentmihalyi
+analyzed data from people around the world and discovered that flow is the same
+among individuals of all ages and cultures. In New York and Okinawa, we all
+reach a state of flow in the same way.
+But what happens to our mind when we are in that state?
+When we flow, we are focused on a concrete task without any distractions.
+Our mind is “in order.” The opposite occurs when we try to do something while
+our mind is on other things.
+If you often find yourself losing focus while working on something you
+consider important, there are several strategies you can employ to increase your
+chances of achieving flow.
+The Seven Conditions for Achieving Flow
+According to researcher Owen Schaffer of DePaul University, the
+According to researcher Owen Schaffer of DePaul University, the
+requirements for achieving flow are:
+1. Knowing what to do
+2. Knowing how to do it
+3. Knowing how well you are doing
+4. Knowing where to go (where navigation is involved)
+5. Perceiving significant challenges
+6. Perceiving significant skills
+7. Being free from distractions
+1
+Strategy 1: Choose a difficult task (but not too
+difficult!)
+Schaffer’s model encourages us to take on tasks that we have a chance of
+completing but that are slightly outside our comfort zone.
+Every task, sport, or job has a set of rules, and we need a set of skills to follow
+them. If the rules for completing a task or achieving a purpose are too basic
+relative to our skill set, we will likely get bored. Activities that are too easy lead
+to apathy.
+If, on the other hand, we assign ourselves a task that is too difficult, we won’t
+have the skills to complete it and will almost certainly give up—and feel
+frustrated, to boot.
+The ideal is to find a middle path, something aligned with our abilities but just
+a bit of a stretch, so we experience it as a challenge. This is what Ernest
+Hemingway meant when he said, “Sometimes I write better than I can.”
+2
+We want to see challenges through to the end because we enjoy the feeling of
+pushing ourselves. Bertrand Russell expressed a similar idea when he said, “To be
+able to concentrate for a considerable amount of time is essential to difficult
+achievement.”
+3
+If you’re a graphic designer, learn a new software program for your next
+project. If you’re a programmer, use a new programming language. If you’re a
+dancer, try to incorporate into your next routine a movement that has seemed
+impossible for years.
+Add a little something extra, something that takes you out of your comfort
+zone.
+zone.
+Even doing something as simple as reading means following certain rules,
+having certain abilities and knowledge. If we set out to read a book on quantum
+mechanics for specialists in physics without being specialists in physics ourselves,
+we’ll probably give up after a few minutes. On the other end of the spectrum, if
+we already know everything a book has to tell us, we’ll get bored right away.
+However, if the book is appropriate to our knowledge and abilities, and builds
+on what we already know, we’ll immerse ourselves in our reading, and time will
+flow. This pleasure and satisfaction are evidence that we are in tune with our
+ikigai.
+Easy Challenging Beyond Our Abilities
+Boredom Flow Anxiety
+Strategy 2: Have a clear, concrete objective
+Video games—played in moderation—board games, and sports are great ways to
+achieve flow, because the objective tends to be very clear: Beat your rival or your
+own record while following a set of explicitly defined rules.
+Unfortunately, the objective isn’t quite as clear in most situations.
+According to a study by Boston Consulting Group, when asked about their
+bosses, the number one complaint of employees at multinational corporations is
+that they don’t “communicate the team’s mission clearly,” and that, as a result, the
+employees don’t know what their objectives are.
+What often happens, especially in big companies, is that the executives get lost
+in the details of obsessive planning, creating strategies to hide the fact that they
+don’t have a clear objective. It’s like heading out to sea with a map but no
+destination.
+It is much more important to have a compass pointing to a concrete objective
+than to have a map. Joi Ito, director of the MIT Media Lab, encourages us to use
+the principle of “compass over maps” as a tool to navigate our world of
+uncertainty. In the book Whiplash: How to Survive Our Faster Future, he and Jeff
+Howe write, “In an increasingly unpredictable world moving ever more quickly, a
+detailed map may lead you deep into the woods at an unnecessarily high cost. A
+good compass, though, will always take you where you need to go. It doesn’t
+mean that you should start your journey without any idea where you’re going.
+What it does mean is understanding that while the path to your goal may not be
+straight, you’ll finish faster and more efficiently than you would have if you had
+trudged along a preplanned route.”
+In business, the creative professions, and education alike, it’s important to
+reflect on what we hope to achieve before starting to work, study, or make
+something. We should ask ourselves questions such as:
+What is my objective for today’s session in the studio?
+How many words am I going to write today for the article coming out next
+month?
+What is my team’s mission?
+How fast will I set the metronome tomorrow in order to play that sonata at
+an allegro tempo by the end of the week?
+Having a clear objective is important in achieving flow, but we also have to
+know how to leave it behind when we get down to business. Once the journey has
+begun, we should keep this objective in mind without obsessing over it.
+When Olympic athletes compete for a gold medal, they can’t stop to think how
+pretty the medal is. They have to be present in the moment—they have to flow. If
+they lose focus for a second, thinking how proud they’ll be to show the medal to
+their parents, they’ll almost certainly commit an error at a critical moment and
+will not win the competition.
+One common example of this is writer’s block. Imagine that a writer has to
+finish a novel in three months. The objective is clear; the problem is that the
+writer can’t stop obsessing over it. Every day she wakes up thinking, “I have to
+write that novel,” and every day she sets about reading the newspaper and
+cleaning the house. Every evening she feels frustrated and promises she’ll get to
+work the next day.
+Days, weeks, and months pass, and the writer still hasn’t gotten anything down
+on the page, when all it would have taken was to sit down and get that first word
+out, then the second . . . to flow with the project, expressing her ikigai.
+As soon as you take these first small steps, your anxiety will disappear and you
+will achieve a pleasant flow in the activity you’re doing. Getting back to Albert
+Einstein, “a happy man is too satisfied with the present to dwell on the future.”
+4
+Vague Objective
+Clearly Defined Objective and a
+Focus on Process
+Obsessive Desire to Achieve a Goal
+While Ignoring Process
+Confusion; time and energy wasted on Fixation on the objective rather than getting
+Confusion; time and energy wasted on
+meaningless tasks
+Flow
+Fixation on the objective rather than getting
+down to business
+Mental block Flow Mental block
+Strategy 3: Concentrate on a single task
+This is perhaps one of the greatest obstacles we face today, with so much
+technology and so many distractions. We’re listening to a video on YouTube
+while writing an e-mail, when suddenly a chat prompt pops up and we answer it.
+Then our smartphone vibrates in our pocket; just as soon as we respond to that
+message, we’re back at our computer, logging on to Facebook.
+Pretty soon thirty minutes have passed, and we’ve forgotten what the e-mail
+we were writing was supposed to be about.
+This also happens sometimes when we put on a movie with dinner and don’t
+realize how delicious the salmon was until we’re taking the last bite.
+We often think that combining tasks will save us time, but scientific evidence
+shows that it has the opposite effect. Even those who claim to be good at
+multitasking are not very productive. In fact, they are some of the least
+productive people.
+Our brains can take in millions of bits of information but can only actually
+process a few dozen per second. When we say we’re multitasking, what we’re
+really doing is switching back and forth between tasks very quickly.
+Unfortunately, we’re not computers adept at parallel processing. We end up
+spending all our energy alternating between tasks, instead of focusing on doing
+one of them well.
+Concentrating on one thing at a time may be the single most important factor in
+achieving flow.
+According to Csikszentmihalyi, in order to focus on a task we need:
+1. To be in a distraction-free environment
+2. To have control over what we are doing at every moment
+Technology is great, if we’re in control of it. It’s not so great if it takes control
+of us. For example, if you have to write a research paper, you might sit down at
+your computer and use Google to look up the information you need. However, if
+you’re not very disciplined, you might end up surfing the Web instead of writing
+that paper. In that case, Google and the Internet will have taken over, pulling you
+that paper. In that case, Google and the Internet will have taken over, pulling you
+out of your state of flow.
+It has been scientifically shown that if we continually ask our brains to switch
+back and forth between tasks, we waste time, make more mistakes, and
+remember less of what we’ve done.
+Several studies conducted at Stanford University by Clifford Ivar Nass
+describe our generation as suffering from an epidemic of multitasking. One such
+study analyzed the behavior of hundreds of students, dividing them into groups
+based on the number of things they tended to do at once. The students who were
+the most addicted to multitasking typically alternated among more than four
+tasks; for example, taking notes while reading a textbook, listening to a podcast,
+answering messages on their smartphone, and sometimes checking their Twitter
+timeline.
+Each group of students was shown a screen with several red and several blue
+arrows. The objective of the exercise was to count the red arrows.
+At first, all the students answered correctly right away, without much trouble.
+As the number of blue arrows increased (the number of red arrows stayed the
+same; only their position changed), however, the students accustomed to
+multitasking had serious trouble counting the red arrows in the time allotted, or as
+quickly as the students who did not habitually multitask, for one very simple
+reason: They got distracted by the blue arrows! Their brains were trained to pay
+attention to every stimulus, regardless of its importance, while the brains of the
+other students were trained to focus on a single task—in this case, counting the
+red arrows and ignoring the blue ones.
+5
+Other studies indicate that working on several things at once lowers our
+productivity by at least 60 percent and our IQ by more than ten points.
+One study funded by the Swedish Council for Working Life and Social
+Research found that a sample group of more than four thousand young adults
+between the ages of twenty and twenty-four who were addicted to their
+smartphones got less sleep, felt less connected to their community at school, and
+were more likely to show signs of depression.
+6
+Concentrating on a Single Task Multitasking
+Makes achieving flow more likely Makes achieving flow impossible
+Increases productivity Decreases productivity by 60 percent (though it doesn’t seem to)
+Increases our power of retention Makes it harder to remember things
+Makes us less likely to make mistakes Makes us more likely to make mistakes
+Helps us feel calm and in control of the task at
+Helps us feel calm and in control of the task at
+hand
+Makes us feel stressed by the sensation that we’re losing control, that our
+tasks are controlling us
+Causes us to become more considerate as we
+pay full attention to those around us
+Causes us to hurt those around us through our “addiction” to stimuli:
+always checking our phones, always on social media . . .
+Increases creativity Reduces creativity
+What can we do to avoid falling victim to this flow-impeding epidemic? How
+can we train our brains to focus on a single task? Here are a few ideas for
+creating a space and time free of distractions, to increase our chances of reaching
+a state of flow and thereby getting in touch with our ikigai:
+Don’t look at any kind of screen for the first hour you’re awake and the last
+hour before you go to sleep.
+Turn off your phone before you achieve flow. There is nothing more
+important than the task you have chosen to do during this time. If this seems
+too extreme, enable the “do not disturb” function so only the people closest
+to you can contact you in case of emergency.
+Designate one day of the week, perhaps a Saturday or Sunday, a day of
+technological “fasting,” making exceptions only for e-readers (without WiFi) or MP3 players.
+Go to a café that doesn’t have Wi-Fi.
+Read and respond to e-mail only once or twice per day. Define those times
+clearly and stick to them.
+Try the Pomodoro Technique: Get yourself a kitchen timer (some are made
+to look like a pomodoro, or tomato) and commit to working on a single task
+as long as it’s running. The Pomodoro Technique recommends 25 minutes of
+work and 5 minutes of rest for each cycle, but you can also do 50 minutes of
+work and 10 minutes of rest. Find the pace that’s best for you; the most
+important thing is to be disciplined in completing each cycle.
+Start your work session with a ritual you enjoy and end it with a reward.
+Train your mind to return to the present when you find yourself getting
+distracted. Practice mindfulness or another form of meditation, go for a
+walk or a swim—whatever will help you get centered again.
+Work in a space where you will not be distracted. If you can’t do this at
+home, go to a library, a café, or, if your task involves playing the saxophone,
+a music studio. If you find that your surroundings continue to distract you,
+keep looking until you find the right place.
+Divide each activity into groups of related tasks, and assign each group its
+own place and time. For example, if you’re writing a magazine article, you
+could do research and take notes at home in the morning, write in the library
+in the afternoon, and edit on the couch at night.
+Bundle routine tasks—such as sending out invoices, making phone calls, and
+so on—and do them all at once.
+Advantages of Flow Disadvantages of Distraction
+A focused mind A wandering mind
+Living in the present Thinking about the past and the future
+We are free from worry
+Concerns about our daily life and the people around us
+invade our thoughts
+The hours fly by Every minute seems endless
+We feel in control We lose control and fail to complete the task at hand, or
+other tasks or people keep us from our work
+We prepare thoroughly We act without being prepared
+We know what we should be doing at any given moment We frequently get stuck and don’t know how to proceed
+Our mind is clear and overcomes all obstacles to the flow of
+thought
+We are plagued by doubts, concerns, and low self-esteem
+It’s pleasant It’s boring and exhausting
+Our ego fades: We are not the ones controlling the activity or
+task we’re doing—the task is leading us
+Constant self-criticism: Our ego is present and we feel
+frustrated
+Flow in Japan: Takumis, engineers, geniuses, and otakus
+What do takumis (artisans), engineers, inventors, and otakus (fans of anime and
+manga) have in common? They all understand the importance of flowing with
+their ikigai at all times.
+One widespread stereotype about people in Japan is that they’re exceptionally
+dedicated and hardworking, even though some Japanese people say they look like
+they’re working harder than they really are. There is no doubt, though, about their
+ability to be completely absorbed in a task, or about their perseverance when
+there is a problem to be solved. One of the first words one learns when starting
+Japanese lessons is ganbaru, which means “to persevere” or “to stay firm by doing
+one’s best.”
+Japanese people often apply themselves to even the most basic tasks with an
+intensity that borders on obsession. We see this in all kinds of contexts, from the
+“retirees” taking meticulous care of their rice fields in the mountains of Nagano
+to the college students working the weekend shift in convenience stores known as
+konbinis. If you go to Japan, you’ll experience this attention to detail firsthand in
+almost every transaction.
+Walk into one of the stores that sell handcrafted objects in Naha, Kanazawa,
+or Kyoto and you’ll also discover that Japan is a treasure trove of traditional
+craftwork. The people of Japan have a unique talent for creating new
+technologies while preserving artisanal traditions and techniques.
+The art of the takumi
+Toyota employs “artisans” who are able to make a certain type of screw by hand.
+These takumi, or experts in a particular manual skill, are extremely important to
+Toyota, and they are hard to replace. Some of them are the only people who
+know how to perform their exact skill, and it doesn’t seem as though a new
+generation is going to take up the mantle.
+Turntable needles are another example: They’re produced almost exclusively
+in Japan, where you can find the last remaining people who know how to use the
+machinery required to make these precision needles, and who are trying to pass
+on their knowledge to their descendants.
+We met a takumi on a visit to Kumano, a small town near Hiroshima. We were
+there for the day, working on a photo essay for one of the most famous brands of
+makeup brushes in the West. The billboard welcoming visitors to Kumano shows
+a mascot holding a large brush. In addition to the brush factories, the town is full
+of little houses and vegetable gardens; heading farther in, you can see several
+Shinto shrines at the base of the mountains that surround the town.
+We spent hours taking photos in factories full of people in orderly rows, each
+doing a single task—such as painting the handles of the brushes or loading boxes
+of them onto trucks—before we realized we still hadn’t seen anyone actually
+putting bristles into the brush heads.
+After we asked about this and got the runaround several times, the president
+of one company agreed to show us how it was done. He led us out of the building
+and asked us to get into his car. After a five-minute drive we parked next to
+another, smaller structure and climbed the stairs. He opened a door and we
+walked into a small room filled with windows that let in lovely natural light.
+walked into a small room filled with windows that let in lovely natural light.
+In the middle of the room was a woman wearing a mask. You could see only
+her eyes. She was so focused on choosing individual bristles for the brushes—
+gracefully moving her hands and fingers, using scissors and combs to sort the
+bristles—that she didn’t even notice our presence. Her movements were so quick
+it was hard to tell what she was doing.
+The president of the company interrupted her to let her know that we’d be
+taking photos as she worked. We couldn’t see her mouth, but the glint in her eye
+and the cheerful inflection in her speech let us know she was smiling. She looked
+happy and proud talking about her work and responsibilities.
+We had to use extremely fast shutter speeds to capture her movements. Her
+hands danced and flowed in concert with her tools and the bristles she was
+sorting.
+The president told us that this takumi was one of the most important people in
+the company, even though she was hidden away in a separate building. Every
+bristle of every brush the company made passed through her hands.
+Steve Jobs in Japan
+Apple cofounder Steve Jobs was a big fan of Japan. Not only did he visit the Sony
+factories in the 1980s and adopt many of their methods when he founded Apple,
+he was also captivated by the simplicity and quality of Japanese porcelain in
+Kyoto.
+It was not, however, an artisan from Kyoto who won Steve Jobs’s devotion, but
+rather a takumi from Toyama named Yukio Shakunaga, who used a technique
+called Etchu Seto-yaki, known by only a few.
+On a visit to Kyoto, Jobs heard of an exhibition of Shakunaga’s work. He
+immediately understood that there was something special about Shakunaga’s
+porcelain. As a matter of fact, he bought several cups, vases, and plates, and went
+back to the show three times that week.
+Jobs returned to Kyoto several times over the course of his life in search of
+inspiration, and ended up meeting Shakunaga in person. It is said that Jobs had
+many questions for him—almost all of them about the fabrication process and the
+type of porcelain he used.
+Shakunaga explained that he used white porcelain he extracted himself from
+mountains in the Toyama prefecture, making him the only artist of his ilk
+familiar with the fabrication process of porcelain objects from their origins in the
+mountains to their final form—an authentic takumi.
+Jobs was so impressed that he considered going to Toyama to see the mountain
+where Shakunaga got his porcelain, but thought better of it when he heard that it
+was more than four hours by train from Kyoto.
+In an interview after Jobs’s death, Shakunaga said he was very proud that his
+work had been appreciated by the man who created the iPhone. He added that
+Jobs’s last purchase from him had been a set of twelve teacups. Jobs had asked
+for something special, “a new style.” To satisfy this request, Shakunaga made 150
+teacups in the process of testing out new ideas. Of these, he chose the twelve best
+and sent them to the Jobs family.
+Ever since his first trip to Japan, Jobs was fascinated and inspired by the
+country’s artisans, engineers (especially at Sony), philosophy (especially Zen), and
+cuisine (especially sushi).
+7
+Sophisticated simplicity
+What do Japanese artisans, engineers, Zen philosophy, and cuisine have in
+common? Simplicity and attention to detail. It is not a lazy simplicity but a
+sophisticated one that searches out new frontiers, always taking the object, the
+body and mind, or the cuisine to the next level, according to one’s ikigai.
+As Csikszentmihalyi would say, the key is always having a meaningful
+challenge to overcome in order to maintain flow.
+The documentary Jiro Dreams of Sushi gives us another example of a takumi,
+this time in the kitchen. Its protagonist has been making sushi every day for more
+than eighty years, and owns a small sushi restaurant near the Ginza subway station
+in Tokyo. He and his son go every day to the famous Tsukiji fish market and
+choose the best fish to bring back to the restaurant.
+In the documentary, we see one of Jiro’s apprentices learning to make tamago
+(a thin, slightly sweet omelet). No matter how hard he tries, he can’t get Jiro’s
+approval. He keeps practicing for years until he finally does.
+Why does the apprentice refuse to give up? Doesn’t he get bored cooking eggs
+every day? No, because making sushi is his ikigai, too.
+Both Jiro and his son are culinary artists. They don’t get bored when they cook
+—they achieve a state of flow. They enjoy themselves completely when they are
+in the kitchen; that is their happiness, their ikigai. They’ve learned to take
+pleasure in their work, to lose their sense of time.
+Beyond the close relationship between father and son, which helps them keep
+the challenge going each day, they also work in a quiet, peaceful environment that
+allows them to concentrate. Even after receiving a three-star rating from
+Michelin, they never considered opening other locations or expanding the
+business. They serve just ten patrons at a time at the bar of their small restaurant.
+Jiro’s family isn’t looking to make money; instead they value good working
+conditions and creating an environment in which they can flow while making the
+best sushi in the world.
+Jiro, like Yukio Shakunaga, begins his work at “the source.” He goes to the
+fish market to find the best tuna; Shakunaga goes to the mountains to find the
+best porcelain. When they get down to work, both become one with the object
+they are creating. This unity with the object that they reach in a state of flow
+takes on special meaning in Japan, where, according to Shintoism, forests, trees,
+and objects have a kami (spirit or god) within them.
+When someone—whether an artist, an engineer, or a chef—sets out to create
+something, his or her responsibility is to use nature to give it “life” while
+respecting that nature at every moment. During this process, the artisan becomes
+one with the object and flows with it. An ironworker would say that metal has a
+life of its own, just as someone making ceramics would say that the clay does.
+The Japanese are skilled at bringing nature and technology together: not man
+versus nature, but rather a union of the two.
+The purity of Ghibli
+There are those who say that the Shinto value of being connected with nature is
+vanishing. One of the harshest critics of this loss is another artist with a clearly
+defined ikigai: Hayao Miyazaki, the director of the animated films produced by
+Studio Ghibli.
+In nearly all his films we see humans, technology, fantasy, and nature in a state
+of conflict—and, in the end, coming together. One of the most poignant
+metaphors in his film Spirited Away is an obese spirit covered in trash that
+represents the pollution of the rivers.
+In Miyazaki’s films, forests have personalities, trees have feelings, and robots
+befriend birds. Considered a national treasure by the Japanese government,
+Miyazaki is an artist capable of becoming completely absorbed in his art. He uses
+a cell phone from the late 1990s, and he makes his entire team draw by hand. He
+“directs” his films by rendering on paper even the tiniest detail, achieving flow by
+drawing, not by using a computer. Thanks to this obsession on the director’s part,
+Studio Ghibli is one of the only studios in the world where almost the entire
+production process is carried out using traditional techniques.
+Those who have visited Studio Ghibli know that it is fairly typical, on a given
+Sunday to see a solitary individual tucked away in a corner, hard at work—a man
+in simple clothes who will greet them with an ohayo (hello) without looking up.
+Miyazaki is so passionate about his work that he spends many Sundays in the
+studio, enjoying the state of flow, putting his ikigai above all else. Visitors know
+that under no circumstances is one to bother Miyazaki, who is known for his
+quick temper—especially if he is interrupted while drawing.
+In 2013, Miyazaki announced he was going to retire. To commemorate his
+retirement, the television station NHK made a documentary showing him in his
+last days at work. He is drawing in nearly every scene of the film. In one scene,
+several of his colleagues are seen coming out of a meeting, and there he is,
+drawing in a corner, paying no attention to them. In another scene, he is shown
+walking to work on December 30 (a national holiday in Japan) and opening the
+doors of Studio Ghibli so he can spend the day there, drawing alone.
+Miyazaki can’t stop drawing. The day after his “retirement,” instead of going
+on vacation or staying at home, he went to Studio Ghibli and sat down to draw.
+His colleagues put on their best poker faces, not knowing what to say. One year
+later, he announced he wouldn’t make any more feature films but that he would
+keep on drawing until the day he died.
+Can someone really retire if he is passionate about what he does?
+The recluses
+It is not only the Japanese who have this capacity; there are artists and scientists
+all over the world with strong, clear ikigais. They do what they love until their
+dying day.
+The last thing Einstein wrote before closing his eyes forever was a formula
+that attempted to unite all the forces of the universe in a single theory. When he
+died, he was still doing what he loved. If he hadn’t been a physicist, he said, he
+would have been happy as a musician. When he wasn’t focused on physics or
+mathematics, he enjoyed playing the violin. Reaching a state of flow while
+working on his formulas or playing music, his two ikigais, brought him endless
+pleasure.
+Many such artists might seem misanthropic or reclusive, but what they are
+really doing is protecting the time that brings them happiness, sometimes at the
+expense of other aspects of their lives. They are outliers who apply the principles
+of flow to their lives to an extreme.
+Another example of this kind of artist is the novelist Haruki Murakami. He
+sees only a close circle of friends, and appears in public in Japan only once every
+few years.
+Artists know how important it is to protect their space, control their
+environment, and be free of distractions if they want to flow with their ikigai.
+Microflow: Enjoying mundane tasks
+But what happens when we have to, say, do the laundry, mow the lawn, or attend
+to paperwork? Is there a way to make these mundane tasks enjoyable?
+Near the Shinjuku subway station, in one of the neural centers of Tokyo, there
+is a supermarket that still employs elevator operators. The elevators are fairly
+standard and could easily be operated by the customers, but the store prefers to
+provide the service of someone holding the door open for you, pushing the button
+for your floor, and bowing as you exit.
+If you ask around, you’ll learn that there is one elevator operator who has been
+doing the same job since 2004. She is always smiling and enthusiastic about her
+work. How is she able to enjoy such a job? Doesn’t she get bored doing
+something so repetitive?
+On closer inspection, it becomes clear that the elevator operator is not just
+pushing buttons but is instead performing a whole sequence of movements. She
+begins by greeting the customers with a songlike salutation followed by a bow and
+a welcoming wave of the hand. Then she presses the elevator button with a
+graceful movement, as though she is a geisha offering a client a cup of tea.
+Csikszentmihalyi calls this microflow.
+We’ve all been bored in a class or at a conference and started doodling to keep
+ourselves entertained. Or whistled while painting a wall. If we’re not truly being
+challenged, we get bored and add a layer of complexity to amuse ourselves. Our
+ability to turn routine tasks into moments of microflow, into something we enjoy,
+is key to our being happy, since we all have to do such tasks.
+is key to our being happy, since we all have to do such tasks.
+Even Bill Gates washes the dishes every night. He says he enjoys it—that it
+helps him relax and clear his mind, and that he tries to do it a little better each
+day, following an established order or set of rules he’s made for himself: plates
+first, forks second, and so on.
+It’s one of his daily moments of microflow.
+Richard Feynman, one of the most important physicists of all time, also took
+pleasure in routine tasks. W. Daniel Hillis, one of the founders of the
+supercomputer manufacturer Thinking Machines, hired Feynman to work on the
+development of a computer that could handle parallel processing when he was
+already world famous. He says Feynman showed up on his first day of work and
+said, “OK, boss, what’s my assignment?” They didn’t have anything prepared, so
+they asked him to work on a certain mathematical problem. He immediately
+realized they were giving him an irrelevant task to keep him busy and said, “That
+sounds like a bunch of baloney—give me something real to do.”
+So they sent him to a nearby shop to buy office supplies, and he completed his
+assignment with a smile on his face. When he didn’t have something important to
+do or needed to rest his mind, Feynman dedicated himself to microflowing—say,
+painting the office walls.
+Weeks later, after visiting the Thinking Machines offices a group of investors
+declared, “You have a Nobel laureate in there painting walls and soldering
+circuits.”
+8
+Instant vacations: Getting there through meditation
+Training the mind can get us to a place of flow more quickly. Meditation is one
+way to exercise our mental muscles.
+There are many types of meditation, but they all have the same objective:
+calming the mind, observing our thoughts and emotions, and centering our focus
+on a single object.
+The basic practice involves sitting with a straight back and focusing on your
+breath. Anyone can do it, and you feel a difference after just one session. By
+fixing your attention on the air moving in and out of your nose, you can slow the
+torrent of thoughts and clear your mental horizons.
+The Archer’s Secret
+The winner of the 1988 Olympic gold medal for archery was a seventeenyear-old woman from South Korea. When asked how she prepared, she
+replied that the most important part of her training was meditating for two
+hours each day.
+If we want to get better at reaching a state of flow, meditation is an excellent
+antidote to our smartphones and their notifications constantly clamoring for our
+attention.
+One of the most common mistakes among people starting to meditate is
+worrying about doing it “right,” achieving absolute mental silence, or reaching
+“nirvana.” The most important thing is to focus on the journey.
+Since the mind is a constant swirl of thoughts, ideas, and emotions, slowing
+down the “centrifuge”—even for just a few seconds—can help us feel more
+rested and leave us with a sense of clarity.
+In fact, one of the things we learn in the practice of meditation is not to worry
+about anything that flits across our mental screen. The idea of killing our boss
+might flash into our mind, but we simply label it as a thought and let it pass like a
+cloud, without judging or rejecting it. It is only a thought—one of the sixty
+thousand we have every day, according to some experts.
+Meditation generates alpha and theta brain waves. For those experienced in
+meditation, these waves appear right away, while it might take a half hour for a
+beginner to experience them. These relaxing brain waves are the ones that are
+activated right before we fall asleep, as we lie in the sun, or right after taking a
+hot bath.
+We all carry a spa with us everywhere we go. It’s just a matter of knowing how
+to get in—something anyone can do, with a bit of practice.
+Humans as ritualistic beings
+Life is inherently ritualistic. We could argue that humans naturally follow rituals
+that keep us busy. In some modern cultures, we have been forced out of our
+ritualistic lives to pursue goal after goal in order to be seen as successful. But
+throughout history, humans have always been busy. We were hunting, cooking,
+farming, exploring, and raising families—activities that were structured as rituals
+to keep us busy throughout our days.
+But in an unusual way, rituals still permeate daily life and business practices in
+But in an unusual way, rituals still permeate daily life and business practices in
+modern Japan. The main religions in Japan—Confucianism, Buddhism, and
+Shintoism—are all ones in which the rituals are more important than absolute
+rules.
+When doing business in Japan, process, manners, and how you work on
+something is more important than the final results. Whether this is good or bad
+for the economy is beyond the scope of this book. What is indisputable, though,
+is that finding flow in a “ritualistic workplace” is much easier than in one in
+which we are continually stressed out trying to achieve unclear goals set by our
+bosses.
+Rituals give us clear rules and objectives, which help us enter a state of flow.
+When we have only a big goal in front of us, we might feel lost or overwhelmed
+by it; rituals help us by giving us the process, the substeps, on the path to
+achieving a goal. When confronted with a big goal, try to break it down into parts
+and then attack each part one by one.
+Focus on enjoying your daily rituals, using them as tools to enter a state of
+flow. Don’t worry about the outcome—it will come naturally. Happiness is in the
+doing, not in the result. As a rule of thumb, remind yourself: “Rituals over goals.”
+The happiest people are not the ones who achieve the most. They are the ones
+who spend more time than others in a state of flow.
+Using flow to find your ikigai
+After reading this chapter you should have a better idea of which activities in
+your life make you enter flow. Write all of them on a piece of paper, then ask
+yourself these questions: What do the activities that drive you to flow have in
+common? Why do those activities drive you to flow? For example, are all the
+activities you most like doing ones that you practice alone or with other people?
+Do you flow more when doing things that require you to move your body or just
+to think?
+In the answers to these questions you might find the underlying ikigai that
+drives your life. If you don’t, then keep searching by going deeper into what you
+like by spending more of your time in the activities that make you flow. Also, try
+new things that are not on the list of what makes you flow but that are similar and
+that you are curious about. For example, if photography is something that drives
+you into flow, you could also try painting; you might even like it more! Or if you
+love snowboarding and have never tried surfing . . .
+Flow is mysterious. It is like a muscle: the more you train it, the more you will
+flow, and the closer you will be to your ikigai.`,
   },
   {
     chapter_number: 5,
-    title: "The Best Way to Start a New Habit",
-    content: `IN 2001, RESEARCHERS in Great Britain began working with 248 people to build better
-exercise habits over the course of two weeks. The subjects were divided into
-three groups.
-The first group was the control group. They were simply asked to track how
-often they exercised.
-The second group was the “motivation” group. They were asked not only to
-track their workouts but also to read some material on the benefits of exercise.
-The researchers also explained to the group how exercise could reduce the risk
-of coronary heart disease and improve heart health.
-Finally, there was the third group. These subjects received the same
-presentation as the second group, which ensured that they had equal levels of
-motivation. However, they were also asked to formulate a plan for when and
-where they would exercise over the following week. Specifically, each member
-of the third group completed the following sentence: “During the next week, I
-will partake in at least 20 minutes of vigorous exercise on [DAY] at [TIME] in
-[PLACE].”
-In the first and second groups, 35 to 38 percent of people exercised at least
-once per week. (Interestingly, the motivational presentation given to the second
-group seemed to have no meaningful impact on behavior.) But 91 percent of the
-third group exercised at least once per week—more than double the normal rate.
-The sentence they filled out is what researchers refer to as an implementation
-intention, which is a plan you make beforehand about when and where to act.
-That is, how you intend to implement a particular habit.
-The cues that can trigger a habit come in a wide range of forms—the feel of
-your phone buzzing in your pocket, the smell of chocolate chip cookies, the
-sound of ambulance sirens—but the two most common cues are time and
-location. Implementation intentions leverage both of these cues.
-Broadly speaking, the format for creating an implementation intention is:
-“When situation X arises, I will perform response Y.”
-Hundreds of studies have shown that implementation intentions are effective
-for sticking to our goals, whether it’s writing down the exact time and date of
-when you will get a flu shot or recording the time of your colonoscopy
-appointment. They increase the odds that people will stick with habits like
-recycling, studying, going to sleep early, and stopping smoking.
-Researchers have even found that voter turnout increases when people are
-forced to create implementation intentions by answering questions like: “What
-route are you taking to the polling station? At what time are you planning to go?
-What bus will get you there?” Other successful government programs have
-prompted citizens to make a clear plan to send taxes in on time or provided
-directions on when and where to pay late traffic bills.
-The punch line is clear: people who make a specific plan for when and where
-they will perform a new habit are more likely to follow through. Too many
-people try to change their habits without these basic details figured out. We tell
-ourselves, “I’m going to eat healthier” or “I’m going to write more,” but we
-never say when and where these habits are going to happen. We leave it up to
-chance and hope that we will “just remember to do it” or feel motivated at the
-right time. An implementation intention sweeps away foggy notions like “I want
-to work out more” or “I want to be more productive” or “I should vote” and
-transforms them into a concrete plan of action.
-Many people think they lack motivation when what they really lack is clarity.
-It is not always obvious when and where to take action. Some people spend their
-entire lives waiting for the time to be right to make an improvement.
-Once an implementation intention has been set, you don’t have to wait for
-inspiration to strike. Do I write a chapter today or not? Do I meditate this
-morning or at lunch? When the moment of action occurs, there is no need to
-make a decision. Simply follow your predetermined plan.
-The simple way to apply this strategy to your habits is to fill out this
-sentence:
-I will [BEHAVIOR] at [TIME] in [LOCATION].
-Meditation. I will meditate for one minute at 7 a.m. in my kitchen.
-Studying. I will study Spanish for twenty minutes at 6 p.m. in my
-bedroom.
-Exercise. I will exercise for one hour at 5 p.m. in my local gym.
-Marriage. I will make my partner a cup of tea at 8 a.m. in the kitchen.
-If you aren’t sure when to start your habit, try the first day of the week,
-month, or year. People are more likely to take action at those times because hope
-is usually higher. If we have hope, we have a reason to take action. A fresh start
-feels motivating.
-There is another benefit to implementation intentions. Being specific about
-what you want and how you will achieve it helps you say no to things that derail
-progress, distract your attention, and pull you off course. We often say yes to
-little requests because we are not clear enough about what we need to be doing
-instead. When your dreams are vague, it’s easy to rationalize little exceptions all
-day long and never get around to the specific things you need to do to succeed.
-Give your habits a time and a space to live in the world. The goal is to make
-the time and location so obvious that, with enough repetition, you get an urge to
-do the right thing at the right time, even if you can’t say why. As the writer
-Jason Zweig noted, “Obviously you’re never going to just work out without
-conscious thought. But like a dog salivating at a bell, maybe you start to get
-antsy around the time of day you normally work out.”
-There are many ways to use implementation intentions in your life and work.
-My favorite approach is one I learned from Stanford professor BJ Fogg and it is
-a strategy I refer to as habit stacking.
-HABIT STACKING: A SIMPLE PLAN TO OVERHAUL YOUR HABITS
-The French philosopher Denis Diderot lived nearly his entire life in poverty, but
-that all changed one day in 1765.
-Diderot’s daughter was about to be married and he could not afford to pay for
-the wedding. Despite his lack of wealth, Diderot was well known for his role as
-the co-founder and writer of Encyclopédie, one of the most comprehensive
-encyclopedias of the time. When Catherine the Great, the Empress of Russia,
-heard of Diderot’s financial troubles, her heart went out to him. She was a book
-lover and greatly enjoyed his encyclopedia. She offered to buy Diderot’s
-personal library for £1,000—more than $150,000 today.* Suddenly, Diderot had
-money to spare. With his new wealth, he not only paid for the wedding but also
-acquired a scarlet robe for himself.
-Diderot’s scarlet robe was beautiful. So beautiful, in fact, that he immediately
-noticed how out of place it seemed when surrounded by his more common
-possessions. He wrote that there was “no more coordination, no more unity, no
-more beauty” between his elegant robe and the rest of his stuff.
-Diderot soon felt the urge to upgrade his possessions. He replaced his rug with
-one from Damascus. He decorated his home with expensive sculptures. He
-bought a mirror to place above the mantel, and a better kitchen table. He tossed
-aside his old straw chair for a leather one. Like falling dominoes, one purchase
-led to the next.
-Diderot’s behavior is not uncommon. In fact, the tendency for one purchase to
-lead to another one has a name: the Diderot Effect. The Diderot Effect states that
-obtaining a new possession often creates a spiral of consumption that leads to
-additional purchases.
-You can spot this pattern everywhere. You buy a dress and have to get new
-shoes and earrings to match. You buy a couch and suddenly question the layout
-of your entire living room. You buy a toy for your child and soon find yourself
-purchasing all of the accessories that go with it. It’s a chain reaction of
-purchases.
-Many human behaviors follow this cycle. You often decide what to do next
-based on what you have just finished doing. Going to the bathroom leads to
-washing and drying your hands, which reminds you that you need to put the
-dirty towels in the laundry, so you add laundry detergent to the shopping list, and
-so on. No behavior happens in isolation. Each action becomes a cue that triggers
-the next behavior.
-Why is this important?
-When it comes to building new habits, you can use the connectedness of
-behavior to your advantage. One of the best ways to build a new habit is to
-identify a current habit you already do each day and then stack your new
-behavior on top. This is called habit stacking.
-Habit stacking is a special form of an implementation intention. Rather than
-pairing your new habit with a particular time and location, you pair it with a
-current habit. This method, which was created by BJ Fogg as part of his Tiny
-Habits program, can be used to design an obvious cue for nearly any habit.*
-The habit stacking formula is:
-“After [CURRENT HABIT], I will [NEW HABIT].”
-For example:
-Meditation. After I pour my cup of coffee each morning, I will
-meditate for one minute.
-Exercise. After I take off my work shoes, I will immediately change
-into my workout clothes.
-Gratitude. After I sit down to dinner, I will say one thing I’m grateful
-for that happened today.
-Marriage. After I get into bed at night, I will give my partner a kiss.
-Safety. After I put on my running shoes, I will text a friend or family
-member where I am running and how long it will take.
-The key is to tie your desired behavior into something you already do each
-day. Once you have mastered this basic structure, you can begin to create larger
-stacks by chaining small habits together. This allows you to take advantage of
-the natural momentum that comes from one behavior leading into the next—a
-positive version of the Diderot Effect.
-HABIT STACKING
-FIGURE 7: Habit stacking increases the likelihood that you’ll stick with a habit by stacking your new behavior on top of an old one. This process can be repeated to chain numerous habits
-together, each one acting as the cue for the next.
-Your morning routine habit stack might look like this:
-1. After I pour my morning cup of coffee, I will meditate for sixty
-seconds.
-2. After I meditate for sixty seconds, I will write my to-do list for the
-day.
-3. After I write my to-do list for the day, I will immediately begin my
-first task.
-Or, consider this habit stack in the evening:
-1. After I finish eating dinner, I will put my plate directly into the
-dishwasher.
-2. After I put my dishes away, I will immediately wipe down the counter.
-3. After I wipe down the counter, I will set out my coffee mug for
-tomorrow morning.
-You can also insert new behaviors into the middle of your current routines.
-For example, you may already have a morning routine that looks like this: Wake
-up > Make my bed > Take a shower. Let’s say you want to develop the habit of
-reading more each night. You can expand your habit stack and try something
-like: Wake up > Make my bed > Place a book on my pillow > Take a shower.
-Now, when you climb into bed each night, a book will be sitting there waiting
-for you to enjoy.
-Overall, habit stacking allows you to create a set of simple rules that guide
-your future behavior. It’s like you always have a game plan for which action
-should come next. Once you get comfortable with this approach, you can
-develop general habit stacks to guide you whenever the situation is appropriate:
-Exercise. When I see a set of stairs, I will take them instead of using
-the elevator.
-Social skills. When I walk into a party, I will introduce myself to
-someone I don’t know yet.
-Finances. When I want to buy something over $100, I will wait
-twenty-four hours before purchasing.
-Healthy eating. When I serve myself a meal, I will always put veggies
-on my plate first.
-Minimalism. When I buy a new item, I will give something away.
-(“One in, one out.”)
-Mood. When the phone rings, I will take one deep breath and smile
-before answering.
-Forgetfulness. When I leave a public place, I will check the table and
-chairs to make sure I don’t leave anything behind.
-No matter how you use this strategy, the secret to creating a successful habit
-stack is selecting the right cue to kick things off. Unlike an implementation
-intention, which specifically states the time and location for a given behavior,
-habit stacking implicitly has the time and location built into it. When and where
-you choose to insert a habit into your daily routine can make a big difference. If
-you’re trying to add meditation into your morning routine but mornings are
-chaotic and your kids keep running into the room, then that may be the wrong
-place and time. Consider when you are most likely to be successful. Don’t ask
-yourself to do a habit when you’re likely to be occupied with something else.
-Your cue should also have the same frequency as your desired habit. If you
-want to do a habit every day, but you stack it on top of a habit that only happens
-on Mondays, that’s not a good choice.
-One way to find the right trigger for your habit stack is by brainstorming a list
-of your current habits. You can use your Habits Scorecard from the last chapter
-as a starting point. Alternatively, you can create a list with two columns. In the
-first column, write down the habits you do each day without fail.*
-For example:
-Get out of bed.
-Take a shower.
-Brush your teeth.
-Get dressed.
-Brew a cup of coffee.
-Eat breakfast.
-Take the kids to school.
-Start the work day.
-Eat lunch.
-End the work day.
-Change out of work clothes.
-Sit down for dinner.
-Turn off the lights.
-Get into bed.
-Your list can be much longer, but you get the idea. In the second column,
-write down all of the things that happen to you each day without fail. For
-example:
-The sun rises.
-You get a text message.
-The song you are listening to ends.
-The sun sets.
-Armed with these two lists, you can begin searching for the best place to layer
-your new habit into your lifestyle.
-Habit stacking works best when the cue is highly specific and immediately
-actionable. Many people select cues that are too vague. I made this mistake
-myself. When I wanted to start a push-up habit, my habit stack was “When I take
-a break for lunch, I will do ten push-ups.” At first glance, this sounded
-reasonable. But soon, I realized the trigger was unclear. Would I do my push-ups
-before I ate lunch? After I ate lunch? Where would I do them? After a few
-inconsistent days, I changed my habit stack to: “When I close my laptop for
-lunch, I will do ten push-ups next to my desk.” Ambiguity gone.
-Habits like “read more” or “eat better” are worthy causes, but these goals do
-not provide instruction on how and when to act. Be specific and clear: After I
-close the door. After I brush my teeth. After I sit down at the table. The
-specificity is important. The more tightly bound your new habit is to a specific
-cue, the better the odds are that you will notice when the time comes to act.
-The 1st Law of Behavior Change is to make it obvious. Strategies like
-implementation intentions and habit stacking are among the most practical ways
-to create obvious cues for your habits and design a clear plan for when and
-where to take action.
-Chapter Summary
-The 1st Law of Behavior Change is make it obvious.
-The two most common cues are time and location.
-Creating an implementation intention is a strategy you can use to pair a
-new habit with a specific time and location.
-The implementation intention formula is: I will [BEHAVIOR] at
-[TIME] in [LOCATION].
-Habit stacking is a strategy you can use to pair a new habit with a
-current habit.
-The habit stacking formula is: After [CURRENT HABIT], I will
-[NEW HABIT].`,
+    title:
+      "MASTERS OF LONGEVITY: Words of wisdom from the longest-living people in the world",
+    content: `WHEN WE STARTED working on this book, we didn’t want to just research the factors that contribute to a long and
+happy life; we wanted to hear from the true masters of this art.
+The interviews we conducted in Okinawa merit their own chapter, but in the
+section that precedes it we have provided an overview of the life philosophies of
+a few international champions of longevity. We’re talking about
+supercentenarians—people who live to 110 years of age or more.
+The term was coined in 1970 by Norris McWhirter, editor of The Guinness
+Book of World Records. Its use became more widespread in the 1990s, after it
+appeared in William Strauss and Neil Howe’s Generations. Today there are an
+estimated 300 to 450 supercentenarians in the world, although the age of only
+around 75 of them has been confirmed. They aren’t superheroes, but we could see
+them as such for having spent far more time on this planet than the average life
+expectancy would predict.
+Given the rise in life expectancy around the world, the number of
+supercentenarians might also increase. A healthy and purposeful life could help
+us join their ranks.
+Let’s take a look at what a few of them have to say.
+Misao Okawa (117)
+“Eat and sleep, and you’ll live a long time. You have to learn to
+relax.”
+According to the Gerontology Research Group, until April 2015, the oldest living
+person in the world was Misao Okawa, who passed away in a care facility in
+Osaka, Japan, after living for 117 years and 27 days.
+The daughter of a textile merchant, she was born in 1898, when Spain lost its
+colonies in Cuba and the Philippines, and the United States annexed Hawaii and
+launched Pepsi-Cola. Until she was 110, this woman—who lived in three
+different centuries—cared for herself unassisted.
+When specialists asked about her self-care routine, Misao answered simply,
+“Eating sushi and sleeping,” to which we should add, having a tremendous thirst
+for life. When they inquired about her secret for longevity, she answered with a
+smile, “I ask myself the same thing.”
+1
+Proof that Japan continues to be a factory of long life: In July of the same year
+Sakari Momoi passed away at 112 years and 150 days old. At the time he was the
+oldest man in the world, though he was younger than fifty-seven women.
+María Capovilla (116)
+“I’ve never eaten meat in my life.”
+Born in Ecuador in 1889, María Capovilla was recognized by Guinness as the
+world’s oldest person. She died of pneumonia in 2006, at 116 years and 347 days
+old, leaving behind three children, twelve grandchildren, and twenty great-and
+great-great-grandchildren.
+She gave one of her last interviews at age 107, sharing her memories and her
+thoughts:
+I’m happy, and I give thanks to God, who keeps me going. I never thought I’d live so long, I thought I’d
+die long ago. My husband, Antonio Capovilla, was the captain of a ship. He passed away at 84. We had
+two daughters and a son, and now I have many grandchildren and great-grandchildren.
+Things were better, back in the old days. People behaved better. We used to dance, but we were
+more restrained; there was this one song I loved dancing to: “María” by Luis Alarcón. I still remember
+most of the words. I also remember many prayers, and say them every day.
+I like the waltz, and can still dance it. I also still make crafts, I still do some of the things I did when
+I was in school.
+2
+When she had finished recalling her past, she began to dance—one of her
+great passions—with an energy that made her seem decades younger.
+When asked about her secret for longevity, she responded simply, “I don’t
+know what the secret to long life is. The only thing I do is I’ve never eaten meat in
+my life. I attribute it to that.”
+Jeanne Calment (122)
+“Everything’s fine.”
+Born in Arles, France, in February 1875, Jeanne Calment lived until August 4,
+1997, making her, at 122, the oldest person of verified age in history. She
+jokingly said that she “competed with Methuselah,” and there is no question that
+jokingly said that she “competed with Methuselah,” and there is no question that
+she broke numerous records as she went on celebrating birthdays.
+She died of natural causes at the end of a happy life during which she denied
+herself almost nothing. She rode a bicycle until she turned 100. She lived on her
+own until 110, when she agreed to move into a nursing home after accidentally
+starting a small fire in her apartment. She stopped smoking at 120, when her
+cataracts started making it hard for her to bring a cigarette to her lips.
+One of her secrets may have been her sense of humor. As she said on her
+120th birthday, “I see badly, I hear badly, and I feel bad, but everything’s fine.”
+3
+Walter Breuning (114)
+“If you keep your mind and body busy, you’ll be around a long
+time.”
+Born in Minnesota in 1896, Walter Breuning was able to see three centuries in his
+lifetime. He died in Montana in 2011, from natural causes; he’d had two wives
+and a fifty-year career on the railroad. At eighty-three he retired to an assisted
+living center in Montana, where he remained until his death. He is the secondoldest man (of verified age) ever born in the United States.
+He gave many interviews in his final years, insisting that his longevity
+stemmed from, among other things, his habit of eating only two meals per day
+and working for as many years as he could. “Your mind and your body. You keep
+both busy,” he said on his 112th birthday, “you’ll be here a long time.” Back then,
+he was still exercising every day.
+Among Breuning’s other secrets: He had a habit of helping others, and he
+wasn’t afraid of dying. As he declared in a 2010 interview with the Associated
+Press, “We’re all going to die. Some people are scared of dying. Never be afraid
+to die. Because you’re born to die.”
+4
+Before passing away in 2011, he is said to have told a pastor that he’d made a
+deal with God: If he wasn’t going to get better, it was time to go.
+Alexander Imich (111)
+“I just haven’t died yet.”
+Born in Poland in 1903, Alexander Imich was a chemist and parapsychologist
+residing in the United States who, after the death of his predecessor in 2014,
+residing in the United States who, after the death of his predecessor in 2014,
+became the oldest man of authenticated age in the world. Imich himself died
+shortly thereafter, in June of that year, leaving behind a long life rich with
+experiences.
+Imich attributed his longevity to, among other things, never drinking alcohol.
+“It’s not as though I’d won the Nobel Prize,” he said upon being declared the
+world’s oldest man. “I never thought I’d get to be so old.” When asked about his
+secret to living so long, his answer was “I don’t know. I just haven’t died yet.”
+5
+Ikigai artists
+The secret to long life, however, is not held by supercentenarians alone. There are
+many people of advanced age who, though they haven’t made it into Guinness
+World Records, offer us inspiration and ideas for bringing energy and meaning to
+our lives.
+Artists, for example, who carry the torch of their ikigai instead of retiring,
+have this power.
+Art, in all its forms, is an ikigai that can bring happiness and purpose to our
+days. Enjoying or creating beauty is free, and something all human beings have
+access to.
+Hokusai, the Japanese artist who made woodblock prints in the ukiyo-e style
+and lived for 88 years, from the mid-eighteenth to the mid-nineteenth century,
+added this postscript to the first edition of his One Hundred Views of Mount
+Fuji:
+6
+All that I have produced before the age of 70 is not worth being counted. It is at the age of 73 that I
+have somewhat begun to understand the structure of true nature, of animals and grasses, and trees and
+birds, and fishes and insects; consequently at 80 years of age I shall have made still more progress; at
+90 I hope to have penetrated into the mystery of things; at 100 years of age I should have reached
+decidedly a marvelous degree, and when I shall be 110, all that I do, every point and every line, shall be
+instinct with life.
+In the pages that follow, we’ve collected some of the most inspirational words
+from artists interviewed by Camille Sweeney for the New York Times.
+7 Of those
+still living, none have retired, and all still enjoy their passion, which they plan to
+pursue until their final breath, demonstrating that when you have a clear purpose,
+no one can stop you.
+The actor Christopher Plummer, still working at eighty-six, reveals a dark
+desire shared by many who love the profession: “We want to drop dead onstage.
+That would be a nice theatrical way to go.”
+8
+Osamu Tezuka, the father of modern Japanese manga, shared this feeling.
+Before he died in 1989, his last words as he drew one final cartoon were “Please,
+just let me work!”
+9
+The eighty-six-year-old filmmaker Frederick Wiseman declared on a stroll
+through Paris that he likes to work, which is why he does it with such intensity.
+“Everybody complains about their aches and pains and all that, but my friends are
+either dead or are still working,” he said.
+10
+Carmen Herrera, a painter who just entered her one hundredth year, sold her
+first canvas at age eighty-nine. Today her work is in the permanent collections of
+the Tate Modern and the Museum of Modern Art. When asked how she viewed
+her future, she responded, “I am always waiting to finish the next thing. Absurd, I
+know. I go day by day.”
+11
+Never Stop Learning
+“You may grow old and trembling in your anatomies, you may lie awake
+at night listening to the disorder of your veins, you may miss your only
+love, you may see the world about you devastated by evil lunatics, or know
+your honour trampled in the sewers of baser minds. There is only one
+thing for it then—to learn. Learn why the world wags and what wags it.
+That is the only thing which the mind can never exhaust, never alienate,
+never be tortured by, never fear or distrust, and never dream of
+regretting.”
+—T. H. White, The Once and Future King
+For his part, naturalist and author Edward O. Wilson asserted, “I feel I have
+enough experience to join those who are addressing big questions. About ten
+years ago, when I began reading and thinking more broadly about the questions of
+what are we, where did we come from and where are we going, I was astonished
+at how little this was being done.”
+12
+Ellsworth Kelly, an artist who passed away in 2015 at the age of ninety-two,
+assured us that the idea that we lose our faculties with age is, in part, a myth,
+because instead we develop a greater clarity and capacity for observation. “It’s
+one thing about getting older, you see more. . . . Every day I’m continuing to see
+new things. That’s why there are new paintings.”
+13
+At eighty-six, the architect Frank Gehry reminds us that some buildings can
+take seven years “from the time you’re hired until you’re finished,”
+14 a fact that
+favors a patient attitude with regard to the passage of time. The man responsible
+for the Guggenheim Museum Bilbao, however, knows how to live in the here and
+now: “You stay in your time. You don’t go backward. I think if you relate to the
+time you’re in, you keep your eyes and ears open, read the paper, see what’s going
+on, stay curious about everything, you will automatically be in your time.”
+15
+Longevity in Japan
+Because of its robust civil registry, many of those verified as having lived
+the longest are found in the United States; however, there are many
+centenarians living in remote villages in other countries. A peaceful life in
+the countryside seems pretty common among people who have watched a
+century pass.
+Without question, the international superstar of longevity is Japan,
+which has the highest life expectancy of any country in the world. In
+addition to a healthy diet, which we will explore in detail, and an
+integrated health care system in which people go to the doctor for regular
+checkups to prevent disease, longevity in Japan is closely tied to its
+culture, as we will see later on.
+The sense of community, and the fact that Japanese people make an
+effort to stay active until the very end, are key elements of their secret to
+long life.
+If you want to stay busy even when there’s no need to work, there has
+to be an ikigai on your horizon, a purpose that guides you throughout your
+life and pushes you to make things of beauty and utility for the
+community and yourself.`,
   },
   {
     chapter_number: 6,
-    title: "Motivation Is Overrated; Environment Often Matters More",
-    content: `ANNE THORNDIKE, A primary care physician at Massachusetts General Hospital in
-Boston, had a crazy idea. She believed she could improve the eating habits of
-thousands of hospital staff and visitors without changing their willpower or
-motivation in the slightest way. In fact, she didn’t plan on talking to them at all.
-Thorndike and her colleagues designed a six-month study to alter the “choice
-architecture” of the hospital cafeteria. They started by changing how drinks were
-arranged in the room. Originally, the refrigerators located next to the cash
-registers in the cafeteria were filled with only soda. The researchers added water
-as an option to each one. Additionally, they placed baskets of bottled water next
-to the food stations throughout the room. Soda was still in the primary
-refrigerators, but water was now available at all drink locations.
-Over the next three months, the number of soda sales at the hospital dropped
-by 11.4 percent. Meanwhile, sales of bottled water increased by 25.8 percent.
-They made similar adjustments—and saw similar results—with the food in the
-cafeteria. Nobody had said a word to anyone eating there.
-BEFORE AFTER
-FIGURE 8: Here is a representation of what the cafeteria looked like before the environment design changes were made (left) and after (right). The shaded boxes indicate areas where bottled
-water was available in each instance. Because the amount of water in the environment was increased, behavior shifted naturally and without additional motivation.
-People often choose products not because of what they are, but because of
-where they are. If I walk into the kitchen and see a plate of cookies on the
-counter, I’ll pick up half a dozen and start eating, even if I hadn’t been thinking
-about them beforehand and didn’t necessarily feel hungry. If the communal table
-at the office is always filled with doughnuts and bagels, it’s going to be hard not
-to grab one every now and then. Your habits change depending on the room you
-are in and the cues in front of you.
-Environment is the invisible hand that shapes human behavior. Despite our
-unique personalities, certain behaviors tend to arise again and again under
-certain environmental conditions. In church, people tend to talk in whispers. On
-a dark street, people act wary and guarded. In this way, the most common form
-of change is not internal, but external: we are changed by the world around us.
-Every habit is context dependent.
-In 1936, psychologist Kurt Lewin wrote a simple equation that makes a
-powerful statement: Behavior is a function of the Person in their Environment,
-or B = f (P,E).
-It didn’t take long for Lewin’s Equation to be tested in business. In 1952, the
-economist Hawkins Stern described a phenomenon he called Suggestion Impulse
-Buying, which “is triggered when a shopper sees a product for the first time and
-visualizes a need for it.” In other words, customers will occasionally buy
-products not because they want them but because of how they are presented to
-them.
-For example, items at eye level tend to be purchased more than those down
-near the floor. For this reason, you’ll find expensive brand names featured in
-easy-to-reach locations on store shelves because they drive the most profit, while
-cheaper alternatives are tucked away in harder-to-reach spots. The same goes for
-end caps, which are the units at the end of aisles. End caps are moneymaking
-machines for retailers because they are obvious locations that encounter a lot of
-foot traffic. For example, 45 percent of Coca-Cola sales come specifically from
-end-of-the-aisle racks.
-The more obviously available a product or service is, the more likely you are
-to try it. People drink Bud Light because it is in every bar and visit Starbucks
-because it is on every corner. We like to think that we are in control. If we
-choose water over soda, we assume it is because we wanted to do so. The truth,
-however, is that many of the actions we take each day are shaped not by
-purposeful drive and choice but by the most obvious option.
-Every living being has its own methods for sensing and understanding the
-world. Eagles have remarkable long-distance vision. Snakes can smell by
-“tasting the air” with their highly sensitive tongues. Sharks can detect small
-amounts of electricity and vibrations in the water caused by nearby fish. Even
-bacteria have chemoreceptors—tiny sensory cells that allow them to detect toxic
-chemicals in their environment.
-In humans, perception is directed by the sensory nervous system. We perceive
-the world through sight, sound, smell, touch, and taste. But we also have other
-ways of sensing stimuli. Some are conscious, but many are nonconscious. For
-instance, you can “notice” when the temperature drops before a storm, or when
-the pain in your gut rises during a stomachache, or when you fall off balance
-while walking on rocky ground. Receptors in your body pick up on a wide range
-of internal stimuli, such as the amount of salt in your blood or the need to drink
-when thirsty.
-The most powerful of all human sensory abilities, however, is vision. The
-human body has about eleven million sensory receptors. Approximately ten
-million of those are dedicated to sight. Some experts estimate that half of the
-brain’s resources are used on vision. Given that we are more dependent on vision
-than on any other sense, it should come as no surprise that visual cues are the
-greatest catalyst of our behavior. For this reason, a small change in what you see
-can lead to a big shift in what you do. As a result, you can imagine how
-important it is to live and work in environments that are filled with productive
-cues and devoid of unproductive ones.
-Thankfully, there is good news in this respect. You don’t have to be the victim
-of your environment. You can also be the architect of it.
-HOW TO DESIGN YOUR ENVIRONMENT FOR SUCCESS
-During the energy crisis and oil embargo of the 1970s, Dutch researchers began
-to pay close attention to the country’s energy usage. In one suburb near
-Amsterdam, they found that some homeowners used 30 percent less energy than
-their neighbors—despite the homes being of similar size and getting electricity
-for the same price.
-It turned out the houses in this neighborhood were nearly identical except for
-one feature: the location of the electrical meter. Some had one in the basement.
-Others had the electrical meter upstairs in the main hallway. As you may guess,
-the homes with the meters located in the main hallway used less electricity.
-When their energy use was obvious and easy to track, people changed their
-behavior.
-Every habit is initiated by a cue, and we are more likely to notice cues that
-stand out. Unfortunately, the environments where we live and work often make
-it easy not to do certain actions because there is no obvious cue to trigger the
-behavior. It’s easy not to practice the guitar when it’s tucked away in the closet.
-It’s easy not to read a book when the bookshelf is in the corner of the guest
-room. It’s easy not to take your vitamins when they are out of sight in the pantry.
-When the cues that spark a habit are subtle or hidden, they are easy to ignore.
-By comparison, creating obvious visual cues can draw your attention toward a
-desired habit. In the early 1990s, the cleaning staff at Schiphol Airport in
-Amsterdam installed a small sticker that looked like a fly near the center of each
-urinal. Apparently, when men stepped up to the urinals, they aimed for what they
-thought was a bug. The stickers improved their aim and significantly reduced
-“spillage” around the urinals. Further analysis determined that the stickers cut
-bathroom cleaning costs by 8 percent per year.
-I’ve experienced the power of obvious cues in my own life. I used to buy
-apples from the store, put them in the crisper in the bottom of the refrigerator,
-and forget all about them. By the time I remembered, the apples would have
-gone bad. I never saw them, so I never ate them.
-Eventually, I took my own advice and redesigned my environment. I bought a
-large display bowl and placed it in the middle of the kitchen counter. The next
-time I bought apples, that was where they went—out in the open where I could
-see them. Almost like magic, I began eating a few apples each day simply
-because they were obvious rather than out of sight.
-Here are a few ways you can redesign your environment and make the cues
-for your preferred habits more obvious:
-If you want to remember to take your medication each night, put your
-pill bottle directly next to the faucet on the bathroom counter.
-If you want to practice guitar more frequently, place your guitar stand
-in the middle of the living room.
-If you want to remember to send more thank-you notes, keep a stack of
-stationery on your desk.
-If you want to drink more water, fill up a few water bottles each
-morning and place them in common locations around the house.
-If you want to make a habit a big part of your life, make the cue a big part of
-your environment. The most persistent behaviors usually have multiple cues.
-Consider how many different ways a smoker could be prompted to pull out a
-cigarette: driving in the car, seeing a friend smoke, feeling stressed at work, and
-so on.
-The same strategy can be employed for good habits. By sprinkling triggers
-throughout your surroundings, you increase the odds that you’ll think about your
-habit throughout the day. Make sure the best choice is the most obvious one.
-Making a better decision is easy and natural when the cues for good habits are
-right in front of you.
-Environment design is powerful not only because it influences how we engage
-with the world but also because we rarely do it. Most people live in a world
-others have created for them. But you can alter the spaces where you live and
-work to increase your exposure to positive cues and reduce your exposure to
-negative ones. Environment design allows you to take back control and become
-the architect of your life. Be the designer of your world and not merely the
-consumer of it.
-THE CONTEXT IS THE CUE
-The cues that trigger a habit can start out very specific, but over time your habits
-become associated not with a single trigger but with the entire context
-surrounding the behavior.
-For example, many people drink more in social situations than they would
-ever drink alone. The trigger is rarely a single cue, but rather the whole situation:
-watching your friends order drinks, hearing the music at the bar, seeing the beers
-on tap.
-We mentally assign our habits to the locations in which they occur: the home,
-the office, the gym. Each location develops a connection to certain habits and
-routines. You establish a particular relationship with the objects on your desk,
-the items on your kitchen counter, the things in your bedroom.
-Our behavior is not defined by the objects in the environment but by our
-relationship to them. In fact, this is a useful way to think about the influence of
-the environment on your behavior. Stop thinking about your environment as
-filled with objects. Start thinking about it as filled with relationships. Think in
-terms of how you interact with the spaces around you. For one person, her couch
-is the place where she reads for an hour each night. For someone else, the couch
-is where he watches television and eats a bowl of ice cream after work. Different
-people can have different memories—and thus different habits—associated with
-the same place.
-The good news? You can train yourself to link a particular habit with a
-particular context.
-In one study, scientists instructed insomniacs to get into bed only when they
-were tired. If they couldn’t fall asleep, they were told to sit in a different room
-until they became sleepy. Over time, subjects began to associate the context of
-their bed with the action of sleeping, and it became easier to quickly fall asleep
-when they climbed in bed. Their brains learned that sleeping—not browsing on
-their phones, not watching television, not staring at the clock—was the only
-action that happened in that room.
-The power of context also reveals an important strategy: habits can be easier
-to change in a new environment. It helps to escape the subtle triggers and cues
-that nudge you toward your current habits. Go to a new place—a different coffee
-shop, a bench in the park, a corner of your room you seldom use—and create a
-new routine there.
-It is easier to associate a new habit with a new context than to build a new
-habit in the face of competing cues. It can be difficult to go to bed early if you
-watch television in your bedroom each night. It can be hard to study in the living
-room without getting distracted if that’s where you always play video games.
-But when you step outside your normal environment, you leave your behavioral
-biases behind. You aren’t battling old environmental cues, which allows new
-habits to form without interruption.
-Want to think more creatively? Move to a bigger room, a rooftop patio, or a
-building with expansive architecture. Take a break from the space where you do
-your daily work, which is also linked to your current thought patterns.
-Trying to eat healthier? It is likely that you shop on autopilot at your regular
-supermarket. Try a new grocery store. You may find it easier to avoid unhealthy
-food when your brain doesn’t automatically know where it is located in the store.
-When you can’t manage to get to an entirely new environment, redefine or
-rearrange your current one. Create a separate space for work, study, exercise,
-entertainment, and cooking. The mantra I find useful is “One space, one use.”
-When I started my career as an entrepreneur, I would often work from my
-couch or at the kitchen table. In the evenings, I found it very difficult to stop
-working. There was no clear division between the end of work time and the
-beginning of personal time. Was the kitchen table my office or the space where I
-ate meals? Was the couch where I relaxed or where I sent emails? Everything
-happened in the same place.
-A few years later, I could finally afford to move to a home with a separate
-room for my office. Suddenly, work was something that happened “in here” and
-personal life was something that happened “out there.” It was easier for me to
-turn off the professional side of my brain when there was a clear dividing line
-between work life and home life. Each room had one primary use. The kitchen
-was for cooking. The office was for working.
-Whenever possible, avoid mixing the context of one habit with another. When
-you start mixing contexts, you’ll start mixing habits—and the easier ones will
-usually win out. This is one reason why the versatility of modern technology is
-both a strength and a weakness. You can use your phone for all sorts of tasks,
-which makes it a powerful device. But when you can use your phone to do
-nearly anything, it becomes hard to associate it with one task. You want to be
-productive, but you’re also conditioned to browse social media, check email, and
-play video games whenever you open your phone. It’s a mishmash of cues.
-You may be thinking, “You don’t understand. I live in New York City. My
-apartment is the size of a smartphone. I need each room to play multiple roles.”
-Fair enough. If your space is limited, divide your room into activity zones: a
-chair for reading, a desk for writing, a table for eating. You can do the same with
-your digital spaces. I know a writer who uses his computer only for writing, his
-tablet only for reading, and his phone only for social media and texting. Every
-habit should have a home.
-If you can manage to stick with this strategy, each context will become
-associated with a particular habit and mode of thought. Habits thrive under
-predictable circumstances like these. Focus comes automatically when you are
-sitting at your work desk. Relaxation is easier when you are in a space designed
-for that purpose. Sleep comes quickly when it is the only thing that happens in
-your bedroom. If you want behaviors that are stable and predictable, you need an
-environment that is stable and predictable.
-A stable environment where everything has a place and a purpose is an
-environment where habits can easily form.
-Chapter Summary
-Small changes in context can lead to large changes in behavior over
-time.
-Every habit is initiated by a cue. We are more likely to notice cues that
-stand out.
-Make the cues of good habits obvious in your environment.
-Gradually, your habits become associated not with a single trigger but
-with the entire context surrounding the behavior. The context becomes
-the cue.
-It is easier to build new habits in a new environment because you are
-not fighting against old cues.`,
+    title:
+      "LESSONS FROM JAPAN’S CENTENARIANS: Traditions and proverbs for happiness and longevity",
+    content: `TO GET TO Ogimi, we had to fly nearly three hours from Tokyo to Naha, the capital of Okinawa. Several months
+earlier we had contacted the town council of a place known as the Village of Longevity to explain the
+purpose of our trip and our intention to interview the oldest members of the community. After numerous
+conversations, we finally got the help we were looking for and were able to rent a house just outside the
+town.
+One year after starting this project, we found ourselves on the doorstep of
+some of the longest-living people in the world.
+We realized right away that time seems to have stopped there, as though the
+entire town were living in an endless here and now.
+Arriving in Ogimi
+After two hours on the road from Naha, we’re finally able to stop worrying about
+the traffic. To our left are the sea and an empty stretch of beach; to our right, the
+mountainous jungle of Okinawa’s Yanbaru forests.
+Once Route 58 passes Nago, where Orion beer—the pride of Okinawa—is
+made, it skirts the coast until it reaches Ogimi. Every now and then a few little
+houses and stores crop up in the narrow stretch of land between the road and the
+base of the mountain.
+We pass small clusters of houses scattered here and there as we enter the
+municipality of Ogimi, but the town doesn’t really seem to have a center. Our
+GPS finally guides us to our destination: the Center for the Support and
+Promotion of Well-Being, housed in an unattractive cinderblock building right
+off the highway.
+We go in through the back door, where a man named Taira is waiting for us.
+Beside him is a petite, cheerful woman who introduces herself as Yuki. Two
+other women immediately get up from desks and show us to a conference room.
+They serve us each a cup of green tea and a few shikuwasa, a small citrus fruit
+that packs a big nutritional punch, as we will see later on.
+Taira sits down across from us in his formal suit and opens up a large planner
+and a three-ring binder. Yuki sits next to him. The binder contains a list of all the
+town’s residents, organized by age and “club,” or moai. Taira points out that these
+groups of people who help one another are characteristic of Ogimi. The moai are
+not organized around any concrete objective; they function more like a family.
+Taira also tells us that volunteer work, rather than money, drives much of what
+happens in Ogimi. Everyone offers to pitch in, and the local government takes
+care of assigning tasks. This way, everyone can be useful and feels like a part of
+the community.
+Ogimi is the penultimate town before Cape Hedo, the northernmost point of
+the largest island in the archipelago.
+From the top of one of Ogimi’s mountains, we’re able to look down over the
+whole town. Almost everything is the green of the Yanbaru jungle, making us
+wonder where the nearly thirty-two hundred residents are hiding. We can see a
+few houses, but they’re scattered in little clusters near the sea or in small valleys
+accessible by side roads.
+Communal life
+We’re invited to eat in one of Ogimi’s few restaurants, but when we arrive the
+only three tables are already reserved.
+“Don’t worry, we’ll go to Churaumi instead. It never fills up,” says Yuki,
+walking back to her car.
+She’s still driving at age eighty-eight, and takes great pride in that. Her copilot
+is ninety-nine, and has also decided to spend the day with us. We have to drive
+fast to keep up with them on a highway that is sometimes more dirt than asphalt.
+Finally reaching the other end of the jungle, we can at last sit down to eat.
+“I don’t really go to restaurants,” Yuki says as we take our seats. “Almost
+everything I eat comes from my vegetable garden, and I buy my fish from
+Tanaka, who’s been my friend forever.”
+The restaurant is right by the sea and seems like something from the planet
+Tatooine, from Star Wars. The menu boasts in large letters that it serves “slow
+food” prepared with organic vegetables grown in the town.
+“But really,” Yuki continues, “food is the least important thing.” She is
+extroverted, and rather pretty. She likes to talk about her role as the director of
+several associations run by the local government.
+“Food won’t help you live longer,” she says, bringing to her lips a bite of the
+diminutive confection that followed our meal. “The secret is smiling and having a
+good time.”
+There are no bars and only a few restaurants in Ogimi, but those who live
+there enjoy a rich social life that revolves around community centers. The town is
+there enjoy a rich social life that revolves around community centers. The town is
+divided into seventeen neighborhoods, and each one has a president and several
+people in charge of things like culture, festivals, social activities, and longevity.
+Residents pay close attention to this last category.
+We’re invited to the community center of one of the seventeen neighborhoods.
+It is an old building right next to one of the mountains of the Yanbaru jungle,
+home to bunagaya, the town’s iconic sprites.
+The Bunagaya Spirits of the Yanbaru Jungle
+Bunagaya are magical creatures that inhabit the Yanbaru jungle near
+Ogimi and its surrounding towns. They manifest as children with long red
+hair, and like to hide in the jungle’s gajumaru (banyan) trees and go
+fishing on the beach.
+Many of Okinawa’s stories and fables are about bunagaya sprites. They
+are mischievous, playful, and unpredictable. Locals say that the bunagaya
+love the mountains, rivers, sea, trees, earth, wind, and animals, and that if
+you want to befriend them, you have to show respect for nature.
+A birthday party
+When we arrive at the neighborhood’s community center, we’re greeted by a
+group of about twenty people who proudly proclaim, “The youngest among us is
+eighty-three!”
+We conduct our interviews at a large table while drinking green tea. When we
+finish, we’re brought to an event space, where we celebrate the birthdays of three
+members of the group. One woman is turning ninety-nine, another ninety-four,
+and one “young man” has just reached eighty-nine.
+We sing a few songs popular in the village and finish up with “Happy
+Birthday” in English. The woman turning ninety-nine blows out the candles and
+thanks everyone for coming to her party. We eat homemade shikuwasa cake and
+end up dancing and celebrating as though it were the birthday of a
+twentysomething.
+It’s the first party, but not the last, that we’ll attend during our week in the
+village. We’ll also do karaoke with a group of seniors who sing better than we do,
+and attend a traditional festival with local bands, dancers, and food stands at the
+and attend a traditional festival with local bands, dancers, and food stands at the
+foot of a mountain.
+Celebrate each day, together
+Celebrations seem to be an essential part of life in Ogimi.
+We’re invited to watch a game of gateball, one of the most popular sports
+among Okinawa’s older residents. It involves hitting a ball with a mallet-like stick.
+It is a low-impact sport that can be played anywhere, and is a good excuse to
+move around and have fun as a group. The residents hold local competitions, and
+there is no age limit for participants.
+We participate in the weekly game and lose to a woman who recently turned
+104. Everyone cheers, and the defeated look on our faces elicits laughter.
+In addition to playing and celebrating as a community, spirituality is also
+essential to the happiness of the village’s residents.
+The gods of Okinawa
+The main religion in Okinawa is known as Ryukyu Shinto. Ryukyu is the original
+name of the Okinawa archipelago, and Shinto means “the path of the gods.”
+1
+Ryukyu Shinto combines elements of Chinese Taoism, Confucianism, Buddhism,
+and Shintoism with shamanistic and animistic elements.
+According to this ancient faith, the world is populated by an infinite number
+of spirits divided into several types: spirits of the home, of the forest, of the trees,
+and of the mountains. It is important to appease these spirits through rituals and
+festivals, and by consecrating sacred grounds.
+Okinawa is full of sacred jungles and forests, where many of the two main
+kinds of temples are found: the utaki and the uganju. We visited an uganju, or
+small, open-air temple adorned with incense and coins, next to a waterfall in
+Ogimi. The utaki is a collection of stones where people go to pray and where,
+supposedly, spirits gather.
+In Okinawa’s religious practice, women are considered spiritually superior to
+men, whereas the opposite is true of traditional Shintoism in the rest of Japan.
+Yuta are women chosen as mediums by their communities to make contact with
+the spirit realm through traditional rites.
+Ancestor worship is another important feature of spiritual practice in
+Okinawa, and in Japan in general. The home of each generation’s firstborn
+usually contains a butsudan, or small altar, used to pray for and make offerings to
+the family’s ancestors.
+Mabui
+Every person has an essence, or mabui. This mabui is our spirit and the
+source of our life force. It is immortal and makes us who we are.
+Sometimes, the mabui of someone who has died is trapped in the body
+of a living person. This situation requires a separation ritual to free the
+mabui of the deceased; it often happens when a person dies suddenly—
+especially at a young age—and his or her mabui does not want to move on
+to the realm of the dead.
+A mabui can also be passed from person to person by physical contact.
+A grandmother who leaves her granddaughter a ring transfers a part of her
+mabui to her. Photographs can also be a medium for passing mabui among
+people.
+The older, the stronger
+Looking back, our days in Ogimi were intense but relaxed—sort of like the
+lifestyle of the locals, who always seemed to be busy with important tasks but
+who, upon closer inspection, did everything with a sense of calm. They were
+always pursuing their ikigai, but they were never in a rush.
+Not only did they seem to be happily busy, but we also noticed that they
+followed the other principles for happiness that Washington Burnap stated two
+hundred years ago: “The grand essentials to happiness in this life are something to
+do, something to love, and something to hope for.”
+2
+On our last day, we went to buy gifts at a small market at the edge of town.
+The only things sold there are local vegetables, green tea, and shikuwasa juice,
+along with bottles of water from a spring hidden in the Yanbaru forests, bearing
+labels that read “Longevity Water.”
+We bought ourselves some of this Longevity Water and drank it in the parking
+lot, looking out over the sea and hoping that the little bottles that promised a
+magic elixir would bring us health and long life, and would help us find our own
+ikigai. Then we took a photo with a statue of a bunagaya, and walked up to it one
+last time to read the inscription:
+A Declaration from the Town Where People Live Longest
+At 80 I am still a child.
+When I come to see you at 90,
+send me away to wait until I’m 100.
+The older, the stronger;
+let us not depend too much on our children as we age.
+If you seek long life and health, you are welcome in our village,
+where you will be blessed by nature,
+and together we will discover the secret to longevity.
+April 23, 1993
+Ogimi Federation of Senior Citizen Clubs
+The interviews
+Over the course of a week we conducted a total of one hundred interviews, asking
+the eldest members of the community about their life philosophy, their ikigai, and
+the secrets to longevity. We filmed these conversations with two cameras for use
+in a little documentary, and chose a few especially meaningful and inspiring
+statements to include in this section of the book.
+1. Don’t worry
+“The secret to a long life is not to worry. And to keep your heart young—don’t let it grow old. Open
+your heart to people with a nice smile on your face. If you smile and open your heart, your
+grandchildren and everyone else will want to see you.”
+“The best way to avoid anxiety is to go out in the street and say hello to people. I do it every day. I go
+out there and say, ‘Hello!’ and ‘See you later!’ Then I go home and care for my vegetable garden. In the
+afternoon, I spend time with friends.”
+“Here, everyone gets along. We try not to cause problems. Spending time together and having fun is
+the only thing that matters.”
+2. Cultivate good habits
+2. Cultivate good habits
+“I feel joy every morning waking up at six and opening the curtains to look out at my garden, where I
+grow my own vegetables. I go right outside to check on my tomatoes, my mandarin oranges . . . I love
+the sight of them—it relaxes me. After an hour in the garden I go back inside and make breakfast.”
+“I plant my own vegetables and cook them myself. That’s my ikigai.”
+“The key to staying sharp in old age is in your fingers. From your fingers to your brain, and back again.
+If you keep your fingers busy, you’ll live to see one hundred.”
+“I get up at four every day. I set my alarm for that time, have a cup of coffee, and do a little exercise,
+lifting my arms. That gives me energy for the rest of the day.”
+“I eat a bit of everything; I think that’s the secret. I like variety in what I eat; I think it tastes better.”
+“Working. If you don’t work, your body breaks down.”
+“When I wake up, I go to the butsudan and light incense. You have to keep your ancestors in mind. It’s
+the first thing I do every morning.”
+“I wake up every day at the same time, early, and spend the morning in my vegetable garden. I go
+dancing with my friends once a week.”
+“I do exercise every day, and every morning I go for a little walk.”
+“I never forget to do my taiso exercises when I get up.”
+“Eating vegetables—it helps you live longer.”
+“To live a long time you need to do three things: exercise to stay healthy, eat well, and spend time with
+people.”
+3. Nurture your friendships every day
+“Getting together with my friends is my most important ikigai. We all get together here and talk—it’s
+very important. I always know I’ll see them all here tomorrow, and that’s one of my favorite things in
+life.”
+“My main hobby is getting together with friends and neighbors.”
+“Talking each day with the people you love, that’s the secret to a long life.”
+“I say, ‘Hello!’ and ‘See you later!’ to the children on their way to school, and wave at everyone who
+goes by me in their car. ‘Drive safely!’ I say. Between 7:20 a.m. and 8:15 a.m., I’m outside on my feet
+the whole time, saying hello to people. Once everyone’s gone, I go back inside.”
+“Chatting and drinking tea with my neighbors. That’s the best thing in life. And singing together.”
+“I wake up at five every morning, leave the house, and walk to the sea. Then I go to a friend’s house
+and we have tea together. That’s the secret to long life: getting together with people, and going from
+place to place.”
+4. Live an unhurried life
+“My secret to a long life is always saying to myself, ‘Slow down,’ and ‘Relax.’ You live much longer if
+you’re not in a hurry.”
+“I make things with wicker. That’s my ikigai. The first thing I do when I wake up is pray. Then I do my
+exercises and eat breakfast. At seven I calmly start working on my wicker. When I get tired at five, I
+go visit my friends.”
+“Doing many different things every day. Always staying busy, but doing one thing at a time, without
+getting overwhelmed.”
+“The secret to long life is going to bed early, waking up early, and going for a walk. Living peacefully
+and enjoying the little things. Getting along with your friends. Spring, summer, fall, winter . . .
+enjoying each season, happily.”
+5. Be optimistic
+“Every day I say to myself, ‘Today will be full of health and energy. Live it to the fullest.’”
+“I’m ninety-eight, but consider myself young. I still have so much to do.”
+“Laugh. Laughter is the most important thing. I laugh wherever I go.”
+“I’m going to live to be a hundred. Of course I am! It’s a huge motivation for me.”
+“Dancing and singing with your grandchildren is the best thing in life.”
+“I feel very fortunate to have been born here. I give thanks for it every day.”
+“The most important thing in Ogimi, in life, is to keep smiling.”
+“I do volunteer work to give back to the village a bit of what it has given to me. For example, I use my
+car to help friends get to the hospital.”
+“There’s no secret to it. The trick is just to live.”
+Keys to the Ogimi Lifestyle
+One hundred percent of the people we interviewed keep a vegetable
+garden, and most of them also have fields of tea, mangoes, shikuwasa,
+and so on.
+All belong to some form of neighborhood association, where they feel
+cared for as though by family.
+They celebrate all the time, even little things. Music, song, and dance
+are essential parts of daily life.
+They have an important purpose in life, or several. They have an ikigai,
+but they don’t take it too seriously. They are relaxed and enjoy all that
+they do.
+They are very proud of their traditions and local culture.
+They are passionate about everything they do, however insignificant it
+might seem.
+Locals have a strong sense of yuimaaru—recognizing the connection
+between people. They help each other with everything from work in the
+fields (harvesting sugarcane or planting rice) to building houses and
+municipal projects. Our friend Miyagi, who ate dinner with us on our
+last night in town, told us that he was building a new home with the help
+of all his friends, and that we could stay there the next time we were in
+Ogimi.
+They are always busy, but they occupy themselves with tasks that allow
+them to relax. We didn’t see a single old grandpa sitting on a bench
+doing nothing. They’re always coming and going—to sing karaoke, visit
+with neighbors, or play a game of gateball.`,
   },
   {
     chapter_number: 7,
-    title: "The Secret to Self-Control",
-    content: `IN 1971, as the Vietnam War was heading into its sixteenth year, congressmen
-Robert Steele from Connecticut and Morgan Murphy from Illinois made a
-discovery that stunned the American public. While visiting the troops, they had
-learned that over 15 percent of U.S. soldiers stationed there were heroin addicts.
-Follow-up research revealed that 35 percent of service members in Vietnam had
-tried heroin and as many as 20 percent were addicted—the problem was even
-worse than they had initially thought.
-The discovery led to a flurry of activity in Washington, including the creation
-of the Special Action Office of Drug Abuse Prevention under President Nixon to
-promote prevention and rehabilitation and to track addicted service members
-when they returned home.
-Lee Robins was one of the researchers in charge. In a finding that completely
-upended the accepted beliefs about addiction, Robins found that when soldiers
-who had been heroin users returned home, only 5 percent of them became
-readdicted within a year, and just 12 percent relapsed within three years. In other
-words, approximately nine out of ten soldiers who used heroin in Vietnam
-eliminated their addiction nearly overnight.
-This finding contradicted the prevailing view at the time, which considered
-heroin addiction to be a permanent and irreversible condition. Instead, Robins
-revealed that addictions could spontaneously dissolve if there was a radical
-change in the environment. In Vietnam, soldiers spent all day surrounded by
-cues triggering heroin use: it was easy to access, they were engulfed by the
-constant stress of war, they built friendships with fellow soldiers who were also
-heroin users, and they were thousands of miles from home. Once a soldier
-returned to the United States, though, he found himself in an environment devoid
-of those triggers. When the context changed, so did the habit.
-Compare this situation to that of a typical drug user. Someone becomes
-addicted at home or with friends, goes to a clinic to get clean—which is devoid
-of all the environmental stimuli that prompt their habit—then returns to their old
-neighborhood with all of their previous cues that caused them to get addicted in
-the first place. It’s no wonder that usually you see numbers that are the exact
-opposite of those in the Vietnam study. Typically, 90 percent of heroin users
-become readdicted once they return home from rehab.
-The Vietnam studies ran counter to many of our cultural beliefs about bad
-habits because it challenged the conventional association of unhealthy behavior
-as a moral weakness. If you’re overweight, a smoker, or an addict, you’ve been
-told your entire life that it is because you lack self-control—maybe even that
-you’re a bad person. The idea that a little bit of discipline would solve all our
-problems is deeply embedded in our culture.
-Recent research, however, shows something different. When scientists
-analyze people who appear to have tremendous self-control, it turns out those
-individuals aren’t all that different from those who are struggling. Instead,
-“disciplined” people are better at structuring their lives in a way that does not
-require heroic willpower and self-control. In other words, they spend less time in
-tempting situations.
-The people with the best self-control are typically the ones who need to use it
-the least. It’s easier to practice self-restraint when you don’t have to use it very
-often. So, yes, perseverance, grit, and willpower are essential to success, but the
-way to improve these qualities is not by wishing you were a more disciplined
-person, but by creating a more disciplined environment.
-This counterintuitive idea makes even more sense once you understand what
-happens when a habit is formed in the brain. A habit that has been encoded in
-the mind is ready to be used whenever the relevant situation arises. When Patty
-Olwell, a therapist from Austin, Texas, started smoking, she would often light up
-while riding horses with a friend. Eventually, she quit smoking and avoided it
-for years. She had also stopped riding. Decades later, she hopped on a horse
-again and found herself craving a cigarette for the first time in forever. The cues
-were still internalized; she just hadn’t been exposed to them in a long time.
-Once a habit has been encoded, the urge to act follows whenever the
-environmental cues reappear. This is one reason behavior change techniques can
-backfire. Shaming obese people with weight-loss presentations can make them
-feel stressed, and as a result many people return to their favorite coping strategy:
-overeating. Showing pictures of blackened lungs to smokers leads to higher
-levels of anxiety, which drives many people to reach for a cigarette. If you’re not
-careful about cues, you can cause the very behavior you want to stop.
-Bad habits are autocatalytic: the process feeds itself. They foster the feelings
-they try to numb. You feel bad, so you eat junk food. Because you eat junk food,
-you feel bad. Watching television makes you feel sluggish, so you watch more
-television because you don’t have the energy to do anything else. Worrying
-about your health makes you feel anxious, which causes you to smoke to ease
-your anxiety, which makes your health even worse and soon you’re feeling more
-anxious. It’s a downward spiral, a runaway train of bad habits.
-Researchers refer to this phenomenon as “cue-induced wanting”: an external
-trigger causes a compulsive craving to repeat a bad habit. Once you notice
-something, you begin to want it. This process is happening all the time—often
-without us realizing it. Scientists have found that showing addicts a picture of
-cocaine for just thirty-three milliseconds stimulates the reward pathway in the
-brain and sparks desire. This speed is too fast for the brain to consciously
-register—the addicts couldn’t even tell you what they had seen—but they craved
-the drug all the same.
-Here’s the punch line: You can break a habit, but you’re unlikely to forget it.
-Once the mental grooves of habit have been carved into your brain, they are
-nearly impossible to remove entirely—even if they go unused for quite a while.
-And that means that simply resisting temptation is an ineffective strategy. It is
-hard to maintain a Zen attitude in a life filled with interruptions. It takes too
-much energy. In the short-run, you can choose to overpower temptation. In the
-long-run, we become a product of the environment that we live in. To put it
-bluntly, I have never seen someone consistently stick to positive habits in a
-negative environment.
-A more reliable approach is to cut bad habits off at the source. One of the
-most practical ways to eliminate a bad habit is to reduce exposure to the cue that
-causes it.
-If you can’t seem to get any work done, leave your phone in another
-room for a few hours.
-If you’re continually feeling like you’re not enough, stop following
-social media accounts that trigger jealousy and envy.
-If you’re wasting too much time watching television, move the TV out
-of the bedroom.
-If you’re spending too much money on electronics, quit reading
-reviews of the latest tech gear.
-If you’re playing too many video games, unplug the console and put it
-in a closet after each use.
-This practice is an inversion of the 1st Law of Behavior Change. Rather than
-make it obvious, you can make it invisible. I’m often surprised by how effective
-simple changes like these can be. Remove a single cue and the entire habit often
-fades away.
-Self-control is a short-term strategy, not a long-term one. You may be able to
-resist temptation once or twice, but it’s unlikely you can muster the willpower to
-override your desires every time. Instead of summoning a new dose of willpower
-whenever you want to do the right thing, your energy would be better spent
-optimizing your environment. This is the secret to self-control. Make the cues of
-your good habits obvious and the cues of your bad habits invisible.
-Chapter Summary
-The inversion of the 1st Law of Behavior Change is make it invisible.
-Once a habit is formed, it is unlikely to be forgotten.
-People with high self-control tend to spend less time in tempting
-situations. It’s easier to avoid temptation than resist it.
-One of the most practical ways to eliminate a bad habit is to reduce
-exposure to the cue that causes it.
-Self-control is a short-term strategy, not a long-term one.`,
+    title:
+      "THE IKIGAI DIET: What the world’s longest-living people eat and drink",
+    content: `ACCORDING TO THEWorld Health Organization, Japan has the highest life expectancy in the world: 85 years for
+men and 87.3 years for women. Moreover, it has the highest ratio of centenarians in the world: more than
+520 for every million people (as of September 2016).
+Source: World Health Organization, 1966; Japanese Ministry of Health, Labor and Welfare, 2004; U.S.
+Department of Health and Human Services/CDC, 2005
+The above graphic, which compares life expectancy in Japan, its province
+Okinawa, Sweden, and the United States, shows that, while life expectancy in
+Japan is high overall, Okinawa exceeds the national average.
+Okinawa is one of the areas in Japan that were most affected by World War II.
+As a result not only of conflicts on the battlefield but also of hunger and a lack of
+resources once the war ended, the average life expectancy was not very high
+during the 1940s and 1950s. As Okinawans recovered from the destruction,
+however, they came to be some of the country’s longest-living citizens.
+What secrets to long life do the Japanese hold? What is it about Okinawa that
+What secrets to long life do the Japanese hold? What is it about Okinawa that
+makes it the best of the best in terms of life expectancy?
+Experts point out that, for one thing, Okinawa is the only province in Japan
+without trains. Its residents have to walk or cycle when not driving. It is also the
+only province that has managed to follow the Japanese government’s
+recommendation of eating less than ten grams of salt per day.
+Okinawa’s miracle diet
+The mortality rate from cardiovascular disease in Okinawa is the lowest in Japan,
+and diet almost certainly has a lot to do with this. It is no coincidence that the
+“Okinawa Diet” is so often discussed around the world at panels on nutrition.
+The most concrete and widely cited data on diet in Okinawa come from
+studies by Makoto Suzuki, a cardiologist at the University of the Ryukyus, who
+has published more than seven hundred scientific articles on nutrition and aging
+in Okinawa since 1970.
+Bradley J. Willcox and D. Craig Willcox joined Makoto Suzuki’s research
+team and published a book considered the bible on the subject, The Okinawa
+Program.
+1 They reached the following conclusions:
+Locals eat a wide variety of foods, especially vegetables. Variety seems to be
+key. A study of Okinawa’s centenarians showed that they ate 206 different
+foods, including spices, on a regular basis. They ate an average of eighteen
+different foods each day, a striking contrast to the nutritional poverty of our
+fast-food culture.
+They eat at least five servings of fruits and vegetables every day. At least
+seven types of fruits and vegetables are consumed by Okinawans on a daily
+basis. The easiest way to check if there is enough variety on your table is to
+make sure you’re “eating the rainbow.” A table featuring red peppers,
+carrots, spinach, cauliflower, and eggplant, for example, offers great color
+and variety. Vegetables, potatoes, legumes, and soy products such as tofu are
+the staples of an Okinawan’s diet. More than 30 percent of their daily
+calories comes from vegetables.
+Grains are the foundation of their diet. Japanese people eat white rice every
+day, sometimes adding noodles. Rice is the primary food in Okinawa, as
+well.
+They rarely eat sugar, and if they do, it’s cane sugar. We drove through
+several sugarcane fields every morning on our way to Ogimi, and even drank
+a glass of cane juice at Nakijin Castle. Beside the stall selling the juice was a
+sign describing the anticarcinogenic benefits of sugarcane.
+In addition to these basic dietary principles, Okinawans eat fish an average of
+three times per week; unlike in other parts of Japan, the most frequently
+consumed meat is pork, though locals eat it only once or twice per week.
+Along these lines, Makoto Suzuki’s studies indicate the following:
+Okinawans consume, in general, one-third as much sugar as the rest of
+Japan’s population, which means that sweets and chocolate are much less a
+part of their diet.
+They also eat practically half as much salt as the rest of Japan: 7 grams per
+day, compared to an average of 12.
+They consume fewer calories: an average of 1,785 per day, compared to
+2,068 in the rest of Japan. In fact, low caloric intake is common among the
+five Blue Zones.
+Hara hachi bu
+This brings us back to the 80 percent rule we mentioned in the first chapter, a
+concept known in Japanese as hara hachi bu. It’s easy to do: When you notice
+you’re almost full but could have a little more . . . just stop eating!
+One easy way to start applying the concept of hara hachi bu is to skip dessert.
+Or to reduce portion size. The idea is to still be a little bit hungry when you finish.
+This is why portion size tends to be much smaller in Japan than in the West.
+Food isn’t served as appetizers, main courses, and dessert. Instead, it’s much more
+common to see everything presented at once on small plates: one with rice,
+another with vegetables, a bowl of miso soup, and something to snack on. Serving
+food on many small plates makes it easier to avoid eating too much, and
+facilitates the varied diet discussed at the beginning of this chapter.
+Hara hachi bu is an ancient practice. The twelfth-century book on Zen
+Buddhism Zazen Youjinki recommends eating two-thirds as much as you might
+want to. Eating less than one might want is common among all Buddhist temples
+in the East. Perhaps Buddhism recognized the benefits of limiting caloric intake
+more than nine centuries ago.
+So, eat less to live longer?
+Few would challenge this idea. Without taking it to the extreme of malnutrition,
+of course, eating fewer calories than our bodies ask for seems to increase
+longevity. The key to staying healthy while consuming fewer calories is eating
+foods with a high nutritional value (especially “superfoods”) and avoiding those
+that add to our overall caloric intake but offer little to no nutritional value.
+The calorie restriction we’ve been discussing is one of the most effective ways
+to add years to your life. If the body regularly consumes enough, or too many,
+calories, it gets lethargic and starts to wear down, expending significant energy on
+digestion alone.
+Another benefit of calorie restriction is that it reduces levels of IGF-1
+(insulin-like growth factor 1) in the body. IGF-1 is a protein that plays a
+significant role in the aging process; it seems that one of the reasons humans and
+animals age is an excess of this protein in their blood.
+2
+Whether calorie restriction will extend lifespan in humans is not yet known,
+but data increasingly indicate that moderate calorie restriction with adequate
+nutrition has a powerful protective effect against obesity, type 2 diabetes,
+inflammation, hypertension, and cardiovascular disease and reduces metabolic
+risk factors associated with cancer.
+3
+An alternative to following the 80 percent rule on a daily basis is to fast for
+one or two days each week. The 5:2 (or fasting) diet recommends two days of
+fasting (consuming fewer than five hundred calories) every week and eating
+normally on the other five days.
+Among its many benefits, fasting helps cleanse the digestive system and allows
+it to rest.
+15 natural antioxidants found in the Okinawan diet
+Antioxidants are molecules that slow the oxidation process in cells, neutralizing
+the free radicals that cause damage and accelerate aging. The antioxidant power
+of green tea, for example, is well known, and will be discussed later at greater
+length.
+length.
+Because they are rich in antioxidants and are eaten nearly every day in the
+region, these fifteen foods are considered keys to Okinawan vitality:
+Tofu
+Miso
+Tuna
+Carrots
+Goya (bitter melon)
+Kombu (sea kelp)
+Cabbage
+Nori (seaweed)
+Onion
+Soy sprouts
+Hechima (cucumber-like gourd)
+Soybeans (boiled or raw)
+Sweet potato
+Peppers
+Sanpin-cha (jasmine tea)
+Sanpin-cha: The reigning infusion in Okinawa
+Okinawans drink more Sanpin-cha—a mix of green tea and jasmine flowers—
+than any other kind of tea. The closest approximation in the West would be the
+jasmine tea that usually comes from China. A 1988 study conducted by Hiroko
+Sho at the Okinawa Institute of Science and Technology indicates that jasmine
+tea reduces blood cholesterol levels.
+4
+Sanpin-cha can be found in many different forms in Okinawa, and is even
+available in vending machines. In addition to all the antioxidant benefits of green
+tea, it boasts the benefits of jasmine, which include:
+Reducing the risk of heart attack
+Strengthening the immune system
+Helping relieve stress
+Lowering cholesterol
+Okinawans drink an average of three cups of Sanpin-cha every day.
+Okinawans drink an average of three cups of Sanpin-cha every day.
+It might be hard to find exactly the same blend in the West, but we can drink
+jasmine tea, or even a high-quality green tea, instead.
+The secrets of green tea
+Green tea has been credited for centuries with significant medicinal properties.
+Recent studies have confirmed its many benefits, and have attested to the
+importance of this ancient plant in the longevity of those who drink it often.
+Originally from China, where it has been consumed for millennia, green tea
+didn’t make its way to the rest of the world until just a few centuries ago. Unlike
+other teas, and as a result of being air-dried without fermentation, it retains its
+active elements even after being dried and crumbled. It offers meaningful health
+benefits such as:
+Controlling cholesterol
+Lowering blood sugar levels
+Improving circulation
+Protection against the flu (vitamin C)
+Promoting bone health (fluoride)
+Protection against certain bacterial infections
+Protection against UV damage
+Cleansing and diuretic effects
+White tea, with its high concentration of polyphenols, may be even more
+effective against aging. In fact, it is considered to be the natural product with the
+greatest antioxidant power in the world—to the extent that one cup of white tea
+might pack the same punch as about a dozen glasses of orange juice.
+In summary: Drinking green or white tea every day can help us reduce the free
+radicals in our bodies, keeping us young longer.
+The powerful shikuwasa
+Shikuwasa is the citrus fruit par excellence of Okinawa, and Ogimi is its largest
+producer in all of Japan.
+The fruit is extremely acidic: It is impossible to drink shikuwasa juice without
+diluting it first with water. Its taste is somewhere between that of a lime and a
+mandarin orange, to which it bears a family resemblance.
+Shikuwasas also contain high levels of nobiletin, a flavonoid rich in
+antioxidants.
+All citrus fruits—grapefruits, oranges, lemons—are high in nobiletin, but
+Okinawa’s shikuwasas have forty times as much as oranges. Consuming nobiletin
+has been proven to protect us from arteriosclerosis, cancer, type 2 diabetes, and
+obesity in general.
+Shikuwasas also contain vitamins C and B1, beta carotene, and minerals. They
+are used in many traditional dishes and to add flavor to food, and are squeezed to
+make juice. While conducting research at the birthday parties of the town’s
+“grandparents,” we were served shikuwasa cake.
+The Antioxidant Canon, for Westerners
+In 2010 the UK’s Daily Mirror published a list of foods recommended by
+experts to combat aging. Among these foods readily available in the West
+are:
+Vegetables such as broccoli and chard, for their high concentration of
+water, minerals, and fiber
+Oily fish such as salmon, mackerel, tuna, and sardines, for all the
+antioxidants in their fat
+Fruits such as citrus, strawberries, and apricots; they are an excellent
+source of vitamins and help eliminate toxins from the body
+Berries such as blueberries and goji berries; they are rich in
+phytochemical antioxidants
+Dried fruits, which contain vitamins and antioxidants, and give you
+energy
+Grains such as oats and wheat, which give you energy and contain
+minerals
+Olive oil, for its antioxidant effects that show in your skin
+Red wine, in moderation, for its antioxidant and vasodilatory properties
+Foods that should be eliminated are refined sugar and grains, processed
+baked goods, and prepared foods, along with cow’s milk and all its
+derivatives. Following this diet will help you feel younger and slow the
+derivatives. Following this diet will help you feel younger and slow the
+process of premature aging.`,
   },
   {
     chapter_number: 8,
-    title: "How to Make a Habit Irresistible",
-    content: `IN THE 1940S, a Dutch scientist named Niko Tinbergen performed a series of
-experiments that transformed our understanding of what motivates us. Tinbergen
-—who eventually won a Nobel Prize for his work—was investigating herring
-gulls, the gray and white birds often seen flying along the seashores of North
-America.
-Adult herring gulls have a small red dot on their beak, and Tinbergen noticed
-that newly hatched chicks would peck this spot whenever they wanted food. To
-begin one experiment, he created a collection of fake cardboard beaks, just a
-head without a body. When the parents had flown away, he went over to the nest
-and offered these dummy beaks to the chicks. The beaks were obvious fakes,
-and he assumed the baby birds would reject them altogether.
-However, when the tiny gulls saw the red spot on the cardboard beak, they
-pecked away just as if it were attached to their own mother. They had a clear
-preference for those red spots—as if they had been genetically programmed at
-birth. Soon Tinbergen discovered that the bigger the red spot, the faster the
-chicks pecked. Eventually, he created a beak with three large red dots on it.
-When he placed it over the nest, the baby birds went crazy with delight. They
-pecked at the little red patches as if it was the greatest beak they had ever seen.
-Tinbergen and his colleagues discovered similar behavior in other animals.
-For example, the greylag goose is a ground-nesting bird. Occasionally, as the
-mother moves around on the nest, one of the eggs will roll out and settle on the
-grass nearby. Whenever this happens, the goose will waddle over to the egg and
-use its beak and neck to pull it back into the nest.
-Tinbergen discovered that the goose will pull any nearby round object, such as
-a billiard ball or a lightbulb, back into the nest. The bigger the object, the greater
-their response. One goose even made a tremendous effort to roll a volleyball
-back and sit on top. Like the baby gulls automatically pecking at red dots, the
-greylag goose was following an instinctive rule: When I see a round object
-nearby, I must roll it back into the nest. The bigger the round object, the harder I
-should try to get it.
-It’s like the brain of each animal is preloaded with certain rules for behavior,
-and when it comes across an exaggerated version of that rule, it lights up like a
-Christmas tree. Scientists refer to these exaggerated cues as supernormal stimuli.
-A supernormal stimulus is a heightened version of reality—like a beak with
-three red dots or an egg the size of a volleyball—and it elicits a stronger
-response than usual.
-Humans are also prone to fall for exaggerated versions of reality. Junk food,
-for example, drives our reward systems into a frenzy. After spending hundreds
-of thousands of years hunting and foraging for food in the wild, the human brain
-has evolved to place a high value on salt, sugar, and fat. Such foods are often
-calorie-dense and they were quite rare when our ancient ancestors were roaming
-the savannah. When you don’t know where your next meal is coming from,
-eating as much as possible is an excellent strategy for survival.
-Today, however, we live in a calorie-rich environment. Food is abundant, but
-your brain continues to crave it like it is scarce. Placing a high value on salt,
-sugar, and fat is no longer advantageous to our health, but the craving persists
-because the brain’s reward centers have not changed for approximately fifty
-thousand years. The modern food industry relies on stretching our Paleolithic
-instincts beyond their evolutionary purpose.
-A primary goal of food science is to create products that are more attractive to
-consumers. Nearly every food in a bag, box, or jar has been enhanced in some
-way, if only with additional flavoring. Companies spend millions of dollars to
-discover the most satisfying level of crunch in a potato chip or the perfect
-amount of fizz in a soda. Entire departments are dedicated to optimizing how a
-product feels in your mouth—a quality known as orosensation. French fries, for
-example, are a potent combination—golden brown and crunchy on the outside,
-light and smooth on the inside.
-Other processed foods enhance dynamic contrast, which refers to items with a
-combination of sensations, like crunchy and creamy. Imagine the gooeyness of
-melted cheese on top of a crispy pizza crust, or the crunch of an Oreo cookie
-combined with its smooth center. With natural, unprocessed foods, you tend to
-experience the same sensations over and over—how’s that seventeenth bite of
-kale taste? After a few minutes, your brain loses interest and you begin to feel
-full. But foods that are high in dynamic contrast keep the experience novel and
-interesting, encouraging you to eat more.
-Ultimately, such strategies enable food scientists to find the “bliss point” for
-each product—the precise combination of salt, sugar, and fat that excites your
-brain and keeps you coming back for more. The result, of course, is that you
-overeat because hyperpalatable foods are more attractive to the human brain. As
-Stephan Guyenet, a neuroscientist who specializes in eating behavior and
-obesity, says, “We’ve gotten too good at pushing our own buttons.”
-The modern food industry, and the overeating habits it has spawned, is just
-one example of the 2nd Law of Behavior Change: Make it attractive. The more
-attractive an opportunity is, the more likely it is to become habit-forming.
-Look around. Society is filled with highly engineered versions of reality that
-are more attractive than the world our ancestors evolved in. Stores feature
-mannequins with exaggerated hips and breasts to sell clothes. Social media
-delivers more “likes” and praise in a few minutes than we could ever get in the
-office or at home. Online porn splices together stimulating scenes at a rate that
-would be impossible to replicate in real life. Advertisements are created with a
-combination of ideal lighting, professional makeup, and Photoshopped edits—
-even the model doesn’t look like the person in the final image. These are the
-supernormal stimuli of our modern world. They exaggerate features that are
-naturally attractive to us, and our instincts go wild as a result, driving us into
-excessive shopping habits, social media habits, porn habits, eating habits, and
-many others.
-If history serves as a guide, the opportunities of the future will be more
-attractive than those of today. The trend is for rewards to become more
-concentrated and stimuli to become more enticing. Junk food is a more
-concentrated form of calories than natural foods. Hard liquor is a more
-concentrated form of alcohol than beer. Video games are a more concentrated
-form of play than board games. Compared to nature, these pleasure-packed
-experiences are hard to resist. We have the brains of our ancestors but
-temptations they never had to face.
-If you want to increase the odds that a behavior will occur, then you need to
-make it attractive. Throughout our discussion of the 2nd Law, our goal is to learn
-how to make our habits irresistible. While it is not possible to transform every
-habit into a supernormal stimulus, we can make any habit more enticing. To do
-this, we must start by understanding what a craving is and how it works.
-We begin by examining a biological signature that all habits share—the
-dopamine spike.
-THE DOPAMINE-DRIVEN FEEDBACK LOOP
-Scientists can track the precise moment a craving occurs by measuring a
-neurotransmitter called dopamine.* The importance of dopamine became
-apparent in 1954 when the neuroscientists James Olds and Peter Milner ran an
-experiment that revealed the neurological processes behind craving and desire.
-By implanting electrodes in the brains of rats, the researchers blocked the release
-of dopamine. To the surprise of the scientists, the rats lost all will to live. They
-wouldn’t eat. They wouldn’t have sex. They didn’t crave anything. Within a few
-days, the animals died of thirst.
-In follow-up studies, other scientists also inhibited the dopamine-releasing
-parts of the brain, but this time, they squirted little droplets of sugar into the
-mouths of the dopamine-depleted rats. Their little rat faces lit up with
-pleasurable grins from the tasty substance. Even though dopamine was blocked,
-they liked the sugar just as much as before; they just didn’t want it anymore. The
-ability to experience pleasure remained, but without dopamine, desire died. And
-without desire, action stopped.
-When other researchers reversed this process and flooded the reward system
-of the brain with dopamine, animals performed habits at breakneck speed. In one
-study, mice received a powerful hit of dopamine each time they poked their nose
-in a box. Within minutes, the mice developed a craving so strong they began
-poking their nose into the box eight hundred times per hour. (Humans are not so
-different: the average slot machine player will spin the wheel six hundred times
-per hour.)
-Habits are a dopamine-driven feedback loop. Every behavior that is highly
-habit-forming—taking drugs, eating junk food, playing video games, browsing
-social media—is associated with higher levels of dopamine. The same can be
-said for our most basic habitual behaviors like eating food, drinking water,
-having sex, and interacting socially.
-For years, scientists assumed dopamine was all about pleasure, but now we
-know it plays a central role in many neurological processes, including
-motivation, learning and memory, punishment and aversion, and voluntary
-movement.
-When it comes to habits, the key takeaway is this: dopamine is released not
-only when you experience pleasure, but also when you anticipate it. Gambling
-addicts have a dopamine spike right before they place a bet, not after they win.
-Cocaine addicts get a surge of dopamine when they see the powder, not after
-they take it. Whenever you predict that an opportunity will be rewarding, your
-levels of dopamine spike in anticipation. And whenever dopamine rises, so does
-your motivation to act.
-It is the anticipation of a reward—not the fulfillment of it—that gets us to take
-action.
-Interestingly, the reward system that is activated in the brain when you receive
-a reward is the same system that is activated when you anticipate a reward. This
-is one reason the anticipation of an experience can often feel better than the
-attainment of it. As a child, thinking about Christmas morning can be better than
-opening the gifts. As an adult, daydreaming about an upcoming vacation can be
-more enjoyable than actually being on vacation. Scientists refer to this as the
-difference between “wanting” and “liking.”
-THE DOPAMINE SPIKE
-FIGURE 9: Before a habit is learned (A), dopamine is released when the reward is experienced for the first time. The next time around (B), dopamine rises before taking action, immediately
-after a cue is recognized. This spike leads to a feeling of desire and a craving to take action whenever the cue is spotted. Once a habit is learned, dopamine will not rise when a reward is
-experienced because you already expect the reward. However, if you see a cue and expect a reward, but do not get one, then dopamine will drop in disappointment (C). The sensitivity of the
-dopamine response can clearly be seen when a reward is provided late (D). First, the cue is identified and dopamine rises as a craving builds. Next, a response is taken but the reward does not
-come as quickly as expected and dopamine begins to drop. Finally, when the reward comes a little later than you had hoped, dopamine spikes again. It is as if the brain is saying, “See! I
-knew I was right. Don’t forget to repeat this action next time.”
-Your brain has far more neural circuitry allocated for wanting rewards than
-for liking them. The wanting centers in the brain are large: the brain stem, the
-nucleus accumbens, the ventral tegmental area, the dorsal striatum, the
-amygdala, and portions of the prefrontal cortex. By comparison, the liking
-centers of the brain are much smaller. They are often referred to as “hedonic hot
-spots” and are distributed like tiny islands throughout the brain. For instance,
-researchers have found that 100 percent of the nucleus accumbens is activated
-during wanting. Meanwhile, only 10 percent of the structure is activated during
-liking.
-The fact that the brain allocates so much precious space to the regions
-responsible for craving and desire provides further evidence of the crucial role
-these processes play. Desire is the engine that drives behavior. Every action is
-taken because of the anticipation that precedes it. It is the craving that leads to
-the response.
-These insights reveal the importance of the 2nd Law of Behavior Change. We
-need to make our habits attractive because it is the expectation of a rewarding
-experience that motivates us to act in the first place. This is where a strategy
-known as temptation bundling comes into play.
-HOW TO USE TEMPTATION BUNDLING TO MAKE YOUR HABITS
-MORE ATTRACTIVE
-Ronan Byrne, an electrical engineering student in Dublin, Ireland, enjoyed
-watching Netflix, but he also knew that he should exercise more often than he
-did. Putting his engineering skills to use, Byrne hacked his stationary bike and
-connected it to his laptop and television. Then he wrote a computer program that
-would allow Netflix to run only if he was cycling at a certain speed. If he slowed
-down for too long, whatever show he was watching would pause until he started
-pedaling again. He was, in the words of one fan, “eliminating obesity one Netflix
-binge at a time.”
-He was also employing temptation bundling to make his exercise habit more
-attractive. Temptation bundling works by linking an action you want to do with
-an action you need to do. In Byrne’s case, he bundled watching Netflix (the
-thing he wanted to do) with riding his stationary bike (the thing he needed to do).
-Businesses are masters at temptation bundling. For instance, when the
-American Broadcasting Company, more commonly known as ABC, launched its
-Thursday-night television lineup for the 2014–2015 season, they promoted
-temptation bundling on a massive scale.
-Every Thursday, the company would air three shows created by screenwriter
-Shonda Rhimes—Grey’s Anatomy, Scandal, and How to Get Away with Murder.
-They branded it as “TGIT on ABC” (TGIT stands for Thank God It’s Thursday).
-In addition to promoting the shows, ABC encouraged viewers to make popcorn,
-drink red wine, and enjoy the evening.
-Andrew Kubitz, head of scheduling for ABC, described the idea behind the
-campaign: “We see Thursday night as a viewership opportunity, with either
-couples or women by themselves who want to sit down and escape and have fun
-and drink their red wine and have some popcorn.” The brilliance of this strategy
-is that ABC was associating the thing they needed viewers to do (watch their
-shows) with activities their viewers already wanted to do (relax, drink wine, and
-eat popcorn).
-Over time, people began to connect watching ABC with feeling relaxed and
-entertained. If you drink red wine and eat popcorn at 8 p.m. every Thursday,
-then eventually “8 p.m. on Thursday” means relaxation and entertainment. The
-reward gets associated with the cue, and the habit of turning on the television
-becomes more attractive.
-You’re more likely to find a behavior attractive if you get to do one of your
-favorite things at the same time. Perhaps you want to hear about the latest
-celebrity gossip, but you need to get in shape. Using temptation bundling, you
-could only read the tabloids and watch reality shows at the gym. Maybe you
-want to get a pedicure, but you need to clean out your email inbox. Solution:
-only get a pedicure while processing overdue work emails.
-Temptation bundling is one way to apply a psychology theory known as
-Premack’s Principle. Named after the work of professor David Premack, the
-principle states that “more probable behaviors will reinforce less probable
-behaviors.” In other words, even if you don’t really want to process overdue
-work emails, you’ll become conditioned to do it if it means you get to do
-something you really want to do along the way.
-You can even combine temptation bundling with the habit stacking strategy
-we discussed in Chapter 5 to create a set of rules to guide your behavior.
-The habit stacking + temptation bundling formula is:
-1. After [CURRENT HABIT], I will [HABIT I NEED].
-2. After [HABIT I NEED], I will [HABIT I WANT].
-If you want to read the news, but you need to express more gratitude:
-1. After I get my morning coffee, I will say one thing I’m grateful for
-that happened yesterday (need).
-2. After I say one thing I’m grateful for, I will read the news (want).
-If you want to watch sports, but you need to make sales calls:
-1. After I get back from my lunch break, I will call three potential clients
-(need).
-2. After I call three potential clients, I will check ESPN (want).
-If you want to check Facebook, but you need to exercise more:
-1. After I pull out my phone, I will do ten burpees (need).
-2. After I do ten burpees, I will check Facebook (want).
-The hope is that eventually you’ll look forward to calling three clients or
-doing ten burpees because it means you get to read the latest sports news or
-check Facebook. Doing the thing you need to do means you get to do the thing
-you want to do.
-We began this chapter by discussing supernormal stimuli, which are
-heightened versions of reality that increase our desire to take action. Temptation
-bundling is one way to create a heightened version of any habit by connecting it
-with something you already want. Engineering a truly irresistible habit is a hard
-task, but this simple strategy can be employed to make nearly any habit more
-attractive than it would be otherwise.
-Chapter Summary
-The 2nd Law of Behavior Change is make it attractive.
-The more attractive an opportunity is, the more likely it is to become
-habit-forming.
-Habits are a dopamine-driven feedback loop. When dopamine rises, so
-does our motivation to act.
-It is the anticipation of a reward—not the fulfillment of it—that gets us
-to take action. The greater the anticipation, the greater the dopamine
-spike.
-Temptation bundling is one way to make your habits more attractive.
-The strategy is to pair an action you want to do with an action you
-need to do`,
+    title:
+      "GENTLE MOVEMENTS, LONGER LIFE: Exercises from the East that promote health and longevity",
+    content: `STUDIES FROM THEBlue Zones suggest that the people who live longest are not the ones who do the most exercise
+but rather the ones who move the most.
+When we visited Ogimi, the Village of Longevity, we discovered that even
+people over eighty and ninety years old are still highly active. They don’t stay at
+home looking out the window or reading the newspaper. Ogimi’s residents walk a
+lot, do karaoke with their neighbors, get up early in the morning, and, as soon as
+they’ve had breakfast—or even before—head outside to weed their gardens. They
+don’t go to the gym or exercise intensely, but they almost never stop moving in
+the course of their daily routines.
+As Easy as Getting out of Your Chair
+“Metabolism slows down 90 percent after 30 minutes of sitting. The
+enzymes that move the bad fat from your arteries to your muscles, where
+it can get burned off, slow down. And after two hours, good cholesterol
+drops 20 percent. Just getting up for five minutes is going to get things
+going again. These things are so simple they’re almost stupid,” says Gavin
+Bradley
+1
+in a 2015 interview with Brigid Schulte for the Washington Post.
+2
+Bradley is one of the preeminent experts on the subject, and the director
+of an international organization dedicated to building awareness of how
+detrimental sitting all the time can be to our health.
+If we live in a city, we might find it hard to move in natural and healthy ways
+every day, but we can turn to exercises that have proven for centuries to be good
+for the body.
+The Eastern disciplines for bringing body, mind, and soul into balance have
+become quite popular in the West, but in their countries of origin they have been
+used for ages to promote health.
+Yoga—originally from India, though very popular in Japan—and China’s
+qigong and tai chi, among other disciplines, seek to create harmony between a
+person’s body and mind so they can face the world with strength, joy, and
+serenity.
+They are touted as elixirs of youth, and science has endorsed the claim.
+They are touted as elixirs of youth, and science has endorsed the claim.
+These gentle exercises offer extraordinary health benefits, and are particularly
+appropriate for older individuals who have a harder time staying fit.
+Tai chi has been shown, among other things, to slow the development of
+osteoporosis and Parkinson’s disease, to increase circulation, and to improve
+muscle tone and flexibility. Its emotional benefits are just as important: It is a
+great shield against stress and depression.
+You don’t need to go to the gym for an hour every day or run marathons. As
+Japanese centenarians show us, all you need is to add movement to your day.
+Practicing any of these Eastern disciplines on a regular basis is a great way to do
+so. An added benefit is that they all have well-defined steps, and as we saw in
+chapter IV, disciplines with clear rules are good for flow. If you don’t like any of
+these disciplines, feel free to choose a practice that you love and that makes you
+move.
+In the following pages we’ll take a look at some of the practices that promote
+health and longevity—but first, a little appetizer: a singularly Japanese exercise
+for starting your day.
+Radio taiso
+This morning warm-up has been around since before World War II. The “radio”
+part of its name is from when the instructions for each exercise were transmitted
+over the radio, but today people usually do these movements while tuned to a
+television channel or Internet video demonstrating the steps.
+One of the main purposes of doing radio taiso is to promote a spirit of unity
+among participants. The exercises are always done in groups, usually in schools
+before the start of classes, and in businesses before the workday begins.
+Statistics show that 30 percent of Japanese practice radio taiso for a few
+minutes every morning, but radio taiso is one thing that almost everyone we
+interviewed in Ogimi had in common. Even the residents of the nursing home we
+visited dedicated at least five minutes every day to it, though some did the
+exercises from their wheelchairs. We joined them on their daily practice and we
+felt refreshed for the rest of the day.
+When these exercises are done in a group, it is usually on a sports field or in a
+large reception hall, and typically involves some kind of loudspeaker.
+The exercises take five or ten minutes, depending on whether you do all or
+only some of them. They focus on dynamic stretching and increasing joint
+mobility. One of the most iconic radio taiso exercises consists of simply raising
+mobility. One of the most iconic radio taiso exercises consists of simply raising
+your arms above your head and then bringing them down in a circular motion. It
+is a tool to wake up the body, an easy mobility workout that is low in intensity
+and that focuses on exercising as many joints as possible.
+It might seem basic, but in our modern lives, we can spend days without
+raising our arms above our ears. Think about it: our arms are down when using
+computers, when using smartphones, when reading books. One of the few times
+we raise our hands over our heads is when reaching for something in a cupboard
+or closet, while our ancestors were raising their hands over their heads all the
+time when gathering things from trees. Radio taiso helps us to practice all the
+basic movements of the body.
+Basic version of the radio taiso exercises (5 minutes).
+Yoga
+Popular in Japan as well as in the West, yoga can be done by almost anyone.
+Some of its poses have even been adapted for pregnant women and practitioners
+with physical disabilities.
+Yoga comes from India, where it was developed millennia ago to unite our
+mental and physical elements. The word yoga itself comes from the Sanskrit term
+for “yoke,” which refers to the crosspiece that binds draft animals to one another
+and to the cart they’re pulling. Yoga strives to unite body and mind in the same
+way, guiding us toward a healthy lifestyle in harmony with the world around us.
+The main objectives of yoga are:
+To bring us closer to our (human) nature
+Mental and physical purification
+To bring us closer to the divine
+Styles of yoga
+Though all are oriented toward similar goals, there are many different types of
+yoga that vary according to the traditions and texts from which they were
+developed. The differences among them lie, as the masters say, in the path taken
+to the summit of our best self.
+Jnana yoga: the yoga of wisdom; the search for discipline and mental
+growth
+Karma yoga: focuses on action, on tasks and duties that benefit oneself and
+one’s community
+Bhakti yoga: the yoga of devotion and surrender to the divine
+Mantra yoga: focuses on the recitation of mantras to reach a state of
+relaxation
+Kundalini yoga: combines diverse steps to reach the desired mental state
+Raja yoga: also known as the royal path; encompasses a range of steps
+geared toward achieving communion with oneself and others
+Hatha yoga: the most widespread form in the West and Japan; characterized
+by asanas or poses combined in a quest for balance
+How to do a Sun Salutation
+The Sun Salutation is one of the most iconic exercises in hatha yoga. To do it, you
+simply have to follow these twelve basic movements:
+1. With your feet together, stand up straight but keep your muscles relaxed.
+Exhale.
+2. Place the palms of your hands together in front of your chest; from this
+position, inhale as you raise your arms above your head and bend backward
+slightly.
+3. Exhale as you bend forward until you touch the ground with the palms of
+your hands, without bending your knees.
+4. Stretch one leg back to touch the floor with the tips of your toes. Inhale.
+5. Bring the other leg back, keeping your legs and arms straight, as you hold
+your breath.
+6. As you exhale, bend your arms and bring your chest to the ground and then
+forward, resting your knees on the ground.
+7. Straighten your arms and bend your spine back, keeping the lower half of
+your body on the ground. Inhale.
+8. With your hands and feet on the ground, lift your hips until your arms and
+legs are straight and your body forms an upside-down V. Exhale throughout
+the movement.
+9. Bring forward the same leg you’d stretched back earlier and bend it so that
+your knee and foot are aligned under your head and between your hands.
+Inhale.
+10. Exhale as you bring your back foot forward and straighten your legs, keeping
+your hands on the ground as in posture 3.
+11. Bring your arms above your head with your palms together and bend
+backward slightly, as you did in posture 2, while you inhale.
+12. Lower your arms to their initial position in mountain pose while you exhale.
+You’ve just greeted the sun; now you’re ready to have a fantastic day.
+Tai chi
+Also known as t’ai chi ch’uan (or taijiquan), tai chi is a Chinese martial art that
+can be traced back hundreds of years to Buddhism and Confucianism; it is very
+popular in Japan, too.
+According to Chinese tradition, it was created by the Taoist master and martial
+arts practitioner Zhang Sanfeng, though it was Yang Luchan who in the
+nineteenth century brought the form to the rest of the world.
+Tai chi was originally a neijia, or internal martial art, meaning its goal was
+personal growth. Focused on self-defense, it teaches those who practice it to
+defeat their adversaries by using the least amount of force possible and by relying
+on agility.
+Tai chi, which was also seen as a means of healing body and mind, would go
+on to be used more frequently to foster health and inner peace. To encourage its
+citizens to be more active, the Chinese government promoted it as an exercise,
+and it lost its original connection to martial arts, becoming instead a source of
+health and well-being accessible to all.
+Styles of tai chi
+There are different schools and styles of tai chi. The following are the best
+known:
+Chen-style: alternates between slow movements and explosive ones
+Yang-style: the most widespread of the forms; characterized by slow, fluid
+movements
+Wu-style: utilizes small, slow, deliberate movements
+Hao-style: centered on internal movements, with almost microscopic
+external movements; one of the least practiced forms of tai chi, even in
+China
+Despite their differences, these styles all have the same objectives:
+1. To control movement through stillness
+2. To overcome force through finesse
+3. To move second and arrive first
+4. To know yourself and your opponent
+The ten basic principles of tai chi
+According to the master Yang Chengfu, the correct practice of tai chi follows ten
+basic principles:
+1. Elevate the crown of your head, and focus all your energy there.
+2. Tighten your chest and expand your back to lighten your lower body.
+3. Relax your waist and let it guide your body.
+4. Learn to differentiate between heaviness and lightness, knowing how your
+weight is distributed.
+5. Relax the shoulders to allow free movement of the arms and promote the
+flow of energy.
+6. Value the agility of the mind over the strength of the body.
+7. Unify the upper and lower body so they act in concert.
+8. Unify the internal and the external to synchronize mind, body, and breath.
+9. Do not break the flow of your movement; maintain fluidity and harmony.
+10. Look for stillness in movement. An active body leads to a calm mind.
+Imitating clouds
+One of the best-known movements in tai chi consists of following the form of
+clouds in an exercise called Wave Hands Like Clouds. Here are the steps:
+1. Extend your arms in front of you with your palms down.
+2. Turn your palms to face in, as though you were hugging a tree trunk.
+3. Open your arms out to the side.
+4. Bring the left arm up and center, and the right arm down and center.
+5. Trace the shape of a ball in front of your body.
+6. Turn your left palm toward your face.
+7. Shift your weight to your left foot and pivot from your hip toward that side,
+while your eyes follow the movement of your hand.
+8. Bring your left hand to your waist and your right hand in front of your face.
+9. Shift your weight to your right foot.
+10. Pivot toward your right, looking at your raised right hand the entire time.
+11. Repeat this movement fluidly, shifting your weight from one foot to the
+other as you reposition your hands.
+12. Stretch your arms out in front of you again and bring them down slowly,
+returning to your initial position.
+Qigong
+Also known as chi kung, its name combines qi (life force, or energy) and gong
+(work), indicating that the form works with the individual’s life force. Though
+relatively modern, especially under its current name, the art of qigong is based on
+the Tao yin, an ancient art meant to foster mental and physical well-being.
+The practice began to appear in reports on training and martial arts at the
+beginning of the twentieth century, and by the 1930s was being used in hospitals.
+The Chinese government later popularized it, as it had done with tai chi.
+Qigong involves static and dynamic physical exercises that stimulate
+respiration in a standing, seated, or reclined position. There are many different
+styles of qigong, but all of them seek to strengthen and regenerate qi. Though its
+movements are typically gentle, the practice is intense.
+Benefits of qigong
+According to numerous international scientific studies, qigong—like tai chi and
+yoga—offers significant health benefits. The following stand out among those
+proven through scientific research, as observed by Dr. Kenneth M. Sancier of San
+Francisco’s Qigong Institute in his article “Medical Applications of Qigong”
+3
+:
+Modification of brain waves
+Improved balance of sex hormones
+Lower mortality rate from heart attacks
+Lower blood pressure in patients with hypertension
+Greater bone density
+Better circulation
+Deceleration of symptoms associated with senility
+Greater balance and efficiency of bodily functions
+Increased blood flow to the brain and greater mind-body connection
+Improved cardiac function
+Reduction in the secondary effects of cancer treatments
+Practicing these arts not only keeps us in shape, it also helps extend our lives.
+Methods for practicing qigong
+In order to practice qigong correctly, we should remember that our life energy
+flows through our whole body. We should know how to regulate its many parts:
+1. Tyau Shenn: (regulating the body) by adopting the correct posture—it is
+important to be firmly rooted to the ground
+2. Tyau Shyi: (regulating the breath) until it is calm, steady, and peaceful
+3. Tyau Hsin: (regulating the mind); the most complicated part, as it implies
+emptying the mind of thoughts
+4. Tyau Chi: (regulating the life force) through the regulation of the three prior
+elements, so that it flows naturally
+5. Tyau Shen: (regulating the spirit); the spirit is both strength and root in battle,
+as Yang Jwing-Ming explains in The Essence of Taiji Qigong.
+4
+In this way, the whole organism will be prepared to work together toward a
+single goal.
+The five elements of qigong
+One of qigong’s best-known exercises is a series representing the five elements:
+One of qigong’s best-known exercises is a series representing the five elements:
+earth, water, wood, metal, and fire. This series of movements seeks to balance the
+five currents of energy in order to improve brain and organ function.
+There are several ways to do these movements. In this case, we’re following
+the model of Professor María Isabel García Monreal from the Qigong Institute in
+Barcelona.
+EARTH
+1. Stand with your legs apart and your feet directly below your shoulders.
+2. Turn your feet outward slightly to strengthen the posture.
+3. Keep your shoulders relaxed and down and your arms loose at your sides,
+slightly away from your body (this is the Wu Qi, or rooted, posture).
+4. As you inhale, raise your arms in front of you until your hands are level with
+your shoulders, your palms facing down.
+5. Exhale as you bend your knees and bring your arms down until your hands
+are level with your stomach, your palms facing in.
+6. Hold this position for a few seconds, focusing on your breath.
+WATER
+1. Starting from Earth posture, bend your knees into a squat, keeping your chest
+upright and exhaling throughout.
+2. Press your coccyx downward to stretch your lumbar spine.
+3. As you inhale, stand to return to Earth posture.
+4. 4. Repeat twice, for a total of three.
+WOOD
+1. Starting from Earth posture, turn your palms upward and open your arms to
+the side, forming a circle as you inhale, until your hands are level with your
+clavicle. Turn your hands so that your palms and elbows point downward,
+while keeping your shoulders relaxed.
+2. Reverse the movement as you exhale, making a downward circle with your
+arms until you reach your initial position.
+3. Repeat twice, for a total of three.
+METAL
+1. Starting from Earth posture, raise your arms until your hands are level with
+your sternum.
+2. Turn your palms toward each other, about four inches apart, with your
+fingers relaxed and slightly separated, pointing upward.
+3. As you inhale, move your hands away from each other until they are shoulder
+width apart.
+4. As you exhale, bring your hands toward each other until they are back in
+position 2.
+5. Repeat twice, for a total of three, observing the concentration of energy as
+you bring your hands together in front of your lungs.
+FIRE
+1. Starting from Earth posture, bring your hands level with your heart as you
+inhale, with one hand slightly above the other and your palms facing each
+other.
+2. Rotate your hands to feel the energy of your heart.
+3. Turn from your waist gently to the left, keeping your torso relaxed and your
+forearms parallel to the ground.
+4. With your palms still facing each other, separate your hands, bringing one up
+until it is level with your shoulder, and the other down in front of your
+abdomen.
+5. Turn from your waist gently to the right, keeping your torso relaxed and your
+forearms parallel to the ground.
+6. As you exhale, let your hands come back together in front of your heart.
+7. With your palms still facing each other, separate your hands, bringing one up
+until it is level with your shoulder, and the other down in front of your
+abdomen.
+COMPLETING THE SERIES
+1. Starting from Earth posture, inhale as you bring your hands level with your
+shoulders, palms facing down.
+2. As you exhale, lower your arms to rest at your sides, returning to the initial
+Wu Qi posture.
+Shiatsu
+Created in Japan in the early twentieth century, principally for the treatment of
+arthritis, shiatsu also works on energy flow through the application of pressure
+with the thumbs and the palms of the hands. In combination with stretching and
+breathing exercises, it seeks to create equilibrium among the different elements
+of the body.
+It is not important that a Tao Yin* have a name, is imitating something, or is
+engraved in jade. What is important is the technique and the essence of
+what is really practiced. Stretching and contracting, bending and lifting of
+the head, stepping, lying down, resting or standing, walking or stepping
+slowly, screaming or breathing—everything can be a Tao Yin.
+—Ge Hong
+5
+Breathe better, live longer
+The book Xiuzhen shishu, known in the West as Ten Books on the Cultivation of
+Perfection, dates back to the thirteenth century and is a compendium of materials
+from diverse sources on developing the mind and body.
+It quotes, among others, the celebrated Chinese doctor and essayist Sun
+Simiao, who lived during the sixth century. Sun Simiao was a proponent of a
+technique called the Six Healing Sounds, which involves the coordination of
+movement, breathing, and pronouncing sounds with the purpose of bringing our
+souls to a place of calm.
+The six sounds are:
+Xu, pronounced like “shh” with a deep sigh, which is associated with the liver
+He, pronounced like “her” with a yawn, which is associated with the heart
+Si, pronounced like “sir” with a slow exhale, which is associated with the lungs
+Chui, pronounced like “chwee” with a forceful exhale, which is associated
+with the kidneys
+Hoo, pronounced like “who,” which is associated with the spleen
+Xi, pronounced like “she, ” which connects the whole body
+The following poem by Sun Simiao offers clues about how to live well
+according to the season. It reminds us of the importance of breathing, and
+suggests that as we breathe, we visualize the organs associated with each of the
+healing sounds.
+In spring, breathe xu for clear eyes and so wood can aid your liver.
+In summer, reach for he, so that heart and fire can be at peace.
+In fall, breathe si to stabilize and gather metal, keeping the lungs moist.
+For the kidneys, next, breathe chui and see your inner waters calm.
+The Triple Heater needs your xi to expel all heat and troubles.
+In all four seasons, take deep breaths so your spleen can process food.
+And, of course, avoid exhaling noisily; don’t let even your own ears hear you.
+The practice is most excellent and will help preserve your divine elixir.
+It might feel confusing to be presented with all the Eastern traditions we have
+introduced in this chapter. The takeaway is that they all combine a physical
+exercise with an awareness of our breath. These two components—movement
+and breath—help us to bring our consciousness in line with our body, instead of
+allowing our mind to be carried away by the sea of daily worries. Most of the
+time, we are just not aware enough of our breathing.`,
   },
   {
     chapter_number: 9,
-    title: "The Role of Family and Friends in Shaping Your Habits",
-    content: `IN 1965, a Hungarian man named Laszlo Polgar wrote a series of strange letters to a
-woman named Klara.
-Laszlo was a firm believer in hard work. In fact, it was all he believed in: he
-completely rejected the idea of innate talent. He claimed that with deliberate
-practice and the development of good habits, a child could become a genius in
-any field. His mantra was “A genius is not born, but is educated and trained.”
-Laszlo believed in this idea so strongly that he wanted to test it with his own
-children—and he was writing to Klara because he “needed a wife willing to
-jump on board.” Klara was a teacher and, although she may not have been as
-adamant as Laszlo, she also believed that with proper instruction, anyone could
-advance their skills.
-Laszlo decided chess would be a suitable field for the experiment, and he laid
-out a plan to raise his children to become chess prodigies. The kids would be
-home-schooled, a rarity in Hungary at the time. The house would be filled with
-chess books and pictures of famous chess players. The children would play
-against each other constantly and compete in the best tournaments they could
-find. The family would keep a meticulous file system of the tournament history
-of every competitor the children faced. Their lives would be dedicated to chess.
-Laszlo successfully courted Klara, and within a few years, the Polgars were
-parents to three young girls: Susan, Sofia, and Judit.
-Susan, the oldest, began playing chess when she was four years old. Within
-six months, she was defeating adults.
-Sofia, the middle child, did even better. By fourteen, she was a world
-champion, and a few years later, she became a grandmaster.
-Judit, the youngest, was the best of all. By age five, she could beat her father.
-At twelve, she was the youngest player ever listed among the top one hundred
-chess players in the world. At fifteen years and four months old, she became the
-youngest grandmaster of all time—younger than Bobby Fischer, the previous
-record holder. For twenty-seven years, she was the number-one-ranked female
-chess player in the world.
-The childhood of the Polgar sisters was atypical, to say the least. And yet, if
-you ask them about it, they claim their lifestyle was attractive, even enjoyable. In
-interviews, the sisters talk about their childhood as entertaining rather than
-grueling. They loved playing chess. They couldn’t get enough of it. Once, Laszlo
-reportedly found Sofia playing chess in the bathroom in the middle of the night.
-Encouraging her to go back to sleep, he said, “Sofia, leave the pieces alone!” To
-which she replied, “Daddy, they won’t leave me alone!”
-The Polgar sisters grew up in a culture that prioritized chess above all else—
-praised them for it, rewarded them for it. In their world, an obsession with chess
-was normal. And as we are about to see, whatever habits are normal in your
-culture are among the most attractive behaviors you’ll find.
-THE SEDUCTIVE PULL OF SOCIAL NORMS
-Humans are herd animals. We want to fit in, to bond with others, and to earn the
-respect and approval of our peers. Such inclinations are essential to our survival.
-For most of our evolutionary history, our ancestors lived in tribes. Becoming
-separated from the tribe—or worse, being cast out—was a death sentence. “The
-lone wolf dies, but the pack survives.”*
-Meanwhile, those who collaborated and bonded with others enjoyed increased
-safety, mating opportunities, and access to resources. As Charles Darwin noted,
-“In the long history of humankind, those who learned to collaborate and
-improvise most effectively have prevailed.” As a result, one of the deepest
-human desires is to belong. And this ancient preference exerts a powerful
-influence on our modern behavior.
-We don’t choose our earliest habits, we imitate them. We follow the script
-handed down by our friends and family, our church or school, our local
-community and society at large. Each of these cultures and groups comes with
-its own set of expectations and standards—when and whether to get married,
-how many children to have, which holidays to celebrate, how much money to
-spend on your child’s birthday party. In many ways, these social norms are the
-invisible rules that guide your behavior each day. You’re always keeping them
-in mind, even if they are at the not top of your mind. Often, you follow the habits
-of your culture without thinking, without questioning, and sometimes without
-remembering. As the French philosopher Michel de Montaigne wrote, “The
-customs and practices of life in society sweep us along.”
-Most of the time, going along with the group does not feel like a burden.
-Everyone wants to belong. If you grow up in a family that rewards you for your
-chess skills, playing chess will seem like a very attractive thing to do. If you
-work in a job where everyone wears expensive suits, then you’ll be inclined to
-splurge on one as well. If all of your friends are sharing an inside joke or using a
-new phrase, you’ll want to do it, too, so they know that you “get it.” Behaviors
-are attractive when they help us fit in.
-We imitate the habits of three groups in particular:
-1. The close.
-2. The many.
-3. The powerful.
-Each group offers an opportunity to leverage the 2nd Law of Behavior Change
-and make our habits more attractive.
-1. Imitating the Close
-Proximity has a powerful effect on our behavior. This is true of the physical
-environment, as we discussed in Chapter 6, but it is also true of the social
-environment.
-We pick up habits from the people around us. We copy the way our parents
-handle arguments, the way our peers flirt with one another, the way our
-coworkers get results. When your friends smoke pot, you give it a try, too. When
-your wife has a habit of double-checking that the door is locked before going to
-bed, you pick it up as well.
-I find that I often imitate the behavior of those around me without realizing it.
-In conversation, I’ll automatically assume the body posture of the other person.
-In college, I began to talk like my roommates. When traveling to other countries,
-I unconsciously imitate the local accent despite reminding myself to stop.
-As a general rule, the closer we are to someone, the more likely we are to
-imitate some of their habits. One groundbreaking study tracked twelve thousand
-people for thirty-two years and found that “a person’s chances of becoming
-obese increased by 57 percent if he or she had a friend who became obese.” It
-works the other way, too. Another study found that if one person in a
-relationship lost weight, the other partner would also slim down about one third
-of the time. Our friends and family provide a sort of invisible peer pressure that
-pulls us in their direction.
-Of course, peer pressure is bad only if you’re surrounded by bad influences.
-When astronaut Mike Massimino was a graduate student at MIT, he took a small
-robotics class. Of the ten people in the class, four became astronauts. If your
-goal was to make it into space, then that room was about the best culture you
-could ask for. Similarly, one study found that the higher your best friend’s IQ at
-age eleven or twelve, the higher your IQ would be at age fifteen, even after
-controlling for natural levels of intelligence. We soak up the qualities and
-practices of those around us.
-One of the most effective things you can do to build better habits is to join a
-culture where your desired behavior is the normal behavior. New habits seem
-achievable when you see others doing them every day. If you are surrounded by
-fit people, you’re more likely to consider working out to be a common habit. If
-you’re surrounded by jazz lovers, you’re more likely to believe it’s reasonable to
-play jazz every day. Your culture sets your expectation for what is “normal.”
-Surround yourself with people who have the habits you want to have yourself.
-You’ll rise together.
-To make your habits even more attractive, you can take this strategy one step
-further.
-Join a culture where (1) your desired behavior is the normal behavior and (2)
-you already have something in common with the group. Steve Kamb, an
-entrepreneur in New York City, runs a company called Nerd Fitness, which
-“helps nerds, misfits, and mutants lose weight, get strong, and get healthy.” His
-clients include video game lovers, movie fanatics, and average Joes who want to
-get in shape. Many people feel out of place the first time they go to the gym or
-try to change their diet, but if you are already similar to the other members of the
-group in some way—say, your mutual love of Star Wars—change becomes
-more appealing because it feels like something people like you already do.
-Nothing sustains motivation better than belonging to the tribe. It transforms a
-personal quest into a shared one. Previously, you were on your own. Your
-identity was singular. You are a reader. You are a musician. You are an athlete.
-When you join a book club or a band or a cycling group, your identity becomes
-linked to those around you. Growth and change is no longer an individual
-pursuit. We are readers. We are musicians. We are cyclists. The shared identity
-begins to reinforce your personal identity. This is why remaining part of a group
-after achieving a goal is crucial to maintaining your habits. It’s friendship and
-community that embed a new identity and help behaviors last over the long run.
-2. Imitating the Many
-In the 1950s, psychologist Solomon Asch conducted a series of experiments that
-are now taught to legions of undergrads each year. To begin each experiment,
-the subject entered the room with a group of strangers. Unbeknownst to them,
-the other participants were actors planted by the researcher and instructed to
-deliver scripted answers to certain questions.
-The group would be shown one card with a line on it and then a second card
-with a series of lines. Each person was asked to select the line on the second card
-that was similar in length to the line on the first card. It was a very simple task.
-Here is an example of two cards used in the experiment:
-CONFORMING TO SOCIAL NORMS
-FIGURE 10: This is a representation of two cards used by Solomon Asch in his famous social conformity experiments. The length of the line on the first card (left) is obviously the same as
-line C, but when a group of actors claimed it was a different length the research subjects would often change their minds and go with the crowd rather than believe their own eyes.
-The experiment always began the same. First, there would be some easy trials
-where everyone agreed on the correct line. After a few rounds, the participants
-were shown a test that was just as obvious as the previous ones, except the actors
-in the room would select an intentionally incorrect answer. For example, they
-would respond “A” to the comparison shown in Figure 10. Everyone would
-agree that the lines were the same even though they were clearly different.
-The subject, who was unaware of the ruse, would immediately become
-bewildered. Their eyes would open wide. They would laugh nervously to
-themselves. They would double-check the reactions of other participants. Their
-agitation would grow as one person after another delivered the same incorrect
-response. Soon, the subject began to doubt their own eyes. Eventually, they
-delivered the answer they knew in their heart to be incorrect.
-Asch ran this experiment many times and in many different ways. What he
-discovered was that as the number of actors increased, so did the conformity of
-the subject. If it was just the subject and one actor, then there was no effect on
-the person’s choice. They just assumed they were in the room with a dummy.
-When two actors were in the room with the subject, there was still little impact.
-But as the number of people increased to three actors and four and all the way to
-eight, the subject became more likely to second-guess themselves. By the end of
-the experiment, nearly 75 percent of the subjects had agreed with the group
-answer even though it was obviously incorrect.
-Whenever we are unsure how to act, we look to the group to guide our
-behavior. We are constantly scanning our environment and wondering, “What is
-everyone else doing?” We check reviews on Amazon or Yelp or TripAdvisor
-because we want to imitate the “best” buying, eating, and travel habits. It’s
-usually a smart strategy. There is evidence in numbers.
-But there can be a downside.
-The normal behavior of the tribe often overpowers the desired behavior of the
-individual. For example, one study found that when a chimpanzee learns an
-effective way to crack nuts open as a member of one group and then switches to
-a new group that uses a less effective strategy, it will avoid using the superior
-nut cracking method just to blend in with the rest of the chimps.
-Humans are similar. There is tremendous internal pressure to comply with the
-norms of the group. The reward of being accepted is often greater than the
-reward of winning an argument, looking smart, or finding truth. Most days, we’d
-rather be wrong with the crowd than be right by ourselves.
-The human mind knows how to get along with others. It wants to get along
-with others. This is our natural mode. You can override it—you can choose to
-ignore the group or to stop caring what other people think—but it takes work.
-Running against the grain of your culture requires extra effort.
-When changing your habits means challenging the tribe, change is
-unattractive. When changing your habits means fitting in with the tribe, change
-is very attractive.
-3. Imitating the Powerful
-Humans everywhere pursue power, prestige, and status. We want pins and
-medallions on our jackets. We want President or Partner in our titles. We want to
-be acknowledged, recognized, and praised. This tendency can seem vain, but
-overall, it’s a smart move. Historically, a person with greater power and status
-has access to more resources, worries less about survival, and proves to be a
-more attractive mate.
-We are drawn to behaviors that earn us respect, approval, admiration, and
-status. We want to be the one in the gym who can do muscle-ups or the musician
-who can play the hardest chord progressions or the parent with the most
-accomplished children because these things separate us from the crowd. Once
-we fit in, we start looking for ways to stand out.
-This is one reason we care so much about the habits of highly effective
-people. We try to copy the behavior of successful people because we desire
-success ourselves. Many of our daily habits are imitations of people we admire.
-You replicate the marketing strategies of the most successful firms in your
-industry. You make a recipe from your favorite baker. You borrow the
-storytelling strategies of your favorite writer. You mimic the communication
-style of your boss. We imitate people we envy.
-High-status people enjoy the approval, respect, and praise of others. And that
-means if a behavior can get us approval, respect, and praise, we find it attractive.
-We are also motivated to avoid behaviors that would lower our status. We
-trim our hedges and mow our lawn because we don’t want to be the slob of the
-neighborhood. When our mother comes to visit, we clean up the house because
-we don’t want to be judged. We are continually wondering “What will others
-think of me?” and altering our behavior based on the answer.
-The Polgar sisters—the chess prodigies mentioned at the beginning of this
-chapter—are evidence of the powerful and lasting impact social influences can
-have on our behavior. The sisters practiced chess for many hours each day and
-continued this remarkable effort for decades. But these habits and behaviors
-maintained their attractiveness, in part, because they were valued by their
-culture. From the praise of their parents to the achievement of different status
-markers like becoming a grandmaster, they had many reasons to continue their
-effort.
-Chapter Summary
-The culture we live in determines which behaviors are attractive to us.
-We tend to adopt habits that are praised and approved of by our culture
-because we have a strong desire to fit in and belong to the tribe.
-We tend to imitate the habits of three social groups: the close (family
-and friends), the many (the tribe), and the powerful (those with status
-and prestige).
-One of the most effective things you can do to build better habits is to
-join a culture where (1) your desired behavior is the normal behavior
-and (2) you already have something in common with the group.
-The normal behavior of the tribe often overpowers the desired
-behavior of the individual. Most days, we’d rather be wrong with the
-crowd than be right by ourselves.
-If a behavior can get us approval, respect, and praise, we find it
-attractive.`,
-  },
-  {
-    chapter_number: 10,
-    title: "How to Find and Fix the Causes of Your Bad Habits",
-    content: `IN LATE 2012, I was sitting in an old apartment just a few blocks from Istanbul’s most
-famous street, Istiklal Caddesi. I was in the middle of a four-day trip to Turkey
-and my guide, Mike, was relaxing in a worn-out armchair a few feet away.
-Mike wasn’t really a guide. He was just a guy from Maine who had been
-living in Turkey for five years, but he offered to show me around while I was
-visiting the country and I took him up on it. On this particular night, I had been
-invited to dinner with him and a handful of his Turkish friends.
-There were seven of us, and I was the only one who hadn’t, at some point,
-smoked at least one pack of cigarettes per day. I asked one of the Turks how he
-got started. “Friends,” he said. “It always starts with your friends. One friend
-smokes, then you try it.”
-What was truly fascinating was that half of the people in the room had
-managed to quit smoking. Mike had been smoke-free for a few years at that
-point, and he swore up and down that he broke the habit because of a book
-called Allen Carr’s Easy Way to Stop Smoking.
-“It frees you from the mental burden of smoking,” he said. “It tells you: ‘Stop
-lying to yourself. You know you don’t actually want to smoke. You know you
-don’t really enjoy this.’ It helps you feel like you’re not the victim anymore. You
-start to realize that you don’t need to smoke.”
-I had never tried a cigarette, but I took a look at the book afterward out of
-curiosity. The author employs an interesting strategy to help smokers eliminate
-their cravings. He systematically reframes each cue associated with smoking and
-gives it a new meaning.
-He says things like:
-You think you are quitting something, but you’re not quitting anything
-because cigarettes do nothing for you.
-You think smoking is something you need to do to be social, but it’s
-not. You can be social without smoking at all.
-You think smoking is about relieving stress, but it’s not. Smoking does
-not relieve your nerves, it destroys them.
-Over and over, he repeats these phrases and others like them. “Get it clearly
-into your mind,” he says. “You are losing nothing and you are making
-marvelous positive gains not only in health, energy and money but also in
-confidence, self-respect, freedom and, most important of all, in the length and
-quality of your future life.”
-By the time you get to the end of the book, smoking seems like the most
-ridiculous thing in the world to do. And if you no longer expect smoking to bring
-you any benefits, you have no reason to smoke. It is an inversion of the 2nd Law
-of Behavior Change: make it unattractive.
-Now, I know this idea might sound overly simplistic. Just change your mind and
-you can quit smoking. But stick with me for a minute.
-WHERE CRAVINGS COME FROM
-Every behavior has a surface level craving and a deeper, underlying motive. I
-often have a craving that goes something like this: “I want to eat tacos.” If you
-were to ask me why I want to eat tacos, I wouldn’t say, “Because I need food to
-survive.” But the truth is, somewhere deep down, I am motivated to eat tacos
-because I have to eat to survive. The underlying motive is to obtain food and
-water even if my specific craving is for a taco.
-Some of our underlying motives include:*
-Conserve energy
-Obtain food and water
-Find love and reproduce
-Connect and bond with others
-Win social acceptance and approval
-Reduce uncertainty
-Achieve status and prestige
-A craving is just a specific manifestation of a deeper underlying motive. Your
-brain did not evolve with a desire to smoke cigarettes or to check Instagram or to
-play video games. At a deep level, you simply want to reduce uncertainty and
-relieve anxiety, to win social acceptance and approval, or to achieve status.
-Look at nearly any product that is habit-forming and you’ll see that it does not
-create a new motivation, but rather latches onto the underlying motives of
-human nature.
-Find love and reproduce = using Tinder
-Connect and bond with others = browsing Facebook
-Win social acceptance and approval = posting on Instagram
-Reduce uncertainty = searching on Google
-Achieve status and prestige = playing video games
-Your habits are modern-day solutions to ancient desires. New versions of old
-vices. The underlying motives behind human behavior remain the same. The
-specific habits we perform differ based on the period of history.
-Here’s the powerful part: there are many different ways to address the same
-underlying motive. One person might learn to reduce stress by smoking a
-cigarette. Another person learns to ease their anxiety by going for a run. Your
-current habits are not necessarily the best way to solve the problems you face;
-they are just the methods you learned to use. Once you associate a solution with
-the problem you need to solve, you keep coming back to it.
-Habits are all about associations. These associations determine whether we
-predict a habit to be worth repeating or not. As we covered in our discussion of
-the 1st Law, your brain is continually absorbing information and noticing cues in
-the environment. Every time you perceive a cue, your brain runs a simulation
-and makes a prediction about what to do in the next moment.
-Cue: You notice that the stove is hot.
-Prediction: If I touch it I’ll get burned, so I should avoid touching it.
-Cue: You see that the traffic light turned green.
-Prediction: If I step on the gas, I’ll make it safely through the intersection and
-get closer to my destination, so I should step on the gas.
-You see a cue, categorize it based on past experience, and determine the
-appropriate response.
-This all happens in an instant, but it plays a crucial role in your habits because
-every action is preceded by a prediction. Life feels reactive, but it is actually
-predictive. All day long, you are making your best guess of how to act given
-what you’ve just seen and what has worked for you in the past. You are
-endlessly predicting what will happen in the next moment.
-Our behavior is heavily dependent on these predictions. Put another way, our
-behavior is heavily dependent on how we interpret the events that happen to us,
-not necessarily the objective reality of the events themselves. Two people can
-look at the same cigarette, and one feels the urge to smoke while the other is
-repulsed by the smell. The same cue can spark a good habit or a bad habit
-depending on your prediction. The cause of your habits is actually the prediction
-that precedes them.
-These predictions lead to feelings, which is how we typically describe a
-craving—a feeling, a desire, an urge. Feelings and emotions transform the cues
-we perceive and the predictions we make into a signal that we can apply. They
-help explain what we are currently sensing. For instance, whether or not you
-realize it, you are noticing how warm or cold you feel right now. If the
-temperature drops by one degree, you probably won’t do anything. If the
-temperature drops ten degrees, however, you’ll feel cold and put on another
-layer of clothing. Feeling cold was the signal that prompted you to act. You have
-been sensing the cues the entire time, but it is only when you predict that you
-would be better off in a different state that you take action.
-A craving is the sense that something is missing. It is the desire to change
-your internal state. When the temperature falls, there is a gap between what your
-body is currently sensing and what it wants to be sensing. This gap between your
-current state and your desired state provides a reason to act.
-Desire is the difference between where you are now and where you want to be
-in the future. Even the tiniest action is tinged with the motivation to feel
-differently than you do in the moment. When you binge-eat or light up or browse
-social media, what you really want is not a potato chip or a cigarette or a bunch
-of likes. What you really want is to feel different.
-Our feelings and emotions tell us whether to hold steady in our current state or
-to make a change. They help us decide the best course of action. Neurologists
-have discovered that when emotions and feelings are impaired, we actually lose
-the ability to make decisions. We have no signal of what to pursue and what to
-avoid. As the neuroscientist Antonio Damasio explains, “It is emotion that
-allows you to mark things as good, bad, or indifferent.”
-To summarize, the specific cravings you feel and habits you perform are
-really an attempt to address your fundamental underlying motives. Whenever a
-habit successfully addresses a motive, you develop a craving to do it again. In
-time, you learn to predict that checking social media will help you feel loved or
-that watching YouTube will allow you to forget your fears. Habits are attractive
-when we associate them with positive feelings, and we can use this insight to our
-advantage rather than to our detriment.
-HOW TO REPROGRAM YOUR BRAIN TO ENJOY HARD HABITS
-You can make hard habits more attractive if you can learn to associate them with
-a positive experience. Sometimes, all you need is a slight mind-set shift. For
-instance, we often talk about everything we have to do in a given day. You have
-to wake up early for work. You have to make another sales call for your
-business. You have to cook dinner for your family.
-Now, imagine changing just one word: You don’t “have” to. You “get” to.
-You get to wake up early for work. You get to make another sales call for
-your business. You get to cook dinner for your family. By simply changing one
-word, you shift the way you view each event. You transition from seeing these
-behaviors as burdens and turn them into opportunities.
-The key point is that both versions of reality are true. You have to do those
-things, and you also get to do them. We can find evidence for whatever mind-set
-we choose.
-I once heard a story about a man who uses a wheelchair. When asked if it was
-difficult being confined, he responded, “I’m not confined to my wheelchair—I
-am liberated by it. If it wasn’t for my wheelchair, I would be bed-bound and
-never able to leave my house.” This shift in perspective completely transformed
-how he lived each day.
-Reframing your habits to highlight their benefits rather than their drawbacks is
-a fast and lightweight way to reprogram your mind and make a habit seem more
-attractive.
-Exercise. Many people associate exercise with being a challenging task that
-drains energy and wears you down. You can just as easily view it as a way to
-develop skills and build you up. Instead of telling yourself “I need to go run in
-the morning,” say “It’s time to build endurance and get fast.”
-Finance. Saving money is often associated with sacrifice. However, you can
-associate it with freedom rather than limitation if you realize one simple truth:
-living below your current means increases your future means. The money you
-save this month increases your purchasing power next month.
-Meditation. Anyone who has tried meditation for more than three seconds
-knows how frustrating it can be when the next distraction inevitably pops into
-your mind. You can transform frustration into delight when you realize that each
-interruption gives you a chance to practice returning to your breath. Distraction
-is a good thing because you need distractions to practice meditation.
-Pregame jitters. Many people feel anxious before delivering a big
-presentation or competing in an important event. They experience quicker
-breathing, a faster heart rate, heightened arousal. If we interpret these feelings
-negatively, then we feel threatened and tense up. If we interpret these feelings
-positively, then we can respond with fluidity and grace. You can reframe “I am
-nervous” to “I am excited and I’m getting an adrenaline rush to help me
-concentrate.”
-These little mind-set shifts aren’t magic, but they can help change the feelings
-you associate with a particular habit or situation.
-If you want to take it a step further, you can create a motivation ritual. You
-simply practice associating your habits with something you enjoy, then you can
-use that cue whenever you need a bit of motivation. For instance, if you always
-play the same song before having sex, then you’ll begin to link the music with
-the act. Whenever you want to get in the mood, just press play.
-Ed Latimore, a boxer and writer from Pittsburgh, benefited from a similar
-strategy without knowing it. “Odd realization,” he wrote. “My focus and
-concentration goes up just by putting my headphones [on] while writing. I don’t
-even have to play any music.” Without realizing it, he was conditioning himself.
-In the beginning, he put his headphones on, played some music he enjoyed, and
-did focused work. After doing it five, ten, twenty times, putting his headphones
-on became a cue that he automatically associated with increased focus. The
-craving followed naturally.
-Athletes use similar strategies to get themselves in the mind-set to perform.
-During my baseball career, I developed a specific ritual of stretching and
-throwing before each game. The whole sequence took about ten minutes, and I
-did it the same way every single time. While it physically warmed me up to play,
-more importantly, it put me in the right mental state. I began to associate my
-pregame ritual with feeling competitive and focused. Even if I wasn’t motivated
-beforehand, by the time I was done with my ritual, I was in “game mode.”
-You can adapt this strategy for nearly any purpose. Say you want to feel
-happier in general. Find something that makes you truly happy—like petting
-your dog or taking a bubble bath—and then create a short routine that you
-perform every time before you do the thing you love. Maybe you take three deep
-breaths and smile.
-Three deep breaths. Smile. Pet the dog. Repeat.
-Eventually, you’ll begin to associate this breathe-and-smile routine with being
-in a good mood. It becomes a cue that means feeling happy. Once established,
-you can break it out anytime you need to change your emotional state. Stressed
-at work? Take three deep breaths and smile. Sad about life? Three deep breaths
-and smile. Once a habit has been built, the cue can prompt a craving, even if it
-has little to do with the original situation.
-The key to finding and fixing the causes of your bad habits is to reframe the
-associations you have about them. It’s not easy, but if you can reprogram your
-predictions, you can transform a hard habit into an attractive one.
-Chapter Summary
-The inversion of the 2nd Law of Behavior Change is make it
-unattractive.
-Every behavior has a surface level craving and a deeper underlying
-motive.
-Your habits are modern-day solutions to ancient desires.
-The cause of your habits is actually the prediction that precedes them.
-The prediction leads to a feeling.
-Highlight the benefits of avoiding a bad habit to make it seem
-unattractive.
-Habits are attractive when we associate them with positive feelings
-and unattractive when we associate them with negative feelings.
-Create a motivation ritual by doing something you enjoy immediately
-before a difficult habit.
-HOW TO CREATE A GOOD HABIT`,
-  },
-  {
-    chapter_number: 11,
-    title: "Walk Slowly, but Never Backward",
-    content: `ON THE FIRST day of class, Jerry Uelsmann, a professor at the University of Florida,
-divided his film photography students into two groups.
-Everyone on the left side of the classroom, he explained, would be in the
-“quantity” group. They would be graded solely on the amount of work they
-produced. On the final day of class, he would tally the number of photos
-submitted by each student. One hundred photos would rate an A, ninety photos a
-B, eighty photos a C, and so on.
-Meanwhile, everyone on the right side of the room would be in the “quality”
-group. They would be graded only on the excellence of their work. They would
-only need to produce one photo during the semester, but to get an A, it had to be
-a nearly perfect image.
-At the end of the term, he was surprised to find that all the best photos were
-produced by the quantity group. During the semester, these students were busy
-taking photos, experimenting with composition and lighting, testing out various
-methods in the darkroom, and learning from their mistakes. In the process of
-creating hundreds of photos, they honed their skills. Meanwhile, the quality
-group sat around speculating about perfection. In the end, they had little to show
-for their efforts other than unverified theories and one mediocre photo.*
-It is easy to get bogged down trying to find the optimal plan for change: the
-fastest way to lose weight, the best program to build muscle, the perfect idea for
-a side hustle. We are so focused on figuring out the best approach that we never
-get around to taking action. As Voltaire once wrote, “The best is the enemy of
-the good.”
-I refer to this as the difference between being in motion and taking action. The
-two ideas sound similar, but they’re not the same. When you’re in motion,
-you’re planning and strategizing and learning. Those are all good things, but
-they don’t produce a result.
-Action, on the other hand, is the type of behavior that will deliver an outcome.
-If I outline twenty ideas for articles I want to write, that’s motion. If I actually sit
-down and write an article, that’s action. If I search for a better diet plan and read
-a few books on the topic, that’s motion. If I actually eat a healthy meal, that’s
-action.
-Sometimes motion is useful, but it will never produce an outcome by itself. It
-doesn’t matter how many times you go talk to the personal trainer, that motion
-will never get you in shape. Only the action of working out will get the result
-you’re looking to achieve.
-If motion doesn’t lead to results, why do we do it? Sometimes we do it
-because we actually need to plan or learn more. But more often than not, we do
-it because motion allows us to feel like we’re making progress without running
-the risk of failure. Most of us are experts at avoiding criticism. It doesn’t feel
-good to fail or to be judged publicly, so we tend to avoid situations where that
-might happen. And that’s the biggest reason why you slip into motion rather than
-taking action: you want to delay failure.
-It’s easy to be in motion and convince yourself that you’re still making
-progress. You think, “I’ve got conversations going with four potential clients
-right now. This is good. We’re moving in the right direction.” Or, “I
-brainstormed some ideas for that book I want to write. This is coming together.”
-Motion makes you feel like you’re getting things done. But really, you’re just
-preparing to get something done. When preparation becomes a form of
-procrastination, you need to change something. You don’t want to merely be
-planning. You want to be practicing.
-If you want to master a habit, the key is to start with repetition, not perfection.
-You don’t need to map out every feature of a new habit. You just need to
-practice it. This is the first takeaway of the 3rd Law: you just need to get your
-reps in.
-HOW LONG DOES IT ACTUALLY TAKE TO FORM A NEW HABIT?
-Habit formation is the process by which a behavior becomes progressively more
-automatic through repetition. The more you repeat an activity, the more the
-structure of your brain changes to become efficient at that activity.
-Neuroscientists call this long-term potentiation, which refers to the strengthening
-of connections between neurons in the brain based on recent patterns of activity.
-With each repetition, cell-to-cell signaling improves and the neural connections
-tighten. First described by neuropsychologist Donald Hebb in 1949, this
-phenomenon is commonly known as Hebb’s Law: “Neurons that fire together
-wire together.”
-Repeating a habit leads to clear physical changes in the brain. In musicians,
-the cerebellum—critical for physical movements like plucking a guitar string or
-pulling a violin bow—is larger than it is in nonmusicians. Mathematicians,
-meanwhile, have increased gray matter in the inferior parietal lobule, which
-plays a key role in computation and calculation. Its size is directly correlated
-with the amount of time spent in the field; the older and more experienced the
-mathematician, the greater the increase in gray matter.
-When scientists analyzed the brains of taxi drivers in London, they found that
-the hippocampus—a region of the brain involved in spatial memory—was
-significantly larger in their subjects than in non–taxi drivers. Even more
-fascinating, the hippocampus decreased in size when a driver retired. Like the
-muscles of the body responding to regular weight training, particular regions of
-the brain adapt as they are used and atrophy as they are abandoned.
-Of course, the importance of repetition in establishing habits was recognized
-long before neuroscientists began poking around. In 1860, the English
-philosopher George H. Lewes noted, “In learning to speak a new language, to
-play on a musical instrument, or to perform unaccustomed movements, great
-difficulty is felt, because the channels through which each sensation has to pass
-have not become established; but no sooner has frequent repetition cut a
-pathway, than this difficulty vanishes; the actions become so automatic that they
-can be performed while the mind is otherwise engaged.” Both common sense
-and scientific evidence agree: repetition is a form of change.
-Each time you repeat an action, you are activating a particular neural circuit
-associated with that habit. This means that simply putting in your reps is one of
-the most critical steps you can take to encoding a new habit. It is why the
-students who took tons of photos improved their skills while those who merely
-theorized about perfect photos did not. One group engaged in active practice, the
-other in passive learning. One in action, the other in motion.
-All habits follow a similar trajectory from effortful practice to automatic
-behavior, a process known as automaticity. Automaticity is the ability to perform
-a behavior without thinking about each step, which occurs when the
-nonconscious mind takes over.
-It looks something like this:
-THE HABIT LINE
-FIGURE 11: In the beginning (point A), a habit requires a good deal of effort and concentration to perform. After a few repetitions (point B), it gets easier, but still requires some conscious
-attention. With enough practice (point C), the habit becomes more automatic than conscious. Beyond this threshold—the habit line—the behavior can be done more or less without thinking.
-A new habit has been formed.
-On the following page, you’ll see what it looks like when researchers track the
-level of automaticity for an actual habit like walking for ten minutes each day.
-The shape of these charts, which scientists call learning curves, reveals an
-important truth about behavior change: habits form based on frequency, not
-time.
-WALKING 10 MINUTES PER DAY
-FIGURE 12: This graph shows someone who built the habit of walking for ten minutes after breakfast each day. Notice that as the repetitions increase, so does automaticity, until the
-behavior is as easy and automatic as it can be.
-One of the most common questions I hear is, “How long does it take to build a
-new habit?” But what people really should be asking is, “How many does it take
-to form a new habit?” That is, how many repetitions are required to make a habit
-automatic?
-There is nothing magical about time passing with regard to habit formation. It
-doesn’t matter if it’s been twenty-one days or thirty days or three hundred days.
-What matters is the rate at which you perform the behavior. You could do
-something twice in thirty days, or two hundred times. It’s the frequency that
-makes the difference. Your current habits have been internalized over the course
-of hundreds, if not thousands, of repetitions. New habits require the same level
-of frequency. You need to string together enough successful attempts until the
-behavior is firmly embedded in your mind and you cross the Habit Line.
-In practice, it doesn’t really matter how long it takes for a habit to become
-automatic. What matters is that you take the actions you need to take to make
-progress. Whether an action is fully automatic is of less importance.
-To build a habit, you need to practice it. And the most effective way to make
-practice happen is to adhere to the 3rd Law of Behavior Change: make it easy.
-The chapters that follow will show you how to do exactly that.
-Chapter Summary
-The 3rd Law of Behavior Change is make it easy.
-The most effective form of learning is practice, not planning.
-Focus on taking action, not being in motion.
-Habit formation is the process by which a behavior becomes
-progressively more automatic through repetition.
-The amount of time you have been performing a habit is not as
-important as the number of times you have performed it.`,
-  },
-  {
-    chapter_number: 12,
-    title: "The Law of Least Effort",
-    content: `IN HIS AWARD-WINNING BOOK, Guns, Germs, and Steel, anthropologist and biologist Jared
-Diamond points out a simple fact: different continents have different shapes. At
-first glance, this statement seems rather obvious and unimportant, but it turns out
-to have a profound impact on human behavior.
-The primary axis of the Americas runs from north to south. That is, the
-landmass of North and South America tends to be tall and thin rather than wide
-and fat. The same is generally true for Africa. Meanwhile, the landmass that
-makes up Europe, Asia, and the Middle East is the opposite. This massive stretch
-of land tends to be more east-west in shape. According to Diamond, this
-difference in shape played a significant role in the spread of agriculture over the
-centuries.
-When agriculture began to spread around the globe, farmers had an easier
-time expanding along east-west routes than along north-south ones. This is
-because locations along the same latitude generally share similar climates,
-amounts of sunlight and rainfall, and changes in season. These factors allowed
-farmers in Europe and Asia to domesticate a few crops and grow them along the
-entire stretch of land from France to China.
-THE SHAPE OF HUMAN BEHAVIOR
-FIGURE 13: The primary axis of Europe and Asia is east-west. The primary axis of the Americas and Africa is north-south. This leads to a wider range of climates up-and-down the
-Americas than across Europe and Asia. As a result, agriculture spread nearly twice as fast across Europe and Asia than it did elsewhere. The behavior of farmers—even across hundreds or
-thousands of years—was constrained by the amount of friction in the environment.
-By comparison, the climate varies greatly when traveling from north to south.
-Just imagine how different the weather is in Florida compared to Canada. You
-can be the most talented farmer in the world, but it won’t help you grow Florida
-oranges in the Canadian winter. Snow is a poor substitute for soil. In order to
-spread crops along north-south routes, farmers would need to find and
-domesticate new plants whenever the climate changed.
-As a result, agriculture spread two to three times faster across Asia and
-Europe than it did up and down the Americas. Over the span of centuries, this
-small difference had a very big impact. Increased food production allowed for
-more rapid population growth. With more people, these cultures were able to
-build stronger armies and were better equipped to develop new technologies.
-The changes started out small—a crop that spread slightly farther, a population
-that grew slightly faster—but compounded into substantial differences over time.
-The spread of agriculture provides an example of the 3rd Law of Behavior
-Change on a global scale. Conventional wisdom holds that motivation is the key
-to habit change. Maybe if you really wanted it, you’d actually do it. But the truth
-is, our real motivation is to be lazy and to do what is convenient. And despite
-what the latest productivity best seller will tell you, this is a smart strategy, not a
-dumb one.
-Energy is precious, and the brain is wired to conserve it whenever possible. It
-is human nature to follow the Law of Least Effort, which states that when
-deciding between two similar options, people will naturally gravitate toward the
-option that requires the least amount of work.* For example, expanding your
-farm to the east where you can grow the same crops rather than heading north
-where the climate is different. Out of all the possible actions we could take, the
-one that is realized is the one that delivers the most value for the least effort. We
-are motivated to do what is easy.
-Every action requires a certain amount of energy. The more energy required,
-the less likely it is to occur. If your goal is to do a hundred push-ups per day,
-that’s a lot of energy! In the beginning, when you’re motivated and excited, you
-can muster the strength to get started. But after a few days, such a massive effort
-feels exhausting. Meanwhile, sticking to the habit of doing one push-up per day
-requires almost no energy to get started. And the less energy a habit requires, the
-more likely it is to occur.
-Look at any behavior that fills up much of your life and you’ll see that it can
-be performed with very low levels of motivation. Habits like scrolling on our
-phones, checking email, and watching television steal so much of our time
-because they can be performed almost without effort. They are remarkably
-convenient.
-In a sense, every habit is just an obstacle to getting what you really want.
-Dieting is an obstacle to getting fit. Meditation is an obstacle to feeling calm.
-Journaling is an obstacle to thinking clearly. You don’t actually want the habit
-itself. What you really want is the outcome the habit delivers. The greater the
-obstacle—that is, the more difficult the habit—the more friction there is between
-you and your desired end state. This is why it is crucial to make your habits so
-easy that you’ll do them even when you don’t feel like it. If you can make your
-good habits more convenient, you’ll be more likely to follow through on them.
-But what about all the moments when we seem to do the opposite? If we’re all
-so lazy, then how do you explain people accomplishing hard things like raising a
-child or starting a business or climbing Mount Everest?
-Certainly, you are capable of doing very hard things. The problem is that
-some days you feel like doing the hard work and some days you feel like giving
-in. On the tough days, it’s crucial to have as many things working in your favor
-as possible so that you can overcome the challenges life naturally throws your
-way. The less friction you face, the easier it is for your stronger self to emerge.
-The idea behind make it easy is not to only do easy things. The idea is to make it
-as easy as possible in the moment to do things that payoff in the long run.
-HOW TO ACHIEVE MORE WITH LESS EFFORT
-Imagine you are holding a garden hose that is bent in the middle. Some water
-can flow through, but not very much. If you want to increase the rate at which
-water passes through the hose, you have two options. The first option is to crank
-up the valve and force more water out. The second option is to simply remove
-the bend in the hose and let water flow through naturally.
-Trying to pump up your motivation to stick with a hard habit is like trying to
-force water through a bent hose. You can do it, but it requires a lot of effort and
-increases the tension in your life. Meanwhile, making your habits simple and
-easy is like removing the bend in the hose. Rather than trying to overcome the
-friction in your life, you reduce it.
-One of the most effective ways to reduce the friction associated with your
-habits is to practice environment design. In Chapter 6, we discussed environment
-design as a method for making cues more obvious, but you can also optimize
-your environment to make actions easier. For example, when deciding where to
-practice a new habit, it is best to choose a place that is already along the path of
-your daily routine. Habits are easier to build when they fit into the flow of your
-life. You are more likely to go to the gym if it is on your way to work because
-stopping doesn’t add much friction to your lifestyle. By comparison, if the gym
-is off the path of your normal commute—even by just a few blocks—now you’re
-going “out of your way” to get there.
-Perhaps even more effective is reducing the friction within your home or
-office. Too often, we try to start habits in high-friction environments. We try to
-follow a strict diet while we are out to dinner with friends. We try to write a
-book in a chaotic household. We try to concentrate while using a smartphone
-filled with distractions. It doesn’t have to be this way. We can remove the points
-of friction that hold us back. This is precisely what electronics manufacturers in
-Japan began to do in the 1970s.
-In an article published in the New Yorker titled “Better All the Time,” James
-Suroweicki writes:
-“Japanese firms emphasized what came to be known as ‘lean production,’
-relentlessly looking to remove waste of all kinds from the production process,
-down to redesigning workspaces, so workers didn’t have to waste time twisting
-and turning to reach their tools. The result was that Japanese factories were more
-efficient and Japanese products were more reliable than American ones. In 1974,
-service calls for American-made color televisions were five times as common as
-for Japanese televisions. By 1979, it took American workers three times as long
-to assemble their sets.”
-I like to refer to this strategy as addition by subtraction.* The Japanese
-companies looked for every point of friction in the manufacturing process and
-eliminated it. As they subtracted wasted effort, they added customers and
-revenue. Similarly, when we remove the points of friction that sap our time and
-energy, we can achieve more with less effort. (This is one reason tidying up can
-feel so good: we are simultaneously moving forward and lightening the
-cognitive load our environment places on us.)
-If you look at the most habit-forming products, you’ll notice that one of the
-things these goods and services do best is remove little bits of friction from your
-life. Meal delivery services reduce the friction of shopping for groceries. Dating
-apps reduce the friction of making social introductions. Ride-sharing services
-reduce the friction of getting across town. Text messaging reduces the friction of
-sending a letter in the mail.
-Like a Japanese television manufacturer redesigning their workspace to
-reduce wasted motion, successful companies design their products to automate,
-eliminate, or simplify as many steps as possible. They reduce the number of
-fields on each form. They pare down the number of clicks required to create an
-account. They deliver their products with easy-to-understand directions or ask
-their customers to make fewer choices.
-When the first voice-activated speakers were released—products like Google
-Home, Amazon Echo, and Apple HomePod—I asked a friend what he liked
-about the product he had purchased. He said it was just easier to say “Play some
-country music” than to pull out his phone, open the music app, and pick a
-playlist. Of course, just a few years earlier, having unlimited access to music in
-your pocket was a remarkably frictionless behavior compared to driving to the
-store and buying a CD. Business is a never-ending quest to deliver the same
-result in an easier fashion.
-Similar strategies have been used effectively by governments. When the
-British government wanted to increase tax collection rates, they switched from
-sending citizens to a web page where the tax form could be downloaded to
-linking directly to the form. Reducing that one step in the process increased the
-response rate from 19.2 percent to 23.4 percent. For a country like the United
-Kingdom, those percentage points represent millions in tax revenue.
-The central idea is to create an environment where doing the right thing is as
-easy as possible. Much of the battle of building better habits comes down to
-finding ways to reduce the friction associated with our good habits and increase
-the friction associated with our bad ones.
-PRIME THE ENVIRONMENT FOR FUTURE USE
-Oswald Nuckols is an IT developer from Natchez, Mississippi. He is also
-someone who understands the power of priming his environment.
-Nuckols dialed in his cleaning habits by following a strategy he refers to as
-“resetting the room.” For instance, when he finishes watching television, he
-places the remote back on the TV stand, arranges the pillows on the couch, and
-folds the blanket. When he leaves his car, he throws any trash away. Whenever
-he takes a shower, he wipes down the toilet while the shower is warming up. (As
-he notes, the “perfect time to clean the toilet is right before you wash yourself in
-the shower anyway.”) The purpose of resetting each room is not simply to clean
-up after the last action, but to prepare for the next action.
-“When I walk into a room everything is in its right place,” Nuckols wrote.
-“Because I do this every day in every room, stuff always stays in good shape. . . .
-People think I work hard but I’m actually really lazy. I’m just proactively lazy. It
-gives you so much time back.”
-Whenever you organize a space for its intended purpose, you are priming it to
-make the next action easy. For instance, my wife keeps a box of greeting cards
-that are presorted by occasion—birthday, sympathy, wedding, graduation, and
-more. Whenever necessary, she grabs an appropriate card and sends it off. She is
-incredibly good at remembering to send cards because she has reduced the
-friction of doing so. For years, I was the opposite. Someone would have a baby
-and I would think, “I should send a card.” But then weeks would pass and by the
-time I remembered to pick one up at the store, it was too late. The habit wasn’t
-easy.
-There are many ways to prime your environment so it’s ready for immediate
-use. If you want to cook a healthy breakfast, place the skillet on the stove, set the
-cooking spray on the counter, and lay out any plates and utensils you’ll need the
-night before. When you wake up, making breakfast will be easy.
-Want to draw more? Put your pencils, pens, notebooks, and drawing
-tools on top of your desk, within easy reach.
-Want to exercise? Set out your workout clothes, shoes, gym bag, and
-water bottle ahead of time.
-Want to improve your diet? Chop up a ton of fruits and vegetables on
-weekends and pack them in containers, so you have easy access to
-healthy, ready-to-eat options during the week.
-These are simple ways to make the good habit the path of least resistance.
-You can also invert this principle and prime the environment to make bad
-behaviors difficult. If you find yourself watching too much television, for
-example, then unplug it after each use. Only plug it back in if you can say out
-loud the name of the show you want to watch. This setup creates just enough
-friction to prevent mindless viewing.
-If that doesn’t do it, you can take it a step further. Unplug the television and
-take the batteries out of the remote after each use, so it takes an extra ten seconds
-to turn it back on. And if you’re really hard-core, move the television out of the
-living room and into a closet after each use. You can be sure you’ll only take it
-out when you really want to watch something. The greater the friction, the less
-likely the habit.
-Whenever possible, I leave my phone in a different room until lunch. When
-it’s right next to me, I’ll check it all morning for no reason at all. But when it is
-in another room, I rarely think about it. And the friction is high enough that I
-won’t go get it without a reason. As a result, I get three to four hours each
-morning when I can work without interruption.
-If sticking your phone in another room doesn’t seem like enough, tell a friend
-or family member to hide it from you for a few hours. Ask a coworker to keep it
-at their desk in the morning and give it back to you at lunch.
-It is remarkable how little friction is required to prevent unwanted behavior.
-When I hide beer in the back of the fridge where I can’t see it, I drink less. When
-I delete social media apps from my phone, it can be weeks before I download
-them again and log in. These tricks are unlikely to curb a true addiction, but for
-many of us, a little bit of friction can be the difference between sticking with a
-good habit or sliding into a bad one. Imagine the cumulative impact of making
-dozens of these changes and living in an environment designed to make the good
-behaviors easier and the bad behaviors harder.
-Whether we are approaching behavior change as an individual, a parent, a
-coach, or a leader, we should ask ourselves the same question: “How can we
-design a world where it’s easy to do what’s right?” Redesign your life so the
-actions that matter most are also the actions that are easiest to do.
-Chapter Summary
-Human behavior follows the Law of Least Effort. We will naturally
-gravitate toward the option that requires the least amount of work.
-Create an environment where doing the right thing is as easy as
-possible.
-Reduce the friction associated with good behaviors. When friction is
-low, habits are easy.
-Increase the friction associated with bad behaviors. When friction is
-high, habits are difficult.
-Prime your environment to make future actions easier.`,
-  },
-  {
-    chapter_number: 13,
-    title: "How to Stop Procrastinating by Using the TwoMinute Rule",
-    content: `TWYLA THARP IS widely regarded as one of the greatest dancers and choreographers
-of the modern era. In 1992, she was awarded a MacArthur Fellowship, often
-referred to as the Genius Grant, and she has spent the bulk of her career touring
-the globe to perform her original works. She also credits much of her success to
-simple daily habits.
-“I begin each day of my life with a ritual,” she writes. “I wake up at 5:30
-A.M., put on my workout clothes, my leg warmers, my sweat shirt, and my hat. I
-walk outside my Manhattan home, hail a taxi, and tell the driver to take me to
-the Pumping Iron gym at 91st Street and First Avenue, where I work out for two
-hours.
-“The ritual is not the stretching and weight training I put my body through
-each morning at the gym; the ritual is the cab. The moment I tell the driver
-where to go I have completed the ritual.
-“It’s a simple act, but doing it the same way each morning habitualizes it—
-makes it repeatable, easy to do. It reduces the chance that I would skip it or do it
-differently. It is one more item in my arsenal of routines, and one less thing to
-think about.”
-Hailing a cab each morning may be a tiny action, but it is a splendid example
-of the 3rd Law of Behavior Change.
-Researchers estimate that 40 to 50 percent of our actions on any given day are
-done out of habit. This is already a substantial percentage, but the true influence
-of your habits is even greater than these numbers suggest. Habits are automatic
-choices that influence the conscious decisions that follow. Yes, a habit can be
-completed in just a few seconds, but it can also shape the actions that you take
-for minutes or hours afterward.
-Habits are like the entrance ramp to a highway. They lead you down a path
-and, before you know it, you’re speeding toward the next behavior. It seems to
-be easier to continue what you are already doing than to start doing something
-different. You sit through a bad movie for two hours. You keep snacking even
-when you’re already full. You check your phone for “just a second” and soon
-you have spent twenty minutes staring at the screen. In this way, the habits you
-follow without thinking often determine the choices you make when you are
-thinking.
-Each evening, there is a tiny moment—usually around 5:15 p.m.—that shapes
-the rest of my night. My wife walks in the door from work and either we change
-into our workout clothes and head to the gym or we crash onto the couch, order
-Indian food, and watch The Office.* Similar to Twyla Tharp hailing the cab, the
-ritual is changing into my workout clothes. If I change clothes, I know the
-workout will happen. Everything that follows—driving to the gym, deciding
-which exercises to do, stepping under the bar—is easy once I’ve taken the first
-step.
-Every day, there are a handful of moments that deliver an outsized impact. I
-refer to these little choices as decisive moments. The moment you decide
-between ordering takeout or cooking dinner. The moment you choose between
-driving your car or riding your bike. The moment you decide between starting
-your homework or grabbing the video game controller. These choices are a fork
-in the road.
-DECISIVE MOMENTS
-FIGURE 14: The difference between a good day and a bad day is often a few productive and healthy choices made at decisive moments. Each one is like a fork in the road, and these choices
-stack up throughout the day and can ultimately lead to very different outcomes.
-Decisive moments set the options available to your future self. For instance,
-walking into a restaurant is a decisive moment because it determines what you’ll
-be eating for lunch. Technically, you are in control of what you order, but in a
-larger sense, you can only order an item if it is on the menu. If you walk into a
-steakhouse, you can get a sirloin or a rib eye, but not sushi. Your options are
-constrained by what’s available. They are shaped by the first choice.
-We are limited by where our habits lead us. This is why mastering the
-decisive moments throughout your day is so important. Each day is made up of
-many moments, but it is really a few habitual choices that determine the path
-you take. These little choices stack up, each one setting the trajectory for how
-you spend the next chunk of time.
-Habits are the entry point, not the end point. They are the cab, not the gym.
-THE TWO-MINUTE RULE
-Even when you know you should start small, it’s easy to start too big. When you
-dream about making a change, excitement inevitably takes over and you end up
-trying to do too much too soon. The most effective way I know to counteract this
-tendency is to use the Two-Minute Rule, which states, “When you start a new
-habit, it should take less than two minutes to do.”
-You’ll find that nearly any habit can be scaled down into a two-minute
-version:
-“Read before bed each night” becomes “Read one page.”
-“Do thirty minutes of yoga” becomes “Take out my yoga mat.”
-“Study for class” becomes “Open my notes.”
-“Fold the laundry” becomes “Fold one pair of socks.”
-“Run three miles” becomes “Tie my running shoes.”
-The idea is to make your habits as easy as possible to start. Anyone can
-meditate for one minute, read one page, or put one item of clothing away. And,
-as we have just discussed, this is a powerful strategy because once you’ve started
-doing the right thing, it is much easier to continue doing it. A new habit should
-not feel like a challenge. The actions that follow can be challenging, but the first
-two minutes should be easy. What you want is a “gateway habit” that naturally
-leads you down a more productive path.
-You can usually figure out the gateway habits that will lead to your desired
-outcome by mapping out your goals on a scale from “very easy” to “very hard.”
-For instance, running a marathon is very hard. Running a 5K is hard. Walking
-ten thousand steps is moderately difficult. Walking ten minutes is easy. And
-putting on your running shoes is very easy. Your goal might be to run a
-marathon, but your gateway habit is to put on your running shoes. That’s how
-you follow the Two-Minute Rule.
-Very easy Easy Moderate Hard Very hard
-Put on your running shoes Walk ten minutes Walk ten thousand steps Run a 5K Run a marathon
-Write one sentence Write one paragraph Write one thousand words Write a five-thousand-word article Write a book
-Open your notes Study for ten minutes Study for three hours Get straight A’s Earn a PhD
-People often think it’s weird to get hyped about reading one page or
-meditating for one minute or making one sales call. But the point is not to do one
-thing. The point is to master the habit of showing up. The truth is, a habit must
-be established before it can be improved. If you can’t learn the basic skill of
-showing up, then you have little hope of mastering the finer details. Instead of
-trying to engineer a perfect habit from the start, do the easy thing on a more
-consistent basis. You have to standardize before you can optimize.
-As you master the art of showing up, the first two minutes simply become a
-ritual at the beginning of a larger routine. This is not merely a hack to make
-habits easier but actually the ideal way to master a difficult skill. The more you
-ritualize the beginning of a process, the more likely it becomes that you can slip
-into the state of deep focus that is required to do great things. By doing the same
-warm-up before every workout, you make it easier to get into a state of peak
-performance. By following the same creative ritual, you make it easier to get
-into the hard work of creating. By developing a consistent power-down habit,
-you make it easier to get to bed at a reasonable time each night. You may not be
-able to automate the whole process, but you can make the first action mindless.
-Make it easy to start and the rest will follow.
-The Two-Minute Rule can seem like a trick to some people. You know that
-the real goal is to do more than just two minutes, so it may feel like you’re
-trying to fool yourself. Nobody is actually aspiring to read one page or do one
-push-up or open their notes. And if you know it’s a mental trick, why would you
-fall for it?
-If the Two-Minute Rule feels forced, try this: do it for two minutes and then
-stop. Go for a run, but you must stop after two minutes. Start meditating, but you
-must stop after two minutes. Study Arabic, but you must stop after two minutes.
-It’s not a strategy for starting, it’s the whole thing. Your habit can only last one
-hundred and twenty seconds.
-One of my readers used this strategy to lose over one hundred pounds. In the
-beginning, he went to the gym each day, but he told himself he wasn’t allowed
-to stay for more than five minutes. He would go to the gym, exercise for five
-minutes, and leave as soon as his time was up. After a few weeks, he looked
-around and thought, “Well, I’m always coming here anyway. I might as well
-start staying a little longer.” A few years later, the weight was gone.
-Journaling provides another example. Nearly everyone can benefit from
-getting their thoughts out of their head and onto paper, but most people give up
-after a few days or avoid it entirely because journaling feels like a chore.* The
-secret is to always stay below the point where it feels like work. Greg
-McKeown, a leadership consultant from the United Kingdom, built a daily
-journaling habit by specifically writing less than he felt like. He always stopped
-journaling before it seemed like a hassle. Ernest Hemingway believed in similar
-advice for any kind of writing. “The best way is to always stop when you are
-going good,” he said.
-Strategies like this work for another reason, too: they reinforce the identity
-you want to build. If you show up at the gym five days in a row—even if it’s just
-for two minutes—you are casting votes for your new identity. You’re not
-worried about getting in shape. You’re focused on becoming the type of person
-who doesn’t miss workouts. You’re taking the smallest action that confirms the
-type of person you want to be.
-We rarely think about change this way because everyone is consumed by the
-end goal. But one push-up is better than not exercising. One minute of guitar
-practice is better than none at all. One minute of reading is better than never
-picking up a book. It’s better to do less than you hoped than to do nothing at all.
-At some point, once you’ve established the habit and you’re showing up each
-day, you can combine the Two-Minute Rule with a technique we call habit
-shaping to scale your habit back up toward your ultimate goal. Start by
-mastering the first two minutes of the smallest version of the behavior. Then,
-advance to an intermediate step and repeat the process—focusing on just the first
-two minutes and mastering that stage before moving on to the next level.
-Eventually, you’ll end up with the habit you had originally hoped to build while
-still keeping your focus where it should be: on the first two minutes of the
-behavior.
-EXAMPLES OF HABIT SHAPING
-Becoming an Early Riser
-Phase 1: Be home by 10 p.m. every night.
-Phase 2: Have all devices (TV, phone, etc.) turned off by 10 p.m. every night.
-Phase 3: Be in bed by 10 p.m. every night (reading a book, talking with your partner).
-Phase 4: Lights off by 10 p.m. every night.
-Phase 5: Wake up at 6 a.m. every day.
-Becoming Vegan
-Phase 1: Start eating vegetables at each meal.
-Phase 2: Stop eating animals with four legs (cow, pig, lamb, etc.).
-Phase 3: Stop eating animals with two legs (chicken, turkey, etc.).
-Phase 4: Stop eating animals with no legs (fish, clams, scallops, etc.).
-Phase 5: Stop eating all animal products (eggs, milk, cheese).
-Starting to Exercise
-Phase 1: Change into workout clothes.
-Phase 2: Step out the door (try taking a walk).
-Phase 3: Drive to the gym, exercise for five minutes, and leave.
-Phase 4: Exercise for fifteen minutes at least once per week.
-Phase 5: Exercise three times per week.
-Nearly any larger life goal can be transformed into a two-minute behavior. I
-want to live a healthy and long life > I need to stay in shape > I need to exercise
-> I need to change into my workout clothes. I want to have a happy marriage > I
-need to be a good partner > I should do something each day to make my
-partner’s life easier > I should meal plan for next week.
-Whenever you are struggling to stick with a habit, you can employ the TwoMinute Rule. It’s a simple way to make your habits easy.
-Chapter Summary
-Habits can be completed in a few seconds but continue to impact your
-behavior for minutes or hours afterward.
-Many habits occur at decisive moments—choices that are like a fork in
-the road—and either send you in the direction of a productive day or
-an unproductive one.
-The Two-Minute Rule states, “When you start a new habit, it should
-take less than two minutes to do.”
-The more you ritualize the beginning of a process, the more likely it
-becomes that you can slip into the state of deep focus that is required
-to do great things.
-Standardize before you optimize. You can’t improve a habit that
-doesn’t exist.`,
-  },
-  {
-    chapter_number: 14,
-    title: "How to Make Good Habits Inevitable and Bad Habits Impossible",
-    content: `IN THE SUMMER OF 1830, Victor Hugo was facing an impossible deadline. Twelve months
-earlier, the French author had promised his publisher a new book. But instead of
-writing, he spent that year pursuing other projects, entertaining guests, and
-delaying his work. Frustrated, Hugo’s publisher responded by setting a deadline
-less than six months away. The book had to be finished by February 1831.
-Hugo concocted a strange plan to beat his procrastination. He collected all of
-his clothes and asked an assistant to lock them away in a large chest. He was left
-with nothing to wear except a large shawl. Lacking any suitable clothing to go
-outdoors, he remained in his study and wrote furiously during the fall and winter
-of 1830. The Hunchback of Notre Dame was published two weeks early on
-January 14, 1831.*
-Sometimes success is less about making good habits easy and more about
-making bad habits hard. This is an inversion of the 3rd Law of Behavior Change:
-make it difficult. If you find yourself continually struggling to follow through on
-your plans, then you can take a page from Victor Hugo and make your bad
-habits more difficult by creating what psychologists call a commitment device.
-A commitment device is a choice you make in the present that controls your
-actions in the future. It is a way to lock in future behavior, bind you to good
-habits, and restrict you from bad ones. When Victor Hugo shut his clothes away
-so he could focus on writing, he was creating a commitment device.*
-There are many ways to create a commitment device. You can reduce
-overeating by purchasing food in individual packages rather than in bulk size.
-You can voluntarily ask to be added to the banned list at casinos and online
-poker sites to prevent future gambling sprees. I’ve even heard of athletes who
-have to “make weight” for a competition choosing to leave their wallets at home
-during the week before weigh-in so they won’t be tempted to buy fast food.
-As another example, my friend and fellow habits expert Nir Eyal purchased an
-outlet timer, which is an adapter that he plugged in between his internet router
-and the power outlet. At 10 p.m. each night, the outlet timer cuts off the power to
-the router. When the internet goes off, everyone knows it is time to go to bed.
-Commitment devices are useful because they enable you to take advantage of
-good intentions before you can fall victim to temptation. Whenever I’m looking
-to cut calories, for example, I will ask the waiter to split my meal and box half of
-it to go before the meal is served. If I waited until the meal came out and told
-myself “I’ll just eat half,” it would never work.
-The key is to change the task such that it requires more work to get out of the
-good habit than to get started on it. If you’re feeling motivated to get in shape,
-schedule a yoga session and pay ahead of time. If you’re excited about the
-business you want to start, email an entrepreneur you respect and set up a
-consulting call. When the time comes to act, the only way to bail is to cancel the
-meeting, which requires effort and may cost money.
-Commitment devices increase the odds that you’ll do the right thing in the
-future by making bad habits difficult in the present. However, we can do even
-better. We can make good habits inevitable and bad habits impossible.
-HOW TO AUTOMATE A HABIT AND NEVER THINK ABOUT IT
-AGAIN
-John Henry Patterson was born in Dayton, Ohio, in 1844. He spent his childhood
-doing chores on the family farm and working shifts at his father’s sawmill. After
-attending college at Dartmouth, Patterson returned to Ohio and opened a small
-supply store for coal miners.
-It seemed like a good opportunity. The store faced little competition and
-enjoyed a steady stream of customers, but still struggled to make money. That
-was when Patterson discovered his employees were stealing from him.
-In the mid-1800s, employee theft was a common problem. Receipts were kept
-in an open drawer and could easily be altered or discarded. There were no video
-cameras to review behavior and no software to track transactions. Unless you
-were willing to hover over your employees every minute of the day, or to
-manage all transactions yourself, it was difficult to prevent theft.
-As Patterson mulled over his predicament, he came across an advertisement
-for a new invention called Ritty’s Incorruptible Cashier. Designed by fellow
-Dayton resident James Ritty, it was the first cash register. The machine
-automatically locked the cash and receipts inside after each transaction.
-Patterson bought two for fifty dollars each.
-Employee theft at his store vanished overnight. In the next six months,
-Patterson’s business went from losing money to making $5,000 in profit—the
-equivalent of more than $100,000 today.
-Patterson was so impressed with the machine that he changed businesses. He
-bought the rights to Ritty’s invention and opened the National Cash Register
-Company. Ten years later, National Cash Register had over one thousand
-employees and was on its way to becoming one of the most successful
-businesses of its time.
-The best way to break a bad habit is to make it impractical to do. Increase the
-friction until you don’t even have the option to act. The brilliance of the cash
-register was that it automated ethical behavior by making stealing practically
-impossible. Rather than trying to change the employees, it made the preferred
-behavior automatic.
-Some actions—like installing a cash register—pay off again and again. These
-onetime choices require a little bit of effort up front but create increasing value
-over time. I’m fascinated by the idea that a single choice can deliver returns
-again and again, and I surveyed my readers on their favorite onetime actions that
-lead to better long-term habits. The table on the following page shares some of
-the most popular answers.
-I’d wager that if the average person were to simply do half of the onetime
-actions on this list—even if they didn’t give another thought to their habits—
-most would find themselves living a better life a year from now. These onetime
-actions are a straightforward way to employ the 3rd Law of Behavior Change.
-They make it easier to sleep well, eat healthy, be productive, save money, and
-generally live better.
-ONETIME ACTIONS THAT LOCK IN GOOD HABITS
-Nutrition
-Buy a water filter to clean your drinking water.
-Use smaller plates to reduce caloric intake.
-Sleep
-Buy a good mattress.
-Get blackout curtains.
-Remove your television from your bedroom.
-Productivity
-Unsubscribe from emails.
-Turn off notifications and mute group chats.
-Set your phone to silent.
-Use email filters to clear up your inbox.
-Delete games and social media apps on your phone.
-Happiness
-Get a dog.
-Move to a friendly, social neighborhood.
-General Health
-Get vaccinated.
-Buy good shoes to avoid back pain.
-Buy a supportive chair or standing desk.
-Finance
-Enroll in an automatic savings plan.
-Set up automatic bill pay.
-Cut cable service.
-Ask service providers to lower your bills.
-Of course, there are many ways to automate good habits and eliminate bad
-ones. Typically, they involve putting technology to work for you. Technology
-can transform actions that were once hard, annoying, and complicated into
-behaviors that are easy, painless, and simple. It is the most reliable and effective
-way to guarantee the right behavior.
-This is particularly useful for behaviors that happen too infrequently to
-become habitual. Things you have to do monthly or yearly—like rebalancing
-your investment portfolio—are never repeated frequently enough to become a
-habit, so they benefit in particular from technology “remembering” to do them
-for you.
-Other examples include:
-Medicine: Prescriptions can be automatically refilled.
-Personal finance: Employees can save for retirement with an automatic
-wage deduction.
-Cooking: Meal-delivery services can do your grocery shopping.
-Productivity: Social media browsing can be cut off with a website
-blocker.
-When you automate as much of your life as possible, you can spend your
-effort on the tasks machines cannot do yet. Each habit that we hand over to the
-authority of technology frees up time and energy to pour into the next stage of
-growth. As mathematician and philosopher Alfred North Whitehead wrote,
-“Civilization advances by extending the number of operations we can perform
-without thinking about them.”
-Of course, the power of technology can work against us as well. Bingewatching becomes a habit because you have to put more effort in to stop looking
-at the screen than to continue doing so. Instead of pressing a button to advance to
-the next episode, Netflix or YouTube will autoplay it for you. All you have to do
-is keep your eyes open.
-Technology creates a level of convenience that enables you to act on your
-smallest whims and desires. At the mere suggestion of hunger, you can have
-food delivered to your door. At the slightest hint of boredom, you can get lost in
-the vast expanse of social media. When the effort required to act on your desires
-becomes effectively zero, you can find yourself slipping into whatever impulse
-arises at the moment. The downside of automation is that we can find ourselves
-jumping from easy task to easy task without making time for more difficult, but
-ultimately more rewarding, work.
-I often find myself gravitating toward social media during any downtime. If I
-feel bored for just a fraction of a second, I reach for my phone. It’s easy to write
-off these minor distractions as “just taking a break,” but over time they can
-accumulate into a serious issue. The constant tug of “just one more minute” can
-prevent me from doing anything of consequence. (I’m not the only one. The
-average person spends over two hours per day on social media. What could you
-do with an extra six hundred hours per year?)
-During the year I was writing this book, I experimented with a new time
-management strategy. Every Monday, my assistant would reset the passwords on
-all my social media accounts, which logged me out on each device. All week I
-worked without distraction. On Friday, she would send me the new passwords. I
-had the entire weekend to enjoy what social media had to offer until Monday
-morning when she would do it again. (If you don’t have an assistant, team up
-with a friend or family member and reset each other’s passwords each week.)
-One of the biggest surprises was how quickly I adapted. Within the first week
-of locking myself out of social media, I realized that I didn’t need to check it
-nearly as often as I had been, and I certainly didn’t need it each day. It had
-simply been so easy that it had become the default. Once my bad habit became
-impossible, I discovered that I did actually have the motivation to work on more
-meaningful tasks. After I removed the mental candy from my environment, it
-became much easier to eat the healthy stuff.
-When working in your favor, automation can make your good habits
-inevitable and your bad habits impossible. It is the ultimate way to lock in future
-behavior rather than relying on willpower in the moment. By utilizing
-commitment devices, strategic onetime decisions, and technology, you can
-create an environment of inevitability—a space where good habits are not just an
-outcome you hope for but an outcome that is virtually guaranteed.
-Chapter Summary
-The inversion of the 3rd Law of Behavior Change is make it difficult.
-A commitment device is a choice you make in the present that locks in
-better behavior in the future.
-The ultimate way to lock in future behavior is to automate your habits.
-Onetime choices—like buying a better mattress or enrolling in an
-automatic savings plan—are single actions that automate your future
-habits and deliver increasing returns over time.
-Using technology to automate your habits is the most reliable and
-effective way to guarantee the right behavior.`,
-  },
-  {
-    chapter_number: 15,
-    title: "The Cardinal Rule of Behavior Change",
-    content: `IN THE LATE 1990S, a public health worker named Stephen Luby left his hometown of
-Omaha, Nebraska, and bought a one-way ticket to Karachi, Pakistan.
-Karachi was one of the most populous cities in the world. By 1998, over nine
-million people called it home. It was the economic center of Pakistan and a
-transportation hub, with some of the most active airports and seaports in the
-region. In the commercial parts of town, you could find all of the standard urban
-amenities and bustling downtown streets. But Karachi was also one of the least
-livable cities in the world.
-Over 60 percent of Karachi’s residents lived in squatter settlements and slums.
-These densely packed neighborhoods were filled with makeshift houses cobbled
-together from old boards, cinder blocks, and other discarded materials. There
-was no waste removal system, no electricity grid, no clean water supply. When
-dry, the streets were a combination of dust and trash. When wet, they became a
-muddy pit of sewage. Mosquito colonies thrived in pools of stagnant water, and
-children played among the garbage.
-The unsanitary conditions lead to widespread illness and disease.
-Contaminated water sources caused epidemics of diarrhea, vomiting, and
-abdominal pain. Nearly one third of the children living there were malnourished.
-With so many people crammed into such a small space, viruses and bacterial
-infections spread rapidly. It was this public health crisis that had brought
-Stephen Luby to Pakistan.
-Luby and his team realized that in an environment with poor sanitation, the
-simple habit of washing your hands could make a real difference in the health of
-the residents. But they soon discovered that many people were already aware
-that handwashing was important.
-And yet, despite this knowledge, many residents were washing their hands in
-a haphazard fashion. Some people would just run their hands under the water
-quickly. Others would only wash one hand. Many would simply forget to wash
-their hands before preparing food. Everyone said handwashing was important,
-but few people made a habit out of it. The problem wasn’t knowledge. The
-problem was consistency.
-That was when Luby and his team partnered with Procter & Gamble to supply
-the neighborhood with Safeguard soap. Compared to your standard bar of soap,
-using Safeguard was a more enjoyable experience.
-“In Pakistan, Safeguard was a premium soap,” Luby told me. “The study
-participants commonly mentioned how much they liked it.” The soap foamed
-easily, and people were able to lather their hands with suds. It smelled great.
-Instantly, handwashing became slightly more pleasurable.
-“I see the goal of handwashing promotion not as behavior change but as habit
-adoption,” Luby said. “It is a lot easier for people to adopt a product that
-provides a strong positive sensory signal, for example the mint taste of
-toothpaste, than it is to adopt a habit that does not provide pleasurable sensory
-feedback, like flossing one’s teeth. The marketing team at Procter & Gamble
-talked about trying to create a positive handwashing experience.”
-Within months, the researchers saw a rapid shift in the health of children in
-the neighborhood. The rate of diarrhea fell by 52 percent; pneumonia by 48
-percent; and impetigo, a bacterial skin infection, by 35 percent.
-The long-term effects were even better. “We went back to some of the
-households in Karachi six years after,” Luby told me. “Over 95 percent of
-households who had been given the soap for free and encouraged to wash their
-hands had a handwashing station with soap and water available when our study
-team visited. . . . We had not given any soap to the intervention group for over
-five years, but during the trial they had become so habituated to wash their
-hands, that they had maintained the practice.” It was a powerful example of the
-fourth and final Law of Behavior Change: make it satisfying.
-We are more likely to repeat a behavior when the experience is satisfying.
-This is entirely logical. Feelings of pleasure—even minor ones like washing
-your hands with soap that smells nice and lathers well—are signals that tell the
-brain: “This feels good. Do this again, next time.” Pleasure teaches your brain
-that a behavior is worth remembering and repeating.
-Take the story of chewing gum. Chewing gum had been sold commercially
-throughout the 1800s, but it wasn’t until Wrigley launched in 1891 that it
-became a worldwide habit. Early versions were made from relatively bland
-resins—chewy, but not tasty. Wrigley revolutionized the industry by adding
-flavors like Spearmint and Juicy Fruit, which made the product flavorful and fun
-to use. Then they went a step further and began pushing chewing gum as a
-pathway to a clean mouth. Advertisements told readers to “Refresh Your Taste.”
-Tasty flavors and the feeling of a fresh mouth provided little bits of immediate
-reinforcement and made the product satisfying to use. Consumption skyrocketed,
-and Wrigley became the largest chewing gum company in the world.
-Toothpaste had a similar trajectory. Manufacturers enjoyed great success
-when they added flavors like spearmint, peppermint, and cinnamon to their
-products. These flavors don’t improve the effectiveness of toothpaste. They
-simply create a “clean mouth” feel and make the experience of brushing your
-teeth more pleasurable. My wife actually stopped using Sensodyne because she
-didn’t like the aftertaste. She switched to a brand with a stronger mint flavor,
-which proved to be more satisfying.
-Conversely, if an experience is not satisfying, we have little reason to repeat
-it. In my research, I came across the story of a woman who had a narcissistic
-relative who drove her nuts. In an attempt to spend less time with this
-egomaniac, she acted as dull and as boring as possible whenever he was around.
-Within a few encounters, he started avoiding her because he found her so
-uninteresting.
-Stories like these are evidence of the Cardinal Rule of Behavior Change: What
-is rewarded is repeated. What is punished is avoided. You learn what to do in
-the future based on what you were rewarded for doing (or punished for doing) in
-the past. Positive emotions cultivate habits. Negative emotions destroy them.
-The first three laws of behavior change—make it obvious, make it attractive,
-and make it easy—increase the odds that a behavior will be performed this time.
-The fourth law of behavior change—make it satisfying—increases the odds that
-a behavior will be repeated next time. It completes the habit loop.
-But there is a trick. We are not looking for just any type of satisfaction. We
-are looking for immediate satisfaction.
-THE MISMATCH BETWEEN IMMEDIATE AND DELAYED
-REWARDS
-Imagine you’re an animal roaming the plains of Africa—a giraffe or an elephant
-or a lion. On any given day, most of your decisions have an immediate impact.
-You are always thinking about what to eat or where to sleep or how to avoid a
-predator. You are constantly focused on the present or the very near future. You
-live in what scientists call an immediate-return environment because your
-actions instantly deliver clear and immediate outcomes.
-Now switch back to your human self. In modern society, many of the choices
-you make today will not benefit you immediately. If you do a good job at work,
-you’ll get a paycheck in a few weeks. If you exercise today, perhaps you won’t
-be overweight next year. If you save money now, maybe you’ll have enough for
-retirement decades from now. You live in what scientists call a delayed-return
-environment because you can work for years before your actions deliver the
-intended payoff.
-The human brain did not evolve for life in a delayed-return environment. The
-earliest remains of modern humans, known as Homo sapiens sapiens, are
-approximately two hundred thousand years old. These were the first humans to
-have a brain relatively similar to ours. In particular, the neocortex—the newest
-part of the brain and the region responsible for higher functions like language—
-was roughly the same size two hundred thousand years ago as today. You are
-walking around with the same hardware as your Paleolithic ancestors.
-It is only recently—during the last five hundred years or so—that society has
-shifted to a predominantly delayed-return environment.* Compared to the age of
-the brain, modern society is brand-new. In the last one hundred years, we have
-seen the rise of the car, the airplane, the television, the personal computer, the
-internet, the smartphone, and Beyoncé. The world has changed much in recent
-years, but human nature has changed little.
-Similar to other animals on the African savannah, our ancestors spent their
-days responding to grave threats, securing the next meal, and taking shelter from
-a storm. It made sense to place a high value on instant gratification. The distant
-future was less of a concern. And after thousands of generations in an
-immediate-return environment, our brains evolved to prefer quick payoffs to
-long-term ones.
-Behavioral economists refer to this tendency as time inconsistency. That is,
-the way your brain evaluates rewards is inconsistent across time.* You value the
-present more than the future. Usually, this tendency serves us well. A reward
-that is certain right now is typically worth more than one that is merely possible
-in the future. But occasionally, our bias toward instant gratification causes
-problems.
-Why would someone smoke if they know it increases the risk of lung cancer?
-Why would someone overeat when they know it increases their risk of obesity?
-Why would someone have unsafe sex if they know it can result in sexually
-transmitted disease? Once you understand how the brain prioritizes rewards, the
-answers become clear: the consequences of bad habits are delayed while the
-rewards are immediate. Smoking might kill you in ten years, but it reduces stress
-and eases your nicotine cravings now. Overeating is harmful in the long run but
-appetizing in the moment. Sex—safe or not—provides pleasure right away.
-Disease and infection won’t show up for days or weeks, even years.
-Every habit produces multiple outcomes across time. Unfortunately, these
-outcomes are often misaligned. With our bad habits, the immediate outcome
-usually feels good, but the ultimate outcome feels bad. With good habits, it is the
-reverse: the immediate outcome is unenjoyable, but the ultimate outcome feels
-good. The French economist Frédéric Bastiat explained the problem clearly
-when he wrote, “It almost always happens that when the immediate consequence
-is favorable, the later consequences are disastrous, and vice versa. . . . Often, the
-sweeter the first fruit of a habit, the more bitter are its later fruits.”
-Put another way, the costs of your good habits are in the present. The costs of
-your bad habits are in the future.
-The brain’s tendency to prioritize the present moment means you can’t rely on
-good intentions. When you make a plan—to lose weight, write a book, or learn a
-language—you are actually making plans for your future self. And when you
-envision what you want your life to be like, it is easy to see the value in taking
-actions with long-term benefits. We all want better lives for our future selves.
-However, when the moment of decision arrives, instant gratification usually
-wins. You are no longer making a choice for Future You, who dreams of being
-fitter or wealthier or happier. You are choosing for Present You, who wants to be
-full, pampered, and entertained. As a general rule, the more immediate pleasure
-you get from an action, the more strongly you should question whether it aligns
-with your long-term goals.*
-With a fuller understanding of what causes our brain to repeat some behaviors
-and avoid others, let’s update the Cardinal Rule of Behavior Change: What is
-immediately rewarded is repeated. What is immediately punished is avoided.
-Our preference for instant gratification reveals an important truth about
-success: because of how we are wired, most people will spend all day chasing
-quick hits of satisfaction. The road less traveled is the road of delayed
-gratification. If you’re willing to wait for the rewards, you’ll face less
-competition and often get a bigger payoff. As the saying goes, the last mile is
-always the least crowded.
-This is precisely what research has shown. People who are better at delaying
-gratification have higher SAT scores, lower levels of substance abuse, lower
-likelihood of obesity, better responses to stress, and superior social skills. We’ve
-all seen this play out in our own lives. If you delay watching television and get
-your homework done, you’ll generally learn more and get better grades. If you
-don’t buy desserts and chips at the store, you’ll often eat healthier food when
-you get home. At some point, success in nearly every field requires you to ignore
-an immediate reward in favor of a delayed reward.
-Here’s the problem: most people know that delaying gratification is the wise
-approach. They want the benefits of good habits: to be healthy, productive, at
-peace. But these outcomes are seldom top-of-mind at the decisive moment.
-Thankfully, it’s possible to train yourself to delay gratification—but you need to
-work with the grain of human nature, not against it. The best way to do this is to
-add a little bit of immediate pleasure to the habits that pay off in the long-run
-and a little bit of immediate pain to ones that don’t.
-HOW TO TURN INSTANT GRATIFICATION TO YOUR ADVANTAGE
-The vital thing in getting a habit to stick is to feel successful—even if it’s in a
-small way. The feeling of success is a signal that your habit paid off and that the
-work was worth the effort.
-In a perfect world, the reward for a good habit is the habit itself. In the real
-world, good habits tend to feel worthwhile only after they have provided you
-with something. Early on, it’s all sacrifice. You’ve gone to the gym a few times,
-but you’re not stronger or fitter or faster—at least, not in any noticeable sense.
-It’s only months later, once you shed a few pounds or your arms gain some
-definition, that it becomes easier to exercise for its own sake. In the beginning,
-you need a reason to stay on track. This is why immediate rewards are essential.
-They keep you excited while the delayed rewards accumulate in the background.
-What we’re really talking about here—when we’re discussing immediate
-rewards—is the ending of a behavior. The ending of any experience is vital
-because we tend to remember it more than other phases. You want the ending of
-your habit to be satisfying. The best approach is to use reinforcement, which
-refers to the process of using an immediate reward to increase the rate of a
-behavior. Habit stacking, which we covered in Chapter 5, ties your habit to an
-immediate cue, which makes it obvious when to start. Reinforcement ties your
-habit to an immediate reward, which makes it satisfying when you finish.
-Immediate reinforcement can be especially helpful when dealing with habits
-of avoidance, which are behaviors you want to stop doing. It can be challenging
-to stick with habits like “no frivolous purchases” or “no alcohol this month”
-because nothing happens when you skip happy hour drinks or don’t buy that pair
-of shoes. It can be hard to feel satisfied when there is no action in the first place.
-All you’re doing is resisting temptation, and there isn’t much satisfying about
-that.
-One solution is to turn the situation on its head. You want to make avoidance
-visible. Open a savings account and label it for something you want—maybe
-“Leather Jacket.” Whenever you pass on a purchase, put the same amount of
-money in the account. Skip your morning latte? Transfer $5. Pass on another
-month of Netflix? Move $10 over. It’s like creating a loyalty program for
-yourself. The immediate reward of seeing yourself save money toward the
-leather jacket feels a lot better than being deprived. You are making it satisfying
-to do nothing.
-One of my readers and his wife used a similar setup. They wanted to stop
-eating out so much and start cooking together more. They labeled their savings
-account “Trip to Europe.” Whenever they skipped going out to eat, they
-transferred $50 into the account. At the end of the year, they put the money
-toward the vacation.
-It is worth noting that it is important to select short-term rewards that
-reinforce your identity rather than ones that conflict with it. Buying a new jacket
-is fine if you’re trying to lose weight or read more books, but it doesn’t work if
-you’re trying to budget and save money. Instead, taking a bubble bath or going
-on a leisurely walk are good examples of rewarding yourself with free time,
-which aligns with your ultimate goal of more freedom and financial
-independence. Similarly, if your reward for exercising is eating a bowl of ice
-cream, then you’re casting votes for conflicting identities, and it ends up being a
-wash. Instead, maybe your reward is a massage, which is both a luxury and a
-vote toward taking care of your body. Now the short-term reward is aligned with
-your long-term vision of being a healthy person.
-Eventually, as intrinsic rewards like a better mood, more energy, and reduced
-stress kick in, you’ll become less concerned with chasing the secondary reward.
-The identity itself becomes the reinforcer. You do it because it’s who you are
-and it feels good to be you. The more a habit becomes part of your life, the less
-you need outside encouragement to follow through. Incentives can start a habit.
-Identity sustains a habit.
-That said, it takes time for the evidence to accumulate and a new identity to
-emerge. Immediate reinforcement helps maintain motivation in the short term
-while you’re waiting for the long-term rewards to arrive.
-In summary, a habit needs to be enjoyable for it to last. Simple bits of
-reinforcement—like soap that smells great or toothpaste that has a refreshing
-mint flavor or seeing $50 hit your savings account—can offer the immediate
-pleasure you need to enjoy a habit. And change is easy when it is enjoyable.
-Chapter Summary
-The 4th Law of Behavior Change is make it satisfying.
-We are more likely to repeat a behavior when the experience is
-satisfying.
-The human brain evolved to prioritize immediate rewards over delayed
-rewards.
-The Cardinal Rule of Behavior Change: What is immediately rewarded
-is repeated. What is immediately punished is avoided.
-To get a habit to stick you need to feel immediately successful—even
-if it’s in a small way.
-The first three laws of behavior change—make it obvious, make it
-attractive, and make it easy—increase the odds that a behavior will be
-performed this time. The fourth law of behavior change—make it
-satisfying—increases the odds that a behavior will be repeated next
-time.`,
-  },
-  {
-    chapter_number: 16,
-    title: "How to Stick with Good Habits Every Day",
-    content: `IN 1993, a bank in Abbotsford, Canada, hired a twenty-three-year-old stockbroker
-named Trent Dyrsmid. Abbotsford was a relatively small suburb, tucked away in
-the shadow of nearby Vancouver, where most of the big business deals were
-being made. Given the location, and the fact that Dyrsmid was a rookie, nobody
-expected too much of him. But he made brisk progress thanks to a simple daily
-habit.
-Dyrsmid began each morning with two jars on his desk. One was filled with
-120 paper clips. The other was empty. As soon as he settled in each day, he
-would make a sales call. Immediately after, he would move one paper clip from
-the full jar to the empty jar and the process would begin again. “Every morning I
-would start with 120 paper clips in one jar and I would keep dialing the phone
-until I had moved them all to the second jar,” he told me.
-Within eighteen months, Dyrsmid was bringing in $5 million to the firm. By
-age twenty-four, he was making $75,000 per year—the equivalent of $125,000
-today. Not long after, he landed a six-figure job with another company.
-I like to refer to this technique as the Paper Clip Strategy and, over the years,
-I’ve heard from readers who have employed it in a variety of ways. One woman
-shifted a hairpin from one container to another whenever she wrote a page of her
-book. Another man moved a marble from one bin to the next after each set of
-push-ups.
-Making progress is satisfying, and visual measures—like moving paper clips
-or hairpins or marbles—provide clear evidence of your progress. As a result,
-they reinforce your behavior and add a little bit of immediate satisfaction to any
-activity. Visual measurement comes in many forms: food journals, workout logs,
-loyalty punch cards, the progress bar on a software download, even the page
-numbers in a book. But perhaps the best way to measure your progress is with a
-habit tracker.
-HOW TO KEEP YOUR HABITS ON TRACK
-A habit tracker is a simple way to measure whether you did a habit. The most
-basic format is to get a calendar and cross off each day you stick with your
-routine. For example, if you meditate on Monday, Wednesday, and Friday, each
-of those dates gets an X. As time rolls by, the calendar becomes a record of your
-habit streak.
-Countless people have tracked their habits, but perhaps the most famous was
-Benjamin Franklin. Beginning at age twenty, Franklin carried a small booklet
-everywhere he went and used it to track thirteen personal virtues. This list
-included goals like “Lose no time. Be always employed in something useful”
-and “Avoid trifling conversation.” At the end of each day, Franklin would open
-his booklet and record his progress.
-Jerry Seinfeld reportedly uses a habit tracker to stick with his streak of writing
-jokes. In the documentary Comedian, he explains that his goal is simply to
-“never break the chain” of writing jokes every day. In other words, he is not
-focused on how good or bad a particular joke is or how inspired he feels. He is
-simply focused on showing up and adding to his streak.
-“Don’t break the chain” is a powerful mantra. Don’t break the chain of sales
-calls and you’ll build a successful book of business. Don’t break the chain of
-workouts and you’ll get fit faster than you’d expect. Don’t break the chain of
-creating every day and you will end up with an impressive portfolio. Habit
-tracking is powerful because it leverages multiple Laws of Behavior Change. It
-simultaneously makes a behavior obvious, attractive, and satisfying.
-Let’s break down each one.
-Benefit #1: Habit tracking is obvious.
-Recording your last action creates a trigger that can initiate your next one. Habit
-tracking naturally builds a series of visual cues like the streak of X’s on your
-calendar or the list of meals in your food log. When you look at the calendar and
-see your streak, you’ll be reminded to act again. Research has shown that people
-who track their progress on goals like losing weight, quitting smoking, and
-lowering blood pressure are all more likely to improve than those who don’t.
-One study of more than sixteen hundred people found that those who kept a
-daily food log lost twice as much weight as those who did not. The mere act of
-tracking a behavior can spark the urge to change it.
-Habit tracking also keeps you honest. Most of us have a distorted view of our
-own behavior. We think we act better than we do. Measurement offers one way
-to overcome our blindness to our own behavior and notice what’s really going
-on each day. One glance at the paper clips in the container and you immediately
-know how much work you have (or haven’t) been putting in. When the evidence
-is right in front of you, you’re less likely to lie to yourself.
-Benefit #2: Habit tracking is attractive.
-The most effective form of motivation is progress. When we get a signal that we
-are moving forward, we become more motivated to continue down that path. In
-this way, habit tracking can have an addictive effect on motivation. Each small
-win feeds your desire.
-This can be particularly powerful on a bad day. When you’re feeling down,
-it’s easy to forget about all the progress you have already made. Habit tracking
-provides visual proof of your hard work—a subtle reminder of how far you’ve
-come. Plus, the empty square you see each morning can motivate you to get
-started because you don’t want to lose your progress by breaking the streak.
-Benefit #3: Habit tracking is satisfying.
-This is the most crucial benefit of all. Tracking can become its own form of
-reward. It is satisfying to cross an item off your to-do list, to complete an entry
-in your workout log, or to mark an X on the calendar. It feels good to watch your
-results grow—the size of your investment portfolio, the length of your book
-manuscript—and if it feels good, then you’re more likely to endure.
-Habit tracking also helps keep your eye on the ball: you’re focused on the
-process rather than the result. You’re not fixated on getting six-pack abs, you’re
-just trying to keep the streak alive and become the type of person who doesn’t
-miss workouts.
-In summary, habit tracking (1) creates a visual cue that can remind you to act,
-(2) is inherently motivating because you see the progress you are making and
-don’t want to lose it, and (3) feels satisfying whenever you record another
-successful instance of your habit. Furthermore, habit tracking provides visual
-proof that you are casting votes for the type of person you wish to become,
-which is a delightful form of immediate and intrinsic gratification.*
-You may be wondering, if habit tracking is so useful, why have I waited so
-long to talk about it?
-Despite all the benefits, I’ve left this discussion until now for a simple reason:
-many people resist the idea of tracking and measuring. It can feel like a burden
-because it forces you into two habits: the habit you’re trying to build and the
-habit of tracking it. Counting calories sounds like a hassle when you’re already
-struggling to follow a diet. Writing down every sales call seems tedious when
-you’ve got work to do. It feels easier to say, “I’ll just eat less.” Or, “I’ll try
-harder.” Or, “I’ll remember to do it.” People inevitably tell me things like, “I
-have a decision journal, but I wish I used it more.” Or, “I recorded my workouts
-for a week, but then quit.” I’ve been there myself. I once made a food log to
-track my calories. I managed to do it for one meal and then gave up.
-Tracking isn’t for everyone, and there is no need to measure your entire life.
-But nearly anyone can benefit from it in some form—even if it’s only temporary.
-What can we do to make tracking easier?
-First, whenever possible, measurement should be automated. You’ll probably
-be surprised by how much you’re already tracking without knowing it. Your
-credit card statement tracks how often you go out to eat. Your Fitbit registers
-how many steps you take and how long you sleep. Your calendar records how
-many new places you travel to each year. Once you know where to get the data,
-add a note to your calendar to review it each week or each month, which is more
-practical than tracking it every day.
-Second, manual tracking should be limited to your most important habits. It is
-better to consistently track one habit than to sporadically track ten.
-Finally, record each measurement immediately after the habit occurs. The
-completion of the behavior is the cue to write it down. This approach allows you
-to combine the habitstacking method mentioned in Chapter 5 with habit tracking.
-The habit stacking + habit tracking formula is:
-After [CURRENT HABIT], I will [TRACK MY HABIT].
-After I hang up the phone from a sales call, I will move one paper clip
-over.
-After I finish each set at the gym, I will record it in my workout
-journal.
-After I put my plate in the dishwasher, I will write down what I ate.
-These tactics can make tracking your habits easier. Even if you aren’t the type
-of person who enjoys recording your behavior, I think you’ll find a few weeks of
-measurements to be insightful. It’s always interesting to see how you’ve actually
-been spending your time.
-That said, every habit streak ends at some point. And, more important than
-any single measurement, is having a good plan for when your habits slide off
-track.
-HOW TO RECOVER QUICKLY WHEN YOUR HABITS BREAK DOWN
-No matter how consistent you are with your habits, it is inevitable that life will
-interrupt you at some point. Perfection is not possible. Before long, an
-emergency will pop up—you get sick or you have to travel for work or your
-family needs a little more of your time.
-Whenever this happens to me, I try to remind myself of a simple rule: never
-miss twice.
-If I miss one day, I try to get back into it as quickly as possible. Missing one
-workout happens, but I’m not going to miss two in a row. Maybe I’ll eat an
-entire pizza, but I’ll follow it up with a healthy meal. I can’t be perfect, but I can
-avoid a second lapse. As soon as one streak ends, I get started on the next one.
-The first mistake is never the one that ruins you. It is the spiral of repeated
-mistakes that follows. Missing once is an accident. Missing twice is the start of a
-new habit.
-This is a distinguishing feature between winners and losers. Anyone can have
-a bad performance, a bad workout, or a bad day at work. But when successful
-people fail, they rebound quickly. The breaking of a habit doesn’t matter if the
-reclaiming of it is fast.
-I think this principle is so important that I’ll stick to it even if I can’t do a
-habit as well or as completely as I would like. Too often, we fall into an all-ornothing cycle with our habits. The problem is not slipping up; the problem is
-thinking that if you can’t do something perfectly, then you shouldn’t do it at all.
-You don’t realize how valuable it is to just show up on your bad (or busy)
-days. Lost days hurt you more than successful days help you. If you start with
-$100, then a 50 percent gain will take you to $150. But you only need a 33
-percent loss to take you back to $100. In other words, avoiding a 33 percent loss
-is just as valuable as achieving a 50 percent gain. As Charlie Munger says, “The
-first rule of compounding: Never interrupt it unnecessarily.”
-This is why the “bad” workouts are often the most important ones. Sluggish
-days and bad workouts maintain the compound gains you accrued from previous
-good days. Simply doing something—ten squats, five sprints, a push-up,
-anything really—is huge. Don’t put up a zero. Don’t let losses eat into your
-compounding.
-Furthermore, it’s not always about what happens during the workout. It’s
-about being the type of person who doesn’t miss workouts. It’s easy to train
-when you feel good, but it’s crucial to show up when you don’t feel like it—
-even if you do less than you hope. Going to the gym for five minutes may not
-improve your performance, but it reaffirms your identity.
-The all-or-nothing cycle of behavior change is just one pitfall that can derail
-your habits. Another potential danger—especially if you are using a habit tracker
-—is measuring the wrong thing.
-KNOWING WHEN (AND WHEN NOT) TO TRACK A HABIT
-Say you’re running a restaurant and you want to know if your chef is doing a
-good job. One way to measure success is to track how many customers pay for a
-meal each day. If more customers come in, the food must be good. If fewer
-customers come in, something must be wrong.
-However, this one measurement—daily revenue—only gives a limited picture
-of what’s really going on. Just because someone pays for a meal doesn’t mean
-they enjoy the meal. Even dissatisfied customers are unlikely to dine and dash.
-In fact, if you’re only measuring revenue, the food might be getting worse but
-you’re making up for it with marketing or discounts or some other method.
-Instead, it may be more effective to track how many customers finish their meal
-or perhaps the percentage of customers who leave a generous tip.
-The dark side of tracking a particular behavior is that we become driven by
-the number rather than the purpose behind it. If your success is measured by
-quarterly earnings, you will optimize sales, revenue, and accounting for
-quarterly earnings. If your success is measured by a lower number on the scale,
-you will optimize for a lower number on the scale, even if that means embracing
-crash diets, juice cleanses, and fat-loss pills. The human mind wants to “win”
-whatever game is being played.
-This pitfall is evident in many areas of life. We focus on working long hours
-instead of getting meaningful work done. We care more about getting ten
-thousand steps than we do about being healthy. We teach for standardized tests
-instead of emphasizing learning, curiosity, and critical thinking. In short, we
-optimize for what we measure. When we choose the wrong measurement, we get
-the wrong behavior.
-This is sometimes referred to as Goodhart’s Law. Named after the economist
-Charles Goodhart, the principle states, “When a measure becomes a target, it
-ceases to be a good measure.” Measurement is only useful when it guides you
-and adds context to a larger picture, not when it consumes you. Each number is
-simply one piece of feedback in the overall system.
-In our data-driven world, we tend to overvalue numbers and undervalue
-anything ephemeral, soft, and difficult to quantify. We mistakenly think the
-factors we can measure are the only factors that exist. But just because you can
-measure something doesn’t mean it’s the most important thing. And just because
-you can’t measure something doesn’t mean it’s not important at all.
-All of this to say, it’s crucial to keep habit tracking in its proper place. It can
-feel satisfying to record a habit and track your progress, but the measurement is
-not the only thing that matters. Furthermore, there are many ways to measure
-progress, and sometimes it helps to shift your focus to something entirely
-different.
-This is why nonscale victories can be effective for weight loss. The number
-on the scale may be stubborn, so if you focus solely on that number, your
-motivation will sag. But you may notice that your skin looks better or you wake
-up earlier or your sex drive got a boost. All of these are valid ways to track your
-improvement. If you’re not feeling motivated by the number on the scale,
-perhaps it’s time to focus on a different measurement—one that gives you more
-signals of progress.
-No matter how you measure your improvement, habit tracking offers a simple
-way to make your habits more satisfying. Each measurement provides a little bit
-of evidence that you’re moving in the right direction and a brief moment of
-immediate pleasure for a job well done.
-Chapter Summary
-One of the most satisfying feelings is the feeling of making progress.
-A habit tracker is a simple way to measure whether you did a habit—
-like marking an X on a calendar.
-Habit trackers and other visual forms of measurement can make your
-habits satisfying by providing clear evidence of your progress.
-Don’t break the chain. Try to keep your habit streak alive.
-Never miss twice. If you miss one day, try to get back on track as
-quickly as possible.
-Just because you can measure something doesn’t mean it’s the most
-important thing.`,
-  },
-  {
-    chapter_number: 17,
-    title: "How an Accountability Partner Can Change Everything",
-    content: `AFTER SERVING AS a pilot in World War II, Roger Fisher attended Harvard Law School
-and spent thirty-four years specializing in negotiation and conflict management.
-He founded the Harvard Negotiation Project and worked with numerous
-countries and world leaders on peace resolutions, hostage crises, and diplomatic
-compromises. But it was in the 1970s and 1980s, as the threat of nuclear war
-escalated, that Fisher developed perhaps his most interesting idea.
-At the time, Fisher was focused on designing strategies that could prevent
-nuclear war, and he had noticed a troubling fact. Any sitting president would
-have access to launch codes that could kill millions of people but would never
-actually see anyone die because he would always be thousands of miles away.
-“My suggestion was quite simple,” he wrote in 1981. “Put that [nuclear] code
-number in a little capsule, and then implant that capsule right next to the heart of
-a volunteer. The volunteer would carry with him a big, heavy butcher knife as he
-accompanied the President. If ever the President wanted to fire nuclear weapons,
-the only way he could do so would be for him first, with his own hands, to kill
-one human being. The President says, ‘George, I’m sorry but tens of millions
-must die.’ He has to look at someone and realize what death is—what an
-innocent death is. Blood on the White House carpet. It’s reality brought home.
-“When I suggested this to friends in the Pentagon they said, ‘My God, that’s
-terrible. Having to kill someone would distort the President’s judgment. He
-might never push the button.’”
-Throughout our discussion of the 4th Law of Behavior Change we have
-covered the importance of making good habits immediately satisfying. Fisher’s
-proposal is an inversion of the 4th Law: Make it immediately unsatisfying.
-Just as we are more likely to repeat an experience when the ending is
-satisfying, we are also more likely to avoid an experience when the ending is
-painful. Pain is an effective teacher. If a failure is painful, it gets fixed. If a
-failure is relatively painless, it gets ignored. The more immediate and more
-costly a mistake is, the faster you will learn from it. The threat of a bad review
-forces a plumber to be good at his job. The possibility of a customer never
-returning makes restaurants create good food. The cost of cutting the wrong
-blood vessel makes a surgeon master human anatomy and cut carefully. When
-the consequences are severe, people learn quickly.
-The more immediate the pain, the less likely the behavior. If you want to
-prevent bad habits and eliminate unhealthy behaviors, then adding an instant cost
-to the action is a great way to reduce their odds.
-We repeat bad habits because they serve us in some way, and that makes them
-hard to abandon. The best way I know to overcome this predicament is to
-increase the speed of the punishment associated with the behavior. There can’t
-be a gap between the action and the consequences.
-As soon as actions incur an immediate consequence, behavior begins to
-change. Customers pay their bills on time when they are charged a late fee.
-Students show up to class when their grade is linked to attendance. We’ll jump
-through a lot of hoops to avoid a little bit of immediate pain.
-There is, of course, a limit to this. If you’re going to rely on punishment to
-change behavior, then the strength of the punishment must match the relative
-strength of the behavior it is trying to correct. To be productive, the cost of
-procrastination must be greater than the cost of action. To be healthy, the cost of
-laziness must be greater than the cost of exercise. Getting fined for smoking in a
-restaurant or failing to recycle adds consequence to an action. Behavior only
-shifts if the punishment is painful enough and reliably enforced.
-In general, the more local, tangible, concrete, and immediate the consequence,
-the more likely it is to influence individual behavior. The more global,
-intangible, vague, and delayed the consequence, the less likely it is to influence
-individual behavior.
-Thankfully, there is a straightforward way to add an immediate cost to any
-bad habit: create a habit contract.
-THE HABIT CONTRACT
-The first seat belt law was passed in New York on December 1, 1984. At the
-time, just 14 percent of people in the United States regularly wore a seat belt—
-but that was all about to change.
-Within five years, over half of the nation had seat belt laws. Today, wearing a
-seat belt is enforceable by law in forty-nine of the fifty states. And it’s not just
-the legislation, the number of people wearing seat belts has changed dramatically
-as well. In 2016, over 88 percent of Americans buckled up each time they got in
-a car. In just over thirty years, there was a complete reversal in the habits of
-millions of people.
-Laws and regulations are an example of how government can change our
-habits by creating a social contract. As a society, we collectively agree to abide
-by certain rules and then enforce them as a group. Whenever a new piece of
-legislation impacts behavior—seat belt laws, banning smoking inside
-restaurants, mandatory recycling—it is an example of a social contract shaping
-our habits. The group agrees to act in a certain way, and if you don’t follow
-along, you’ll be punished.
-Just as governments use laws to hold citizens accountable, you can create a
-habit contract to hold yourself accountable. A habit contract is a verbal or
-written agreement in which you state your commitment to a particular habit and
-the punishment that will occur if you don’t follow through. Then you find one or
-two people to act as your accountability partners and sign off on the contract
-with you.
-Bryan Harris, an entrepreneur from Nashville, Tennessee, was the first person
-I saw put this strategy into action. Shortly after the birth of his son, Harris
-realized he wanted to shed a few pounds. He wrote up a habit contract between
-himself, his wife, and his personal trainer. The first version read, “Bryan’s #1
-objective for Q1 of 2017 is to start eating correctly again so he feels better, looks
-better, and is able to hit his long-term goal of 200 pounds at 10% body fat.”
-Below that statement, Harris laid out a road map for achieving his ideal
-outcome:
-Phase #1: Get back to a strict “slow-carb” diet in Q1.
-Phase #2: Start a strict macronutrient tracking program in Q2.
-Phase #3: Refine and maintain the details of his diet and workout
-program in Q3.
-Finally, he wrote out each of the daily habits that would get him to his goal.
-For example, “Write down all food that he consumes each day and weigh
-himself each day.”
-And then he listed the punishment if he failed: “If Bryan doesn’t do these two
-items then the following consequence will be enforced: He will have to dress up
-each workday and each Sunday morning for the rest of the quarter. Dress up is
-defined as not wearing jeans, t-shirts, hoodies, or shorts. He will also give Joey
-(his trainer) $200 to use as he sees fit if he misses one day of logging food.”
-At the bottom of the page, Harris, his wife, and his trainer all signed the
-contract.
-My initial reaction was that a contract like this seemed overly formal and
-unnecessary, especially the signatures. But Harris convinced me that signing the
-contract was an indication of seriousness. “Anytime I skip this part,” he said, “I
-start slacking almost immediately.”
-Three months later, after hitting his targets for Q1, Harris upgraded his goals.
-The consequences escalated, too. If he missed his carbohydrate and protein
-targets, he had to pay his trainer $100. And if he failed to weigh himself, he had
-to give his wife $500 to use as she saw fit. Perhaps most painfully, if he forgot to
-run sprints, he had to dress up for work every day and wear an Alabama hat the
-rest of the quarter—the bitter rival of his beloved Auburn team.
-The strategy worked. With his wife and trainer acting as accountability
-partners and with the habit contract clarifying exactly what to do each day,
-Harris lost the weight.*
-To make bad habits unsatisfying, your best option is to make them painful in
-the moment. Creating a habit contract is a straightforward way to do exactly that.
-Even if you don’t want to create a full-blown habit contract, simply having an
-accountability partner is useful. The comedian Margaret Cho writes a joke or
-song every day. She does the “song a day” challenge with a friend, which helps
-them both stay accountable. Knowing that someone is watching can be a
-powerful motivator. You are less likely to procrastinate or give up because there
-is an immediate cost. If you don’t follow through, perhaps they’ll see you as
-untrustworthy or lazy. Suddenly, you are not only failing to uphold your
-promises to yourself, but also failing to uphold your promises to others.
-You can even automate this process. Thomas Frank, an entrepreneur in
-Boulder, Colorado, wakes up at 5:55 each morning. And if he doesn’t, he has a
-tweet automatically scheduled that says, “It’s 6:10 and I’m not up because I’m
-lazy! Reply to this for $5 via PayPal (limit 5), assuming my alarm didn’t
-malfunction.”
-We are always trying to present our best selves to the world. We comb our
-hair and brush our teeth and dress ourselves carefully because we know these
-habits are likely to get a positive reaction. We want to get good grades and
-graduate from top schools to impress potential employers and mates and our
-friends and family. We care about the opinions of those around us because it
-helps if others like us. This is precisely why getting an accountability partner or
-signing a habit contract can work so well.
-Chapter Summary
-The inversion of the 4th Law of Behavior Change is make it
-unsatisfying.
-We are less likely to repeat a bad habit if it is painful or unsatisfying.
-An accountability partner can create an immediate cost to inaction. We
-care deeply about what others think of us, and we do not want others
-to have a lesser opinion of us.
-A habit contract can be used to add a social cost to any behavior. It
-makes the costs of violating your promises public and painful.
-Knowing that someone else is watching you can be a powerful
-motivator.
-HOW TO CREATE A GOO`,
-  },
-  {
-    chapter_number: 18,
-    title: "The Truth About Talent (When Genes Matter and When They Don’t)",
-    content: `MANY PEOPLE ARE familiar with Michael Phelps, who is widely considered to be one of
-the greatest athletes in history. Phelps has won more Olympic medals not only
-than any swimmer but also more than any Olympian in any sport.
-Fewer people know the name Hicham El Guerrouj, but he was a fantastic
-athlete in his own right. El Guerrouj is a Moroccan runner who holds two
-Olympic gold medals and is one of the greatest middle-distance runners of all
-time. For many years, he held the world record in the mile, 1,500-meter, and
-2,000-meter races. At the Olympic Games in Athens, Greece, in 2004, he won
-gold in the 1,500-meter and 5,000-meter races.
-These two athletes are wildly different in many ways. (For starters, one
-competed on land and the other in water.) But most notably, they differ
-significantly in height. El Guerrouj is five feet, nine inches tall. Phelps is six
-feet, four inches tall. Despite this seven-inch difference in height, the two men
-are identical in one respect: Michael Phelps and Hicham El Guerrouj wear the
-same length inseam on their pants.
-How is this possible? Phelps has relatively short legs for his height and a very
-long torso, the perfect build for swimming. El Guerrouj has incredibly long legs
-and a short upper body, an ideal frame for distance running.
-Now, imagine if these world-class athletes were to switch sports. Given his
-remarkable athleticism, could Michael Phelps become an Olympic-caliber
-distance runner with enough training? It’s unlikely. At peak fitness, Phelps
-weighed 194 pounds, which is 40 percent heavier than El Guerrouj, who
-competed at an ultralight 138 pounds. Taller runners are heavier runners, and
-every extra pound is a curse when it comes to distance running. Against elite
-competition, Phelps would be doomed from the start.
-Similarly, El Guerrouj might be one of the best runners in history, but it’s
-doubtful he would ever qualify for the Olympics as a swimmer. Since 1976, the
-average height of Olympic gold medalists in the men’s 1,500-meter run is five
-feet, ten inches. In comparison, the average height of Olympic gold medalists in
-the men’s 100-meter freestyle swim is six feet, four inches. Swimmers tend to be
-tall and have long backs and arms, which are ideal for pulling through the water.
-El Guerrouj would be at a severe disadvantage before he ever touched the pool.
-The secret to maximizing your odds of success is to choose the right field of
-competition. This is just as true with habit change as it is with sports and
-business. Habits are easier to perform, and more satisfying to stick with, when
-they align with your natural inclinations and abilities. Like Michael Phelps in the
-pool or Hicham El Guerrouj on the track, you want to play a game where the
-odds are in your favor.
-Embracing this strategy requires the acceptance of the simple truth that people
-are born with different abilities. Some people don’t like to discuss this fact. On
-the surface, your genes seem to be fixed, and it’s no fun to talk about things you
-cannot control. Plus, phrases like biological determinism makes it sound like
-certain individuals are destined for success and others doomed to failure. But
-this is a shortsighted view of the influence of genes on behavior.
-The strength of genetics is also their weakness. Genes cannot be easily
-changed, which means they provide a powerful advantage in favorable
-circumstances and a serious disadvantage in unfavorable circumstances. If you
-want to dunk a basketball, being seven feet tall is very useful. If you want to
-perform a gymnastics routine, being seven feet tall is a great hindrance. Our
-environment determines the suitability of our genes and the utility of our natural
-talents. When our environment changes, so do the qualities that determine
-success.
-This is true not just for physical characteristics but for mental ones as well.
-I’m smart if you ask me about habits and human behavior; not so much when it
-comes to knitting, rocket propulsion, or guitar chords. Competence is highly
-dependent on context.
-The people at the top of any competitive field are not only well trained, they
-are also well suited to the task. And this is why, if you want to be truly great,
-selecting the right place to focus is crucial.
-In short: genes do not determine your destiny. They determine your areas of
-opportunity. As physician Gabor Mate notes, “Genes can predispose, but they
-don’t predetermine.” The areas where you are genetically predisposed to success
-are the areas where habits are more likely to be satisfying. The key is to direct
-your effort toward areas that both excite you and match your natural skills, to
-align your ambition with your ability.
-The obvious question is, “How do I figure out where the odds are in my
-favor? How do I identify the opportunities and habits that are right for me?” The
-first place we will look for an answer is by understanding your personality.
-HOW YOUR PERSONALITY INFLUENCES YOUR HABITS
-Your genes are operating beneath the surface of every habit. Indeed, beneath the
-surface of every behavior. Genes have been shown to influence everything from
-the number of hours you spend watching television to your likelihood to marry
-or divorce to your tendency to get addicted to drugs, alcohol, or nicotine. There’s
-a strong genetic component to how obedient or rebellious you are when facing
-authority, how vulnerable or resistant you are to stressful events, how proactive
-or reactive you tend to be, and even how captivated or bored you feel during
-sensory experiences like attending a concert. As Robert Plomin, a behavioral
-geneticist at King’s College in London, told me, “It is now at the point where we
-have stopped testing to see if traits have a genetic component because we
-literally can’t find a single one that isn’t influenced by our genes.”
-Bundled together, your unique cluster of genetic traits predispose you to a
-particular personality. Your personality is the set of characteristics that is
-consistent from situation to situation. The most proven scientific analysis of
-personality traits is known as the “Big Five,” which breaks them down into five
-spectrums of behavior.
-1. Openness to experience: from curious and inventive on one end to
-cautious and consistent on the other.
-2. Conscientiousness: organized and efficient to easygoing and
-spontaneous.
-3. Extroversion: outgoing and energetic to solitary and reserved (you
-likely know them as extroverts vs. introverts).
-4. Agreeableness: friendly and compassionate to challenging and
-detached.
-5. Neuroticism: anxious and sensitive to confident, calm, and stable.
-All five characteristics have biological underpinnings. Extroversion, for
-instance, can be tracked from birth. If scientists play a loud noise in the nursing
-ward, some babies turn toward it while others turn away. When the researchers
-tracked these children through life, they found that the babies who turned toward
-the noise were more likely to grow up to be extroverts. Those who turned away
-were more likely to become introverts.
-People who are high in agreeableness are kind, considerate, and warm. They
-also tend to have higher natural oxytocin levels, a hormone that plays an
-important role in social bonding, increases feelings of trust, and can act as a
-natural antidepressant. You can easily imagine how someone with more
-oxytocin might be inclined to build habits like writing thank-you notes or
-organizing social events.
-As a third example, consider neuroticism, which is a personality trait all
-people possess to various degrees. People who are high in neuroticism tend to be
-anxious and worry more than others. This trait has been linked to
-hypersensitivity of the amygdala, the portion of the brain responsible for
-noticing threats. In other words, people who are more sensitive to negative cues
-in their environment are more likely to score high in neuroticism.
-Our habits are not solely determined by our personalities, but there is no doubt
-that our genes nudge us in a certain direction. Our deeply rooted preferences
-make certain behaviors easier for some people than for others. You don’t have to
-apologize for these differences or feel guilty about them, but you do have to
-work with them. A person who scores lower on conscientiousness, for example,
-will be less likely to be orderly by nature and may need to rely more heavily on
-environment design to stick with good habits. (As a reminder for the less
-conscientious readers among us, environment design is a strategy we discussed
-in Chapters 6 and 12.)
-The takeaway is that you should build habits that work for your personality.*
-People can get ripped working out like a bodybuilder, but if you prefer rock
-climbing or cycling or rowing, then shape your exercise habit around your
-interests. If your friend follows a low-carb diet but you find that low-fat works
-for you, then more power to you. If you want to read more, don’t be embarrassed
-if you prefer steamy romance novels over nonfiction. Read whatever fascinates
-you.* You don’t have to build the habits everyone tells you to build. Choose the
-habit that best suits you, not the one that is most popular.
-There is a version of every habit that can bring you joy and satisfaction. Find
-it. Habits need to be enjoyable if they are going to stick. This is the core idea
-behind the 4th Law.
-Tailoring your habits to your personality is a good start, but this is not the end
-of the story. Let’s turn our attention to finding and designing situations where
-you’re at a natural advantage.
-HOW TO FIND A GAME WHERE THE ODDS ARE IN YOUR FAVOR
-Learning to play a game where the odds are in your favor is critical for
-maintaining motivation and feeling successful. In theory, you can enjoy almost
-anything. In practice, you are more likely to enjoy the things that come easily to
-you. People who are talented in a particular area tend to be more competent at
-that task and are then praised for doing a good job. They stay energized because
-they are making progress where others have failed, and because they get
-rewarded with better pay and bigger opportunities, which not only makes them
-happier but also propels them to produce even higher-quality work. It’s a
-virtuous cycle.
-Pick the right habit and progress is easy. Pick the wrong habit and life is a
-struggle.
-How do you pick the right habit? The first step is something we covered in the
-3rd Law: make it easy. In many cases, when people pick the wrong habit, it
-simply means they picked a habit that was too difficult. When a habit is easy,
-you are more likely to be successful. When you are successful, you are more
-likely to feel satisfied. However, there is another level to consider. In the longrun, if you continue to advance and improve, any area can become challenging.
-At some point, you need to make sure you’re playing the right game for your
-skillset. How do you figure that out?
-The most common approach is trial and error. Of course, there’s a problem
-with this strategy: life is short. You don’t have time to try every career, date
-every eligible bachelor, or play every musical instrument. Thankfully, there is an
-effective way to manage this conundrum, and it is known as the explore/exploit
-trade-off.
-In the beginning of a new activity, there should be a period of exploration. In
-relationships, it’s called dating. In college, it’s called the liberal arts. In business,
-it’s called split testing. The goal is to try out many possibilities, research a broad
-range of ideas, and cast a wide net.
-After this initial period of exploration, shift your focus to the best solution
-you’ve found—but keep experimenting occasionally. The proper balance
-depends on whether you’re winning or losing. If you are currently winning, you
-exploit, exploit, exploit. If you are currently losing, you continue to explore,
-explore, explore.
-In the long-run it is probably most effective to work on the strategy that seems
-to deliver the best results about 80 to 90 percent of the time and keep exploring
-with the remaining 10 to 20 percent. Google famously asks employees to spend
-80 percent of the workweek on their official job and 20 percent on projects of
-their choice, which has led to the creation of blockbuster products like AdWords
-and Gmail.
-The optimal approach also depends on how much time you have. If you have
-a lot of time—like someone at the beginning of their career—it makes more
-sense to explore because once you find the right thing, you still have a good
-amount of time to exploit it. If you’re pressed for time—say, as you come up on
-the deadline for a project—you should implement the best solution you’ve found
-so far and get some results.
-As you explore different options, there are a series of questions you can ask
-yourself to continually narrow in on the habits and areas that will be most
-satisfying to you:
-What feels like fun to me, but work to others? The mark of whether you
-are made for a task is not whether you love it but whether you can handle
-the pain of the task easier than most people. When are you enjoying
-yourself while other people are complaining? The work that hurts you less
-than it hurts others is the work you were made to do.
-What makes me lose track of time? Flow is the mental state you enter
-when you are so focused on the task at hand that the rest of the world fades
-away. This blend of happiness and peak performance is what athletes and
-performers experience when they are “in the zone.” It is nearly impossible
-to experience a flow state and not find the task satisfying at least to some
-degree.
-Where do I get greater returns than the average person? We are
-continually comparing ourselves to those around us, and a behavior is more
-likely to be satisfying when the comparison is in our favor. When I started
-writing at jamesclear.com, my email list grew very quickly. I wasn’t quite
-sure what I was doing well, but I knew that results seemed to be coming
-faster for me than for some of my colleagues, which motivated me to keep
-writing.
-What comes naturally to me? For just a moment, ignore what you have
-been taught. Ignore what society has told you. Ignore what others expect of
-you. Look inside yourself and ask, “What feels natural to me? When have I
-felt alive? When have I felt like the real me?” No internal judgments or
-people-pleasing. No second-guessing or self-criticism. Just feelings of
-engagement and enjoyment. Whenever you feel authentic and genuine, you
-are headed in the right direction.
-To be honest, some of this process is just luck. Michael Phelps and Hicham El
-Guerrouj were lucky to be born with a rare set of abilities that are highly valued
-by society and to be placed in the ideal environment for those abilities. We all
-have limited time on this planet, and the truly great among us are the ones who
-not only work hard but also have the good fortune to be exposed to opportunities
-that favor us.
-But what if you don’t want to leave it up to luck?
-If you can’t find a game where the odds are stacked in your favor, create one.
-Scott Adams, the cartoonist behind Dilbert, says, “Everyone has at least a few
-areas in which they could be in the top 25% with some effort. In my case, I can
-draw better than most people, but I’m hardly an artist. And I’m not any funnier
-than the average standup comedian who never makes it big, but I’m funnier than
-most people. The magic is that few people can draw well and write jokes. It’s the
-combination of the two that makes what I do so rare. And when you add in my
-business background, suddenly I had a topic that few cartoonists could hope to
-understand without living it.”
-When you can’t win by being better, you can win by being different. By
-combining your skills, you reduce the level of competition, which makes it
-easier to stand out. You can shortcut the need for a genetic advantage (or for
-years of practice) by rewriting the rules. A good player works hard to win the
-game everyone else is playing. A great player creates a new game that favors
-their strengths and avoids their weaknesses.
-In college, I designed my own major, biomechanics, which was a combination
-of physics, chemistry, biology, and anatomy. I wasn’t smart enough to stand out
-among the top physics or biology majors, so I created my own game. And
-because it suited me—I was only taking the courses I was interested in—
-studying felt like less of a chore. It was also easier to avoid the trap of
-comparing myself to everyone else. After all, nobody else was taking the same
-combination of classes, so who could say if they were better or worse?
-Specialization is a powerful way to overcome the “accident” of bad genetics.
-The more you master a specific skill, the harder it becomes for others to compete
-with you. Many bodybuilders are stronger than the average arm wrestler, but
-even a massive bodybuilder may lose at arm wrestling because the arm wrestling
-champ has very specific strength. Even if you’re not the most naturally gifted,
-you can often win by being the best in a very narrow category.
-Boiling water will soften a potato but harden an egg. You can’t control
-whether you’re a potato or an egg, but you can decide to play a game where it’s
-better to be hard or soft. If you can find a more favorable environment, you can
-transform the situation from one where the odds are against you to one where
-they are in your favor.
-HOW TO GET THE MOST OUT OF YOUR GENES
-Our genes do not eliminate the need for hard work. They clarify it. They tell us
-what to work hard on. Once we realize our strengths, we know where to spend
-our time and energy. We know which types of opportunities to look for and
-which types of challenges to avoid. The better we understand our nature, the
-better our strategy can be.
-Biological differences matter. Even so, it’s more productive to focus on
-whether you are fulfilling your own potential than comparing yourself to
-someone else. The fact that you have a natural limit to any specific ability has
-nothing to do with whether you are reaching the ceiling of your capabilities.
-People get so caught up in the fact that they have limits that they rarely exert the
-effort required to get close to them.
-Furthermore, genes can’t make you successful if you’re not doing the work.
-Yes, it’s possible that the ripped trainer at the gym has better genes, but if you
-haven’t put in the same reps, it’s impossible to say if you have been dealt a
-better or worse genetic hand. Until you work as hard as those you admire, don’t
-explain away their success as luck.
-In summary, one of the best ways to ensure your habits remain satisfying over
-the long-run is to pick behaviors that align with your personality and skills.
-Work hard on the things that come easy.
-Chapter Summary
-The secret to maximizing your odds of success is to choose the right
-field of competition.
-Pick the right habit and progress is easy. Pick the wrong habit and life
-is a struggle.
-Genes cannot be easily changed, which means they provide a powerful
-advantage in favorable circumstances and a serious disadvantage in
-unfavorable circumstances.
-Habits are easier when they align with your natural abilities. Choose
-the habits that best suit you.
-Play a game that favors your strengths. If you can’t find a game that
-favors you, create one.
-Genes do not eliminate the need for hard work. They clarify it. They
-tell us what to work hard on.
-19
-The Goldilocks Rule: How to Stay Motivated in
-Life and Work
-IN 1955, Disneyland had just opened in Anaheim, California, when a ten-year-old
-boy walked in and asked for a job. Labor laws were loose back then and the boy
-managed to land a position selling guidebooks for $0.50 apiece.
-Within a year, he had transitioned to Disney’s magic shop, where he learned
-tricks from the older employees. He experimented with jokes and tried out
-simple routines on visitors. Soon he discovered that what he loved was not
-performing magic but performing in general. He set his sights on becoming a
-comedian.
-Beginning in his teenage years, he started performing in `,
-  },
-  {
-    chapter_number: 19,
-    title: "The Goldilocks Rule: How to Stay Motivated in Life and Work",
-    content: `IN 1955, Disneyland had just opened in Anaheim, California, when a ten-year-old
-boy walked in and asked for a job. Labor laws were loose back then and the boy
-managed to land a position selling guidebooks for $0.50 apiece.
-Within a year, he had transitioned to Disney’s magic shop, where he learned
-tricks from the older employees. He experimented with jokes and tried out
-simple routines on visitors. Soon he discovered that what he loved was not
-performing magic but performing in general. He set his sights on becoming a
-comedian.
-Beginning in his teenage years, he started performing in little clubs around
-Los Angeles. The crowds were small and his act was short. He was rarely on
-stage for more than five minutes. Most of the people in the crowd were too busy
-drinking or talking with friends to pay attention. One night, he literally delivered
-his standup routine to an empty club.
-It wasn’t glamorous work, but there was no doubt he was getting better. His
-first routines would only last one or two minutes. By high school, his material
-had expanded to include a five-minute act and, a few years later, a ten-minute
-show. At nineteen, he was performing weekly for twenty minutes at a time. He
-had to read three poems during the show just to make the routine long enough,
-but his skills continued to progress.
-He spent another decade experimenting, adjusting, and practicing. He took a
-job as a television writer and, gradually, he was able to land his own appearances
-on talk shows. By the mid-1970s, he had worked his way into being a regular
-guest on The Tonight Show and Saturday Night Live.
-Finally, after nearly fifteen years of work, the young man rose to fame. He
-toured sixty cities in sixty-three days. Then seventy-two cities in eighty days.
-Then eighty-five cities in ninety days. He had 18,695 people attend one show in
-Ohio. Another 45,000 tickets were sold for his three-day show in New York. He
-catapulted to the top of his genre and became one of the most successful
-comedians of his time.
-His name is Steve Martin.
-Martin’s story offers a fascinating perspective on what it takes to stick with
-habits for the long run. Comedy is not for the timid. It is hard to imagine a
-situation that would strike fear into the hearts of more people than performing
-alone on stage and failing to get a single laugh. And yet Steve Martin faced this
-fear every week for eighteen years. In his words, “10 years spent learning, 4
-years spent refining, and 4 years as a wild success.”
-Why is it that some people, like Martin, stick with their habits—whether
-practicing jokes or drawing cartoons or playing guitar—while most of us
-struggle to stay motivated? How do we design habits that pull us in rather than
-ones that fade away? Scientists have been studying this question for many years.
-While there is still much to learn, one of the most consistent findings is that the
-way to maintain motivation and achieve peak levels of desire is to work on tasks
-of “just manageable difficulty.”
-The human brain loves a challenge, but only if it is within an optimal zone of
-difficulty. If you love tennis and try to play a serious match against a four-yearold, you will quickly become bored. It’s too easy. You’ll win every point. In
-contrast, if you play a professional tennis player like Roger Federer or Serena
-Williams, you will quickly lose motivation because the match is too difficult.
-Now consider playing tennis against someone who is your equal. As the game
-progresses, you win a few points and you lose a few. You have a good chance of
-winning, but only if you really try. Your focus narrows, distractions fade away,
-and you find yourself fully invested in the task at hand. This is a challenge of
-just manageable difficulty and it is a prime example of the Goldilocks Rule.
-The Goldilocks Rule states that humans experience peak motivation when
-working on tasks that are right on the edge of their current abilities. Not too
-hard. Not too easy. Just right.
-THE GOLDILOCKS RULE
-FIGURE 15: Maximum motivation occurs when facing a challenge of just manageable difficulty. In psychology research this is known as the Yerkes–Dodson law, which describes the
-optimal level of arousal as the midpoint between boredom and anxiety.
-Martin’s comedy career is an excellent example of the Goldilocks Rule in
-practice. Each year, he expanded his comedy routine—but only by a minute or
-two. He was always adding new material, but he also kept a few jokes that were
-guaranteed to get laughs. There were just enough victories to keep him
-motivated and just enough mistakes to keep him working hard.
-When you’re starting a new habit, it’s important to keep the behavior as easy
-as possible so you can stick with it even when conditions aren’t perfect. This is
-an idea we covered in detail while discussing the 3rd Law of Behavior Change.
-Once a habit has been established, however, it’s important to continue to
-advance in small ways. These little improvements and new challenges keep you
-engaged. And if you hit the Goldilocks Zone just right, you can achieve a flow
-state.*
-A flow state is the experience of being “in the zone” and fully immersed in an
-activity. Scientists have tried to quantify this feeling. They found that to achieve
-a state of flow, a task must be roughly 4 percent beyond your current ability. In
-real life it’s typically not feasible to quantify the difficulty of an action in this
-way, but the core idea of the Goldilocks Rule remains: working on challenges of
-just manageable difficulty—something on the perimeter of your ability—seems
-crucial for maintaining motivation.
-Improvement requires a delicate balance. You need to regularly search for
-challenges that push you to your edge while continuing to make enough progress
-to stay motivated. Behaviors need to remain novel in order for them to stay
-attractive and satisfying. Without variety, we get bored. And boredom is perhaps
-the greatest villain on the quest for selfimprovement.
-HOW TO STAY FOCUSED WHEN YOU GET BORED WORKING ON
-YOUR GOALS
-After my baseball career ended, I was looking for a new sport. I joined a
-weightlifting team and one day an elite coach visited our gym. He had worked
-with thousands of athletes during his long career, including a few Olympians. I
-introduced myself and we began talking about the process of improvement.
-“What’s the difference between the best athletes and everyone else?” I asked.
-“What do the really successful people do that most don’t?”
-He mentioned the factors you might expect: genetics, luck, talent. But then he
-said something I wasn’t expecting: “At some point it comes down to who can
-handle the boredom of training every day, doing the same lifts over and over and
-over.”
-His answer surprised me because it’s a different way of thinking about work
-ethic. People talk about getting “amped up” to work on their goals. Whether it’s
-business or sports or art, you hear people say things like, “It all comes down to
-passion.” Or, “You have to really want it.” As a result, many of us get depressed
-when we lose focus or motivation because we think that successful people have
-some bottomless reserve of passion. But this coach was saying that really
-successful people feel the same lack of motivation as everyone else. The
-difference is that they still find a way to show up despite the feelings of
-boredom.
-Mastery requires practice. But the more you practice something, the more
-boring and routine it becomes. Once the beginner gains have been made and we
-learn what to expect, our interest starts to fade. Sometimes it happens even faster
-than that. All you have to do is hit the gym a few days in a row or publish a
-couple of blog posts on time and letting one day slip doesn’t feel like much.
-Things are going well. It’s easy to rationalize taking a day off because you’re in
-a good place.
-The greatest threat to success is not failure but boredom. We get bored with
-habits because they stop delighting us. The outcome becomes expected. And as
-our habits become ordinary, we start derailing our progress to seek novelty.
-Perhaps this is why we get caught up in a never-ending cycle, jumping from one
-workout to the next, one diet to the next, one business idea to the next. As soon
-as we experience the slightest dip in motivation, we begin seeking a new strategy
-—even if the old one was still working. As Machiavelli noted, “Men desire
-novelty to such an extent that those who are doing well wish for a change as
-much as those who are doing badly.”
-Perhaps this is why many of the most habit-forming products are those that
-provide continuous forms of novelty. Video games provide visual novelty. Porn
-provides sexual novelty. Junk foods provide culinary novelty. Each of these
-experiences offer continual elements of surprise.
-In psychology, this is known as a variable reward.* Slot machines are the
-most common real-world example. A gambler hits the jackpot every now and
-then but not at any predictable interval. The pace of rewards varies. This
-variance leads to the greatest spike of dopamine, enhances memory recall, and
-accelerates habit formation.
-Variable rewards won’t create a craving—that is, you can’t take a reward
-people are uninterested in, give it to them at a variable interval, and hope it will
-change their mind—but they are a powerful way to amplify the cravings we
-already experience because they reduce boredom.
-The sweet spot of desire occurs at a 50/50 split between success and failure.
-Half of the time you get what you want. Half of the time you don’t. You need
-just enough “winning” to experience satisfaction and just enough “wanting” to
-experience desire. This is one of the benefits of following the Goldilocks Rule. If
-you’re already interested in a habit, working on challenges of just manageable
-difficulty is a good way to keep things interesting.
-Of course, not all habits have a variable reward component, and you wouldn’t
-want them to. If Google only delivered a useful search result some of the time, I
-would switch to a competitor pretty quickly. If Uber only picked up half of my
-trips, I doubt I’d be using that service much longer. And if I flossed my teeth
-each night and only sometimes ended up with a clean mouth, I think I’d skip it.
-Variable rewards or not, no habit will stay interesting forever. At some point,
-everyone faces the same challenge on the journey of selfimprovement: you have
-to fall in love with boredom.
-We all have goals that we would like to achieve and dreams that we would
-like to fulfill, but it doesn’t matter what you are trying to become better at, if you
-only do the work when it’s convenient or exciting, then you’ll never be
-consistent enough to achieve remarkable results.
-I can guarantee that if you manage to start a habit and keep sticking to it, there
-will be days when you feel like quitting. When you start a business, there will be
-days when you don’t feel like showing up. When you’re at the gym, there will be
-sets that you don’t feel like finishing. When it’s time to write, there will be days
-that you don’t feel like typing. But stepping up when it’s annoying or painful or
-draining to do so, that’s what makes the difference between a professional and
-an amateur.
-Professionals stick to the schedule; amateurs let life get in the way.
-Professionals know what is important to them and work toward it with purpose;
-amateurs get pulled off course by the urgencies of life.
-David Cain, an author and meditation teacher, encourages his students to
-avoid being “fair-weather meditators.” Similarly, you don’t want to be a fairweather athlete or a fair-weather writer or a fair-weather anything. When a habit
-is truly important to you, you have to be willing to stick to it in any mood.
-Professionals take action even when the mood isn’t right. They might not enjoy
-it, but they find a way to put the reps in.
-There have been a lot of sets that I haven’t felt like finishing, but I’ve never
-regretted doing the workout. There have been a lot of articles I haven’t felt like
-writing, but I’ve never regretted publishing on schedule. There have been a lot of
-days I’ve felt like relaxing, but I’ve never regretted showing up and working on
-something that was important to me.
-The only way to become excellent is to be endlessly fascinated by doing the
-same thing over and over. You have to fall in love with boredom.
-Chapter Summary
-The Goldilocks Rule states that humans experience peak motivation
-when working on tasks that are right on the edge of their current
-abilities.
-The greatest threat to success is not failure but boredom.
-As habits become routine, they become less interesting and less
-satisfying. We get bored.
-Anyone can work hard when they feel motivated. It’s the ability to
-keep going when work isn’t exciting that makes the difference.
-Professionals stick to the schedule; amateurs let life get in the way.`,
-  },
-  {
-    chapter_number: 20,
-    title: "The Downside of Creating Good Habits",
-    content: `HABITS CREATE THE FOUNDATION FOR MASTERY. In chess, it is only after the basic movements of the
-pieces have become automatic that a player can focus on the next level of the
-game. Each chunk of information that is memorized opens up the mental space
-for more effortful thinking. This is true for any endeavor. When you know the
-simple movements so well that you can perform them without thinking, you are
-free to pay attention to more advanced details. In this way, habits are the
-backbone of any pursuit of excellence.
-However, the benefits of habits come at a cost. At first, each repetition
-develops fluency, speed, and skill. But then, as a habit becomes automatic, you
-become less sensitive to feedback. You fall into mindless repetition. It becomes
-easier to let mistakes slide. When you can do it “good enough” on autopilot, you
-stop thinking about how to do it better.
-The upside of habits is that we can do things without thinking. The downside
-of habits is that you get used to doing things a certain way and stop paying
-attention to little errors. You assume you’re getting better because you’re
-gaining experience. In reality, you are merely reinforcing your current habits—
-not improving them. In fact, some research has shown that once a skill has been
-mastered there is usually a slight decline in performance over time.
-Usually, this minor dip in performance is no cause for worry. You don’t need
-a system to continuously improve how well you brush your teeth or tie your
-shoes or make your morning cup of tea. With habits like these, good enough is
-usually good enough. The less energy you spend on trivial choices, the more you
-can spend it on what really matters.
-However, when you want to maximize your potential and achieve elite levels
-of performance, you need a more nuanced approach. You can’t repeat the same
-things blindly and expect to become exceptional. Habits are necessary, but not
-sufficient for mastery. What you need is a combination of automatic habits and
-deliberate practice.
-Habits + Deliberate Practice = Mastery
-To become great, certain skills do need to become automatic. Basketball
-players need to be able to dribble without thinking before they can move on to
-mastering layups with their nondominant hand. Surgeons need to repeat the first
-incision so many times that they could do it with their eyes closed, so that they
-can focus on the hundreds of variables that arise during surgery. But after one
-habit has been mastered, you have to return to the effortful part of the work and
-begin building the next habit.
-Mastery is the process of narrowing your focus to a tiny element of success,
-repeating it until you have internalized the skill, and then using this new habit as
-the foundation to advance to the next frontier of your development. Old tasks
-become easier the second time around, but it doesn’t get easier overall because
-now you’re pouring your energy into the next challenge. Each habit unlocks the
-next level of performance. It’s an endless cycle.
-MASTERING ONE HABIT
-MASTERING A FIELD
-FIGURE 16: The process of mastery requires that you progressively layer improvements on top of one another, each habit building upon the last until a new level of performance has been
-reached and a higher range of skills has been internalized.
-Although habits are powerful, what you need is a way to remain conscious of
-your performance over time, so you can continue to refine and improve. It is
-precisely at the moment when you begin to feel like you have mastered a skill—
-right when things are starting to feel automatic and you are becoming
-comfortable—that you must avoid slipping into the trap of complacency.
-The solution? Establish a system for reflection and review.
-HOW TO REVIEW YOUR HABITS AND MAKE ADJUSTMENTS
-In 1986, the Los Angeles Lakers had one of the most talented basketball teams
-ever assembled, but they are rarely remembered that way. The team started the
-1985–1986 NBA season with an astounding 29–5 record. “The pundits were
-saying that we might be the best team in the history of basketball,” head coach
-Pat Riley said after the season. Surprisingly, the Lakers stumbled in the 1986
-playoffs and suffered a season-ending defeat in the Western Conference Finals.
-The “best team in the history of basketball” didn’t even play for the NBA
-championship.
-After that blow, Riley was tired of hearing about how much talent his players
-had and about how much promise his team held. He didn’t want to see flashes of
-brilliance followed by a gradual fade in performance. He wanted the Lakers to
-play up to their potential, night after night. In the summer of 1986, he created a
-plan to do exactly that, a system that he called the Career Best Effort program or
-CBE.
-“When players first join the Lakers,” Riley explained, “we track their
-basketball statistics all the way back to high school. I call this Taking Their
-Number. We look for an accurate gauge of what a player can do, then build him
-into our plan for the team, based on the notion that he will maintain and then
-improve upon his averages.”
-After determining a player’s baseline level of performance, Riley added a key
-step. He asked each player to “improve their output by at least 1 percent over the
-course of the season. If they succeeded, it would be a CBE, or Career Best
-Effort.” Similar to the British Cycling team that we discussed in Chapter 1, the
-Lakers sought peak performance by getting slightly better each day.
-Riley was careful to point out that CBE was not merely about points or
-statistics but about giving your “best effort spiritually and mentally and
-physically.” Players got credit for “allowing an opponent to run into you when
-you know that a foul will be called against him, diving for loose balls, going
-after rebounds whether you are likely to get them or not, helping a teammate
-when the player he’s guarding has surged past him, and other ‘unsung hero’
-deeds.”
-As an example, let’s say that Magic Johnson—the Lakers star player at the
-time—had 11 points, 8 rebounds, 12 assists, 2 steals, and 5 turnovers in a game.
-Magic also got credit for an “unsung hero” deed by diving after a loose ball (+1).
-Finally, he played a total of 33 minutes in this imaginary game.
-The positive numbers (11 + 8 + 12 + 2 + 1) add up to 34. Then, we subtract
-the 5 turnovers (34–5) to get 29. Finally, we divide 29 by 33 minutes played.
-29/33 = 0.879
-Magic’s CBE number here would be 879. This number was calculated for all
-of a player’s games, and it was the average CBE that a player was asked to
-improve by 1 percent over the season. Riley compared each player’s current
-CBE to not only their past performances but also those of other players in the
-league. As Riley put it, “We rank team members alongside league opponents
-who play the same position and have similar role definitions.”
-Sportswriter Jackie MacMullan noted, “Riley trumpeted the top performers in
-the league in bold lettering on the blackboard each week and measured them
-against the corresponding players on his own roster. Solid, reliable players
-generally rated a score in the 600s, while elite players scored at least 800. Magic
-Johnson, who submitted 138 triple-doubles in his career, often scored over
-1,000.”
-The Lakers also emphasized year-over-year progress by making historical
-comparisons of CBE data. Riley said, “We stacked the month of November
-1986, next to November 1985, and showed the players whether they were doing
-better or worse than at the same point last season. Then we showed them how
-their performance figures for December 1986, stacked up against November’s.”
-The Lakers rolled out CBE in October 1986. Eight months later, they were
-NBA champions. The following year, Pat Riley led his team to another title as
-the Lakers became the first team in twenty years to win back-to-back NBA
-championships. Afterward, he said, “Sustaining an effort is the most important
-thing for any enterprise. The way to be successful is to learn how to do things
-right, then do them the same way every time.”
-The CBE program is a prime example of the power of reflection and review.
-The Lakers were already talented. CBE helped them get the most out of what
-they had, and made sure their habits improved rather than declined.
-Reflection and review enables the long-term improvement of all habits
-because it makes you aware of your mistakes and helps you consider possible
-paths for improvement. Without reflection, we can make excuses, create
-rationalizations, and lie to ourselves. We have no process for determining
-whether we are performing better or worse compared to yesterday.
-Top performers in all fields engage in various types of reflection and review,
-and the process doesn’t have to be complex. Kenyan runner Eliud Kipchoge is
-one of the greatest marathoners of all time and an Olympic gold medalist. He
-still takes notes after every practice in which he reviews his training for the day
-and searches for areas that can be improved. Similarly, gold medal swimmer
-Katie Ledecky records her wellness on a scale of 1 to 10 and includes notes on
-her nutrition and how well she slept. She also records the times posted by other
-swimmers. At the end of each week, her coach goes over her notes and adds his
-thoughts.
-It’s not just athletes, either. When comedian Chris Rock is preparing fresh
-material, he will first appear at small nightclubs dozens of times and test
-hundreds of jokes. He brings a notepad on stage and records which bits go over
-well and where he needs to make adjustments. The few killer lines that survive
-will form the backbone of his new show.
-I know of executives and investors who keep a “decision journal” in which
-they record the major decisions they make each week, why they made them, and
-what they expect the outcome to be. They review their choices at the end of each
-month or year to see where they were correct and where they went wrong.*
-Improvement is not just about learning habits, it’s also about fine-tuning them.
-Reflection and review ensures that you spend your time on the right things and
-make course corrections whenever necessary—like Pat Riley adjusting the effort
-of his players on a nightly basis. You don’t want to keep practicing a habit if it
-becomes ineffective.
-Personally, I employ two primary modes of reflection and review. Each
-December, I perform an Annual Review, in which I reflect on the previous year. I
-tally my habits for the year by counting up how many articles I published, how
-many workouts I put in, how many new places I visited, and more.* Then, I
-reflect on my progress (or lack thereof) by answering three questions:
-1. What went well this year?
-2. What didn’t go so well this year?
-3. What did I learn?
-Six months later, when summer rolls around, I conduct an Integrity Report.
-Like everyone, I make a lot of mistakes. My Integrity Report helps me realize
-where I went wrong and motivates me to get back on course. I use it as a time to
-revisit my core values and consider whether I have been living in accordance
-with them. This is when I reflect on my identity and how I can work toward
-being the type of person I wish to become.*
-My yearly Integrity Report answers three questions:
-1. What are the core values that drive my life and work?
-2. How am I living and working with integrity right now?
-3. How can I set a higher standard in the future?
-These two reports don’t take very long—just a few hours per year—but they
-are crucial periods of refinement. They prevent the gradual slide that happens
-when I don’t pay close attention. They provide an annual reminder to revisit my
-desired identity and consider how my habits are helping me become the type of
-person I wish to be. They indicate when I should upgrade my habits and take on
-new challenges and when I should dial my efforts back and focus on the
-fundamentals.
-Reflection can also bring a sense of perspective. Daily habits are powerful
-because of how they compound, but worrying too much about every daily choice
-is like looking at yourself in the mirror from an inch away. You can see every
-imperfection and lose sight of the bigger picture. There is too much feedback.
-Conversely, never reviewing your habits is like never looking in the mirror. You
-aren’t aware of easily fixable flaws—a spot on your shirt, a bit of food in your
-teeth. There is too little feedback. Periodic reflection and review is like viewing
-yourself in the mirror from a conversational distance. You can see the important
-changes you should make without losing sight of the bigger picture. You want to
-view the entire mountain range, not obsess over each peak and valley.
-Finally, reflection and review offers an ideal time to revisit one of the most
-important aspects of behavior change: identity.
-HOW TO BREAK THE BELIEFS THAT HOLD YOU BACK
-In the beginning, repeating a habit is essential to build up evidence of your
-desired identity. As you latch on to that new identity, however, those same
-beliefs can hold you back from the next level of growth. When working against
-you, your identity creates a kind of “pride” that encourages you to deny your
-weak spots and prevents you from truly growing. This is one of the greatest
-downsides of building habits.
-The more sacred an idea is to us—that is, the more deeply it is tied to our
-identity—the more strongly we will defend it against criticism. You see this in
-every industry. The schoolteacher who ignores innovative teaching methods and
-sticks with her tried-and-true lesson plans. The veteran manager who is
-committed to doing things “his way.” The surgeon who dismisses the ideas of
-her younger colleagues. The band who produces a mind-blowing first album and
-then gets stuck in a rut. The tighter we cling to an identity, the harder it becomes
-to grow beyond it.
-One solution is to avoid making any single aspect of your identity an
-overwhelming portion of who you are. In the words of investor Paul Graham,
-“keep your identity small.” The more you let a single belief define you, the less
-capable you are of adapting when life challenges you. If you tie everything up in
-being the point guard or the partner at the firm or whatever else, then the loss of
-that facet of your life will wreck you. If you’re a vegan and then develop a
-health condition that forces you to change your diet, you’ll have an identity crisis
-on your hands. When you cling too tightly to one identity, you become brittle.
-Lose that one thing and you lose yourself.
-For most of my young life, being an athlete was a major part of my identity.
-After my baseball career ended, I struggled to find myself. When you spend your
-whole life defining yourself in one way and that disappears, who are you now?
-Military veterans and former entrepreneurs report similar feelings. If your
-identity is wrapped up in a belief like “I’m a great soldier,” what happens when
-your period of service ends? For many business owners, their identity is
-something along the lines of “I’m the CEO” or “I’m the founder.” If you have
-spent every waking moment working on your business, how will you feel after
-you sell the company?
-The key to mitigating these losses of identity is to redefine yourself such that
-you get to keep important aspects of your identity even if your particular role
-changes.
-“I’m an athlete” becomes “I’m the type of person who is mentally
-tough and loves a physical challenge.”
-“I’m a great soldier” transforms into “I’m the type of person who is
-disciplined, reliable, and great on a team.”
-“I’m the CEO” translates to “I’m the type of person who builds and
-creates things.”
-When chosen effectively, an identity can be flexible rather than brittle. Like
-water flowing around an obstacle, your identity works with the changing
-circumstances rather than against them.
-The following quote from the Tao Te Ching encapsulates the ideas perfectly:
-Men are born soft and supple;
-dead, they are stiff and hard.
-Plants are born tender and pliant;
-dead, they are brittle and dry.
-Thus whoever is stiff and inflexible
-is a disciple of death.
-Whoever is soft and yielding
-is a disciple of life.
-The hard and stiff will be broken.
-The soft and supple will prevail.
-—LAO TZU
-Habits deliver numerous benefits, but the downside is that they can lock us
-into our previous patterns of thinking and acting—even when the world is
-shifting around us. Everything is impermanent. Life is constantly changing, so
-you need to periodically check in to see if your old habits and beliefs are still
-serving you.
-A lack of self-awareness is poison. Reflection and review is the antidote.
-Chapter Summary
-The upside of habits is that we can do things without thinking. The
-downside is that we stop paying attention to little errors.
-Habits + Deliberate Practice = Mastery
-Reflection and review is a process that allows you to remain conscious
-of your performance over time.
-The tighter we cling to an identity, the harder it becomes to grow
-beyond it.`,
+    title:
+      "RESILIENCE AND WABI-SABI: How to face life’s challenges without letting stress and worry age you",
+    content: `What is resilience?
+One thing that everyone with a clearly defined ikigai has in common is that they
+pursue their passion no matter what. They never give up, even when the cards
+seem stacked against them or they face one hurdle after another.
+We’re talking about resilience, a concept that has become influential among
+psychologists.
+But resilience isn’t just the ability to persevere. As we’ll see in this chapter, it
+is also an outlook we can cultivate to stay focused on the important things in life
+rather than what is most urgent, and to keep ourselves from being carried away by
+negative emotions.
+In the final section of the chapter, we’ll explore techniques that go beyond
+resilience to cultivate antifragility.
+Sooner or later, we all have to face difficult moments, and the way we do this
+can make a huge difference to our quality of life. Proper training for our mind,
+body, and emotional resilience is essential for confronting life’s ups and downs.
+Nana korobi ya oki 七転び八起き
+Fall seven times, rise eight.
+—Japanese proverb
+Resilience is our ability to deal with setbacks. The more resilient we are, the
+easier it will be to pick ourselves up and get back to what gives meaning to our
+lives.
+Resilient people know how to stay focused on their objectives, on what
+matters, without giving in to discouragement. Their flexibility is the source of
+their strength: They know how to adapt to change and to reversals of fortune.
+They concentrate on the things they can control and don’t worry about those they
+can’t.
+In the words of the famous Serenity Prayer by Reinhold Niebuhr:
+God, give us grace to accept with serenity
+the things that cannot be changed,
+Courage to change the things
+which should be changed,
+and the Wisdom to distinguish
+the one from the other.
+the one from the other.
+Emotional resilience through Buddhism and Stoicism
+Siddhārtha Gautama (Buddha) was born a prince of Kapilavastu, Nepal, and grew
+up in a palace, surrounded by riches. At sixteen he married and had a child.
+Not satisfied by his family’s wealth, at twenty-nine he decided to try a
+different lifestyle and ran away from the palace to live as an ascetic. But it wasn’t
+asceticism that he was looking for; it didn’t offer the happiness and well-being he
+sought. Neither wealth nor extreme asceticism worked for him. He realized that a
+wise person should not ignore life’s pleasures. A wise person can live with these
+pleasures but should always remain conscious of how easy it is to be enslaved by
+them.
+Zeno of Citium began his studies with the Cynics. The Cynics also led ascetic
+lives, leaving behind all earthly pleasures. They lived in the street, and the only
+thing they owned was the clothing on their backs.
+Seeing that Cynicism did not give him a sense of well-being, Zeno abandoned
+its teachings to found the school of Stoicism, which centers on the idea that there
+is nothing wrong with enjoying life’s pleasures as long as they do not take control
+of your life as you enjoy them. You have to be prepared for those pleasures to
+disappear.
+The goal is not to eliminate all feelings and pleasures from our lives, as in
+Cynicism, but to eliminate negative emotions.
+Since their inception, one of the objectives of both Buddhism and Stoicism
+has been to control pleasure, emotions, and desires. Though the philosophies are
+very different, both aim to curb our ego and control our negative emotions.
+Both Stoicism and Buddhism are, at their roots, methods for practicing wellbeing.
+According to Stoicism, our pleasures and desires are not the problem. We can
+enjoy them as long as they don’t take control of us. The Stoics viewed those who
+were able to control their emotions as virtuous.
+What’s the worst thing that could happen?
+We finally land our dream job, but after a little while we are already hunting for a
+better one. We win the lottery and buy a nice car but then decide we can’t live
+without a sailboat. We finally win the heart of the man or woman we’ve been
+without a sailboat. We finally win the heart of the man or woman we’ve been
+pining for and suddenly find we have a wandering eye.
+People can be insatiable.
+The Stoics believed that these kinds of desires and ambitions are not worth
+pursuing. The objective of the virtuous person is to reach a state of tranquility
+(apatheia): the absence of negative feelings such as anxiety, fear, shame, vanity,
+and anger, and the presence of positive feelings such as happiness, love, serenity,
+and gratitude.
+In order to keep their minds virtuous, the Stoics practiced something like
+negative visualization: They imagined the worst thing that could happen in order
+to be prepared if certain privileges and pleasures were taken from them.
+To practice negative visualization, we have to reflect on negative events, but
+without worrying about them.
+Seneca, one of the richest men in ancient Rome, lived a life of luxury but was,
+nonetheless, an active Stoic. He recommended practicing negative visualization
+every night before falling asleep. In fact, he not only imagined these negative
+situations, he actually put them into practice—for example, by living for a week
+without servants, or the food and drink he was used to as a wealthy man. As a
+result, he was able to answer the question “What’s the worst thing that could
+happen?”
+Meditating for healthier emotions
+In addition to negative visualization and not giving in to negative emotions,
+another central tenet of Stoicism is knowing what we can control and what we
+can’t, as we see in the Serenity Prayer.
+Worrying about things that are beyond our control accomplishes nothing. We
+should have a clear sense of what we can change and what we can’t, which in turn
+will allow us to resist giving in to negative emotions.
+In the words of Epictetus, “It’s not what happens to you, but how you react that
+matters.”
+1
+In Zen Buddhism, meditation is a way to become aware of our desires and
+emotions and thereby free ourselves from them. It is not simply a question of
+keeping the mind free of thoughts but instead involves observing our thoughts
+and emotions as they appear, without getting carried away by them. In this way,
+we train our minds not to get swept up in anger, jealousy, or resentment.
+One of the most commonly used mantras in Buddhism focuses on controlling
+negative emotions: “Oṃ maṇi padme hūṃ ,” in which oṃ is the generosity that
+purifies the ego, ma is the ethics that purifies jealousy, ṇi is the patience that
+purifies passion and desire, pad is the precision that purifies bias, me is the
+surrender that purifies greed, and hūṃ is the wisdom that purifies hatred.
+The here and now, and the impermanence of things
+Another key to cultivating resilience is knowing in which time to live. Both
+Buddhism and Stoicism remind us that the present is all that exists, and it is the
+only thing we can control. Instead of worrying about the past or the future, we
+should appreciate things just as they are in the moment, in the now.
+“The only moment in which you can be truly alive is the present moment,”
+observes the Buddhist monk Thich Nhat Hanh.
+In addition to living in the here and now, the Stoics recommend reflecting on
+the impermanence of the things around us.
+The Roman emperor Marcus Aurelius said that the things we love are like the
+leaves of a tree: They can fall at any moment with a gust of wind. He also said
+that changes in the world around us are not accidental but rather form part of the
+essence of the universe—a rather Buddhist notion, in fact.
+We should never forget that everything we have and all the people we love will
+disappear at some point. This is something we should keep in mind, but without
+giving in to pessimism. Being aware of the impermanence of things does not have
+to make us sad; it should help us love the present moment and those who
+surround us.
+“All things human are short-lived and perishable,” Seneca tells us.
+2
+The temporary, ephemeral, and impermanent nature of the world is central to
+every Buddhist discipline. Keeping this always in mind helps us avoid excessive
+pain in times of loss.
+Wabi-sabi and ichi-go ichi-e
+Wabi-sabi is a Japanese concept that shows us the beauty of the fleeting,
+changeable, and imperfect nature of the world around us. Instead of searching for
+beauty in perfection, we should look for it in things that are flawed, incomplete.
+This is why the Japanese place such value, for example, on an irregular or
+This is why the Japanese place such value, for example, on an irregular or
+cracked teacup. Only things that are imperfect, incomplete, and ephemeral can
+truly be beautiful, because only those things resemble the natural world.
+A complementary Japanese concept is that of ichi-go ichi-e, which could be
+translated as “This moment exists only now and won’t come again.” It is heard
+most often in social gatherings as a reminder that each encounter—whether with
+friends, family, or strangers—is unique and will never be repeated, meaning that
+we should enjoy the moment and not lose ourselves in worries about the past or
+the future.
+The concept is commonly used in tea ceremonies, Zen meditation, and
+Japanese martial arts, all of which place emphasis on being present in the
+moment.
+In the West, we’ve grown accustomed to the permanence of the stone
+buildings and cathedrals of Europe, which sometimes gives us the sense that
+nothing changes, making us forget about the passage of time. Greco-Roman
+architecture adores symmetry, sharp lines, imposing facades, and buildings and
+statues of the gods that outlast the centuries.
+Japanese architecture, on the other hand, doesn’t try to be imposing or perfect,
+because it is built in the spirit of wabi-sabi. The tradition of making structures out
+of wood presupposes their impermanence and the need for future generations to
+rebuild them. Japanese culture accepts the fleeting nature of the human being and
+everything we create.
+The Grand Shrine of Ise,
+3
+for example, has been rebuilt every twenty years for
+centuries. The most important thing is not to keep the building standing for
+generations, but to preserve customs and traditions—things that can withstand the
+passage of time better than structures made by human hands.
+The key is to accept that there are certain things over which we have no
+control, like the passage of time and the ephemeral nature of the world around us.
+Ichi-go ichi-e teaches us to focus on the present and enjoy each moment that
+life brings us. This is why it is so important to find and pursue our ikigai.
+Wabi-sabi teaches us to appreciate the beauty of imperfection as an
+opportunity for growth.
+Beyond resilience: Antifragility
+As the legend goes, the first time Hercules faced the Hydra, he despaired when
+he discovered that cutting off one of its heads meant that two would grow back in
+its place. He would never be able to kill the beast if it got stronger with every
+its place. He would never be able to kill the beast if it got stronger with every
+wound.
+As Nassim Nicholas Taleb explains in Antifragile: Things That Gain from
+Disorder,
+4 we use the word fragile to describe people, things, and organizations
+that are weakened when harmed, and the words robust and resilient for things that
+are able to withstand harm without weakening, but we don’t have a word for
+things that get stronger when harmed (up to a point).
+To refer to the kind of power possessed by the Hydra of Lerna, to talk about
+things that get stronger when they are harmed, Taleb proposes the term
+antifragile: “Antifragility is beyond resilience or robustness. The resilient resists
+shocks and stays the same; the antifragile gets better.”
+Catastrophes and exceptional circumstances offer good models for explaining
+antifragility. In 2011 a tsunami hit the Tōhoku region of Japan, doing tremendous
+damage to dozens of cities and towns along the coast, most famously Fukushima.
+When we visited the affected coast two years after the catastrophe, having
+driven for hours along cracked highways and past one empty gas station after
+another, we passed through several ghost towns whose streets had been taken over
+by the remnants of houses, piles of cars, and empty train stations. These towns
+were fragile spaces that had been forgotten by the government and could not
+recover on their own.
+Other places, such as Ishinomaki and Kesennuma, suffered extensive damage
+but were rebuilt within a few years, thanks to the efforts of many. Ishinomaki and
+Kesennuma showed how resilient they were in their ability to return to normal
+after the catastrophe.
+The earthquake that caused the tsunami also affected the Fukushima nuclear
+power plant. The Tokyo Electric Power Company engineers working at the plant
+were not prepared to recover from that kind of damage. The Fukushima nuclear
+facility is still in a state of emergency and will be for decades to come. It
+demonstrated its fragility in the face of an unprecedented catastrophe.
+The Japanese financial markets closed minutes after the earthquake. Which
+businesses did the best in the aftermath? Stock in big construction companies has
+been steadily on the rise since 2011; the need to rebuild the entire coast of
+Tōhoku is a boon for construction. In this case, Japanese construction companies
+are antifragile, since they benefited enormously from the catastrophe.
+Now let’s take a look at how we can apply this concept to our daily lives. How
+can we be more antifragile?
+Step 1: Create redundancies
+Step 1: Create redundancies
+Instead of having a single salary, try to find a way to make money from your
+hobbies, at other jobs, or by starting your own business. If you have only one
+salary, you might be left with nothing should your employer run into trouble,
+leaving you in a position of fragility. On the other hand, if you have several
+options and you lose your primary job, it might just happen that you end up
+dedicating more time to your secondary job, and maybe even make more money
+at it. You would have beaten that stroke of bad luck and would be, in that case,
+antifragile.
+One hundred percent of the seniors we interviewed in Ogimi had a primary
+and a secondary occupation. Most of them kept a vegetable garden as a secondary
+job, and sold their produce at the local market.
+The same idea goes for friendships and personal interests. It’s just a matter, as
+the saying goes, of not putting all your eggs in one basket.
+In the sphere of romantic relationships, there are those who focus all their
+energy on their partner and make him or her their whole world. Those people lose
+everything if the relationship doesn’t work out, whereas if they’ve cultivated
+strong friendships and a full life along the way, they’ll be in a better position to
+move on at the end of a relationship. They’ll be antifragile.
+Right now you might be thinking, “I don’t need more than one salary, and I’m
+happy with the friends I’ve always had. Why should I add anything new?” It might
+seem like a waste of time to add variation to our lives, because extraordinary
+things don’t ordinarily happen. We slip into a comfort zone. But the unexpected
+always happens, sooner or later.
+Step 2: Bet conservatively in certain areas and take many small
+risks in others
+The world of finance turns out to be very useful in explaining this concept. If you
+have $10,000 saved up, you might put $9,000 of that into an index fund or fixedterm deposit, and invest the remaining $1,000 in ten start-ups with huge growth
+potential—say, $100 in each.
+One possible scenario is that three of the companies fail (you lose $300), the
+value of three other companies goes down (you lose another $100 or $200), the
+value of three goes up (you make $100 or $200), and the value of one of the startups increases twenty-fold (you make nearly $2,000, or maybe even more).
+You still make money, even if three of the businesses go completely belly-up.
+You’ve benefited from the damage, just like the Hydra.
+You’ve benefited from the damage, just like the Hydra.
+The key to becoming antifragile is taking on small risks that might lead to
+great reward, without exposing ourselves to dangers that might sink us, such as
+investing $10,000 in a fund of questionable reputation that we saw advertised in
+the newspaper.
+Step 3: Get rid of the things that make you fragile
+We’re taking the negative route for this exercise. Ask yourself: What makes me
+fragile? Certain people, things, and habits generate losses for us and make us
+vulnerable. Who and what are they?
+When we make our New Year’s resolutions, we tend to emphasize adding new
+challenges to our lives. It’s great to have this kind of objective, but setting “good
+riddance” goals can have an even bigger impact. For example:
+Stop snacking between meals
+Eat sweets only once a week
+Gradually pay off all debt
+Avoid spending time with toxic people
+Avoid spending time doing things we don’t enjoy, simply because we feel
+obligated to do them
+Spend no more than twenty minutes on Facebook per day
+To build resilience into our lives, we shouldn’t fear adversity, because each
+setback is an opportunity for growth. If we adopt an antifragile attitude, we’ll find
+a way to get stronger with every blow, refining our lifestyle and staying focused
+on our ikigai.
+Taking a hit or two can be viewed as either a misfortune or an experience that
+we can apply to all areas of our lives, as we continually make corrections and set
+new and better goals. As Taleb writes in Antifragile, “We need randomness, mess,
+adventures, uncertainty, self-discovery, hear traumatic episodes, all these things
+that make life worth living.” We encourage those interested in the concept of
+antifragility to read Nassim Nicholas Taleb’s Antifragile.
+Life is pure imperfection, as the philosophy of wabi-sabi teaches us, and the
+passage of time shows us that everything is fleeting, but if you have a clear sense
+of your ikigai, each moment will hold so many possibilities that it will seem
+almost like an eternity.`,
   },
 ];
 
