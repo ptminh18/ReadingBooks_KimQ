@@ -193,7 +193,7 @@ function useTTS() {
 }
 
 // ─── AudioBar ─────────────────────────────────────────────────────────────────
-function AudioBar({ tts }) {
+function AudioBar({ tts, visible = true, onClose }) {
   const {
     status,
     progress,
@@ -206,12 +206,23 @@ function AudioBar({ tts }) {
     cycleSpeed,
     currentText,
   } = tts;
-  if (status === "idle") return null;
+  if (!visible) return null;
 
   const pct = duration ? `${(progress / duration) * 100}%` : "0%";
 
   return (
     <div className="fixed bottom-0 left-1/2 -translate-x-1/2 w-[80vw] bg-white border border-gray-200 rounded-t-2xl px-6 py-4 shadow-xl z-40">
+      <button
+        onClick={() => {
+          console.log("AudioBar close clicked");
+          if (onClose) onClose();
+          else stop();
+        }}
+        className="absolute top-3 right-4 text-gray-400 hover:text-gray-600 transition-colors p-1"
+        title="Close audio player"
+      >
+        <X size={20} />
+      </button>
       <div className="max-w-5xl mx-auto flex items-center gap-6">
         {/* Info */}
         <div className="hidden lg:flex items-center gap-3 w-64 shrink-0">
@@ -225,7 +236,7 @@ function AudioBar({ tts }) {
             <p className="text-[10px] text-gray-500 truncate">{currentText}</p>
           </div>
           <button
-            onClick={stop}
+            onClick={onClose ? onClose : stop}
             className="text-gray-300 hover:text-red-500 transition-colors shrink-0"
           >
             <X size={16} />
@@ -603,6 +614,17 @@ function HomePage({ onSelectBook }) {
 // ─── App ──────────────────────────────────────────────────────────────────────
 export default function App() {
   const tts = useTTS();
+  const [isAudioVisible, setIsAudioVisible] = useState(false);
+
+  const closeAudio = () => {
+    console.log("closeAudio called");
+    try {
+      tts.stop();
+    } catch {
+      // ignore
+    }
+    setIsAudioVisible(false);
+  };
 
   const [currentBookId, setCurrentBookId] = useState(null);
   const [activeTab, setActiveTab] = useState("overview");
@@ -665,7 +687,7 @@ export default function App() {
   }, [currentChapterIndex, currentBookId, chapters.length]); // eslint-disable-line
 
   const goHome = useCallback(() => {
-    tts.stop(); // stop + clear src before navigation
+    // tts.stop();
     setCurrentBookId(null);
     setBook(null);
     setChapters([]);
@@ -882,14 +904,15 @@ export default function App() {
                         {isSummarizing ? "Nội dung" : "Tóm tắt"}
                       </button>
                       <button
-                        onClick={() =>
+                        onClick={() => {
+                          setIsAudioVisible(true);
                           tts.speak(
                             isSummarizing
                               ? currentChapterData.summary
                               : currentChapterData.content,
                             lang,
-                          )
-                        }
+                          );
+                        }}
                         className="flex items-center gap-1.5 px-3 py-2 bg-indigo-50 text-indigo-600 rounded-lg hover:bg-indigo-100 transition-colors text-sm font-medium"
                       >
                         <Volume2 size={15} /> Nghe
@@ -936,7 +959,7 @@ export default function App() {
           </div>
         )}
 
-        <AudioBar tts={tts} />
+        <AudioBar tts={tts} visible={isAudioVisible} onClose={closeAudio} />
       </main>
 
       {/* Book Summary Modal */}
@@ -944,9 +967,10 @@ export default function App() {
         <BookSummaryModal
           book={book}
           onClose={() => setShowBookSummary(false)}
-          onListen={(text, language) =>
-            tts.speak(text, language?.startsWith("vi") ? "vi" : "en")
-          }
+          onListen={(text, language) => {
+            setIsAudioVisible(true);
+            tts.speak(text, language?.startsWith("vi") ? "vi" : "en");
+          }}
         />
       )}
 
