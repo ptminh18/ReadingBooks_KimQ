@@ -1,0 +1,21 @@
+Note: Unnecessary use of -X or --request, POST is already inferred.
+* Host localhost:3001 was resolved.
+* IPv6: ::1
+* IPv4: 127.0.0.1
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying [::1]:3001...
+* Connected to localhost (::1) port 3001
+> POST /api/tts HTTP/1.1
+> Host: localhost:3001
+> User-Agent: curl/8.7.1
+> Accept: */*
+> Content-Type: application/json
+> Content-Length: 54077
+> 
+} [54077 bytes data]
+* upload completely sent off: 54077 bytes
+100 54077    0     0  100 54077      0   255k --:--:-- --:--:-- --:--:--  255k100 54077    0     0  100 54077      0  44822  0:00:01  0:00:01 --:--:-- 44802100 54077    0     0  100 54077      0  24507  0:00:02  0:00:02 --:--:-- 24502100 54077    0     0  100 54077      0  16837  0:00:03  0:00:03 --:--:-- 16835100 54077    0     0  100 54077      0  12824  0:00:04  0:00:04 --:--:-- 12823100 54077    0     0  100 54077      0  10356  0:00:05  0:00:05 --:--:--     0100 54077    0     0  100 54077      0   8684  0:00:06  0:00:06 --:--:--     0100 54077    0     0  100 54077      0   7477  0:00:07  0:00:07 --:--:--     0100 54077    0     0  100 54077      0   6568  0:00:08  0:00:08 --:--:--     0100 54077    0     0  100 54077      0   5856  0:00:09  0:00:09 --:--:--     0100 54077    0     0  100 54077      0   5281  0:00:10  0:00:10 --:--:--     0* Empty reply from server
+100 54077    0     0  100 54077      0   5050  0:00:10  0:00:10 --:--:--     0
+* Closing connection
+curl: (52) Empty reply from server

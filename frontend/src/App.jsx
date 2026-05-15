@@ -24,6 +24,11 @@ import { HomePage } from "./components/HomePage";
 
 export default function App() {
   const tts = useTTS();
+  const [isAudioVisible, setIsAudioVisible] = useState(false);
+
+  useEffect(() => {
+    if (tts.status === "idle") setIsAudioVisible(false);
+  }, [tts.status]);
 
   // ── Navigation ──────────────────────────────────────────────────────────────
   const [currentBookId, setCurrentBookId] = useState(null);
@@ -108,6 +113,7 @@ export default function App() {
 
   const handleListen = useCallback(
     (text, language) => {
+      setIsAudioVisible(true);
       tts.speak(text, language?.startsWith("vi") ? "vi" : "en");
     },
     [tts],
@@ -321,14 +327,15 @@ export default function App() {
                         {isSummarizing ? "Nội dung" : "Tóm tắt"}
                       </button>
                       <button
-                        onClick={() =>
+                        onClick={() => {
+                          setIsAudioVisible(true);
                           tts.speak(
                             isSummarizing
                               ? currentChapterData.summary
                               : currentChapterData.content,
                             lang,
-                          )
-                        }
+                          );
+                        }}
                         className="flex items-center gap-1.5 px-3 py-2 bg-indigo-50 text-indigo-600 rounded-lg hover:bg-indigo-100 transition-colors text-sm font-medium"
                       >
                         <Volume2 size={15} /> Nghe
@@ -376,7 +383,14 @@ export default function App() {
         )}
 
         {/* Audio bar — hides itself when status is idle */}
-        <AudioBar tts={tts} onClose={tts.stop} />
+        <AudioBar
+          tts={tts}
+          visible={isAudioVisible}
+          onClose={() => {
+            tts.stop();
+            setIsAudioVisible(false);
+          }}
+        />
       </main>
 
       {/* ── Modals & overlays ─────────────────────────────────────────────────── */}

@@ -1,7 +1,7 @@
 /* eslint-disable no-empty */
 /* eslint-disable no-undef */
 import { Router } from "express";
-import { exec } from "child_process";
+import { exec, spawn } from "child_process";
 import { createHash } from "crypto";
 import { existsSync, mkdirSync, writeFileSync } from "fs";
 import { join, dirname } from "path";
@@ -27,38 +27,105 @@ function pickVoice(language = "vi", gender = "female") {
   return VOICES[`${lang}_${gender}`] || VOICES.vi_female;
 }
 
-function generateTTS(text, voice, outputPath) {
+function getAlternateVoice(currentVoice) {
+  // try to pick the opposite-gender voice for the same language
+  try {
+    if (!currentVoice) return VOICES.vi_female;
+    if (
+      currentVoice.includes("HoaiMy") ||
+      currentVoice.includes("HoaiMyNeural")
+    )
+      return VOICES.vi_male;
+    if (
+      currentVoice.includes("NamMinh") ||
+      currentVoice.includes("NamMinhNeural")
+    )
+      return VOICES.vi_female;
+    if (currentVoice.includes("Jenny") || currentVoice.includes("JennyNeural"))
+      return VOICES.en_male;
+    if (currentVoice.includes("Guy") || currentVoice.includes("GuyNeural"))
+      return VOICES.en_female;
+    // fallback: if voice starts with vi return vi_male else en_male
+    if (currentVoice.startsWith("vi")) return VOICES.vi_male;
+    return VOICES.en_male;
+  } catch (e) {
+    return VOICES.vi_female;
+  }
+}
+
+// Generate single chunk using spawn so we stream stderr and avoid exec buffer limits
+function generateTTSChunk(text, voice, outputPath) {
   return new Promise((resolve, reject) => {
     const EDGE_TTS_PATH = process.env.EDGE_TTS_PATH || "edge-tts";
 
     // Write text to a temp file to avoid shell escaping issues with Vietnamese/Unicode
-    const tmpFile = join(os.tmpdir(), `tts_${Date.now()}.txt`);
+    const tmpFile = join(
+      os.tmpdir(),
+      `tts_${Date.now()}_${Math.random().toString(36).slice(2)}.txt`,
+    );
     writeFileSync(tmpFile, text, "utf8");
 
-    // Use --file flag instead of --text to avoid shell encoding issues
-    const cmd = `"${EDGE_TTS_PATH}" --voice "${voice}" --file "${tmpFile}" --write-media "${outputPath}"`;
+    const args = [
+      "--voice",
+      voice,
+      "--file",
+      tmpFile,
+      "--write-media",
+      outputPath,
+    ];
+    console.log("[tts] Spawning:", EDGE_TTS_PATH, args.join(" "));
 
-    console.log("[tts] Running:", cmd);
+    let stderr = "";
+    const child = spawn(EDGE_TTS_PATH, args);
+    child.stderr.on("data", (d) => {
+      const s = String(d);
+      stderr += s;
+      process.stderr.write(s);
+    });
+    child.on("error", (err) => {
+      try {
+        fs.unlinkSync(tmpFile);
+      } catch {}
+      reject(err);
+    });
+    child.on("close", (code) => {
+      try {
+        fs.unlinkSync(tmpFile);
+      } catch {}
+      if (code === 0) resolve(outputPath);
+      else reject(new Error(stderr || `edge-tts exited with code ${code}`));
+    });
+  });
+}
 
-    // increase timeout and buffer to handle longer inputs and larger stderr output
-    exec(
-      cmd,
-      { timeout: 180000, maxBuffer: 10 * 1024 * 1024 },
-      (err, stdout, stderr) => {
-        // Clean up temp file
-        try {
-          fs.unlinkSync(tmpFile);
-        } catch {}
-
-        if (err) {
-          console.error("[tts] stderr:", stderr);
-          console.error("[tts] err:", err.message);
-          reject(new Error(stderr || err.message));
-        } else {
-          resolve(outputPath);
-        }
-      },
-    );
+function ffmpegConcat(fileListPath, outPath) {
+  return new Promise((resolve, reject) => {
+    const ff = process.env.FFMPEG_PATH || "ffmpeg";
+    const args = [
+      "-y",
+      "-f",
+      "concat",
+      "-safe",
+      "0",
+      "-i",
+      fileListPath,
+      "-c",
+      "copy",
+      outPath,
+    ];
+    console.log("[tts] ffmpeg concat:", ff, args.join(" "));
+    let stderr = "";
+    const p = spawn(ff, args);
+    p.stderr.on("data", (d) => {
+      const s = String(d);
+      stderr += s;
+      process.stderr.write(s);
+    });
+    p.on("error", (err) => reject(err));
+    p.on("close", (code) => {
+      if (code === 0) resolve(outPath);
+      else reject(new Error(stderr || `ffmpeg exit ${code}`));
+    });
   });
 }
 
@@ -101,8 +168,105 @@ router.post("/", async (req, res) => {
       );
       // trim and cap text to 15000 chars (frontend cap)
       const payload = cleanText.slice(0, 15000);
-      await generateTTS(payload, voice, cacheFile);
-      console.log(`[tts] Cached: ${hash}.mp3`);
+
+      // split into chunks for robust generation (helps long/slow Vietnamese chapters)
+      const CHUNK_SIZE = 5000;
+      const chunks = [];
+      for (let i = 0; i < payload.length; i += CHUNK_SIZE)
+        chunks.push(payload.slice(i, i + CHUNK_SIZE));
+
+      if (chunks.length === 1) {
+        try {
+          await generateTTSChunk(payload, voice, cacheFile);
+        } catch (err) {
+          console.warn(
+            "[tts] single-chunk generation failed, trying alternate voice",
+            err && err.message,
+          );
+          const alt = getAlternateVoice(voice);
+          try {
+            await generateTTSChunk(payload, alt, cacheFile);
+            console.log(
+              "[tts] single-chunk recovered with alternate voice",
+              alt,
+            );
+          } catch (err2) {
+            throw err; // rethrow original
+          }
+        }
+      } else {
+        // create temp dir for parts
+        const tmpDir = join(
+          os.tmpdir(),
+          `tts_parts_${Date.now()}_${Math.random().toString(36).slice(2)}`,
+        );
+        mkdirSync(tmpDir, { recursive: true });
+        const partFiles = [];
+        try {
+          for (let i = 0; i < chunks.length; i++) {
+            const partPath = join(tmpDir, `part_${i}.mp3`);
+            console.log(
+              `[tts] Generating chunk ${i + 1}/${chunks.length} to ${partPath}`,
+            );
+            try {
+              await generateTTSChunk(chunks[i], voice, partPath);
+            } catch (err) {
+              // if edge-tts returned NoAudioReceived, try alternate voice once
+              const msg = err && err.message ? String(err.message) : "";
+              console.warn(`[tts] chunk ${i} failed: ${msg}`);
+              if (
+                msg.includes("No audio was received") ||
+                msg.includes("NoAudioReceived")
+              ) {
+                const alt = getAlternateVoice(voice);
+                console.log(
+                  `[tts] retrying chunk ${i} with alternate voice ${alt}`,
+                );
+                try {
+                  // small backoff
+                  await new Promise((r) => setTimeout(r, 400));
+                  await generateTTSChunk(chunks[i], alt, partPath);
+                } catch (err2) {
+                  console.error(
+                    `[tts] retry failed for chunk ${i}:`,
+                    err2 && err2.message,
+                  );
+                  throw err; // rethrow original to surface to caller
+                }
+              } else {
+                throw err;
+              }
+            }
+            partFiles.push(partPath);
+          }
+
+          // create concat list file
+          const listPath = join(tmpDir, `list.txt`);
+          const listContent = partFiles
+            .map((p) => `file '${p.replace(/'/g, "'\\''")}'`)
+            .join("\n");
+          writeFileSync(listPath, listContent, "utf8");
+
+          // run ffmpeg concat
+          await ffmpegConcat(listPath, cacheFile);
+          console.log(`[tts] Cached (concatenated): ${hash}.mp3`);
+        } finally {
+          // cleanup parts
+          try {
+            for (const p of partFiles) {
+              try {
+                fs.unlinkSync(p);
+              } catch {}
+            }
+            try {
+              fs.unlinkSync(join(tmpDir, `list.txt`));
+            } catch {}
+            try {
+              fs.rmdirSync(tmpDir);
+            } catch {}
+          } catch {}
+        }
+      }
     } else {
       console.log(`[tts] Cache hit: ${hash}.mp3`);
     }

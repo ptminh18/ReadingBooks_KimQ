@@ -8,8 +8,9 @@ import {
   Loader2,
   Gauge,
 } from "lucide-react";
+// no hooks needed here
 
-export function AudioBar({ tts, onClose }) {
+export function AudioBar({ tts, onClose, visible = true }) {
   const {
     status,
     progress,
@@ -21,7 +22,7 @@ export function AudioBar({ tts, onClose }) {
     cycleSpeed,
     currentText,
   } = tts;
-  if (status === "idle") return null;
+  if (status === "idle" || !visible) return null;
 
   const pct = duration ? `${(progress / duration) * 100}%` : "0%";
 
@@ -29,7 +30,10 @@ export function AudioBar({ tts, onClose }) {
     <div className="fixed bottom-0 left-1/2 -translate-x-1/2 w-[80vw] bg-white border border-gray-200 rounded-t-2xl px-6 pt-8 pb-4 shadow-xl z-40">
       {/* Close button — absolute inside fixed works fine */}
       <button
-        onClick={onClose}
+        onClick={() => {
+          if (tts && typeof tts.stop === "function") tts.stop();
+          if (onClose) onClose();
+        }}
         className="absolute top-3 right-4 text-gray-300 hover:text-red-500 transition-colors"
         title="Đóng"
       >
