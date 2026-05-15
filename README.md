@@ -12,7 +12,7 @@ _Ứng dụng đọc sách thông minh tích hợp AI_
 [![Supabase](https://img.shields.io/badge/Supabase-PostgreSQL-3ECF8E?style=flat-square&logo=supabase)](https://supabase.com)
 [![Groq](https://img.shields.io/badge/Groq-Llama3.3-F55036?style=flat-square)](https://groq.com)
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-readingbooks--kimq--frontend.onrender.com-6366f1?style=flat-square)]([https://readingbooks-kimq-frontend.onrender.com](https://readingbooks-kimq-frontend-u0wo.onrender.com/))
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-readingbooks--kimq--frontend.onrender.com-6366f1?style=flat-square)]((https://readingbooks-kimq-frontend-u0wo.onrender.com/))
 
 ## ⚠️ Backend runs on Render free tier — may take ~30s to wake up on first visit. Please wait a moment if books don't load immediately. ⚠️
 
