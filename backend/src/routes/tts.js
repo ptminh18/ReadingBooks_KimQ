@@ -40,20 +40,25 @@ function generateTTS(text, voice, outputPath) {
 
     console.log("[tts] Running:", cmd);
 
-    exec(cmd, { timeout: 60000 }, (err, stdout, stderr) => {
-      // Clean up temp file
-      try {
-        fs.unlinkSync(tmpFile);
-      } catch {}
+    // increase timeout and buffer to handle longer inputs and larger stderr output
+    exec(
+      cmd,
+      { timeout: 180000, maxBuffer: 10 * 1024 * 1024 },
+      (err, stdout, stderr) => {
+        // Clean up temp file
+        try {
+          fs.unlinkSync(tmpFile);
+        } catch {}
 
-      if (err) {
-        console.error("[tts] stderr:", stderr);
-        console.error("[tts] err:", err.message);
-        reject(new Error(stderr || err.message));
-      } else {
-        resolve(outputPath);
-      }
-    });
+        if (err) {
+          console.error("[tts] stderr:", stderr);
+          console.error("[tts] err:", err.message);
+          reject(new Error(stderr || err.message));
+        } else {
+          resolve(outputPath);
+        }
+      },
+    );
   });
 }
 
@@ -69,17 +74,34 @@ router.post("/", async (req, res) => {
     return res.status(400).json({ error: "text is required." });
   }
 
+  // sanitize and prepare text
   const voice = pickVoice(language, gender);
+  const sanitizeText = (t) => {
+    if (!t) return "";
+    // remove HTML tags
+    let s = String(t).replace(/<[^>]*>/g, " ");
+    // remove control chars except newlines and basic whitespace
+    s = s.replace(/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/g, " ");
+    // collapse repeated whitespace
+    s = s.replace(/\s{2,}/g, " ");
+    return s.trim();
+  };
+
+  const cleanText = sanitizeText(text || "");
   const hash = createHash("sha256")
-    .update(`${voice}:${text.trim()}`)
+    .update(`${voice}:${cleanText}`)
     .digest("hex")
     .slice(0, 16);
   const cacheFile = join(CACHE_DIR, `${hash}.mp3`);
 
   try {
     if (!existsSync(cacheFile)) {
-      console.log(`[tts] Generating: ${type} (${voice})`);
-      await generateTTS(text.trim().slice(0, 5000), voice, cacheFile);
+      console.log(
+        `[tts] Generating: ${type} (${voice}) original_len=${String(text || "").length} cleaned_len=${cleanText.length}`,
+      );
+      // trim and cap text to 15000 chars (frontend cap)
+      const payload = cleanText.slice(0, 15000);
+      await generateTTS(payload, voice, cacheFile);
       console.log(`[tts] Cached: ${hash}.mp3`);
     } else {
       console.log(`[tts] Cache hit: ${hash}.mp3`);
@@ -92,10 +114,14 @@ router.post("/", async (req, res) => {
     res.setHeader("Accept-Ranges", "bytes");
     fs.createReadStream(cacheFile).pipe(res);
   } catch (err) {
-    console.error("[tts] Error:", err.message);
+    console.error("[tts] Error:", err.message || err);
+    // if child process produced stderr, include truncated stderr when available
+    const message = err.message || String(err);
+    const truncated =
+      message.length > 2000 ? message.slice(0, 2000) + "..." : message;
     return res
       .status(500)
-      .json({ error: "TTS generation failed: " + err.message });
+      .json({ error: "TTS generation failed: " + truncated });
   }
 });
 
